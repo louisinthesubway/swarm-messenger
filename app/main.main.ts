@@ -2258,12 +2258,18 @@ app.on('ready', async () => {
 
     ephemeralConfig.set('system-tray-setting', newValue);
 
-    if (OS.isWindows()) {
+    // SWARM change (MSG-P2): only a packaged install turns on open-at-login.
+    // On 2026-09-28 from-source dev/test instances ran this first-run path and
+    // overwrote the owner's autostart entry (HKCU Run green.swarm.messenger)
+    // with their own electron.exe, which opened a stray window at next login.
+    if (OS.isWindows() && app.isPackaged) {
       log.info('app.ready: enabling open at login');
       app.setLoginItemSettings({
         ...(await getDefaultLoginItemSettings()),
         openAtLogin: true,
       });
+    } else if (OS.isWindows()) {
+      log.info('app.ready: not a packaged build, leaving open-at-login alone');
     }
   }
 
