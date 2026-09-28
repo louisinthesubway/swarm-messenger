@@ -1,0 +1,21 @@
+{
+  "_comment": "SWARM Messenger packaged-build endpoints (NODE_ENV=production, which is what a packaged app always uses). Every Signal endpoint, Signal zk parameter, Signal trust root, Signal update feed and the Stripe key are gone. Until SWARM runs a separate production server this points at the same staging host as config/swarm-staging.json; docs/SWARM-CONFIG.md records that and what has to change when a production server exists.",
+  "serverUrl": "https://chat.swarm.green",
+  "storageUrl": "https://chat.swarm.green",
+  "cdn": {
+    "0": "https://cdn.chat.swarm.green",
+    "2": "https://cdn.chat.swarm.green",
+    "3": "https://cdn.chat.swarm.green"
+  },
+  "contentProxyUrl": "https://contentproxy.chat.swarm.green",
+  "updatesUrl": "https://static.swarm.green/desktop",
+  "resourcesUrl": "https://static.swarm.green",
+  "sfuUrl": "https://sfu.chat.swarm.green/",
+  "challengeUrl": "https://chat.swarm.green/challenge/generate.html",
+  "registrationChallengeUrl": "https://chat.swarm.green/challenge/registration/generate.html",
+  "updatesEnabled": false,
+  "serverPublicParams": "ALiTHZawCPzu7oxzV4uj85/ZyYVvhRMAD3MxOe/EDk1ZHFZl8nvlrGQmRIANbe4PeCJx9KX8li2Hljk1bGGRmGH0tG1oBXNgMtPmwXZWBhuRow6/VC9MY3ukK96Z5th9N4SsnmlnphqOXRdp684c5CeJHMIvg0ekA4LQZBdKBatykqv16cw4SdhxjzD7XjS+exHzmWtQ9vkxnVtYHcHv7lHcGngqHoejN6GY2lNjRpjfk46suXcs5ZNHyrrnpgZHTFTUfA0xLeXJgcguz7t6G947SSwE2UNqs/hW4OcL3gQSINrIBDbYeSWGpxXRKdPP0fqPZP/l+pGT/jiP8JEcN2J0yK2OOxfTy8oKbhsVfKtVV1AG65bF5g4uokX+Bg7ETDCDa2w6v22Do6FMQU1A9PGA00Eu4GTmZlAmdhMJvnYmImjW5DOVFTXs/Y+zqqKxUKDkjcaGv/T1UcGbIaM5tD8INedJ47AV5N9ZzZ0/e8Cweia0yoJsGANqj2H2FvuUb9wDR1qgABOKzfjOLXOXDdq3/kvUJY/ISxIryklRnVck6NLDxlBatzD1pil8LKQaku2mTk9GhtCh2GeSZgB4PBHga7od66Ih4YTYbS4X288OkKTT69ipLuNRxd0b3COiFegch7he5nENAuG/kiVKNqjIYwIu9FLrOVtYofhyg5czdEkvBKJNMd9S13fbrxp5OG2eJl9l8F6JZGyZ2ssN3QleylwbdeQ0AhcWGYi30X/j29nu+azy8BoXaFx5cJgkblQaQbCp5gLeJMuhnxC4ALYdMGH94br1ikkDHNr4v4kXSAUTG0zc57ZVyg+HW97do9CR7fY2IJfgIBjD+a5oPTmYbCXa8gPioryalANyeojdMXcQNYPFk9pqfA2ODTZzPg==",
+  "serverTrustRoots": ["BSgjRy7ssr0kXjLd9fVTuWpomsxWMm31NG1TKTKbiyMu"],
+  "genericServerPublicParams": "AMzkIq08/9rvWj/PjUTRuU/8HpBYY+FSy8+X8T0d2KFSPrKENjhXCoPuqZTzlYVkE+9gGBN7sjws1fxFG3XL1nma5fpw0ju+WhhmEyqcz8g9jpDljoD9SjbBnpO7q2rsPTgSyR2pW8V1XvKzx3bLLNuXESQVDj4tvpSKX5Dd7DEpiqDO2udZiukHu3O9hVeWvT4W4lyAs9ogSXSPNHrEhHSGDghBBOOYr+jNGO+x6dmy/K/tzH8KRQwRFmx6jpqqCPzKWF/CrhakFYQZu35xBmHbZe5djlu6UqkRfO4uAg4y",
+  "backupServerPublicParams": "ALrEtWYxTWLCt5JL3BP5Hk6jXOJGCoAwr7RTyqLx+Bo7RMV7kCfCJAKbCi8ESsYxFBKJd+SzgpOeOMqr/Qvq127Cg76knUE8rPWPHjl6ZSLAbYWsglhxSQqU3qaCRN/cErYN8S2oc3xIfqSuq4AVqsFBiI3QaUNt7CXlWS9LeSl/VvrcEkmcmhsIOf0u3nhKIFlBa5tjb2ruAwFEiqIIFTA+XgDSX20BXhIQtrILLFBFWLo+xDb4MVkl6RzKXnt0b9jIC2GwOLp1pvoKE+aP808hTuEmNzfMGoJXR8X6DHoW"
+}

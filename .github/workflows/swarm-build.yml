@@ -1,0 +1,621 @@
+# Copyright 2026 SWARM
+# SPDX-License-Identifier: AGPL-3.0-only
+#
+# SWARM Messenger desktop build: M1 (Windows), M4 (Linux, macOS, releases).
+#
+# Upstream .github/workflows/ci.yml is left untouched; it targets Signal's own
+# self-hosted runners (ubuntu-22.04-8-cores, windows-latest-8-cores) which do not
+# exist in the Swarm-Official org, and it builds beta channels we do not have.
+# This workflow uses the standard GitHub runners:
+#
+#   lint-and-test      lint + typecheck + unit tests on Linux (upstream also
+#                      typechecks on Linux: fs-xattr is an optional, non-Windows
+#                      dependency, so `check:types` cannot pass on a Windows
+#                      runner - see docs/SWARM-CHANGES.md)
+#   installer-windows  unsigned NSIS installer, x64
+#   installer-linux    unsigned .deb and AppImage, x64
+#   installer-mac      ad-hoc-signed, un-notarized .dmg and .zip, Apple Silicon
+#   release            one SHA256SUMS.txt over every installer, and - on a push
+#                      to swarm-main only - one GitHub pre-release carrying all
+#                      of them, tagged swarm-messenger-desktop-<yyyymmdd>-<sha>
+#
+# Every installer job runs scripts/swarm-brand-check.mjs against the app it
+# packaged. Pull requests and manual runs build, check and hash everything and
+# publish nothing: the installers and SHA256SUMS.txt are the run's artifacts.
+# The repository is public, so artifact storage works and every upload must
+# succeed. docs/RELEASES.md says what each file is and how to install it.
+
+name: SWARM build
+
+on:
+  push:
+    branches:
+      - swarm-main
+  pull_request:
+    branches:
+      - swarm-main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  # A push to swarm-main is a group of its own, so every push is built and
+  # released; a pull request or a manual run replaces its own older run.
+  group: swarm-build-${{ github.event_name == 'push' && github.sha || github.ref }}
+  cancel-in-progress: ${{ github.event_name != 'push' }}
+
+env:
+  # Keep every cache off the system drive layout assumptions; on the runners this
+  # is just a stable location.
+  ELECTRON_CACHE: ${{ github.workspace }}/.cache/electron
+  ELECTRON_BUILDER_CACHE: ${{ github.workspace }}/.cache/electron-builder
+
+jobs:
+  lint-and-test:
+    name: Lint, typecheck and unit tests (Linux)
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.24.0
+          run_install: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run generate
+        run: pnpm run generate
+
+      - name: Check TypeScript
+        run: pnpm run check:types
+
+      - name: Check Oxlint
+        run: pnpm run oxlint:ci
+
+      - name: Check prettier
+        run: pnpm run lint-prettier
+
+      # electron-mocha starts Electron, and on ubuntu-latest (24.04) AppArmor
+      # forbids the unprivileged user namespaces Chromium's sandbox needs, so
+      # Electron falls back to the setuid helper and aborts: "The SUID sandbox
+      # helper binary was found, but is not configured correctly" (run
+      # 36288590467). Upstream's ci.yml runs these tests on ubuntu-22.04, which
+      # has no such restriction, and under xvfb-run; this does the same on 24.04.
+      # libpulse0 is upstream's other apt package: RingRTC's native library
+      # links it, and without it the calling tests fail to load (run
+      # 36336532878: "libpulse.so.0: cannot open shared object file").
+      - name: Let Electron start on the runner (user namespaces, virtual display)
+        run: |
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq xvfb libpulse0
+
+      - name: Run node tests (includes the SWARM endpoint scan)
+        run: xvfb-run --auto-servernum pnpm run test-node
+
+  installer-windows:
+    name: Unsigned Windows installer (x64)
+    runs-on: windows-latest
+    timeout-minutes: 90
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.24.0
+          run_install: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      # Deliberately NOT setting SWARM_ALLOW_MISSING_NATIVE here: a release build
+      # must fail if a native addon cannot be compiled.
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run generate
+        run: pnpm run generate
+
+      # Only the SWARM tests here. The whole suite runs on Linux in the other
+      # job; running it again on a GitHub Windows runner adds nothing but
+      # flakes - uploadDebugLogs, logging and localBackup time out or hit
+      # ENOTEMPTY on that runner's temp directory, and all three pass on a real
+      # Windows machine. The SWARM tests touch no network; the wallet worker's
+      # tests write one small sealed wallet file to a temp directory each and
+      # remove it.
+      - name: Run the SWARM endpoint scan and guard tests
+        run: pnpm run test-node:swarm
+
+      # SWARM addition (M3): the wallet's Rust addon, from the swarm-wallet-core
+      # release named in vendor/swarm-wallet-core-native.json, refused unless
+      # its SHA-256 is the pinned one. Without it the installer would ship a
+      # Wallet pane that says the wallet component is missing.
+      - name: Fetch the SWARM wallet addon (hash-pinned)
+        run: node scripts/swarm-fetch-wallet-addon.mjs
+
+      - name: Build unsigned NSIS installer
+        run: pnpm run build:release --publish=never
+        env:
+          DISABLE_INSPECT_FUSE: on
+
+      - name: Check the packaged app for leftover Signal branding
+        run: node scripts/swarm-brand-check.mjs release
+
+      # electron-builder writes swarm-messenger-win-x64-<version>.exe
+      - name: Collect the installer
+        shell: bash
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          mkdir -p dist-out
+          files=(release/*.exe)
+          if [ "${#files[@]}" -ne 1 ]; then
+            echo "Expected exactly one .exe under release/, found ${#files[@]}" >&2
+            ls -la release >&2 || true
+            exit 1
+          fi
+          cp "${files[0]}" dist-out/
+          cd dist-out
+          sha256sum -- *
+
+      - name: Upload the installer
+        uses: actions/upload-artifact@v5
+        with:
+          name: installer-windows-x64
+          path: dist-out/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30
+
+  installer-linux:
+    name: Unsigned Linux packages (x64 .deb and AppImage)
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.24.0
+          run_install: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      # Deliberately NOT setting SWARM_ALLOW_MISSING_NATIVE here: a release build
+      # must fail if a native addon cannot be compiled.
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run generate
+        run: pnpm run generate
+
+      # The whole test suite, the SWARM tests included, already runs on this
+      # same OS in lint-and-test, so it is not repeated here.
+      # SWARM addition (M3): the wallet's Rust addon, from the swarm-wallet-core
+      # release named in vendor/swarm-wallet-core-native.json, refused unless
+      # its SHA-256 is the pinned one. Without it the installer would ship a
+      # Wallet pane that says the wallet component is missing.
+      - name: Fetch the SWARM wallet addon (hash-pinned)
+        run: node scripts/swarm-fetch-wallet-addon.mjs
+
+      - name: Build the .deb and the AppImage
+        run: pnpm run build:release --publish=never
+
+      - name: Check the packaged app for leftover Signal branding
+        run: node scripts/swarm-brand-check.mjs release
+
+      # swarm-brand-check.mjs reads app.asar. What apt shows - the control
+      # fields - what the desktop shows - the menu entry - and what dpkg runs
+      # as root - the maintainer scripts - are outside it, so they are checked
+      # here. Two mentions are allowed: the postinst touches .signal-postinst,
+      # a marker upstream's updater code looks for, and the entry's MimeType
+      # registers the sgnl: and signalcaptcha: link schemes, which
+      # docs/SWARM-CHANGES.md section 7 keeps on purpose. Only the entry's
+      # visible keys are checked for the word.
+      - name: Check the .deb's metadata, desktop entry and maintainer scripts
+        run: |
+          set -euo pipefail
+          deb=$(ls release/*.deb)
+          dpkg-deb --info "$deb"
+          if dpkg-deb --field "$deb" | grep -i signal; then
+            echo "The .deb's control fields mention Signal" >&2
+            exit 1
+          fi
+          ctrl=$(mktemp -d)
+          dpkg-deb --control "$deb" "$ctrl"
+          if grep -n -i 'signalapp\|signal\.org\|Signal Desktop' "$ctrl/postinst" "$ctrl/postrm"; then
+            echo "The .deb's maintainer scripts still use Signal names" >&2
+            exit 1
+          fi
+          grep -n 'green\.swarm' "$ctrl/postinst" "$ctrl/postrm"
+          entry=$(dpkg-deb --fsys-tarfile "$deb" | tar -t | grep 'usr/share/applications/.*\.desktop$')
+          desktop=$(dpkg-deb --fsys-tarfile "$deb" | tar -xO "$entry")
+          printf '%s\n%s\n' "$entry" "$desktop"
+          if grep -i -E '^(Name|GenericName|Comment|Keywords|Icon|Exec)(\[[^]]*\])?=.*signal' <<<"$desktop"; then
+            echo "The .deb's desktop entry shows Signal" >&2
+            exit 1
+          fi
+          dpkg-deb --contents "$deb" | grep -E 'opt/SWARM Messenger/(swarm-messenger|resources/green\.swarm\..*\.policy)$'
+
+      # The .deb is installed the way docs/RELEASES.md tells the owner to, on
+      # the runner's Ubuntu 24.04: its postinst must go through (AppArmor
+      # profile, polkit policies - polkitd is installed first so that branch
+      # runs), and the installed app must open its main window WITH its
+      # sandbox, which on 24.04 only works because of that AppArmor profile.
+      # Then apt removes it, and the postrm must take the policies away again.
+      - name: Install the .deb with apt, start the installed app once, remove it
+        run: |
+          set -euo pipefail
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq xvfb polkitd
+          deb=$(ls release/*.deb)
+          sudo apt-get install -y "./$deb"
+          dpkg -s swarm-messenger | sed -n '1,4p'
+          ls -l /usr/share/polkit-1/actions/ | grep green.swarm
+          ls -l /etc/apparmor.d/swarm-messenger
+
+          userdata="$HOME/.config/SWARM Messenger"
+          log="$userdata/logs/main.log"
+          rm -rf "$userdata"
+          xvfb-run -a swarm-messenger > smoke-output.txt 2>&1 &
+          runner=$!
+          started=
+          for _ in $(seq 1 120); do
+            if grep -q 'main window is ready-to-show' "$log" 2>/dev/null; then
+              started=1
+              break
+            fi
+            kill -0 "$runner" 2>/dev/null || break
+            sleep 1
+          done
+          # Main process first, then whatever is left under /opt/SWARM
+          # Messenger (renderers, GPU, crashpad handler), then xvfb-run.
+          pkill -o -f '/opt/SWARM Messenger/swarm-messenger' || true
+          sleep 3
+          pkill -f '/opt/SWARM Messenger/' || true
+          kill "$runner" 2>/dev/null || true
+          wait "$runner" 2>/dev/null || true
+          echo "::group::main.log"
+          cat "$log" 2>/dev/null || echo "(no main.log)"
+          echo "::endgroup::"
+          echo "::group::stdout and stderr"
+          cat smoke-output.txt
+          echo "::endgroup::"
+          cp "$log" main-log-copy.txt 2>/dev/null || touch main-log-copy.txt
+          rm -rf "$userdata" smoke-output.txt || true
+          if [ -z "$started" ]; then
+            echo "The installed app did not open its main window within 120 s" >&2
+            exit 1
+          fi
+          echo "The installed app started and opened its main window."
+          if grep -q 'no wallet addon in this build' main-log-copy.txt; then
+            echo "The installed app says it has no wallet addon" >&2
+            exit 1
+          fi
+          addon="/opt/SWARM Messenger/resources/app.asar.unpacked/vendor/swarm-wallet-native/native-linux-x64.node"
+          pinned=$(node -p "require('./vendor/swarm-wallet-core-native.json').binaries['linux-x64'].sha256")
+          actual=$(sha256sum "$addon" | cut -d' ' -f1)
+          echo "wallet addon: $addon"
+          echo "  sha256 $actual (pinned $pinned)"
+          [ "$actual" = "$pinned" ]
+          node -e "const m = { exports: {} }; process.dlopen(m, process.argv[1]); console.log('  loads: ' + Object.keys(m.exports).length + ' exports')" "$addon"
+
+          sudo apt-get remove -y swarm-messenger
+          if ls /usr/share/polkit-1/actions/ | grep green.swarm; then
+            echo "apt remove left SWARM's polkit policies behind" >&2
+            exit 1
+          fi
+
+      # The AppImage is for distributions without Ubuntu 24.04's user-namespace
+      # restriction, so that restriction is lifted for this test (as
+      # lint-and-test does), and the AppImage runs with its sandbox, extracted
+      # rather than FUSE-mounted. It keeps its data apart from the .deb's, in
+      # "<productName> AppImage" (app/user_config.main.ts).
+      - name: Start the AppImage once
+        run: |
+          set -euo pipefail
+          sudo sysctl -w kernel.apparmor_restrict_unprivileged_userns=0
+          appimage=$(ls release/*.AppImage)
+          chmod +x "$appimage"
+          userdata="$HOME/.config/SWARM Messenger AppImage"
+          log="$userdata/logs/main.log"
+          rm -rf "$userdata"
+          APPIMAGE_EXTRACT_AND_RUN=1 xvfb-run -a "./$appimage" > smoke-output.txt 2>&1 &
+          runner=$!
+          started=
+          for _ in $(seq 1 120); do
+            if grep -q 'main window is ready-to-show' "$log" 2>/dev/null; then
+              started=1
+              break
+            fi
+            kill -0 "$runner" 2>/dev/null || break
+            sleep 1
+          done
+          pkill -o -f 'appimage_extracted_[^ ]*/swarm-messenger' || true
+          sleep 3
+          pkill -f 'appimage_extracted_' || true
+          kill "$runner" 2>/dev/null || true
+          wait "$runner" 2>/dev/null || true
+          echo "::group::main.log"
+          cat "$log" 2>/dev/null || echo "(no main.log)"
+          echo "::endgroup::"
+          echo "::group::stdout and stderr"
+          cat smoke-output.txt
+          echo "::endgroup::"
+          rm -rf "$userdata" smoke-output.txt || true
+          if [ -z "$started" ]; then
+            echo "The AppImage did not open its main window within 120 s" >&2
+            exit 1
+          fi
+          echo "The AppImage started and opened its main window."
+
+      # electron-builder writes swarm-messenger_<version>_amd64.deb and
+      # swarm-messenger_<version>_x86_64.AppImage (plus an update blockmap,
+      # which SWARM does not use)
+      - name: Collect the .deb and the AppImage
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          mkdir -p dist-out
+          for ext in deb AppImage; do
+            files=(release/*."$ext")
+            if [ "${#files[@]}" -ne 1 ]; then
+              echo "Expected exactly one .$ext under release/, found ${#files[@]}" >&2
+              ls -la release >&2 || true
+              exit 1
+            fi
+            cp "${files[0]}" dist-out/
+          done
+          cd dist-out
+          sha256sum -- *
+
+      - name: Upload the .deb and the AppImage
+        uses: actions/upload-artifact@v5
+        with:
+          name: installer-linux-x64
+          path: dist-out/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30
+
+  installer-mac:
+    name: Unsigned macOS app (Apple Silicon .dmg and .zip)
+    runs-on: macos-latest
+    timeout-minutes: 90
+    env:
+      # There is no Apple Developer ID yet; never go looking for one.
+      CSC_IDENTITY_AUTO_DISCOVERY: 'false'
+      # electron-builder skips all signing, ad hoc included, when it sees a pull
+      # request, and an arm64 app without a valid signature does not start.
+      # Ad-hoc signing uses no secret, so pull requests build what pushes build.
+      CSC_FOR_PULL_REQUEST: 'true'
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Install pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: 11.24.0
+          run_install: false
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: pnpm
+
+      # Before `pnpm install` on purpose: pnpm re-verifies the install when
+      # package.json is newer than node_modules, and refuses to run scripts in
+      # CI if that check fails. What this changes, and why, is in the script.
+      - name: Switch package.json to an ad-hoc-signed, un-notarized build
+        run: node scripts/swarm-prepare-unsigned-mac-build.mjs
+
+      # Deliberately NOT setting SWARM_ALLOW_MISSING_NATIVE here: a release build
+      # must fail if a native addon cannot be compiled.
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Run generate
+        run: pnpm run generate
+
+      - name: Run the SWARM endpoint scan and guard tests
+        run: pnpm run test-node:swarm
+
+      # SWARM addition (M3): the wallet's Rust addon, from the swarm-wallet-core
+      # release named in vendor/swarm-wallet-core-native.json, refused unless
+      # its SHA-256 is the pinned one. Without it the installer would ship a
+      # Wallet pane that says the wallet component is missing.
+      - name: Fetch the SWARM wallet addon (hash-pinned)
+        run: node scripts/swarm-fetch-wallet-addon.mjs
+
+      - name: Build the .dmg and the .zip
+        run: pnpm run build:release --publish=never
+
+      - name: Check the packaged app for leftover Signal branding
+        run: node scripts/swarm-brand-check.mjs release
+
+      # Nobody on the team has a Mac to try the build on, so the runner does:
+      # the signature must verify, and the packaged app - the same bundle the
+      # .dmg and the .zip carry - must start and open its main window.
+      - name: Verify the signature, then start the packaged app once
+        run: |
+          set -euo pipefail
+          app="release/mac-arm64/SWARM Messenger.app"
+          codesign --verify --deep --strict --verbose=2 "$app"
+          codesign --display --verbose=2 "$app" 2>&1
+          lipo -archs "$app/Contents/MacOS/SWARM Messenger"
+          for key in CFBundleIdentifier CFBundleShortVersionString LSMinimumSystemVersion; do
+            printf '%s: %s\n' "$key" "$(/usr/libexec/PlistBuddy -c "Print :$key" "$app/Contents/Info.plist")"
+          done
+
+          userdata="$HOME/Library/Application Support/SWARM Messenger"
+          log="$userdata/logs/main.log"
+          rm -rf "$userdata"
+          "$app/Contents/MacOS/SWARM Messenger" > smoke-output.txt 2>&1 &
+          pid=$!
+          started=
+          for _ in $(seq 1 120); do
+            if grep -q 'main window is ready-to-show' "$log" 2>/dev/null; then
+              started=1
+              break
+            fi
+            kill -0 "$pid" 2>/dev/null || break
+            sleep 1
+          done
+          kill "$pid" 2>/dev/null || true
+          wait "$pid" 2>/dev/null || true
+          echo "::group::main.log"
+          cat "$log" 2>/dev/null || echo "(no main.log)"
+          echo "::endgroup::"
+          echo "::group::stdout and stderr"
+          cat smoke-output.txt
+          echo "::endgroup::"
+          cp "$log" main-log-copy.txt 2>/dev/null || touch main-log-copy.txt
+          rm -rf "$userdata" smoke-output.txt || true
+          if [ -z "$started" ]; then
+            echo "The packaged app did not open its main window within 120 s" >&2
+            exit 1
+          fi
+          echo "The packaged app started and opened its main window."
+          if grep -q 'no wallet addon in this build' main-log-copy.txt; then
+            echo "The packaged app says it has no wallet addon" >&2
+            exit 1
+          fi
+          # The ad-hoc signature is written into the addon, so its hash is no
+          # longer the pinned one; what matters here is that it still loads.
+          addon="$app/Contents/Resources/app.asar.unpacked/vendor/swarm-wallet-native/native-darwin-arm64.node"
+          echo "wallet addon: $addon"
+          codesign --verify --verbose=1 "$addon"
+          node -e "const m = { exports: {} }; process.dlopen(m, process.argv[1]); console.log('  loads: ' + Object.keys(m.exports).length + ' exports')" "$addon"
+
+      # electron-builder writes swarm-messenger-mac-arm64-<version>.dmg and
+      # .zip (plus update blockmaps, which SWARM does not use)
+      - name: Collect the .dmg and the .zip
+        run: |
+          set -euo pipefail
+          shopt -s nullglob
+          mkdir -p dist-out
+          for ext in dmg zip; do
+            files=(release/*."$ext")
+            if [ "${#files[@]}" -ne 1 ]; then
+              echo "Expected exactly one .$ext under release/, found ${#files[@]}" >&2
+              ls -la release >&2 || true
+              exit 1
+            fi
+            cp "${files[0]}" dist-out/
+          done
+          cd dist-out
+          shasum -a 256 -- *
+
+      # The .dmg and the .zip are what people download, and the .zip has been
+      # rewritten by artifactBuildCompleted (rezip-electron), so each is opened
+      # the way Finder opens it and the app inside is checked again.
+      - name: Open the .dmg and the .zip and verify the app inside each
+        run: |
+          set -euo pipefail
+          dmg=$(ls dist-out/*.dmg)
+          zip=$(ls dist-out/*.zip)
+          mnt=$(mktemp -d)
+          hdiutil attach -nobrowse -readonly -mountpoint "$mnt" "$dmg"
+          ls -la "$mnt"
+          test -L "$mnt/Applications"
+          codesign --verify --deep --strict --verbose=1 "$mnt/SWARM Messenger.app"
+          hdiutil detach "$mnt"
+          unzipped=$(mktemp -d)
+          ditto -x -k "$zip" "$unzipped"
+          ls -la "$unzipped"
+          codesign --verify --deep --strict --verbose=1 "$unzipped/SWARM Messenger.app"
+          rm -rf "$unzipped"
+
+      - name: Upload the .dmg and the .zip
+        uses: actions/upload-artifact@v5
+        with:
+          name: installer-mac-arm64
+          path: dist-out/
+          if-no-files-found: error
+          compression-level: 0
+          retention-days: 30
+
+  release:
+    name: Hash every installer; pre-release on swarm-main
+    # lint-and-test too: a commit whose tests fail publishes nothing.
+    needs:
+      - lint-and-test
+      - installer-windows
+      - installer-linux
+      - installer-mac
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v5
+
+      - name: Setup Node
+        uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+
+      - name: Download the installers
+        uses: actions/download-artifact@v5
+        with:
+          pattern: installer-*
+          path: dist
+          merge-multiple: true
+
+      # Checks that dist/ holds exactly one .exe, .deb, .AppImage, .dmg and
+      # .zip, writes dist/SHA256SUMS.txt over all of them and the release text.
+      - name: Write SHA256SUMS.txt and the release notes
+        id: notes
+        run: node scripts/swarm-release-notes.mjs dist release-notes.md
+
+      - name: Upload SHA256SUMS.txt and the release notes
+        uses: actions/upload-artifact@v5
+        with:
+          name: release-sha256sums
+          path: |
+            dist/SHA256SUMS.txt
+            release-notes.md
+          if-no-files-found: error
+          retention-days: 30
+
+      # target_commitish matters: without it GitHub creates the tag on the
+      # repository's default branch (upstream-main), not on this commit.
+      - name: Publish the pre-release
+        if: github.event_name == 'push' && github.ref == 'refs/heads/swarm-main'
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.notes.outputs.tag }}
+          name: ${{ steps.notes.outputs.name }}
+          body_path: release-notes.md
+          target_commitish: ${{ github.sha }}
+          files: dist/*
+          fail_on_unmatched_files: true
+          draft: false
+          prerelease: true
+          make_latest: 'false'
