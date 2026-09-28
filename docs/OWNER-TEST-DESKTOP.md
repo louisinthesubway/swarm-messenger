@@ -12,15 +12,15 @@ one creates its own wallet, becomes its own account, and then A and B message ea
 
 ## 1. What works today, and what does not
 
-| Works (tested 2026-09-27)                                          | Does not work yet                                                                        |
-| ------------------------------------------------------------------ | ---------------------------------------------------------------------------------------- |
-| Creating an account from a new wallet: no phone number, no SMS     | Finding someone by the account number shown in Settings ("Failed to fetch phone number") |
-| Setting a username, and finding the other person by that username  | Stickers and GIF search (no sticker packs or GIF service on this server)                 |
-| Text messages both ways, end-to-end encrypted, delivered in < 1 s  | Voice and video calls (no calling server yet)                                            |
-| Message request, Accept, read and delivery ticks                   | Call links (their credentials fail to verify)                                            |
-| Groups: create one, the other person sees it, messages both ways (2026-09-28, section 11) | Group photos: the other members do not see them yet                |
-| Closing both apps and opening them again: same accounts, same chat | Linking a second device, and the Linked devices screen                                   |
-| Photos, both ways (sent, stored on `cdn.chat.swarm.green`, shown)  | "Restore a wallet" landing on the same account (built, not yet tested live)              |
+| Works (tested 2026-09-27)                                                                 | Does not work yet                                                                        |
+| ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
+| Creating an account from a new wallet: no phone number, no SMS                            | Finding someone by the account number shown in Settings ("Failed to fetch phone number") |
+| Setting a username, and finding the other person by that username                         | Stickers and GIF search (no sticker packs or GIF service on this server)                 |
+| Text messages both ways, end-to-end encrypted, delivered in < 1 s                         | Voice and video calls (no calling server yet)                                            |
+| Message request, Accept, read and delivery ticks                                          | Call links (their credentials fail to verify)                                            |
+| Groups: create one, the other person sees it, messages both ways (2026-09-28, section 11) | Group photos: the other members do not see them yet                                      |
+| Closing both apps and opening them again: same accounts, same chat                        | Linking a second device, and the Linked devices screen                                   |
+| Photos, both ways (sent, stored on `cdn.chat.swarm.green`, shown)                         | "Restore a wallet" landing on the same account (built, not yet tested live)              |
 
 This is the **staging** server. Everything on it is test data and may be wiped at any time. Treat
 both wallets as throwaway: never send SWARM to them.
