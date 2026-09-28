@@ -17,7 +17,8 @@ one creates its own wallet, becomes its own account, and then A and B message ea
 | Creating an account from a new wallet: no phone number, no SMS     | Finding someone by the account number shown in Settings ("Failed to fetch phone number") |
 | Setting a username, and finding the other person by that username  | Stickers and GIF search (no sticker packs or GIF service on this server)                 |
 | Text messages both ways, end-to-end encrypted, delivered in < 1 s  | Voice and video calls (no calling server yet)                                            |
-| Message request, Accept, read and delivery ticks                   | Groups (no groups server yet) and call links (their credentials fail to verify)          |
+| Message request, Accept, read and delivery ticks                   | Call links (their credentials fail to verify)                                            |
+| Groups: create one, the other person sees it, messages both ways (2026-09-28, section 11) | Group photos: the other members do not see them yet                |
 | Closing both apps and opening them again: same accounts, same chat | Linking a second device, and the Linked devices screen                                   |
 | Photos, both ways (sent, stored on `cdn.chat.swarm.green`, shown)  | "Restore a wallet" landing on the same account (built, not yet tested live)              |
 
@@ -157,9 +158,11 @@ Then the restart test:
   ever stays on its spinning circle, it holds up every later message in that chat, because the
   app sends a chat's messages strictly in order. Hover over it, click **⋯**, **Delete**, then
   **Delete for me**; the messages behind it go out within a few minutes.
-- No calls, no groups, no call links, no stickers, no second devices (see section 1).
-- Settings and contacts do not sync to a server (there is no storage service yet). The app keeps
-  working; it only logs `404` for it.
+- No calls, no call links, no stickers, no second devices (see section 1). Groups work since
+  2026-09-28 (section 11), without group photos.
+- Settings and contacts sync to the server since 2026-09-28 (Signal's storage service, end-to-end
+  encrypted as in Signal). A brand-new account's first read of it answers `404` once in the log;
+  that is expected, the app writes it right after.
 - The app window may say "Name not verified" next to the other person's name. That is normal for
   someone who is not in your contacts.
 - This is Windows, from source, on the owner's PC. There is no installer for this test.
@@ -234,7 +237,8 @@ steps on screen are the same.
   device name and the "Who can find me by phone number" switch (not tested by hand yet).
 - Call-link credentials now verify: the app's log no longer repeats
   `Verification failure in zkgroup`, and it logs `saving 7 new call link auth credentials`.
-- **Groups still do not work.** Clicking **New group** turns the window blank (the server does not
+- _(Superseded 2026-09-28: groups work now, see section 11.)_ **Groups still do not work.**
+  Clicking **New group** turns the window blank (the server does not
   yet send the group size limits the app reads; quit and restart the app to recover), and even with
   those the server has no groups service to store a group in. Do not try groups in this test.
 
@@ -334,6 +338,62 @@ what happened without any address, amount or transaction id in them.
 
 To take the SWM back, use A's and B's Wallet panes: **Send** to your own address (the same two
 steps, review and send).
+
+---
+
+## 11. Groups
+
+Added 2026-09-28 by Opus M6b, when the server got Signal's storage service, the part of Signal that
+keeps groups (and settings sync). Every step below was carried out that day between 21:56 and
+22:07 UTC by two desktop instances (swarm-main `e01c737c0`, fresh wallet accounts) against
+`chat.swarm.green`, and every screen named here was seen then. The group screens are Signal's own
+code, which SWARM did not change; the run has not yet been repeated with the installed 0.1.0 app.
+
+**Before you start:** A and B have each other in their chat lists and have exchanged one message
+each way (sections 5 and 6). That is how A's app learns what it needs to add B directly; without
+it, B gets an invitation to accept instead.
+
+**In window A:**
+
+1. Click the **pencil** next to "Chats" (**New chat**), then **New group**, the first line.
+2. **"Choose members".** Click **Test B** under Contacts. The name moves up to the top; click
+   **Next**.
+3. **"Name this group".** Type a name, for example `Test group`. Leave the photo empty (see
+   "Not yet" below). Click **Create**.
+4. The group opens: its name, "Test B and you", and "You created the group."
+
+**In window B:**
+
+5. The chat list shows the group with "Test A added you to the group." Click it.
+
+**Both:**
+
+6. Send one message in the group from A, then one from B. Each appears in the other window within
+   a second or two, with the sender's name above it.
+7. Restart: quit both apps (**File → Quit SWARM Messenger**) and start them again. The group is in
+   both chat lists with its messages, and new messages still go both ways.
+
+**If it does not work:**
+
+- **"This group couldn't be created. Check your connection and try again."**: the app's log
+  (`app.log`, section 8) has a line `PUT (REST) https://chat.swarm.green/v2/groups` with the
+  server's answer. `404` means the server's groups route is missing, `502` that the groups service
+  is down, `401` that its keys do not match. Report it with the time; the server's runbook is
+  section 5c of `docs/STAGING.md` in `swarm-messenger-server`.
+- **New group turns the window blank**: that was an old server setting (section 9). Quit and
+  restart the app.
+
+**Not yet:**
+
+- **Group photos.** A photo can be set, but the other members do not see it yet: the photo server
+  does not publish group photos. Leave it empty for now.
+- **Group calls**: there is no calling server.
+- Like everything on this server, groups are test data. They are kept on disk and in the server's
+  nightly snapshot, but the staging server may still be wiped.
+
+**Settings sync, same day:** the app now also keeps your settings and contact list on the server,
+end-to-end encrypted as in Signal. There is nothing to do; after a change (for example a new
+username) the app's log shows `PUT (REST) https://chat.swarm.green/v1/storage/ 200 Success`.
 
 ---
 
