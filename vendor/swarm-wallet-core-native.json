@@ -1,10 +1,10 @@
 {
-  "_comment": "SWARM addition (M3): the SWARM wallet's Rust addon, one binary per platform, as published by CI on the swarm-wallet-core release below. Too large for git (about 80 MB each), so scripts/swarm-fetch-wallet-addon.mjs downloads the one this machine needs into vendor/swarm-wallet-native/ and refuses it unless its SHA-256 is the one written here. The TypeScript wrapper is vendor/swarm-wallet-core-0.2.0.tgz, built from the same commit. See docs/WALLET-PANE.md.",
+  "_comment": "SWARM addition (M3): the SWARM wallet's Rust addon, one binary per platform, as published by CI on the swarm-wallet-core release below. Too large for git (about 80 MB each), so scripts/swarm-fetch-wallet-addon.mjs downloads the one this machine needs into vendor/swarm-wallet-native/ and refuses it unless its SHA-256 is the one written here. The TypeScript wrapper is vendor/swarm-wallet-core-0.2.0.tgz, built from the same commit. See docs/WALLET-PANE.md. Mirror note 2026-09-28: the Swarm-Official account was suspended, so the release is mirrored under louisinthesubway/swarm-wallet-core; the win32-x64 binary there is byte-identical to the original (same sha256), the linux-x64 and darwin-arm64 binaries are rebuilt from the same sources and get their own hashes here when they land.",
   "package": "swarm-wallet-core",
   "version": "0.2.0",
   "release": "swarm-wallet-core-0.2.0",
   "sourceCommit": "d934f82125cfd9fd130a494d350dd612b6096c4f",
-  "baseUrl": "https://github.com/Swarm-Official/swarm-wallet-core/releases/download/swarm-wallet-core-0.2.0/",
+  "baseUrl": "https://github.com/louisinthesubway/swarm-wallet-core/releases/download/swarm-wallet-core-0.2.0/",
   "binaries": {
     "darwin-arm64": {
       "file": "native-darwin-arm64.node",

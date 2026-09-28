@@ -425,3 +425,13 @@ inbox) is as in section 3a.
 (upstream's `8.31.0-alpha.1` was the fork base's number). Installer names and the
 release name follow it (`swarm-messenger-win-x64-0.1.0.exe`, …). Upstream merges
 keep this line; the upstream version is recorded in `docs/SWARM-CHANGES.md` section 1.
+
+## 3g. Mirror under louisinthesubway after the Swarm-Official suspension
+
+2026-09-28 17:1x UTC GitHub suspended the account that owned the Swarm-Official
+organisation; every repository and release vanished. This repository is a
+single-commit snapshot of swarm-main 725e5cbc2 (the 0.1.0 tree) under
+`louisinthesubway/swarm-messenger`; the wallet addon is fetched from the mirrored
+`louisinthesubway/swarm-wallet-core` release (`vendor/swarm-wallet-core-native.json`).
+The full history stays in the workstation clone. When the repositories move into
+the Swarm-Coin organisation, GitHub redirects these URLs.

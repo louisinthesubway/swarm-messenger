@@ -131,7 +131,7 @@ async function main() {
   const { version } = packageJson;
   const server = process.env.GITHUB_SERVER_URL ?? 'https://github.com';
   const repo =
-    process.env.GITHUB_REPOSITORY ?? 'Swarm-Official/swarm-messenger';
+    process.env.GITHUB_REPOSITORY ?? 'louisinthesubway/swarm-messenger';
   const runId = process.env.GITHUB_RUN_ID;
   const runUrl = runId ? `${server}/${repo}/actions/runs/${runId}` : undefined;
 
