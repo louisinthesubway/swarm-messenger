@@ -251,7 +251,7 @@ jobs:
         run: node scripts/publish-installer-size.mjs linux-${{ matrix.arch }}
 
       - name: Clone backup integration tests
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v6
         with:
           repository: 'signalapp/Signal-Message-Backup-Tests'
           ref: 'a0f900243210efbedc72f0907c5d2f140385daa4'
@@ -636,7 +636,7 @@ jobs:
           path: artifacts
 
       - name: Clone benchmark repo
-        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v6
         with:
           repository: 'signalapp/Signal-Desktop-Benchmarks-Private'
           path: 'benchmark-results'
