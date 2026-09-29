@@ -44,6 +44,7 @@ export default {
     colorId: {
       control: { type: 'select' },
       mapping: {
+        unset: ColorEnum.UNKNOWN,
         blue: ColorEnum.BLUE,
         white: ColorEnum.WHITE,
         grey: ColorEnum.GREY,
@@ -57,10 +58,10 @@ export default {
   },
   args: {
     i18n,
-    link: 'https://signal.me/#eu/n-AJkmmykrFB7j6UODGndSycxcMdp_v6ppRp9rFu5Ad39q_9Ngi_k9-TARWfT43t',
+    link: 'https://swarm.green/u/#eu/n-AJkmmykrFB7j6UODGndSycxcMdp_v6ppRp9rFu5Ad39q_9Ngi_k9-TARWfT43t',
     username: 'alice.12',
     usernameLinkState: UsernameLinkState.Ready,
-    colorId: ColorEnum.BLUE,
+    colorId: ColorEnum.UNKNOWN,
     showToast: action('showToast'),
     resetUsernameLink: action('resetUsernameLink'),
     setUsernameLinkColor: action('setUsernameLinkColor'),

@@ -3,8 +3,12 @@
 import { assert } from 'chai';
 import type { ParsedSignalRoute } from '../../util/signalRoutes.std.ts';
 import {
+  artAddStickersRoute,
+  contactByEncryptedUsernameRoute,
+  groupInvitesRoute,
   isSignalRoute,
   linkCallRoute,
+  linkDeviceRoute,
   parseSignalRoute,
   toSignalRouteAppUrl,
   toSignalRouteUrl,
@@ -54,6 +58,22 @@ describe('signalRoutes', () => {
     check('sgnl://signal.me/#p/', null);
     check('sgnl://signal.me/p/+1234567890', null);
     check('https://signal.me/?p/+1234567890', null);
+    // SWARM (B3, 2026-09-29): nor on swarm.green outside the link paths.
+    check('https://swarm.green/u/', null);
+    check('https://swarm.green/#p/+1234567890', null);
+    check(`https://swarm.green/#eu/${foo}`, null);
+    check(`https://swarm.green/#${fooNoSlash}`, null);
+    check(`https://www.swarm.green/u/#eu/${foo}`, null);
+    check(`https://chat.swarm.green/g/#${fooNoSlash}`, null);
+    check(`sgnl://swarm.green/u/#eu/${foo}`, null);
+    check(`swarm://signal.me/#eu/${foo}`, null);
+    check(`swarm://signal.group/#${fooNoSlash}`, null);
+    check(
+      `https://swarm.green/addstickers/#pack_id=${foo}&pack_key=${foo}`,
+      null
+    );
+    check(`swarm://addstickers?pack_id=${foo}&pack_key=${foo}`, null);
+    check(`swarm://joingroup/#${fooNoSlash}`, null);
   });
 
   it('normalize', () => {
@@ -67,6 +87,12 @@ describe('signalRoutes', () => {
       args: { phoneNumber: '+1234567890' },
     };
     const check = createCheck();
+    // SWARM (B3, 2026-09-29): the forms the app would make.
+    check('https://swarm.green/u/#p/+1234567890', result);
+    check('https://swarm.green/u#p/+1234567890', result);
+    check('swarm://swarm.green/u/#p/+1234567890', result);
+    check('swarm://swarm.green/u#p/+1234567890', result);
+    // Signal's forms: still opened.
     check('https://signal.me/#p/+1234567890', result);
     check('https://signal.me#p/+1234567890', result);
     check('sgnl://signal.me/#p/+1234567890', result);
@@ -79,6 +105,12 @@ describe('signalRoutes', () => {
       args: { encryptedUsername: foo },
     };
     const check = createCheck();
+    // SWARM (B3, 2026-09-29): the forms the app makes.
+    check(`https://swarm.green/u/#eu/${foo}`, result);
+    check(`https://swarm.green/u#eu/${foo}`, result);
+    check(`swarm://swarm.green/u/#eu/${foo}`, result);
+    check(`swarm://swarm.green/u#eu/${foo}`, result);
+    // Signal's forms, made before B3: still opened.
     check(`https://signal.me/#eu/${foo}`, result);
     check(`https://signal.me#eu/${foo}`, result);
     check(`sgnl://signal.me/#eu/${foo}`, result);
@@ -91,6 +123,12 @@ describe('signalRoutes', () => {
       args: { inviteCode: fooNoSlash },
     };
     const check = createCheck();
+    // SWARM (B3, 2026-09-29): the forms the app makes.
+    check(`https://swarm.green/g/#${fooNoSlash}`, result);
+    check(`https://swarm.green/g#${fooNoSlash}`, result);
+    check(`swarm://swarm.green/g/#${fooNoSlash}`, result);
+    check(`swarm://swarm.green/g#${fooNoSlash}`, result);
+    // Signal's forms, made before B3: still opened.
     check(`https://signal.group/#${fooNoSlash}`, result);
     check(`https://signal.group#${fooNoSlash}`, result);
     check(`sgnl://signal.group/#${fooNoSlash}`, result);
@@ -105,6 +143,10 @@ describe('signalRoutes', () => {
       args: { uuid: foo, pubKey: foo, capabilities: [] },
     };
     const check = createCheck({ hasWebUrl: false });
+    // SWARM (B3, 2026-09-29): the form the app makes.
+    check(`swarm://linkdevice/?uuid=${foo}&pub_key=${foo}`, result);
+    check(`swarm://linkdevice?uuid=${foo}&pub_key=${foo}`, result);
+    // Signal's form: still read.
     check(`sgnl://linkdevice/?uuid=${foo}&pub_key=${foo}`, result);
     check(`sgnl://linkdevice?uuid=${foo}&pub_key=${foo}`, result);
   });
@@ -219,6 +261,20 @@ describe('signalRoutes', () => {
       args: { packId: foo, packKey: foo },
     };
     const check = createCheck();
+    // SWARM (B3, 2026-09-29): the forms the app makes.
+    check(
+      `https://swarm.green/stickers/#pack_id=${foo}&pack_key=${foo}`,
+      result
+    );
+    check(
+      `https://swarm.green/stickers#pack_id=${foo}&pack_key=${foo}`,
+      result
+    );
+    check(
+      `swarm://swarm.green/stickers/#pack_id=${foo}&pack_key=${foo}`,
+      result
+    );
+    // Signal's forms, made before B3: still opened.
     check(
       `https://signal.art/addstickers/#pack_id=${foo}&pack_key=${foo}`,
       result
@@ -238,6 +294,8 @@ describe('signalRoutes', () => {
       key: 'showConversation',
       args: { token: foo },
     };
+    check(`swarm://show-conversation/?${args1}`, result1);
+    check(`swarm://show-conversation?${args1}`, result1);
     check(`sgnl://show-conversation/?${args1}`, result1);
     check(`sgnl://show-conversation?${args1}`, result1);
   });
@@ -248,6 +306,8 @@ describe('signalRoutes', () => {
       args: { token: foo },
     };
     const check = createCheck({ isRoute: true, hasWebUrl: false });
+    check(`swarm://start-call-lobby/?token=${foo}`, result);
+    check(`swarm://start-call-lobby?token=${foo}`, result);
     check(`sgnl://start-call-lobby/?token=${foo}`, result);
     check(`sgnl://start-call-lobby?token=${foo}`, result);
   });
@@ -258,6 +318,8 @@ describe('signalRoutes', () => {
       args: {},
     };
     const check = createCheck({ isRoute: true, hasWebUrl: false });
+    check('swarm://show-window/', result);
+    check('swarm://show-window', result);
     check('sgnl://show-window/', result);
     check('sgnl://show-window', result);
   });
@@ -268,7 +330,114 @@ describe('signalRoutes', () => {
       args: {},
     };
     const check = createCheck({ isRoute: true, hasWebUrl: false });
+    check('swarm://cancel-presenting/', result);
+    check('swarm://cancel-presenting', result);
     check('sgnl://cancel-presenting/', result);
     check('sgnl://cancel-presenting', result);
+  });
+
+  // SWARM (B3, 2026-09-29): every link the app makes is on swarm.green or in
+  // the swarm: scheme, also when it re-makes a link that came in a Signal form.
+  it('makes swarm.green username links, also from an old signal.me one', () => {
+    const encryptedUsername = foo;
+    const webUrl = `https://swarm.green/u/#eu/${foo}`;
+    const appUrl = `swarm://swarm.green/u/#eu/${foo}`;
+    assert.strictEqual(
+      contactByEncryptedUsernameRoute
+        .toWebUrl({ encryptedUsername })
+        .toString(),
+      webUrl
+    );
+    assert.strictEqual(
+      contactByEncryptedUsernameRoute
+        .toAppUrl({ encryptedUsername })
+        .toString(),
+      appUrl
+    );
+    for (const input of [
+      webUrl,
+      appUrl,
+      `https://signal.me/#eu/${foo}`,
+      `sgnl://signal.me/#eu/${foo}`,
+    ]) {
+      assert.strictEqual(toSignalRouteWebUrl(input)?.toString(), webUrl, input);
+      assert.strictEqual(toSignalRouteAppUrl(input)?.toString(), appUrl, input);
+    }
+  });
+
+  it('makes swarm.green phone-number links, also from an old signal.me one', () => {
+    const webUrl = 'https://swarm.green/u/#p/+1234567890';
+    const appUrl = 'swarm://swarm.green/u/#p/+1234567890';
+    for (const input of [
+      webUrl,
+      appUrl,
+      'https://signal.me/#p/+1234567890',
+      'sgnl://signal.me/#p/+1234567890',
+    ]) {
+      assert.strictEqual(toSignalRouteWebUrl(input)?.toString(), webUrl, input);
+      assert.strictEqual(toSignalRouteAppUrl(input)?.toString(), appUrl, input);
+    }
+  });
+
+  it('makes swarm.green group links, also from an old signal.group one', () => {
+    const inviteCode = fooNoSlash;
+    const webUrl = `https://swarm.green/g/#${inviteCode}`;
+    const appUrl = `swarm://swarm.green/g/#${inviteCode}`;
+    assert.strictEqual(
+      groupInvitesRoute.toWebUrl({ inviteCode }).toString(),
+      webUrl
+    );
+    assert.strictEqual(
+      groupInvitesRoute.toAppUrl({ inviteCode }).toString(),
+      appUrl
+    );
+    for (const input of [
+      webUrl,
+      appUrl,
+      `https://signal.group/#${inviteCode}`,
+      `sgnl://signal.group/#${inviteCode}`,
+      `sgnl://joingroup/#${inviteCode}`,
+    ]) {
+      assert.strictEqual(toSignalRouteWebUrl(input)?.toString(), webUrl, input);
+      assert.strictEqual(toSignalRouteAppUrl(input)?.toString(), appUrl, input);
+    }
+  });
+
+  it('makes swarm.green sticker pack links, also from an old signal.art one', () => {
+    const packId = 'c8c83285b547872ac4c589d64a6edd6a';
+    const packKey =
+      '59bb3a8860f0e6a5a83a5337a015c8d55ecd2193f82d77202f3b8112a845636e';
+    const params = `pack_id=${packId}&pack_key=${packKey}`;
+    const webUrl = `https://swarm.green/stickers/#${params}`;
+    const appUrl = `swarm://swarm.green/stickers/#${params}`;
+    assert.strictEqual(
+      artAddStickersRoute.toWebUrl({ packId, packKey }).toString(),
+      webUrl
+    );
+    assert.strictEqual(
+      artAddStickersRoute.toAppUrl({ packId, packKey }).toString(),
+      appUrl
+    );
+    for (const input of [
+      webUrl,
+      appUrl,
+      `https://signal.art/addstickers/#${params}`,
+      `sgnl://addstickers/?${params}`,
+    ]) {
+      assert.strictEqual(toSignalRouteWebUrl(input)?.toString(), webUrl, input);
+      assert.strictEqual(toSignalRouteAppUrl(input)?.toString(), appUrl, input);
+    }
+  });
+
+  it('makes a swarm://linkdevice link, also from an old sgnl one', () => {
+    const args = { uuid: 'abc', pubKey: 'BQ+/=', capabilities: ['nopni'] };
+    const appUrl =
+      'swarm://linkdevice?uuid=abc&pub_key=BQ%2B%2F%3D&capabilities=nopni';
+    assert.strictEqual(linkDeviceRoute.toAppUrl(args).toString(), appUrl);
+    assert.deepEqual(parseSignalRoute(appUrl), { key: 'linkDevice', args });
+    assert.deepEqual(parseSignalRoute(appUrl.replace('swarm:', 'sgnl:')), {
+      key: 'linkDevice',
+      args,
+    });
   });
 });

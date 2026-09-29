@@ -58,7 +58,7 @@ export default {
     firstName: casual.first_name,
     i18n,
 
-    usernameLink: 'https://signal.me/#eu/testtest',
+    usernameLink: 'https://swarm.green/u/#eu/testtest',
     usernameLinkColor: Proto.AccountRecord.UsernameLink.Color.PURPLE,
     usernameEditState: UsernameEditState.Editing,
     usernameLinkState: UsernameLinkState.Ready,
