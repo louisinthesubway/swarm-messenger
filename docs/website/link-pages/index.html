@@ -1,58 +1,163 @@
 <!doctype html>
 <html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex">
-<title>Open in SWARM Messenger</title>
-<style>
-  :root { color-scheme: dark; --bg:#0b0d10; --card:#14181d; --text:#f2f4f6; --muted:#9aa4ae; --orange:#ff8a1f; --orange-dark:#d66400; }
-  * { box-sizing: border-box; }
-  body { margin:0; min-height:100vh; display:grid; place-items:center; background:var(--bg); color:var(--text); font:16px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; padding:24px 16px; }
-  main { width:100%; max-width:480px; background:var(--card); border:1px solid #22282f; border-radius:20px; padding:32px 28px; text-align:center; }
-  .mark { width:72px; height:34px; margin:0 auto 20px; display:block; color:var(--orange); }
-  h1 { font-size:1.5rem; margin:0 0 8px; }
-  p { margin:0 0 16px; color:var(--muted); }
-  .btn { display:inline-block; width:100%; padding:14px 18px; border-radius:999px; font-weight:600; text-decoration:none; margin-top:6px; }
-  .primary { background:var(--orange); color:#111; }
-  .primary:hover { background:var(--orange-dark); color:#fff; }
-  .secondary { border:1px solid #2c343d; color:var(--text); }
-  small { display:block; margin-top:20px; color:var(--muted); font-size:.85rem; }
-  code { color:var(--text); word-break:break-all; }
-</style>
-</head>
-<body>
-<main>
-  <svg class="mark" viewBox="0 0 1000 467.95" aria-hidden="true" fill="currentColor"><path d="M0 0 L500.01 320.38 L1000 0 L818.26 15.25 L500.01 224.53 L181.74 15.25 Z"/></svg>
-  <h1 id="title">Open in SWARM Messenger</h1>
-  <p id="lede">This link opens in the SWARM Messenger app.</p>
-  <a id="open" class="btn primary" href="#">Open in SWARM Messenger</a>
-  <a class="btn secondary" href="https://swarm.green/download/">Get SWARM Messenger</a>
-  <small id="hint">Nothing after the # in this address is ever sent to swarm.green; it stays in your browser and goes only to the app.</small>
-</main>
-<script>
-(function () {
-  // Which kind of link this is, from the path: /u/ (username), /g/ (group invite), /stickers/ (sticker pack).
-  var kind = location.pathname.replace(/\/+$/, '').split('/').pop();
-  var copy = {
-    u:        ['Chat on SWARM Messenger', 'Someone shared their SWARM Messenger username with you. Open it in the app to start a chat.'],
-    g:        ['Join a group on SWARM Messenger', 'You were invited to a group. Open the invitation in the app to join.'],
-    stickers: ['Add a sticker pack', 'Open this sticker pack in SWARM Messenger to add it.']
-  }[kind];
-  if (copy) { document.getElementById('title').textContent = copy[0]; document.getElementById('lede').textContent = copy[1]; document.title = copy[0]; }
-  // The app form is the same address with swarm:// instead of https://, fragment included.
-  var appUrl = 'swarm://' + location.host + location.pathname + location.search + location.hash;
-  var open = document.getElementById('open');
-  open.href = appUrl;
-  if (!location.hash) {
-    open.textContent = 'This link is incomplete';
-    open.classList.remove('primary'); open.classList.add('secondary');
-    document.getElementById('hint').textContent = 'The part after the # is missing. Ask the sender for the full link, or scan their QR code again.';
-    return;
-  }
-  // Try the app once on arrival; browsers that need a click keep the button.
-  setTimeout(function () { location.href = appUrl; }, 400);
-})();
-</script>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <title>Open in SWARM Messenger</title>
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #0b0d10;
+        --card: #14181d;
+        --text: #f2f4f6;
+        --muted: #9aa4ae;
+        --orange: #ff8a1f;
+        --orange-dark: #d66400;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: var(--bg);
+        color: var(--text);
+        font:
+          16px/1.5 system-ui,
+          -apple-system,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+        padding: 24px 16px;
+      }
+      main {
+        width: 100%;
+        max-width: 480px;
+        background: var(--card);
+        border: 1px solid #22282f;
+        border-radius: 20px;
+        padding: 32px 28px;
+        text-align: center;
+      }
+      .mark {
+        width: 72px;
+        height: 34px;
+        margin: 0 auto 20px;
+        display: block;
+        color: var(--orange);
+      }
+      h1 {
+        font-size: 1.5rem;
+        margin: 0 0 8px;
+      }
+      p {
+        margin: 0 0 16px;
+        color: var(--muted);
+      }
+      .btn {
+        display: inline-block;
+        width: 100%;
+        padding: 14px 18px;
+        border-radius: 999px;
+        font-weight: 600;
+        text-decoration: none;
+        margin-top: 6px;
+      }
+      .primary {
+        background: var(--orange);
+        color: #111;
+      }
+      .primary:hover {
+        background: var(--orange-dark);
+        color: #fff;
+      }
+      .secondary {
+        border: 1px solid #2c343d;
+        color: var(--text);
+      }
+      small {
+        display: block;
+        margin-top: 20px;
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+      code {
+        color: var(--text);
+        word-break: break-all;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <svg
+        class="mark"
+        viewBox="0 0 1000 467.95"
+        aria-hidden="true"
+        fill="currentColor"
+      >
+        <path
+          d="M0 0 L500.01 320.38 L1000 0 L818.26 15.25 L500.01 224.53 L181.74 15.25 Z"
+        />
+      </svg>
+      <h1 id="title">Open in SWARM Messenger</h1>
+      <p id="lede">This link opens in the SWARM Messenger app.</p>
+      <a id="open" class="btn primary" href="#">Open in SWARM Messenger</a>
+      <a class="btn secondary" href="https://swarm.green/download/"
+        >Get SWARM Messenger</a
+      >
+      <small id="hint"
+        >Nothing after the # in this address is ever sent to swarm.green; it
+        stays in your browser and goes only to the app.</small
+      >
+    </main>
+    <script>
+      (function () {
+        // Which kind of link this is, from the path: /u/ (username), /g/ (group invite), /stickers/ (sticker pack).
+        var kind = location.pathname.replace(/\/+$/, '').split('/').pop();
+        var copy = {
+          u: [
+            'Chat on SWARM Messenger',
+            'Someone shared their SWARM Messenger username with you. Open it in the app to start a chat.',
+          ],
+          g: [
+            'Join a group on SWARM Messenger',
+            'You were invited to a group. Open the invitation in the app to join.',
+          ],
+          stickers: [
+            'Add a sticker pack',
+            'Open this sticker pack in SWARM Messenger to add it.',
+          ],
+        }[kind];
+        if (copy) {
+          document.getElementById('title').textContent = copy[0];
+          document.getElementById('lede').textContent = copy[1];
+          document.title = copy[0];
+        }
+        // The app form is the same address with swarm:// instead of https://, fragment included.
+        var appUrl =
+          'swarm://' +
+          location.host +
+          location.pathname +
+          location.search +
+          location.hash;
+        var open = document.getElementById('open');
+        open.href = appUrl;
+        if (!location.hash) {
+          open.textContent = 'This link is incomplete';
+          open.classList.remove('primary');
+          open.classList.add('secondary');
+          document.getElementById('hint').textContent =
+            'The part after the # is missing. Ask the sender for the full link, or scan their QR code again.';
+          return;
+        }
+        // Try the app once on arrival; browsers that need a click keep the button.
+        setTimeout(function () {
+          location.href = appUrl;
+        }, 400);
+      })();
+    </script>
+  </body>
 </html>
