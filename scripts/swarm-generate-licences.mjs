@@ -14,6 +14,8 @@
 import { readFile, writeFile } from 'node:fs/promises';
 import { join } from 'node:path';
 import packageJson from '../package.json' with { type: 'json' };
+// The document's text lives with the app's code, where its test runs.
+// oxlint-disable-next-line signal-desktop/no-restricted-paths
 import { buildLicencesDocument } from '../ts/util/swarm/licencesDocument.std.ts';
 
 const ROOT = join(import.meta.dirname, '..');
