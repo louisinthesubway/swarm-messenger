@@ -79,7 +79,14 @@ export type WorkerRequestType =
   /** A new unified address of the open wallet, for one conversation. */
   | Readonly<{ kind: 'new-address' }>
   /** Every value transfer of one transaction, for binding a payment notice. */
-  | Readonly<{ kind: 'find-transaction'; txid: string }>;
+  | Readonly<{ kind: 'find-transaction'; txid: string }>
+  // SWARM addition (B6, 2026-09-29): recovery phrase export.
+  /**
+   * The open wallet's recovery phrase, checked and normalized, as UTF-8 bytes
+   * in a buffer of their own (the worker transfers it, keeping no copy). Only
+   * app/SwarmRecoveryPhraseExport.main.ts asks, for the reveal window.
+   */
+  | Readonly<{ kind: 'seed-phrase' }>;
 
 export type WorkerMessageType = Readonly<{
   id: number;

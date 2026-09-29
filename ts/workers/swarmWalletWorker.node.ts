@@ -6,7 +6,8 @@
 // swarmWalletHandler.node.ts for what it does.
 //
 // Nothing here writes to a log: the main process logs outcomes, by category,
-// from the replies. A reply never carries the recovery phrase.
+// from the replies. A reply carries the recovery phrase only for the
+// 'seed-phrase' request (B6), as bytes that are transferred, not copied.
 
 import { parentPort, workerData } from 'node:worker_threads';
 
@@ -84,7 +85,16 @@ async function drain(): Promise<void> {
       } catch (error) {
         reply = { id: message.id, ok: false, error: toWorkerError(error) };
       }
-      port.postMessage(reply);
+      // SWARM change (B6, 2026-09-29): a reply that is a byte buffer (the
+      // recovery phrase) is transferred, not copied, so this thread keeps
+      // none of it.
+      if (reply.ok && reply.value instanceof Uint8Array) {
+        // The handler makes the buffer with TextEncoder: an ArrayBuffer, never
+        // a SharedArrayBuffer.
+        port.postMessage(reply, [reply.value.buffer as ArrayBuffer]);
+      } else {
+        port.postMessage(reply);
+      }
     }
   } finally {
     draining = false;
