@@ -21,6 +21,7 @@ import {
   signWalletChallenge,
   walletChallengeMessage,
 } from '../../util/swarm/walletIdentity.node.ts';
+import { isSwarmIdentityE164 } from '../../util/swarm/swarmIdentityE164.std.ts';
 
 type Vector = {
   readonly name: string;
@@ -139,6 +140,16 @@ describe('SWARM wallet sign-in: identity derivation', () => {
     for (const vector of VECTORS) {
       assert.isTrue(isSwarmAccountIdentifier(vector.accountIdentifier));
       assert.strictEqual(vector.accountIdentifier.length, '+888'.length + 11);
+    }
+  });
+
+  // SWARM addition (B4, 2026-09-29): the display code's shape check (a std
+  // file, no Node crypto) agrees with the derivation, so every derived
+  // identifier is one the interface hides.
+  it('derives identifiers the interface recognises and hides', () => {
+    for (const vector of VECTORS) {
+      const { accountIdentifier } = deriveWalletIdentity(phraseFor(vector));
+      assert.isTrue(isSwarmIdentityE164(accountIdentifier), vector.name);
     }
   });
 
