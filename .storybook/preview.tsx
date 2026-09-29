@@ -147,9 +147,11 @@ window.SignalContext = {
   getLocaleDisplayNames: () => ({ en: { en: 'English' } }),
   getResolvedMessagesLocale: () => 'en',
 
+  // SWARM change (B5, 2026-09-29): the same mirror the app uses
+  // (build/optional-resources.json), not Signal's update host.
   getLocalizedEmojiList: async locale => {
     const data = await fetch(
-      `https://updates2.signal.org/static/android/emoji/search/13/${locale}.json`
+      `https://static.swarm.green/static/android/emoji/search/18/${locale}.json`
     );
     const json: unknown = await data.json();
     const result = parseUnknown(LocaleEmojiListSchema, json);
