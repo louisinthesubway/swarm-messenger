@@ -18,9 +18,10 @@ one creates its own wallet, becomes its own account, and then A and B message ea
 | Setting a username, and finding the other person by that username                         | Stickers and GIF search (no sticker packs or GIF service on this server)                 |
 | Text messages both ways, end-to-end encrypted, delivered in < 1 s                         | Voice and video calls (no calling server yet)                                            |
 | Message request, Accept, read and delivery ticks                                          | Call links (their credentials fail to verify)                                            |
-| Groups: create one, the other person sees it, messages both ways (2026-09-28, section 11) | Group photos: the other members do not see them yet                                      |
-| Closing both apps and opening them again: same accounts, same chat                        | Linking a second device, and the Linked devices screen                                   |
-| Photos, both ways (sent, stored on `cdn.chat.swarm.green`, shown)                         | "Restore a wallet" landing on the same account (built, not yet tested live)              |
+| Groups: create one, the other person sees it, messages both ways (2026-09-28, section 11) | Linking a second device, and the Linked devices screen                                   |
+| Group photos: one member sets a photo, the others see it (2026-09-29, section 11)         | "Restore a wallet" landing on the same account (built, not yet tested live)              |
+| Closing both apps and opening them again: same accounts, same chat                        |                                                                                          |
+| Photos, both ways (sent, stored on `cdn.chat.swarm.green`, shown)                         |                                                                                          |
 
 This is the **staging** server. Everything on it is test data and may be wiped at any time. Treat
 both wallets as throwaway: never send SWARM to them.
@@ -159,7 +160,7 @@ Then the restart test:
   app sends a chat's messages strictly in order. Hover over it, click **⋯**, **Delete**, then
   **Delete for me**; the messages behind it go out within a few minutes.
 - No calls, no call links, no stickers, no second devices (see section 1). Groups work since
-  2026-09-28 (section 11), without group photos.
+  2026-09-28, group photos since 2026-09-29 (section 11).
 - Settings and contacts sync to the server since 2026-09-28 (Signal's storage service, end-to-end
   encrypted as in Signal). A brand-new account's first read of it answers `404` once in the log;
   that is expected, the app writes it right after.
@@ -358,8 +359,8 @@ it, B gets an invitation to accept instead.
 1. Click the **pencil** next to "Chats" (**New chat**), then **New group**, the first line.
 2. **"Choose members".** Click **Test B** under Contacts. The name moves up to the top; click
    **Next**.
-3. **"Name this group".** Type a name, for example `Test group`. Leave the photo empty (see
-   "Not yet" below). Click **Create**.
+3. **"Name this group".** Type a name, for example `Test group`. Leave the photo empty here and
+   set it afterwards as in "Group photos" below, which is the way that was tested. Click **Create**.
 4. The group opens: its name, "Test B and you", and "You created the group."
 
 **In window B:**
@@ -383,10 +384,13 @@ it, B gets an invitation to accept instead.
 - **New group turns the window blank**: that was an old server setting (section 9). Quit and
   restart the app.
 
+**Group photos (since 2026-09-29):** in the group, click its name at the top, then the group's
+name in the panel that opens (**Edit group**), the round picture, **Photo**, choose a picture,
+**Save**, and **Save** again; the other members see the photo within seconds, and still after a
+restart (tested 2026-09-29 by Opus M6d with two test instances, not yet with the installed app).
+
 **Not yet:**
 
-- **Group photos.** A photo can be set, but the other members do not see it yet: the photo server
-  does not publish group photos. Leave it empty for now.
 - **Group calls**: there is no calling server.
 - Like everything on this server, groups are test data. They are kept on disk and in the server's
   nightly snapshot, but the staging server may still be wiped.
