@@ -20,6 +20,10 @@ import {
   TopMatter,
 } from '../util/StepComponents.dom.tsx';
 import { RECOVERY_PHRASE_WORDS } from '../../../util/swarm/bip39Wordlist.std.ts';
+import {
+  countRecoveryPhraseWords,
+  recoveryPhraseFromText,
+} from '../../../util/swarm/recoveryPhraseText.std.ts';
 
 import type { LocalizerType } from '../../../types/I18N.std.ts';
 import type { ActionCreator } from '../../../state/types.std.ts';
@@ -57,10 +61,11 @@ export function WalletSignInScreen({
   const [writtenDown, setWrittenDown] = useState(false);
 
   const onRestore = useCallback(() => {
-    if (countWords(typedPhrase) !== RECOVERY_PHRASE_WORDS) {
+    const phrase = phraseToSignInWith(typedPhrase);
+    if (phrase == null) {
       return;
     }
-    signInWithWallet({ phrase: typedPhrase, workflow });
+    signInWithWallet({ phrase, workflow });
   }, [signInWithWallet, typedPhrase, workflow]);
 
   const inProgress = status.type === 'in-progress';
@@ -325,6 +330,20 @@ function FailureText({
 }
 
 function countWords(value: string): number {
-  const trimmed = value.trim();
-  return trimmed === '' ? 0 : trimmed.split(/\s+/u).length;
+  // SWARM change (B6, 2026-09-29): a saved file's warning line is not a word.
+  return countRecoveryPhraseWords(value);
+}
+
+/**
+ * SWARM addition (B6, 2026-09-29): what "I have a recovery phrase" signs in
+ * with, from whatever was typed or pasted - including a whole file saved from
+ * the Wallet tab's "Recovery phrase", warning line and all. Undefined until
+ * there are exactly 24 words; checkRecoveryPhrase does the rest of the
+ * normalization and the checksum.
+ */
+export function phraseToSignInWith(typed: string): string | undefined {
+  if (countWords(typed) !== RECOVERY_PHRASE_WORDS) {
+    return undefined;
+  }
+  return recoveryPhraseFromText(typed);
 }

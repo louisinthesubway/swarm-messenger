@@ -12505,6 +12505,142 @@
     "messageformat": "Testnet",
     "description": "Developer switch option."
   },
+  "icu:SwarmWallet__recovery--title": {
+    "messageformat": "Recovery phrase",
+    "description": "SWARM (B6): recovery phrase export. Wallet tab: heading of the card that shows the 24 recovery words in a separate window."
+  },
+  "icu:SwarmWallet__recovery--body": {
+    "messageformat": "Your 24 recovery words are this account and the money in this wallet: anyone who has them owns both.",
+    "description": "SWARM (B6): recovery phrase export. Wallet tab: the one sentence under \"Recovery phrase\", before the button that shows the words."
+  },
+  "icu:SwarmWallet__recovery--button": {
+    "messageformat": "Show recovery phrase",
+    "description": "SWARM (B6): recovery phrase export. Wallet tab: button that opens the recovery phrase window, after Touch ID or Windows Hello where the computer has it."
+  },
+  "icu:SwarmWallet__recovery--not-ready": {
+    "messageformat": "The wallet is not open yet, so its words cannot be shown. Try again when your balance is shown.",
+    "description": "SWARM (B6): recovery phrase export. Wallet tab: shown when the recovery phrase was asked for but no wallet is open."
+  },
+  "icu:SwarmWallet__recovery--not-confirmed": {
+    "messageformat": "Your computer did not confirm that it is you, so the words were not shown.",
+    "description": "SWARM (B6): recovery phrase export. Wallet tab: Touch ID or Windows Hello was cancelled or failed."
+  },
+  "icu:SwarmWallet__recovery--failed": {
+    "messageformat": "The recovery phrase window could not be opened.",
+    "description": "SWARM (B6): recovery phrase export. Wallet tab: an unexpected failure opening the recovery phrase window."
+  },
+  "icu:SwarmWallet__recovery--window-title": {
+    "messageformat": "Recovery phrase",
+    "description": "SWARM (B6): recovery phrase export. Title bar of the separate window that shows the recovery phrase."
+  },
+  "icu:SwarmWallet__recovery--heading": {
+    "messageformat": "Your recovery phrase",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: heading."
+  },
+  "icu:SwarmWallet__recovery--warning": {
+    "messageformat": "Anyone who has these 24 words owns this account and the money in its wallet. Show them only when nobody can see your screen, and never type them into a website or send them to anyone.",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: the warning shown above everything else."
+  },
+  "icu:SwarmWallet__recovery--type-word": {
+    "messageformat": "To show the words, type {word} below.",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window, when the computer cannot confirm the person itself (Linux, or no Touch ID / Windows Hello): word is the English word the person must type, \"reveal\"; keep it as it is."
+  },
+  "icu:SwarmWallet__recovery--wait": {
+    "messageformat": "You can show them in {seconds, plural, one {# second} other {# seconds}}.",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: the countdown of the mandatory three-second wait before the words can be shown."
+  },
+  "icu:SwarmWallet__recovery--wrong-word": {
+    "messageformat": "Type the word exactly as shown and wait for the countdown, then try again.",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: the typed word was wrong or came too early."
+  },
+  "icu:SwarmWallet__recovery--show": {
+    "messageformat": "Show the words",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: button that shows the 24 words once the word is typed and the wait is over."
+  },
+  "icu:SwarmWallet__recovery--cancel": {
+    "messageformat": "Cancel",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: closes the window, or leaves the save confirmation, without doing anything."
+  },
+  "icu:SwarmWallet__recovery--loading": {
+    "messageformat": "Reading the words from your wallet…",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: shown while the words are read."
+  },
+  "icu:SwarmWallet__recovery--word-list": {
+    "messageformat": "Your 24 recovery words, in order",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: accessible name of the numbered list of words."
+  },
+  "icu:SwarmWallet__recovery--closes-in": {
+    "messageformat": "This window closes by itself in {seconds, plural, one {# second} other {# seconds}}.",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: countdown until the window closes on its own (two minutes)."
+  },
+  "icu:SwarmWallet__recovery--copy": {
+    "messageformat": "Copy",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: copies the 24 words to the clipboard."
+  },
+  "icu:SwarmWallet__recovery--copied": {
+    "messageformat": "Copied. The clipboard will be cleared in {seconds, plural, one {# second} other {# seconds}} if it still holds the words.",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: after Copy. seconds is 60."
+  },
+  "icu:SwarmWallet__recovery--copy-failed": {
+    "messageformat": "The words could not be copied.",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: Copy failed."
+  },
+  "icu:SwarmWallet__recovery--save": {
+    "messageformat": "Save to file",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: starts saving the words to a plain text file; a confirmation comes first."
+  },
+  "icu:SwarmWallet__recovery--save-confirm": {
+    "messageformat": "The file will be plain text, not encrypted: anyone who opens it owns this account and its money. Keep it where only you can reach it, such as a USB stick in a safe place, and not in a folder that syncs to the cloud.",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: the confirmation step before the file is written."
+  },
+  "icu:SwarmWallet__recovery--save-confirm-button": {
+    "messageformat": "Save plain text file",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: confirms writing the unencrypted file; the save dialog opens next."
+  },
+  "icu:SwarmWallet__recovery--saved": {
+    "messageformat": "Saved. To sign in again, choose “Restore a wallet” and paste the words, or the whole file.",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: the file was written. The quoted text is the sign-in button icu:StandaloneRegistration--WalletSignIn--restore."
+  },
+  "icu:SwarmWallet__recovery--save-failed": {
+    "messageformat": "The file could not be saved.",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: writing the file failed."
+  },
+  "icu:SwarmWallet__recovery--close": {
+    "messageformat": "Close",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: closes the window."
+  },
+  "icu:SwarmWallet__recovery--unreadable": {
+    "messageformat": "The words could not be read from your wallet. Nothing was shown.",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: the wallet did not give its words, or they were not this account's."
+  },
+  "icu:SwarmWallet__recovery--used": {
+    "messageformat": "This window has already shown the words. Close it and ask again from the Wallet tab.",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: the words are sent to a window only once."
+  },
+  "icu:SwarmWallet__recovery--error": {
+    "messageformat": "Something went wrong. Nothing was shown.",
+    "description": "SWARM (B6): recovery phrase export. Recovery phrase window: an unexpected failure."
+  },
+  "icu:SwarmWallet__recovery--os-prompt--mac": {
+    "messageformat": "show your recovery phrase",
+    "description": "SWARM (B6): recovery phrase export. macOS Touch ID prompt, completed by the system as \"SWARM Messenger is trying to show your recovery phrase\"."
+  },
+  "icu:SwarmWallet__recovery--os-prompt--windows": {
+    "messageformat": "Confirm it’s you to show your recovery phrase.",
+    "description": "SWARM (B6): recovery phrase export. Body text of the Windows Hello prompt before the recovery phrase is shown."
+  },
+  "icu:SwarmWallet__recovery--save-dialog-title": {
+    "messageformat": "Save recovery phrase",
+    "description": "SWARM (B6): recovery phrase export. Title of the system save dialog for the recovery phrase file."
+  },
+  "icu:SwarmWallet__recovery--save-file-type": {
+    "messageformat": "Text file",
+    "description": "SWARM (B6): recovery phrase export. Save dialog: the name of the .txt file type."
+  },
+  "icu:SwarmWallet__recovery--file-warning": {
+    "messageformat": "SWARM Messenger recovery phrase. This file is NOT encrypted: anyone who reads these 24 words owns the account and the money in its wallet.",
+    "description": "SWARM (B6): recovery phrase export. The first line of the saved recovery phrase file, written after a # sign. Plain text, one line."
+  },
   "icu:SwarmChat__notice--label": {
     "messageformat": "SWARM payment",
     "description": "SWARM (M3 wave 2): a chat-list preview, a notification or a quote of a SWARM payment notice. No amount on purpose."

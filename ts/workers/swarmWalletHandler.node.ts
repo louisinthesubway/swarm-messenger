@@ -23,6 +23,7 @@ import type {
   WalletTransaction,
 } from 'swarm-wallet-core';
 
+import { checkRecoveryPhrase } from '../util/swarm/bip39.node.ts';
 import { codeOf, codedError, messageOf } from './swarmWalletProtocol.std.ts';
 import type {
   FoundTransferType,
@@ -113,6 +114,9 @@ export class SwarmWalletHandler {
         return this.#requireWallet().newAddress();
       case 'find-transaction':
         return this.#findTransaction(request.txid);
+      // SWARM addition (B6, 2026-09-29): recovery phrase export.
+      case 'seed-phrase':
+        return this.#seedPhraseBytes();
       default:
         throw codedError(
           'unexpected',
@@ -182,6 +186,26 @@ export class SwarmWalletHandler {
     const wallet = this.#requireWallet();
     const { phrase } = await wallet.seedPhrase();
     return this.#restore(location, phrase, birthdayHeight);
+  }
+
+  /**
+   * SWARM addition (B6, 2026-09-29): the words of the open wallet, for the
+   * person who asked to see them. Checked here as a BIP-39 phrase, so what is
+   * shown is exactly what "I have a recovery phrase" accepts; a wallet that
+   * answered anything else is refused rather than shown. The bytes have a
+   * buffer of their own so the worker can transfer it instead of copying it.
+   */
+  async #seedPhraseBytes(): Promise<Uint8Array<ArrayBuffer>> {
+    const { phrase } = await this.#requireWallet().seedPhrase();
+    const check = checkRecoveryPhrase(phrase);
+    if (!check.valid) {
+      // The reason only: never the words.
+      throw codedError(
+        'malformed-response',
+        `the wallet's recovery phrase is not a valid 24-word phrase (${check.problem.type})`
+      );
+    }
+    return new TextEncoder().encode(check.phrase);
   }
 
   async #close(): Promise<void> {

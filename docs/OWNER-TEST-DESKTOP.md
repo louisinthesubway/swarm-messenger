@@ -545,6 +545,60 @@ calls with more than two people.
 
 ---
 
+## 13. Recovery phrase: reveal, save, sign in again
+
+Added 2026-09-29 (B6). **Not yet seen live**: written from the code and its tests, before anyone ran
+it on this PC. Use window A's throwaway account from section 4. Do this where nobody can see your
+screen, and do not photograph it: on a real account these 24 words are the account and its money.
+
+**Reveal:**
+
+1. In window A click **Wallet**. Once the balance is shown (or "offline" with a balance), a card
+   **Recovery phrase** is at the bottom: "Your 24 recovery words are this account and the money in
+   this wallet: anyone who has them owns both." Click **Show recovery phrase**.
+2. A small window **Recovery phrase** opens on top of A. It says "Your recovery phrase" and a warning
+   that anyone who has these words owns the account. On a PC with Windows Hello (fingerprint, face or
+   PIN), Windows asks for it first. On this PC it will most likely not: the Windows Hello support needs
+   Visual Studio to build (section 2), so instead the window asks you to type `reveal`.
+3. Type `reveal`. For the first 3 seconds a countdown says "You can show them in … seconds" and
+   **Show the words** stays grey; then click it.
+4. The 24 words appear, numbered 1 to 24 in three columns, in lower case. Under them: "This window
+   closes by itself in 120 seconds", counting down, and **Copy**, **Save to file**, **Close**.
+5. Try a screenshot (Win+Shift+S): the window must come out **black**. The main window A must not
+   show the words anywhere.
+6. Click **Copy**: "Copied. The clipboard will be cleared in 60 seconds if it still holds the words."
+   Paste into Notepad to check, close Notepad without saving, and after a minute paste again: nothing
+   comes out.
+
+**Save:**
+
+7. Click **Save to file**. A box says the file will be plain text, not encrypted. Click **Save plain
+   text file**. Windows' save dialog suggests `swarm-messenger-recovery-phrase.txt` in Documents;
+   save it there. The window says "Saved. To sign in again, choose “Restore a wallet” and paste the
+   words, or the whole file."
+8. Open the file in Notepad: a first line starting with `# SWARM Messenger recovery phrase. This file
+is NOT encrypted…`, an empty line, then the 24 words on one line. Close Notepad.
+9. Click **Close** (or wait: the window closes itself after two minutes). Clicking **Show recovery
+   phrase** again opens a new window and asks again.
+
+**Sign in again:**
+
+10. Quit A (**File → Quit SWARM Messenger**). Rename the folder `D:\swarm-messenger\.profiles\a` to
+    `a-before-b6` (so you can put it back), then start A again with its `.cmd` file.
+11. A opens on "Your SWARM wallet". Click **Restore a wallet**. Open the saved file in Notepad, press
+    Ctrl+A, Ctrl+C, and paste everything, warning line included, into "Your 24 words". Click
+    **Restore my account**.
+12. You should land on "Set up your profile" or the chat list **as the same account**: in B, the
+    chat with A continues. A's old messages are not on this computer any more: they were in the
+    renamed folder.
+13. Delete the saved file (and empty the Recycle Bin) when you are done.
+
+**What to report:** whether Windows Hello or the typed word was asked for, whether the screenshot was
+black, whether the clipboard was empty after a minute, and whether step 12 reached the same account
+(the account number shown in Settings, before and after).
+
+---
+
 ## Appendix: the same test from a fresh clone
 
 For anyone not on the owner's PC. Needs Windows, Git, Node `24.19.0` and pnpm 11. This was checked

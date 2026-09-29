@@ -49,6 +49,9 @@ const sandboxPreload = {
   'preload/permissions': 'ts/windows/permissions/preload.preload.ts',
   'preload/screenShare': 'ts/windows/screenShare/preload.preload.ts',
   'preload/sticker-creator': 'ts/windows/sticker-creator/preload.preload.ts',
+  // SWARM addition (B6, 2026-09-29): the recovery phrase window.
+  'preload/swarmRecoveryPhrase':
+    'ts/windows/swarmRecoveryPhrase/preload.preload.ts',
 };
 
 const sandboxDOM = {
@@ -59,6 +62,8 @@ const sandboxDOM = {
   'dom/pdf': 'ts/windows/pdf/app.dom.tsx',
   'dom/permissions': 'ts/windows/permissions/app.dom.tsx',
   'dom/screenShare': 'ts/windows/screenShare/app.dom.tsx',
+  // SWARM addition (B6, 2026-09-29): the recovery phrase window.
+  'dom/swarmRecoveryPhrase': 'ts/windows/swarmRecoveryPhrase/app.dom.tsx',
 };
 
 const defaults = {

@@ -19,6 +19,7 @@ import {
 import type { SwarmNetworkProfile } from 'swarm-wallet-core';
 
 import { checkRecoveryPhrase } from './bip39.node.ts';
+import { BIP39_ENGLISH_WORDLIST } from './bip39Wordlist.std.ts';
 import { deriveWalletIdentity } from './walletIdentity.node.ts';
 import { parseSwmAmount } from './swmAmount.std.ts';
 import {
@@ -538,11 +539,57 @@ export function isInsufficientFunds(message: string): boolean {
  * a debug log that is later shared links its owner to every payment to it.
  */
 export function redactForLog(text: string): string {
-  return (
+  return redactRecoveryWords(
     text
       // bech32 / bech32m: human-readable part, separator, 20+ data characters.
       .replace(/\b[a-z]{1,15}1[02-9ac-hj-np-z]{20,}\b/gi, '<address>')
       // Base58Check transparent addresses.
       .replace(/\b[st][13mM2][1-9A-HJ-NP-Za-km-z]{20,40}\b/g, '<address>')
   );
+}
+
+/**
+ * SWARM addition (B6, 2026-09-29): six or more BIP-39 words in a row are taken
+ * for a recovery phrase, or part of one, and replaced. Ordinary English has
+ * runs like that only rarely, and a log line that loses a few words is a small
+ * price next to one that keeps a phrase.
+ */
+const RECOVERY_WORDS_IN_A_ROW = 6;
+
+const BIP39_WORDS: ReadonlySet<string> = new Set(BIP39_ENGLISH_WORDLIST);
+
+function redactRecoveryWords(text: string): string {
+  return text.replace(/[A-Za-z]+(?:[\s,;]+[A-Za-z]+)*/g, sequence => {
+    // Even indices are words, odd indices the separators between them.
+    const tokens = sequence.split(/([\s,;]+)/);
+    let result = '';
+    let runStart = -1;
+    const closeRun = (end: number) => {
+      const words = (end - runStart + 1) / 2;
+      result +=
+        words >= RECOVERY_WORDS_IN_A_ROW
+          ? '<words>'
+          : tokens.slice(runStart, end).join('');
+      runStart = -1;
+    };
+    for (let index = 0; index < tokens.length; index += 2) {
+      const word = tokens[index] ?? '';
+      const separator = index > 0 ? (tokens[index - 1] ?? '') : '';
+      if (BIP39_WORDS.has(word.toLowerCase())) {
+        if (runStart === -1) {
+          result += separator;
+          runStart = index;
+        }
+      } else {
+        if (runStart !== -1) {
+          closeRun(index - 1);
+        }
+        result += separator + word;
+      }
+    }
+    if (runStart !== -1) {
+      closeRun(tokens.length);
+    }
+    return result;
+  });
 }

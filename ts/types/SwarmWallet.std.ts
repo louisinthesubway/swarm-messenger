@@ -26,6 +26,9 @@ export const SWARM_WALLET_CHANNEL = {
   newAddress: 'swarm-wallet:new-address',
   checkAddress: 'swarm-wallet:check-address',
   findTransaction: 'swarm-wallet:find-transaction',
+  // SWARM addition (B6, 2026-09-29): opens the recovery phrase window. The
+  // words never come back on this channel; see SwarmRecoveryPhrase.std.ts.
+  revealRecoveryPhrase: 'swarm-wallet:reveal-recovery-phrase',
 } as const;
 
 /** A count of zatoshi (1 SWM = 100 000 000), as a decimal string. */
@@ -319,6 +322,26 @@ export const FindTransactionResultSchema = z.discriminatedUnion('status', [
 ]);
 export type FindTransactionResultType = z.infer<
   typeof FindTransactionResultSchema
+>;
+
+/**
+ * SWARM addition (B6, 2026-09-29): what the Wallet pane hears back when it
+ * asks for the recovery phrase window. Never the words.
+ */
+export const RevealRecoveryPhraseResultSchema = z.discriminatedUnion('ok', [
+  /** The window is open (or was already, and is brought forward). */
+  z.object({ ok: z.literal(true) }),
+  z.object({
+    ok: z.literal(false),
+    /**
+     * `not-ready`: no wallet is open for this account. `not-confirmed`: Touch
+     * ID or Windows Hello did not confirm the person, so nothing was opened.
+     */
+    refusal: z.enum(['not-ready', 'not-confirmed']),
+  }),
+]);
+export type RevealRecoveryPhraseResultType = z.infer<
+  typeof RevealRecoveryPhraseResultSchema
 >;
 
 /** Where a transaction can be looked up. Both explorers use /transactions/. */

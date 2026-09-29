@@ -674,3 +674,73 @@ the reproducible-build workflows (they download Signal's apt key), upstream
 package metadata under `packages/`, and `scripts/get-emoji-locales.mjs` /
 `scripts/get-jumbomoji.mjs` (guarded at run time by `refuseSignalUrl`) still
 name Signal hosts.
+
+## 3l. Recovery phrase export (B6)
+
+2026-09-29: a person who is signed out, or moves to another computer, gets
+back into their account only with the 24 words. The words were shown once, at
+sign-up. The Wallet tab can now show them again, and copy them or save them to
+a file. This is the one place where the words go from the main process to a
+window after sign-in; everything else keeps the rule of section 5 ("the
+renderer never receives a seed").
+
+| What                                                                                                      | Change                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| --------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Wallet tab (`ts/components/SwarmWalletPane.dom.tsx`, `ts/state/smart/SwarmWalletTab.preload.tsx`)         | A "Recovery phrase" card while a wallet is open (ready, or offline with a balance): "Your 24 recovery words are this account and the money in this wallet: anyone who has them owns both." and **Show recovery phrase**. The button calls `swarm-wallet:reveal-recovery-phrase` (`ts/services/swarmWallet.preload.ts`), whose answer is only "opened" or a refusal, never the words.                                                                                                                                                                    |
+| Local confirmation (`app/SwarmRecoveryPhraseExport.main.ts`)                                              | macOS: `systemPreferences.promptTouchID` when `canPromptTouchID()`; cancelled or failed means nothing opens. Windows: Windows Hello through the existing `@signalapp/windows-ucv` addon (`promptOSAuth`, the check upstream uses before it shows a backup key) when the addon is built and a verification device exists. Everywhere else, and on a Mac or PC without either: the person types `reveal` in the window, and the main process refuses the words until 3 seconds after the window opened (`ts/util/swarm/recoveryPhraseGate.node.ts`).      |
+| Reveal window (`app/main.main.ts` `createSwarmRecoveryPhraseWindow`, `swarm_recovery_phrase.html`)        | 560 × 660, beside the About and Licences windows: modal to the main window, always on top, not resizable, no taskbar entry, no menu, `devTools: false`, sandboxed, context-isolated, no navigation (`handleCommonWindowEvents`), no webviews, a CSP with no network. `setContentProtection(true)` before it is drawn and again when shown, and kept on when the screen-security setting is switched off while it is open. Closes itself 2 minutes after it opened and again 2 minutes after the words are shown, with a countdown.                      |
+| The words' path (`ts/types/SwarmRecoveryPhrase.std.ts`, `ts/windows/swarmRecoveryPhrase/`)                | Worker request `'seed-phrase'` (`ts/workers/swarmWalletProtocol.std.ts`, `swarmWalletHandler.node.ts`) reads `seedPhrase()` from swarm-wallet-core, checks it as a 24-word BIP-39 phrase, normalizes it and answers UTF-8 bytes in a transferred buffer. `SwarmWalletService.readRecoveryPhrase` refuses words that do not derive the signed-in account's key. The export sends them on `swarm-recovery-phrase:phrase` to the reveal window's webContents only, once, while armed, and zeroes its bytes as they are sent; it then keeps only a SHA-256. |
+| Copy, Save to file, Close (`ts/components/SwarmRecoveryPhraseWindow.dom.tsx`)                             | Words numbered 1-24, three columns, monospace, lower case. **Copy**: `clipboard.writeText`, cleared 60 s later if it still holds the words (and at quit), and the window says so. **Save to file**: a confirmation that the file is plain text, then `dialog.showSaveDialog` (default `Documents/swarm-messenger-recovery-phrase.txt`, `.txt` filter), then a file with a `# …NOT encrypted…` warning line, a blank line and the words, mode 0600. Copy and save act only on the exact words the window was shown (compared by hash).                   |
+| Sign-in (`ts/components/standaloneRegistration/stages/WalletSignIn.dom.tsx`, `recoveryPhraseText.std.ts`) | "Restore a wallet" and the Wallet tab's restore form accept the whole saved file: `#` lines are dropped, the rest joined, then `checkRecoveryPhrase` as before (`phraseToSignInWith`).                                                                                                                                                                                                                                                                                                                                                                  |
+| Logs                                                                                                      | Outcomes only ("the words were shown", "save: written"), never the words or the file path. `redactForLog` (`ts/util/swarm/walletIpc.node.ts`) also replaces any run of six or more BIP-39 words.                                                                                                                                                                                                                                                                                                                                                        |
+| Strings                                                                                                   | English only: `icu:SwarmWallet__recovery--*` (34 strings, each with a description).                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Tests                                                                                                     | `ts/test-node/swarm/recoveryPhraseExport_test.node.ts` (throwaway phrase → wallet restored offline → closed, reopened → `'seed-phrase'` answers the same normalized words and identity; the saved file signs in as the same account), `recoveryPhraseGate_test.node.ts` (one window, once, word and wait, zeroing, clipboard), `SwarmRecoveryPhraseWindow_test.preload.tsx` (the window's screens; the saved file through the sign-in stage's `phraseToSignInWith`), `SwarmWalletPane_test.preload.tsx` (the card).                                     |
+
+**Threat model.** What this protects against:
+
+- **A compromised main window** (for example script injected through a
+  message): it can ask for the window to open, but the words go only to the
+  reveal window's own webContents, whose page loads nothing from the network,
+  and only after the person confirmed locally. It cannot ask twice.
+- **Someone at an unlocked computer, in passing**: Touch ID or Windows Hello
+  where the computer has them. The typed word and the 3-second wait elsewhere
+  are a deliberate pause, **not authentication**: anyone at the keyboard can
+  type `reveal`.
+- **Screenshots, screen recording and screen sharing** on macOS and Windows
+  (content protection; the window shows black). A phone camera pointed at the
+  screen is not stopped by anything.
+- **Words left behind**: the window closes itself after two minutes; the
+  clipboard is cleared after a minute if it still holds them; the main process
+  zeroes its bytes and keeps a hash; no log line carries them.
+
+What it does not protect against, on purpose or because it cannot:
+
+- **Malware running as the person.** It can read the wallet file key from the
+  OS keychain, read process memory, log keystrokes or read the saved file.
+  Nothing in an Electron app stops that.
+- **Linux screen capture.** Electron's content protection does nothing on
+  Linux.
+- **Clipboard history and sync** (Windows' Win+V history and cloud clipboard,
+  clipboard managers) may keep their own copy for longer than the minute.
+- **The saved file is plain text.** Anyone who opens it owns the account and
+  the money; the window says so before it writes, and the file's first line
+  says so again.
+- **JavaScript strings cannot be wiped.** The bytes the main process and the
+  preload hold are zeroed; the strings the wallet library and the page make
+  are dropped and left to the garbage collector.
+
+Deliberately not done:
+
+- **Windows Hello on builds without the `@signalapp/windows-ucv` addon.** A
+  machine built without Visual Studio (the owner's PC, section 1) has no addon,
+  and falls back to the typed word. Proper OS confirmation on every Windows
+  build is a proposal: it needs that native module built for release (the CI
+  installers) or another native module; no OS API is simulated.
+- **Linux OS confirmation.** `promptOSAuth` can ask polkit (`pkcheck`), but only
+  once a polkit action is installed by the package, which the AppImage cannot
+  do. Left for a packaging change.
+- **Hold-to-reveal.** The typed word was chosen; the 3-second wait applies to
+  it.
+- **An encrypted export, a QR code, printing, other languages, showing the words
+  in the main window.** None of these was asked for; each is a separate owner
+  decision.

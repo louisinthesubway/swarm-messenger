@@ -91,6 +91,7 @@ import { SystemTraySettingCache } from './SystemTraySettingCache.node.ts';
 import { OptionalResourceService } from './OptionalResourceService.main.ts';
 // SWARM addition (M3): the wallet, for the Wallet pane.
 import { SwarmWalletService } from './SwarmWalletService.main.ts';
+import { SwarmRecoveryPhraseExport } from './SwarmRecoveryPhraseExport.main.ts';
 import { EmojiService } from './EmojiService.main.ts';
 import { AssetService } from './AssetService.main.ts';
 import * as DevelopmentService from './DevelopmentService.main.ts';
@@ -1501,6 +1502,78 @@ ipc.on('show-licences', () => {
   drop(showLicencesWindow());
 });
 
+// SWARM addition (B6, 2026-09-29): the recovery phrase window, opened from the
+// Wallet pane by app/SwarmRecoveryPhraseExport.main.ts, which also owns what
+// it may receive. Small, modal to the main window and on top of it, with
+// content protection (screenshots and screen sharing show it black on macOS
+// and Windows), no dev tools, no menu, and no navigation.
+const alwaysContentProtectedWindows = new WeakSet<BrowserWindow>();
+
+async function createSwarmRecoveryPhraseWindow(
+  parent: BrowserWindow
+): Promise<BrowserWindow> {
+  const window = new BrowserWindow({
+    width: 560,
+    height: 660,
+    resizable: false,
+    minimizable: false,
+    maximizable: false,
+    fullscreenable: false,
+    parent,
+    modal: true,
+    alwaysOnTop: true,
+    skipTaskbar: true,
+    title: getResolvedMessagesLocale().i18n(
+      'icu:SwarmWallet__recovery--window-title'
+    ),
+    titleBarStyle: nonMainTitleBarStyle,
+    autoHideMenuBar: true,
+    backgroundColor: await getBackgroundColor(),
+    show: false,
+    webPreferences: {
+      ...defaultWebPrefs,
+      devTools: false,
+      spellcheck: false,
+      nodeIntegration: false,
+      nodeIntegrationInWorker: false,
+      sandbox: true,
+      contextIsolation: true,
+      navigateOnDragDrop: false,
+      preload: join(rootDir, 'bundles', 'preload', 'swarmRecoveryPhrase.js'),
+    },
+  });
+  // Before anything is drawn, and again when shown; never switched off,
+  // whatever the screen-security setting says (onEphemeralSettingChanged).
+  alwaysContentProtectedWindows.add(window);
+  window.setContentProtection(true);
+  window.removeMenu();
+
+  await handleCommonWindowEvents(window);
+
+  window.on('page-title-updated', event => {
+    event.preventDefault();
+  });
+  window.webContents.on('will-attach-webview', event => {
+    event.preventDefault();
+  });
+  window.once('ready-to-show', () => {
+    if (!window.isDestroyed()) {
+      window.setContentProtection(true);
+      window.show();
+    }
+  });
+  return window;
+}
+
+async function loadSwarmRecoveryPhraseWindow(
+  window: BrowserWindow
+): Promise<void> {
+  await safeLoadURL(
+    window,
+    prepareFileUrl([rootDir, 'swarm_recovery_phrase.html'])
+  );
+}
+
 async function getIsLinked() {
   try {
     const aci = await sql.sqlRead('getItemById', 'uuid_id');
@@ -2279,6 +2352,19 @@ app.on('ready', async () => {
     swarmWalletService = SwarmWalletService.create({
       userDataPath,
       getMainWindow,
+    });
+    // SWARM addition (B6, 2026-09-29): "Recovery phrase" in the Wallet pane.
+    const walletForExport = swarmWalletService;
+    SwarmRecoveryPhraseExport.create({
+      getMainWindow,
+      wallet: {
+        canExportRecoveryPhrase: () =>
+          walletForExport.canExportRecoveryPhrase(),
+        readRecoveryPhrase: () => walletForExport.readRecoveryPhrase(),
+      },
+      getI18n: () => getResolvedMessagesLocale().i18n,
+      createWindow: createSwarmRecoveryPhraseWindow,
+      loadWindow: loadSwarmRecoveryPhraseWindow,
     });
   }
   DevelopmentService.start({
@@ -3174,7 +3260,11 @@ const onEphemeralSettingChanged = (name: string) => {
 
   for (const window of activeWindows) {
     if (typeof contentProtection === 'boolean') {
-      window.setContentProtection(contentProtection);
+      // SWARM change (B6, 2026-09-29): the recovery phrase window keeps its
+      // content protection whatever the screen-security setting says.
+      window.setContentProtection(
+        contentProtection || alwaysContentProtectedWindows.has(window)
+      );
     }
   }
 };

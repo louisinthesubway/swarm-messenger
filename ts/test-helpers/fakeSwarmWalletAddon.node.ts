@@ -8,7 +8,7 @@
 // addresses are objects with `encoded_address`. It writes a real wallet file,
 // because the wallet store seals one and a test that skips that proves nothing.
 
-import { mkdirSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, writeFileSync } from 'node:fs';
 import { dirname, join } from 'node:path';
 
 import {
@@ -50,6 +50,11 @@ export function createFakeSwarmWalletAddon(
   let chain = 'swarm-mainnet';
   let initialized = false;
   let proposalStored = false;
+  // SWARM addition (B6, 2026-09-29): like the real addon, the wallet file
+  // holds the seed, so `get_seed` answers the phrase the wallet was restored
+  // from - also after it is closed and opened again. Test phrases only.
+  let seedPhrase: string | null = null;
+  const SEED_LINE = 'seed ';
 
   const requireOpen = (name: string): void => {
     if (!initialized) {
@@ -84,6 +89,7 @@ export function createFakeSwarmWalletAddon(
     deinitialize(): string {
       log.calls.push('deinitialize');
       initialized = false;
+      seedPhrase = null;
       return 'OK';
     },
     init_from_seed(
@@ -98,6 +104,7 @@ export function createFakeSwarmWalletAddon(
       // The seed is recorded as its word count only.
       log.seedsGiven.push(seed.split(/\s+/).length);
       log.calls.push(`birthday:${birthday}`);
+      seedPhrase = seed;
       return init('init_from_seed', chainHint, walletName);
     },
     init_from_b64(
@@ -107,7 +114,15 @@ export function createFakeSwarmWalletAddon(
       _minConfirmations: number,
       walletName: string
     ): string {
-      return init('init_from_b64', chainHint, walletName);
+      const answer = init('init_from_b64', chainHint, walletName);
+      seedPhrase = null;
+      if (walletFile != null && existsSync(walletFile)) {
+        const line = readFileSync(walletFile, 'utf8')
+          .split('\n')
+          .find(text => text.startsWith(SEED_LINE));
+        seedPhrase = line == null ? null : line.slice(SEED_LINE.length);
+      }
+      return answer;
     },
     async save_wallet_file(): Promise<string> {
       requireOpen('save_wallet_file');
@@ -115,14 +130,17 @@ export function createFakeSwarmWalletAddon(
         throw new Error('no wallet path');
       }
       mkdirSync(dirname(walletFile), { recursive: true });
-      const bytes = `fake wallet bytes ${log.calls.length}`;
+      const bytes =
+        `fake wallet bytes ${log.calls.length}` +
+        (seedPhrase == null ? '' : `\n${SEED_LINE}${seedPhrase}`);
       writeFileSync(walletFile, bytes);
       return `Wallet saved successfully. Size: ${bytes.length} bytes.`;
     },
     async get_seed(): Promise<string> {
       requireOpen('get_seed');
       return JSON.stringify({
-        seed_phrase: Array.from({ length: 24 }, () => 'abandon').join(' '),
+        seed_phrase:
+          seedPhrase ?? Array.from({ length: 24 }, () => 'abandon').join(' '),
         birthday: 1,
         no_of_accounts: 1,
       });
