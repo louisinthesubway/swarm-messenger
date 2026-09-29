@@ -18,7 +18,7 @@ one creates its own wallet, becomes its own account, and then A and B message ea
 | Setting a username, and finding the other person by that username                         | Stickers and GIF search (no sticker packs or GIF service on this server)                   |
 | Text messages both ways, end-to-end encrypted, delivered in < 1 s                         | Linking a second device, and the Linked devices screen                                     |
 | Message request, Accept, read and delivery ticks                                          | "Restore a wallet" landing on the same account (built, not yet tested live)                |
-| Groups: create one, the other person sees it, messages both ways (2026-09-28, section 11) | Sharing a call link outside the app (its address still starts with `https://signal.link/`) |
+| Groups: create one, the other person sees it, messages both ways (2026-09-28, section 11) | Opening a call link from a web browser: this needs the next installed version (section 12) |
 | Group photos: one member sets a photo, the others see it (2026-09-29, section 11)         |                                                                                            |
 | Calls one to one, voice and video, also through the relay (2026-09-29, section 12)        |                                                                                            |
 | Group calls, video and voice (2026-09-29, section 12)                                     |                                                                                            |
@@ -471,9 +471,28 @@ In the test, creating the link, handing it to B, opening it in B and deleting it
 app's own functions from the test harness, not by clicking the buttons of steps 1, 2 and 4; **Ask
 to join**, the approval, **Leave** and the call itself were clicks and screens as above.
 
-The link the app makes still starts with `https://signal.link/call/` (left over from Signal's app):
-the app opens it itself, but **do not open it in a web browser and do not share it outside SWARM
-Messenger** until it has a SWARM address.
+**The link's address** (changed 2026-09-29 by Opus MSG-P3, after the test above, in builds of
+swarm-main after `500d2fa06`; checked by unit tests, not yet by clicking in the app): the link the app
+makes now starts with `https://swarm.green/call/#key=`, so a link shared outside the app no longer
+points at Signal. The part after `#` is the call's key; a web browser never sends that part to any
+server.
+
+- **Clicked inside SWARM Messenger** (in any chat, Note to Self included), the link opens the call
+  screen of step 2 directly; the app loads no web page for it.
+- **Opened in a web browser**, it shows the page `swarm.green/call`: "Join a SWARM call", a button
+  **Open in SWARM Messenger** that hands the link to the app, and a link to the download page. Until
+  that page is published, the browser shows the site's "page not found" instead.
+- **The button needs an installed SWARM Messenger with this change (the next version after 0.1.0),
+  started once.** When the installed app starts, it registers the `swarm://` address type with the
+  system, as it does for the two it inherited from Signal (`sgnl://`, `signalcaptcha://`). On Windows
+  that is the only registration, because the installer does not make one; the Mac and Linux packages
+  also declare it themselves. A copy started from source (section 2) never registers it. None of this
+  has been tried yet. If the button does nothing, send the link to yourself in SWARM Messenger (Note
+  to Self) and click it there.
+- Links made before this change (`https://signal.link/call/…`) still open inside the app. Opened in a
+  web browser they lead to Signal's website, so do not share those outside SWARM Messenger.
+- Both people need a build with this change: 0.1.0 does not know the new address, treats it as an
+  ordinary web link and opens it in the browser.
 
 **If it does not work:**
 

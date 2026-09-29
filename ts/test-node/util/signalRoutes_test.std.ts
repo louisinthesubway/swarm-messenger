@@ -4,6 +4,7 @@ import { assert } from 'chai';
 import type { ParsedSignalRoute } from '../../util/signalRoutes.std.ts';
 import {
   isSignalRoute,
+  linkCallRoute,
   parseSignalRoute,
   toSignalRouteAppUrl,
   toSignalRouteUrl,
@@ -160,10 +161,56 @@ describe('signalRoutes', () => {
       args: { key: foo },
     };
     const check = createCheck();
+    // SWARM (MSG-P3, 2026-09-29): the two forms SWARM Messenger makes.
+    check(`https://swarm.green/call/#key=${foo}`, result);
+    check(`https://swarm.green/call#key=${foo}`, result);
+    check(`swarm://swarm.green/call/#key=${foo}`, result);
+    check(`swarm://swarm.green/call#key=${foo}`, result);
+    // The two forms SWARM Messenger 0.1.0 made: still opened.
     check(`https://signal.link/call/#key=${foo}`, result);
     check(`https://signal.link/call#key=${foo}`, result);
     check(`sgnl://signal.link/call/#key=${foo}`, result);
     check(`sgnl://signal.link/call#key=${foo}`, result);
+  });
+
+  it('linkCall makes swarm.green links, also from an old signal.link one', () => {
+    const key = 'dxbb-xfqz-xkgp-nmrx-bpqn-ptkb-spdt-pdgt';
+    const webUrl = `https://swarm.green/call/#key=${key}`;
+    const appUrl = `swarm://swarm.green/call/#key=${key}`;
+    assert.strictEqual(linkCallRoute.toWebUrl({ key }).toString(), webUrl);
+    assert.strictEqual(linkCallRoute.toAppUrl({ key }).toString(), appUrl);
+    for (const input of [
+      webUrl,
+      appUrl,
+      `https://signal.link/call/#key=${key}`,
+      `sgnl://signal.link/call/#key=${key}`,
+    ]) {
+      assert.strictEqual(toSignalRouteWebUrl(input)?.toString(), webUrl, input);
+      assert.strictEqual(toSignalRouteAppUrl(input)?.toString(), appUrl, input);
+    }
+  });
+
+  it('linkCall only on its own hosts, schemes and path, with a key', () => {
+    const check = createCheck({
+      isRoute: false,
+      hasAppUrl: false,
+      hasWebUrl: false,
+    });
+    check(`https://example.com/call/#key=${foo}`, null);
+    check(`https://swarm.green.example.com/call/#key=${foo}`, null);
+    check(`https://www.swarm.green/call/#key=${foo}`, null);
+    check(`https://chat.swarm.green/call/#key=${foo}`, null);
+    check(`https://signal.link.example.com/call/#key=${foo}`, null);
+    check(`sgnl://swarm.green/call/#key=${foo}`, null);
+    check(`swarm://signal.link/call/#key=${foo}`, null);
+    check(`signalcaptcha://swarm.green/call/#key=${foo}`, null);
+    check(`https://swarm.green/#key=${foo}`, null);
+    check(`https://swarm.green/calls/#key=${foo}`, null);
+    check(`https://swarm.green/call/extra#key=${foo}`, null);
+    check('https://swarm.green/call/', null);
+    check('https://swarm.green/call/#', null);
+    // A fragment without a key is not a call link (the route logs why).
+    check('https://swarm.green/call/#other=1', null);
   });
 
   it('artAddStickers', () => {
