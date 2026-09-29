@@ -63,10 +63,10 @@
     "messageformat": "உயர்தரத்தை அனுப்புகிறது ஊடகம் அதிக தரவைப் பயன்படுத்தும்."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Signal-க்கு நன்கொடை அளி"
+    "messageformat": "SWARM Messenger-க்கு நன்கொடை அளி"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "<bold>இணைக்கப்பட்ட சாதனங்கள்</bold> என்ற விருப்பத்தின் மூலம் உங்களின் கூடுதல் சாதனங்கள் எதிலும் உங்கள் Signal கணக்கையும் செய்திகளையும் பாதுகாப்பாக அணுக முடியும்."
+    "messageformat": "<bold>இணைக்கப்பட்ட சாதனங்கள்</bold> என்ற விருப்பத்தின் மூலம் உங்களின் கூடுதல் சாதனங்கள் எதிலும் உங்கள் SWARM கணக்கையும் செய்திகளையும் பாதுகாப்பாக அணுக முடியும்."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "டெஸ்க்டாப், டேப்லெட் அல்லது மற்றொரு தொலைபேசியை நீங்கள் இணைக்கலாம்."
@@ -81,7 +81,7 @@
     "messageformat": "கணக்கு அமைப்புகள் மற்றும் காப்புப்பிரதிகளை உங்கள் முதன்மைச் சாதனத்தில் மட்டுமே நிர்வகிக்க முடியும்."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--3--2": {
-    "messageformat": "Account settings and Signal Secure Backups can only be managed on your primary device."
+    "messageformat": "Account settings and SWARM Messenger Secure Backups can only be managed on your primary device."
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "தரநிலை"
@@ -120,10 +120,10 @@
     "messageformat": "தெரியாத குழு"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "சிக்னலைத் திறக்க முடியவில்லை"
+    "messageformat": "SWARM Messenger-ஐத் திறக்க முடியவில்லை"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "சிக்கலை சரிசெய்ய உதவ, ஆதரவு பக்கத்தில் மீட்பு வழிகாட்டியைப் பின்பற்றவும் அல்லது சிக்கலை சரிசெய்ய உதவும் சிக்னல் ஆதரவைத் தொடர்பு கொள்ளவும்.\n\nநீங்கள் இப்போதே சிக்னலைப் பயன்படுத்த வேண்டும் எனில், உங்கள் தரவை நீக்கி இந்த டெஸ்க்டாப்பை மீண்டும் இணைக்கலாம். உங்கள் ஃபோனிலிருந்து மெசேஜ் வரலாற்றை இடமாற்ற உங்களுக்கு விருப்பம் இருக்கும்."
+    "messageformat": "சிக்கலை சரிசெய்ய உதவ, ஆதரவு பக்கத்தில் மீட்பு வழிகாட்டியைப் பின்பற்றவும் அல்லது சிக்கலை சரிசெய்ய உதவும் SWARM Messenger ஆதரவைத் தொடர்பு கொள்ளவும்.\n\nநீங்கள் இப்போதே SWARM Messenger-ஐப் பயன்படுத்த வேண்டும் எனில், உங்கள் தரவை நீக்கி இந்த டெஸ்க்டாப்பை மீண்டும் இணைக்கலாம். உங்கள் ஃபோனிலிருந்து மெசேஜ் வரலாற்றை இடமாற்ற உங்களுக்கு விருப்பம் இருக்கும்."
   },
   "icu:databaseError": {
     "messageformat": "தரவுத் தளம் பிழை"
@@ -135,16 +135,16 @@
     "messageformat": "நிரந்தரமாக அனைத்துத் தரவையும் நீக்குதல்"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "உங்கள் மெசேஜ் வரலாறு மற்றும் ஊடகம் அனைத்தும் இந்த சாதனத்தில் இருந்து நிரந்தரமாக நீக்கப்படும். இது உங்கள் ஃபோனில் இருந்து எந்தத் தரவையும் நீக்காது.\n\nஇந்தச் சாதனத்தை மீண்டும் இணைத்த பிறகு நீங்கள் சிக்னலைப் பயன்படுத்த முடியும். உங்கள் ஃபோனிலிருந்து மெசேஜ் வரலாற்றை இடமாற்ற உங்களுக்கு விருப்பம் இருக்கும்."
+    "messageformat": "உங்கள் மெசேஜ் வரலாறு மற்றும் ஊடகம் அனைத்தும் இந்த சாதனத்தில் இருந்து நிரந்தரமாக நீக்கப்படும். இது உங்கள் ஃபோனில் இருந்து எந்தத் தரவையும் நீக்காது.\n\nஇந்தச் சாதனத்தை மீண்டும் இணைத்த பிறகு நீங்கள் SWARM Messenger-ஐப் பயன்படுத்த முடியும். உங்கள் ஃபோனிலிருந்து மெசேஜ் வரலாற்றை இடமாற்ற உங்களுக்கு விருப்பம் இருக்கும்."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "உங்கள் தரவுத்தளத்தின் பதிப்பு Signal இன் இந்தப் பதிப்போடு பொருந்தவில்லை. உங்கள் கணினியில் Signal இன் புதிய பதிப்பைத் திறக்கிறீர்கள் என்பதை உறுதிப்படுத்தவும்."
+    "messageformat": "உங்கள் தரவுத்தளத்தின் பதிப்பு SWARM Messenger-இன் இந்தப் பதிப்போடு பொருந்தவில்லை. உங்கள் கணினியில் SWARM Messenger-இன் புதிய பதிப்பைத் திறக்கிறீர்கள் என்பதை உறுதிப்படுத்தவும்."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "OS குறியாக்க கீரிங் பின்தளம் {previousBackend} -இலிருந்து {currentBackend} -க்கு மாறியதால் தரவுத்தளக் குறியாக்க விசையை அணுக முடியவில்லை. உதாரணமாக GNOME மற்றும் KDE க்கு இடையில் டெஸ்க்டாப் சூழல் மாறினால் இது நிகழலாம்.\n\nமுந்தைய டெஸ்க்டாப் சூழலுக்கு மாறவும்."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "OS குறியாக்க கீரிங் பின்தளம் {previousBackend} -இலிருந்து {currentBackend}-க்கு மாறியதால் தரவுத்தளக் குறியாக்க விசையை அணுக முடியவில்லை. உதாரணமாக GNOME மற்றும் KDE -க்கு இடையில் டெஸ்க்டாப் சூழல் மாறினால் இது நிகழலாம்.\n\nமுந்தைய டெஸ்க்டாப் சூழலுக்கு மாறவும் அல்லது சிக்னலைக் கட்டளை வரி கொடி --password-store=\"{previousBackendFlag}\" என அமைத்து இயக்க முயற்சிக்கவும்"
+    "messageformat": "OS குறியாக்க கீரிங் பின்தளம் {previousBackend} -இலிருந்து {currentBackend}-க்கு மாறியதால் தரவுத்தளக் குறியாக்க விசையை அணுக முடியவில்லை. உதாரணமாக GNOME மற்றும் KDE -க்கு இடையில் டெஸ்க்டாப் சூழல் மாறினால் இது நிகழலாம்.\n\nமுந்தைய டெஸ்க்டாப் சூழலுக்கு மாறவும் அல்லது SWARM Messenger-ஐக் கட்டளை வரி கொடி --password-store=\"{previousBackendFlag}\" என அமைத்து இயக்க முயற்சிக்கவும்"
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -189,7 +189,7 @@
     "messageformat": "அனைத்தையும் காட்டு"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Signal லை விட்டு வெளியேறு"
+    "messageformat": "SWARM Messenger-ஐ விட்டு வெளியேறு"
   },
   "icu:editMenuUndo": {
     "messageformat": "செயல்தவிர்"
@@ -513,10 +513,10 @@
     "messageformat": "மற்றொரு சாதனத்திலிருந்து சரிபார்க்கப்படாதபடி உங்கள் பாதுகாப்பு எண்ணை {name}  உடன் குறித்தீர்கள்"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "நீங்கள் சரிபார்க்க முயற்சிக்கும் பாதுகாப்பு எண் மாறிவிட்டது. உங்கள் புதிய பாதுகாப்பு எண்ணை {name1} உடன் மதிப்பாய்வு செய்யவும். நினைவில் கொள்ளுங்கள், இந்த மாற்றம் யாராவது உங்கள் தகவல்தொடர்புகளை இடைமறிக்க முயற்சிக்கிறார்கள் அல்லது {name2} வெறுமனே Signal சிக்னலை மீண்டும் நிறுவியிருக்கலாம்."
+    "messageformat": "நீங்கள் சரிபார்க்க முயற்சிக்கும் பாதுகாப்பு எண் மாறிவிட்டது. உங்கள் புதிய பாதுகாப்பு எண்ணை {name1} உடன் மதிப்பாய்வு செய்யவும். நினைவில் கொள்ளுங்கள், இந்த மாற்றம் யாராவது உங்கள் தகவல்தொடர்புகளை இடைமறிக்க முயற்சிக்கிறார்கள் அல்லது {name2} வெறுமனே SWARM Messenger-ஐ மீண்டும் நிறுவியிருக்கலாம்."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "பின்வரும் நபர்கள் Signalஐ மீண்டும் நிறுவியிருக்கலாம் அல்லது டிவைஸ்களை மாற்றியிருக்கலாம். புதிய பாதுகாப்பு எண்ணை உறுதிப்படுத்த ஒரு பெறுநரை கிளிக் செய்யவும். இது விருப்பத்தேர்வு."
+    "messageformat": "பின்வரும் நபர்கள் SWARM Messenger-ஐ மீண்டும் நிறுவியிருக்கலாம் அல்லது டிவைஸ்களை மாற்றியிருக்கலாம். புதிய பாதுகாப்பு எண்ணை உறுதிப்படுத்த ஒரு பெறுநரை கிளிக் செய்யவும். இது விருப்பத்தேர்வு."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "நிலுவையில் உள்ள செய்திகளை அனுப்பவும்"
@@ -525,7 +525,7 @@
     "messageformat": "மதிப்பாய்வு செய்க"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Signalஐ மீண்டும் நிறுவிய அல்லது டிவைஸ்களை மாற்றிய {count,number} இணைப்பு உங்களிடம் உள்ளது. விரும்பினால் அவர்களின் பாதுகாப்பு எண்களை அனுப்பும் முன் மதிப்பாய்வு செய்யலாம்.} other {சிக்னலை மீண்டும் நிறுவிய அல்லது டிவைஸ்களை மாற்றிய {count,number} இணைப்புகள் உங்களிடம் உள்ளன. அவர்களின் பாதுகாப்பு எண்களை அனுப்பும் முன் நீங்கள் விருப்பத்தேர்வாக மதிப்பாய்வு செய்யலாம்.}}"
+    "messageformat": "{count, plural, one {SWARM Messenger-ஐ மீண்டும் நிறுவிய அல்லது டிவைஸ்களை மாற்றிய {count,number} இணைப்பு உங்களிடம் உள்ளது. விரும்பினால் அவர்களின் பாதுகாப்பு எண்களை அனுப்பும் முன் மதிப்பாய்வு செய்யலாம்.} other {SWARM Messenger-ஐ மீண்டும் நிறுவிய அல்லது டிவைஸ்களை மாற்றிய {count,number} இணைப்புகள் உங்களிடம் உள்ளன. அவர்களின் பாதுகாப்பு எண்களை அனுப்பும் முன் நீங்கள் விருப்பத்தேர்வாக மதிப்பாய்வு செய்யலாம்.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "அனைத்து இணைப்புகளும் மதிப்பாய்வு செய்யப்பட்டுள்ளன, தொடருவதற்கு அனுப்பு என்பதைக் கிளிக் செய்யவும்."
@@ -609,16 +609,16 @@
     "messageformat": "இந்த அரட்டைக்கான குறியாக்கம் தானாகச் சரிபார்க்கப்பட்டது "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "தொலைபேசி எண் மூலம் நீங்கள் இணைந்துள்ள நபர்களுக்கு, 'குறியீடு வெளிப்படைத்தன்மை' எனும் செயல்முறையைப் பயன்படுத்தி இணைப்பு பாதுகாப்பாக உள்ளதா என்பதை சிக்னலால் தானாகவே உறுதிசெய்ய முடியும். கூடுதல் பாதுகாப்பிற்கு, முந்தைய திரையில் உள்ள எண்களை ஒப்பிட்டு அல்லது அவர்களின் சாதனத்திலுள்ள குறியீட்டை ஸ்கேன் செய்து, எண்டு-டு-எண்டு குறியாக்கத்தைக் கைமுறையாகச் சரிபார்க்கவும்."
+    "messageformat": "தொலைபேசி எண் மூலம் நீங்கள் இணைந்துள்ள நபர்களுக்கு, 'குறியீடு வெளிப்படைத்தன்மை' எனும் செயல்முறையைப் பயன்படுத்தி இணைப்பு பாதுகாப்பாக உள்ளதா என்பதை SWARM Messenger-ஆல் தானாகவே உறுதிசெய்ய முடியும். கூடுதல் பாதுகாப்பிற்கு, முந்தைய திரையில் உள்ள எண்களை ஒப்பிட்டு அல்லது அவர்களின் சாதனத்திலுள்ள குறியீட்டை ஸ்கேன் செய்து, எண்டு-டு-எண்டு குறியாக்கத்தைக் கைமுறையாகச் சரிபார்க்கவும்."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "இந்த அரட்டைக்குத் தானியங்கி சரிபார்ப்பு கிடைக்கவில்லை"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "சிக்னலால் இந்த அரட்டைக்கான குறியாக்கத்தைத் தானாகச் சரிபார்க்க இயலவில்லை. {name} தங்களின் தொலைபேசி எண்ணையோ அல்லது தொலைபேசி எண்ணின் தனியுரிமை அமைப்புகளையோ மாற்றியிருப்பது இதற்குக் காரணமாக இருக்கலாம். முந்தைய திரையில் உள்ள எண்களை ஒப்பிட்டு அல்லது அவர்களின் சாதனத்திலுள்ள குறியீட்டை ஸ்கேன் செய்து, எண்டு-டு-எண்டு குறியாக்கத்தைக் கைமுறையாகச் சரிபார்க்கவும்."
+    "messageformat": "SWARM Messenger-ஆல் இந்த அரட்டைக்கான குறியாக்கத்தைத் தானாகச் சரிபார்க்க இயலவில்லை. {name} தங்களின் தொலைபேசி எண்ணையோ அல்லது தொலைபேசி எண்ணின் தனியுரிமை அமைப்புகளையோ மாற்றியிருப்பது இதற்குக் காரணமாக இருக்கலாம். முந்தைய திரையில் உள்ள எண்களை ஒப்பிட்டு அல்லது அவர்களின் சாதனத்திலுள்ள குறியீட்டை ஸ்கேன் செய்து, எண்டு-டு-எண்டு குறியாக்கத்தைக் கைமுறையாகச் சரிபார்க்கவும்."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "தொலைபேசி எண் மூலமாக நீங்கள் தொடர்புகொள்ளும் நபர்களுடனான அரட்டைகளில் மட்டுமே சிக்னலால் குறியாக்கத்தைத் தானாகச் சரிபார்க்க முடியும். பயனர் பெயர் அல்லது பொதுவான தொகுப்பின் மூலம் அரட்டை தொடங்கப்பட்டிருந்தால், முந்தைய திரையில் உள்ள எண்களை ஒப்பிட்டு அல்லது அவர்களின் சாதனத்திலுள்ள குறியீட்டை ஸ்கேன் செய்து, எண்டு-டு-எண்டு குறியாக்கத்தைச் சரிபார்க்கவும்."
+    "messageformat": "தொலைபேசி எண் மூலமாக நீங்கள் தொடர்புகொள்ளும் நபர்களுடனான அரட்டைகளில் மட்டுமே SWARM Messenger-ஆல் குறியாக்கத்தைத் தானாகச் சரிபார்க்க முடியும். பயனர் பெயர் அல்லது பொதுவான தொகுப்பின் மூலம் அரட்டை தொடங்கப்பட்டிருந்தால், முந்தைய திரையில் உள்ள எண்களை ஒப்பிட்டு அல்லது அவர்களின் சாதனத்திலுள்ள குறியீட்டை ஸ்கேன் செய்து, எண்டு-டு-எண்டு குறியாக்கத்தைச் சரிபார்க்கவும்."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "சரி"
@@ -657,10 +657,10 @@
     "messageformat": "தேவையில்லை,நன்றி"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "சிக்னலால் இப்போது மறைகுறியாக்கத்தைத் தானாகச் சரிபார்க்க இயலும்"
+    "messageformat": "SWARM Messenger-ஆல் இப்போது மறைகுறியாக்கத்தைத் தானாகச் சரிபார்க்க இயலும்"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "தொலைபேசி எண் மூலம் இணைக்கப்பட்டுள்ள தொடர்புகளுக்கு, 'குறியீடு வெளிப்படைத்தன்மை' எனும் செயல்முறையைப் பயன்படுத்தி இணைப்பு பாதுகாப்பாக உள்ளதா என்பதை சிக்னலால் தானாகவே உறுதிசெய்ய முடியும். கூடுதல் பாதுகாப்பிற்கு, QR குறியீடு மூலமாகவோ அல்லது பாதுகாப்பு எண்களை ஒப்பிட்டோ நீங்கள் இணைப்புகளைக் கைமுறையாகச் சரிபார்க்கலாம்."
+    "messageformat": "தொலைபேசி எண் மூலம் இணைக்கப்பட்டுள்ள தொடர்புகளுக்கு, 'குறியீடு வெளிப்படைத்தன்மை' எனும் செயல்முறையைப் பயன்படுத்தி இணைப்பு பாதுகாப்பாக உள்ளதா என்பதை SWARM Messenger-ஆல் தானாகவே உறுதிசெய்ய முடியும். கூடுதல் பாதுகாப்பிற்கு, QR குறியீடு மூலமாகவோ அல்லது பாதுகாப்பு எண்களை ஒப்பிட்டோ நீங்கள் இணைப்புகளைக் கைமுறையாகச் சரிபார்க்கலாம்."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "தொடர்க"
@@ -804,13 +804,13 @@
     "messageformat": "ஆதரவு பக்கத்திற்குச் செல்லவும்"
   },
   "icu:joinTheBeta": {
-    "messageformat": "Signal சோதனையில் சேரவும்"
+    "messageformat": "சோதனையில் சேரவும்"
   },
   "icu:signalDesktopStickerCreator": {
     "messageformat": "ஸ்டிக்கர் பேக் கிரியேட்டர்"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Signal Desktop பற்றி"
+    "messageformat": "SWARM Messenger பற்றி"
   },
   "icu:screenShareWindow": {
     "messageformat": "திரையைப் பகிர்தல்"
@@ -828,7 +828,7 @@
     "messageformat": "விட்டுவிடு"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "SWARM Messenger"
   },
   "icu:search": {
     "messageformat": "தேடல்"
@@ -882,7 +882,7 @@
     "messageformat": "தொலைபேசி எண் மூலம் கண்டுபிடிக்கவும்"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Signal லுக்கு வருக"
+    "messageformat": "SWARM Messenger-க்கு வருக"
   },
   "icu:whatsNew": {
     "messageformat": "இந்த புதுப்பிப்பில் {whatsNew} -ஐப் பார்க்கவும்"
@@ -969,13 +969,13 @@
     "messageformat": "நீங்கள்"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "குரல் செய்திகளை அனுப்ப, Signal டெஸ்க்டாப் உங்கள் மைக்ரோஃபோனை அணுக அனுமதிக்கவும்."
+    "messageformat": "குரல் செய்திகளை அனுப்ப, SWARM Messenger உங்கள் மைக்ரோஃபோனை அணுக அனுமதிக்கவும்."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "அழைப்பதற்கு, உங்கள் ஒலிபெருக்கியை பயன்படுத்த சிக்னல் டெஸ்க்டாப்பை Signal desktop அனுமதிக்க வேண்டும்."
+    "messageformat": "அழைப்பதற்கு, உங்கள் ஒலிபெருக்கியை பயன்படுத்த SWARM Messenger-ஐ அனுமதிக்க வேண்டும்."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "காணொளி அழைப்புக்கு, உங்கள் புகைப்பட கருவியை பயன்படுத்த சிக்னல்  டெஸ்க்டாப்பை Signal desktop அனுமதிக்க வேண்டும்."
+    "messageformat": "காணொளி அழைப்புக்கு, உங்கள் புகைப்பட கருவியை பயன்படுத்த SWARM Messenger-ஐ அனுமதிக்க வேண்டும்."
   },
   "icu:allowAccess": {
     "messageformat": "அணுகலை அனுமதிக்கவும்"
@@ -1002,13 +1002,13 @@
     "messageformat": "ஒலியடக்கப்பட்டது"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "சிக்னலை புதுப்பிக்க இயலவில்லை. <retryUpdateButton>புதுப்பிப்பை மீண்டும் முயற்சிக்கவும்</retryUpdateButton> அல்லது கைமுறையாக நிறுவ, {url} என்ற இணைப்பைப் பார்வையிடவும். பின்னர், இந்தச் சிக்கலுக்காக <contactSupportLink>ஆதரவைத் தொடர்பு கொள்ளவும்</contactSupportLink>"
+    "messageformat": "SWARM Messenger-ஐப் புதுப்பிக்க இயலவில்லை. <retryUpdateButton>புதுப்பிப்பை மீண்டும் முயற்சிக்கவும்</retryUpdateButton> அல்லது கைமுறையாக நிறுவ, {url} என்ற இணைப்பைப் பார்வையிடவும். பின்னர், இந்தச் சிக்கலுக்காக <contactSupportLink>ஆதரவைத் தொடர்பு கொள்ளவும்</contactSupportLink>"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "சிக்னலைப் புதுப்பிக்க இயலவில்லை. கைமுறையாக நிறுவ, {url} என்ற இணைப்பைப் பார்வையிடவும். பின்னர், இந்தச் சிக்கலுக்காக <contactSupportLink>ஆதரவைத் தொடர்பு கொள்ளவும்</contactSupportLink>"
+    "messageformat": "SWARM Messenger-ஐப் புதுப்பிக்க இயலவில்லை. கைமுறையாக நிறுவ, {url} என்ற இணைப்பைப் பார்வையிடவும். பின்னர், இந்தச் சிக்கலுக்காக <contactSupportLink>ஆதரவைத் தொடர்பு கொள்ளவும்</contactSupportLink>"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal Desktop டெஸ்க்டாப் ஒரு macOS தனிமைப்படுத்தலில் இருக்கலாம், அதனால் தானாக புதுப்பிக்க முடியாது.  {app} பயன்பாட்டை {folder} கோப்புறையில் Finder மூலம் நகர்த்த முயற்சிக்கவும்."
+    "messageformat": "SWARM Messenger ஒரு macOS தனிமைப்படுத்தலில் இருக்கலாம், அதனால் தானாக புதுப்பிக்க முடியாது.  {app} பயன்பாட்டை {folder} கோப்புறையில் Finder மூலம் நகர்த்த முயற்சிக்கவும்."
   },
   "icu:ok": {
     "messageformat": "சரி"
@@ -1053,7 +1053,7 @@
     "messageformat": "இந்த செய்தி இந்த சாதனத்திலிருந்து நீக்கப்படும்."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "சாட்டில் உள்ள அனைவரும் Signal இன் சமீபத்திய பதிப்பில் இருந்தால், இந்தச் செய்தி நீக்கப்படும். நீங்கள் ஒரு செய்தியை நீக்கியுள்ளீர்கள் என்பதை அவர்களால் பார்க்க முடியும்."
+    "messageformat": "சாட்டில் உள்ள அனைவரும் SWARM Messenger-இன் சமீபத்திய பதிப்பில் இருந்தால், இந்தச் செய்தி நீக்கப்படும். நீங்கள் ஒரு செய்தியை நீக்கியுள்ளீர்கள் என்பதை அவர்களால் பார்க்க முடியும்."
   },
   "icu:from": {
     "messageformat": "இருந்து"
@@ -1095,7 +1095,7 @@
     "messageformat": "{nickname}<muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "“{title}” என்பது சிக்னலில் இந்த நபர் தனக்கென அமைக்கப்பட்ட ப்ரொஃபைல் பெயர்."
+    "messageformat": "“{title}” என்பது SWARM Messenger-இல் இந்த நபர் தனக்கென அமைக்கப்பட்ட ப்ரொஃபைல் பெயர்."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "சரிபார்க்கப்பட்டது"
@@ -1110,7 +1110,7 @@
     "messageformat": "உங்களுக்கும் {name}க்கும் இடையில் எந்த நேரடி மெசேஜ்களும் இல்லை"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "சிக்னல் இணைப்பு"
+    "messageformat": "SWARM இணைப்பு"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "உங்கள் சிஸ்டம் தொடர்புகளில் {name} உள்ளார்"
@@ -1422,7 +1422,7 @@
     "messageformat": "மேலும் அறிக"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal இருமுனை குறியாக்கத்தைப் பயன்படுத்துகிறது, மேலும் இது சில நேரங்களில் உங்கள் சாட் அமர்வை புதுப்பிக்க வேண்டியிருக்கும். இது உங்கள் சாட்டின் பாதுகாப்பைப் பாதிக்காது, ஆனால் இந்த தொடர்பிலிருந்து நீங்கள் ஒரு செய்தியைத் தவறவிட்டிருக்கலாம், மேலும் அதை மீண்டும் அனுப்புமாறு அவர்களிடம் கேட்கலாம்."
+    "messageformat": "SWARM Messenger இருமுனை குறியாக்கத்தைப் பயன்படுத்துகிறது, மேலும் இது சில நேரங்களில் உங்கள் சாட் அமர்வை புதுப்பிக்க வேண்டியிருக்கும். இது உங்கள் சாட்டின் பாதுகாப்பைப் பாதிக்காது, ஆனால் இந்த தொடர்பிலிருந்து நீங்கள் ஒரு செய்தியைத் தவறவிட்டிருக்கலாம், மேலும் அதை மீண்டும் அனுப்புமாறு அவர்களிடம் கேட்கலாம்."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "தொடர்பு ஆதரவு"
@@ -1449,7 +1449,7 @@
     "messageformat": "{sender} அவர்களின் தொலைபேசி எண்ணை மாற்றியுள்ளார்"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "தொடர்பு Signal இல் இணைந்தது"
+    "messageformat": "தொடர்பு SWARM Messenger-இல் இணைந்தது"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} மற்றும் {conversationTitle} ஆகியவை ஒரே கணக்கைச் சேர்ந்தவை. இரண்டு சாட்களுக்கான உங்கள் செய்தி வரலாறு இங்கே உள்ளது."
@@ -1539,7 +1539,7 @@
     "messageformat": "ஊடகத்தைப் பதிவிறக்க வேண்டாம்"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "உங்கள் டெஸ்க்டாப் மற்றும் ஃபோனின் இணைய இணைப்பைச் சரிபார்க்கவும். உங்கள் ஃபோனில் சிக்னலைத் திறந்து, மீண்டும் பதிவிறக்க முயலவும்."
+    "messageformat": "உங்கள் டெஸ்க்டாப் மற்றும் ஃபோனின் இணைய இணைப்பைச் சரிபார்க்கவும். உங்கள் ஃபோனில் SWARM Messenger-ஐத் திறந்து, மீண்டும் பதிவிறக்க முயலவும்."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "இந்த ஊடகம் இனி உங்கள் ஃபோனில் கிடைக்காது, பதிவிறக்கம் செய்ய முடியாது."
@@ -1560,10 +1560,10 @@
     "messageformat": "மேலும் அறிக"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "உங்கள் மொபைலில் உள்ள சிக்னல் பயன்பாட்டில் இந்தக் குறியீட்டை ஸ்கேன் செய்யவும்"
+    "messageformat": "உங்கள் மொபைலில் உள்ள SWARM Messenger பயன்பாட்டில் இந்தக் குறியீட்டை ஸ்கேன் செய்யவும்"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "உங்கள் மொபைலில் சிக்னல்-ஐத் திறக்கவும்"
+    "messageformat": "உங்கள் மொபைலில் SWARM Messenger-ஐத் திறக்கவும்"
   },
   "icu:Install__instructions__2": {
     "messageformat": "{settings}-ஐத் தட்டவும், பிறகு {linkedDevices}-ஐத் தட்டவும்"
@@ -1581,7 +1581,7 @@
     "messageformat": "<paragraph>எதிர்பாராத பிழை ஏற்பட்டு விட்டது.</paragraph> <paragraph>தயவுசெய்து மீண்டும் முயற்சி செய்க.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "உங்கள் தற்போதைய நெட்வொர்க்கைப் பயன்படுத்தி இந்தச் சாதனத்தை சிக்னலால் இணைக்க முடியவில்லை."
+    "messageformat": "உங்கள் தற்போதைய நெட்வொர்க்கைப் பயன்படுத்தி இந்தச் சாதனத்தை SWARM Messenger-ஆல் இணைக்க முடியவில்லை."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "மீண்டும் முயற்சி செய்"
@@ -1599,7 +1599,7 @@
     "messageformat": "எல்லா தரவையும் நீக்கவா?"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "இந்த டெஸ்க்டாப்பில் வேறொரு சிக்னல் கணக்கை இணைக்க முயல்கிறீர்கள். நீங்கள் தொடர்ந்தால், சிக்னல் டெஸ்க்டாப்பில் தற்போதுள்ள தரவுகள் அனைத்தும் நீக்கப்படும்."
+    "messageformat": "இந்த டெஸ்க்டாப்பில் வேறொரு SWARM கணக்கை இணைக்க முயல்கிறீர்கள். நீங்கள் தொடர்ந்தால், SWARM Messenger-இல் தற்போதுள்ள தரவுகள் அனைத்தும் நீக்கப்படும்."
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "தொடர்க"
@@ -1614,7 +1614,7 @@
     "messageformat": "சாதனத்தின் பெயர்"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "இந்தச் சாதனத்தின் பெயரை மாற்ற, உங்கள் தொலைபேசியில் சிக்னலைத் திறந்து அமைப்புகள் > இணைக்கப்பட்ட சாதனங்கள் என்பதற்குச் செல்லவும்"
+    "messageformat": "இந்தச் சாதனத்தின் பெயரை மாற்ற, உங்கள் தொலைபேசியில் SWARM Messenger-ஐத் திறந்து அமைப்புகள் > இணைக்கப்பட்ட சாதனங்கள் என்பதற்குச் செல்லவும்"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "ஈமோஜி ஸ்கின் டோன்"
@@ -1806,7 +1806,7 @@
     "messageformat": "தானியங்கி குறியீடு சரிபார்ப்பு"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "இது செயல்படுத்தப்படும்போது, 1:1 அரட்டைகளின் மறைகுறியாக்கத்தைத் தானாகச் சரிபார்க்க சிக்னல் முயற்சிக்கும்."
+    "messageformat": "இது செயல்படுத்தப்படும்போது, 1:1 அரட்டைகளின் மறைகுறியாக்கத்தைத் தானாகச் சரிபார்க்க SWARM Messenger முயற்சிக்கும்."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "மேலும் அறிக"
@@ -1824,7 +1824,7 @@
     "messageformat": "மன்னிக்கவும், உங்களிடம் ஏற்கனவே பல சாதனங்கள் இணைக்கப்பட்டுள்ளன. சிலவற்றை நீக்க முயற்சிக்கவும்."
   },
   "icu:installTooOld": {
-    "messageformat": "உங்கள் தொலைபேசியை இணைக்க இந்த சாதனத்தில் Signal update சிக்னலைப் புதுப்பிக்கவும்."
+    "messageformat": "உங்கள் தொலைபேசியை இணைக்க இந்த சாதனத்தில் SWARM Messenger-ஐப் புதுப்பிக்கவும்."
   },
   "icu:installErrorHeader": {
     "messageformat": "ஏதோ தவறு நடைபெற்றிருக்கிறது!"
@@ -1875,7 +1875,7 @@
     "messageformat": "இந்த அழைப்பு இணைப்பு இனி செல்லுபடியாகாது."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal அழைப்பு"
+    "messageformat": "SWARM Messenger அழைப்பு"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "இணைப்பை அழிக்க முடியவில்லை. உங்கள் இணைப்பைச் சரிபார்த்து மீண்டும் முயலவும்."
@@ -2049,16 +2049,16 @@
     "messageformat": "{count, plural, one {{count,number}நபர் இந்த அழைப்பில் உள்ளார்} other {{count,number}நபர்கள் இந்த அழைப்பில் உள்ளனர்}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "சிக்னல் {person}-ஐ அழைக்கும்"
+    "messageformat": "SWARM Messenger {person}-ஐ அழைக்கும்"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "சிக்னல் {first} மற்றும் {second}-ஐ அழைக்கும்"
+    "messageformat": "SWARM Messenger {first} மற்றும் {second}-ஐ அழைக்கும்"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "சிக்னல் {first}, {second}, மற்றும் {third}-ஐ அழைக்கும்"
+    "messageformat": "SWARM Messenger {first}, {second}, மற்றும் {third}-ஐ அழைக்கும்"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {சிக்னல் {first}, {second}, மற்றும் {others,number} நபருக்கு அழைப்பு விடுக்கும்} other {சிக்னல் {first}, {second}, மற்றும் {others,number} நபர்களுக்கு அழைப்பு விடுக்கும்}}"
+    "messageformat": "{others, plural, one {SWARM Messenger {first}, {second}, மற்றும் {others,number} நபருக்கு அழைப்பு விடுக்கும்} other {SWARM Messenger {first}, {second}, மற்றும் {others,number} நபர்களுக்கு அழைப்பு விடுக்கும்}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} க்கு அறிவிக்கப்படும்"
@@ -2112,13 +2112,13 @@
     "messageformat": "மீண்டும் இணைக்கிறது…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "உங்கள் இணைப்பு துண்டிக்கப்பட்டது. சிக்னல் மீண்டும் இணைக்கப்படுகிறது."
+    "messageformat": "உங்கள் இணைப்பு துண்டிக்கப்பட்டது. SWARM Messenger மீண்டும் இணைக்கப்படுகிறது."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal பகிர்கிறது {window}."
+    "messageformat": "SWARM Messenger பகிர்கிறது {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "சிக்னல் திரைப் பகிர்வு செயலில் உள்ளது"
+    "messageformat": "SWARM Messenger திரைப் பகிர்வு செயலில் உள்ளது"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "மீண்டும் இணைக்கிறது…"
@@ -2139,7 +2139,7 @@
     "messageformat": "அனுமதி தேவை"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal தேவைகள் அனுமதி உங்கள் அணுக கணினிதிரை பதிவு."
+    "messageformat": "SWARM Messenger தேவைகள் அனுமதி உங்கள் அணுக கணினிதிரை பதிவு."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "கணினி விருப்பங்களுக்குச் செல்லவும்."
@@ -2148,7 +2148,7 @@
     "messageformat": "கீழே இடதுபுறத்தில் உள்ள பூட்டு ஐகானைக் கிளிக் செய்க உள்ளிடவும் உங்கள் கணினிகடவுச்சொல்."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "வலதுபுறத்தில், அடுத்த பெட்டியை சரிபார்க்கவும் Signal. நீங்கள் பார்க்கவில்லை என்றால் Signal பட்டியலில், + to என்பதைக் கிளிக் செய்க கூட்டு அது."
+    "messageformat": "வலதுபுறத்தில், அடுத்த பெட்டியை சரிபார்க்கவும் SWARM Messenger. நீங்கள் பார்க்கவில்லை என்றால் SWARM Messenger பட்டியலில், + to என்பதைக் கிளிக் செய்க கூட்டு அது."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "திற கணினி விருப்பத்தேர்வுகள்"
@@ -2160,7 +2160,7 @@
     "messageformat": "எப்போதும் அழைப்புகளை ரிலே செய்யவும் "
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "உங்கள் ஐபி முகவரியை உங்கள் தொடர்புக்கு வெளிப்படுத்தாமல் இருக்க Signal சேவையகம் மூலம் அனைத்து அழைப்புகளையும் ரிலே செய்யவும். இயக்குவது அழைப்பு தரத்தை குறைக்கும்."
+    "messageformat": "உங்கள் ஐபி முகவரியை உங்கள் தொடர்புக்கு வெளிப்படுத்தாமல் இருக்க SWARM Messenger சேவையகம் மூலம் அனைத்து அழைப்புகளையும் ரிலே செய்யவும். இயக்குவது அழைப்பு தரத்தை குறைக்கும்."
   },
   "icu:permissions": {
     "messageformat": "அனுமதிகள்"
@@ -2178,10 +2178,10 @@
     "messageformat": "உரை தேர்ந்தெடுக்கப்படும் போது உரை வடிவமைப்பு பாப்ஓவரைக் காட்டும்"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "அடுத்த முறை Signal சிக்னல் தொடங்கும் போது எழுத்துப்பிழை சோதனை செயல்படுத்தப்படும்."
+    "messageformat": "அடுத்த முறை SWARM Messenger தொடங்கும் போது எழுத்துப்பிழை சோதனை செயல்படுத்தப்படும்."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "அடுத்த முறை Signal சிக்னல் தொடங்கும் போது எழுத்துப்பிழை சோதனை முடக்கப்படும்."
+    "messageformat": "அடுத்த முறை SWARM Messenger தொடங்கும் போது எழுத்துப்பிழை சோதனை முடக்கப்படும்."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "குறைத்தல் கணினி தட்டில்"
@@ -2205,7 +2205,7 @@
     "messageformat": "எல்லா தரவையும் நீக்கவா?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Signal டெஸ்க்டாப்பின் இந்தப் பதிப்பிலிருந்து எல்லா தரவையும் மெசேஜ்களையும் நீக்க வேண்டுமா? உங்கள் Signal கணக்கு மற்றும் உங்கள் ஃபோன் அல்லது இணைக்கப்பட்ட பிற டிவைஸ்களில் உள்ள தரவு நீக்கப்படாது."
+    "messageformat": "SWARM Messenger-இன் இந்தப் பதிப்பிலிருந்து எல்லா தரவையும் மெசேஜ்களையும் நீக்க வேண்டுமா? உங்கள் SWARM கணக்கு மற்றும் உங்கள் ஃபோன் அல்லது இணைக்கப்பட்ட பிற டிவைஸ்களில் உள்ள தரவு நீக்கப்படாது."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "எல்லாத தரவையும் துண்டித்து நீக்குகிறது…"
@@ -2214,7 +2214,7 @@
     "messageformat": "கணக்கை நீக்கு"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "இது உங்கள் கணக்குத் தகவல், சுயவிவரம் மற்றும் உங்களின் அனைத்து மெசேஜ்களையும் நீக்கும். நீங்கள் அனைத்துச் சிக்னல் தொகுப்புகளில் இருந்தும் அகற்றப்படுவீர்கள்."
+    "messageformat": "இது உங்கள் கணக்குத் தகவல், சுயவிவரம் மற்றும் உங்களின் அனைத்து மெசேஜ்களையும் நீக்கும். நீங்கள் அனைத்து SWARM தொகுப்புகளில் இருந்தும் அகற்றப்படுவீர்கள்."
   },
   "icu:deleteAccountButton": {
     "messageformat": "கணக்கை நீக்கு"
@@ -2223,10 +2223,10 @@
     "messageformat": "கணக்கு நீக்க வேண்டுமா?"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "இது உங்கள் கணக்குத் தகவல், சுயவிவரம் மற்றும் உங்களின் அனைத்து மெசேஜ்களையும் நீக்கும். நீங்கள் அனைத்துச் சிக்னல் தொகுப்புகளில் இருந்தும் அகற்றப்படுவீர்கள். இந்தச் செயல்முறை முடிந்ததும் செயலி மூடப்படும்."
+    "messageformat": "இது உங்கள் கணக்குத் தகவல், சுயவிவரம் மற்றும் உங்களின் அனைத்து மெசேஜ்களையும் நீக்கும். நீங்கள் அனைத்து SWARM தொகுப்புகளில் இருந்தும் அகற்றப்படுவீர்கள். இந்தச் செயல்முறை முடிந்ததும் செயலி மூடப்படும்."
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "சிக்னல் டெஸ்க்டாப்பின் முந்தைய நிறுவலிலிருந்து பயன்படுத்த முடியாத தரவு உங்கள் டெஸ்க்டாப்பில் உள்ளது. தொடர நீங்கள் தேர்வுசெய்தால் Signal desktop update, அது நீக்கப்படும், நீங்கள் புதிதாகத் தொடங்குவீர்கள்."
+    "messageformat": "SWARM Messenger-இன் முந்தைய நிறுவலிலிருந்து பயன்படுத்த முடியாத தரவு உங்கள் டெஸ்க்டாப்பில் உள்ளது. தொடர நீங்கள் தேர்வுசெய்தால், அது நீக்கப்படும், நீங்கள் புதிதாகத் தொடங்குவீர்கள்."
   },
   "icu:deleteOldData": {
     "messageformat": "பழைய தரவை நீக்கு"
@@ -2283,7 +2283,7 @@
     "messageformat": "பகுதியளவு நீக்கப்பட்டது, விவரங்களுக்குக் கிளிக் செய்யவும்"
   },
   "icu:expiredWarning": {
-    "messageformat": "Signal Desktop ப்பின் இந்த பதிப்பு காலாவதியானது. செய்தியைத் தொடர சமீபத்திய பதிப்பிற்கு மேம்படுத்தவும்."
+    "messageformat": "SWARM Messenger-இன் இந்த பதிப்பு காலாவதியானது. செய்தியைத் தொடர சமீபத்திய பதிப்பிற்கு மேம்படுத்தவும்."
   },
   "icu:upgrade": {
     "messageformat": "swarm.green/download -க்குச் செல்வதற்கு கிளிக் செய்யவும்"
@@ -2295,7 +2295,7 @@
     "messageformat": "தொடர்புகளை இறக்குமதி செய்யவும்"
   },
   "icu:syncExplanation": {
-    "messageformat": "உங்கள் மொபைல் சாதனத்திலிருந்து அனைத்து Signal குழுக்கள் மற்றும் தொடர்புகளை இறக்குமதி செய்க."
+    "messageformat": "உங்கள் மொபைல் சாதனத்திலிருந்து அனைத்து SWARM குழுக்கள் மற்றும் தொடர்புகளை இறக்குமதி செய்க."
   },
   "icu:syncNow": {
     "messageformat": "இப்போது இறக்குமதி செய்க"
@@ -2328,7 +2328,7 @@
     "messageformat": "நேற்று {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "சிக்னல் உள்வரும் மெசேஜைச் செயலாக்கத் தவறியிருக்கலாம்."
+    "messageformat": "SWARM Messenger உள்வரும் மெசேஜைச் செயலாக்கத் தவறியிருக்கலாம்."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "செய்தி உடல் மிக நீளமானது."
@@ -2493,13 +2493,13 @@
     "messageformat": "நீங்கள் இந்த மெசேஜை அனுப்பியதிலிருந்து 24 மணிநேரத்திற்குள் மட்டுமே திருத்தங்களைச் செய்ய முடியும்."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} ஒரு சிக்னல் பயனர் அல்ல. நீங்கள் முழுமையான பயனர் பெயரை உள்ளிட்டுள்ளதை உறுதிசெய்து கொள்ளவும்."
+    "messageformat": "{atUsername} ஒரு SWARM Messenger பயனர் அல்ல. நீங்கள் முழுமையான பயனர் பெயரை உள்ளிட்டுள்ளதை உறுதிசெய்து கொள்ளவும்."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} என்பது சரியான பயனர் பெயர் அல்ல. முழு பயனர் பெயரையும் அதன் எண்களின் தொகுப்பையும் உள்ளிட்டுள்ளீர்கள் என்பதை உறுதிப்படுத்தவும்."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "பயனர் கிடைக்கவில்லை. \"{phoneNumber}\" ஒரு சிக்னல் பயனர் அல்ல."
+    "messageformat": "பயனர் கிடைக்கவில்லை. \"{phoneNumber}\" ஒரு SWARM Messenger பயனர் அல்ல."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "பயனர் கிடைக்கவில்லை. \"{phoneNumber}\" ஒரு முறையான தொலைபேசி எண் அல்ல."
@@ -2520,13 +2520,13 @@
     "messageformat": "அதிகபட்ச குழு அளவு எட்டப்பட்டுள்ளது"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signal குழுக்களில் அதிகபட்சம்  {max,number} உறுப்பினர்கள் இருக்கலாம்."
+    "messageformat": "SWARM குழுக்களில் அதிகபட்சம்  {max,number} உறுப்பினர்கள் இருக்கலாம்."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "குழு உறுப்பினர் அளவு பரிந்துரைக்கப்பட்ட வரம்பை எட்டியுள்ளது"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signal குழுக்கள் உடன் சிறப்பாக செயல்படுங்கள் {max,number} உறுப்பினர்கள் அல்லது குறைவாக. அதிகமான உறுப்பினர்களைச் சேர்ப்பது செய்திகளை அனுப்புவதையும் பெறுவதையும் தாமதப்படுத்தும்."
+    "messageformat": "SWARM குழுக்கள் உடன் சிறப்பாக செயல்படுங்கள் {max,number} உறுப்பினர்கள் அல்லது குறைவாக. அதிகமான உறுப்பினர்களைச் சேர்ப்பது செய்திகளை அனுப்புவதையும் பெறுவதையும் தாமதப்படுத்தும்."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "இந்த குழுவிற்கு பெயரிடுங்கள்"
@@ -2556,13 +2556,13 @@
     "messageformat": "குழுவினை புதுப்பிக்க முடியவில்லை. உங்கள் இணைப்பை சோதித்து விட்டு மறுபடி முயற்சிக்கவும்"
   },
   "icu:unlinkedWarning": {
-    "messageformat": "செய்தி அனுப்புவதைத் தொடர, உங்கள் மொபைல் சாதனத்துடன் சிக்னல் டெஸ்க்டாப்பை மீண்டும் இணைக்க கிளிக் செய்யவும்."
+    "messageformat": "செய்தி அனுப்புவதைத் தொடர, உங்கள் மொபைல் சாதனத்துடன் SWARM Messenger-ஐ மீண்டும் இணைக்க கிளிக் செய்யவும்."
   },
   "icu:unlinked": {
     "messageformat": "துண்டிக்கவில்லை"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "மீண்டும் பதிவு செய்க என்பதைக் கிளிக் செய்து, மெசேஜிங்கைத் தொடருங்கள். வேறு சாதனத்தில் உங்கள் தொலைபேசி எண்ணை உபயோகித்துச் சிக்னலில் பதிவு செய்ததால், சிக்னல் டெஸ்க்டாப் பதிவு செய்யப்படாமல் இருக்கலாம்."
+    "messageformat": "மீண்டும் பதிவு செய்க என்பதைக் கிளிக் செய்து, மெசேஜிங்கைத் தொடருங்கள். வேறு சாதனத்தில் உங்கள் தொலைபேசி எண்ணை உபயோகித்து SWARM Messenger-இல் பதிவு செய்ததால், SWARM Messenger பதிவு செய்யப்படாமல் இருக்கலாம்."
   },
   "icu:unregistered": {
     "messageformat": "இனி பதிவு செய்யப்பட்டிருக்கவில்லை"
@@ -2574,16 +2574,16 @@
     "messageformat": "புதுப்பிப்பை மீண்டும் முயற்சிக்கவும்"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "சிக்னலை மறுதொடக்கம் செய்ய கிளிக் செய்யவும்"
+    "messageformat": "SWARM Messenger-ஐ மறுதொடக்கம் செய்ய கிளிக் செய்யவும்"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "புதுப்பிப்பைப் பதிவிறக்க கிளிக் செய்யவும்"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "சிக்னலைப் புதுப்பிக்க முடியவில்லை. மீண்டும் முயற்சிக்க கிளிக் செய்யவும்."
+    "messageformat": "SWARM Messenger-ஐப் புதுப்பிக்க முடியவில்லை. மீண்டும் முயற்சிக்க கிளிக் செய்யவும்."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "சிக்னலை மறுதொடக்கம் செய்யுங்கள்"
+    "messageformat": "SWARM Messenger-ஐ மறுதொடக்கம் செய்யுங்கள்"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "புதுப்பிப்பைப் புறக்கணிக்கவும்"
@@ -2715,7 +2715,7 @@
     "messageformat": "சில இணைப்புகள் காட்ட முடியாத அளவுக்கு பெரிதாக உள்ளன."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Signal அழைப்பில் சேர இந்த இணைப்பைப் பயன்படுத்தவும்"
+    "messageformat": "SWARM அழைப்பில் சேர இந்த இணைப்பைப் பயன்படுத்தவும்"
   },
   "icu:donation--missing": {
     "messageformat": "நன்கொடை விவரங்களைப் பெற முடியவில்லை"
@@ -2727,7 +2727,7 @@
     "messageformat": "உங்கள் நன்கொடையைக் காண மொபைலில் இந்த மெசேஜைத் தட்டவும்"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "உங்கள் சார்பாக Signalக்கு {sender} நன்கொடை அளித்துள்ளார்"
+    "messageformat": "உங்கள் சார்பாக SWARM Messenger-க்கு {sender} நன்கொடை அளித்துள்ளார்"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "இந்த நன்கொடையைத் திறக்க உங்கள் மொபைலைச் சரிபார்க்கவும்"
@@ -2784,7 +2784,7 @@
     "messageformat": "உங்கள் ஆதரவுக்கு நன்றி!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "{name} சார்பாக Signalக்கு நன்கொடை அளித்துள்ளீர்கள். அவர்களின் புரொஃபைலில் தங்கள் ஆதரவைக் காட்ட அவர்களுக்கு விருப்பம் வழங்கப்படும்."
+    "messageformat": "{name} சார்பாக SWARM Messenger-க்கு நன்கொடை அளித்துள்ளீர்கள். அவர்களின் புரொஃபைலில் தங்கள் ஆதரவைக் காட்ட அவர்களுக்கு விருப்பம் வழங்கப்படும்."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "ஸ்டிக்கர் பேக் நிறுவ முடியவில்லை"
@@ -2796,10 +2796,10 @@
     "messageformat": "ஸ்டிக்கர்களைச் சேர்"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "சிக்னல் கலைஞர் தொடர்"
+    "messageformat": "SWARM Messenger கலைஞர் தொடர்"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Signal ஆர்ட்டிஸ்ட் ஸ்டிக்கர்கள் கிடைக்கும் வசதி இல்லை "
+    "messageformat": "SWARM Messenger ஆர்ட்டிஸ்ட் ஸ்டிக்கர்கள் கிடைக்கும் வசதி இல்லை "
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "உங்களிடன் பகிரப்பட்டவை"
@@ -2835,7 +2835,7 @@
     "messageformat": "ஸ்டிக்கர் பேக்கை மறுவரிசைப்படுத்த இழுக்கவும்"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "சிக்னல் ஆர்ட்டிஸ்ட் சீரிஸ் ஸ்டிக்கர் பேக்குகள்"
+    "messageformat": "SWARM Messenger ஆர்ட்டிஸ்ட் சீரிஸ் ஸ்டிக்கர் பேக்குகள்"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
     "messageformat": "பெறப்பட்ட ஸ்டிக்கர் பேக்குகள்"
@@ -3120,19 +3120,19 @@
     "messageformat": "மெசேஜ் மிக நீளமாக உள்ளதால், மேலும் காட்ட இயலாது"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} உங்களுக்கு ஒரு செய்தியை அனுப்பியது, இது புதிய Signal அம்சத்தைப் பயன்படுத்துவதால் செயலாக்கவோ அல்லது காட்டவோ முடியாது."
+    "messageformat": "{contact} உங்களுக்கு ஒரு செய்தியை அனுப்பியது, இது புதிய SWARM Messenger அம்சத்தைப் பயன்படுத்துவதால் செயலாக்கவோ அல்லது காட்டவோ முடியாது."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "நீங்கள் Signal லின் புதுப்பித்த பதிப்பைப் பயன்படுத்துகிறீர்கள் என்று இந்த செய்தியை இப்போது மீண்டும் அனுப்ப {contact} ஐக் கேட்கலாம்."
+    "messageformat": "நீங்கள் SWARM Messenger-இன் புதுப்பித்த பதிப்பைப் பயன்படுத்துகிறீர்கள் என்று இந்த செய்தியை இப்போது மீண்டும் அனுப்ப {contact} ஐக் கேட்கலாம்."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "உங்கள் சாதனங்களில் ஒன்று புதிய Signal அம்சத்தைப் பயன்படுத்துவதால் செயலாக்கவோ அல்லது காட்டவோ முடியாத செய்தியை அனுப்பியது."
+    "messageformat": "உங்கள் சாதனங்களில் ஒன்று புதிய SWARM Messenger அம்சத்தைப் பயன்படுத்துவதால் செயலாக்கவோ அல்லது காட்டவோ முடியாத செய்தியை அனுப்பியது."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "இது போன்ற எதிர்கால செய்திகள் இப்போது நீங்கள் Signal லின் புதுப்பித்த பதிப்பைப் பயன்படுத்துகிறீர்கள் என்று ஒத்திசைக்கப்படும்."
+    "messageformat": "இது போன்ற எதிர்கால செய்திகள் இப்போது நீங்கள் SWARM Messenger-இன் புதுப்பித்த பதிப்பைப் பயன்படுத்துகிறீர்கள் என்று ஒத்திசைக்கப்படும்."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Signal லைப் புதுப்பிக்கவும்"
+    "messageformat": "SWARM Messenger-ஐப் புதுப்பிக்கவும்"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "பார்க்கப்பட்டவை"
@@ -3399,7 +3399,7 @@
     "messageformat": "சாட் படிக்காததாகக் குறிக்கப்பட்டது"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "ஸ்டிக்கர் பேக் கிரியேட்டரைப் பயன்படுத்த உங்கள் ஃபோன் மற்றும் டெஸ்க்டாப்பில் Signalஐ அமைக்கவும்"
+    "messageformat": "ஸ்டிக்கர் பேக் கிரியேட்டரைப் பயன்படுத்த உங்கள் ஃபோன் மற்றும் டெஸ்க்டாப்பில் SWARM Messenger-ஐ அமைக்கவும்"
   },
   "icu:Reactions--remove": {
     "messageformat": "எதிர்வினையை அகற்று"
@@ -3417,16 +3417,16 @@
     "messageformat": "பாதுகாப்பு உதவிக்குறிப்புகள்"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "சிக்னலிலிருந்து வரும் உரையாடல்களுக்குப் பதிலளிக்காதீர்கள்"
+    "messageformat": "SWARM Messenger-இலிருந்து வரும் உரையாடல்களுக்குப் பதிலளிக்காதீர்கள்"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "ஒரு பதிவுக் குறியீடு, பின் அல்லது மீட்புக் குறியீட்டைக் கேட்டு உங்களுக்கு சிக்னல் ஒருபோதும் செய்தியை அனுப்பாது. சிக்னல் போல் ஆள்மாறாட்டம் செய்து வரும் உரையாடலுக்கு ஒருபோதும் பதிலளிக்காதீர்கள்."
+    "messageformat": "ஒரு பதிவுக் குறியீடு, பின் அல்லது மீட்புக் குறியீட்டைக் கேட்டு உங்களுக்கு SWARM Messenger ஒருபோதும் செய்தியை அனுப்பாது. SWARM Messenger போல் ஆள்மாறாட்டம் செய்து வரும் உரையாடலுக்கு ஒருபோதும் பதிலளிக்காதீர்கள்."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "பெயர்கள் மற்றும் படங்களைச் சரிபாருங்கள்"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "\"பெயர் சரிபார்க்கப்படவில்லை\" என்ற அறிவிப்பு உள்ளதா எனக் கவனியுங்கள். சிக்னலில் அனைவரும் தங்களின் சொந்த சுயவிவரப் பெயரை அமைக்கிறார்கள்."
+    "messageformat": "\"பெயர் சரிபார்க்கப்படவில்லை\" என்ற அறிவிப்பு உள்ளதா எனக் கவனியுங்கள். SWARM Messenger-இல் அனைவரும் தங்களின் சொந்த சுயவிவரப் பெயரை அமைக்கிறார்கள்."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "மோசடிகள் குறித்து கவனமாக இருங்கள்"
@@ -3435,16 +3435,16 @@
     "messageformat": "நீங்கள் பதிலளிப்பதை நோக்கமாகக் கொண்ட தேவையற்ற மெசேஜ்களைத் தவிருங்கள். முதலீட்டு ஆலோசனைகள் மற்றும் சந்தேகத்திற்குரிய இணையதளத்திற்கான இணைப்புகள் குறித்து விழிப்புடன் இருங்கள்."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "சிக்னலிலிருந்து வரும் உரையாடல்களுக்குப் பதிலளிக்காதீர்கள்"
+    "messageformat": "SWARM Messenger-இலிருந்து வரும் உரையாடல்களுக்குப் பதிலளிக்காதீர்கள்"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "உங்கள் பதிவுக் குறியீடு, பின் அல்லது மீட்புக் குறியீட்டைக் கேட்டு சிக்னல் ஒருபோதும் உங்களுக்கு மெசேஜ் அனுப்பாது. சிக்னல் அல்லது சிக்னல் ஆதரவு போல் ஆள்மாறாட்டம் செய்து வரும் உரையாடல்களுக்கு ஒருபோதும் பதிலளிக்காதீர்கள். உங்கள் கணக்கை ஹேக் செய்ய மோசடிக்காரர்கள் போலிப் பெயர்களை உருவாக்குவார்கள்."
+    "messageformat": "உங்கள் பதிவுக் குறியீடு, பின் அல்லது மீட்புக் குறியீட்டைக் கேட்டு SWARM Messenger ஒருபோதும் உங்களுக்கு மெசேஜ் அனுப்பாது. SWARM Messenger அல்லது SWARM Messenger ஆதரவு போல் ஆள்மாறாட்டம் செய்து வரும் உரையாடல்களுக்கு ஒருபோதும் பதிலளிக்காதீர்கள். உங்கள் கணக்கை ஹேக் செய்ய மோசடிக்காரர்கள் போலிப் பெயர்களை உருவாக்குவார்கள்."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "பெயர்கள் மற்றும் படங்களைச் சரிபாருங்கள்"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "\"பெயர் சரிபார்க்கப்படவில்லை\" என்ற அறிவிப்பு உள்ளதா எனக் கவனியுங்கள். சிக்னலில் அனைவரும் தங்களின் சொந்த சுயவிவரப் பெயரையும் படத்தையும் தான் அமைக்கிறார்கள். புதிய கோரிக்கை யாரிடமிருந்து வந்துள்ளது என உங்களுக்குத் தெரியவில்லை என்றால், அதைப் புறக்கணிப்பதே பாதுகாப்பானது."
+    "messageformat": "\"பெயர் சரிபார்க்கப்படவில்லை\" என்ற அறிவிப்பு உள்ளதா எனக் கவனியுங்கள். SWARM Messenger-இல் அனைவரும் தங்களின் சொந்த சுயவிவரப் பெயரையும் படத்தையும் தான் அமைக்கிறார்கள். புதிய கோரிக்கை யாரிடமிருந்து வந்துள்ளது என உங்களுக்குத் தெரியவில்லை என்றால், அதைப் புறக்கணிப்பதே பாதுகாப்பானது."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "கிரிப்டோ அல்லது பண மோசடிகள்"
@@ -3525,13 +3525,13 @@
     "messageformat": "ஸ்பேம் எனப் புகாரளிப்பதா?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "இந்த நபர் உங்களுக்கு ஸ்பேம் அனுப்புவதாக சிக்னலுக்குத் தெரிவிக்கப்படும். எந்தவொரு சாட்களின் உள்ளடக்கத்தையும் சிக்னலால் பார்க்க முடியாது."
+    "messageformat": "இந்த நபர் உங்களுக்கு ஸ்பேம் அனுப்புவதாக SWARM Messenger-க்குத் தெரிவிக்கப்படும். எந்தவொரு சாட்களின் உள்ளடக்கத்தையும் SWARM Messenger-ஆல் பார்க்க முடியாது."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "உங்களை இந்தக் குழுவிற்கு அழைத்த நபர், ஸ்பேமை அனுப்பியிருக்கலாம் என்பதை சிக்னலுக்குத் தெரிவிக்கப்படும். எந்தவொரு சாட்களின் உள்ளடக்கத்தையும் சிக்னலால் பார்க்க முடியாது."
+    "messageformat": "உங்களை இந்தக் குழுவிற்கு அழைத்த நபர், ஸ்பேமை அனுப்பியிருக்கலாம் என்பதை SWARM Messenger-க்குத் தெரிவிக்கப்படும். எந்தவொரு சாட்களின் உள்ளடக்கத்தையும் SWARM Messenger-ஆல் பார்க்க முடியாது."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "உங்களை இந்தக் குழுவிற்கு அழைத்த {name}, ஸ்பேமை அனுப்பியிருக்கலாம் என்பதை சிக்னலுக்குத் தெரிவிக்கப்படும். எந்தவொரு சாட்களின் உள்ளடக்கத்தையும் சிக்னலால் பார்க்க முடியாது."
+    "messageformat": "உங்களை இந்தக் குழுவிற்கு அழைத்த {name}, ஸ்பேமை அனுப்பியிருக்கலாம் என்பதை SWARM Messenger-க்குத் தெரிவிக்கப்படும். எந்தவொரு சாட்களின் உள்ளடக்கத்தையும் SWARM Messenger-ஆல் பார்க்க முடியாது."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "ஸ்பேம் எனப் புகாரளி"
@@ -3573,7 +3573,7 @@
     "messageformat": "கோரிக்கையை ஏற்கவா?"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "நீங்கள் நம்பும் நபர்களிடம் இருந்து வரும் கோரிக்கைகளை மட்டும் ஏற்றுக்கொள்ளுங்கள். ஒரு பதிவுக் குறியீடு, பின் அல்லது மீட்புக் குறியீட்டைக் கேட்டு உங்களுக்கு <bold>சிக்னல் ஒருபோதும்</bold> செய்தியை அனுப்பாது."
+    "messageformat": "நீங்கள் நம்பும் நபர்களிடம் இருந்து வரும் கோரிக்கைகளை மட்டும் ஏற்றுக்கொள்ளுங்கள். ஒரு பதிவுக் குறியீடு, பின் அல்லது மீட்புக் குறியீட்டைக் கேட்டு உங்களுக்கு <bold>SWARM Messenger ஒருபோதும்</bold> செய்தியை அனுப்பாது."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "தொடர்க"
@@ -3627,16 +3627,16 @@
     "messageformat": "பெயர் சரிபார்க்கப்படவில்லை"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "இது அதிகாரப்பூர்வமானது மேலும் சிக்னல் சாட்டிலிருந்து மட்டும் பெறப்படுகிறது"
+    "messageformat": "இது அதிகாரப்பூர்வமானது மேலும் SWARM Messenger சாட்டிலிருந்து மட்டும் பெறப்படுகிறது"
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "அதிகாரப்பூர்வ உரையாடல்"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "சிக்னல் வழங்கும் ஒரே அதிகாரப்பூர்வ உரையாடல். செய்திகள் மற்றும் ரிலீஸ் குறிப்புகளுடன் புதுப்பித்த நிலையில் இருங்கள்."
+    "messageformat": "SWARM Messenger வழங்கும் ஒரே அதிகாரப்பூர்வ உரையாடல். செய்திகள் மற்றும் ரிலீஸ் குறிப்புகளுடன் புதுப்பித்த நிலையில் இருங்கள்."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "சிக்னல் வழங்கும் ஒரே அதிகாரப்பூர்வ உரையாடல்."
+    "messageformat": "SWARM Messenger வழங்கும் ஒரே அதிகாரப்பூர்வ உரையாடல்."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "செய்திகள் மற்றும் ரிலீஸ் குறிப்புகளுடன் புதுப்பித்த நிலையில் இருங்கள்."
@@ -3702,10 +3702,10 @@
     "messageformat": "பதிலளிக்கப்படாத காணொளி அழைப்பு"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "சிக்னல் இன்னும் இயங்கிக் கொண்டிருக்கிறது"
+    "messageformat": "SWARM Messenger இன்னும் இயங்கிக் கொண்டிருக்கிறது"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "அறிவிப்புகள் பகுதியில் சிக்னல் தொடர்ந்து இயங்கும். சிக்னல் அமைப்புகளில் நீங்கள் இதை மாற்றலாம்."
+    "messageformat": "அறிவிப்புகள் பகுதியில் SWARM Messenger தொடர்ந்து இயங்கும். SWARM Messenger அமைப்புகளில் நீங்கள் இதை மாற்றலாம்."
   },
   "icu:incomingAudioCall": {
     "messageformat": "உள்வரும் குரல் அழைப்பு"
@@ -3912,7 +3912,7 @@
     "messageformat": "அழைப்பு இணைப்பை நகலெடு"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "சிக்னல் மூலம் அழைப்பு இணைப்பைப் பகிர்க"
+    "messageformat": "SWARM Messenger மூலம் அழைப்பு இணைப்பைப் பகிர்க"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "அழைப்பிலிருந்து {name} ஐ அகற்ற வேண்டுமா?"
@@ -4074,7 +4074,7 @@
     "messageformat": "தெரியவில்லை இணைப்பு பதிப்பு"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "இது இணைப்பு இன் இந்த பதிப்பால் ஆதரிக்கப்படவில்லை Signal Desktop."
+    "messageformat": "இது இணைப்பு இன் இந்த பதிப்பால் ஆதரிக்கப்படவில்லை SWARM Messenger."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "முடியாது சேர குழு"
@@ -4680,10 +4680,10 @@
     "messageformat": "பயனர் தரவை நீக்குகிறது மற்றும் ஆப்பை மீட்டமைக்கிறது"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Signal-க்கு நன்கொடை அளி"
+    "messageformat": "SWARM Messenger-க்கு நன்கொடை அளி"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} Signalஐ ஆதரிக்கிறார்"
+    "messageformat": "{name} SWARM Messenger-ஐ ஆதரிக்கிறார்"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "மெசேஜ்களை ஒத்திசைக்கிறது"
@@ -4800,7 +4800,7 @@
     "messageformat": "கணக்கிற்கு நடவடிக்கை தேவை"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "இந்தக் கணக்கைத் தொடர்ந்து பயன்படுத்த உங்கள் ஃபோனில் சிக்னலைத் திறக்க வேண்டும். உங்கள் ஃபோனில் நீங்கள் சிக்னலைத் திறக்கவில்லை எனில், உங்கள் கணக்கு விரைவில் அழிக்கப்படும். <learnMoreLink>மேலும் அறிக</learnMoreLink>"
+    "messageformat": "இந்தக் கணக்கைத் தொடர்ந்து பயன்படுத்த உங்கள் ஃபோனில் SWARM Messenger-ஐத் திறக்க வேண்டும். உங்கள் ஃபோனில் நீங்கள் SWARM Messenger-ஐத் திறக்கவில்லை எனில், உங்கள் கணக்கு விரைவில் அழிக்கப்படும். <learnMoreLink>மேலும் அறிக</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "மீடியாவை மீட்டமைக்க முடியவில்லை"
@@ -4824,10 +4824,10 @@
     "messageformat": "இணைப்பு அல்லது வாக்கெடுப்பைச் சேர்த்திடுக"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "இந்த நபர் பயன்படுத்தவில்லை Signal"
+    "messageformat": "இந்த நபர் பயன்படுத்தவில்லை SWARM Messenger"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktop இல்லை ஆதரவு செய்தி அனுப்புதல் Signal தொடர்புகள். இந்த நபரை நிறுவச் சொல்லுங்கள் Signal மிகவும் பாதுகாப்பான செய்தியிடல் அனுபவத்திற்காக."
+    "messageformat": "SWARM Messenger இல்லை ஆதரவு செய்தி அனுப்புதல் SWARM Messenger அல்லாத தொடர்புகள். இந்த நபரை நிறுவச் சொல்லுங்கள் SWARM Messenger மிகவும் பாதுகாப்பான செய்தியிடல் அனுபவத்திற்காக."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "தொடர்புகளின் பதிவு நிலையை சரிபார்க்கிறது"
@@ -5088,10 +5088,10 @@
     "messageformat": "தடைநீக்கு"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "இந்த நபர் உங்களுக்கு ஸ்பேம் அனுப்புவதாக சிக்னலுக்குத் தெரிவிக்கப்படும். சாட்களின் உள்ளடக்கம் எதையும் சிக்னலால் பார்க்க முடியவில்லை."
+    "messageformat": "இந்த நபர் உங்களுக்கு ஸ்பேம் அனுப்புவதாக SWARM Messenger-க்குத் தெரிவிக்கப்படும். சாட்களின் உள்ளடக்கம் எதையும் SWARM Messenger-ஆல் பார்க்க முடியவில்லை."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "இந்தத் தொகுப்பிற்கு உங்களுக்கான அழைப்பை விடுத்தவர் ஸ்பேம் அனுப்புபவராக இருக்கலாம் என்பது சிக்னலுக்குத் தெரிவிக்கப்படும். எந்தவொரு உரையாடல்களின் உள்ளடக்கத்தையும் சிக்னலால் பார்க்க முடியாது."
+    "messageformat": "இந்தத் தொகுப்பிற்கு உங்களுக்கான அழைப்பை விடுத்தவர் ஸ்பேம் அனுப்புபவராக இருக்கலாம் என்பது SWARM Messenger-க்குத் தெரிவிக்கப்படும். எந்தவொரு உரையாடல்களின் உள்ளடக்கத்தையும் SWARM Messenger-ஆல் பார்க்க முடியாது."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "ஸ்பேம் எனப் புகாரளி"
@@ -5139,7 +5139,7 @@
     "messageformat": "புனைப்பெயர்"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "புனைப்பெயர்களும் குறிப்புகளும் சிக்னலுடன் சேமிக்கப்பட்டு எண்ட்-டு-எண்ட் குறியாக்கம் செய்யப்படுகின்றன. அவை உங்களுக்கு மட்டுமே தெரியும்."
+    "messageformat": "புனைப்பெயர்களும் குறிப்புகளும் SWARM Messenger-உடன் சேமிக்கப்பட்டு எண்ட்-டு-எண்ட் குறியாக்கம் செய்யப்படுகின்றன. அவை உங்களுக்கு மட்டுமே தெரியும்."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "முதல் பெயர்"
@@ -5295,7 +5295,7 @@
     "messageformat": "வழியாக புதிய உறுப்பினர்களை அனுமதிக்க நிர்வாகி தேவை குழு இணைப்பு"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "சிக்னல்.குழு இணைப்பை கிளிப்போர்டுக்கு நகலெடு"
+    "messageformat": "குழு இணைப்பை கிளிப்போர்டுக்கு நகலெடு"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "உறுப்பினர்களைத் தேடுதல்"
@@ -5434,7 +5434,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, one {நீங்கள் இந்த மெசேஜை நீக்கியதை சிக்னலின் அண்மைய பதிப்புகளில் உள்ள தொகுப்பு உறுப்பினர்கள் காண்பார்கள்.} other {நீங்கள் இந்த மெசேஜ்களை நீக்கியதை சிக்னலின் அண்மைய பதிப்புகளில் உள்ள தொகுப்பு உறுப்பினர்கள் காண்பார்கள்.}}"
+    "messageformat": "{count, plural, one {நீங்கள் இந்த மெசேஜை நீக்கியதை SWARM Messenger-இன் அண்மைய பதிப்புகளில் உள்ள தொகுப்பு உறுப்பினர்கள் காண்பார்கள்.} other {நீங்கள் இந்த மெசேஜ்களை நீக்கியதை SWARM Messenger-இன் அண்மைய பதிப்புகளில் உள்ள தொகுப்பு உறுப்பினர்கள் காண்பார்கள்.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "நீக்கு"
@@ -5560,7 +5560,7 @@
     "messageformat": "வெற்று அல்லது நீக்கப்பட்ட மெசேஜ்களை அனுப்ப முடியாது"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "சிக்னல் அழைப்பில் சேர இந்த இணைப்பைப் பயன்படுத்தவும்: {url}"
+    "messageformat": "SWARM அழைப்பில் சேர இந்த இணைப்பைப் பயன்படுத்தவும்: {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "கோரிக்கைகளை கவனமாக மதிப்பாய்வு செய்யவும்"
@@ -5569,7 +5569,7 @@
     "messageformat": "பாதுகாப்பு உதவிக்குறிப்புகள்"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "கோரிக்கைகளை கவனமாக மதிப்பாய்வு செய்க. அதே பெயருடன் மற்றொரு தொடர்பை Signal கண்டறிந்தது. <reviewRequestLink>மதிப்பாய்வு கோரிக்கை</reviewRequestLink>"
+    "messageformat": "கோரிக்கைகளை கவனமாக மதிப்பாய்வு செய்க. அதே பெயருடன் மற்றொரு தொடர்பை SWARM Messenger கண்டறிந்தது. <reviewRequestLink>மதிப்பாய்வு கோரிக்கை</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} குழு உறுப்பினர் அதே பெயரைக் கொண்டுள்ளார். <reviewRequestLink>உறுப்பினர்களை மதிப்பாய்வு செய்யவும்</reviewRequestLink>} other {{count,number} குழு உறுப்பினர்கள் அதே பெயரைக் கொண்டுள்ளனர். <reviewRequestLink>உறுப்பினர்களை மதிப்பாய்வு செய்யவும்</reviewRequestLink>}}"
@@ -5602,7 +5602,7 @@
     "messageformat": "பொதுவான குழுக்கள் ஏதும் இல்லை"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "சிக்னல் இணைப்பு"
+    "messageformat": "SWARM இணைப்பு"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "சமீபத்தில் அவர்களின் சுயவிவரப் பெயரை மாற்றியது {oldName} க்கு {newName}"
@@ -5620,7 +5620,7 @@
     "messageformat": "செய்தியைத் தொடர சரிபார்க்கவும்"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "க்கு உதவி தடுக்க ஸ்பேம் ஆன் Signal, தயவு செய்து முழுமை சரிபார்ப்பு."
+    "messageformat": "க்கு உதவி தடுக்க ஸ்பேம் ஆன் SWARM Messenger, தயவு செய்து முழுமை சரிபார்ப்பு."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "சரிபார்க்கப்பட்ட பிறகு, நீங்கள் தொடர்ந்து செய்தியிடலாம். இடைநிறுத்தப்பட்ட எந்த செய்திகளும் தானாகவே அனுப்பப்படும்."
@@ -6007,7 +6007,7 @@
     "messageformat": "இந்த மாற்றங்களை நிராகரிக்க விரும்புகிறீர்களா?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "சிக்னலை மூடிவிட்டு அழைப்பைத் துண்டிக்க வேண்டுமா?"
+    "messageformat": "SWARM Messenger-ஐ மூடிவிட்டு அழைப்பைத் துண்டிக்க வேண்டுமா?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "இப்போது வேண்டாம்"
@@ -6107,7 +6107,7 @@
     "messageformat": "பொது"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Signal-க்கு நன்கொடை அளி"
+    "messageformat": "SWARM Messenger-க்கு நன்கொடை அளி"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "தோற்றம்"
@@ -6173,10 +6173,10 @@
     "messageformat": "அமைப்பு"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "SWARM Messenger Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "உங்களின் கணக்கை மீட்டெடுக்கவும் மீட்டமைக்கவும் Signal Login பயன்படுத்தப்படுகிறது. நீங்கள் நம்பும் கடவுச்சொல் மேலாளரில் இந்தக் குறியீடுகளைப் பாதுகாப்பாகச் சேமித்து வைக்கவும். <learnMoreLink>மேலும் அறிக</learnMoreLink>."
+    "messageformat": "உங்களின் கணக்கை மீட்டெடுக்கவும் மீட்டமைக்கவும் SWARM Messenger Login பயன்படுத்தப்படுகிறது. நீங்கள் நம்பும் கடவுச்சொல் மேலாளரில் இந்தக் குறியீடுகளைப் பாதுகாப்பாகச் சேமித்து வைக்கவும். <learnMoreLink>மேலும் அறிக</learnMoreLink>."
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "மேலும் அறிக"
@@ -6188,7 +6188,7 @@
     "messageformat": "2 குறியீடுகள்"
   },
   "icu:Preferences__SignalAccountKeys__Title": {
-    "messageformat": "உங்களின் Signal Login"
+    "messageformat": "உங்களின் SWARM Messenger Login"
   },
   "icu:Preferences__SignalAccountKeys__Description": {
     "messageformat": "இதனைப் பாதுகாப்பான இடத்தில் சேமித்து வைக்கவும், உங்கள் கணக்கையும் தரவையும் மீட்டெடுக்க உங்கள் உள்நுழைவுத் தகவல் தேவை. இதை ஒருபோதும் யாருடனும் பகிர வேண்டாம்."
@@ -6209,7 +6209,7 @@
     "messageformat": "இது ஒரு இணைக்கப்பட்ட சாதனம்"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "உங்கள் கணக்கு அமைப்புகளை நிர்வகிக்க, உங்களின் பிரதான சாதனத்தில் சிக்னலைத் திறக்கவும்."
+    "messageformat": "உங்கள் கணக்கு அமைப்புகளை நிர்வகிக்க, உங்களின் பிரதான சாதனத்தில் SWARM Messenger-ஐத் திறக்கவும்."
   },
   "icu:Preferences--zoom": {
     "messageformat": "பெரிதாக்கு நிலை"
@@ -6248,7 +6248,7 @@
     "messageformat": "மாற்றுக"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "Signal பின்"
+    "messageformat": "SWARM பின்"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "கடவுஎண் பின் நினைவூட்டல்கள்"
@@ -6386,7 +6386,7 @@
     "messageformat": "சாட் வரலாற்றை ஏற்றுமதி செய்ய முடியாது"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "சிக்னலுக்கு டிஸ்க்கில் கோப்புகளை எழுத அனுமதி இல்லாததால், உங்கள் சாட் வரலாற்றை ஏற்றுமதி செய்ய முடியாது. உங்கள் டிஸ்க்கின் அனுமதிகளை மாற்றி அல்லது உங்கள் சிஸ்டம் அமைப்புகளைப் புதுப்பித்து, பிறகு மீண்டும் ஏற்றுமதி செய்ய முயற்சிக்கவும்."
+    "messageformat": "SWARM Messenger-க்கு டிஸ்க்கில் கோப்புகளை எழுத அனுமதி இல்லாததால், உங்கள் சாட் வரலாற்றை ஏற்றுமதி செய்ய முடியாது. உங்கள் டிஸ்க்கின் அனுமதிகளை மாற்றி அல்லது உங்கள் சிஸ்டம் அமைப்புகளைப் புதுப்பித்து, பிறகு மீண்டும் ஏற்றுமதி செய்ய முயற்சிக்கவும்."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "காப்புப்பிரதியை ஏற்றுமதி செய்கிறது"
@@ -6401,7 +6401,7 @@
     "messageformat": "உங்கள் காப்புப் பிரதி கோப்புறையை உங்கள் ஃபோனின் சேமிப்பகத்திற்கு இடமாற்றவும்"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "உங்கள் ஃபோனில் சிக்னலின் புதிய நகலை நிறுவவும்"
+    "messageformat": "உங்கள் ஃபோனில் SWARM Messenger-இன் புதிய நகலை நிறுவவும்"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "\"மீட்டமை அல்லது இடமாற்றுக\" என்பதைத் தட்டி, \"சாதனத்தில் உள்ள காப்புப்பிரதி\" என்பதைத் தேர்ந்தெடுக்கவும்"
@@ -6668,13 +6668,13 @@
     "messageformat": "{blockedAt}-இல் தடைசெய்யப்பட்டது"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "சிக்னலின் பாதுகாப்பான காப்புப் பிரதிகள்"
+    "messageformat": "SWARM Messenger-இன் பாதுகாப்பான காப்புப் பிரதிகள்"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "சிக்னலின் பாதுகாப்பான எண்ட்-டூ-எண்ட் குறியாக்கம் செய்யப்பட்ட சேமிப்பகச் சேவையுடன் தானியங்கி காப்புப்பிரதிகள். உங்கள் ஃபோனில் தொடங்குங்கள். <learnMoreLink>மேலும் அறிக.</learnMoreLink>"
+    "messageformat": "SWARM Messenger-இன் பாதுகாப்பான எண்ட்-டூ-எண்ட் குறியாக்கம் செய்யப்பட்ட சேமிப்பகச் சேவையுடன் தானியங்கி காப்புப்பிரதிகள். உங்கள் ஃபோனில் தொடங்குங்கள். <learnMoreLink>மேலும் அறிக.</learnMoreLink>"
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "உங்கள் செய்தி வரலாற்றைக் காப்புப் பிரதி எடுக்கவும், எனவே நீங்கள் புதிய தொலைபேசியைப் பெறும்போது அல்லது சிக்னலை மீண்டும் நிறுவும்போது தரவை இழக்க மாட்டீர்கள்."
+    "messageformat": "உங்கள் செய்தி வரலாற்றைக் காப்புப் பிரதி எடுக்கவும், எனவே நீங்கள் புதிய தொலைபேசியைப் பெறும்போது அல்லது SWARM Messenger-ஐ மீண்டும் நிறுவும்போது தரவை இழக்க மாட்டீர்கள்."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "காப்புப்பிரதி விவரங்கள்"
@@ -6728,7 +6728,7 @@
     "messageformat": "உங்கள் பேசியில் மீட்டெடுக்கக்கூடிய எண்டு-டு-எண்டு குறியாக்கப்பட்ட காப்புப்பிரதியை உருவாக்குங்கள். "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "காப்புப்பிரதியை மீட்டெடுக்க, உங்கள் பேசியில் சிக்னலின் புதிய நகலை நிறுவவும். செயலியைத் திறந்து “மீட்டெடு அல்லது இடமாற்றுக” என்பதைத் தட்டவும். <learnMoreLink>மேலும் அறிக.</learnMoreLink>"
+    "messageformat": "காப்புப்பிரதியை மீட்டெடுக்க, உங்கள் பேசியில் SWARM Messenger-இன் புதிய நகலை நிறுவவும். செயலியைத் திறந்து “மீட்டெடு அல்லது இடமாற்றுக” என்பதைத் தட்டவும். <learnMoreLink>மேலும் அறிக.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "கோப்புறையைத் தேர்வு செய்க"
@@ -6764,7 +6764,7 @@
     "messageformat": "உங்களின் மீட்புக் குறியீடு"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "உங்கள் கணக்கு மற்றும் தரவை மீட்டெடுக்க இந்தக் குறியீடு தேவை. அதனைப் பாதுகாப்பான இடத்தில் சேமித்து வைக்கவும், அதை ஒருபோதும் யாருடனும் பகிராதீர்கள். உங்கள் மீட்புக் குறியீட்டைக் கேட்டு சிக்னல் ஒருபோதும் உங்களுக்குச் செய்தி அனுப்பாது. <learnMoreLink>மேலும் அறிக.</learnMoreLink>"
+    "messageformat": "உங்கள் கணக்கு மற்றும் தரவை மீட்டெடுக்க இந்தக் குறியீடு தேவை. அதனைப் பாதுகாப்பான இடத்தில் சேமித்து வைக்கவும், அதை ஒருபோதும் யாருடனும் பகிராதீர்கள். உங்கள் மீட்புக் குறியீட்டைக் கேட்டு SWARM Messenger ஒருபோதும் உங்களுக்குச் செய்தி அனுப்பாது. <learnMoreLink>மேலும் அறிக.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "மீட்புக் குறியீட்டைப் பகிராதீர்கள்"
@@ -6779,7 +6779,7 @@
     "messageformat": "குறியீட்டைப் பகிராதீர்கள்"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "உங்கள் மீட்புக் குறியீட்டை யாருடனும் பகிராதீர்கள். இது அவர்கள் உங்கள் கணக்கைக் கையகப்படுத்த அனுமதிக்கும். உங்கள் மீட்புக் குறியீட்டைக் கேட்டு <strong>சிக்னல் ஒருபோதும் உங்களுக்குச் செய்தி அனுப்பாது.</strong> சிக்னல் போல் ஆள்மாறாட்டம் செய்து வரும் உரையாடலுக்கு ஒருபோதும் பதிலளிக்காதீர்கள். <learnMoreLink>மேலும் அறிக.</learnMoreLink>"
+    "messageformat": "உங்கள் மீட்புக் குறியீட்டை யாருடனும் பகிராதீர்கள். இது அவர்கள் உங்கள் கணக்கைக் கையகப்படுத்த அனுமதிக்கும். உங்கள் மீட்புக் குறியீட்டைக் கேட்டு <strong>SWARM Messenger ஒருபோதும் உங்களுக்குச் செய்தி அனுப்பாது.</strong> SWARM Messenger போல் ஆள்மாறாட்டம் செய்து வரும் உரையாடலுக்கு ஒருபோதும் பதிலளிக்காதீர்கள். <learnMoreLink>மேலும் அறிக.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "உங்கள் மீட்புக் குறியீட்டை உறுதிப்படுத்துக"
@@ -6791,7 +6791,7 @@
     "messageformat": "உங்கள் குறியீட்டைப் பாதுகாப்பாக வைத்திருக்கவும்"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "நீங்கள் குறியீட்டைப் இழந்தால், உங்கள் காப்புப்பிரதியை மீட்டெடுக்க சிக்னலால் உங்களுக்கு உதவ முடியாது. அதை பாதுகாப்பாகவும் பத்திரமாகவும் ஏதாவது ஒரு இடத்தில் சேமித்து வைக்கவும், மற்றவர்களுடன் பகிர்ந்து கொள்ள வேண்டாம்."
+    "messageformat": "நீங்கள் குறியீட்டைப் இழந்தால், உங்கள் காப்புப்பிரதியை மீட்டெடுக்க SWARM Messenger-ஆல் உங்களுக்கு உதவ முடியாது. அதை பாதுகாப்பாகவும் பத்திரமாகவும் ஏதாவது ஒரு இடத்தில் சேமித்து வைக்கவும், மற்றவர்களுடன் பகிர்ந்து கொள்ள வேண்டாம்."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "தொடர்க"
@@ -6842,7 +6842,7 @@
     "messageformat": "காப்புப்பிரதிகளைச் செயல்படுத்த அங்கீகாரம் தேவை."
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "கணினி அங்கீகரிப்பு தோல்வியடைந்ததால் இந்தச் செயலை முடிக்க முடியவில்லை. மீண்டும் முயலவும் அல்லது உங்கள் மொபைல் சாதனத்தில் சிக்னல் செயலியைத் திறந்து, உங்கள் மீட்புக் குறியீட்டைப் பார்க்க காப்புப்பிரதி அமைப்புகளுக்குச் செல்லவும்."
+    "messageformat": "கணினி அங்கீகரிப்பு தோல்வியடைந்ததால் இந்தச் செயலை முடிக்க முடியவில்லை. மீண்டும் முயலவும் அல்லது உங்கள் மொபைல் சாதனத்தில் SWARM Messenger செயலியைத் திறந்து, உங்கள் மீட்புக் குறியீட்டைப் பார்க்க காப்புப்பிரதி அமைப்புகளுக்குச் செல்லவும்."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "இந்தச் செயலுக்கான சிஸ்டம் அங்கீகாரத்தைக் கோரும் போது பிழை ஏற்பட்டது."
@@ -6872,7 +6872,7 @@
     "messageformat": "தொலைபேசி எண்"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "உங்கள் தொலைபேசி எண்ணை யார் பார்க்கலாம் மற்றும் யார் உங்களை சிக்னலில் தொடர்பு கொள்ளலாம் என்பதைத் தேர்வுசெய்யவும்."
+    "messageformat": "உங்கள் தொலைபேசி எண்ணை யார் பார்க்கலாம் மற்றும் யார் உங்களை SWARM Messenger-இல் தொடர்பு கொள்ளலாம் என்பதைத் தேர்வுசெய்யவும்."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "மாற்று…"
@@ -6905,7 +6905,7 @@
     "messageformat": "உங்கள் தொலைபேசி எண்ணை வைத்திருக்கும் எவரும் நீங்கள் சிக்கனலை பயன்படுத்திக் கொண்டிருப்பதை அறிவார்கள், மேலும் உங்களுடன் சாட் செய்யத் தொடங்கலாம்."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "நீங்கள் அவர்களுக்கு மெசேஜ் அனுப்பாத வரை அல்லது அவர்களுடன் ஏற்கனவே சாட் செய்யாத வரை, நீங்கள் சிக்னலலை பயன்படுத்திக் கொண்டிருப்பதை யாராலும் பார்க்க முடியாது."
+    "messageformat": "நீங்கள் அவர்களுக்கு மெசேஜ் அனுப்பாத வரை அல்லது அவர்களுடன் ஏற்கனவே சாட் செய்யாத வரை, நீங்கள் SWARM Messenger-ஐப் பயன்படுத்திக் கொண்டிருப்பதை யாராலும் பார்க்க முடியாது."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "எல்லோரும்"
@@ -6917,7 +6917,7 @@
     "messageformat": "உறுதியாக உள்ளீர்களா?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "நீங்கள் “{settingTitle}”-ஐ “{nobodyLabel}” ஆக மாற்றினால், சிக்னலில் பிறர் உங்களைக் அடையாளம் கான்பதைக் கடினமாக்கும்."
+    "messageformat": "நீங்கள் “{settingTitle}”-ஐ “{nobodyLabel}” ஆக மாற்றினால், SWARM Messenger-இல் பிறர் உங்களைக் அடையாளம் கான்பதைக் கடினமாக்கும்."
   },
   "icu:Preferences--messaging": {
     "messageformat": "செய்தி அனுப்புதல்"
@@ -6980,7 +6980,7 @@
     "messageformat": "அமைக்கவும்"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "பயன்படுத்த Signalஐ ரீஸ்டார்ட் செய்யவும்"
+    "messageformat": "பயன்படுத்த SWARM Messenger-ஐ ரீஸ்டார்ட் செய்யவும்"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "மொழியை மாற்ற, செயலியை ரீஸ்டார்ட் செய்ய வேண்டும்."
@@ -6995,13 +6995,13 @@
     "messageformat": "திரை பாதுகாப்பு"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "கூடுதல் தனியுரிமைக்காக இந்தக் கணினியில் சிக்னலின் ஸ்கிரீன் ஷாட்களைத் தடுக்கவும்."
+    "messageformat": "கூடுதல் தனியுரிமைக்காக இந்தக் கணினியில் SWARM Messenger-இன் ஸ்கிரீன் ஷாட்களைத் தடுக்கவும்."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "திரைப் பாதுகாப்பை முடக்கவா?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "முடக்கப்பட்டால், இது மைக்ரோசாப்ட் வின்டோசில் சிக்னலின் ஸ்கிரீன் ஷாட்களை எடுக்க அனுமதிக்கும் மேலும் தனிப்பட்டதாக இல்லாத அம்சங்களுக்கு அவற்றைப் பயன்படுத்தலாம்."
+    "messageformat": "முடக்கப்பட்டால், இது மைக்ரோசாப்ட் வின்டோசில் SWARM Messenger-இன் ஸ்கிரீன் ஷாட்களை எடுக்க அனுமதிக்கும் மேலும் தனிப்பட்டதாக இல்லாத அம்சங்களுக்கு அவற்றைப் பயன்படுத்தலாம்."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "முடக்கு"
@@ -7022,19 +7022,19 @@
     "messageformat": "ஆப் ஸ்டோருக்குச் செல்ல கிளிக் செய்யவும்"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "உங்கள் மொபைலில் சிக்னல்-ஐத் திறக்கவும்"
+    "messageformat": "உங்கள் மொபைலில் SWARM Messenger-ஐத் திறக்கவும்"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "உங்கள் பேசியில் சிக்னலைத் திறக்காவிட்டால் உங்கள் கணக்கு விரைவில் நீக்கப்படும். நீங்கள் அதை வெற்றிகரமாக செய்திருந்தால் இந்த மெசேஜ் தோன்றாது. <learnMoreLink>மேலும் அறிக</learnMoreLink>"
+    "messageformat": "உங்கள் பேசியில் SWARM Messenger-ஐத் திறக்காவிட்டால் உங்கள் கணக்கு விரைவில் நீக்கப்படும். நீங்கள் அதை வெற்றிகரமாக செய்திருந்தால் இந்த மெசேஜ் தோன்றாது. <learnMoreLink>மேலும் அறிக</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "உங்கள் கணக்கைச் செயலில் வைத்திருக்க உங்கள் தொலைபேசியில் சிக்னலைத் திறக்கவும்"
+    "messageformat": "உங்கள் கணக்கைச் செயலில் வைத்திருக்க உங்கள் தொலைபேசியில் SWARM Messenger-ஐத் திறக்கவும்"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "மேலும் அறிக"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal தொழில்நுட்ப சிக்கல்களை எதிர்கொள்கிறது. சேவையை விரைவாக மீட்டெடுக்க நாங்கள் விரைவாக வேலை செய்து வருகிறோம்."
+    "messageformat": "SWARM Messenger தொழில்நுட்ப சிக்கல்களை எதிர்கொள்கிறது. சேவையை விரைவாக மீட்டெடுக்க நாங்கள் விரைவாக வேலை செய்து வருகிறோம்."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "புதுப்பித்தல் தேவை"
@@ -7043,13 +7043,13 @@
     "messageformat": "புதுப்பிப்புகள் உள்ளதா எனப் பார்க்கிறது"
   },
   "icu:InstallScreenUpdateDialog--updating-signal": {
-    "messageformat": "Signal புதுப்பிக்கப்படுகிறது"
+    "messageformat": "SWARM Messenger புதுப்பிக்கப்படுகிறது"
   },
   "icu:InstallScreenUpdateDialog--download-progress": {
     "messageformat": "{totalBytes} இல் {currentBytes} ஐப் பதிவிறக்குகிறது({percentage,number,percent})..."
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "தொடர, Signal Desktop-ஐப் புதுப்பிக்கவும்."
+    "messageformat": "தொடர, SWARM Messenger-ஐப் புதுப்பிக்கவும்."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "புதுப்பிக்கப்பட்டது"
@@ -7061,19 +7061,19 @@
     "messageformat": "புதுப்பித்தல் தேவை"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Signalஐத் தொடர்ந்து பயன்படுத்த, சமீபத்திய பதிப்பிற்குப் புதுப்பிக்க வேண்டும்."
+    "messageformat": "SWARM Messenger-ஐத் தொடர்ந்து பயன்படுத்த, சமீபத்திய பதிப்பிற்குப் புதுப்பிக்க வேண்டும்."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "{downloadSize} ஐ பதிவிறக்கு"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "புதுப்பிப்பை நிறுவ Signalஐ மறுதொடக்கம் செய்யவும்."
+    "messageformat": "புதுப்பிப்பை நிறுவ SWARM Messenger-ஐ மறுதொடக்கம் செய்யவும்."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal டெஸ்க்டாப்பை புதுப்பிக்க முடியவில்லை, ஆனால் புதிய பதிப்பு உள்ளது. {downloadUrl} க்குச் சென்று புதிய பதிப்பை கைமுறையாக நிறுவவும், பின்னர் ஆதரவைத் தொடர்புகொள்ளவும் அல்லது இந்தச் பிரச்சனைப் பற்றிய பிழையைப் பதிவு செய்யவும்."
+    "messageformat": "SWARM Messenger-ஐப் புதுப்பிக்க முடியவில்லை, ஆனால் புதிய பதிப்பு உள்ளது. {downloadUrl} க்குச் சென்று புதிய பதிப்பை கைமுறையாக நிறுவவும், பின்னர் ஆதரவைத் தொடர்புகொள்ளவும் அல்லது இந்தச் பிரச்சனைப் பற்றிய பிழையைப் பதிவு செய்யவும்."
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "Signal லோகோ"
+    "messageformat": "SWARM Messenger லோகோ"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "மீண்டும்"
@@ -7109,7 +7109,7 @@
     "messageformat": "தொடர, நீங்கள் மனிதர் தான் என்பதைச் சரிபார்க்கவும்"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "சிக்னலில் ஸ்பேமைத் தடுக்க உதவ, சரிபார்த்தலை முடிக்கவும். சரிபார்த்த பிறகு, நீங்கள் பதிவுசெய்தலைத் தொடரலாம்."
+    "messageformat": "SWARM Messenger-இல் ஸ்பேமைத் தடுக்க உதவ, சரிபார்த்தலை முடிக்கவும். சரிபார்த்த பிறகு, நீங்கள் பதிவுசெய்தலைத் தொடரலாம்."
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "சரிபார்த்தலை மீண்டும் முயல்க"
@@ -7349,7 +7349,7 @@
     "messageformat": "தவறான பின்"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "பின்னை ஊகிப்பதற்கான உங்களின் முயற்சிகள் தீர்ந்துவிட்டன, ஆனால் நீங்கள் புதிய பின்னை உருவாக்குவதன் மூலம் உங்கள் சிக்னல் கணக்கை அணுகலாம். உங்கள் தனியுரிமை மற்றும் பாதுகாப்பிற்காகச் சேமிக்கப்பட்ட சுயவிவரத் தகவல் அல்லது அமைப்புகள் ஏதுமின்றி உங்கள் கணக்கு மீட்டமைக்கப்படும்."
+    "messageformat": "பின்னை ஊகிப்பதற்கான உங்களின் முயற்சிகள் தீர்ந்துவிட்டன, ஆனால் நீங்கள் புதிய பின்னை உருவாக்குவதன் மூலம் உங்கள் SWARM கணக்கை அணுகலாம். உங்கள் தனியுரிமை மற்றும் பாதுகாப்பிற்காகச் சேமிக்கப்பட்ட சுயவிவரத் தகவல் அல்லது அமைப்புகள் ஏதுமின்றி உங்கள் கணக்கு மீட்டமைக்கப்படும்."
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
     "messageformat": "புதிய பின்னை உருவாக்கவும்"
@@ -7364,7 +7364,7 @@
     "messageformat": "பின்னைத் தவிர்"
   },
   "icu:StandaloneRegistration--VerifyPIN--SkipPIN--header": {
-    "messageformat": "சிக்னல் பின்னைத் தவிர்க்கவா?"
+    "messageformat": "பின்னைத் தவிர்க்கவா?"
   },
   "icu:StandaloneRegistration--VerifyPIN--SkipPIN--description": {
     "messageformat": "உங்கள் பின்னை நினைவில் கொள்ள முடியாவிட்டால், புதிய ஒன்றை உருவாக்கலாம். நீங்கள் பதிவுசெய்து உங்கள் கணக்கைப் பயன்படுத்தலாம், ஆனால் உங்கள் சுயவிவரத் தகவல் போன்ற சேமிக்கப்பட்ட சில அமைப்புகளை இழப்பீர்கள். <learnMore>மேலும் அறிக</learnMore>."
@@ -7379,7 +7379,7 @@
     "messageformat": "உங்கள் பின்னை உருவாக்கவும்"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "உங்கள் கணக்கை மீட்டெடுக்கவும், உங்கள் தகவலை சிக்னல் மூலம் குறியாக்கம் செய்து வைத்திருக்கவும் பின்கள் உதவும். <learnMore>மேலும் அறிக</learnMore>"
+    "messageformat": "உங்கள் கணக்கை மீட்டெடுக்கவும், உங்கள் தகவலை SWARM Messenger மூலம் குறியாக்கம் செய்து வைத்திருக்கவும் பின்கள் உதவும். <learnMore>மேலும் அறிக</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "உங்கள் பின்னை உருவாக்கவும்"
@@ -7403,7 +7403,7 @@
     "messageformat": "எச்சரிக்கை"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "நீங்கள் PINஐ முடக்கினால், Signal-இல் மீண்டும் பதிவுசெய்யும்போது உள்ள எல்லாத் தரவையும் இழப்பீர்கள். பின் முடக்கப்பட்டிருக்கும்போது பதிவுப் பூட்டை நீங்கள் ஆன் செய்ய முடியாது."
+    "messageformat": "நீங்கள் PINஐ முடக்கினால், SWARM Messenger-இல் மீண்டும் பதிவுசெய்யும்போது உள்ள எல்லாத் தரவையும் இழப்பீர்கள். பின் முடக்கப்பட்டிருக்கும்போது பதிவுப் பூட்டை நீங்கள் ஆன் செய்ய முடியாது."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "PIN-ஐ முடக்கு"
@@ -7412,10 +7412,10 @@
     "messageformat": "ரத்துசெய்"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "சிக்னல் பின்கள் பற்றிய தகவல்"
+    "messageformat": "SWARM பின்கள் பற்றிய தகவல்"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "நீங்கள் மட்டுமே அணுகும் வகையில் சிக்னலில் சேமிக்கப்பட்டுள்ள உங்கள் தகவல்களை பின்கள் குறியாக்கம் செய்யப்பட்டிருக்கும். நீங்கள் மீண்டும் நிறுவும்போது உங்கள் சுயவிவரம், அமைப்புகள் மற்றும் தொடர்புகள் மீட்டமைக்கப்படும்."
+    "messageformat": "நீங்கள் மட்டுமே அணுகும் வகையில் SWARM Messenger-இல் சேமிக்கப்பட்டுள்ள உங்கள் தகவல்களை பின்கள் குறியாக்கம் செய்யப்பட்டிருக்கும். நீங்கள் மீண்டும் நிறுவும்போது உங்கள் சுயவிவரம், அமைப்புகள் மற்றும் தொடர்புகள் மீட்டமைக்கப்படும்."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "மேலும் அறிக"
@@ -7448,7 +7448,7 @@
     "messageformat": "புதுப்பித்தல் தேவை"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "பதிவுசெய்தலைத் தொடர, சிக்னலின் அண்மைய பதிப்பிற்குப் புதுப்பிக்கவும்."
+    "messageformat": "பதிவுசெய்தலைத் தொடர, SWARM Messenger-இன் அண்மைய பதிப்பிற்குப் புதுப்பிக்கவும்."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "புதுப்பிக்கப்பட்டது"
@@ -7478,7 +7478,7 @@
     "messageformat": "ஆதரவைத் தொடர்பு கொள்க"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "சிக்னலை மூட முடியாது.",
+    "messageformat": "SWARM Messenger-ஐ மூட முடியாது.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7498,14 +7498,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Signal இன் புதிய பதிப்பு ஏற்கனவே நிறுவப்பட்டுள்ளது. நீங்கள் நிச்சயமாக தொடர விரும்புகிறீர்களா?",
+    "messageformat": "SWARM Messenger-இன் புதிய பதிப்பு ஏற்கனவே நிறுவப்பட்டுள்ளது. நீங்கள் நிச்சயமாக தொடர விரும்புகிறீர்களா?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "செயல்பாடு செயலிழந்தது"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "செயலிழப்புக்குப் பிறகு சிக்னல் மறுதொடக்கம் செய்யப்பட்டது. சிக்னல் சிக்கலை விசாரிக்க உதவும் செயலிழப்பு அறிக்கையைச் சமர்ப்பிக்கலாம்."
+    "messageformat": "செயலிழப்புக்குப் பிறகு SWARM Messenger மறுதொடக்கம் செய்யப்பட்டது. SWARM Messenger சிக்கலை விசாரிக்க உதவும் செயலிழப்பு அறிக்கையைச் சமர்ப்பிக்கலாம்."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "அனுப்புக"
@@ -7610,7 +7610,7 @@
     "messageformat": "கீழே உள்ள “{buttonName}”ஐக் கிளிக் செய்யுங்கள்"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "\"சிக்னல்\"ஐ ஆன் செய்யவும்"
+    "messageformat": "\"SWARM Messenger\"-ஐ ஆன் செய்யவும்"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "அமைப்புகளுக்குச் செல்"
@@ -7706,7 +7706,7 @@
     "messageformat": "மேலும் அறிக"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "சிக்னல் இணைப்புகள்"
+    "messageformat": "SWARM இணைப்புகள்"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} நீங்கள் நம்புவதற்குத் தேர்ந்தெடுத்த நபர்கள், ஒன்று இதனால்:"
@@ -7847,7 +7847,7 @@
     "messageformat": "-இடமிருந்து ஸ்டோரியை மறைக்கவும்"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "அனைத்து சிக்னல் இணைப்புகள்"
+    "messageformat": "அனைத்து SWARM இணைப்புகள்"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "இவர்களைத் தவிர..."
@@ -7925,7 +7925,7 @@
     "messageformat": "எனது ஸ்டோரிக்கான தனியுரிமை"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "உங்கள் ஸ்டோரியை எந்த சிக்னல் இணைப்புகள் பார்க்கலாம் என்பதைத் தேர்வுசெய்யவும். தனியுரிமை அமைப்புகளில் இதை எப்போது வேண்டுமானாலும் மாற்றலாம். <learnMoreLink>மேலும் அறிக.</learnMoreLink>"
+    "messageformat": "உங்கள் ஸ்டோரியை எந்த SWARM இணைப்புகள் பார்க்கலாம் என்பதைத் தேர்வுசெய்யவும். தனியுரிமை அமைப்புகளில் இதை எப்போது வேண்டுமானாலும் மாற்றலாம். <learnMoreLink>மேலும் அறிக.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "ஸ்டோரியை நீக்கவும்"
@@ -7994,7 +7994,7 @@
     "messageformat": "இணைப்பு பதிவிறக்கவும்"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "உங்கள் ஸ்டோரீஸை யார் பார்த்தார்கள் என்பதைப் பார்க்க ரசீதுகளைக் காட்டு என்பதை இயக்கவும். உங்கள் மொபைல் டிவைஸில் Signal செயலியைத் திறந்து, அமைப்புகள் > ஸ்டோரீஸ் என்பதற்குச் செல்லவும்."
+    "messageformat": "உங்கள் ஸ்டோரீஸை யார் பார்த்தார்கள் என்பதைப் பார்க்க ரசீதுகளைக் காட்டு என்பதை இயக்கவும். உங்கள் மொபைல் டிவைஸில் SWARM Messenger செயலியைத் திறந்து, அமைப்புகள் > ஸ்டோரீஸ் என்பதற்குச் செல்லவும்."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "இன்னும் பதில்கள் ஏதுமில்லை"
@@ -8180,7 +8180,7 @@
     "messageformat": "உங்கள் QR குறியீடு மற்றும் இணைப்பு மீட்டமைக்கப்பட்டது மற்றும் உங்கள் பயனர் பெயர் {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "என்னுடன் சிக்னலில் சாட் செய்ய இந்த QR குறியீட்டை உங்கள் ஃபோன் மூலம் ஸ்கேன் செய்யவும்.",
+    "messageformat": "என்னுடன் SWARM Messenger-இல் சாட் செய்ய இந்த QR குறியீட்டை உங்கள் ஃபோன் மூலம் ஸ்கேன் செய்யவும்.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8256,7 +8256,7 @@
     "messageformat": "நிராகரி"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "உங்கள் Signal PIN-ஐ சரிபார்க்கவும்"
+    "messageformat": "உங்கள் SWARM PIN-ஐ சரிபார்க்கவும்"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "உங்கள் PINஐ நீங்கள் நினைவில் வைத்திருப்பதை உறுதிசெய்ய, அதைச் சரிபார்க்குமாறு எப்போதாவது உங்களிடம் கேட்போம்."
@@ -8268,7 +8268,7 @@
     "messageformat": "இப்போது வேண்டாம்"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "உங்கள் Signal பின்னை உள்ளிடவும்"
+    "messageformat": "உங்கள் SWARM பின்னை உள்ளிடவும்"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "உங்கள் PINஐ நினைவில் வைத்திருக்க உதவும் வகையில், அதை அவ்வப்போது உள்ளிடுமாறு உங்களிடம் கேட்போம். காலப்போக்கில் இதைக் கேட்பதைக் குறைத்துக்கொள்வோம்."
@@ -8289,13 +8289,13 @@
     "messageformat": "PIN சரியானது. பின்னர் மீண்டும் நினைவூட்டுவோம்."
   },
   "icu:PinChangeModal__title--create": {
-    "messageformat": "உங்கள் Signal PIN-ஐ மாற்றவும்"
+    "messageformat": "உங்கள் SWARM PIN-ஐ மாற்றவும்"
   },
   "icu:PinChangeModal__body--create": {
     "messageformat": "நீங்கள் முடியும் மாற்றம் உங்கள் பின் இந்த வரை சாதனம் பதிவு செய்யப்பட்டுள்ளது. <learnMoreLink>மேலும் அறிக</learnMoreLink>"
   },
   "icu:PinChangeModal__title--confirm": {
-    "messageformat": "உறுதிப்படுத்தவும் உங்கள் Signal பின்"
+    "messageformat": "உறுதிப்படுத்தவும் உங்கள் SWARM பின்"
   },
   "icu:PinChangeModal__body--confirm": {
     "messageformat": "நீங்கள் இப்போது உருவாக்கிய PIN-ஐ உள்ளிடவும்."
@@ -8319,13 +8319,13 @@
     "messageformat": "புதிய PIN உருவாக்கப்பட்டது."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signal டெஸ்க்டாப் விரைவில் உங்கள் கணினியின் {OS} பதிப்பை ஆதரிக்காது. சிக்னலைத் தொடர்ந்து பயன்படுத்த, உங்கள் கணினியின் இயங்குதளத்தை {expirationDate} க்குள் புதுப்பிக்கவும். <learnMoreLink>மேலும் அறிக</learnMoreLink>"
+    "messageformat": "SWARM Messenger விரைவில் உங்கள் கணினியின் {OS} பதிப்பை ஆதரிக்காது. SWARM Messenger-ஐத் தொடர்ந்து பயன்படுத்த, உங்கள் கணினியின் இயங்குதளத்தை {expirationDate} க்குள் புதுப்பிக்கவும். <learnMoreLink>மேலும் அறிக</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "இந்த கணினியில் இனிமேலும் Signal டெஸ்க்டாப் வேலை செய்யாது. Signal டெஸ்க்டாப்பை மீண்டும் பயன்படுத்த, உங்கள் கணினியின் {OS} பதிப்பைப் புதுப்பிக்கவும். <learnMoreLink>மேலும் அறிக</learnMoreLink>"
+    "messageformat": "இந்த கணினியில் இனிமேலும் SWARM Messenger வேலை செய்யாது. SWARM Messenger-ஐ மீண்டும் பயன்படுத்த, உங்கள் கணினியின் {OS} பதிப்பைப் புதுப்பிக்கவும். <learnMoreLink>மேலும் அறிக</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "இந்த கணினியில் இனிமேலும் Signal டெஸ்க்டாப் வேலை செய்யாது. Signal டெஸ்க்டாப்பை மீண்டும் பயன்படுத்த, உங்கள் கணினியின் {OS} பதிப்பைப் புதுப்பிக்கவும்."
+    "messageformat": "இந்த கணினியில் இனிமேலும் SWARM Messenger வேலை செய்யாது. SWARM Messenger-ஐ மீண்டும் பயன்படுத்த, உங்கள் கணினியின் {OS} பதிப்பைப் புதுப்பிக்கவும்."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "திருத்தப்பட்டது"
@@ -8496,7 +8496,7 @@
     "messageformat": "இணைப்பை நகலெடு"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "சிக்னல் மூலம் இணைப்பைப் பகிர்க"
+    "messageformat": "SWARM Messenger மூலம் இணைப்பைப் பகிர்க"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "இணைப்பை அழி"
@@ -8559,13 +8559,13 @@
     "messageformat": "இந்த அமைப்பை மாற்ற, \"எனது எண்ணை யார் பார்க்கலாம்\" என்னும் ஆப்ஷனில் \"யாரும் இல்லை\" என அமைக்கவும்."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "சிக்னலில் உள்ள ப்ரொஃபைல் பெயர் அவர்களின் கணக்கு வைத்திருப்பவரால் தேர்ந்தெடுக்கப்படுகிறது:"
+    "messageformat": "SWARM Messenger-இல் உள்ள ப்ரொஃபைல் பெயர் அவர்களின் கணக்கு வைத்திருப்பவரால் தேர்ந்தெடுக்கப்படுகிறது:"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "சிக்னலால் பெயர்களையும் படங்களையும் சரிபார்க்க முடியாது"
+    "messageformat": "SWARM Messenger-ஆல் பெயர்களையும் படங்களையும் சரிபார்க்க முடியாது"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "ஒரு பதிவுக் குறியீடு, பின் அல்லது மீட்புக் குறியீட்டைக் கேட்டு சிக்னல் ஒருபோதும் உங்களைத் தொடர்பு கொள்ளாது"
+    "messageformat": "ஒரு பதிவுக் குறியீடு, பின் அல்லது மீட்புக் குறியீட்டைக் கேட்டு SWARM Messenger ஒருபோதும் உங்களைத் தொடர்பு கொள்ளாது"
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "மற்றவர்கள் போல் ஆள்மாறாட்டம் செய்யும் கணக்குகளிடமிருந்து எச்சரிக்கையாக இருங்கள்"
@@ -8595,7 +8595,7 @@
     "messageformat": "பெருமைமிகு இலாப நோக்கற்ற அமைப்பு"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "தனிப்பட்ட மெசேஜிங் சேவையை ஆதரிக்க நன்கொடை அளியுங்கள். சிக்னலை சார்பற்றதாகவும் விளம்பரமின்றியும் வைத்திருக்க உதவுங்கள். <readMoreLink>மேலும் அறிக</readMoreLink>"
+    "messageformat": "தனிப்பட்ட மெசேஜிங் சேவையை ஆதரிக்க நன்கொடை அளியுங்கள். SWARM Messenger-ஐச் சார்பற்றதாகவும் விளம்பரமின்றியும் வைத்திருக்க உதவுங்கள். <readMoreLink>மேலும் அறிக</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "நன்கொடை அளி"
@@ -8619,7 +8619,7 @@
     "messageformat": "உங்கள் தகவல் தனிப்பட்டது"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "சுதந்திரமான இலாப நோக்கற்ற அமைப்பாக, தனிப்பட்ட மெசேஜிங் மற்றும் அழைப்புச் சேவையை வழங்க சிக்னல் உறுதிபூண்டுள்ளது. விளம்பரங்கள் இல்லை, டிராக்கர்கள் இல்லை, கண்காணிப்பு இல்லை. சிக்னலை ஆதரிக்க இன்றே நன்கொடை அளியுங்கள்."
+    "messageformat": "சுதந்திரமான இலாப நோக்கற்ற அமைப்பாக, தனிப்பட்ட மெசேஜிங் மற்றும் அழைப்புச் சேவையை வழங்க SWARM Messenger உறுதிபூண்டுள்ளது. விளம்பரங்கள் இல்லை, டிராக்கர்கள் இல்லை, கண்காணிப்பு இல்லை. SWARM Messenger-ஐ ஆதரிக்க இன்றே நன்கொடை அளியுங்கள்."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "நீங்கள் நன்கொடை அளிக்கும்போது உங்கள் சுயவிவரத்தில் ஒரு விருப்பத் தேர்வுக் குறியீட்டைப் பெறுங்கள்"
@@ -8628,10 +8628,10 @@
     "messageformat": "உங்கள் தனியுரிமையே எங்கள் லட்சியம்"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "சிக்னல் ஓர் இலாப நோக்கற்ற அமைப்பாகும். வரி விலக்கு உண்டு."
+    "messageformat": "SWARM Messenger ஓர் இலாப நோக்கற்ற அமைப்பாகும். வரி விலக்கு உண்டு."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "சிக்னல் லோகோ பாணியிலான ஹார்ட் வடிவ ஐகான்"
+    "messageformat": "SWARM Messenger லோகோ பாணியிலான ஹார்ட் வடிவ ஐகான்"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "சரி"
@@ -8646,7 +8646,7 @@
     "messageformat": "நன்கொடையாளர் அதிகம் கேட்கப்படும் கேள்விகள்"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "ரசீதுகள் சாதனங்கள் முழுவதும் ஒத்திசைக்கப்படவில்லை. நீங்கள் சிக்னலை மீண்டும் நிறுவியிருந்தால், முந்தைய நன்கொடைகளின் ரசீதுகள் கிடைக்காது."
+    "messageformat": "ரசீதுகள் சாதனங்கள் முழுவதும் ஒத்திசைக்கப்படவில்லை. நீங்கள் SWARM Messenger-ஐ மீண்டும் நிறுவியிருந்தால், முந்தைய நன்கொடைகளின் ரசீதுகள் கிடைக்காது."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "ரசீதுகள் இல்லை"
@@ -8676,7 +8676,7 @@
     "messageformat": "கிரெடிட் அல்லது டெபிட் கார்டு"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "உங்கள் கிரெடிட் அல்லது டெபிட் கார்டு விவரங்களை உள்ளிடுங்கள். சிக்னல் உங்கள் தனிப்பட்ட தகவல்களைச் சேகரிக்கவோ சேமிக்கவோ செய்யாது. <learnMoreLink>மேலும் அறிக</learnMoreLink>"
+    "messageformat": "உங்கள் கிரெடிட் அல்லது டெபிட் கார்டு விவரங்களை உள்ளிடுங்கள். SWARM Messenger உங்கள் தனிப்பட்ட தகவல்களைச் சேகரிக்கவோ சேமிக்கவோ செய்யாது. <learnMoreLink>மேலும் அறிக</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "கார்டு எண்"
@@ -8688,7 +8688,7 @@
     "messageformat": "MM/YY"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Signalக்கு {formattedCurrencyAmount} நன்கொடை அளிக்கவும்"
+    "messageformat": "SWARM Messenger-க்கு {formattedCurrencyAmount} நன்கொடை அளிக்கவும்"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "கார்டு எண் தவறாக உள்ளது"
@@ -8706,7 +8706,7 @@
     "messageformat": "குறியீடு மிகவும் குறுகியது"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "30 நாட்களுக்கு சிக்னல் பூஸ்ட் பேட்ஜைப் பெறுங்கள்"
+    "messageformat": "30 நாட்களுக்கு SWARM Messenger பூஸ்ட் பேட்ஜைப் பெறுங்கள்"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "குறைந்தபட்ச நன்கொடை {formattedCurrencyAmount} ஆகும்"
@@ -8751,7 +8751,7 @@
     "messageformat": "ஒரு முறை"
   },
   "icu:DonationReceipt__footer-text-v2": {
-    "messageformat": "சிக்னலை ஆதரித்ததற்கு நன்றி. திறந்த மூல தனியுரிமை தொழில்நுட்பத்தின் மூலம், சுதந்திரமான வெளிப்பாட்டைப் பாதுகாப்பதற்கும் உலகெங்கிலும் உள்ள மில்லியன் கணக்கானவர்களுக்குப் பாதுகாப்பான உலகளாவிய தகவல்தொடர்புக்கு உதவுவதற்கும் உங்கள் பங்களிப்பு உதவுகிறது. நீங்கள் அமெரிக்காவில் வசிப்பவராக இருந்தால், உங்கள் வரிப் பதிவுகளுக்காக இந்த ரசீதைத் தக்கவைத்துக் கொள்ளுங்கள். Signal Technology Foundation என்பது Internal Revenue Code 501c3 பிரிவின் கீழ் அமெரிக்காவில் உள்ள வரிவிலக்கு பெற்ற லாப நோக்கமற்ற அமைப்பாகும். எங்களின் Federal Tax ID 82-4506840 ஆகும். இந்தப் பங்களிப்பைக் கருத்தில் கொண்டு சிக்னல் எந்தப் பொருட்களையும் சேவைகளையும் வழங்கவில்லை."
+    "messageformat": "SWARM Messenger-ஐ ஆதரித்ததற்கு நன்றி. திறந்த மூல தனியுரிமை தொழில்நுட்பத்தின் மூலம், சுதந்திரமான வெளிப்பாட்டைப் பாதுகாப்பதற்கும் உலகெங்கிலும் உள்ள மில்லியன் கணக்கானவர்களுக்குப் பாதுகாப்பான உலகளாவிய தகவல்தொடர்புக்கு உதவுவதற்கும் உங்கள் பங்களிப்பு உதவுகிறது. நீங்கள் அமெரிக்காவில் வசிப்பவராக இருந்தால், உங்கள் வரிப் பதிவுகளுக்காக இந்த ரசீதைத் தக்கவைத்துக் கொள்ளுங்கள். SWARM Messenger Technology Foundation என்பது Internal Revenue Code 501c3 பிரிவின் கீழ் அமெரிக்காவில் உள்ள வரிவிலக்கு பெற்ற லாப நோக்கமற்ற அமைப்பாகும். எங்களின் Federal Tax ID 82-4506840 ஆகும். இந்தப் பங்களிப்பைக் கருத்தில் கொண்டு SWARM Messenger எந்தப் பொருட்களையும் சேவைகளையும் வழங்கவில்லை."
   },
   "icu:Donations__OfflineTooltip": {
     "messageformat": "நீங்கள் ஆஃப்லைனில் உள்ளீர்கள். நன்கொடையை நிறைவு செய்ய தயவுசெய்து இணையத்துடன் இணைக்கவும்."
@@ -8790,7 +8790,7 @@
     "messageformat": "நன்கொடை வெற்றிகரமாக வழங்கப்பட்டது, ஆனால் உங்கள் பேட்ஜ் அமைப்புகளைப் புதுப்பிக்க முடியவில்லை"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "உங்கள் மொபைல் சாதனத்தில் உள்ள பேட்ஜ் அமைப்புகளைப் புதுப்பிக்க, அமைப்புகள் → சிக்னலுக்கு நன்கொடை அளித்திடுக → பேட்ஜ்கள் என்பதன் கீழ் செய்யலாம்."
+    "messageformat": "உங்கள் மொபைல் சாதனத்தில் உள்ள பேட்ஜ் அமைப்புகளைப் புதுப்பிக்க, அமைப்புகள் → SWARM Messenger-க்கு நன்கொடை அளித்திடுக → பேட்ஜ்கள் என்பதன் கீழ் செய்யலாம்."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "நன்கொடை குறுக்கிட்டது"
@@ -8847,7 +8847,7 @@
     "messageformat": "உங்கள் நன்கொடையில் பிழை ஏற்பட்டுள்ளது"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "உங்கள் நன்கொடை செயலாக்கப்படாமல் இருக்கலாம். உங்கள் ரசீதுகளைச் சரிபார்த்து உறுதிப்படுத்த “சிக்னலுக்கு நன்கொடை அளித்திடுக” என்பதைக் கிளிக் செய்து, “நன்கொடைக்கான ரசீதுகள்” என்பதைக் கிளிக் செய்க."
+    "messageformat": "உங்கள் நன்கொடை செயலாக்கப்படாமல் இருக்கலாம். உங்கள் ரசீதுகளைச் சரிபார்த்து உறுதிப்படுத்த “SWARM Messenger-க்கு நன்கொடை அளித்திடுக” என்பதைக் கிளிக் செய்து, “நன்கொடைக்கான ரசீதுகள்” என்பதைக் கிளிக் செய்க."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "உங்கள் நன்கொடையை நிறைவு செய்வதற்கு உதவ மீண்டும் முயலுங்கள் அல்லது பிழைத்திருத்தப் பதிவை சமர்ப்பியுங்கள். பிழைத்திருத்தப் பதிவுகள் சிக்கலைக் கண்டறிந்து சரிசெய்ய உதவுகின்றன, மேலும் அடையாளம் காணும் தகவலைக் கொண்டிருக்கவில்லை."
@@ -8889,19 +8889,19 @@
     "messageformat": "உங்கள் ஆதரவுக்கு நன்றி!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Signal இல் இருந்து நன்கொடையாளர் பேட்ஜைப் பெற்றுள்ளீர்கள்! உங்கள் ஆதரவைக் காட்ட உங்கள் ப்ரொஃபைலில் அதைக் காண்பிக்கவும்."
+    "messageformat": "SWARM Messenger-இல் இருந்து நன்கொடையாளர் பேட்ஜைப் பெற்றுள்ளீர்கள்! உங்கள் ஆதரவைக் காட்ட உங்கள் ப்ரொஃபைலில் அதைக் காண்பிக்கவும்."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "சுயவிவரத்தில் காண்பிக்கவும்"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "இதனை உங்கள் மொபைல் சாதனத்தில் அமைப்புகள் → சிக்னலுக்கு நன்கொடை அளித்திடுக → பேட்ஜ்கள் என்பதன் கீழ் மாற்றியமைக்கலாம்."
+    "messageformat": "இதனை உங்கள் மொபைல் சாதனத்தில் அமைப்புகள் → SWARM Messenger-க்கு நன்கொடை அளித்திடுக → பேட்ஜ்கள் என்பதன் கீழ் மாற்றியமைக்கலாம்."
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "உங்கள் அழைப்பு அனுபவம் எப்படி இருந்தது?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "இது சிக்னலில் அழைப்புகளின் தரத்தை மேம்படுத்த எங்களுக்கு உதவும். தனிப்பட்ட முறையில் அடையாளம் காணக்கூடிய தகவல்கள் எதுவும் சேமிக்கப்படாது."
+    "messageformat": "இது SWARM Messenger-இல் அழைப்புகளின் தரத்தை மேம்படுத்த எங்களுக்கு உதவும். தனிப்பட்ட முறையில் அடையாளம் காணக்கூடிய தகவல்கள் எதுவும் சேமிக்கப்படாது."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "சிக்கல் இருந்தது"
@@ -8952,7 +8952,7 @@
     "messageformat": "சிக்கல்கள் குறித்த விளக்கம்"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "சிக்கலுடன் தொடர்புடைய எந்த விவரங்களையும் சேர்த்திடுங்கள். நீங்கள் இங்கு பகிரும் அனைத்தும் தனிப்பட்டதாக வைக்கப்படும் மற்றும் சிக்னலில் அழைப்புகளை மேம்படுத்தும் நோக்கத்திற்கு மட்டுமே பயன்படுத்தப்படும்."
+    "messageformat": "சிக்கலுடன் தொடர்புடைய எந்த விவரங்களையும் சேர்த்திடுங்கள். நீங்கள் இங்கு பகிரும் அனைத்தும் தனிப்பட்டதாக வைக்கப்படும் மற்றும் SWARM Messenger-இல் அழைப்புகளை மேம்படுத்தும் நோக்கத்திற்கு மட்டுமே பயன்படுத்தப்படும்."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "நீங்கள் எதிர்கொள்ளும் சிக்கல் குறித்து விவரித்திடுங்கள்"
@@ -9018,7 +9018,7 @@
     "messageformat": "ஒரு QR குறியீட்டை ஸ்கேன் செய்வதன் மூலம் நீங்கள் மீண்டும் இணைக்க வேண்டும்."
   },
   "icu:MaybeTransferModal__media": {
-    "messageformat": "நீங்கள் கட்டணம் செலுத்தி 'சிக்னலின் பாதுகாப்பு காப்பிப்பிரதிகள்' சேவையை உபயோகித்தால், உங்களின் ஊடகங்கள் அனைத்தும் இடமாற்றப்படும். இல்லையெனில், உங்கள் கடந்த 45 நாட்களுக்கான ஊடகங்கள் மட்டுமே சேர்க்கப்படும்."
+    "messageformat": "நீங்கள் கட்டணம் செலுத்தி 'SWARM Messenger-இன் பாதுகாப்பு காப்பிப்பிரதிகள்' சேவையை உபயோகித்தால், உங்களின் ஊடகங்கள் அனைத்தும் இடமாற்றப்படும். இல்லையெனில், உங்கள் கடந்த 45 நாட்களுக்கான ஊடகங்கள் மட்டுமே சேர்க்கப்படும்."
   },
   "icu:MaybeTransferModal__transfer": {
     "messageformat": "இடமாற்றம்"
@@ -9030,14 +9030,14 @@
     "messageformat": "எல்லா தரவையும் நீக்கவா?"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "சிக்னல் டெஸ்க்டாப்பில் உள்ள தற்போதைய தரவுகள் அனைத்தும் நீக்கப்படும். அதன்பிறகு, நீங்கள் ஒரு QR குறியீட்டை ஸ்கேன் செய்து, உங்கள் பேசியில் இருந்து செய்தி வரலாற்றை இடமாற்றிக்கொள்ளலாம்."
+    "messageformat": "SWARM Messenger-இல் உள்ள தற்போதைய தரவுகள் அனைத்தும் நீக்கப்படும். அதன்பிறகு, நீங்கள் ஒரு QR குறியீட்டை ஸ்கேன் செய்து, உங்கள் பேசியில் இருந்து செய்தி வரலாற்றை இடமாற்றிக்கொள்ளலாம்."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "இந்த பதிப்பில் சிக்னலை சீராக இயங்க வைக்க பல சிறிய மாற்றங்கள் மற்றும் பிழை திருத்தங்கள் உள்ளன.",
+    "messageformat": "இந்த பதிப்பில் SWARM Messenger-ஐச் சீராக இயங்க வைக்க பல சிறிய மாற்றங்கள் மற்றும் பிழை திருத்தங்கள் உள்ளன.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "கூடுதல் சிறிய மாற்றங்கள், பிழை திருத்தங்கள் மற்றும் செயல்திறன் மேம்பாடுகள். சிக்னலைப் பயன்படுத்தியதற்கு நன்றி!",
+    "messageformat": "கூடுதல் சிறிய மாற்றங்கள், பிழை திருத்தங்கள் மற்றும் செயல்திறன் மேம்பாடுகள். SWARM Messenger-ஐப் பயன்படுத்தியதற்கு நன்றி!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -9057,7 +9057,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "சிறு மாற்றங்கள், பிழை திருத்தங்கள் மற்றும் செயல்திறன் மேம்பாடுகள். சிக்னலைப் பயன்படுத்தியதற்கு நன்றி!",
+    "messageformat": "சிறு மாற்றங்கள், பிழை திருத்தங்கள் மற்றும் செயல்திறன் மேம்பாடுகள். SWARM Messenger-ஐப் பயன்படுத்தியதற்கு நன்றி!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.25--0": {

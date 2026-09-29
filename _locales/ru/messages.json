@@ -63,10 +63,10 @@
     "messageformat": "Отправление медиа в высоком качестве использует больше данных."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Поддержать Signal"
+    "messageformat": "Поддержать SWARM Messenger"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "<bold>Связанные устройства</bold> позволяют вам безопасно получить доступ к вашей учётной записи Signal и сообщениям на любом из ваших дополнительных устройств."
+    "messageformat": "<bold>Связанные устройства</bold> позволяют вам безопасно получить доступ к вашей учётной записи SWARM и сообщениям на любом из ваших дополнительных устройств."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "Вы можете привязать ПК, планшет или дополнительный телефон."
@@ -81,7 +81,7 @@
     "messageformat": "Управлять настройками учётной записи и резервными копиями можно только на основном устройстве."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--3--2": {
-    "messageformat": "Account settings and Signal Secure Backups can only be managed on your primary device."
+    "messageformat": "Account settings and SWARM Messenger Secure Backups can only be managed on your primary device."
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "Стандартное"
@@ -120,10 +120,10 @@
     "messageformat": "Неизвестная группа"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Не удаётся открыть Signal"
+    "messageformat": "Не удаётся открыть SWARM Messenger"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Для решения проблемы следуйте инструкциям на странице поддержки или обратитесь в поддержку Signal.\n\nЕсли вы хотите использовать Signal немедленно, вы можете удалить данные и повторно привязать этот ПК. У вас будет возможность перенести историю сообщений с телефона."
+    "messageformat": "Для решения проблемы следуйте инструкциям на странице поддержки или обратитесь в поддержку SWARM Messenger.\n\nЕсли вы хотите использовать SWARM Messenger немедленно, вы можете удалить данные и повторно привязать этот ПК. У вас будет возможность перенести историю сообщений с телефона."
   },
   "icu:databaseError": {
     "messageformat": "Ошибка базы данных"
@@ -135,16 +135,16 @@
     "messageformat": "Безвозвратное удаление всех данных"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Вся история сообщений и медиафайлы будут безвозвратно удалены с этого устройства. Это не приведет к удалению данных из вашего телефона.\n\nВы сможете пользоваться Signal на этом устройстве после переподключения. У вас будет возможность перенести историю сообщений с телефона."
+    "messageformat": "Вся история сообщений и медиафайлы будут безвозвратно удалены с этого устройства. Это не приведет к удалению данных из вашего телефона.\n\nВы сможете пользоваться SWARM Messenger на этом устройстве после переподключения. У вас будет возможность перенести историю сообщений с телефона."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Ваша версия базы данных не соответствует этой версии Signal. Убедитесь, что на вашем компьютере установлена самая последняя версия Signal."
+    "messageformat": "Ваша версия базы данных не соответствует этой версии SWARM Messenger. Убедитесь, что на вашем компьютере установлена самая последняя версия SWARM Messenger."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Не удаётся получить доступ к ключу шифрования базы данных, так как серверная часть связки ключей шифрования ОС изменилась с {previousBackend} на {currentBackend}. Это может произойти при изменении интерфейса ПК, например с GNOME на KDE.\n\nПожалуйста, переключитесь на предыдущей интерфейс ПК."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Не удаётся получить доступ к ключу шифрования базы данных, так как серверная часть связки ключей шифрования ОС изменилась с {previousBackend} на {currentBackend}. Это может произойти при изменении интерфейса ПК, например с GNOME на KDE.\n\nПожалуйста, переключитесь на предыдущий интерфейс ПК или попробуйте запустить Signal с параметром командной строки --password-store=\"{previousBackendFlag}\""
+    "messageformat": "Не удаётся получить доступ к ключу шифрования базы данных, так как серверная часть связки ключей шифрования ОС изменилась с {previousBackend} на {currentBackend}. Это может произойти при изменении интерфейса ПК, например с GNOME на KDE.\n\nПожалуйста, переключитесь на предыдущий интерфейс ПК или попробуйте запустить SWARM Messenger с параметром командной строки --password-store=\"{previousBackendFlag}\""
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -189,7 +189,7 @@
     "messageformat": "Показать все"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Выйти из Signal"
+    "messageformat": "Выйти из SWARM Messenger"
   },
   "icu:editMenuUndo": {
     "messageformat": "Отменить"
@@ -513,10 +513,10 @@
     "messageformat": "Вы отметили свой код безопасности с {name} как неподтвержденный с другого устройства"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Код безопасности, который вы пытаетесь подтвердить, изменился. Пожалуйста, перепроверьте ваш код безопасности с {name1}. Помните, это изменение может означать, что кто-то пытается перехватить вашу переписку и звонки или что {name2} просто переустановил(-а) Signal."
+    "messageformat": "Код безопасности, который вы пытаетесь подтвердить, изменился. Пожалуйста, перепроверьте ваш код безопасности с {name1}. Помните, это изменение может означать, что кто-то пытается перехватить вашу переписку и звонки или что {name2} просто переустановил(-а) SWARM Messenger."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Следующие люди, возможно, переустановили Signal или сменили устройство. Нажмите на получателя, чтобы подтвердить новый код безопасности. Это необязательно."
+    "messageformat": "Следующие люди, возможно, переустановили SWARM Messenger или сменили устройство. Нажмите на получателя, чтобы подтвердить новый код безопасности. Это необязательно."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Отправить ожидающие сообщения"
@@ -525,7 +525,7 @@
     "messageformat": "Посмотреть всех"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {У вас есть контакты ({count,number}), которые, возможно, переустановили Signal или сменили устройства. Мы можете просмотреть их коды безопасности, прежде чем поделиться с ними своей историей.} few {У вас есть контакты ({count,number}), которые, возможно, переустановили Signal или сменили устройства. Мы можете просмотреть их коды безопасности, прежде чем поделиться с ними своей историей.} many {У вас есть контакты ({count,number}), которые, возможно, переустановили Signal или сменили устройства. Мы можете просмотреть их коды безопасности, прежде чем поделиться с ними своей историей.} other {У вас есть контакты ({count,number}), которые, возможно, переустановили Signal или сменили устройства. Мы можете просмотреть их коды безопасности, прежде чем поделиться с ними своей историей.}}"
+    "messageformat": "{count, plural, one {У вас есть контакты ({count,number}), которые, возможно, переустановили SWARM Messenger или сменили устройства. Мы можете просмотреть их коды безопасности, прежде чем поделиться с ними своей историей.} few {У вас есть контакты ({count,number}), которые, возможно, переустановили SWARM Messenger или сменили устройства. Мы можете просмотреть их коды безопасности, прежде чем поделиться с ними своей историей.} many {У вас есть контакты ({count,number}), которые, возможно, переустановили SWARM Messenger или сменили устройства. Мы можете просмотреть их коды безопасности, прежде чем поделиться с ними своей историей.} other {У вас есть контакты ({count,number}), которые, возможно, переустановили SWARM Messenger или сменили устройства. Мы можете просмотреть их коды безопасности, прежде чем поделиться с ними своей историей.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Все контакты были проверены, нажмите «отправить», чтобы продолжить."
@@ -609,16 +609,16 @@
     "messageformat": "Шифрование для этого чата было автоматически подтверждено "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "Для людей, к которым вы подключены по номеру телефона, Signal может автоматически подтвердить, что соединение защищено с помощью процесса под названием «прозрачность ключа». Для дополнительной безопасности подтвердите сквозное шифрование вручную, сравнив номера на предыдущем экране или отсканировав код на устройстве контакта."
+    "messageformat": "Для людей, к которым вы подключены по номеру телефона, SWARM Messenger может автоматически подтвердить, что соединение защищено с помощью процесса под названием «прозрачность ключа». Для дополнительной безопасности подтвердите сквозное шифрование вручную, сравнив номера на предыдущем экране или отсканировав код на устройстве контакта."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "Автоподтверждение этого чата недоступно"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "Signal не может автоматически подтвердить шифрование этого чата. Скорее всего, это связано с тем, что {name} сменил(а) свой номер телефона или настройки конфиденциальности номера телефона. Подтвердите сквозное шифрование вручную, сравнив цифры на предыдущем экране или отсканировав код на устройстве контакта."
+    "messageformat": "SWARM Messenger не может автоматически подтвердить шифрование этого чата. Скорее всего, это связано с тем, что {name} сменил(а) свой номер телефона или настройки конфиденциальности номера телефона. Подтвердите сквозное шифрование вручную, сравнив цифры на предыдущем экране или отсканировав код на устройстве контакта."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "Signal может автоматически подтверждать шифрование только в тех чатах, где вы установили контакт с человеком по номеру телефона. Если чат начался с имени пользователя или общей группы, проверьте сквозное шифрование, сравнив цифры на предыдущем экране или отсканировав код на устройстве контакта."
+    "messageformat": "SWARM Messenger может автоматически подтверждать шифрование только в тех чатах, где вы установили контакт с человеком по номеру телефона. Если чат начался с имени пользователя или общей группы, проверьте сквозное шифрование, сравнив цифры на предыдущем экране или отсканировав код на устройстве контакта."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "Хорошо"
@@ -657,10 +657,10 @@
     "messageformat": "Нет, спасибо"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "Теперь Signal может автоматически подтверждать шифрование"
+    "messageformat": "Теперь SWARM Messenger может автоматически подтверждать шифрование"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "Для контактов, к которым вы подключены по номеру телефона, Signal может автоматически подтвердить, что соединение защищено с помощью процесса под названием «прозрачность ключа». Для дополнительной безопасности вы всё равно сможете подтверждать соединения вручную с помощью QR-кода или сравнив коды безопасности."
+    "messageformat": "Для контактов, к которым вы подключены по номеру телефона, SWARM Messenger может автоматически подтвердить, что соединение защищено с помощью процесса под названием «прозрачность ключа». Для дополнительной безопасности вы всё равно сможете подтверждать соединения вручную с помощью QR-кода или сравнив коды безопасности."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "Продолжить"
@@ -714,7 +714,7 @@
     "messageformat": "Черновик вложения изображения: {path}"
   },
   "icu:decryptionErrorToast": {
-    "messageformat": "В Signal Desktop произошла ошибка расшифровки сообщения от {name}, устройство {deviceId}"
+    "messageformat": "Произошла ошибка расшифровки сообщения от {name}, устройство {deviceId}"
   },
   "icu:Toast__ActionLabel--SubmitLog": {
     "messageformat": "Отправить журнал"
@@ -810,7 +810,7 @@
     "messageformat": "Редактор наборов стикеров"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "О приложении Signal Desktop"
+    "messageformat": "О приложении SWARM Messenger"
   },
   "icu:screenShareWindow": {
     "messageformat": "Показ экрана"
@@ -828,7 +828,7 @@
     "messageformat": "Выйти"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "SWARM Messenger"
   },
   "icu:search": {
     "messageformat": "Поиск"
@@ -882,7 +882,7 @@
     "messageformat": "Поиск по номеру телефона"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Добро пожаловать в Signal"
+    "messageformat": "Добро пожаловать в SWARM Messenger"
   },
   "icu:whatsNew": {
     "messageformat": "Посмотрите, {whatsNew} в этом обновлении"
@@ -969,13 +969,13 @@
     "messageformat": "Вы"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Чтобы отправлять голосовые сообщения, разрешите Signal Desktop доступ к вашему микрофону."
+    "messageformat": "Чтобы отправлять голосовые сообщения, разрешите SWARM Messenger доступ к вашему микрофону."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Чтобы совершать звонки, вы должны разрешить Signal Desktop доступ к вашему микрофону."
+    "messageformat": "Чтобы совершать звонки, вы должны разрешить SWARM Messenger доступ к вашему микрофону."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Чтобы совершать видеозвонки, вы должны разрешить Signal Desktop доступ к вашей камере."
+    "messageformat": "Чтобы совершать видеозвонки, вы должны разрешить SWARM Messenger доступ к вашей камере."
   },
   "icu:allowAccess": {
     "messageformat": "Разрешить доступ"
@@ -1002,13 +1002,13 @@
     "messageformat": "Без звука"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signal не удалось обновиться. <retryUpdateButton>Попробуйте ещё раз</retryUpdateButton> или посетите {url}, чтобы установить обновление вручную. Затем <contactSupportLink>сообщите в службу поддержки</contactSupportLink> об этой проблеме"
+    "messageformat": "SWARM Messenger не удалось обновиться. <retryUpdateButton>Попробуйте ещё раз</retryUpdateButton> или посетите {url}, чтобы установить обновление вручную. Затем <contactSupportLink>сообщите в службу поддержки</contactSupportLink> об этой проблеме"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signal не удалось обновиться. Посетите {url}, чтобы установить обновление вручную. Затем <contactSupportLink>сообщите в службу поддержки</contactSupportLink> об этой проблеме"
+    "messageformat": "SWARM Messenger не удалось обновиться. Посетите {url}, чтобы установить обновление вручную. Затем <contactSupportLink>сообщите в службу поддержки</contactSupportLink> об этой проблеме"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Скорее всего, Signal Desktop находится в карантине macOS и не сможет обновляться автоматически. Пожалуйста, попробуйте переместить {app} в {folder} при помощи Finder."
+    "messageformat": "Скорее всего, SWARM Messenger находится в карантине macOS и не сможет обновляться автоматически. Пожалуйста, попробуйте переместить {app} в {folder} при помощи Finder."
   },
   "icu:ok": {
     "messageformat": "ОК"
@@ -1053,7 +1053,7 @@
     "messageformat": "Это сообщение будет удалено с этого устройства."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Это сообщение будет удалено для всех в этом чате, если у них установлена недавняя версия Signal. Они смогут увидеть, что вы удалили сообщение."
+    "messageformat": "Это сообщение будет удалено для всех в этом чате, если у них установлена недавняя версия SWARM Messenger. Они смогут увидеть, что вы удалили сообщение."
   },
   "icu:from": {
     "messageformat": "От"
@@ -1095,7 +1095,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "«{title}» — это имя профиля, которое данный человек установил для себя в Signal."
+    "messageformat": "«{title}» — это имя профиля, которое данный человек установил для себя в SWARM Messenger."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Подтверждён"
@@ -1110,7 +1110,7 @@
     "messageformat": "Обмена сообщениями с {name} не было"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Контакт Signal"
+    "messageformat": "Контакт SWARM"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} есть в ваших системных контактах"
@@ -1422,7 +1422,7 @@
     "messageformat": "Узнать больше"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal использует сквозное шифрование, и ему иногда бывает нужно обновить сессию вашего чата. Это не затрагивает безопасность чата, но вы могли пропустить сообщение от этого собеседника. Вы можете попросить его отправить сообщение заново."
+    "messageformat": "SWARM Messenger использует сквозное шифрование, и ему иногда бывает нужно обновить сессию вашего чата. Это не затрагивает безопасность чата, но вы могли пропустить сообщение от этого собеседника. Вы можете попросить его отправить сообщение заново."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Связаться с поддержкой"
@@ -1449,7 +1449,7 @@
     "messageformat": "{sender} изменил(-а) свой номер телефона"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Контакт присоединился к Signal"
+    "messageformat": "Контакт присоединился к SWARM Messenger"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} и {conversationTitle} — это одна и та же учётная запись. История сообщений для обоих чатов находится здесь."
@@ -1539,7 +1539,7 @@
     "messageformat": "Невозможно загрузить медиафайлы"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Проверьте соединение с интернетом на ПК и телефоне. Откройте Signal на телефоне и повторите попытку загрузки."
+    "messageformat": "Проверьте соединение с интернетом на ПК и телефоне. Откройте SWARM Messenger на телефоне и повторите попытку загрузки."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Эти медиафайлы больше не доступны на вашем телефоне и не могут быть загружены."
@@ -1560,10 +1560,10 @@
     "messageformat": "Узнать больше"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Просканируйте этот код в приложении Signal на своем телефоне"
+    "messageformat": "Просканируйте этот код в приложении SWARM Messenger на своем телефоне"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Откройте Signal на своем телефоне"
+    "messageformat": "Откройте SWARM Messenger на своем телефоне"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Нажмите на {settings}, затем на {linkedDevices}"
@@ -1581,7 +1581,7 @@
     "messageformat": "<paragraph>Произошла неожиданная ошибка.</paragraph><paragraph>Пожалуйста, попробуйте ещё раз.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signal не может привязать это устройство, используя вашу текущую сеть."
+    "messageformat": "SWARM Messenger не может привязать это устройство, используя вашу текущую сеть."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Повторить попытку"
@@ -1599,7 +1599,7 @@
     "messageformat": "Удалить все данные?"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "Вы пытаетесь привязать другую учётную запись Signal к этому ПК. Если вы продолжите, все текущие данные на Signal Desktop будут удалены."
+    "messageformat": "Вы пытаетесь привязать другую учётную запись SWARM к этому ПК. Если вы продолжите, все текущие данные в SWARM Messenger будут удалены."
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "Продолжить"
@@ -1614,7 +1614,7 @@
     "messageformat": "Имя устройства"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Чтобы изменить имя это устройства, откройте Signal на своем телефоне и перейдите в Настройки > Связанные устройства"
+    "messageformat": "Чтобы изменить имя это устройства, откройте SWARM Messenger на своем телефоне и перейдите в Настройки > Связанные устройства"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Оттенок кожи на эмодзи"
@@ -1806,7 +1806,7 @@
     "messageformat": "Автоматическое подтверждение ключа"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "При включении Signal попытается автоматически подтвердить шифрование личных чатов."
+    "messageformat": "При включении SWARM Messenger попытается автоматически подтвердить шифрование личных чатов."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "Узнать больше"
@@ -1824,7 +1824,7 @@
     "messageformat": "Извините, вы уже привязали слишком много устройств. Попробуйте удалить несколько."
   },
   "icu:installTooOld": {
-    "messageformat": "Обновите Signal на этом устройстве, чтобы привязать свой телефон."
+    "messageformat": "Обновите SWARM Messenger на этом устройстве, чтобы привязать свой телефон."
   },
   "icu:installErrorHeader": {
     "messageformat": "Что-то пошло не так!"
@@ -1875,7 +1875,7 @@
     "messageformat": "Эта ссылка на звонок уже недействительна."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Звонок Signal"
+    "messageformat": "Звонок SWARM Messenger"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Не удалось удалить ссылку. Проверьте ваше подключение к интернету и попробуйте ещё раз."
@@ -2049,16 +2049,16 @@
     "messageformat": "{count, plural, one {{count,number} человек в этом звонке} few {{count,number} человека в этом звонке} many {{count,number} человек в этом звонке} other {{count,number} человека в этом звонке}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal будет звонить у {person}"
+    "messageformat": "SWARM Messenger будет звонить у {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal будет звонить у {first} и {second}"
+    "messageformat": "SWARM Messenger будет звонить у {first} и {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal будет звонить у {first}, {second} и {third}"
+    "messageformat": "SWARM Messenger будет звонить у {first}, {second} и {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {Signal будет звонить у {first}, {second} и ещё у {others,number} человека} few {Signal будет звонить у {first}, {second} и ещё у {others,number} человек} many {Signal будет звонить у {first}, {second} и ещё у {others,number} человек} other {Signal будет звонить у {first}, {second} и ещё у {others,number} человека}}"
+    "messageformat": "{others, plural, one {SWARM Messenger будет звонить у {first}, {second} и ещё у {others,number} человека} few {SWARM Messenger будет звонить у {first}, {second} и ещё у {others,number} человек} many {SWARM Messenger будет звонить у {first}, {second} и ещё у {others,number} человек} other {SWARM Messenger будет звонить у {first}, {second} и ещё у {others,number} человека}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} будет уведомлен(-а)"
@@ -2112,13 +2112,13 @@
     "messageformat": "Переподключаемся…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Соединение было потеряно. Signal подключается повторно."
+    "messageformat": "Соединение было потеряно. SWARM Messenger подключается повторно."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal показывает {window}."
+    "messageformat": "SWARM Messenger показывает {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Идёт демонстрация экрана Signal"
+    "messageformat": "Идёт демонстрация экрана SWARM Messenger"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Переподключаемся…"
@@ -2139,7 +2139,7 @@
     "messageformat": "Требуется разрешение"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal необходимо разрешение, чтобы получить доступ к записи вашего экрана."
+    "messageformat": "SWARM Messenger необходимо разрешение, чтобы получить доступ к записи вашего экрана."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Перейдите в Системные настройки."
@@ -2148,7 +2148,7 @@
     "messageformat": "Нажмите на значок замка в левом нижнем углу и введите пароль от вашего компьютера."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Справа поставьте флажок рядом с Signal. Если вы не видите Signal в списке, нажмите «+», чтобы добавить его."
+    "messageformat": "Справа поставьте флажок рядом со SWARM Messenger. Если вы не видите SWARM Messenger в списке, нажмите «+», чтобы добавить его."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Открыть Системные настройки"
@@ -2160,7 +2160,7 @@
     "messageformat": "Всегда ретранслировать звонки"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Пропускать все звонки через сервер Signal, чтобы не раскрывать ваш IP-адрес собеседнику. Качество звонка ухудшится."
+    "messageformat": "Пропускать все звонки через сервер SWARM Messenger, чтобы не раскрывать ваш IP-адрес собеседнику. Качество звонка ухудшится."
   },
   "icu:permissions": {
     "messageformat": "Разрешения"
@@ -2178,10 +2178,10 @@
     "messageformat": "Показать всплывающее окно форматирования при выделении текста"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Проверка правописания будет включена, когда Signal запустится в следующий раз."
+    "messageformat": "Проверка правописания будет включена, когда SWARM Messenger запустится в следующий раз."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Проверка правописания будет выключена, когда Signal запустится в следующий раз."
+    "messageformat": "Проверка правописания будет выключена, когда SWARM Messenger запустится в следующий раз."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Сворачивать в системный трей"
@@ -2205,7 +2205,7 @@
     "messageformat": "Удалить все данные?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Удалить все данные и сообщения из этой версии Signal Desktop? Ваша учётная запись Signal и данные на вашем телефоне или других подключенных устройствах не будут удалены."
+    "messageformat": "Удалить все данные и сообщения из этой версии SWARM Messenger? Ваша учётная запись SWARM и данные на вашем телефоне или других подключенных устройствах не будут удалены."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Отключается и удаляет все данные…"
@@ -2214,7 +2214,7 @@
     "messageformat": "Удалить учётную запись"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "Будут удалены информация вашей учётной записи, ваш профиль и все ваши сообщения. Вы также будете удалены из всех групп Signal."
+    "messageformat": "Будут удалены информация вашей учётной записи, ваш профиль и все ваши сообщения. Вы также будете удалены из всех групп SWARM."
   },
   "icu:deleteAccountButton": {
     "messageformat": "Удалить учётную запись"
@@ -2223,10 +2223,10 @@
     "messageformat": "Удалить учётную запись?"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "Будут удалены информация вашей учётной записи, ваш профиль и все ваши сообщения. Вы также будете удалены из всех групп Signal. После завершения этого процесса приложение закроется."
+    "messageformat": "Будут удалены информация вашей учётной записи, ваш профиль и все ваши сообщения. Вы также будете удалены из всех групп SWARM. После завершения этого процесса приложение закроется."
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "У вас есть устаревшие данные из предыдущей установки Signal Desktop. Если вы решите продолжить, они будут удалены, и вы начнете с нуля."
+    "messageformat": "У вас есть устаревшие данные из предыдущей установки SWARM Messenger. Если вы решите продолжить, они будут удалены, и вы начнете с нуля."
   },
   "icu:deleteOldData": {
     "messageformat": "Удалить старые данные"
@@ -2283,7 +2283,7 @@
     "messageformat": "Частично удалено, нажмите для более подробной информации"
   },
   "icu:expiredWarning": {
-    "messageformat": "Эта версия Signal Desktop устарела. Пожалуйста, выполните обновление до последней версии, чтобы продолжить обмен сообщениями."
+    "messageformat": "Эта версия SWARM Messenger устарела. Пожалуйста, выполните обновление до последней версии, чтобы продолжить обмен сообщениями."
   },
   "icu:upgrade": {
     "messageformat": "Нажмите, чтобы перейти на swarm.green/download"
@@ -2295,7 +2295,7 @@
     "messageformat": "Импорт контактов"
   },
   "icu:syncExplanation": {
-    "messageformat": "Импортировать все группы и контакты Signal с вашего мобильного устройства."
+    "messageformat": "Импортировать все группы и контакты SWARM с вашего мобильного устройства."
   },
   "icu:syncNow": {
     "messageformat": "Импортировать сейчас"
@@ -2328,7 +2328,7 @@
     "messageformat": "Вчера в {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Возможно, Signal не может обработать входящее сообщение."
+    "messageformat": "Возможно, SWARM Messenger не может обработать входящее сообщение."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Текст сообщения слишком длинный."
@@ -2493,13 +2493,13 @@
     "messageformat": "Изменения могут быть внесены только в течение 24 часов с момента отправки этого сообщения."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} не является пользователем Signal. Убедитесь, что вы ввели полное имя пользователя."
+    "messageformat": "{atUsername} не является пользователем SWARM Messenger. Убедитесь, что вы ввели полное имя пользователя."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} – недействительное имя пользователя. Убедитесь, что вы ввели полное имя пользователя с последующим набором цифр."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "Пользователь не найден. «{phoneNumber}» — не пользователь Signal."
+    "messageformat": "Пользователь не найден. «{phoneNumber}» — не пользователь SWARM Messenger."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "Пользователь не найден. «{phoneNumber}» — недействительный номер телефона."
@@ -2520,13 +2520,13 @@
     "messageformat": "Достигнут максимальный размер группы"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "В группах Signal могут находиться максимум {max,number} участников."
+    "messageformat": "В группах SWARM могут находиться максимум {max,number} участников."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Достигнут рекомендуемый предел участников"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Группы Signal работают лучше всего с {max,number} участниками или меньше. Добавление большего количества участников приведет к задержкам при отправке и получении сообщений."
+    "messageformat": "Группы SWARM работают лучше всего с {max,number} участниками или меньше. Добавление большего количества участников приведет к задержкам при отправке и получении сообщений."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Придумайте имя для группы"
@@ -2556,13 +2556,13 @@
     "messageformat": "Не удалось обновить группу. Проверьте ваше подключение к интернету и попробуйте еще раз."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Нажмите, чтобы повторно привязать Signal Desktop к своему мобильному устройству для продолжения обмена сообщениями."
+    "messageformat": "Нажмите, чтобы повторно привязать SWARM Messenger к своему мобильному устройству для продолжения обмена сообщениями."
   },
   "icu:unlinked": {
     "messageformat": "Отвязан"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "Нажмите, чтобы зарегистрироваться повторно и продолжить обмен сообщениями. Отмена регистрации Signal Desktop может быть вызвана тем, что вы зарегистрировали свой номер телефона в Signal на другом устройстве."
+    "messageformat": "Нажмите, чтобы зарегистрироваться повторно и продолжить обмен сообщениями. Отмена регистрации SWARM Messenger может быть вызвана тем, что вы зарегистрировали свой номер телефона в SWARM Messenger на другом устройстве."
   },
   "icu:unregistered": {
     "messageformat": "Регистрация отменена"
@@ -2574,16 +2574,16 @@
     "messageformat": "Попробуйте обновиться ещё раз"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Нажмите, чтобы перезапустить Signal"
+    "messageformat": "Нажмите, чтобы перезапустить SWARM Messenger"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Нажмите, чтобы скачать обновление"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signal не удалось обновиться. Нажмите, чтобы попробовать ещё раз."
+    "messageformat": "SWARM Messenger не удалось обновиться. Нажмите, чтобы попробовать ещё раз."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Перезапустить Signal"
+    "messageformat": "Перезапустить SWARM Messenger"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Игнорировать обновление"
@@ -2715,7 +2715,7 @@
     "messageformat": "Некоторые вложения слишком большие для отображения."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Используйте эту ссылку, чтобы присоединиться к звонку Signal"
+    "messageformat": "Используйте эту ссылку, чтобы присоединиться к звонку SWARM"
   },
   "icu:donation--missing": {
     "messageformat": "Невозможно получить данные о пожертвовании"
@@ -2727,7 +2727,7 @@
     "messageformat": "Просмотрите это сообщение на своём телефоне, чтобы увидеть своё пожертвование"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} сделал(-а) пожертвование Signal от вашего имени"
+    "messageformat": "{sender} сделал(-а) пожертвование SWARM Messenger от вашего имени"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Просмотрите это сообщение на своём телефоне, чтобы открыть пожертвование"
@@ -2784,7 +2784,7 @@
     "messageformat": "Спасибо за вашу поддержку!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Вы сделали пожертвование в Signal от имени {name}. Этот пользователь при желании сможет продемонстрировать свою поддержку в профиле."
+    "messageformat": "Вы сделали пожертвование в SWARM Messenger от имени {name}. Этот пользователь при желании сможет продемонстрировать свою поддержку в профиле."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Не удалось установить набор стикеров"
@@ -2796,10 +2796,10 @@
     "messageformat": "Добавить стикеры"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Стикеры от художников Signal"
+    "messageformat": "Стикеры от художников SWARM Messenger"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Нет доступных стикеров от художников Signal"
+    "messageformat": "Нет доступных стикеров от художников SWARM Messenger"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "Стикеры от друзей"
@@ -2835,7 +2835,7 @@
     "messageformat": "Перетащите, чтобы переупорядочить набор стикеров"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "Наборы стикеров от художников Signal"
+    "messageformat": "Наборы стикеров от художников SWARM Messenger"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
     "messageformat": "Полученные наборы стикеров"
@@ -3120,19 +3120,19 @@
     "messageformat": "Сообщение слишком длинное для отображения"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} отправил(-a) вам сообщение, которое не может быть обработано или отображено, поскольку оно использует новую функцию Signal."
+    "messageformat": "{contact} отправил(-a) вам сообщение, которое не может быть обработано или отображено, поскольку оно использует новую функцию SWARM Messenger."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Теперь вы используете последнюю версию Signal и можете попросить {contact} повторно отправить это сообщение."
+    "messageformat": "Теперь вы используете последнюю версию SWARM Messenger и можете попросить {contact} повторно отправить это сообщение."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Одно из ваших устройств отправило сообщение, которое не может быть обработано или отображено, поскольку оно использует новую функцию Signal."
+    "messageformat": "Одно из ваших устройств отправило сообщение, которое не может быть обработано или отображено, поскольку оно использует новую функцию SWARM Messenger."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Будущие сообщения, подобные этому, будут синхронизироваться, так как теперь вы используете актуальную версию Signal."
+    "messageformat": "Будущие сообщения, подобные этому, будут синхронизироваться, так как теперь вы используете актуальную версию SWARM Messenger."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Обновить Signal"
+    "messageformat": "Обновить SWARM Messenger"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Просмотрено"
@@ -3399,7 +3399,7 @@
     "messageformat": "Чат был отмечен непрочитанным"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Пожалуйста, настройте Signal на вашем телефоне и ПК, чтобы использовать редактор наборов стикеров"
+    "messageformat": "Пожалуйста, настройте SWARM Messenger на вашем телефоне и ПК, чтобы использовать редактор наборов стикеров"
   },
   "icu:Reactions--remove": {
     "messageformat": "Убрать реакцию"
@@ -3417,16 +3417,16 @@
     "messageformat": "Советы по безопасности"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "Не отвечайте на чаты из Signal"
+    "messageformat": "Не отвечайте на чаты из SWARM Messenger"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "Signal никогда не посылает вам сообщения для получения вашего регистрационного кода, Пин-кода или ключа восстановления. Никогда не отвечайте на чаты, притворяющиеся Signal."
+    "messageformat": "SWARM Messenger никогда не посылает вам сообщения для получения вашего регистрационного кода, Пин-кода или ключа восстановления. Никогда не отвечайте на чаты, притворяющиеся SWARM Messenger."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "Проверяйте имена и фото"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "Обратите внимание на уведомление «Имя не подтверждено». В Signal каждый пользователь сам устанавливает своё имя профиля."
+    "messageformat": "Обратите внимание на уведомление «Имя не подтверждено». В SWARM Messenger каждый пользователь сам устанавливает своё имя профиля."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "Остерегайтесь мошенников"
@@ -3435,16 +3435,16 @@
     "messageformat": "Избегайте подозрительных сообщений, которые пытаются заставить вас ответить. Будьте внимательны к финансовым советам и подозрительным веб-ссылкам."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "Не отвечайте на чаты из Signal"
+    "messageformat": "Не отвечайте на чаты из SWARM Messenger"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Signal никогда не посылает вам сообщения для получения вашего регистрационного кода, Пин-кода или ключа восстановления. Не отвечайте на чаты, которые притворяются Signal или Поддержкой Signal. Злоумышленники создают фальшивые имена, чтобы попытаться завладеть вашей учётной записью."
+    "messageformat": "SWARM Messenger никогда не посылает вам сообщения для получения вашего регистрационного кода, Пин-кода или ключа восстановления. Не отвечайте на чаты, которые притворяются SWARM Messenger или Поддержкой SWARM Messenger. Злоумышленники создают фальшивые имена, чтобы попытаться завладеть вашей учётной записью."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "Проверяйте имена и фото"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "Обратите внимание на уведомление «Имя не подтверждено». В Signal каждый пользователь сам устанавливает своё имя профиля и фото. Если вы не уверены, от кого поступил новый запрос, безопаснее будет проигнорировать его."
+    "messageformat": "Обратите внимание на уведомление «Имя не подтверждено». В SWARM Messenger каждый пользователь сам устанавливает своё имя профиля и фото. Если вы не уверены, от кого поступил новый запрос, безопаснее будет проигнорировать его."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Мошенничество с криптовалютой или деньгами"
@@ -3525,13 +3525,13 @@
     "messageformat": "Сообщить о спаме?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signal будет уведомлен о том, что этот человек может рассылать спам. Signal не видит содержимое чатов."
+    "messageformat": "SWARM Messenger будет уведомлен о том, что этот человек может рассылать спам. SWARM Messenger не видит содержимое чатов."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signal будет уведомлен о том, что человек, пригласивший вас в эту группу, может рассылать спам. Signal не видит содержимое чатов."
+    "messageformat": "SWARM Messenger будет уведомлен о том, что человек, пригласивший вас в эту группу, может рассылать спам. SWARM Messenger не видит содержимое чатов."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signal будет уведомлен о том, что пользователь {name}, пригласивший вас в эту группу, может рассылать спам. Signal не видит содержимое чатов."
+    "messageformat": "SWARM Messenger будет уведомлен о том, что пользователь {name}, пригласивший вас в эту группу, может рассылать спам. SWARM Messenger не видит содержимое чатов."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Сообщить о спаме"
@@ -3573,7 +3573,7 @@
     "messageformat": "Принять запрос?"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "Принимайте запросы только от тех, кому доверяете. <bold>Signal никогда не посылает</bold> вам сообщения для получения вашего регистрационного кода, Пин-кода или ключа восстановления."
+    "messageformat": "Принимайте запросы только от тех, кому доверяете. <bold>SWARM Messenger никогда не посылает</bold> вам сообщения для получения вашего регистрационного кода, Пин-кода или ключа восстановления."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "Продолжить"
@@ -3627,16 +3627,16 @@
     "messageformat": "Имя не подтверждено"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Это официальный и единственный чат от Signal"
+    "messageformat": "Это официальный и единственный чат от SWARM Messenger"
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "Официальный чат"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "Это единственный официальный чат от Signal. Будьте в курсе новостей и свежих релизов."
+    "messageformat": "Это единственный официальный чат от SWARM Messenger. Будьте в курсе новостей и свежих релизов."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "Это единственный официальный чат от Signal."
+    "messageformat": "Это единственный официальный чат от SWARM Messenger."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Будьте в курсе новостей и свежих релизов."
@@ -3702,10 +3702,10 @@
     "messageformat": "Неотвеченный видеозвонок"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal все ещё работает"
+    "messageformat": "SWARM Messenger все ещё работает"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal будет продолжать работать в области уведомлений. Вы можете изменить это в настройках Signal."
+    "messageformat": "SWARM Messenger будет продолжать работать в области уведомлений. Вы можете изменить это в настройках SWARM Messenger."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Входящий голосовой звонок"
@@ -3912,7 +3912,7 @@
     "messageformat": "Копировать ссылку на звонок"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Поделиться ссылкой на звонок через Signal"
+    "messageformat": "Поделиться ссылкой на звонок через SWARM Messenger"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "Удалить {name} из звонка?"
@@ -4047,7 +4047,7 @@
     "messageformat": "{max, plural, one {Только {max,number} изменение может быть внесено в это сообщение.} few {Только {max,number} изменения могут быть внесены в это сообщение.} many {Только {max,number} изменений могут быть внесены в это сообщение.} other {Только {max,number} изменения могут быть внесены в это сообщение.}}"
   },
   "icu:unknown-sgnl-link": {
-    "messageformat": "Извините, эта ссылка sgnl:// в данный момент не поддерживается Signal Desktop."
+    "messageformat": "Извините, эта ссылка sgnl:// в данный момент не поддерживается."
   },
   "icu:GroupV2--cannot-send": {
     "messageformat": "Вы не можете отправлять сообщения в ту группу."
@@ -4074,7 +4074,7 @@
     "messageformat": "Неизвестная версия ссылки"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "Эта ссылка не поддерживается этой версией Signal Desktop."
+    "messageformat": "Эта ссылка не поддерживается этой версией SWARM Messenger."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Невозможно присоединиться к группе"
@@ -4680,10 +4680,10 @@
     "messageformat": "Удаление данных пользователя и сброс приложения"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Поддержать Signal"
+    "messageformat": "Поддержать SWARM Messenger"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} поддерживает Signal"
+    "messageformat": "{name} поддерживает SWARM Messenger"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "Синхронизация сообщений"
@@ -4800,7 +4800,7 @@
     "messageformat": "Требуются действия с учётной записью"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Чтобы продолжить использование этой учётной записи, необходимо открыть Signal на телефоне. Если вы не откроете Signal на телефоне, ваша учётная запись будет вскоре удалена. <learnMoreLink>Узнать больше</learnMoreLink>"
+    "messageformat": "Чтобы продолжить использование этой учётной записи, необходимо открыть SWARM Messenger на телефоне. Если вы не откроете SWARM Messenger на телефоне, ваша учётная запись будет вскоре удалена. <learnMoreLink>Узнать больше</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Не удается восстановить медиафайлы"
@@ -4824,13 +4824,13 @@
     "messageformat": "Добавить вложение или опрос"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Этот человек не использует Signal"
+    "messageformat": "Этот человек не использует SWARM Messenger"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktop не поддерживает общение с контактами, у которых нет Signal. Попросите этого человека установить Signal для более безопасного общения."
+    "messageformat": "SWARM Messenger не поддерживает общение с контактами, у которых нет SWARM Messenger. Попросите этого человека установить SWARM Messenger для более безопасного общения."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
-    "messageformat": "Проверяем, зарегистрирован ли контакт в Signal"
+    "messageformat": "Проверяем, зарегистрирован ли контакт"
   },
   "icu:CompositionArea__edit-action--discard": {
     "messageformat": "Сбросить сообщение"
@@ -5088,10 +5088,10 @@
     "messageformat": "Разблокировать"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "Signal будет уведомлен о том, что этот человек может рассылать спам. Signal не видит содержимое чатов."
+    "messageformat": "SWARM Messenger будет уведомлен о том, что этот человек может рассылать спам. SWARM Messenger не видит содержимое чатов."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "Signal будет уведомлён о том, что человек, пригласивший вас в эту группу, может рассылать спам. Signal не видит содержимое чатов."
+    "messageformat": "SWARM Messenger будет уведомлён о том, что человек, пригласивший вас в эту группу, может рассылать спам. SWARM Messenger не видит содержимое чатов."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "Сообщить о спаме"
@@ -5139,7 +5139,7 @@
     "messageformat": "Никнейм"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Никнеймы и заметки сохраняются в Signal и защищаются сквозным шифрованием. Они видны только вам."
+    "messageformat": "Никнеймы и заметки сохраняются в SWARM Messenger и защищаются сквозным шифрованием. Они видны только вам."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Имя"
@@ -5295,7 +5295,7 @@
     "messageformat": "Требовать принятия администратором новых участников, присоединяющихся по ссылке на группу"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Скопируйте ссылку на signal.group в буфер обмена"
+    "messageformat": "Скопируйте ссылку на группу в буфер обмена"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Поиск участников"
@@ -5434,7 +5434,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, one {Участники группы с последними версиями Signal увидят, что вы удалили это сообщение.} few {Участники группы с последними версиями Signal увидят, что вы удалили эти сообщения.} many {Участники группы с последними версиями Signal увидят, что вы удалили эти сообщения.} other {Участники группы с последними версиями Signal увидят, что вы удалили эти сообщения.}}"
+    "messageformat": "{count, plural, one {Участники группы с последними версиями SWARM Messenger увидят, что вы удалили это сообщение.} few {Участники группы с последними версиями SWARM Messenger увидят, что вы удалили эти сообщения.} many {Участники группы с последними версиями SWARM Messenger увидят, что вы удалили эти сообщения.} other {Участники группы с последними версиями SWARM Messenger увидят, что вы удалили эти сообщения.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Удалить"
@@ -5560,7 +5560,7 @@
     "messageformat": "Невозможно переслать пустые или удалённые сообщения"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Используйте эту ссылку, чтобы присоединиться к звонку Signal: {url}"
+    "messageformat": "Используйте эту ссылку, чтобы присоединиться к звонку SWARM: {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "Внимательно проверяйте запросы"
@@ -5569,7 +5569,7 @@
     "messageformat": "Советы по безопасности"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Внимательно проверяйте запросы. Signal нашёл другой контакт с тем же именем. <reviewRequestLink>Проверить запрос</reviewRequestLink>"
+    "messageformat": "Внимательно проверяйте запросы. SWARM Messenger нашёл другой контакт с тем же именем. <reviewRequestLink>Проверить запрос</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} участник группы имеет одинаковое имя. <reviewRequestLink>Проверить участников</reviewRequestLink>} few {{count,number} участника группы имеют одинаковое имя. <reviewRequestLink>Проверить участников</reviewRequestLink>} many {{count,number} участников группы имеют одинаковое имя. <reviewRequestLink>Проверить участников</reviewRequestLink>} other {{count,number} участника группы имеют одинаковое имя. <reviewRequestLink>Проверить участников</reviewRequestLink>}}"
@@ -5602,7 +5602,7 @@
     "messageformat": "Нет других общих групп"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Контакт Signal"
+    "messageformat": "Контакт SWARM"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Недавно изменил(-а) своё имя профиля с {oldName} на {newName}"
@@ -5620,7 +5620,7 @@
     "messageformat": "Пройдите проверку, чтобы продолжить общение"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Чтобы помочь предотвратить спам в Signal, пожалуйста, пройдите проверку."
+    "messageformat": "Чтобы помочь предотвратить спам в SWARM Messenger, пожалуйста, пройдите проверку."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "После проверки вы сможете продолжить общаться. Все приостановленные сообщения будут отправлены автоматически."
@@ -6007,7 +6007,7 @@
     "messageformat": "Вы хотите сбросить эти изменения?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Закрыть Signal и завершить звонок?"
+    "messageformat": "Закрыть SWARM Messenger и завершить звонок?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Не сейчас"
@@ -6107,7 +6107,7 @@
     "messageformat": "Общие"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Поддержать Signal"
+    "messageformat": "Поддержать SWARM Messenger"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Внешний вид"
@@ -6173,10 +6173,10 @@
     "messageformat": "Системная"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "SWARM Messenger Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "Ваш Signal Login используется для восстановления вашей учётной записи. Храните эти ключи в надёжном менеджере паролей, которому доверяете. <learnMoreLink>Узнать больше</learnMoreLink>."
+    "messageformat": "Ваш SWARM Messenger Login используется для восстановления вашей учётной записи. Храните эти ключи в надёжном менеджере паролей, которому доверяете. <learnMoreLink>Узнать больше</learnMoreLink>."
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "Узнать больше"
@@ -6188,7 +6188,7 @@
     "messageformat": "2 ключа"
   },
   "icu:Preferences__SignalAccountKeys__Title": {
-    "messageformat": "Ваш Signal Login"
+    "messageformat": "Ваш SWARM Messenger Login"
   },
   "icu:Preferences__SignalAccountKeys__Description": {
     "messageformat": "Сохраните его в надёжном месте, он понадобится вам для восстановления доступа к учётной записи и данным. Никогда и ни с кем не делитесь им."
@@ -6209,7 +6209,7 @@
     "messageformat": "Это связанное устройство"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "Чтобы управлять настройками вашей учётной записи, откройте приложение Signal на основном устройстве."
+    "messageformat": "Чтобы управлять настройками вашей учётной записи, откройте приложение SWARM Messenger на основном устройстве."
   },
   "icu:Preferences--zoom": {
     "messageformat": "Масштаб"
@@ -6248,7 +6248,7 @@
     "messageformat": "Изменить"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "PIN-код Signal"
+    "messageformat": "PIN-код SWARM"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "Напоминания PIN-кода"
@@ -6386,7 +6386,7 @@
     "messageformat": "Не удалось экспортировать историю чата"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "Историю чата нельзя экспортировать, потому что у Signal нет разрешения на запись файлов на диск. Попробуйте изменить права доступа к диску или обновить системные настройки, а затем экспортировать ещё раз."
+    "messageformat": "Историю чата нельзя экспортировать, потому что у SWARM Messenger нет разрешения на запись файлов на диск. Попробуйте изменить права доступа к диску или обновить системные настройки, а затем экспортировать ещё раз."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "Экспорт резервной копии"
@@ -6401,7 +6401,7 @@
     "messageformat": "Перенесите папку с резервной копией в хранилище вашего телефона"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "Установите новую копию Signal на свой телефон"
+    "messageformat": "Установите новую копию SWARM Messenger на свой телефон"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "Нажмите «Восстановить или перенести» и выберите «Резервное копирование на устройстве»"
@@ -6668,13 +6668,13 @@
     "messageformat": "Заблокирован {blockedAt}"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Безопасное резервное копирование Signal"
+    "messageformat": "Безопасное резервное копирование SWARM Messenger"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Автоматическое создание резервных копий с помощью надёжного, полностью зашифрованного хранилища Signal. Начните с вашего телефона. <learnMoreLink>Узнать больше</learnMoreLink>."
+    "messageformat": "Автоматическое создание резервных копий с помощью надёжного, полностью зашифрованного хранилища SWARM Messenger. Начните с вашего телефона. <learnMoreLink>Узнать больше</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Создайте резервную копию истории сообщений, и вы не потеряете ни одно сообщение при покупке нового телефона или переустановке Signal."
+    "messageformat": "Создайте резервную копию истории сообщений, и вы не потеряете ни одно сообщение при покупке нового телефона или переустановке SWARM Messenger."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Сведения о резервном копировании"
@@ -6704,13 +6704,13 @@
     "messageformat": "Подписка отменена"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Вы можете управлять безопасным резервным копированием Signal или отменять подписку на своём телефоне."
+    "messageformat": "Вы можете управлять безопасным резервным копированием SWARM Messenger или отменять подписку на своём телефоне."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Вы можете управлять безопасным резервным копированием Signal или продлевать подписку на своём телефоне."
+    "messageformat": "Вы можете управлять безопасным резервным копированием SWARM Messenger или продлевать подписку на своём телефоне."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Вы можете управлять подпиской на безопасное резервное копирование Signal или продлевать её на своём телефоне."
+    "messageformat": "Вы можете управлять подпиской на безопасное резервное копирование SWARM Messenger или продлевать её на своём телефоне."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Последняя резервная копия"
@@ -6728,7 +6728,7 @@
     "messageformat": "Создайте резервную копию, защищённую сквозным шифрованием, которую можно восстановить на телефоне. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Чтобы восстановить резервную копию, установите новую версию Signal на вашем телефоне. Откройте приложение и нажмите «Восстановить или перенести». <learnMoreLink>Узнать больше.</learnMoreLink>"
+    "messageformat": "Чтобы восстановить резервную копию, установите новую версию SWARM Messenger на вашем телефоне. Откройте приложение и нажмите «Восстановить или перенести». <learnMoreLink>Узнать больше.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Выбрать папку"
@@ -6764,7 +6764,7 @@
     "messageformat": "Ваш ключ восстановления"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "Этот ключ необходим для восстановления вашей учётной записи и данных. Храните ключ в безопасном месте и никогда и никому его не сообщайте. Signal никогда не посылает вам сообщения для получения вашего ключа восстановления. <learnMoreLink>Узнать больше.</learnMoreLink>"
+    "messageformat": "Этот ключ необходим для восстановления вашей учётной записи и данных. Храните ключ в безопасном месте и никогда и никому его не сообщайте. SWARM Messenger никогда не посылает вам сообщения для получения вашего ключа восстановления. <learnMoreLink>Узнать больше.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "Не делитесь ключом восстановления"
@@ -6779,7 +6779,7 @@
     "messageformat": "Не делиться ключом"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Ни с кем не делитесь вашим ключом восстановления. Это позволит им завладеть вашей учётной записью. <strong>Signal никогда не посылает вам сообщения</strong> для получения вашего ключа восстановления. Никогда не отвечайте на чаты, притворяющиеся Signal. <learnMoreLink>Узнать больше.</learnMoreLink>"
+    "messageformat": "Ни с кем не делитесь вашим ключом восстановления. Это позволит им завладеть вашей учётной записью. <strong>SWARM Messenger никогда не посылает вам сообщения</strong> для получения вашего ключа восстановления. Никогда не отвечайте на чаты, притворяющиеся SWARM Messenger. <learnMoreLink>Узнать больше.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Подтвердите ключ восстановления"
@@ -6791,7 +6791,7 @@
     "messageformat": "Храните ключ в безопасности"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Signal не сможет помочь восстановить резервную копию, если вы потеряете ключ. Храните его в безопасном и надежном месте и ни с кем им не делитесь."
+    "messageformat": "SWARM Messenger не сможет помочь восстановить резервную копию, если вы потеряете ключ. Храните его в безопасном и надежном месте и ни с кем им не делитесь."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Продолжить"
@@ -6842,7 +6842,7 @@
     "messageformat": "Для включения резервного копирования требуется аутентификация."
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "Это действие не удалось выполнить из-за ошибки аутентификация системы. Пожалуйста, попробуйте ещё раз или откройте приложение Signal на своём мобильном устройстве и перейдите в Настройки резервного копирования, чтобы просмотреть ключ восстановления."
+    "messageformat": "Это действие не удалось выполнить из-за ошибки аутентификация системы. Пожалуйста, попробуйте ещё раз или откройте приложение SWARM Messenger на своём мобильном устройстве и перейдите в Настройки резервного копирования, чтобы просмотреть ключ восстановления."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "Произошла ошибка при запросе аутентификации системы для этого действия."
@@ -6872,7 +6872,7 @@
     "messageformat": "Номер телефона"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Выберите, кто может видеть ваш номер телефона и связываться с вами в Signal с его помощью."
+    "messageformat": "Выберите, кто может видеть ваш номер телефона и связываться с вами в SWARM Messenger с его помощью."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Изменить…"
@@ -6902,10 +6902,10 @@
     "messageformat": "Кто может найти меня по номеру?"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Любой, у кого есть ваш номер телефона, будет видеть, что вы в Signal, и сможет начать с вами чат."
+    "messageformat": "Любой, у кого есть ваш номер телефона, будет видеть, что вы в SWARM Messenger, и сможет начать с вами чат."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Никто не сможет увидеть, что вы в Signal, если только вы не отправите этому человеку сообщение или не продолжите с ним чат."
+    "messageformat": "Никто не сможет увидеть, что вы в SWARM Messenger, если только вы не отправите этому человеку сообщение или не продолжите с ним чат."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Все"
@@ -6917,7 +6917,7 @@
     "messageformat": "Вы уверены?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Если вы измените значение «{settingTitle}» на «{nobodyLabel}», найти вас в Signal будет сложнее."
+    "messageformat": "Если вы измените значение «{settingTitle}» на «{nobodyLabel}», найти вас в SWARM Messenger будет сложнее."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Общение"
@@ -6980,7 +6980,7 @@
     "messageformat": "Установить"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Перезапустить Signal для применения"
+    "messageformat": "Перезапустить SWARM Messenger для применения"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Для смены языка необходимо перезапустить приложение."
@@ -6995,13 +6995,13 @@
     "messageformat": "Защита экрана"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Запретите делать снимки экрана Signal на этом компьютере для дополнительной конфиденциальности."
+    "messageformat": "Запретите делать снимки экрана SWARM Messenger на этом компьютере для дополнительной конфиденциальности."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Отключить защиту экрана?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Если защита отключена, это может позволить Microsoft Windows делать снимки экрана Signal и использовать их для функций, которые могут нарушать конфиденциальность."
+    "messageformat": "Если защита отключена, это может позволить Microsoft Windows делать снимки экрана SWARM Messenger и использовать их для функций, которые могут нарушать конфиденциальность."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Отключить"
@@ -7022,19 +7022,19 @@
     "messageformat": "Нажмите, чтобы перейти в App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Откройте Signal на своем телефоне"
+    "messageformat": "Откройте SWARM Messenger на своем телефоне"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Ваша учётная запись будет удалена в ближайшее время, если вы не откроете Signal на своем телефоне. Данное сообщение исчезнет, если вы это сделали. <learnMoreLink>Узнать больше</learnMoreLink>"
+    "messageformat": "Ваша учётная запись будет удалена в ближайшее время, если вы не откроете SWARM Messenger на своем телефоне. Данное сообщение исчезнет, если вы это сделали. <learnMoreLink>Узнать больше</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Откройте Signal на телефоне, чтобы сохранить свою учётную запись активной"
+    "messageformat": "Откройте SWARM Messenger на телефоне, чтобы сохранить свою учётную запись активной"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Узнать больше"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "У Signal возникли технические неполадки. Мы прилагаем все усилия, чтобы как можно быстрее восстановить обслуживание."
+    "messageformat": "У SWARM Messenger возникли технические неполадки. Мы прилагаем все усилия, чтобы как можно быстрее восстановить обслуживание."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Требуется обновление"
@@ -7043,13 +7043,13 @@
     "messageformat": "Проверка наличия обновлений"
   },
   "icu:InstallScreenUpdateDialog--updating-signal": {
-    "messageformat": "Обновление Signal"
+    "messageformat": "Обновление SWARM Messenger"
   },
   "icu:InstallScreenUpdateDialog--download-progress": {
     "messageformat": "Загрузка {currentBytes} из {totalBytes} ({percentage,number,percent})..."
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Чтобы продолжить, обновите Signal Desktop."
+    "messageformat": "Чтобы продолжить, обновите SWARM Messenger."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Обновить"
@@ -7061,19 +7061,19 @@
     "messageformat": "Требуется обновление"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Чтобы продолжить использование Signal, вы должны обновиться до последней версии."
+    "messageformat": "Чтобы продолжить использование SWARM Messenger, вы должны обновиться до последней версии."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Скачать {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Перезапустите Signal, чтобы установить обновление."
+    "messageformat": "Перезапустите SWARM Messenger, чтобы установить обновление."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal Desktop обновить не удалось, но доступна новая версия. Перейдите к {downloadUrl} и установите новую версию вручную, а затем свяжитесь со службой поддержки или напишите сообщение об этой ошибке."
+    "messageformat": "SWARM Messenger обновить не удалось, но доступна новая версия. Перейдите к {downloadUrl} и установите новую версию вручную, а затем свяжитесь со службой поддержки или напишите сообщение об этой ошибке."
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "Логотип Signal"
+    "messageformat": "Логотип SWARM Messenger"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "Назад"
@@ -7109,7 +7109,7 @@
     "messageformat": "Подтвердите, что вы человек, чтобы продолжить"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "Чтобы помочь предотвратить спам в Signal, пожалуйста, пройдите проверку. После подтверждения вы сможете продолжить регистрацию."
+    "messageformat": "Чтобы помочь предотвратить спам в SWARM Messenger, пожалуйста, пройдите проверку. После подтверждения вы сможете продолжить регистрацию."
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "Повторить подтверждение"
@@ -7349,7 +7349,7 @@
     "messageformat": "Неверный PIN-код"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "Вы использовали все попытки ввести Пин-код, но всё ещё можете получить доступ к своей учётной записи Signal, создав новый Пин-код. Для вашей конфиденциальности и безопасности ваша учётная запись будет восстановлена без какой-либо сохранённой информации профиля или настроек."
+    "messageformat": "Вы использовали все попытки ввести Пин-код, но всё ещё можете получить доступ к своей учётной записи SWARM, создав новый Пин-код. Для вашей конфиденциальности и безопасности ваша учётная запись будет восстановлена без какой-либо сохранённой информации профиля или настроек."
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
     "messageformat": "Создать новый PIN-код"
@@ -7379,7 +7379,7 @@
     "messageformat": "Создать PIN-код"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "Пин-коды могут помочь вам восстановить вашу учётную запись и сохранить вашу информацию в зашифрованном виде в Signal. <learnMore>Узнать больше</learnMore>"
+    "messageformat": "Пин-коды могут помочь вам восстановить вашу учётную запись и сохранить вашу информацию в зашифрованном виде в SWARM Messenger. <learnMore>Узнать больше</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "Создать PIN-код"
@@ -7403,7 +7403,7 @@
     "messageformat": "Предупреждение"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "Если вы отключите Пин-код, то потеряете все данные, когда переустановите Signal. Вы не можете включить блокировку регистрации, когда Пин-код отключён."
+    "messageformat": "Если вы отключите Пин-код, то потеряете все данные, когда переустановите SWARM Messenger. Вы не можете включить блокировку регистрации, когда Пин-код отключён."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "Отключить PIN-код"
@@ -7412,10 +7412,10 @@
     "messageformat": "Отменить"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "О Пин-кодах Signal"
+    "messageformat": "О Пин-кодах SWARM"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "Пин-коды хранят информацию в сервисе Signal зашифрованной, так что только вы можете получить к ней доступ. Ваши настройки, контакты и профиль будут восстановлены, если вы переустановите Signal."
+    "messageformat": "Пин-коды хранят информацию в сервисе SWARM Messenger зашифрованной, так что только вы можете получить к ней доступ. Ваши настройки, контакты и профиль будут восстановлены, если вы переустановите SWARM Messenger."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "Узнать больше"
@@ -7448,7 +7448,7 @@
     "messageformat": "Требуется обновление"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "Чтобы продолжить регистрацию, пожалуйста, обновите Signal до последней версии."
+    "messageformat": "Чтобы продолжить регистрацию, пожалуйста, обновите SWARM Messenger до последней версии."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "Добавить"
@@ -7478,7 +7478,7 @@
     "messageformat": "Связаться с поддержкой"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Не удалось закрыть Signal.",
+    "messageformat": "Не удалось закрыть SWARM Messenger.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7498,14 +7498,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Более новая версия Signal уже установлена. Вы действительно хотите продолжить?",
+    "messageformat": "Более новая версия SWARM Messenger уже установлена. Вы действительно хотите продолжить?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "В приложении произошёл сбой"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal перезапустился после сбоя. Вы можете отправить журнал сбоя, чтобы помочь Signal исследовать эту проблему."
+    "messageformat": "SWARM Messenger перезапустился после сбоя. Вы можете отправить журнал сбоя, чтобы помочь SWARM Messenger исследовать эту проблему."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Отправить"
@@ -7610,7 +7610,7 @@
     "messageformat": "Нажмите «{buttonName}» ниже"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Включите «Signal»"
+    "messageformat": "Включите «SWARM Messenger»"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Перейти в настройки"
@@ -7706,7 +7706,7 @@
     "messageformat": "Узнать больше"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Контакты Signal"
+    "messageformat": "Контакты SWARM"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} — это люди, которым вы решили доверять одним из следующих способов:"
@@ -7847,7 +7847,7 @@
     "messageformat": "Скрыть историю от"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Все контакты Signal"
+    "messageformat": "Все контакты SWARM"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Все, кроме…"
@@ -7925,7 +7925,7 @@
     "messageformat": "Настройки приватности «Моей истории»"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Выберите, какие контакты Signal могут просматривать вашу историю. Вы всегда можете изменить это в настройках конфиденциальности. <learnMoreLink>Узнать больше.</learnMoreLink>"
+    "messageformat": "Выберите, какие контакты SWARM могут просматривать вашу историю. Вы всегда можете изменить это в настройках конфиденциальности. <learnMoreLink>Узнать больше.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Удалить историю"
@@ -7994,7 +7994,7 @@
     "messageformat": "Загрузить вложение"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Включите уведомления о прочтении, чтобы узнать, кто просматривал ваши истории. Откройте приложение Signal на своем мобильном устройстве и перейдите в Настройки > Истории."
+    "messageformat": "Включите уведомления о прочтении, чтобы узнать, кто просматривал ваши истории. Откройте приложение SWARM Messenger на своем мобильном устройстве и перейдите в Настройки > Истории."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Ещё нет ответов"
@@ -8180,7 +8180,7 @@
     "messageformat": "Ваш QR-код и ссылка были сброшены, а ваше имя пользователя — {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Просканируйте этот QR-код с помощью вашего телефона, чтобы начать чат со мной в Signal.",
+    "messageformat": "Просканируйте этот QR-код с помощью вашего телефона, чтобы начать чат со мной в SWARM Messenger.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8256,7 +8256,7 @@
     "messageformat": "Закрыть"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "Подтвердите свой PIN-код Signal"
+    "messageformat": "Подтвердите свой PIN-код SWARM"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "Иногда мы будем просить вас подтвердить свой Пин-код, чтобы вы его не забывали."
@@ -8289,13 +8289,13 @@
     "messageformat": "Пин-код правильный. Мы напомним вам позже."
   },
   "icu:PinChangeModal__title--create": {
-    "messageformat": "Изменить ваш Пин-код Signal"
+    "messageformat": "Изменить ваш Пин-код SWARM"
   },
   "icu:PinChangeModal__body--create": {
     "messageformat": "Вы можете изменить свой PIN-код, пока это устройство зарегистрировано. <learnMoreLink>Узнать больше</learnMoreLink>"
   },
   "icu:PinChangeModal__title--confirm": {
-    "messageformat": "Подтвердите свой PIN-код Signal"
+    "messageformat": "Подтвердите свой PIN-код SWARM"
   },
   "icu:PinChangeModal__body--confirm": {
     "messageformat": "Введите Пин-код, который вы только что создали."
@@ -8319,13 +8319,13 @@
     "messageformat": "Новый Пин-код создан."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "В скором времени Signal перестанет поддерживать версию {OS}, установленную на вашем компьютере. Чтобы продолжить использование Signal, обновите ОС на вашем компьютере до {expirationDate}. <learnMoreLink>Узнать больше</learnMoreLink>"
+    "messageformat": "В скором времени SWARM Messenger перестанет поддерживать версию {OS}, установленную на вашем компьютере. Чтобы продолжить использование SWARM Messenger, обновите ОС на вашем компьютере до {expirationDate}. <learnMoreLink>Узнать больше</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signal больше не работает на этом компьютере. Чтобы продолжить использовать Signal Desktop, обновите версию {OS} на своём компьютере. <learnMoreLink>Узнать больше</learnMoreLink>"
+    "messageformat": "SWARM Messenger больше не работает на этом компьютере. Чтобы продолжить использовать SWARM Messenger, обновите версию {OS} на своём компьютере. <learnMoreLink>Узнать больше</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signal Desktop больше не работает на этом компьютере. Чтобы продолжить использовать Signal Desktop, обновите версию {OS} на своём компьютере."
+    "messageformat": "SWARM Messenger больше не работает на этом компьютере. Чтобы продолжить использовать SWARM Messenger, обновите версию {OS} на своём компьютере."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Изменено"
@@ -8496,7 +8496,7 @@
     "messageformat": "Копировать ссылку"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Поделиться ссылкой через Signal"
+    "messageformat": "Поделиться ссылкой через SWARM Messenger"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Удалить ссылку"
@@ -8559,13 +8559,13 @@
     "messageformat": "Чтобы изменить эту настройку, установите для параметра «Кто может видеть мой номер» значение «Никто»."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Имена профиля в Signal выбираются владельцами соответствующих учётных записей:"
+    "messageformat": "Имена профиля в SWARM Messenger выбираются владельцами соответствующих учётных записей:"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "Signal не может проверять имена и фото"
+    "messageformat": "SWARM Messenger не может проверять имена и фото"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "Signal никогда не связывается с вами для получения вашего регистрационного кода, Пин-кода или ключа восстановления"
+    "messageformat": "SWARM Messenger никогда не связывается с вами для получения вашего регистрационного кода, Пин-кода или ключа восстановления"
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "Будьте осторожны с учётными записями тех, кто выдаёт себя за других"
@@ -8595,7 +8595,7 @@
     "messageformat": "Некоммерческая организация — с гордостью"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Пожертвуйте для поддержки приватного обмена сообщениями. Поддержите Signal, чтобы он оставался независимым и свободным от рекламы. <readMoreLink>Читать далее</readMoreLink>"
+    "messageformat": "Пожертвуйте для поддержки приватного обмена сообщениями. Поддержите SWARM Messenger, чтобы он оставался независимым и свободным от рекламы. <readMoreLink>Читать далее</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Пожертвовать"
@@ -8619,7 +8619,7 @@
     "messageformat": "Ваша информация конфиденциальна"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Как независимая некоммерческая организация, Signal заботится о приватности сообщений и звонков. Без рекламы, без трекеров, без слежки. Пожертвуйте сегодня, чтобы поддержать Signal."
+    "messageformat": "Как независимая некоммерческая организация, SWARM Messenger заботится о приватности сообщений и звонков. Без рекламы, без трекеров, без слежки. Пожертвуйте сегодня, чтобы поддержать SWARM Messenger."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "По желанию получите значок в профиле после пожертвования"
@@ -8628,10 +8628,10 @@
     "messageformat": "Ваша приватность — наша миссия"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Signal — некоммерческая организация."
+    "messageformat": "SWARM Messenger — некоммерческая организация."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "Значок сердца в стиле логотипа Signal"
+    "messageformat": "Значок сердца в стиле логотипа SWARM Messenger"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "ОК"
@@ -8646,7 +8646,7 @@
     "messageformat": "ЧаВо о пожертвованиях"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Квитанции не синхронизируются между устройствами. Если вы переустановили Signal, квитанции о ранее сделанных пожертвованиях не будут доступны."
+    "messageformat": "Квитанции не синхронизируются между устройствами. Если вы переустановили SWARM Messenger, квитанции о ранее сделанных пожертвованиях не будут доступны."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Нет квитанций"
@@ -8676,7 +8676,7 @@
     "messageformat": "Кредитная или дебетовая карта"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Введите данные вашей кредитной или дебетовой карты. Signal не собирает и не хранит вашу личную информацию. <learnMoreLink>Узнать больше</learnMoreLink>"
+    "messageformat": "Введите данные вашей кредитной или дебетовой карты. SWARM Messenger не собирает и не хранит вашу личную информацию. <learnMoreLink>Узнать больше</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Номер карты"
@@ -8688,7 +8688,7 @@
     "messageformat": "ММ/ГГ"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Пожертвовать Signal {formattedCurrencyAmount}"
+    "messageformat": "Пожертвовать SWARM Messenger {formattedCurrencyAmount}"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Неверный номер карты"
@@ -8706,7 +8706,7 @@
     "messageformat": "Код слишком короткий"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Получите значок буста Signal на 30 дней"
+    "messageformat": "Получите значок буста SWARM Messenger на 30 дней"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "Минимальная сумма пожертвования составляет {formattedCurrencyAmount}"
@@ -8751,7 +8751,7 @@
     "messageformat": "Один раз"
   },
   "icu:DonationReceipt__footer-text-v2": {
-    "messageformat": "Спасибо, что поддерживаете Signal. Ваш вклад помогает поддерживать миссию по защите свободы слова и делает возможным безопасное общение между миллионами людей по всему миру благодаря технологии конфиденциальности с открытым исходным кодом. Если вы проживаете в США, пожалуйста, сохраните эту квитанцию для своего налогового учёта. Signal Technology Foundation — это некоммерческая организация, освобождённая от налогов в США со статусом 501c3. Наш ИНН: 82–4506840. Signal не предоставлял никаких товаров или услуг в счёт этой поддержки."
+    "messageformat": "Спасибо, что поддерживаете SWARM Messenger. Ваш вклад помогает поддерживать миссию по защите свободы слова и делает возможным безопасное общение между миллионами людей по всему миру благодаря технологии конфиденциальности с открытым исходным кодом. Если вы проживаете в США, пожалуйста, сохраните эту квитанцию для своего налогового учёта. SWARM Messenger Technology Foundation — это некоммерческая организация, освобождённая от налогов в США со статусом 501c3. Наш ИНН: 82–4506840. SWARM Messenger не предоставлял никаких товаров или услуг в счёт этой поддержки."
   },
   "icu:Donations__OfflineTooltip": {
     "messageformat": "Вы не в сети. Пожалуйста, подключитесь к Интернету, чтобы завершить пожертвование."
@@ -8790,7 +8790,7 @@
     "messageformat": "Пожертвование прошло успешно, но мы не смогли обновить настройки вашего значка"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "Чтобы обновить настройки значков на своем мобильном устройстве, зайдите в раздел Настройки → Поддержать Signal → Значки."
+    "messageformat": "Чтобы обновить настройки значков на своем мобильном устройстве, зайдите в раздел Настройки → Поддержать SWARM Messenger → Значки."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Пожертвование прервано"
@@ -8847,7 +8847,7 @@
     "messageformat": "Произошла ошибка с вашим пожертвованием"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Возможно, ваше пожертвование не было обработано. Нажмите «Пожертвовать Signal», а затем «Чек пожертвования», чтобы проверить свои чеки и подтвердить."
+    "messageformat": "Возможно, ваше пожертвование не было обработано. Нажмите «Пожертвовать SWARM Messenger», а затем «Чек пожертвования», чтобы проверить свои чеки и подтвердить."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Повторите попытку или отправьте журнал отладки в службу поддержки, чтобы получить помощь в завершении пожертвования. Журналы отладки помогают нам диагностировать и устранять проблему и не содержат идентифицирующей информации."
@@ -8889,19 +8889,19 @@
     "messageformat": "Спасибо за вашу поддержку!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Вы заработали значок донора от Signal! Добавьте его в свой профиль, чтобы продемонстрировать свою поддержку."
+    "messageformat": "Вы заработали значок донора от SWARM Messenger! Добавьте его в свой профиль, чтобы продемонстрировать свою поддержку."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Показывать в профиле"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "Вы можете настроить это на своем мобильном устройстве в разделе Настройки → Поддержать Signal → Значки"
+    "messageformat": "Вы можете настроить это на своем мобильном устройстве в разделе Настройки → Поддержать SWARM Messenger → Значки"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "Как прошёл ваш звонок?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "Это помогает нам улучшать качество звонков в Signal. Никакая информация, позволяющая установить личность, сохранена не будет."
+    "messageformat": "Это помогает нам улучшать качество звонков в SWARM Messenger. Никакая информация, позволяющая установить личность, сохранена не будет."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "Возникли проблемы"
@@ -8952,7 +8952,7 @@
     "messageformat": "Описание проблемы"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "Пожалуйста, укажите любую информацию, относящуюся к проблеме. Всё, чем вы здесь делитесь, сохранится в тайне и будет использовано только для улучшения качества звонков в Signal."
+    "messageformat": "Пожалуйста, укажите любую информацию, относящуюся к проблеме. Всё, чем вы здесь делитесь, сохранится в тайне и будет использовано только для улучшения качества звонков в SWARM Messenger."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "Пожалуйста, опишите вашу проблему"
@@ -9018,7 +9018,7 @@
     "messageformat": "Вам нужно будет повторно привязать ПК, отсканировав QR-код."
   },
   "icu:MaybeTransferModal__media": {
-    "messageformat": "Если у вас платная версия безопасного резервного копирования Signal, все ваши медиафайлы будут перенесены. В противном случае будут перенесены ваши медиафайлы за последние 45 дней."
+    "messageformat": "Если у вас платная версия безопасного резервного копирования SWARM Messenger, все ваши медиафайлы будут перенесены. В противном случае будут перенесены ваши медиафайлы за последние 45 дней."
   },
   "icu:MaybeTransferModal__transfer": {
     "messageformat": "Перевести"
@@ -9030,14 +9030,14 @@
     "messageformat": "Удалить все данные?"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "Все текущие данные на Signal Desktop будут удалены. Затем вы сможете отсканировать QR-код и перенести историю сообщений со своего телефона."
+    "messageformat": "Все текущие данные в SWARM Messenger будут удалены. Затем вы сможете отсканировать QR-код и перенести историю сообщений со своего телефона."
   },
   "icu:WhatsNew__bugfixes": {
     "messageformat": "Эта версия содержит несколько небольших изменений и исправлений ошибок.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Дополнительные небольшие изменения, исправления ошибок и улучшения производительности. Спасибо за то, что пользуетесь Signal!",
+    "messageformat": "Дополнительные небольшие изменения, исправления ошибок и улучшения производительности. Спасибо за то, что пользуетесь SWARM Messenger!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -9057,7 +9057,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Небольшие изменения, исправления ошибок и улучшения производительности. Спасибо за то, что пользуетесь Signal!",
+    "messageformat": "Небольшие изменения, исправления ошибок и улучшения производительности. Спасибо за то, что пользуетесь SWARM Messenger!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.25--0": {
@@ -9067,6 +9067,6 @@
     "messageformat": "В поисках себя можно находиться всю жизнь, но теперь в поиске участников группы вы будете отображаться как «Вы» — так будет немного проще."
   },
   "icu:WhatsNew__8.27--0": {
-    "messageformat": "Это обновление добавляет более детальные настройки уведомлений, предоставляя вам значительно больше возможностей для управления ими в Signal. Теперь вы можете выбирать, что будет отображаться на значке приложения, настраивать параметры уведомлений для чатов с отключёнными уведомлениями и многое другое! Мы также добавили удобную кнопку для восстановления настроек уведомлений по умолчанию на случай, если вы внесёте столько изменений, что перестанете себя контролировать."
+    "messageformat": "Это обновление добавляет более детальные настройки уведомлений, предоставляя вам значительно больше возможностей для управления ими в SWARM Messenger. Теперь вы можете выбирать, что будет отображаться на значке приложения, настраивать параметры уведомлений для чатов с отключёнными уведомлениями и многое другое! Мы также добавили удобную кнопку для восстановления настроек уведомлений по умолчанию на случай, если вы внесёте столько изменений, что перестанете себя контролировать."
   }
 }

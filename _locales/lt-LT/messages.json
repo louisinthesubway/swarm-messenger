@@ -63,10 +63,10 @@
     "messageformat": "Aukštos kokybės medijos siuntimas naudos daugiau tinklo duomenų."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Paaukokite Signal programėlei"
+    "messageformat": "Paaukokite SWARM Messenger programėlei"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "<bold>Susieti įrenginiai</bold> leidžia jums saugiai pasiekti „Signal“ paskyrą ir žinutes bet kuriuose papildomuose įrenginiuose."
+    "messageformat": "<bold>Susieti įrenginiai</bold> leidžia jums saugiai pasiekti „SWARM“ paskyrą ir žinutes bet kuriuose papildomuose įrenginiuose."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "Galite susieti kompiuterį, planšetę ar papildomą telefoną."
@@ -81,7 +81,7 @@
     "messageformat": "Paskyros nustatymus ir atsargines kopijas tvarkyti galima tik pagrindiniame įrenginyje."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--3--2": {
-    "messageformat": "Account settings and Signal Secure Backups can only be managed on your primary device."
+    "messageformat": "Account settings and SWARM Messenger Secure Backups can only be managed on your primary device."
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "Standartinė"
@@ -120,10 +120,10 @@
     "messageformat": "Nežinoma grupė"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Nepavyksta atidaryti „Signal“"
+    "messageformat": "Nepavyksta atidaryti „SWARM Messenger“"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Jei ieškote pagalbos, kaip išspręsti problemą, vadovaukitės pagalbos puslapyje pateiktu atkūrimo vadovu arba kreipkitės į „Signal“ palaikymo komandą.\n\nJei pasinaudoti „Signal“ jums reikia skubiai, galite ištrinti savo duomenis ir susieti šį darbalaukį iš naujo. Turėsite galimybę iš savo telefono perkelti žinučių istoriją."
+    "messageformat": "Jei ieškote pagalbos, kaip išspręsti problemą, vadovaukitės pagalbos puslapyje pateiktu atkūrimo vadovu arba kreipkitės į „SWARM Messenger“ palaikymo komandą.\n\nJei pasinaudoti „SWARM Messenger“ jums reikia skubiai, galite ištrinti savo duomenis ir susieti šį darbalaukį iš naujo. Turėsite galimybę iš savo telefono perkelti žinučių istoriją."
   },
   "icu:databaseError": {
     "messageformat": "Duomenų bazės klaida"
@@ -135,16 +135,16 @@
     "messageformat": "Ištrinti visus duomenis visam laikui"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Visa jūsų žinučių istorija ir įrašai bus ištrinti iš šio įrenginio visam laikui. Iš jūsų telefono nebus ištrinti jokie duomenys.\n\nGalėsite naudoti „Signal“ šiame įrenginyje po to, kai iš naujo susiesite. Turėsite galimybę iš savo telefono perkelti žinučių istoriją."
+    "messageformat": "Visa jūsų žinučių istorija ir įrašai bus ištrinti iš šio įrenginio visam laikui. Iš jūsų telefono nebus ištrinti jokie duomenys.\n\nGalėsite naudoti „SWARM Messenger“ šiame įrenginyje po to, kai iš naujo susiesite. Turėsite galimybę iš savo telefono perkelti žinučių istoriją."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Tavo duomenų bazės versija neatitinka šios „Signal“ versijos. Įsitikink, kad savo kompiuteryje bandai atidaryti naujausią „Signal“ versiją."
+    "messageformat": "Tavo duomenų bazės versija neatitinka šios „SWARM Messenger“ versijos. Įsitikink, kad savo kompiuteryje bandai atidaryti naujausią „SWARM Messenger“ versiją."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Nepavyko pasiekti duomenų bazės šifravimo rakto, nes OS šifravimo raktų rinkinys pasikeitė iš {previousBackend} į {currentBackend}. Taip gali nutikti pasikeitus darbalaukio aplinkai, pavyzdžiui, tarp GNOME ir KDE.\n\nPereikite į ankstesnę darbalaukio aplinką."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Nepavyko pasiekti duomenų bazės šifravimo rakto, nes OS šifravimo raktų rinkinys pasikeitė iš {previousBackend} į {currentBackend}. Taip gali nutikti pasikeitus darbalaukio aplinkai, pavyzdžiui, tarp GNOME ir KDE.\n\nGrįžkite į ankstesnę darbalaukio aplinką arba pabandykite paleisti „Signal“ naudodami komandinės eilutės parinktį --password-store=\"{previousBackendFlag}\""
+    "messageformat": "Nepavyko pasiekti duomenų bazės šifravimo rakto, nes OS šifravimo raktų rinkinys pasikeitė iš {previousBackend} į {currentBackend}. Taip gali nutikti pasikeitus darbalaukio aplinkai, pavyzdžiui, tarp GNOME ir KDE.\n\nGrįžkite į ankstesnę darbalaukio aplinką arba pabandykite paleisti „SWARM Messenger“ naudodami komandinės eilutės parinktį --password-store=\"{previousBackendFlag}\""
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -189,7 +189,7 @@
     "messageformat": "Rodyti visus"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Išeiti iš Signal"
+    "messageformat": "Išeiti iš SWARM Messenger"
   },
   "icu:editMenuUndo": {
     "messageformat": "Atšaukti"
@@ -513,10 +513,10 @@
     "messageformat": "Jūs iš kito įrenginio pažymėjote savo saugumo numerį su {name} kaip nepatvirtintą"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Saugumo numeris, kurį bandote patvirtinti, pasikeitė. Peržiūrėkite savo saugumo numerį su {name1}. Atminkite, šis pokytis gali reikšti, kad kažkas bando perimti jūsų susirašinėjimą arba, kad {name2}, tiesiog, iš naujo įdiegė Signal."
+    "messageformat": "Saugumo numeris, kurį bandote patvirtinti, pasikeitė. Peržiūrėkite savo saugumo numerį su {name1}. Atminkite, šis pokytis gali reikšti, kad kažkas bando perimti jūsų susirašinėjimą arba, kad {name2}, tiesiog, iš naujo įdiegė SWARM Messenger."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Gali būti, kad šie žmonės įdiegė „Signal“ iš naujo arba pakeitė įrenginius. Spustelėk gavėją, kad patvirtintum jo naują saugumo numerį. Tai neprivaloma."
+    "messageformat": "Gali būti, kad šie žmonės įdiegė „SWARM Messenger“ iš naujo arba pakeitė įrenginius. Spustelėk gavėją, kad patvirtintum jo naują saugumo numerį. Tai neprivaloma."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Siųsti laukiančias žinutes"
@@ -525,7 +525,7 @@
     "messageformat": "Peržiūrėti"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Turi {count,number} kontaktą, kuris galbūt iš naujo įdiegė „Signal“ arba pakeitė įrenginį. Jei nori, gali peržiūrėti jo saugumo numerį ir tik tada siųsti.} few {Turi {count,number} kontaktus, kurie galbūt iš naujo įdiegė „Signal“ arba pakeitė įrenginius. Jei nori, gali peržiūrėti jų saugumo numerius ir tik tada siųsti.} many {Turi {count,number} kontakto, kurie galbūt iš naujo įdiegė „Signal“ arba pakeitė įrenginius. Jei nori, gali peržiūrėti jų saugumo numerius ir tik tada siųsti.} other {Turi {count,number} kontaktų, kurie galbūt iš naujo įdiegė „Signal“ arba pakeitė įrenginius. Jei nori, gali peržiūrėti jų saugumo numerius ir tik tada siųsti.}}"
+    "messageformat": "{count, plural, one {Turi {count,number} kontaktą, kuris galbūt iš naujo įdiegė „SWARM Messenger“ arba pakeitė įrenginį. Jei nori, gali peržiūrėti jo saugumo numerį ir tik tada siųsti.} few {Turi {count,number} kontaktus, kurie galbūt iš naujo įdiegė „SWARM Messenger“ arba pakeitė įrenginius. Jei nori, gali peržiūrėti jų saugumo numerius ir tik tada siųsti.} many {Turi {count,number} kontakto, kurie galbūt iš naujo įdiegė „SWARM Messenger“ arba pakeitė įrenginius. Jei nori, gali peržiūrėti jų saugumo numerius ir tik tada siųsti.} other {Turi {count,number} kontaktų, kurie galbūt iš naujo įdiegė „SWARM Messenger“ arba pakeitė įrenginius. Jei nori, gali peržiūrėti jų saugumo numerius ir tik tada siųsti.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Visi kontaktai peržiūrėti. Bakstelėk „Siųsti“, jei nori tęsti."
@@ -609,16 +609,16 @@
     "messageformat": "Šio pokalbio šifravimas buvo automatiškai patvirtintas "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "Jei su žmonėmis bendraujate naudodami telefono numerius, „Signal“ automatiškai patvirtins, ar ryšys saugus, pagal rakto skaidrumo procesą. Jei pageidaujate papildomo saugumo, patvirtinkite ištisinį šifravimą rankiniu būdu, palygindami ankstesniame ekrane pateiktus skaičius arba nuskaitydami kodą jų įrenginyje."
+    "messageformat": "Jei su žmonėmis bendraujate naudodami telefono numerius, „SWARM Messenger“ automatiškai patvirtins, ar ryšys saugus, pagal rakto skaidrumo procesą. Jei pageidaujate papildomo saugumo, patvirtinkite ištisinį šifravimą rankiniu būdu, palygindami ankstesniame ekrane pateiktus skaičius arba nuskaitydami kodą jų įrenginyje."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "Automatinis patvirtinimas šiam pokalbiui nepasiekiamas"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "„Signal“ negali automatiškai patvirtinti šio pokalbio šifravimo. Tikėtina, kad taip yra todėl, jog {name} pasikeitė telefono numerį arba telefono numerio privatumo nustatymus. Patvirtinkite ištisinį šifravimą rankiniu būdu, palygindami ankstesniame ekrane pateiktus skaičius arba nuskaitydami kodą jų įrenginyje."
+    "messageformat": "„SWARM Messenger“ negali automatiškai patvirtinti šio pokalbio šifravimo. Tikėtina, kad taip yra todėl, jog {name} pasikeitė telefono numerį arba telefono numerio privatumo nustatymus. Patvirtinkite ištisinį šifravimą rankiniu būdu, palygindami ankstesniame ekrane pateiktus skaičius arba nuskaitydami kodą jų įrenginyje."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "„Signal“ gali automatiškai patvirtinti šifravimą tik tuose pokalbiuose, kur su asmeniu bendraujate turėdami telefono numerį. Jei pokalbis pradėtas turint naudotojo vardą arba bendroje grupėje, patvirtinkite ištisinį šifravimą rankiniu būdu, palygindami ankstesniame ekrane pateiktus skaičius arba nuskaitydami kodą jų įrenginyje."
+    "messageformat": "„SWARM Messenger“ gali automatiškai patvirtinti šifravimą tik tuose pokalbiuose, kur su asmeniu bendraujate turėdami telefono numerį. Jei pokalbis pradėtas turint naudotojo vardą arba bendroje grupėje, patvirtinkite ištisinį šifravimą rankiniu būdu, palygindami ankstesniame ekrane pateiktus skaičius arba nuskaitydami kodą jų įrenginyje."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "Gerai"
@@ -657,10 +657,10 @@
     "messageformat": "Ne, ačiū"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "„Signal“ dabar gali automatiškai patvirtinti šifravimą"
+    "messageformat": "„SWARM Messenger“ dabar gali automatiškai patvirtinti šifravimą"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "Jei su adresatais bendraujate naudodami telefono numerius, „Signal“ automatiškai patvirtins, ar ryšys saugus, pagal rakto skaidrumo procesą. Dėl papildomo saugumo ryšius vis dar galite patvirtinti patys, naudodami QR kodą arba palygindami saugumo numerius."
+    "messageformat": "Jei su adresatais bendraujate naudodami telefono numerius, „SWARM Messenger“ automatiškai patvirtins, ar ryšys saugus, pagal rakto skaidrumo procesą. Dėl papildomo saugumo ryšius vis dar galite patvirtinti patys, naudodami QR kodą arba palygindami saugumo numerius."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "Tęsti"
@@ -714,7 +714,7 @@
     "messageformat": "Juodraštinis paveikslo priedas: {path}"
   },
   "icu:decryptionErrorToast": {
-    "messageformat": "Signal Desktop susidūrė su iššifravimo klaida nuo {name}, įrenginio {deviceId}"
+    "messageformat": "SWARM Messenger susidūrė su iššifravimo klaida nuo {name}, įrenginio {deviceId}"
   },
   "icu:Toast__ActionLabel--SubmitLog": {
     "messageformat": "Pateikti žurnalą"
@@ -810,7 +810,7 @@
     "messageformat": "Lipdukų paketo kūrėjas"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Apie Signal Desktop"
+    "messageformat": "Apie SWARM Messenger"
   },
   "icu:screenShareWindow": {
     "messageformat": "Ekrano bendrinimas"
@@ -828,7 +828,7 @@
     "messageformat": "Išeiti"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "SWARM Messenger"
   },
   "icu:search": {
     "messageformat": "Ieškoti"
@@ -882,7 +882,7 @@
     "messageformat": "Rasti pagal telefono numerį"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Sveiki atvykę į Signal"
+    "messageformat": "Sveiki atvykę į SWARM Messenger"
   },
   "icu:whatsNew": {
     "messageformat": "Atraskite, {whatsNew} šiame atnaujinime"
@@ -969,13 +969,13 @@
     "messageformat": "Jūs"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Jei nori siųsti balso žinutes, suteik „Signal Desktop“ prieigą prie savo mikrofono."
+    "messageformat": "Jei nori siųsti balso žinutes, suteik „SWARM Messenger“ prieigą prie savo mikrofono."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Norėdami skambinti, privalote leisti Signal Desktop gauti prieigą prie jūsų mikrofono."
+    "messageformat": "Norėdami skambinti, privalote leisti SWARM Messenger gauti prieigą prie jūsų mikrofono."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Norėdami skambinti su vaizdu, privalote leisti Signal Desktop gauti prieigą prie jūsų kameros."
+    "messageformat": "Norėdami skambinti su vaizdu, privalote leisti SWARM Messenger gauti prieigą prie jūsų kameros."
   },
   "icu:allowAccess": {
     "messageformat": "Leisti prieigą"
@@ -1002,13 +1002,13 @@
     "messageformat": "Nutildytas"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "„Signal“ nepavyko atsinaujinti. <retryUpdateButton>Bandykite atnaujinti dar kartą</retryUpdateButton> arba apsilankykite {url}, kad įdiegtumėte naujinį rankiniu būdu. Tuomet <contactSupportLink>susisiekite su palaikymo komanda</contactSupportLink> dėl šios problemos"
+    "messageformat": "„SWARM Messenger“ nepavyko atsinaujinti. <retryUpdateButton>Bandykite atnaujinti dar kartą</retryUpdateButton> arba apsilankykite {url}, kad įdiegtumėte naujinį rankiniu būdu. Tuomet <contactSupportLink>susisiekite su palaikymo komanda</contactSupportLink> dėl šios problemos"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "„Signal“ nepavyko atsinaujinti. Apsilankykite adresu {url}, kad įdiegtumėte naujinį rankiniu būdu. Tada <contactSupportLink>susisiekite su palaikymo komanda</contactSupportLink> dėl šios problemos"
+    "messageformat": "„SWARM Messenger“ nepavyko atsinaujinti. Apsilankykite adresu {url}, kad įdiegtumėte naujinį rankiniu būdu. Tada <contactSupportLink>susisiekite su palaikymo komanda</contactSupportLink> dėl šios problemos"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Tikriausiai, Signal Desktop yra macOS karantine ir negalės būti automatiškai atnaujinta. Pabandykite, naudodami Finder, perkelti  {app} į  {folder}."
+    "messageformat": "Tikriausiai, SWARM Messenger yra macOS karantine ir negalės būti automatiškai atnaujinta. Pabandykite, naudodami Finder, perkelti  {app} į  {folder}."
   },
   "icu:ok": {
     "messageformat": "Gerai"
@@ -1053,7 +1053,7 @@
     "messageformat": "Ši žinutė bus ištrinta iš šio įrenginio."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Ši žinutė bus ištrinta visiems žmonėms šiame pokalbyje, jeigu jie naudoja naujausią „Signal“ versiją. Jie matys, kad ištrynei žinutę."
+    "messageformat": "Ši žinutė bus ištrinta visiems žmonėms šiame pokalbyje, jeigu jie naudoja naujausią „SWARM Messenger“ versiją. Jie matys, kad ištrynei žinutę."
   },
   "icu:from": {
     "messageformat": "Nuo"
@@ -1095,7 +1095,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "„{title}“ – tai profilio vardas, kurį šis asmuo nusistatė „Signal“."
+    "messageformat": "„{title}“ – tai profilio vardas, kurį šis asmuo nusistatė „SWARM Messenger“."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Patvirtinta"
@@ -1110,7 +1110,7 @@
     "messageformat": "Nėra tiesioginių žinučių su {name}"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "„Signal“ kontaktas"
+    "messageformat": "„SWARM“ kontaktas"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} yra jūsų sistemos kontaktuose"
@@ -1422,7 +1422,7 @@
     "messageformat": "Sužinoti daugiau"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Programėlė „Signal“ naudoja ištisinį šifravimą ir jai kartais gali tekti atnaujinti tavo pokalbio seansą. Tai neturi įtakos tavo pokalbio saugumui, bet gali būti, kad praleidai žinutę nuo šio adresato, todėl gali paprašyti išsiųsti ją dar kartą."
+    "messageformat": "Programėlė „SWARM Messenger“ naudoja ištisinį šifravimą ir jai kartais gali tekti atnaujinti tavo pokalbio seansą. Tai neturi įtakos tavo pokalbio saugumui, bet gali būti, kad praleidai žinutę nuo šio adresato, todėl gali paprašyti išsiųsti ją dar kartą."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Susisiekti su palaikymu"
@@ -1449,7 +1449,7 @@
     "messageformat": "{sender} pasikeitė telefono numerį"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Adresatas prisijungė prie Signal"
+    "messageformat": "Adresatas prisijungė prie SWARM Messenger"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} ir {conversationTitle} yra ta pati paskyra. Abiejų pokalbių žinučių istorija yra čia."
@@ -1539,7 +1539,7 @@
     "messageformat": "Nepavyksta atsisiųsti įrašų"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Patikrinkite darbalaukio ir telefono interneto ryšį. Telefone atverkite „Signal“ ir bandykite atsisiųsti dar kartą."
+    "messageformat": "Patikrinkite darbalaukio ir telefono interneto ryšį. Telefone atverkite „SWARM Messenger“ ir bandykite atsisiųsti dar kartą."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Šis įrašas telefone nebepasiekiamas ir jo atsisiųsti negalima."
@@ -1560,10 +1560,10 @@
     "messageformat": "Sužinoti daugiau"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Nuskenuokite šį kodą naudodami telefone įdiegtą Signal programėlę"
+    "messageformat": "Nuskenuokite šį kodą naudodami telefone įdiegtą SWARM Messenger programėlę"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Atverkite savo telefone Signal programėlę"
+    "messageformat": "Atverkite savo telefone SWARM Messenger programėlę"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Bakstelėkite ant {settings}, o tuomet ant {linkedDevices}"
@@ -1581,7 +1581,7 @@
     "messageformat": "<paragraph>Įvyko netikėta klaida.</paragraph><paragraph>Bandykite dar kartą.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "„Signal“ negali susieti šio įrenginio naudojant dabartinį tinklą."
+    "messageformat": "„SWARM Messenger“ negali susieti šio įrenginio naudojant dabartinį tinklą."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Bandyti dar kartą"
@@ -1599,7 +1599,7 @@
     "messageformat": "Ištrinti visus duomenis?"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "Su šiuo kompiuteriu bandote susieti kitą „Signal“ paskyrą. Jei tęsite, visi šiuo metu „Signal Desktop“ esantys duomenys bus ištrinti."
+    "messageformat": "Su šiuo kompiuteriu bandote susieti kitą „SWARM“ paskyrą. Jei tęsite, visi šiuo metu „SWARM Messenger“ esantys duomenys bus ištrinti."
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "Tęsti"
@@ -1614,7 +1614,7 @@
     "messageformat": "Įrenginio pavadinimas"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Norėdami pakeisti šio įrenginio pavadinimą, savo telefone atidarykite „Signal“ ir eikite į Nustatymai > Susieti įrenginiai"
+    "messageformat": "Norėdami pakeisti šio įrenginio pavadinimą, savo telefone atidarykite „SWARM Messenger“ ir eikite į Nustatymai > Susieti įrenginiai"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Jaustukų odos atspalvis"
@@ -1806,7 +1806,7 @@
     "messageformat": "Automatinis rakto patvirtinimas"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "Įjungus, „Signal“ bandys automatiškai patvirtinti asmeninių pokalbių šifravimą."
+    "messageformat": "Įjungus, „SWARM Messenger“ bandys automatiškai patvirtinti asmeninių pokalbių šifravimą."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "Sužinoti daugiau"
@@ -1824,7 +1824,7 @@
     "messageformat": "Atleiskite, jūs jau turite per daug susietų įrenginių. Pabandykite kai kuriuos pašalinti."
   },
   "icu:installTooOld": {
-    "messageformat": "Norėdami susieti šį įrenginį su savo telefonu, atnaujinkite jame Signal."
+    "messageformat": "Norėdami susieti šį įrenginį su savo telefonu, atnaujinkite jame SWARM Messenger."
   },
   "icu:installErrorHeader": {
     "messageformat": "Kažkas nutiko!"
@@ -1875,7 +1875,7 @@
     "messageformat": "Ši skambučio nuoroda nebegalioja."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal skambutis"
+    "messageformat": "SWARM Messenger skambutis"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Nuorodos ištrinti negalima. Patikrinkite interneto ryšį ir bandykite dar kartą."
@@ -2049,16 +2049,16 @@
     "messageformat": "{count, plural, one {{count,number} asmuo dalyvauja šiame skambutyje} few {{count,number} asmenys dalyvauja šiame skambutyje} many {{count,number} asmenų dalyvauja šiame skambutyje} other {{count,number} asmenų dalyvauja šiame skambutyje}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal paskambins ir susisieks su {person}"
+    "messageformat": "SWARM Messenger paskambins ir susisieks su {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal skambins naudotojams {first} ir {second}"
+    "messageformat": "SWARM Messenger skambins naudotojams {first} ir {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal skambins naudotojams {first}, {second} ir {third}"
+    "messageformat": "SWARM Messenger skambins naudotojams {first}, {second} ir {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {Signal skambins naudotojams {first}, {second} ir dar {others,number} žmogui} few {Signal skambins naudotojams {first}, {second} ir dar {others,number} žmonėms} many {Signal skambins naudotojams {first}, {second} ir dar {others,number} žmonių} other {Signal skambins naudotojams {first}, {second} ir dar {others,number} žmogui}}"
+    "messageformat": "{others, plural, one {SWARM Messenger skambins naudotojams {first}, {second} ir dar {others,number} žmogui} few {SWARM Messenger skambins naudotojams {first}, {second} ir dar {others,number} žmonėms} many {SWARM Messenger skambins naudotojams {first}, {second} ir dar {others,number} žmonių} other {SWARM Messenger skambins naudotojams {first}, {second} ir dar {others,number} žmogui}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} gaus pranešimą"
@@ -2112,13 +2112,13 @@
     "messageformat": "Jungiamasi iš naujo…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Jūsų ryšys nutrūko. „Signal“ jungiasi iš naujo."
+    "messageformat": "Jūsų ryšys nutrūko. „SWARM Messenger“ jungiasi iš naujo."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal bendrina {window}."
+    "messageformat": "SWARM Messenger bendrina {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "„Signal“ ekrano bendrinimas yra aktyvus"
+    "messageformat": "„SWARM Messenger“ ekrano bendrinimas yra aktyvus"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Jungiamasi iš naujo…"
@@ -2139,7 +2139,7 @@
     "messageformat": "Reikalingas leidimas"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal reikia leidimo gauti prieigą prie jūsų kompiuterio ekrano įrašymo."
+    "messageformat": "SWARM Messenger reikia leidimo gauti prieigą prie jūsų kompiuterio ekrano įrašymo."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Pereikite į sistemos nuostatas."
@@ -2148,7 +2148,7 @@
     "messageformat": "Spustelėkite apatinėje kairėje ant spynos piktogramos ir įveskite kompiuterio slaptažodį."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Dešinėje, šalia Signal, pažymėkite langelį. Jei sąraše nematote Signal, spustelėkite +, kad ją pridėtumėte."
+    "messageformat": "Dešinėje, šalia SWARM Messenger, pažymėkite langelį. Jei sąraše nematote SWARM Messenger, spustelėkite +, kad ją pridėtumėte."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Atverti sistemos nuostatas"
@@ -2160,7 +2160,7 @@
     "messageformat": "Visada retransliuoti skambučius"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Retransliuoti visus skambučius per Signal serverį, kad būtų išvengta jūsų IP adreso atskleidimo jūsų adresatui. Įjungus, pablogės skambučių kokybė."
+    "messageformat": "Retransliuoti visus skambučius per SWARM Messenger serverį, kad būtų išvengta jūsų IP adreso atskleidimo jūsų adresatui. Įjungus, pablogės skambučių kokybė."
   },
   "icu:permissions": {
     "messageformat": "Leidimai"
@@ -2178,10 +2178,10 @@
     "messageformat": "Rodyti iškylantįjį teksto formatavimo meniu pasirinkus tekstą"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Rašybos tikrinimas bus įjungtas, kitą kartą paleidus Signal."
+    "messageformat": "Rašybos tikrinimas bus įjungtas, kitą kartą paleidus SWARM Messenger."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Rašybos tikrinimas bus išjungtas, kitą kartą paleidus Signal."
+    "messageformat": "Rašybos tikrinimas bus išjungtas, kitą kartą paleidus SWARM Messenger."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Suskleisti į sistemos dėklą"
@@ -2205,7 +2205,7 @@
     "messageformat": "Ištrinti visus duomenis?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Ištrinti visus duomenis ir žinutes iš šios „Signal Desktop“ versijos? Jūsų „Signal“ paskyra ir duomenys telefone ar kituose susietuose įrenginiuose nebus ištrinti."
+    "messageformat": "Ištrinti visus duomenis ir žinutes iš šios „SWARM Messenger“ versijos? Jūsų „SWARM“ paskyra ir duomenys telefone ar kituose susietuose įrenginiuose nebus ištrinti."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Atsijungiama ir ištrinami visi duomenys…"
@@ -2214,7 +2214,7 @@
     "messageformat": "Ištrinti paskyrą"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "Tai ištrins jūsų paskyros informaciją, profilį ir visas žinutes. Taip pat būsite pašalinti iš visų „Signal“ grupių."
+    "messageformat": "Tai ištrins jūsų paskyros informaciją, profilį ir visas žinutes. Taip pat būsite pašalinti iš visų „SWARM“ grupių."
   },
   "icu:deleteAccountButton": {
     "messageformat": "Ištrinti paskyrą"
@@ -2223,10 +2223,10 @@
     "messageformat": "Ištrinti paskyrą?"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "Tai ištrins jūsų paskyros informaciją, profilį ir visas žinutes. Taip pat būsite pašalinti iš visų „Signal“ grupių. Užbaigus šį procesą, programėlė bus užverta."
+    "messageformat": "Tai ištrins jūsų paskyros informaciją, profilį ir visas žinutes. Taip pat būsite pašalinti iš visų „SWARM“ grupių. Užbaigus šį procesą, programėlė bus užverta."
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Turi nebenaudojamų duomenų, likusių iš ankstesnio „Signal Desktop“ diegimo. Jei pasirinksi tęsti, jie bus ištrinti ir pradėsi viską nuo nulio."
+    "messageformat": "Turi nebenaudojamų duomenų, likusių iš ankstesnio „SWARM Messenger“ diegimo. Jei pasirinksi tęsti, jie bus ištrinti ir pradėsi viską nuo nulio."
   },
   "icu:deleteOldData": {
     "messageformat": "Ištrinti senus duomenis"
@@ -2283,7 +2283,7 @@
     "messageformat": "Iš dalies ištrinta, spustelėkite, jei norite sužinoti daugiau"
   },
   "icu:expiredWarning": {
-    "messageformat": "Pasibaigė šios Signal Desktop skirtos versijos galiojimas. Norint tęsti susirašinėjimą, prašome atsinaujinti iki naujausios versijos."
+    "messageformat": "Pasibaigė šios SWARM Messenger versijos galiojimas. Norint tęsti susirašinėjimą, prašome atsinaujinti iki naujausios versijos."
   },
   "icu:upgrade": {
     "messageformat": "Spustelėkite, norėdami pereiti į swarm.green/download"
@@ -2295,7 +2295,7 @@
     "messageformat": "Importuoti adresatus"
   },
   "icu:syncExplanation": {
-    "messageformat": "Importuoti visas Signal grupes ir adresatus iš jūsų mobiliojo įrenginio."
+    "messageformat": "Importuoti visas SWARM grupes ir adresatus iš jūsų mobiliojo įrenginio."
   },
   "icu:syncNow": {
     "messageformat": "Importuoti dabar"
@@ -2328,7 +2328,7 @@
     "messageformat": "Vakar {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Gali būti, kad „Signal“ nepavyksta apdoroti gaunamos žinutės."
+    "messageformat": "Gali būti, kad „SWARM Messenger“ nepavyksta apdoroti gaunamos žinutės."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Žinutės turinys yra per ilgas."
@@ -2493,13 +2493,13 @@
     "messageformat": "Redaguoti galima ne vėliau kaip per 24 val. nuo šios žinutės išsiuntimo."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} nenaudoja „Signal“. Įsitikinkite, kad įvedėte visą naudotojo vardą."
+    "messageformat": "{atUsername} nenaudoja „SWARM Messenger“. Įsitikinkite, kad įvedėte visą naudotojo vardą."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} nėra galiojantis naudotojo vardas. Įsitikinkite, kad įvedėte visą naudotojo vardą su skaitmenų pora."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "Naudotojas nerastas. „{phoneNumber}“ nėra Signal naudotojas."
+    "messageformat": "Naudotojas nerastas. „{phoneNumber}“ nėra SWARM Messenger naudotojas."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "Naudotojas nerastas. „{phoneNumber}“ nėra tinkamas telefono numeris."
@@ -2520,13 +2520,13 @@
     "messageformat": "Pasiektas didžiausias grupės dydis"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signal grupėse gali būti daugiausiai {max,number} narių."
+    "messageformat": "SWARM grupėse gali būti daugiausiai {max,number} narių."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Pasiekta rekomenduojamo narių skaičiaus riba"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signal grupės geriausiai veikia, kai jose yra {max,number} ar mažiau narių. Pridėjus daugiau narių, žinučių išsiuntimas ir gavimas bus uždelsiamas."
+    "messageformat": "SWARM grupės geriausiai veikia, kai jose yra {max,number} ar mažiau narių. Pridėjus daugiau narių, žinučių išsiuntimas ir gavimas bus uždelsiamas."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Suteikti šiai grupei pavadinimą"
@@ -2556,13 +2556,13 @@
     "messageformat": "Nepavyko atnaujinti grupės. Patikrinkite savo ryšį ir bandykite dar kartą."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Spustelėkite, norėdami iš naujo susieti Signal Desktop su savo mobiliuoju įrenginiu, kad tęstumėte susirašinėjimą."
+    "messageformat": "Spustelėkite, norėdami iš naujo susieti SWARM Messenger su savo mobiliuoju įrenginiu, kad tęstumėte susirašinėjimą."
   },
   "icu:unlinked": {
     "messageformat": "Atsietas"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "Spustelėkite, jei pageidaujate užsiregistruoti iš naujo ir toliau siųsti žinutes. Gali būti, kad „Signal Desktop“ nebėra registruotas, nes savo telefono numerį „Signal“ užregistravote kitame įrenginyje."
+    "messageformat": "Spustelėkite, jei pageidaujate užsiregistruoti iš naujo ir toliau siųsti žinutes. Gali būti, kad „SWARM Messenger“ nebėra registruotas, nes savo telefono numerį „SWARM Messenger“ užregistravote kitame įrenginyje."
   },
   "icu:unregistered": {
     "messageformat": "Nebėra registruotas"
@@ -2574,16 +2574,16 @@
     "messageformat": "Bandykite atnaujinti programą dar kartą"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Spustelėkite, norėdami paleisti Signal iš naujo"
+    "messageformat": "Spustelėkite, norėdami paleisti SWARM Messenger iš naujo"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Spustelėkite, norėdami atsisiųsti atnaujinimą"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Programai Signal nepavyko atsinaujinti. Spustelėkite norėdami bandyti dar kartą."
+    "messageformat": "Programai SWARM Messenger nepavyko atsinaujinti. Spustelėkite norėdami bandyti dar kartą."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Paleisti Signal iš naujo"
+    "messageformat": "Paleisti SWARM Messenger iš naujo"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Nepaisyti atnaujinimo"
@@ -2715,7 +2715,7 @@
     "messageformat": "Kai kurie priedai nerodomi, nes per dideli."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Naudokis šia nuoroda, kad prisijungtum prie „Signal“ skambučio"
+    "messageformat": "Naudokis šia nuoroda, kad prisijungtum prie „SWARM“ skambučio"
   },
   "icu:donation--missing": {
     "messageformat": "Nepavyko gauti paramos informacijos"
@@ -2727,7 +2727,7 @@
     "messageformat": "Bakstelėk šią žinutę telefone ir peržiūrėk savo skirtą paramą"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} skyrė „Signal“ paramą tavo vardu"
+    "messageformat": "{sender} skyrė „SWARM Messenger“ paramą tavo vardu"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Atverk šios paramos informaciją telefone"
@@ -2784,7 +2784,7 @@
     "messageformat": "Ačiū tau už palaikymą!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Tu skyrei „Signal“ paramą {name} vardu. Šis žmogus turės galimybę parodyti palaikymą savo profilyje."
+    "messageformat": "Tu skyrei „SWARM Messenger“ paramą {name} vardu. Šis žmogus turės galimybę parodyti palaikymą savo profilyje."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Nepavyko įdiegti lipdukų paketo"
@@ -2796,10 +2796,10 @@
     "messageformat": "Pridėti lipdukų"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal menininkų serija"
+    "messageformat": "SWARM Messenger menininkų serija"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Nėra prieinami jokie Signal menininkų lipdukai"
+    "messageformat": "Nėra prieinami jokie SWARM Messenger menininkų lipdukai"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "Pasidalino su jumis"
@@ -2835,7 +2835,7 @@
     "messageformat": "Vilkite norėdami pakeisti lipdukų paketų tvarką"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "„Signal“ menininkų serijos lipdukų paketas"
+    "messageformat": "„SWARM Messenger“ menininkų serijos lipdukų paketas"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
     "messageformat": "Gauti lipdukų paketai"
@@ -3120,19 +3120,19 @@
     "messageformat": "Žinutė per ilga, kad būtų rodoma daugiau"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} išsiuntė jums žinutę, kurios nepavyksta apdoroti ar parodyti, nes žinutė naudoja naująją Signal ypatybę."
+    "messageformat": "{contact} išsiuntė jums žinutę, kurios nepavyksta apdoroti ar parodyti, nes žinutė naudoja naująją SWARM Messenger ypatybę."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Dabar, kai naudojate atnaujintą Signal versiją, galite paprašyti, kad {contact} jums iš naujo išsiųstų šią žinutę."
+    "messageformat": "Dabar, kai naudojate atnaujintą SWARM Messenger versiją, galite paprašyti, kad {contact} jums iš naujo išsiųstų šią žinutę."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Vienas iš jūsų įrenginių išsiuntė žinutę, kurios nepavyksta apdoroti ar parodyti, nes žinutė naudoja naująją Signal ypatybę."
+    "messageformat": "Vienas iš jūsų įrenginių išsiuntė žinutę, kurios nepavyksta apdoroti ar parodyti, nes žinutė naudoja naująją SWARM Messenger ypatybę."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Dabar, kai naudojate atnaujintą Signal versiją, būsimos žinutės, tokios kaip ši, bus sinchronizuojamos."
+    "messageformat": "Dabar, kai naudojate atnaujintą SWARM Messenger versiją, būsimos žinutės, tokios kaip ši, bus sinchronizuojamos."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Atnaujinti Signal"
+    "messageformat": "Atnaujinti SWARM Messenger"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Peržiūrėta"
@@ -3399,7 +3399,7 @@
     "messageformat": "Pokalbis pažymėtas kaip neskaitytas"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Jei nori naudoti lipdukų paketo kūrimo įrankį, įdiek „Signal“ telefone ir kompiuteryje"
+    "messageformat": "Jei nori naudoti lipdukų paketo kūrimo įrankį, įdiek „SWARM Messenger“ telefone ir kompiuteryje"
   },
   "icu:Reactions--remove": {
     "messageformat": "Šalinti reakciją"
@@ -3417,16 +3417,16 @@
     "messageformat": "Saugos patarimai"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "Neatsakykite į „Signal“ pradėtus pokalbius"
+    "messageformat": "Neatsakykite į „SWARM Messenger“ pradėtus pokalbius"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "„Signal“ niekada neprašys jūsų pateikti registracijos kodą, PIN ar atkūrimo raktą. Niekada neatsakykite į pokalbius, kuriuose apsimetama „Signal“."
+    "messageformat": "„SWARM Messenger“ niekada neprašys jūsų pateikti registracijos kodą, PIN ar atkūrimo raktą. Niekada neatsakykite į pokalbius, kuriuose apsimetama „SWARM Messenger“."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "Peržiūrėkite vardus ir nuotraukas"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "Žiūrėkite, ar nėra pranešimo „Vardas nepatvirtintas“. Programoje „Signal“ kiekvienas nusistato savo profilio vardą."
+    "messageformat": "Žiūrėkite, ar nėra pranešimo „Vardas nepatvirtintas“. Programoje „SWARM Messenger“ kiekvienas nusistato savo profilio vardą."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "Saugokitės sukčių"
@@ -3435,16 +3435,16 @@
     "messageformat": "Neatsakykite į bendro pobūdžio žinutes, kuriomis bandoma iš jūsų išgauti atsakymą. Nepasitikėkite asmenimis, kurie siunčia finansinius patarimus ar įtartinas internetines nuorodas."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "Neatsakykite į „Signal“ pradėtus pokalbius"
+    "messageformat": "Neatsakykite į „SWARM Messenger“ pradėtus pokalbius"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "„Signal“ niekada neprašys jūsų pateikti registracijos kodą, PIN ar atkūrimo raktą. Neatsakykite į pokalbius, kuriuos neva atsiuntė „Signal“ ar „Signal“ palaikymo komanda. Sukčiai sukuria netikrus vardus bandydami perimti jūsų paskyrą."
+    "messageformat": "„SWARM Messenger“ niekada neprašys jūsų pateikti registracijos kodą, PIN ar atkūrimo raktą. Neatsakykite į pokalbius, kuriuos neva atsiuntė „SWARM Messenger“ ar „SWARM Messenger“ palaikymo komanda. Sukčiai sukuria netikrus vardus bandydami perimti jūsų paskyrą."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "Peržiūrėkite vardus ir nuotraukas"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "Žiūrėkite, ar nėra pranešimo „Vardas nepatvirtintas“. Programoje „Signal“ kiekvienas nusistato savo profilio vardą ir nuotrauką. Jei nesate tikri, nuo ko yra gautas naujas prašymas, geriau nekreipkite į jį dėmesio."
+    "messageformat": "Žiūrėkite, ar nėra pranešimo „Vardas nepatvirtintas“. Programoje „SWARM Messenger“ kiekvienas nusistato savo profilio vardą ir nuotrauką. Jei nesate tikri, nuo ko yra gautas naujas prašymas, geriau nekreipkite į jį dėmesio."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Kriptovaliutų ar pinigų sukčiai"
@@ -3525,13 +3525,13 @@
     "messageformat": "Pranešti apie šlamštą?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "„Signal“ bus pranešta, kad šis asmuo gali siųsti šlamštą. „Signal“ nemato jokių pokalbių turinio."
+    "messageformat": "„SWARM Messenger“ bus pranešta, kad šis asmuo gali siųsti šlamštą. „SWARM Messenger“ nemato jokių pokalbių turinio."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "„Signal“ bus pranešta, kad asmuo, pakvietęs jus į šią grupę, gali siųsti šlamštą. „Signal“ nemato jokių pokalbių turinio."
+    "messageformat": "„SWARM Messenger“ bus pranešta, kad asmuo, pakvietęs jus į šią grupę, gali siųsti šlamštą. „SWARM Messenger“ nemato jokių pokalbių turinio."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "„Signal“ bus pranešta, kad {name}, pakvietęs (-usi) tave į šią grupę, gali siųsti šlamštą. „Signal“ nemato jokių pokalbių turinio."
+    "messageformat": "„SWARM Messenger“ bus pranešta, kad {name}, pakvietęs (-usi) tave į šią grupę, gali siųsti šlamštą. „SWARM Messenger“ nemato jokių pokalbių turinio."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Pranešti apie šlamštą"
@@ -3573,7 +3573,7 @@
     "messageformat": "Priimti užklausą?"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "Priimkite prašymus tik iš žmonių, kuriais pasitikite. <bold>„Signal“ niekada</bold> neprašys jūsų pateikti registracijos kodą, PIN ar atkūrimo raktą."
+    "messageformat": "Priimkite prašymus tik iš žmonių, kuriais pasitikite. <bold>„SWARM Messenger“ niekada</bold> neprašys jūsų pateikti registracijos kodą, PIN ar atkūrimo raktą."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "Tęsti"
@@ -3627,16 +3627,16 @@
     "messageformat": "Vardas nepatvirtintas"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Tai oficialus ir vienintelis pokalbis su „Signal“"
+    "messageformat": "Tai oficialus ir vienintelis pokalbis su „SWARM Messenger“"
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "Oficialus pokalbis"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "Tai vienintelis oficialus pokalbis su „Signal“. Sekite naujienas ir informaciją apie naujas versijas."
+    "messageformat": "Tai vienintelis oficialus pokalbis su „SWARM Messenger“. Sekite naujienas ir informaciją apie naujas versijas."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "Tai vienintelis oficialus pokalbis su „Signal“."
+    "messageformat": "Tai vienintelis oficialus pokalbis su „SWARM Messenger“."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Sekite naujienas ir informaciją apie naujas versijas."
@@ -3702,10 +3702,10 @@
     "messageformat": "Neatsakytas vaizdo skambutis"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Programėlė „Signal“ tebėra įjungta"
+    "messageformat": "Programėlė „SWARM Messenger“ tebėra įjungta"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Programėlė „Signal“ tebebus įjungta pranešimų skiltyje. Gali tai pakeisti nustatymuose."
+    "messageformat": "Programėlė „SWARM Messenger“ tebebus įjungta pranešimų skiltyje. Gali tai pakeisti nustatymuose."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Gaunamasis balso skambutis"
@@ -3912,7 +3912,7 @@
     "messageformat": "Kopijuoti skambučio nuorodą"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Bendrinti skambučio nuorodą per „Signal“"
+    "messageformat": "Bendrinti skambučio nuorodą per „SWARM Messenger“"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "Pašalinti {name} iš skambučio?"
@@ -4074,7 +4074,7 @@
     "messageformat": "Nežinoma nuorodos versija"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "Ši Signal Desktop versija nepalaiko šios nuorodos."
+    "messageformat": "Ši SWARM Messenger versija nepalaiko šios nuorodos."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Nepavyksta prisijungti prie grupės"
@@ -4680,10 +4680,10 @@
     "messageformat": "Ištrinami naudotojo duomenys ir atstatoma programėlė"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Paaukokite Signal programėlei"
+    "messageformat": "Paaukokite SWARM Messenger programėlei"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} remia „Signal“"
+    "messageformat": "{name} remia „SWARM Messenger“"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "Sinchronizuojamos žinutės"
@@ -4800,7 +4800,7 @@
     "messageformat": "Būtina atlikti paskyros veiksmus"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Jei norite toliau naudoti šią paskyrą, telefone turite atidaryti „Signal“. Jei neatidarysite „Signal“ savo telefone, jūsų paskyra netrukus bus pašalinta. <learnMoreLink>Sužinoti daugiau</learnMoreLink>"
+    "messageformat": "Jei norite toliau naudoti šią paskyrą, telefone turite atidaryti „SWARM Messenger“. Jei neatidarysite „SWARM Messenger“ savo telefone, jūsų paskyra netrukus bus pašalinta. <learnMoreLink>Sužinoti daugiau</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Įrašų atkurti neįmanoma"
@@ -4824,10 +4824,10 @@
     "messageformat": "Pridėti priedą arba apklausą"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Šis žmogus nesinaudoja Signal"
+    "messageformat": "Šis žmogus nesinaudoja SWARM Messenger"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktop nepalaiko žinučių rašymo ne Signal adresatams. Paprašykite šio žmogaus, kad, saugesniam susirašinėjimo patyrimui, įsidiegtų Signal."
+    "messageformat": "SWARM Messenger nepalaiko žinučių rašymo ne SWARM Messenger adresatams. Paprašykite šio žmogaus, kad, saugesniam susirašinėjimo patyrimui, įsidiegtų SWARM Messenger."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Tikrinama adresato registracijos būsena"
@@ -5088,10 +5088,10 @@
     "messageformat": "Atblokuoti"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "„Signal“ bus pranešta, kad šis asmuo gali siųsti šlamštą. „Signal“ nemato jokių pokalbių turinio."
+    "messageformat": "„SWARM Messenger“ bus pranešta, kad šis asmuo gali siųsti šlamštą. „SWARM Messenger“ nemato jokių pokalbių turinio."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "„Signal“ bus pranešta, kad asmuo, pakvietęs jus į šią grupę, gali siųsti šlamštą. „Signal“ nemato jokių pokalbių turinio."
+    "messageformat": "„SWARM Messenger“ bus pranešta, kad asmuo, pakvietęs jus į šią grupę, gali siųsti šlamštą. „SWARM Messenger“ nemato jokių pokalbių turinio."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "Pranešti apie šlamštą"
@@ -5139,7 +5139,7 @@
     "messageformat": "Slapyvardis"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Slapyvardžiai ir pastabos saugomi „Signal“ serveriuose, jie užšifruoti ištisiniu būdu. Jie matomi tik jums."
+    "messageformat": "Slapyvardžiai ir pastabos saugomi „SWARM Messenger“ serveriuose, jie užšifruoti ištisiniu būdu. Jie matomi tik jums."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Vardas"
@@ -5295,7 +5295,7 @@
     "messageformat": "Reikalauti, kad administratorius patvirtintų naujus, per grupės nuorodą prisijungiančius, narius"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Nukopijuokite signal.group nuorodą į iškarpinę"
+    "messageformat": "Nukopijuokite grupės nuorodą į iškarpinę"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Ieškoti narių"
@@ -5434,7 +5434,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, one {Naujausias „Signal“ versijas naudojantys grupės nariai matys, kad jūs ištrynėte šią žinutę.} few {Naujausias „Signal“ versijas naudojantys grupės nariai matys, kad jūs ištrynėte šias žinutes.} many {Naujausias „Signal“ versijas naudojantys grupės nariai matys, kad jūs ištrynėte šias žinutes.} other {Naujausias „Signal“ versijas naudojantys grupės nariai matys, kad jūs ištrynėte šias žinutes.}}"
+    "messageformat": "{count, plural, one {Naujausias „SWARM Messenger“ versijas naudojantys grupės nariai matys, kad jūs ištrynėte šią žinutę.} few {Naujausias „SWARM Messenger“ versijas naudojantys grupės nariai matys, kad jūs ištrynėte šias žinutes.} many {Naujausias „SWARM Messenger“ versijas naudojantys grupės nariai matys, kad jūs ištrynėte šias žinutes.} other {Naujausias „SWARM Messenger“ versijas naudojantys grupės nariai matys, kad jūs ištrynėte šias žinutes.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Ištrinti"
@@ -5560,7 +5560,7 @@
     "messageformat": "Negalima persiųsti tuščių arba ištrintų žinučių"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Naudok šią nuorodą prisijungti prie „Signal“ skambučio: {url}"
+    "messageformat": "Naudok šią nuorodą prisijungti prie „SWARM“ skambučio: {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "Atidžiai peržiūrėkite prašymus"
@@ -5569,7 +5569,7 @@
     "messageformat": "Saugos patarimai"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Atidžiai peržiūrėkite užklausas. „Signal“ rado kitą adresatą tokiu pačiu vardu. <reviewRequestLink>Peržiūrėti užklausą</reviewRequestLink>"
+    "messageformat": "Atidžiai peržiūrėkite užklausas. „SWARM Messenger“ rado kitą adresatą tokiu pačiu vardu. <reviewRequestLink>Peržiūrėti užklausą</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} grupės narys turi tokį patį vardą. <reviewRequestLink>Peržiūrėti narius</reviewRequestLink>} few {{count,number} grupės nariai turi tokį patį vardą. <reviewRequestLink>Peržiūrėti narius</reviewRequestLink>} many {{count,number} grupės nario turi tokį patį vardą. <reviewRequestLink>Peržiūrėti narius</reviewRequestLink>} other {{count,number} grupės narių turi tokį patį vardą. <reviewRequestLink>Peržiūrėti narius</reviewRequestLink>}}"
@@ -5602,7 +5602,7 @@
     "messageformat": "Nėra kitų bendrų grupių"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "„Signal“ kontaktas"
+    "messageformat": "„SWARM“ kontaktas"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Neseniai pasikeitė profilio vardą iš {oldName} į {newName}"
@@ -5620,7 +5620,7 @@
     "messageformat": "Patvirtinkite, norėdami tęsti susirašinėjimą"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Siekdami neleisti brukalo Signal programėlėje, prašome jūsų užbaigti patvirtinimą."
+    "messageformat": "Siekdami neleisti brukalo SWARM Messenger programėlėje, prašome jūsų užbaigti patvirtinimą."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Po patvirtinimo galėsite tęsti susirašinėjimą. Visos pristabdytos žinutės bus automatiškai išsiųstos."
@@ -6007,7 +6007,7 @@
     "messageformat": "Ar norėtumėte atmesti šiuos pakeitimus?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Uždaryti „Signal“ ir baigti skambutį?"
+    "messageformat": "Uždaryti „SWARM Messenger“ ir baigti skambutį?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Ne dabar"
@@ -6107,7 +6107,7 @@
     "messageformat": "Bendra"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Paaukokite Signal programėlei"
+    "messageformat": "Paaukokite SWARM Messenger programėlei"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Išvaizda"
@@ -6173,10 +6173,10 @@
     "messageformat": "Sisteminis"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "SWARM Messenger Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "Jūsų „Signal Login“ naudojamas atkurti paskyrą. Raktus saugiai laikykite slaptažodžių tvarkyklėje, kurios saugumu pasitikite. <learnMoreLink>Sužinoti daugiau</learnMoreLink>."
+    "messageformat": "Jūsų „SWARM Messenger Login“ naudojamas atkurti paskyrą. Raktus saugiai laikykite slaptažodžių tvarkyklėje, kurios saugumu pasitikite. <learnMoreLink>Sužinoti daugiau</learnMoreLink>."
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "Sužinoti daugiau"
@@ -6188,7 +6188,7 @@
     "messageformat": "2 raktai"
   },
   "icu:Preferences__SignalAccountKeys__Title": {
-    "messageformat": "Jūsų „Signal Login“"
+    "messageformat": "Jūsų „SWARM Messenger Login“"
   },
   "icu:Preferences__SignalAccountKeys__Description": {
     "messageformat": "Išsaugokite tai saugioje vietoje, prisijungimo informacijos jums reikės norint atkurti paskyrą ir duomenis. Su niekuo ja nesidalykite."
@@ -6209,7 +6209,7 @@
     "messageformat": "Tai susietas įrenginys"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "Norėdami tvarkyti paskyros nustatymus, atverkite „Signal“ pagrindiniame įrenginyje."
+    "messageformat": "Norėdami tvarkyti paskyros nustatymus, atverkite „SWARM Messenger“ pagrindiniame įrenginyje."
   },
   "icu:Preferences--zoom": {
     "messageformat": "Mastelio lygis"
@@ -6248,7 +6248,7 @@
     "messageformat": "Keisti"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "Signal PIN kodas"
+    "messageformat": "SWARM PIN kodas"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "PIN kodo priminimai"
@@ -6386,7 +6386,7 @@
     "messageformat": "Nepavyksta eksportuoti pokalbių istorijos"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "Jūsų pokalbių istorijos negalima eksportuoti, nes „Signal“ neturi leidimo įrašyti failus į diską. Pabandykite pakeisti disko leidimus arba atnaujinti sistemos nustatymus ir tada eksportuoti dar kartą."
+    "messageformat": "Jūsų pokalbių istorijos negalima eksportuoti, nes „SWARM Messenger“ neturi leidimo įrašyti failus į diską. Pabandykite pakeisti disko leidimus arba atnaujinti sistemos nustatymus ir tada eksportuoti dar kartą."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "Eksportuojama atsarginė kopija"
@@ -6401,7 +6401,7 @@
     "messageformat": "Perkelkite atsarginių kopijų aplanką į telefono saugyklą."
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "Įdiekite naują „Signal“ kopiją savo telefone."
+    "messageformat": "Įdiekite naują „SWARM Messenger“ kopiją savo telefone."
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "Palieskite „Atkurti arba perkelti“ ir pasirinkite „Atsarginė kopija įrenginyje“."
@@ -6668,13 +6668,13 @@
     "messageformat": "Užblokuotas {blockedAt}"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "„Signal“ saugiosios atsarginės kopijos"
+    "messageformat": "„SWARM Messenger“ saugiosios atsarginės kopijos"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Automatinės atsarginės kopijos naudojant „Signal“ saugią, užšifruotą saugyklos paslaugą. Pradėkite naudotis savo telefone. <learnMoreLink>Sužinoti daugiau</learnMoreLink>."
+    "messageformat": "Automatinės atsarginės kopijos naudojant „SWARM Messenger“ saugią, užšifruotą saugyklos paslaugą. Pradėkite naudotis savo telefone. <learnMoreLink>Sužinoti daugiau</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Sukurkite savo žinučių istorijos atsarginę kopiją, kad niekada neprarastumėte duomenų įsigiję naują telefoną arba iš naujo įdiegę „Signal“."
+    "messageformat": "Sukurkite savo žinučių istorijos atsarginę kopiją, kad niekada neprarastumėte duomenų įsigiję naują telefoną arba iš naujo įdiegę „SWARM Messenger“."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Informacija apie atsarginę kopiją"
@@ -6704,13 +6704,13 @@
     "messageformat": "Prenumerata nutraukta"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Telefone galite tvarkyti arba atšaukti savo „Signal“ saugiųjų atsarginių kopijų prenumeratą."
+    "messageformat": "Telefone galite tvarkyti arba atšaukti savo „SWARM Messenger“ saugiųjų atsarginių kopijų prenumeratą."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Savo telefone galite tvarkyti arba atnaujinti „Signal“ saugiąsias atsargines kopijas."
+    "messageformat": "Savo telefone galite tvarkyti arba atnaujinti „SWARM Messenger“ saugiąsias atsargines kopijas."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Telefone galite tvarkyti arba atnaujinti savo „Signal“ saugiųjų atsarginių kopijų prenumeratą."
+    "messageformat": "Telefone galite tvarkyti arba atnaujinti savo „SWARM Messenger“ saugiųjų atsarginių kopijų prenumeratą."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Paskutinė atsarginė kopija"
@@ -6728,7 +6728,7 @@
     "messageformat": "Sukurkite visiškai užšifruotą atsarginę kopiją, kurią galėsite atkurti savo telefone. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Norėdami atkurti atsarginę kopiją, telefone įsidiekite naują „Signal“ kopiją. Atverkite programėlę ir bakstelėkite „Atkurti arba perkelti“. <learnMoreLink>Sužinoti daugiau.</learnMoreLink>"
+    "messageformat": "Norėdami atkurti atsarginę kopiją, telefone įsidiekite naują „SWARM Messenger“ kopiją. Atverkite programėlę ir bakstelėkite „Atkurti arba perkelti“. <learnMoreLink>Sužinoti daugiau.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Pasirinkti aplanką"
@@ -6764,7 +6764,7 @@
     "messageformat": "Jūsų atkūrimo raktas"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "Šis raktas reikalingas norint atkurti paskyrą ir duomenis. Išsaugokite jį saugioje vietoje ir niekada nesidalykite juo su kitais. „Signal“ niekada neprašys jūsų pateikti atkūrimo raktą. <learnMoreLink>Sužinoti daugiau.</learnMoreLink>"
+    "messageformat": "Šis raktas reikalingas norint atkurti paskyrą ir duomenis. Išsaugokite jį saugioje vietoje ir niekada nesidalykite juo su kitais. „SWARM Messenger“ niekada neprašys jūsų pateikti atkūrimo raktą. <learnMoreLink>Sužinoti daugiau.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "Nesidalinkite atkūrimo raktu"
@@ -6779,7 +6779,7 @@
     "messageformat": "Nesidalinkite raktu"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Su niekuo nesidalinkite savo atkūrimo raktu. Antraip šie asmenys galės perimti jūsų paskyrą. <strong>„Signal“ niekada neprašys jūsų</strong> pateikti atkūrimo raktą. Niekada neatsakykite į pokalbius, kuriuose apsimetama „Signal“. <learnMoreLink>Sužinoti daugiau.</learnMoreLink>"
+    "messageformat": "Su niekuo nesidalinkite savo atkūrimo raktu. Antraip šie asmenys galės perimti jūsų paskyrą. <strong>„SWARM Messenger“ niekada neprašys jūsų</strong> pateikti atkūrimo raktą. Niekada neatsakykite į pokalbius, kuriuose apsimetama „SWARM Messenger“. <learnMoreLink>Sužinoti daugiau.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Patvirtinkite atkūrimo raktą"
@@ -6791,7 +6791,7 @@
     "messageformat": "Saugokite savo raktą"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "„Signal“ negalės padėti jums atkurti atsarginės kopijos, jei pamesite raktą. Išsaugokite jį saugioje vietoje ir nesidalykite juo su kitais."
+    "messageformat": "„SWARM Messenger“ negalės padėti jums atkurti atsarginės kopijos, jei pamesite raktą. Išsaugokite jį saugioje vietoje ir nesidalykite juo su kitais."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Tęsti"
@@ -6842,7 +6842,7 @@
     "messageformat": "Norint įjungti atsargines kopijas, reikalingas autentifikavimas."
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "Šio veiksmo atlikti nepavyko, nes nepavyko sistemos autentifikavimas. Bandykite dar kartą arba atverkite „Signal“ programėlę mobiliajame įrenginyje ir norėdami peržiūrėti atkūrimo raktą eikite į „Atsarginės kopijos nustatymai“."
+    "messageformat": "Šio veiksmo atlikti nepavyko, nes nepavyko sistemos autentifikavimas. Bandykite dar kartą arba atverkite „SWARM Messenger“ programėlę mobiliajame įrenginyje ir norėdami peržiūrėti atkūrimo raktą eikite į „Atsarginės kopijos nustatymai“."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "Prašant sistemos patvirtinti šį veiksmą įvyko klaida."
@@ -6872,7 +6872,7 @@
     "messageformat": "Telefono numeris"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Pasirink, kas gali matyti tavo telefono numerį, ir kas gali su tavimi susisiekti per „Signal“."
+    "messageformat": "Pasirink, kas gali matyti tavo telefono numerį, ir kas gali su tavimi susisiekti per „SWARM Messenger“."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Keisti…"
@@ -6902,10 +6902,10 @@
     "messageformat": "Kas gali mane rasti pagal numerį"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Visi jūsų telefono numerį turintys žmonės matys, kad naudojatės „Signal“, ir galės su jumis pradėti pokalbį."
+    "messageformat": "Visi jūsų telefono numerį turintys žmonės matys, kad naudojatės „SWARM Messenger“, ir galės su jumis pradėti pokalbį."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Niekas nematys, kad naudojatės „Signal“, nebent išsiųsite jiems žinutę arba jau esate pradėję pokalbį."
+    "messageformat": "Niekas nematys, kad naudojatės „SWARM Messenger“, nebent išsiųsite jiems žinutę arba jau esate pradėję pokalbį."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Visi"
@@ -6917,7 +6917,7 @@
     "messageformat": "Ar tikrai to nori?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Jei „{settingTitle}“ nustatysite į „{nobodyLabel}“, žmonėms bus sunkiau jus rasti per „Signal“."
+    "messageformat": "Jei „{settingTitle}“ nustatysite į „{nobodyLabel}“, žmonėms bus sunkiau jus rasti per „SWARM Messenger“."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Susirašinėjimas"
@@ -6980,7 +6980,7 @@
     "messageformat": "Nustatyti"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Paleisk „Signal“ iš naujo pakeitimams pritaikyti"
+    "messageformat": "Paleisk „SWARM Messenger“ iš naujo pakeitimams pritaikyti"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Norint pakeisti kalbą, programėlę reikia paleisti iš naujo."
@@ -6995,13 +6995,13 @@
     "messageformat": "Ekrano saugumas"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Siekdami didesnio privatumo neleiskite šiame kompiuteryje daryti „Signal“ ekrano kopijų."
+    "messageformat": "Siekdami didesnio privatumo neleiskite šiame kompiuteryje daryti „SWARM Messenger“ ekrano kopijų."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Išjungti ekrano saugumą?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Jei ši funkcija išjungta, „Microsoft Windows“ gali leisti „Signal“ užfiksuoti ekrano kopijas ir naudoti jas funkcijoms, kurios gali būti ne privačios."
+    "messageformat": "Jei ši funkcija išjungta, „Microsoft Windows“ gali leisti „SWARM Messenger“ užfiksuoti ekrano kopijas ir naudoti jas funkcijoms, kurios gali būti ne privačios."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Išjungti"
@@ -7022,19 +7022,19 @@
     "messageformat": "Spustelėkite eiti į „App Store“"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Atverkite savo telefone Signal programėlę"
+    "messageformat": "Atverkite savo telefone SWARM Messenger programėlę"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Jūsų paskyra netrukus bus ištrinta, nebent telefone atidarysite „Signal“. Tai atlikus ši žinutė išnyks. <learnMoreLink>Sužinoti daugiau</learnMoreLink>"
+    "messageformat": "Jūsų paskyra netrukus bus ištrinta, nebent telefone atidarysite „SWARM Messenger“. Tai atlikus ši žinutė išnyks. <learnMoreLink>Sužinoti daugiau</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Atidarykite „Signal“ telefone, kad paskyra liktų aktyvi"
+    "messageformat": "Atidarykite „SWARM Messenger“ telefone, kad paskyra liktų aktyvi"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Sužinoti daugiau"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal patiria techninius nesklandumus. Mes sunkiai dirbame, kad kaip įmanoma greičiau atkurtume paslaugą."
+    "messageformat": "SWARM Messenger patiria techninius nesklandumus. Mes sunkiai dirbame, kad kaip įmanoma greičiau atkurtume paslaugą."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Reikia atnaujinimo"
@@ -7043,13 +7043,13 @@
     "messageformat": "Tikrinama, ar yra naujinių"
   },
   "icu:InstallScreenUpdateDialog--updating-signal": {
-    "messageformat": "Atnaujinamas „Signal“"
+    "messageformat": "Atnaujinamas „SWARM Messenger“"
   },
   "icu:InstallScreenUpdateDialog--download-progress": {
     "messageformat": "Atsisiunčiama {currentBytes} iš {totalBytes} ({percentage,number,percent})..."
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Norėdami tęsti, atnaujinkite „Signal Desktop“."
+    "messageformat": "Norėdami tęsti, atnaujinkite „SWARM Messenger“."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Atnaujinti"
@@ -7061,19 +7061,19 @@
     "messageformat": "Reikia atnaujinimo"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Jei nori toliau naudoti „Signal“, turi atsisiųsti naujausią versiją."
+    "messageformat": "Jei nori toliau naudoti „SWARM Messenger“, turi atsisiųsti naujausią versiją."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Atsisiųsti {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Paleisk „Signal“ iš naujo ir įdiek atnaujinimą."
+    "messageformat": "Paleisk „SWARM Messenger“ iš naujo ir įdiek atnaujinimą."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Nepavyko atnaujinti „Signal Desktop“, bet gali atsisiųsti naują versiją. Eik į {downloadUrl} ir įdiek naują versiją rankiniu būdu, o tada kreipkis į aptarnavimo komandą arba pranešk apie šią problemą."
+    "messageformat": "Nepavyko atnaujinti „SWARM Messenger“, bet gali atsisiųsti naują versiją. Eik į {downloadUrl} ir įdiek naują versiją rankiniu būdu, o tada kreipkis į aptarnavimo komandą arba pranešk apie šią problemą."
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "„Signal“ logotipas"
+    "messageformat": "„SWARM Messenger“ logotipas"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "Atgal"
@@ -7109,7 +7109,7 @@
     "messageformat": "Norėdami tęsti patvirtinkite, kad esate žmogus"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "Siekdami neleisti brukalo „Signal“ programėlėje, prašome jūsų užbaigti patvirtinimą. Patvirtinę galėsite tęsti registraciją."
+    "messageformat": "Siekdami neleisti brukalo „SWARM Messenger“ programėlėje, prašome jūsų užbaigti patvirtinimą. Patvirtinę galėsite tęsti registraciją."
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "Kartoti patvirtinimą"
@@ -7349,7 +7349,7 @@
     "messageformat": "Neteisingas PIN"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "Jums nebeliko PIN kodo spėjimų, bet vis dar galite gauti prieigą prie savo „Signal“ paskyros susikurdami naują PIN kodą. Siekiant apsaugoti jūsų privatumą, saugumo sumetimais jūsų paskyra bus atkurta be įrašytos profilio informacijos ir įrašytų nustatymų."
+    "messageformat": "Jums nebeliko PIN kodo spėjimų, bet vis dar galite gauti prieigą prie savo „SWARM“ paskyros susikurdami naują PIN kodą. Siekiant apsaugoti jūsų privatumą, saugumo sumetimais jūsų paskyra bus atkurta be įrašytos profilio informacijos ir įrašytų nustatymų."
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
     "messageformat": "Sukurti naują PIN kodą"
@@ -7379,7 +7379,7 @@
     "messageformat": "Susikurti PIN kodą"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "PIN kodai gali padėti atkurti tavo paskyrą ir išsaugoti užšifruotą informaciją programėlėje „Signal“. <learnMore>Sužinoti daugiau</learnMore>"
+    "messageformat": "PIN kodai gali padėti atkurti tavo paskyrą ir išsaugoti užšifruotą informaciją programėlėje „SWARM Messenger“. <learnMore>Sužinoti daugiau</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "Susikurti PIN kodą"
@@ -7403,7 +7403,7 @@
     "messageformat": "Įspėjimas"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "Jei išjungsite PIN, tuomet registruodamiesi iš naujo „Signal“ programėlėje prarasite visus duomenis. Tol, kol PIN kodas yra išjungtas, negalėsite įjungti registracijos užrakto."
+    "messageformat": "Jei išjungsite PIN, tuomet registruodamiesi iš naujo „SWARM Messenger“ programėlėje prarasite visus duomenis. Tol, kol PIN kodas yra išjungtas, negalėsite įjungti registracijos užrakto."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "Išjungti PIN kodą"
@@ -7412,10 +7412,10 @@
     "messageformat": "Atšaukti"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "Apie „Signal“ PIN"
+    "messageformat": "Apie „SWARM“ PIN"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "PIN kodai šifruotu pavidalu saugo informaciją, kuri yra laikoma „Signal“, todėl tik jūs galite gauti prieigą prie jos. Jums įdiegus iš naujo, jūsų profilis, nustatymai ir adresatai bus atkurti."
+    "messageformat": "PIN kodai šifruotu pavidalu saugo informaciją, kuri yra laikoma „SWARM Messenger“, todėl tik jūs galite gauti prieigą prie jos. Jums įdiegus iš naujo, jūsų profilis, nustatymai ir adresatai bus atkurti."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "Sužinoti daugiau"
@@ -7448,7 +7448,7 @@
     "messageformat": "Reikia atnaujinimo"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "Norėdami tęsti registraciją, atnaujinkite „Signal“ į naujausią versiją."
+    "messageformat": "Norėdami tęsti registraciją, atnaujinkite „SWARM Messenger“ į naujausią versiją."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "Atnaujinti"
@@ -7478,7 +7478,7 @@
     "messageformat": "Susisiekti su aptarnavimo komanda"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Nepavyksta užverti Signal.",
+    "messageformat": "Nepavyksta užverti SWARM Messenger.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7498,14 +7498,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Naujesnė „Signal“ versija jau įdiegta. Ar tikrai nori tęsti?",
+    "messageformat": "Naujesnė „SWARM Messenger“ versija jau įdiegta. Ar tikrai nori tęsti?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Programa užstrigo"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal buvo paleista iš naujo po strigties. Galite pateikti pranešimą apie strigtį, kad padėtumėte Signal ištirti problemą."
+    "messageformat": "SWARM Messenger buvo paleista iš naujo po strigties. Galite pateikti pranešimą apie strigtį, kad padėtumėte SWARM Messenger ištirti problemą."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Siųsti"
@@ -7610,7 +7610,7 @@
     "messageformat": "Spustelėkite „{buttonName}“ toliau"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Įjunkite \"Signal\""
+    "messageformat": "Įjunkite \"SWARM Messenger\""
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Eiti į nustatymus"
@@ -7706,7 +7706,7 @@
     "messageformat": "Sužinoti daugiau"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "„Signal“ kontaktai"
+    "messageformat": "„SWARM“ kontaktai"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} – tai žmonės, kuriems išreiškei pasitikėjimą:"
@@ -7847,7 +7847,7 @@
     "messageformat": "Slėpti istoriją nuo"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Visi „Signal“ kontaktai"
+    "messageformat": "Visi „SWARM“ kontaktai"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Visi, išskyrus…"
@@ -7925,7 +7925,7 @@
     "messageformat": "„Mano istorijos“ privatumas"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Pasirink, kurie „Signal“ kontaktai gali žiūrėti tavo istoriją. Bet kada galėsi pakeisti šį pasirinkimą privatumo nustatymuose. <learnMoreLink>Sužinoti daugiau.</learnMoreLink>"
+    "messageformat": "Pasirink, kurie „SWARM“ kontaktai gali žiūrėti tavo istoriją. Bet kada galėsi pakeisti šį pasirinkimą privatumo nustatymuose. <learnMoreLink>Sužinoti daugiau.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Ištrinti istoriją"
@@ -7994,7 +7994,7 @@
     "messageformat": "Atsisiųsti priedą"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Įjunk peržiūrų pranešimus, kad matytum, kas peržiūrėjo tavo istorijas. Atidaryk „Signal“ savo mobiliajame įrenginyje, eik į Nustatymus ir pasirink Istorijas."
+    "messageformat": "Įjunk peržiūrų pranešimus, kad matytum, kas peržiūrėjo tavo istorijas. Atidaryk „SWARM Messenger“ savo mobiliajame įrenginyje, eik į Nustatymus ir pasirink Istorijas."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Atsakymų kol kas nėra"
@@ -8180,7 +8180,7 @@
     "messageformat": "Jūsų QR kodas ir nuoroda nustatyti iš naujo, o naudotojo vardas yra {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Nuskaitykite šį QR kodą telefonu, kad galėtumėte kalbėtis su manimi per „Signal“.",
+    "messageformat": "Nuskaitykite šį QR kodą telefonu, kad galėtumėte kalbėtis su manimi per „SWARM Messenger“.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8256,7 +8256,7 @@
     "messageformat": "Atmesti"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "Patvirtinkite savo Signal PIN kodą"
+    "messageformat": "Patvirtinkite savo SWARM PIN kodą"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "Retkarčiais, tam kad prisimintumėte savo PIN kodą, prašysime jūsų jį patvirtinti."
@@ -8268,7 +8268,7 @@
     "messageformat": "Ne dabar"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "Įveskite savo Signal PIN kodą"
+    "messageformat": "Įveskite savo SWARM PIN kodą"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "Tam, kad įsimintumėte savo PIN kodą, mes laikas nuo laiko prašysime jį įvesti. Bėgant laikui, mes tai darysime rečiau."
@@ -8289,13 +8289,13 @@
     "messageformat": "PIN kodas teisingas. Vėliau dar kartą priminsime."
   },
   "icu:PinChangeModal__title--create": {
-    "messageformat": "Keisti savo „Signal“ PIN"
+    "messageformat": "Keisti savo „SWARM“ PIN"
   },
   "icu:PinChangeModal__body--create": {
     "messageformat": "Kol šis įrenginys yra registruotas, galite keisti savo PIN kodą. <learnMoreLink>Sužinoti daugiau</learnMoreLink>"
   },
   "icu:PinChangeModal__title--confirm": {
-    "messageformat": "Patvirtinkite savo Signal PIN kodą"
+    "messageformat": "Patvirtinkite savo SWARM PIN kodą"
   },
   "icu:PinChangeModal__body--confirm": {
     "messageformat": "Įveskite ką tik sukurtą PIN kodą."
@@ -8319,13 +8319,13 @@
     "messageformat": "Naujas PIN sukurtas."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Netrukus „Signal“ nebepalaikys tavo kompiuteryje esančios {OS} versijos. Jei nori toliau naudoti „Signal“, atnaujink kompiuterio operacinę sistemą iki {expirationDate}. <learnMoreLink>Sužinok daugiau</learnMoreLink>"
+    "messageformat": "Netrukus „SWARM Messenger“ nebepalaikys tavo kompiuteryje esančios {OS} versijos. Jei nori toliau naudoti „SWARM Messenger“, atnaujink kompiuterio operacinę sistemą iki {expirationDate}. <learnMoreLink>Sužinok daugiau</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "„Signal“ nebeveikia šiame kompiuteryje. Jei vėl nori naudoti „Signal“, atnaujink savo kompiuteryje esančią {OS} versiją. <learnMoreLink>Sužinok daugiau</learnMoreLink>"
+    "messageformat": "„SWARM Messenger“ nebeveikia šiame kompiuteryje. Jei vėl nori naudoti „SWARM Messenger“, atnaujink savo kompiuteryje esančią {OS} versiją. <learnMoreLink>Sužinok daugiau</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "„Signal“ nebeveikia šiame kompiuteryje. Jei vėl nori naudoti „Signal“, atnaujink savo kompiuteryje esančią {OS} versiją."
+    "messageformat": "„SWARM Messenger“ nebeveikia šiame kompiuteryje. Jei vėl nori naudoti „SWARM Messenger“, atnaujink savo kompiuteryje esančią {OS} versiją."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Redaguota"
@@ -8496,7 +8496,7 @@
     "messageformat": "Kopijuoti nuorodą"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Bendrinti nuorodą per „Signal“"
+    "messageformat": "Bendrinti nuorodą per „SWARM Messenger“"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Ištrinti nuorodą"
@@ -8559,13 +8559,13 @@
     "messageformat": "Jei norite pakeisti šį nustatymą, nustatykite „Kas gali matyti mano numerį“ vertę į „Niekas“."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Programoje „Signal“ profilių vardus pasirenka paskyros savininkai:"
+    "messageformat": "Programoje „SWARM Messenger“ profilių vardus pasirenka paskyros savininkai:"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "„Signal“ negali patvirtinti vardų ir nuotraukų"
+    "messageformat": "„SWARM Messenger“ negali patvirtinti vardų ir nuotraukų"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "„Signal“ niekada neprašys jūsų pateikti registracijos kodą, PIN ar atkūrimo raktą"
+    "messageformat": "„SWARM Messenger“ niekada neprašys jūsų pateikti registracijos kodą, PIN ar atkūrimo raktą"
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "Būkite atidūs – naudotojai gali apsimesti kitais žmonėmis"
@@ -8595,7 +8595,7 @@
     "messageformat": "Didžiuojamės būdami ne pelno organizacija"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Paremkite privačių žinučių programėlę. Kad „Signal“ išliktų nepriklausoma ir be reklamų. <readMoreLink>Skaityti daugiau</readMoreLink>"
+    "messageformat": "Paremkite privačių žinučių programėlę. Kad „SWARM Messenger“ išliktų nepriklausoma ir be reklamų. <readMoreLink>Skaityti daugiau</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Skirti paramą"
@@ -8619,7 +8619,7 @@
     "messageformat": "Tavo informacija yra privati"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Kaip nepriklausoma ne pelno organizacija „Signal“ yra įsipareigojusi užtikrinti žinučių ir skambučių privatumą. Nebrukame reklamų, nesekame ir nestebime. Skirkite paramą šiandien ir palaikykite „Signal“."
+    "messageformat": "Kaip nepriklausoma ne pelno organizacija „SWARM Messenger“ yra įsipareigojusi užtikrinti žinučių ir skambučių privatumą. Nebrukame reklamų, nesekame ir nestebime. Skirkite paramą šiandien ir palaikykite „SWARM Messenger“."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Parėmę galite pasirinkti, kad jūsų profilyje būtų rodomas ženklelis"
@@ -8628,10 +8628,10 @@
     "messageformat": "Jūsų privatumas – mūsų misija"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "„Signal“ yra ne pelno organizacija."
+    "messageformat": "„SWARM Messenger“ yra ne pelno organizacija."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "Širdies piktograma „Signal“ logotipo stiliumi"
+    "messageformat": "Širdies piktograma „SWARM Messenger“ logotipo stiliumi"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "Gerai"
@@ -8646,7 +8646,7 @@
     "messageformat": "Rėmėjų DUK"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Kvitai nesinchronizuojami skirtinguose įrenginiuose. Jei įdiegėte „Signal“ iš naujo, anksčiau skirtos paramos kvitai nebus prieinami."
+    "messageformat": "Kvitai nesinchronizuojami skirtinguose įrenginiuose. Jei įdiegėte „SWARM Messenger“ iš naujo, anksčiau skirtos paramos kvitai nebus prieinami."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Nėra kvitų"
@@ -8676,7 +8676,7 @@
     "messageformat": "Kredito arba debeto kortelė"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Įveskite savo kredito ar debeto kortelės duomenis. Jūsų asmeninės informacijos „Signal“ nerenka ir nekaupia. <learnMoreLink>Sužinoti daugiau</learnMoreLink>"
+    "messageformat": "Įveskite savo kredito ar debeto kortelės duomenis. Jūsų asmeninės informacijos „SWARM Messenger“ nerenka ir nekaupia. <learnMoreLink>Sužinoti daugiau</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Kortelės numeris"
@@ -8688,7 +8688,7 @@
     "messageformat": "MM/YY"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Skirti „Signal“ {formattedCurrencyAmount} paramą"
+    "messageformat": "Skirti „SWARM Messenger“ {formattedCurrencyAmount} paramą"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Neteisingas kortelės numeris"
@@ -8706,7 +8706,7 @@
     "messageformat": "Per trumpas kodas"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Gaukite „Signal“ rėmėjo ženklelį 30 dienų"
+    "messageformat": "Gaukite „SWARM Messenger“ rėmėjo ženklelį 30 dienų"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "Mažiausia paramos suma yra {formattedCurrencyAmount}"
@@ -8751,7 +8751,7 @@
     "messageformat": "Vieną kartą"
   },
   "icu:DonationReceipt__footer-text-v2": {
-    "messageformat": "Dėkojame, kad remiate „Signal“. Jūsų įnašas padeda skatinti misiją apsaugoti žodžio laisvę ir įgalinti saugų bendravimą milijonams žmonių visame pasaulyje dėl atvirojo kodo privatumo technologijos. Jei gyvenate Jungtinėse Valstijose, išsaugokite šį kvitą, kad turėtumėte jį savo mokestinių duomenų reikmėms. „Signal Technology Foundation“ yra Jungtinėse Valstijose įsteigta pelno nesiekianti organizacija, atleista nuo mokesčių pagal Vidaus mokesčių kodekso skirsnį 501c3. Mūsų federalinis mokesčių mokėtojo kodas: 82–4506840. „Signal“ už šį įnašą neteikė jokių prekių ar paslaugų."
+    "messageformat": "Dėkojame, kad remiate „SWARM Messenger“. Jūsų įnašas padeda skatinti misiją apsaugoti žodžio laisvę ir įgalinti saugų bendravimą milijonams žmonių visame pasaulyje dėl atvirojo kodo privatumo technologijos. Jei gyvenate Jungtinėse Valstijose, išsaugokite šį kvitą, kad turėtumėte jį savo mokestinių duomenų reikmėms. „SWARM Messenger Technology Foundation“ yra Jungtinėse Valstijose įsteigta pelno nesiekianti organizacija, atleista nuo mokesčių pagal Vidaus mokesčių kodekso skirsnį 501c3. Mūsų federalinis mokesčių mokėtojo kodas: 82–4506840. „SWARM Messenger“ už šį įnašą neteikė jokių prekių ar paslaugų."
   },
   "icu:Donations__OfflineTooltip": {
     "messageformat": "Esate neprisijungęs. Norėdami užbaigti paramos teikimą, prisijunkite prie interneto."
@@ -8790,7 +8790,7 @@
     "messageformat": "Parama suteikta sėkmingai, tačiau nepavyko atnaujinti jūsų ženklelio nustatymų"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "Norėdami atnaujinti ženklelių nustatymus mobiliajame įrenginyje, eikite į Nustatymai → Paremti „Signal“ → Ženkleliai."
+    "messageformat": "Norėdami atnaujinti ženklelių nustatymus mobiliajame įrenginyje, eikite į Nustatymai → Paremti „SWARM Messenger“ → Ženkleliai."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Paramos skyrimas nutrauktas"
@@ -8847,7 +8847,7 @@
     "messageformat": "Teikiant paramą įvyko klaida"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Jūsų parama galėjo būti neapdorota. Norėdami patikrinti kvitus ir patvirtinti, spustelėkite „Paremti „Signal“, o tada – „Paramos kvitai“."
+    "messageformat": "Jūsų parama galėjo būti neapdorota. Norėdami patikrinti kvitus ir patvirtinti, spustelėkite „Paremti „SWARM Messenger“, o tada – „Paramos kvitai“."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Bandykite dar kartą arba pateikite derinimo žurnalą palaikymo komandai, kad gautumėte pagalbos užbaigti paramos skyrimą. Derinimo žurnalai padeda mums diagnozuoti ir išspręsti problemą, juose nėra identifikavimo informacijos."
@@ -8889,19 +8889,19 @@
     "messageformat": "Ačiū tau už palaikymą!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Tu pelnei „Signal“ rėmėjo ženklelį! Užsidėk jį ant savo profilio ir parodyk palaikymą."
+    "messageformat": "Tu pelnei „SWARM Messenger“ rėmėjo ženklelį! Užsidėk jį ant savo profilio ir parodyk palaikymą."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Rodyti profilyje"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "Tai galite koreguoti savo mobiliajame įrenginyje, pasirinkę „Nustatymai“ → „Paremti „Signal“ → „Ženkleliai“"
+    "messageformat": "Tai galite koreguoti savo mobiliajame įrenginyje, pasirinkę „Nustatymai“ → „Paremti „SWARM Messenger“ → „Ženkleliai“"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "Kaip praėjo skambutis?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "Tai padeda mums tobulinti skambučius „Signal“. Nebus saugoma jokia asmenį identifikuojanti informacija."
+    "messageformat": "Tai padeda mums tobulinti skambučius „SWARM Messenger“. Nebus saugoma jokia asmenį identifikuojanti informacija."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "Buvo problemų"
@@ -8952,7 +8952,7 @@
     "messageformat": "Problemų aprašymas"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "Pateikite visą su problema susijusią informaciją. Viskas, kuo čia pasidalinsite, bus laikoma privačiai ir naudojama tik skambučiams „Signal“ sistemoje tobulinti."
+    "messageformat": "Pateikite visą su problema susijusią informaciją. Viskas, kuo čia pasidalinsite, bus laikoma privačiai ir naudojama tik skambučiams „SWARM Messenger“ sistemoje tobulinti."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "Aprašykite savo problemą"
@@ -9018,7 +9018,7 @@
     "messageformat": "Turėsite iš naujo susieti nuskaitydami QR kodą."
   },
   "icu:MaybeTransferModal__media": {
-    "messageformat": "Jei turite mokamas „Signal“ atsargines kopijas, bus perkelti visi jūsų įrašai. Kitu atveju bus perkeliami paskutinių 45 dienų įrašai."
+    "messageformat": "Jei turite mokamas „SWARM Messenger“ atsargines kopijas, bus perkelti visi jūsų įrašai. Kitu atveju bus perkeliami paskutinių 45 dienų įrašai."
   },
   "icu:MaybeTransferModal__transfer": {
     "messageformat": "Pervesti"
@@ -9030,14 +9030,14 @@
     "messageformat": "Ištrinti visus duomenis?"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "Visi dabartiniai „Signal Desktop“ duomenys bus ištrinti. Tuomet galėsite nuskaityti QR kodą ir perkelti žinučių istoriją iš telefono."
+    "messageformat": "Visi dabartiniai „SWARM Messenger“ duomenys bus ištrinti. Tuomet galėsite nuskaityti QR kodą ir perkelti žinučių istoriją iš telefono."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Šioje versijoje yra daug smulkių patobulinimų ir klaidų ištaisymų, kurie padės Signal sklandžiai veikti.",
+    "messageformat": "Šioje versijoje yra daug smulkių patobulinimų ir klaidų ištaisymų, kurie padės SWARM Messenger sklandžiai veikti.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Papildomi smulkūs patobulinimai, klaidų pataisymai ir veikimo pagerinimas. Ačiū, kad naudoji „Signal“!",
+    "messageformat": "Papildomi smulkūs patobulinimai, klaidų pataisymai ir veikimo pagerinimas. Ačiū, kad naudoji „SWARM Messenger“!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -9057,7 +9057,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Smulkūs patobulinimai, klaidų pataisymai ir veikimo pagerinimas. Ačiū, kad naudoji „Signal“!",
+    "messageformat": "Smulkūs patobulinimai, klaidų pataisymai ir veikimo pagerinimas. Ačiū, kad naudoji „SWARM Messenger“!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.25--0": {

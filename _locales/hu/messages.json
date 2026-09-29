@@ -63,10 +63,10 @@
     "messageformat": "A nagyfelbontású média nagyobb adathasználatot igényel."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Adomány a Signal számára"
+    "messageformat": "Adomány a SWARM Messenger számára"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "A <bold>Kapcsolt eszközök</bold> funkcióval biztonságosan hozzáférhetsz a Signal-fiókodhoz és az üzeneteidhez bármelyik további eszközödön."
+    "messageformat": "A <bold>Kapcsolt eszközök</bold> funkcióval biztonságosan hozzáférhetsz a SWARM-fiókodhoz és az üzeneteidhez bármelyik további eszközödön."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "Asztali számítógépet, táblagépet vagy további telefont is csatlakoztathatsz."
@@ -81,7 +81,7 @@
     "messageformat": "A fiókbeállítások és a biztonsági mentések csak az elsődleges eszközödön kezelhetők."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--3--2": {
-    "messageformat": "Account settings and Signal Secure Backups can only be managed on your primary device."
+    "messageformat": "Account settings and SWARM Messenger Secure Backups can only be managed on your primary device."
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "Normál"
@@ -120,10 +120,10 @@
     "messageformat": "Ismeretlen csoport"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "A Signal nem nyitható meg"
+    "messageformat": "A SWARM Messenger nem nyitható meg"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "A probléma megoldásához kövesd a támogatási oldalon található helyreállítási útmutatót, vagy lépj kapcsolatba a Signal ügyfélszolgálatával.\n\nHa azonnal használnod kell a Signalt, törölheted az adataidat, és újra összekapcsolhatod ezt az asztali számítógépet. Lehetőséged lesz az üzenetek előzményeinek átvitelére a telefonodról."
+    "messageformat": "A probléma megoldásához kövesd a támogatási oldalon található helyreállítási útmutatót, vagy lépj kapcsolatba a SWARM Messenger ügyfélszolgálatával.\n\nHa azonnal használnod kell a SWARM Messengert, törölheted az adataidat, és újra összekapcsolhatod ezt az asztali számítógépet. Lehetőséged lesz az üzenetek előzményeinek átvitelére a telefonodról."
   },
   "icu:databaseError": {
     "messageformat": "Adatbázishiba"
@@ -135,16 +135,16 @@
     "messageformat": "Az összes adat végleges törlése"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Az összes üzenetelőzmény és médiafájl véglegesen törlésre kerül erről az eszközről. Ez nem törli az adatokat a telefonodról.\n\nAz újbóli összekapcsolás után használhatod a Signalt ezen az eszközön. Lehetőséged lesz az üzenetek előzményeinek átvitelére a telefonodról."
+    "messageformat": "Az összes üzenetelőzmény és médiafájl véglegesen törlésre kerül erről az eszközről. Ez nem törli az adatokat a telefonodról.\n\nAz újbóli összekapcsolás után használhatod a SWARM Messengert ezen az eszközön. Lehetőséged lesz az üzenetek előzményeinek átvitelére a telefonodról."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Az adatbázisod verziója nem egyezik a Signal ezen verziójával. Győződj meg róla, hogy a Signal legújabb verzióját nyitod meg a számítógépeden."
+    "messageformat": "Az adatbázisod verziója nem egyezik a SWARM Messenger ezen verziójával. Győződj meg róla, hogy a SWARM Messenger legújabb verzióját nyitod meg a számítógépeden."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Nem lehet hozzáférni az adatbázis titkosítási kulcsához, mert az operációs rendszer titkosítási kulcstartó háttérrendszere {previousBackend} értékről {currentBackend} értékre változott. Ez akkor fordulhat elő, ha az asztali környezet megváltozik, például a GNOME és a KDE között.\n\nKérjük, válts az előző asztali környezetre."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Nem lehet hozzáférni az adatbázis titkosítási kulcsához, mert az operációs rendszer titkosítási kulcstartó háttérrendszere {previousBackend} értékről {currentBackend} értékre változott. Ez akkor fordulhat elő, ha az asztali környezet megváltozik, például a GNOME és a KDE között.\n\nKérjük, válts az előző asztali környezetre, vagy próbáld meg futtatni a Signalt a --password-store=\"{previousBackendFlag}\" parancssori jelzővel."
+    "messageformat": "Nem lehet hozzáférni az adatbázis titkosítási kulcsához, mert az operációs rendszer titkosítási kulcstartó háttérrendszere {previousBackend} értékről {currentBackend} értékre változott. Ez akkor fordulhat elő, ha az asztali környezet megváltozik, például a GNOME és a KDE között.\n\nKérjük, válts az előző asztali környezetre, vagy próbáld meg futtatni a SWARM Messengert a --password-store=\"{previousBackendFlag}\" parancssori jelzővel."
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -189,7 +189,7 @@
     "messageformat": "Összes megjelenítése"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Kilépés a Signalból"
+    "messageformat": "Kilépés a SWARM Messengerből"
   },
   "icu:editMenuUndo": {
     "messageformat": "Visszavonás"
@@ -513,10 +513,10 @@
     "messageformat": "Biztonsági számodat korábban nem hitelesnek jelölted {name} nevű partnereddel egy másik eszközön."
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "A hitelesítés alatt álló biztonsági szám megváltozott. Kérlek ellenőrizd új biztonsági számodat {name1} nevű partnereddel! Ez utalhat arra, hogy valaki megpróbálja lehallgatni a beszélgetéseteket, de azt is jelentheti, hogy {name2} egyszerűen csak újratelepítette a Signalt."
+    "messageformat": "A hitelesítés alatt álló biztonsági szám megváltozott. Kérlek ellenőrizd új biztonsági számodat {name1} nevű partnereddel! Ez utalhat arra, hogy valaki megpróbálja lehallgatni a beszélgetéseteket, de azt is jelentheti, hogy {name2} egyszerűen csak újratelepítette a SWARM Messengert."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Elképzelhető, hogy az alábbi személyek újratelepítették a Signalt, vagy eszközt cseréltek. Az új biztonsági szám megerősítéséhez koppints egy felhasználóra! Ez a lépés nem kötelező."
+    "messageformat": "Elképzelhető, hogy az alábbi személyek újratelepítették a SWARM Messengert, vagy eszközt cseréltek. Az új biztonsági szám megerősítéséhez koppints egy felhasználóra! Ez a lépés nem kötelező."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Függőben levő üzenetek küldése"
@@ -525,7 +525,7 @@
     "messageformat": "Felülvizsgálat"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Van {count,number} olyan névjegyed, aki újratelepítette a Signalt, vagy eszközt cserélt. Küldés előtt opcionálisan felülvizsgálhatod a biztonsági számát.} other {Van {count,number} olyan névjegyed, aki újratelepítette a Signalt, vagy eszközt cserélt. Küldés előtt opcionálisan felülvizsgálhatod a biztonsági számát.}}"
+    "messageformat": "{count, plural, one {Van {count,number} olyan névjegyed, aki újratelepítette a SWARM Messengert, vagy eszközt cserélt. Küldés előtt opcionálisan felülvizsgálhatod a biztonsági számát.} other {Van {count,number} olyan névjegyed, aki újratelepítette a SWARM Messengert, vagy eszközt cserélt. Küldés előtt opcionálisan felülvizsgálhatod a biztonsági számát.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Minden névjegy ellenőrzése megtörtént, a folytatáshoz koppints a Küldés gombra."
@@ -609,16 +609,16 @@
     "messageformat": "A titkosítás ellenőrzése automatikus ennél a csevegésnél. "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "Azoknál a személyeknél, akikhez telefonszámon keresztül kapcsolódsz, a Signal egy kulcsátláthatóságnak nevezett folyamat segítségével automatikusan megerősítheti, hogy a kapcsolat biztonságos-e. A fokozott biztonság érdekében ellenőrizd manuálisan a végpontok közötti titkosítást az előző képernyőn látható számok összehasonlításával vagy az eszközön található kód beolvasásával."
+    "messageformat": "Azoknál a személyeknél, akikhez telefonszámon keresztül kapcsolódsz, a SWARM Messenger egy kulcsátláthatóságnak nevezett folyamat segítségével automatikusan megerősítheti, hogy a kapcsolat biztonságos-e. A fokozott biztonság érdekében ellenőrizd manuálisan a végpontok közötti titkosítást az előző képernyőn látható számok összehasonlításával vagy az eszközön található kód beolvasásával."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "Az automatikus ellenőrzés nem érhető el ehhez a csevegéshez"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "A Signal nem tudja automatikusan ellenőrizni a titkosítást ennél a csevegésnél. Ennek az lehet az oka, hogy {name} megváltoztatta a telefonszámát vagy a telefonszám adatvédelmi beállításait. Ellenőrizd manuálisan a végpontok közötti titkosítást az előző képernyőn látható számok összehasonlításával vagy az eszközön található kód beolvasásával."
+    "messageformat": "A SWARM Messenger nem tudja automatikusan ellenőrizni a titkosítást ennél a csevegésnél. Ennek az lehet az oka, hogy {name} megváltoztatta a telefonszámát vagy a telefonszám adatvédelmi beállításait. Ellenőrizd manuálisan a végpontok közötti titkosítást az előző képernyőn látható számok összehasonlításával vagy az eszközön található kód beolvasásával."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "A Signal csak azokban a csevegésekben tudja automatikusan ellenőrizni a titkosítást, ahol telefonszámon keresztül vagy kapcsolatban valakivel. Ha a csevegést közös felhasználónévvel vagy csoporttal indították, ellenőrizd a végpontok közötti titkosítást az előző képernyőn látható számok összehasonlításával vagy az eszközön található kód beolvasásával."
+    "messageformat": "A SWARM Messenger csak azokban a csevegésekben tudja automatikusan ellenőrizni a titkosítást, ahol telefonszámon keresztül vagy kapcsolatban valakivel. Ha a csevegést közös felhasználónévvel vagy csoporttal indították, ellenőrizd a végpontok közötti titkosítást az előző képernyőn látható számok összehasonlításával vagy az eszközön található kód beolvasásával."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "OK"
@@ -657,10 +657,10 @@
     "messageformat": "Nem, köszönöm"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "A Signal mostantól automatikusan ellenőrizheti a titkosítást."
+    "messageformat": "A SWARM Messenger mostantól automatikusan ellenőrizheti a titkosítást."
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "Azoknál a névjegyeknél, amelyekhez telefonszámon keresztül kapcsolódsz, a Signal egy kulcsátláthatóságnak nevezett folyamat segítségével automatikusan megerősítheti, hogy a kapcsolat biztonságos-e. A fokozott biztonság érdekében továbbra is ellenőrizheted manuálisan a névjegyeket egy QR-kóddal vagy biztonsági számok összehasonlításával."
+    "messageformat": "Azoknál a névjegyeknél, amelyekhez telefonszámon keresztül kapcsolódsz, a SWARM Messenger egy kulcsátláthatóságnak nevezett folyamat segítségével automatikusan megerősítheti, hogy a kapcsolat biztonságos-e. A fokozott biztonság érdekében továbbra is ellenőrizheted manuálisan a névjegyeket egy QR-kóddal vagy biztonsági számok összehasonlításával."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "Folytatás"
@@ -810,7 +810,7 @@
     "messageformat": "Matricacsomag-készítő"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "A Signal Desktopról"
+    "messageformat": "A SWARM Messengerről"
   },
   "icu:screenShareWindow": {
     "messageformat": "Képernyő megosztása"
@@ -828,7 +828,7 @@
     "messageformat": "Kilépés"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "SWARM Messenger"
   },
   "icu:search": {
     "messageformat": "Keresés"
@@ -882,7 +882,7 @@
     "messageformat": "Keresés telefonszám alapján"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Üdvözöl a Signal!"
+    "messageformat": "Üdvözöl a SWARM Messenger!"
   },
   "icu:whatsNew": {
     "messageformat": "{whatsNew} ebben a frissítésben"
@@ -969,13 +969,13 @@
     "messageformat": "Te"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Hangüzenetek küldéséhez engedélyezd, hogy a Signal Desktop hozzáférjen a mikrofonodhoz!"
+    "messageformat": "Hangüzenetek küldéséhez engedélyezd, hogy a SWARM Messenger hozzáférjen a mikrofonodhoz!"
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Hívás indításához engedélyezd, hogy a Signal Desktop hozzáférjen mikrofonodhoz!"
+    "messageformat": "Hívás indításához engedélyezd, hogy a SWARM Messenger hozzáférjen mikrofonodhoz!"
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Videóhívás indításához engedélyezd, hogy a Signal Desktop hozzáférjen kamerádhoz!"
+    "messageformat": "Videóhívás indításához engedélyezd, hogy a SWARM Messenger hozzáférjen kamerádhoz!"
   },
   "icu:allowAccess": {
     "messageformat": "Hozzáférés engedélyezése"
@@ -1002,13 +1002,13 @@
     "messageformat": "Némítva"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "A Signal frissítése nem sikerült. <retryUpdateButton>Próbáld újra a frissítést</retryUpdateButton> vagy látogass el a(z) {url} webhelyre a manuális telepítéshez. Ezután <contactSupportLink>vedd fel a kapcsolatot az ügyfélszolgálattal</contactSupportLink> a problémával kapcsolatban."
+    "messageformat": "A SWARM Messenger frissítése nem sikerült. <retryUpdateButton>Próbáld újra a frissítést</retryUpdateButton> vagy látogass el a(z) {url} webhelyre a manuális telepítéshez. Ezután <contactSupportLink>vedd fel a kapcsolatot az ügyfélszolgálattal</contactSupportLink> a problémával kapcsolatban."
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "A Signal frissítése nem sikerült. Telepítsd az új verziót manuálisan a {url} weboldalról. Ezután <contactSupportLink>vedd fel a kapcsolatot az ügyfélszolgálattal</contactSupportLink> a problémával kapcsolatban."
+    "messageformat": "A SWARM Messenger frissítése nem sikerült. Telepítsd az új verziót manuálisan a {url} weboldalról. Ezután <contactSupportLink>vedd fel a kapcsolatot az ügyfélszolgálattal</contactSupportLink> a problémával kapcsolatban."
   },
   "icu:readOnlyVolume": {
-    "messageformat": "A Signal Desktop valószínűleg macOS karanténban fut, és emiatt nem fog tudni automatikusan frissíteni. Próbáld meg áthelyezni a  {app} fájlt a {folder} mappába a Finder segítségével!"
+    "messageformat": "A SWARM Messenger valószínűleg macOS karanténban fut, és emiatt nem fog tudni automatikusan frissíteni. Próbáld meg áthelyezni a  {app} fájlt a {folder} mappába a Finder segítségével!"
   },
   "icu:ok": {
     "messageformat": "OK"
@@ -1053,7 +1053,7 @@
     "messageformat": "A beszélgetés ezen az eszközön törlésre kerül."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Ez az üzenet a csevegés minden tagja számára törlésre kerül, ha a Signal legújabb verzióját használják. A többiek számára látható lesz, hogy töröltél egy üzenetet."
+    "messageformat": "Ez az üzenet a csevegés minden tagja számára törlésre kerül, ha a SWARM Messenger legújabb verzióját használják. A többiek számára látható lesz, hogy töröltél egy üzenetet."
   },
   "icu:from": {
     "messageformat": "Feladó"
@@ -1095,7 +1095,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "A(z) „ {title}” az a profilnév, amelyet ez a személy beállított magának a Signalban."
+    "messageformat": "A(z) „ {title}” az a profilnév, amelyet ez a személy beállított magának a SWARM Messengerben."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Ellenőrzött"
@@ -1110,7 +1110,7 @@
     "messageformat": "Nincs közvetlen üzenet {name} felhasználóval"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal Névjegy"
+    "messageformat": "SWARM Névjegy"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} szerepel a rendszernévjegyeid között"
@@ -1422,7 +1422,7 @@
     "messageformat": "Tudj meg többet"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "A Signal végpontok közti titkosítást használ, és időnként újra be kell állítania a két végpont közti adatkapcsolatot. Ennek nincs hatása a biztonságra, de előfordulhat, hogy pont ezalatt nem kaptál meg egy üzenetet ettől a személytől. Ilyen esetekben érdemes megkérni a partnert, hogy küldje újra az üzenetét."
+    "messageformat": "A SWARM Messenger végpontok közti titkosítást használ, és időnként újra be kell állítania a két végpont közti adatkapcsolatot. Ennek nincs hatása a biztonságra, de előfordulhat, hogy pont ezalatt nem kaptál meg egy üzenetet ettől a személytől. Ilyen esetekben érdemes megkérni a partnert, hogy küldje újra az üzenetét."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Kapcsolatfelvétel a támogatással"
@@ -1449,7 +1449,7 @@
     "messageformat": "{sender} megváltoztatta a telefonszámát"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Ismerős csatlakozott a Signalhoz"
+    "messageformat": "Ismerős csatlakozott a SWARM Messengerhez"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} és {conversationTitle} ugyanaz a fiók. Itt található mindkét csevegés üzenetelőzménye."
@@ -1539,7 +1539,7 @@
     "messageformat": "Nem lehet letölteni a médiafájlt"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Ellenőrizd az asztali számítógép és a telefon internetkapcsolatát. Nyisd meg a Signal alkalmazást a telefonodon, majd próbáld meg újra a letöltést."
+    "messageformat": "Ellenőrizd az asztali számítógép és a telefon internetkapcsolatát. Nyisd meg a SWARM Messenger alkalmazást a telefonodon, majd próbáld meg újra a letöltést."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Ez a média már nem érhető el a telefonodon, és nem tölthető le."
@@ -1560,10 +1560,10 @@
     "messageformat": "Tudj meg többet!"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Olvasd be ezt a kódot a Signal telefonos alkalmazással!"
+    "messageformat": "Olvasd be ezt a kódot a SWARM Messenger telefonos alkalmazással!"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Nyisd meg a Signalt a telefonodon!"
+    "messageformat": "Nyisd meg a SWARM Messengert a telefonodon!"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Kattints a {settings}, majd a {linkedDevices} menüpontra"
@@ -1581,7 +1581,7 @@
     "messageformat": "<paragraph>Váratlan hiba történt.</paragraph><paragraph>Kérjük, próbáld újra.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "A Signal nem tudja összekapcsolni ezt az eszközt a jelenlegi hálózaton keresztül."
+    "messageformat": "A SWARM Messenger nem tudja összekapcsolni ezt az eszközt a jelenlegi hálózaton keresztül."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Újra"
@@ -1599,7 +1599,7 @@
     "messageformat": "Törlöd az összes adatot?"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "Egy másik Signal-fiókot próbálsz összekapcsolni ezzel az asztali számítógéppel. Ha folytatod, a Signal Desktopban jelenleg megtalálható összes adat törlődik."
+    "messageformat": "Egy másik SWARM-fiókot próbálsz összekapcsolni ezzel az asztali számítógéppel. Ha folytatod, a SWARM Messengerben jelenleg megtalálható összes adat törlődik."
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "Folytatás"
@@ -1614,7 +1614,7 @@
     "messageformat": "Eszköz neve"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Az eszköz nevének megváltoztatásához nyisd meg a Signal alkalmazást a telefonodon, és lépj a Beállítások > Kapcsolt eszközök menüpontra"
+    "messageformat": "Az eszköz nevének megváltoztatásához nyisd meg a SWARM Messenger alkalmazást a telefonodon, és lépj a Beállítások > Kapcsolt eszközök menüpontra"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Emoji bőrtónus"
@@ -1806,7 +1806,7 @@
     "messageformat": "Automatikus kulcsellenőrzés"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "Ha engedélyezve van, a Signal megpróbálja automatikusan ellenőrizni az egyéni csevegések titkosítását."
+    "messageformat": "Ha engedélyezve van, a SWARM Messenger megpróbálja automatikusan ellenőrizni az egyéni csevegések titkosítását."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "Tudj meg többet"
@@ -1824,7 +1824,7 @@
     "messageformat": "Sajnáljuk, de már túl sok párosított eszközöd van. Próbálj kitörölni néhányat!"
   },
   "icu:installTooOld": {
-    "messageformat": "A telefonod párosításához frissítsd a Signalt ezen az eszközön!"
+    "messageformat": "A telefonod párosításához frissítsd a SWARM Messengert ezen az eszközön!"
   },
   "icu:installErrorHeader": {
     "messageformat": "Probléma merült fel!"
@@ -1875,7 +1875,7 @@
     "messageformat": "Ez a híváshivatkozás már nem érvényes."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal hívás"
+    "messageformat": "SWARM Messenger-hívás"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "A linket nem lehet törölni. Ellenőrizd az internetkapcsolatod, és próbáld újra!"
@@ -2049,16 +2049,16 @@
     "messageformat": "{count, plural, one {{count,number} személy vesz részt ebben a hívásban} other {{count,number} személy vesz részt ebben a hívásban}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "A Signal megcsörgeti őt: {person}"
+    "messageformat": "A SWARM Messenger megcsörgeti őt: {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "A Signal megcsörgeti őket: {first} és {second}"
+    "messageformat": "A SWARM Messenger megcsörgeti őket: {first} és {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "A Signal megcsörgeti őket: {first}, {second} és {third}"
+    "messageformat": "A SWARM Messenger megcsörgeti őket: {first}, {second} és {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {A Signal hívni fogja {first}, {second} és {others,number} további ismerősödet} other {A Signal hívni fogja {first}, {second} és {others,number} további ismerősödet}}"
+    "messageformat": "{others, plural, one {A SWARM Messenger hívni fogja {first}, {second} és {others,number} további ismerősödet} other {A SWARM Messenger hívni fogja {first}, {second} és {others,number} további ismerősödet}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} értesítve lesz"
@@ -2112,13 +2112,13 @@
     "messageformat": "Újracsatlakozás…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "A kapcsolat megszakadt. A Signal újracsatlakozik."
+    "messageformat": "A kapcsolat megszakadt. A SWARM Messenger újracsatlakozik."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "A Signal a következő ablakot osztja meg: {window}."
+    "messageformat": "A SWARM Messenger a következő ablakot osztja meg: {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "A Signal-képernyő megosztása aktív"
+    "messageformat": "A SWARM Messenger-képernyő megosztása aktív"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Újracsatlakozás…"
@@ -2139,7 +2139,7 @@
     "messageformat": "Engedély szükséges"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "A Signalnak engedélyre van szüksége a képernyő rögzítéséhez."
+    "messageformat": "A SWARM Messengernek engedélyre van szüksége a képernyő rögzítéséhez."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Nyisd meg a Rendszerbeállításokat!"
@@ -2148,7 +2148,7 @@
     "messageformat": "Kattints a lakat ikonra bal-alul, és gépeld be számítógéped jelszavát!"
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Jobboldalt pipáld ki a Signalt. Ha nem találod a listában, használd a + gombot a hozzáadáshoz!"
+    "messageformat": "Jobboldalt pipáld ki a SWARM Messengert. Ha nem találod a listában, használd a + gombot a hozzáadáshoz!"
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Nyisd meg a Rendszerbeállításokat!"
@@ -2160,7 +2160,7 @@
     "messageformat": "Összes hívás átjátszása"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "A hívások átjátszása a Signal szerverein annak érdekében, hogy IP címed a telefonhívás során is rejtve maradjon partnered előtt. Engedélyezésével a hívások minősége gyengébb lesz."
+    "messageformat": "A hívások átjátszása a SWARM Messenger szerverein annak érdekében, hogy IP címed a telefonhívás során is rejtve maradjon partnered előtt. Engedélyezésével a hívások minősége gyengébb lesz."
   },
   "icu:permissions": {
     "messageformat": "Jogosultságok"
@@ -2178,10 +2178,10 @@
     "messageformat": "Szövegformázási előugró ablak megjelenítése, ha ki van jelölve szöveg"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "A helyesírás-ellenőrzés a Signal újraindítását követően lesz engedélyezve."
+    "messageformat": "A helyesírás-ellenőrzés a SWARM Messenger újraindítását követően lesz engedélyezve."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "A helyesírás-ellenőrzés a Signal újraindítását követően lesz kikapcsolva."
+    "messageformat": "A helyesírás-ellenőrzés a SWARM Messenger újraindítását követően lesz kikapcsolva."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Lezárás tálcára"
@@ -2205,7 +2205,7 @@
     "messageformat": "Törlöd az összes adatot?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Törlöd az összes adatot és üzenetet a Signal Desktop ezen verziójából? A Signal-fiókod és a telefonodon vagy más társított eszközökön lévő adatok nem törlődnek."
+    "messageformat": "Törlöd az összes adatot és üzenetet a SWARM Messenger ezen verziójából? A SWARM-fiókod és a telefonodon vagy más társított eszközökön lévő adatok nem törlődnek."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Lecsatlakozás és az összes adat törlése…"
@@ -2214,7 +2214,7 @@
     "messageformat": "Fiók törlése"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "Ezzel fiók információid, profilod és minden üzeneted törlésre kerül. Emellett az összes Signal-csoportból is eltávolításra kerülsz."
+    "messageformat": "Ezzel fiók információid, profilod és minden üzeneted törlésre kerül. Emellett az összes SWARM-csoportból is eltávolításra kerülsz."
   },
   "icu:deleteAccountButton": {
     "messageformat": "Fiók törlése"
@@ -2223,10 +2223,10 @@
     "messageformat": "Fiók törlése?"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "Ezzel fiók információid, profilod és minden üzeneted törlésre kerül. Emellett az összes Signal-csoportból is eltávolításra kerülsz. Az alkalmazás a folyamat befejezése után bezárul."
+    "messageformat": "Ezzel fiók információid, profilod és minden üzeneted törlésre kerül. Emellett az összes SWARM-csoportból is eltávolításra kerülsz. Az alkalmazás a folyamat befejezése után bezárul."
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Egy korábbi Signal Desktop telepítés elavult adatokat hagyott hátra. Ha úgy döntesz, hogy folytatod, akkor ezek az adatok törölve lesznek, és elölről kell kezdened."
+    "messageformat": "Egy korábbi SWARM Messenger-telepítés elavult adatokat hagyott hátra. Ha úgy döntesz, hogy folytatod, akkor ezek az adatok törölve lesznek, és elölről kell kezdened."
   },
   "icu:deleteOldData": {
     "messageformat": "Régi adatok törlése"
@@ -2283,7 +2283,7 @@
     "messageformat": "Részben törölve. Kattints a részletekért!"
   },
   "icu:expiredWarning": {
-    "messageformat": "A Signal Desktop ezen verziója elavult. Kérlek frissíts a legújabb verzióra, hogy folytatni tudd a beszélgetést!"
+    "messageformat": "A SWARM Messenger ezen verziója elavult. Kérlek frissíts a legújabb verzióra, hogy folytatni tudd a beszélgetést!"
   },
   "icu:upgrade": {
     "messageformat": "Kattints a swarm.green/download oldalra ugráshoz!"
@@ -2295,7 +2295,7 @@
     "messageformat": "Kontaktok importálása"
   },
   "icu:syncExplanation": {
-    "messageformat": "Az összes Signal csoport és kontakt importálása mobileszközödről."
+    "messageformat": "Az összes SWARM-csoport és kontakt importálása mobileszközödről."
   },
   "icu:syncNow": {
     "messageformat": "Importálás"
@@ -2328,7 +2328,7 @@
     "messageformat": "Tegnap {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Lehet, hogy a Signal nem tudja feldolgozni a bejövő üzenetet."
+    "messageformat": "Lehet, hogy a SWARM Messenger nem tudja feldolgozni a bejövő üzenetet."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Az üzenet szövege túl hosszú."
@@ -2493,13 +2493,13 @@
     "messageformat": "A módosításokat csak az üzenet elküldésétől számított 24 órán belül lehet alkalmazni."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} nem Signal-felhasználó. Győződj meg róla, hogy a teljes felhasználónevet adtad meg."
+    "messageformat": "{atUsername} nem SWARM Messenger-felhasználó. Győződj meg róla, hogy a teljes felhasználónevet adtad meg."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "A(z) {atUsername} érvénytelen felhasználónév. Győződj meg róla, hogy a teljes felhasználónevet és a hozzá tartozó számjegyeket is megadtad."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "Felhasználó nem található: \"{phoneNumber}\" nincs regisztrálva a Signalra."
+    "messageformat": "Felhasználó nem található: \"{phoneNumber}\" nincs regisztrálva a SWARM Messengerre."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "A felhasználó nem található. A(z) {phoneNumber} nem érvényes telefonszám."
@@ -2520,13 +2520,13 @@
     "messageformat": "A csoport elérte maximális létszámát"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "A Signal csoportok legfeljebb {max,number} tagból állhatnak."
+    "messageformat": "A SWARM-csoportok legfeljebb {max,number} tagból állhatnak."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Elérted a javasolt létszám limitet"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "A Signal csoportok {max,number} vagy kevesebb taggal működnek hatékonyan. Ennél több tag esetén lassulások tapasztalhatók az üzenetek küldése és fogadása során."
+    "messageformat": "A SWARM-csoportok {max,number} vagy kevesebb taggal működnek hatékonyan. Ennél több tag esetén lassulások tapasztalhatók az üzenetek küldése és fogadása során."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Csoport elnevezése"
@@ -2556,13 +2556,13 @@
     "messageformat": "A csoport frissítése nem sikerült. Ellenőrizd a hálózatodat, majd próbáld újra!"
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Párosítsd újra a Signal Desktopot mobilkészülékeiddel a beszélgetés folytatásához!"
+    "messageformat": "Párosítsd újra a SWARM Messengert mobilkészülékeiddel a beszélgetés folytatásához!"
   },
   "icu:unlinked": {
     "messageformat": "Nincs párosítva"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "Kattints ide az újbóli regisztrációhoz és az üzenetváltás folytatásához. A Signal Desktop valószínűleg azért nincs regisztrálva, mert egy másik eszközön regisztráltad a telefonszámodat a Signalnál."
+    "messageformat": "Kattints ide az újbóli regisztrációhoz és az üzenetváltás folytatásához. A SWARM Messenger valószínűleg azért nincs regisztrálva, mert egy másik eszközön regisztráltad a telefonszámodat a SWARM Messengernél."
   },
   "icu:unregistered": {
     "messageformat": "Már nincs regisztrálva"
@@ -2574,7 +2574,7 @@
     "messageformat": "Frissítés újra"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Kattints a Signal újraindításához!"
+    "messageformat": "Kattints a SWARM Messenger újraindításához!"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Kattints a frissítés letöltéséhez!"
@@ -2583,7 +2583,7 @@
     "messageformat": "Sikertelen frissítés. Kattints és próbáld újra."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Signal újraindítása"
+    "messageformat": "SWARM Messenger újraindítása"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Frissítés kihagyása"
@@ -2715,7 +2715,7 @@
     "messageformat": "Egyes mellékletek túl nagyok a megjelenítéshez."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Ezzel a hivatkozással csatlakozhatsz egy Signal-híváshoz"
+    "messageformat": "Ezzel a hivatkozással csatlakozhatsz egy SWARM-híváshoz"
   },
   "icu:donation--missing": {
     "messageformat": "Nem sikerült lekérni az adomány részleteit"
@@ -2727,7 +2727,7 @@
     "messageformat": "Az adomány mobilon való megtekintéséhez koppints erre az üzenetre"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} adományozott a Signalnak a nevedben"
+    "messageformat": "{sender} adományozott a SWARM Messengernek a nevedben"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Az adomány megnyitásához ellenőrizd a telefonod"
@@ -2784,7 +2784,7 @@
     "messageformat": "Köszönjük a támogatásodat!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Adományoztál a Signal számára {name} nevében. Lehetőséget kap arra, hogy a profilján megjelenítse a támogatást."
+    "messageformat": "Adományoztál a SWARM Messenger számára {name} nevében. Lehetőséget kap arra, hogy a profilján megjelenítse a támogatást."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "A matricacsomagot nem sikerült telepíteni"
@@ -2796,10 +2796,10 @@
     "messageformat": "Matricák hozzáadása"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal Művészi Sorozat"
+    "messageformat": "SWARM Messenger Művészi Sorozat"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Nem érhető el Signal Művészi matrica"
+    "messageformat": "Nem érhető el SWARM Messenger Művészi matrica"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "Veled megosztva"
@@ -2835,7 +2835,7 @@
     "messageformat": "A matricacsomag átrendezéséhez húzd be"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "Signal Művészi Sorozat matricacsomagok"
+    "messageformat": "SWARM Messenger Művészi Sorozat matricacsomagok"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
     "messageformat": "Kapott matricacsomagok"
@@ -3120,19 +3120,19 @@
     "messageformat": "Az üzenet túl hosszú a továbbiak megjelenítéshez"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} olyan Signal újdonságot tartalmazó üzenetet küldött, melyet a Signal jelenlegi verziójával nem lehet feldolgozni vagy megjeleníteni."
+    "messageformat": "{contact} olyan SWARM Messenger-újdonságot tartalmazó üzenetet küldött, melyet a SWARM Messenger jelenlegi verziójával nem lehet feldolgozni vagy megjeleníteni."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Most már megkérheted {contact} nevű partnered, hogy küldje újra ezt az üzenetet, mivel már a Signal legfrissebb verzióját használod."
+    "messageformat": "Most már megkérheted {contact} nevű partnered, hogy küldje újra ezt az üzenetet, mivel már a SWARM Messenger legfrissebb verzióját használod."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Az egyik eszközödről olyan üzenetet küldtél, melyet nem lehet feldolgozni vagy megjeleníteni ezen az eszközön, mivel olyan funkciót tartalmaz, mely csak a Signal egy újabb verziójában érhető el."
+    "messageformat": "Az egyik eszközödről olyan üzenetet küldtél, melyet nem lehet feldolgozni vagy megjeleníteni ezen az eszközön, mivel olyan funkciót tartalmaz, mely csak a SWARM Messenger egy újabb verziójában érhető el."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "A jövőben az ehhez hasonló üzenetek szinkronizálva lesznek, ugyanis a Signal legfrissebb verzióját használod."
+    "messageformat": "A jövőben az ehhez hasonló üzenetek szinkronizálva lesznek, ugyanis a SWARM Messenger legfrissebb verzióját használod."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Signal frissítése"
+    "messageformat": "SWARM Messenger frissítése"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Megtekintve"
@@ -3399,7 +3399,7 @@
     "messageformat": "A csevegés olvasatlanként megjelölve"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "A matricacsomag létrehozásához állítsd be a Signalt a telefonodon, valamint az asztali alkalmazáson is"
+    "messageformat": "A matricacsomag létrehozásához állítsd be a SWARM Messengert a telefonodon, valamint az asztali alkalmazáson is"
   },
   "icu:Reactions--remove": {
     "messageformat": "Reakció eltávolítása"
@@ -3417,16 +3417,16 @@
     "messageformat": "Biztonsági tippek"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "Ne válaszolj a Signal csevegéseire"
+    "messageformat": "Ne válaszolj a SWARM Messenger csevegéseire"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "A Signal soha nem küld üzenetet a regisztrációs kódoddal, a PIN-kódoddal vagy a helyreállítási kulcsoddal kapcsolatban. Soha ne válaszolj olyan csevegésre, amelyben úgy tesznek, mintha a Signal nevében írnának."
+    "messageformat": "A SWARM Messenger soha nem küld üzenetet a regisztrációs kódoddal, a PIN-kódoddal vagy a helyreállítási kulcsoddal kapcsolatban. Soha ne válaszolj olyan csevegésre, amelyben úgy tesznek, mintha a SWARM Messenger nevében írnának."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "Nevek és fotók felülvizsgálata"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "Vigyázz a „Név nincs ellenőrizve” értesítések esetén. A Signalban mindenki saját maga állítja be a profilnevét."
+    "messageformat": "Vigyázz a „Név nincs ellenőrizve” értesítések esetén. A SWARM Messengerben mindenki saját maga állítja be a profilnevét."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "Vigyázz a csalásokra"
@@ -3435,16 +3435,16 @@
     "messageformat": "Kerüld az olyan kétes üzeneteket, amelyekkel válaszadásra próbálnak rávenni. Vigyázz a pénzügyi tippekkel és a gyanús webes linkekkel."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "Ne válaszolj a Signal csevegéseire"
+    "messageformat": "Ne válaszolj a SWARM Messenger csevegéseire"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "A Signal soha nem küld üzenetet a regisztrációs kódoddal, a PIN-kódoddal vagy a helyreállítási kulcsoddal kapcsolatban. Ne válaszolj olyan csevegésekre, amelyek a Signalnak vagy a Signal ügyfélszolgálatának adják ki magukat. A rosszindulatú szereplők hamis neveket adnak meg, hogy megpróbálják átvenni az irányítást a fiókod felett."
+    "messageformat": "A SWARM Messenger soha nem küld üzenetet a regisztrációs kódoddal, a PIN-kódoddal vagy a helyreállítási kulcsoddal kapcsolatban. Ne válaszolj olyan csevegésekre, amelyek a SWARM Messengernek vagy a SWARM Messenger ügyfélszolgálatának adják ki magukat. A rosszindulatú szereplők hamis neveket adnak meg, hogy megpróbálják átvenni az irányítást a fiókod felett."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "Nevek és fotók felülvizsgálata"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "Vigyázz a „Név nincs ellenőrizve” értesítések esetén. A Signalban mindenki saját maga állítja be a profilnevét és fotóját. Ha nem vagy biztos benne, hogy kitől érkezett egy új kérés, biztonságosabb, ha figyelmen kívül hagyod."
+    "messageformat": "Vigyázz a „Név nincs ellenőrizve” értesítések esetén. A SWARM Messengerben mindenki saját maga állítja be a profilnevét és fotóját. Ha nem vagy biztos benne, hogy kitől érkezett egy új kérés, biztonságosabb, ha figyelmen kívül hagyod."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Kripto- vagy pénzzel kapcsolatos átverések"
@@ -3525,13 +3525,13 @@
     "messageformat": "Jelented levélszemétként?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "A Signal értesítést kap arról, hogy ez a személy esetleg kéretlen üzeneteket küldözget. A Signal nem látja a csevegések tartalmát."
+    "messageformat": "A SWARM Messenger értesítést kap arról, hogy ez a személy esetleg kéretlen üzeneteket küldözget. A SWARM Messenger nem látja a csevegések tartalmát."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "A Signal értesítést kap arról, hogy az a személy, aki meghívott téged ebbe a csoportba, esetleg kéretlen üzeneteket küldözget. A Signal nem látja a csevegések tartalmát."
+    "messageformat": "A SWARM Messenger értesítést kap arról, hogy az a személy, aki meghívott téged ebbe a csoportba, esetleg kéretlen üzeneteket küldözget. A SWARM Messenger nem látja a csevegések tartalmát."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "A Signal értesítést kap arról, hogy {name}, aki meghívott téged ebbe a csoportba, esetleg kéretlen üzeneteket küldözget. A Signal nem látja a csevegések tartalmát."
+    "messageformat": "A SWARM Messenger értesítést kap arról, hogy {name}, aki meghívott téged ebbe a csoportba, esetleg kéretlen üzeneteket küldözget. A SWARM Messenger nem látja a csevegések tartalmát."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Kéretlen üzenet jelentése"
@@ -3573,7 +3573,7 @@
     "messageformat": "Elfogadod a felkérést?"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "Csak olyan emberektől fogadj el kéréseket, akikben megbízol. A <bold>Signal soha nem</bold> küld üzenetet a regisztrációs kódoddal, a PIN-kódoddal vagy a helyreállítási kulcsoddal kapcsolatban."
+    "messageformat": "Csak olyan emberektől fogadj el kéréseket, akikben megbízol. A <bold>SWARM Messenger soha nem</bold> küld üzenetet a regisztrációs kódoddal, a PIN-kódoddal vagy a helyreállítási kulcsoddal kapcsolatban."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "Folytatás"
@@ -3627,16 +3627,16 @@
     "messageformat": "A név nincs ellenőrizve"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Ez a hivatalos és egyetlen Signal chat"
+    "messageformat": "Ez a hivatalos és egyetlen SWARM Messenger-chat"
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "Hivatalos csevegés"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "Az egyetlen hivatalos csevegés a Signaltól. Legyél naprakész a hírekkel és a frissítésekkel kapcsolatban."
+    "messageformat": "Az egyetlen hivatalos csevegés a SWARM Messengertől. Legyél naprakész a hírekkel és a frissítésekkel kapcsolatban."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "Az egyetlen hivatalos csevegés a Signaltól."
+    "messageformat": "Az egyetlen hivatalos csevegés a SWARM Messengertől."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Legyél naprakész a hírekkel és a frissítésekkel kapcsolatban."
@@ -3702,10 +3702,10 @@
     "messageformat": "Nem fogadott videóhívás"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "A Signal továbbra is fut"
+    "messageformat": "A SWARM Messenger továbbra is fut"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "A Signal továbbra is futni fog az értesítési területen. Ezt a Signal beállításaiban módosíthatod."
+    "messageformat": "A SWARM Messenger továbbra is futni fog az értesítési területen. Ezt a SWARM Messenger beállításaiban módosíthatod."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Bejövő hanghívás"
@@ -3912,7 +3912,7 @@
     "messageformat": "Híváslink másolása"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Híváslink megosztása a Signalon keresztül"
+    "messageformat": "Híváslink megosztása a SWARM Messengeren keresztül"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "{name} eltávolítása a hívásból?"
@@ -4074,7 +4074,7 @@
     "messageformat": "Ismeretlen verziójú hivatkozás"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "A Signal Desktop ezen verziója nem támogatja ezt a hivatkozást."
+    "messageformat": "A SWARM Messenger ezen verziója nem támogatja ezt a hivatkozást."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Nem sikerült belépni a csoportba"
@@ -4680,10 +4680,10 @@
     "messageformat": "Az adatok törlése és az alkalmazás visszaállítása folyamatban van"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Adomány a Signal számára"
+    "messageformat": "Adomány a SWARM Messenger számára"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} támogatja a Signalt"
+    "messageformat": "{name} támogatja a SWARM Messengert"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "Üzenetek szinkronizálása"
@@ -4800,7 +4800,7 @@
     "messageformat": "Fiókművelet szükséges"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "A fiók használatának folytatásához meg kell nyitnod a Signalt a telefonodon. Ha nem nyitod meg a Signalt a telefonodon, a fiókod hamarosan törlődik. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "A fiók használatának folytatásához meg kell nyitnod a SWARM Messengert a telefonodon. Ha nem nyitod meg a SWARM Messengert a telefonodon, a fiókod hamarosan törlődik. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Nem lehet visszaállítani a médiafájlt"
@@ -4824,10 +4824,10 @@
     "messageformat": "Melléklet vagy szavazás hozzáadása"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Ez a személy nem használ Signalt"
+    "messageformat": "Ez a személy nem használ SWARM Messengert"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "A Signal Desktop nem támogatja nem-Signal kontaktokkal való üzenetváltást. Biztonságosabb üzenetváltás érdekében kérd meg ezt a személyt, hogy telepítse a Signalt!"
+    "messageformat": "A SWARM Messenger nem támogatja a SWARM Messengert nem használó kontaktokkal való üzenetváltást. Biztonságosabb üzenetváltás érdekében kérd meg ezt a személyt, hogy telepítse a SWARM Messengert!"
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Ellenőrizzük a kontakt regisztrációjának státuszát"
@@ -5088,10 +5088,10 @@
     "messageformat": "Tiltás feloldása"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "A Signal értesítést kap arról, hogy ez a személy esetleg kéretlen üzeneteket küldözget. A Signal nem látja a csevegések tartalmát."
+    "messageformat": "A SWARM Messenger értesítést kap arról, hogy ez a személy esetleg kéretlen üzeneteket küldözget. A SWARM Messenger nem látja a csevegések tartalmát."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "A Signal értesítést kap arról, hogy az a személy, aki meghívott téged ebbe a csoportba, esetleg kéretlen üzeneteket küldözget. A Signal nem látja a csevegések tartalmát."
+    "messageformat": "A SWARM Messenger értesítést kap arról, hogy az a személy, aki meghívott téged ebbe a csoportba, esetleg kéretlen üzeneteket küldözget. A SWARM Messenger nem látja a csevegések tartalmát."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "Kéretlen üzenet jelentése"
@@ -5139,7 +5139,7 @@
     "messageformat": "Becenév"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "A beceneveket és megjegyzéseket a rendszer Signal és végpontok közötti titkosítással tárolja. Ezek csak számodra láthatók."
+    "messageformat": "A beceneveket és megjegyzéseket a rendszer SWARM Messenger és végpontok közötti titkosítással tárolja. Ezek csak számodra láthatók."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Keresztnév"
@@ -5295,7 +5295,7 @@
     "messageformat": "Admin általi jóváhagyás szükséges csoporthivatkozással csatlakozó tagok felvételéhez."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Másold a signal.group hivatkozást a vágólapra"
+    "messageformat": "Másold a csoporthivatkozást a vágólapra"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Tagok keresése"
@@ -5434,7 +5434,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, one {A Signal legújabb verzióit használó csoporttagok látni fogják, hogy törölted ezt az üzenetet.} other {A Signal legújabb verzióit használó csoporttagok látni fogják, hogy törölted ezeket az üzeneteket.}}"
+    "messageformat": "{count, plural, one {A SWARM Messenger legújabb verzióit használó csoporttagok látni fogják, hogy törölted ezt az üzenetet.} other {A SWARM Messenger legújabb verzióit használó csoporttagok látni fogják, hogy törölted ezeket az üzeneteket.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Törlés"
@@ -5560,7 +5560,7 @@
     "messageformat": "Üres vagy törölt üzeneteket nem lehet továbbítani"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Ezzel a hivatkozással csatlakozhatsz egy Signal-híváshoz: {url}"
+    "messageformat": "Ezzel a hivatkozással csatlakozhatsz egy SWARM-híváshoz: {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "Gondosan nézd át a kéréseket"
@@ -5569,7 +5569,7 @@
     "messageformat": "Biztonsági tippek"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Gondosan nézd át a felkéréseket. A Signal talált egy másik, azonos nevű névjegyet. <reviewRequestLink>Felkérés áttekintése</reviewRequestLink>"
+    "messageformat": "Gondosan nézd át a felkéréseket. A SWARM Messenger talált egy másik, azonos nevű névjegyet. <reviewRequestLink>Felkérés áttekintése</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} csoporttagnak ugyanaz a neve. <reviewRequestLink>Tekintsd át a tagokat</reviewRequestLink>} other {{count,number} csoporttagnak ugyanaz a neve. <reviewRequestLink>Tekintsd át a tagokat</reviewRequestLink>}}"
@@ -5602,7 +5602,7 @@
     "messageformat": "Nincs egyéb közös csoportotok"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal Névjegy"
+    "messageformat": "SWARM Névjegy"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Nemrég megváltoztatta profilnevét {oldName} névről {newName} névre"
@@ -5620,7 +5620,7 @@
     "messageformat": "Az üzenetküldés folytatásához ellenőrzés szükséges"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "A Signal hálózatán küldött kéretlen üzenetek megelőzése érdekében kérlek végezd el az alábbi ellenőrzést!"
+    "messageformat": "A SWARM Messenger hálózatán küldött kéretlen üzenetek megelőzése érdekében kérlek végezd el az alábbi ellenőrzést!"
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Az ellenőrzést követően folytathatod az üzenetküldést. Az összes felfüggesztett üzenetet automatikusan elküldjük."
@@ -6007,7 +6007,7 @@
     "messageformat": "Elveted a módosításokat?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Bezárod a Signalt és befejezed a hívást?"
+    "messageformat": "Bezárod a SWARM Messengert és befejezed a hívást?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Később"
@@ -6107,7 +6107,7 @@
     "messageformat": "Általános"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Adomány a Signal számára"
+    "messageformat": "Adomány a SWARM Messenger számára"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Megjelenés"
@@ -6173,10 +6173,10 @@
     "messageformat": "Rendszer"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "SWARM Messenger Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "A Signal Loginoddal visszaállíthatod a fiókodat. Tartsd ezeket a kulcsokat biztonságosan egy megbízható jelszókezelőben. <learnMoreLink>Tudj meg többet</learnMoreLink>!"
+    "messageformat": "A SWARM Messenger Loginoddal visszaállíthatod a fiókodat. Tartsd ezeket a kulcsokat biztonságosan egy megbízható jelszókezelőben. <learnMoreLink>Tudj meg többet</learnMoreLink>!"
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "Tudj meg többet!"
@@ -6188,7 +6188,7 @@
     "messageformat": "2 kulcs"
   },
   "icu:Preferences__SignalAccountKeys__Title": {
-    "messageformat": "A Signal Loginod"
+    "messageformat": "A SWARM Messenger Loginod"
   },
   "icu:Preferences__SignalAccountKeys__Description": {
     "messageformat": "Őrizd ezt meg biztonságos helyen, a bejelentkezési adataid szükségesek a fiókod és az adataid helyreállításához. Soha ne oszd meg senkivel!"
@@ -6209,7 +6209,7 @@
     "messageformat": "Ez egy kapcsolt eszköz"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "Fiókbeállításaid kezeléséhez nyisd meg a Signal alkalmazást az elsődleges eszközödön."
+    "messageformat": "Fiókbeállításaid kezeléséhez nyisd meg a SWARM Messenger alkalmazást az elsődleges eszközödön."
   },
   "icu:Preferences--zoom": {
     "messageformat": "Nagyítás mértéke"
@@ -6248,7 +6248,7 @@
     "messageformat": "Módosítás"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "Signal PIN"
+    "messageformat": "SWARM PIN"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "PIN emlékeztetők"
@@ -6386,7 +6386,7 @@
     "messageformat": "Nem sikerült exportálni a csevegési előzményeket"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "A csevegési előzményeid nem exportálhatók, mert a Signal nem rendelkezik engedéllyel fájlok lemezre írásához. Próbáld meg módosítani a lemezed engedélyeit vagy frissíteni a rendszerbeállításaidat, majd exportáld újra."
+    "messageformat": "A csevegési előzményeid nem exportálhatók, mert a SWARM Messenger nem rendelkezik engedéllyel fájlok lemezre írásához. Próbáld meg módosítani a lemezed engedélyeit vagy frissíteni a rendszerbeállításaidat, majd exportáld újra."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "Biztonsági mentés exportálása"
@@ -6401,7 +6401,7 @@
     "messageformat": "Helyezd át a biztonsági mentések mappáját a telefon tárhelyére"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "Telepíts egy új példányt a Signal alkalmazásból a telefonodra"
+    "messageformat": "Telepíts egy új példányt a SWARM Messenger alkalmazásból a telefonodra"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "Koppints a „Visszaállítás vagy átvitel” lehetőségre, és válaszd a „Biztonsági mentés az eszközön” lehetőséget."
@@ -6668,13 +6668,13 @@
     "messageformat": "Letiltás időpontja: {blockedAt}"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Signal Biztonságos Biztonsági mentések"
+    "messageformat": "SWARM Messenger Biztonságos Biztonsági mentések"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Automatikus biztonsági mentések a Signal biztonságos végpontok közötti titkosított tárolási szolgáltatásával. Kezdj hozzá a telefonodon! <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "Automatikus biztonsági mentések a SWARM Messenger biztonságos végpontok közötti titkosított tárolási szolgáltatásával. Kezdj hozzá a telefonodon! <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Készíts biztonsági másolatot az üzenetelőzményeidről, hogy soha ne veszíts el adatot új telefon vásárlásakor vagy a Signal újratelepítésekor."
+    "messageformat": "Készíts biztonsági másolatot az üzenetelőzményeidről, hogy soha ne veszíts el adatot új telefon vásárlásakor vagy a SWARM Messenger újratelepítésekor."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Biztonsági mentés részletei"
@@ -6704,13 +6704,13 @@
     "messageformat": "Előfizetés törölve"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "A Signal Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és lemondhatod a telefonodon."
+    "messageformat": "A SWARM Messenger Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és lemondhatod a telefonodon."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "A Signal Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és frissítheted a telefonodon."
+    "messageformat": "A SWARM Messenger Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és frissítheted a telefonodon."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "A Signal Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és megújíthatod a telefonodon."
+    "messageformat": "A SWARM Messenger Biztonságos biztonsági mentéseire vonatkozó előfizetésedet kezelheted és megújíthatod a telefonodon."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Utolsó biztonsági mentés"
@@ -6728,7 +6728,7 @@
     "messageformat": "Készíts egy végponttól végpontig titkosított biztonsági mentést, amelyet visszaállíthatsz a telefonodon. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Egy biztonsági mentés visszaállításához először is telepítsd a Signalt a telefonodra. Nyisd meg az alkalmazást, koppints a „Visszaállítás vagy áthelyezés” opcióra. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "Egy biztonsági mentés visszaállításához először is telepítsd a SWARM Messengert a telefonodra. Nyisd meg az alkalmazást, koppints a „Visszaállítás vagy áthelyezés” opcióra. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Válassz egy mappát"
@@ -6764,7 +6764,7 @@
     "messageformat": "A helyreállítási kulcsod"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "Ez a kulcs szükséges a fiókod és az adataid helyreállításához. Tárold biztonságos helyen és soha ne oszd meg senkivel. A Signal soha nem fog üzenetet küldeni a helyreállítási kulcsod miatt. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "Ez a kulcs szükséges a fiókod és az adataid helyreállításához. Tárold biztonságos helyen és soha ne oszd meg senkivel. A SWARM Messenger soha nem fog üzenetet küldeni a helyreállítási kulcsod miatt. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "Ne oszd meg a helyreállítási kulcsot"
@@ -6779,7 +6779,7 @@
     "messageformat": "Ne oszd meg a kulcsot"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Ne oszd meg senkivel a helyreállítási kulcsodat. Ezzel lehetővé teszed, hogy átvegyék az irányítást a fiókod felett. <strong>A Signal soha nem fog üzenetet küldeni</strong> a helyreállítási kulcsod miatt. Soha ne válaszolj olyan csevegésre, amelyben úgy tesznek, mintha a Signal nevében írnának. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "Ne oszd meg senkivel a helyreállítási kulcsodat. Ezzel lehetővé teszed, hogy átvegyék az irányítást a fiókod felett. <strong>A SWARM Messenger soha nem fog üzenetet küldeni</strong> a helyreállítási kulcsod miatt. Soha ne válaszolj olyan csevegésre, amelyben úgy tesznek, mintha a SWARM Messenger nevében írnának. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Erősítsd meg a helyreállítási kulcsodat"
@@ -6791,7 +6791,7 @@
     "messageformat": "Tartsd biztonságban a kulcsod"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Ha elveszíted a kulcsod, a Signal nem tud segíteni a biztonsági másolat helyreállításában. Tárold biztonságos helyen, és ne oszd meg másokkal."
+    "messageformat": "Ha elveszíted a kulcsod, a SWARM Messenger nem tud segíteni a biztonsági másolat helyreállításában. Tárold biztonságos helyen, és ne oszd meg másokkal."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Folytatás"
@@ -6842,7 +6842,7 @@
     "messageformat": "A biztonsági mentések engedélyezéséhez hitelesítés szükséges."
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "Ez a művelet nem hajtható végre, mert a rendszer hitelesítése sikertelen volt. Kérjük, próbáld újra, vagy nyisd meg a Signal alkalmazást a mobileszközödön, és a Biztonsági mentés beállításainál nézd meg a helyreállítási kulcsot."
+    "messageformat": "Ez a művelet nem hajtható végre, mert a rendszer hitelesítése sikertelen volt. Kérjük, próbáld újra, vagy nyisd meg a SWARM Messenger alkalmazást a mobileszközödön, és a Biztonsági mentés beállításainál nézd meg a helyreállítási kulcsot."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "Hiba történt a művelethez szükséges rendszerhitelesítés lekérésénél."
@@ -6872,7 +6872,7 @@
     "messageformat": "Telefonszám"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Válaszd ki, hogy ki láthatja a telefonszámod, és ki léphet kapcsolatba veled a Signalon keresztül."
+    "messageformat": "Válaszd ki, hogy ki láthatja a telefonszámod, és ki léphet kapcsolatba veled a SWARM Messengeren keresztül."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Módosítás…"
@@ -6902,10 +6902,10 @@
     "messageformat": "Ki találhat meg a telefonszámom szerint?"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Bárki, aki tudja a telefonszámodat, látni fogja, hogy használod a Signalt, és csevegést kezdeményezhet veled."
+    "messageformat": "Bárki, aki tudja a telefonszámodat, látni fogja, hogy használod a SWARM Messengert, és csevegést kezdeményezhet veled."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Senki sem láthatja, hogy használod a Signalt, hacsak nem küldesz valakinek üzenetet, vagy nem folytatsz csevegést valakivel."
+    "messageformat": "Senki sem láthatja, hogy használod a SWARM Messengert, hacsak nem küldesz valakinek üzenetet, vagy nem folytatsz csevegést valakivel."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Mindenki"
@@ -6917,7 +6917,7 @@
     "messageformat": "Biztos vagy benne?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Ha a(z) „{settingTitle}” elemet „{nobodyLabel}” értékre módosítod, azzal megnehezíted, hogy mások megtaláljanak téged a Signalon."
+    "messageformat": "Ha a(z) „{settingTitle}” elemet „{nobodyLabel}” értékre módosítod, azzal megnehezíted, hogy mások megtaláljanak téged a SWARM Messengeren."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Üzenetküldés"
@@ -6980,7 +6980,7 @@
     "messageformat": "Beállítás"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Az alkalmazáshoz indítsa újra a Signalt"
+    "messageformat": "Az alkalmazáshoz indítsa újra a SWARM Messengert"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "A nyelv módosításához az alkalmazást újra kell indítani."
@@ -6995,13 +6995,13 @@
     "messageformat": "Képernyőbiztonság"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "A fokozott adatvédelem érdekében tiltsd le a Signal képernyőképeit ezen a számítógépen."
+    "messageformat": "A fokozott adatvédelem érdekében tiltsd le a SWARM Messenger képernyőképeit ezen a számítógépen."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Kikapcsolod a képernyőbiztonságot?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Ha le van tiltva, ez lehetővé teheti a Microsoft Windows számára, hogy képernyőképeket készítsen a Signalról, és azokat olyan funkciókhoz használja, amelyek nem feltétlenül privátak."
+    "messageformat": "Ha le van tiltva, ez lehetővé teheti a Microsoft Windows számára, hogy képernyőképeket készítsen a SWARM Messengerről, és azokat olyan funkciókhoz használja, amelyek nem feltétlenül privátak."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Letiltás"
@@ -7022,19 +7022,19 @@
     "messageformat": "Az App Store megnyitásához kattints"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Nyisd meg a Signalt a telefonodon!"
+    "messageformat": "Nyisd meg a SWARM Messengert a telefonodon!"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "A fiókod hamarosan törlésre kerül, hacsak nem nyitod meg a Signalt a telefonodon. Ez az üzenet eltűnik, ha sikerrel jártál. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "A fiókod hamarosan törlésre kerül, hacsak nem nyitod meg a SWARM Messengert a telefonodon. Ez az üzenet eltűnik, ha sikerrel jártál. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Ahhoz, hogy a fiókod aktív maradjon, nyisd meg a Signal appot."
+    "messageformat": "Ahhoz, hogy a fiókod aktív maradjon, nyisd meg a SWARM Messenger appot."
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Tudj meg többet!"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "A Signal technikai nehézségekkel küzd. Keményen dolgozunk a gyors helyreállásért."
+    "messageformat": "A SWARM Messenger technikai nehézségekkel küzd. Keményen dolgozunk a gyors helyreállásért."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Frissítés szükséges"
@@ -7043,13 +7043,13 @@
     "messageformat": "Frissítések keresése"
   },
   "icu:InstallScreenUpdateDialog--updating-signal": {
-    "messageformat": "A Signal frissítése"
+    "messageformat": "A SWARM Messenger frissítése"
   },
   "icu:InstallScreenUpdateDialog--download-progress": {
     "messageformat": "{totalBytes}/{currentBytes} ({percentage,number,percent}) letöltése..."
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "A folytatáshoz frissítsd a Signal Desktopot!"
+    "messageformat": "A folytatáshoz frissítsd a SWARM Messengert!"
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Frissítés"
@@ -7061,19 +7061,19 @@
     "messageformat": "Frissítés szükséges"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "A Signal használatának folytatásához frissítsd a legújabb verzióra."
+    "messageformat": "A SWARM Messenger használatának folytatásához frissítsd a legújabb verzióra."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Letöltés {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "A frissítés telepítéséhez indítsd újra a Signalt."
+    "messageformat": "A frissítés telepítéséhez indítsd újra a SWARM Messengert."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "A Signal Desktop frissítése nem sikerült, de elérhető egy új verzió. Nyisd meg a {downloadUrl} weboldalt, és telepítsd manuálisan az új verziót, majd lépj kapcsolatba az ügyfélszolgálattal, vagy jelentsd a hibát a problémával kapcsolatban."
+    "messageformat": "A SWARM Messenger frissítése nem sikerült, de elérhető egy új verzió. Nyisd meg a {downloadUrl} weboldalt, és telepítsd manuálisan az új verziót, majd lépj kapcsolatba az ügyfélszolgálattal, vagy jelentsd a hibát a problémával kapcsolatban."
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "Signal-logó"
+    "messageformat": "SWARM Messenger-logó"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "Vissza"
@@ -7109,7 +7109,7 @@
     "messageformat": "A folytatáshoz igazold, hogy ember vagy"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "A Signalon keresztül érkező spam üzenetek kiszűrése érdekében végezd el az ellenőrzést. Az ellenőrzést követően folytathatod a regisztrációt."
+    "messageformat": "A SWARM Messengeren keresztül érkező spam üzenetek kiszűrése érdekében végezd el az ellenőrzést. Az ellenőrzést követően folytathatod a regisztrációt."
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "Újbóli ellenőrzés"
@@ -7349,7 +7349,7 @@
     "messageformat": "Hibás PIN"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "Kifogytál a PIN megadási lehetőségekből, de továbbra is hozzáférhetsz Signal fiókodhoz, amennyiben létrehozol egy új PIN-t. A magánszférád védelme és saját biztonságod érdekében fiókod csak a mentett profilbeállítások nélkül állítható vissza."
+    "messageformat": "Kifogytál a PIN megadási lehetőségekből, de továbbra is hozzáférhetsz SWARM-fiókodhoz, amennyiben létrehozol egy új PIN-t. A magánszférád védelme és saját biztonságod érdekében fiókod csak a mentett profilbeállítások nélkül állítható vissza."
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
     "messageformat": "Új PIN létrehozása"
@@ -7379,7 +7379,7 @@
     "messageformat": "PIN létrehozása"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "A PIN kódok segíthetnek a fiókod visszaállításában és az adataid titkosításában a Signal segítségével. <learnMore>Tudj meg többet</learnMore>"
+    "messageformat": "A PIN kódok segíthetnek a fiókod visszaállításában és az adataid titkosításában a SWARM Messenger segítségével. <learnMore>Tudj meg többet</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "PIN létrehozása"
@@ -7403,7 +7403,7 @@
     "messageformat": "Figyelmeztetés"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "A PIN-kódod letiltásával egy esetleges újraregisztráció során az összes Signal adatod el fog veszni. A Regisztrációs zár nem kapcsolható be, amíg a PIN-kód le van tiltva."
+    "messageformat": "A PIN-kódod letiltásával egy esetleges újraregisztráció során az összes SWARM Messenger-adatod el fog veszni. A Regisztrációs zár nem kapcsolható be, amíg a PIN-kód le van tiltva."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "PIN letiltása"
@@ -7412,10 +7412,10 @@
     "messageformat": "Mégse"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "A Signal PIN kódokról"
+    "messageformat": "A SWARM PIN kódokról"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "A PIN-nek köszönhetően a Signal által tárolt információk titkosítva vannak, így csak te férhetsz hozzájuk. Újratelepítés esetén a profilod, a beállításaid és a névjegyeid visszaállításra kerülnek."
+    "messageformat": "A PIN-nek köszönhetően a SWARM Messenger által tárolt információk titkosítva vannak, így csak te férhetsz hozzájuk. Újratelepítés esetén a profilod, a beállításaid és a névjegyeid visszaállításra kerülnek."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "Tudj meg többet!"
@@ -7448,7 +7448,7 @@
     "messageformat": "Frissítés szükséges"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "A regisztráció folytatásához frissíts a Signal legújabb verziójára."
+    "messageformat": "A regisztráció folytatásához frissíts a SWARM Messenger legújabb verziójára."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "Frissítés"
@@ -7478,7 +7478,7 @@
     "messageformat": "Segítségkérés"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Nem sikerült bezárni a Signalt.",
+    "messageformat": "Nem sikerült bezárni a SWARM Messengert.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7498,14 +7498,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "A Signal újabb verziója már telepítve van. Biztosan folytatni szeretnéd?",
+    "messageformat": "A SWARM Messenger újabb verziója már telepítve van. Biztosan folytatni szeretnéd?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Az alkalmazás összeomlott"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "A Signal egy összeomlás után indult újra. Továbbíthatod a hibanaplót, hogy segítsd a fejlesztők munkáját."
+    "messageformat": "A SWARM Messenger egy összeomlás után indult újra. Továbbíthatod a hibanaplót, hogy segítsd a fejlesztők munkáját."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Küldés"
@@ -7610,7 +7610,7 @@
     "messageformat": "Kattints az alábbi „{buttonName}” gombra"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Kapcsold be a „Signal” opciót"
+    "messageformat": "Kapcsold be a „SWARM Messenger” opciót"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Ugrás a Beállításokhoz"
@@ -7706,7 +7706,7 @@
     "messageformat": "Tudj meg többet"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal Névjegyek"
+    "messageformat": "SWARM Névjegyek"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "A {connections} olyan személyek, akikben megbízol, a következő módok valamelyikén keresztül:"
@@ -7847,7 +7847,7 @@
     "messageformat": "Történet elrejtése előlük:"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Minden Signal Névjegy"
+    "messageformat": "Minden SWARM Névjegy"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Mindenki, kivéve…"
@@ -7925,7 +7925,7 @@
     "messageformat": "A Történetem adatvédelmi beállításai"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Döntsd el, hogy mely Signal Névjegyek tekinthetik meg a Történeted. Ezt bármikor módosíthatod az adatvédelmi beállításokban. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "Döntsd el, hogy mely SWARM Névjegyek tekinthetik meg a Történeted. Ezt bármikor módosíthatod az adatvédelmi beállításokban. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Történet törlése"
@@ -7994,7 +7994,7 @@
     "messageformat": "Csatolmány letöltése"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Engedélyezd a Megtekintési értesítéseket, és tudd meg, kik nézték meg a Történeteidet. Nyisd meg a Signal-alkalmazást a mobilodon, és lépj a Beállítások > Történetek menüpontra."
+    "messageformat": "Engedélyezd a Megtekintési értesítéseket, és tudd meg, kik nézték meg a Történeteidet. Nyisd meg a SWARM Messenger-alkalmazást a mobilodon, és lépj a Beállítások > Történetek menüpontra."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Még nem érkeztek válaszok"
@@ -8180,7 +8180,7 @@
     "messageformat": "A QR-kódod és hivatkozásod visszaállításra került, a felhasználóneved pedig {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Olvasd be ezt a QR-kódot a telefonoddal és csevegj velem a Signalban.",
+    "messageformat": "Olvasd be ezt a QR-kódot a telefonoddal és csevegj velem a SWARM Messengerben.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8256,7 +8256,7 @@
     "messageformat": "Elvetés"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "Signal PIN-kód hitelesítése"
+    "messageformat": "SWARM PIN-kód hitelesítése"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "Időnként megkérünk PIN-kódod begépelésére, hogy biztosan ne felejtsd el."
@@ -8268,7 +8268,7 @@
     "messageformat": "Később"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "Add meg Signal PIN-kódodat"
+    "messageformat": "Add meg SWARM PIN-kódodat"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "A PIN megjegyzéséhez segítségül időnként be kell majd gépelned. Egyre kevesebbszer az idő haladtával."
@@ -8289,13 +8289,13 @@
     "messageformat": "A PIN-kód helyes. Később újra emlékeztetünk."
   },
   "icu:PinChangeModal__title--create": {
-    "messageformat": "Módosítsd a Signal PIN-kódodat"
+    "messageformat": "Módosítsd a SWARM PIN-kódodat"
   },
   "icu:PinChangeModal__body--create": {
     "messageformat": "Mindaddig megváltoztathatod PIN kódodat, amíg ez az eszköz regisztrálva van. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:PinChangeModal__title--confirm": {
-    "messageformat": "Signal PIN kód megerősítése"
+    "messageformat": "SWARM PIN kód megerősítése"
   },
   "icu:PinChangeModal__body--confirm": {
     "messageformat": "Add meg a most kreált PIN kódodat."
@@ -8319,13 +8319,13 @@
     "messageformat": "Új PIN-kód létrehozva!"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "A Signal asztali számítógépen elérhető változata hamarosan nem fogja támogatni a számítógépeden megtalálható {OS} verziót. A Signal asztali számítógépen elérhető változatának folytatásához frissítsd a számítógéped operációs rendszerét eddig: {expirationDate}. <learnMoreLink>Tudj meg többet</learnMoreLink>"
+    "messageformat": "A SWARM Messenger hamarosan nem fogja támogatni a számítógépeden megtalálható {OS} verziót. A SWARM Messenger használatának folytatásához frissítsd a számítógéped operációs rendszerét eddig: {expirationDate}. <learnMoreLink>Tudj meg többet</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "A Signal már nem működik ezen a készüléken. A Signal asztali számítógépről elérhető változatának ismételt használatához frissítsd a számítógépeden a(z) {OS} verzióját. <learnMoreLink>Tudj meg többet</learnMoreLink>"
+    "messageformat": "A SWARM Messenger már nem működik ezen a készüléken. A SWARM Messenger ismételt használatához frissítsd a számítógépeden a(z) {OS} verzióját. <learnMoreLink>Tudj meg többet</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "A Signal asztali számítógépről elérhető változata már nem működik ezen a számítógépen. A Signal asztali számítógépről elérhető változatának ismételt használatához frissítsd a számítógépeden a(z) {OS} verzióját."
+    "messageformat": "A SWARM Messenger már nem működik ezen a számítógépen. A SWARM Messenger ismételt használatához frissítsd a számítógépeden a(z) {OS} verzióját."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Szerkesztve"
@@ -8496,7 +8496,7 @@
     "messageformat": "Hivatkozás másolása"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Hivatkozás megosztása a Signalon keresztül"
+    "messageformat": "Hivatkozás megosztása a SWARM Messengeren keresztül"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Hivatkozás törlése"
@@ -8559,13 +8559,13 @@
     "messageformat": "A beállítás módosításához állítsd a „Ki láthatja a telefonszámomat” „Senki” lehetőségre."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "A profilneveket a Signalon a fióktulajdonos választja ki:"
+    "messageformat": "A profilneveket a SWARM Messengeren a fióktulajdonos választja ki:"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "A Signal nem tudja ellenőrizni a neveket és a fotókat"
+    "messageformat": "A SWARM Messenger nem tudja ellenőrizni a neveket és a fotókat"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "A Signal soha nem veszi fel veled a kapcsolatot a regisztrációs kódoddal, a PIN-kódoddal vagy a helyreállítási kulcsoddal kapcsolatban"
+    "messageformat": "A SWARM Messenger soha nem veszi fel veled a kapcsolatot a regisztrációs kódoddal, a PIN-kódoddal vagy a helyreállítási kulcsoddal kapcsolatban"
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "Legyél óvatos azokkal a fiókokkal, amelyek másoknak adják ki magukat"
@@ -8595,7 +8595,7 @@
     "messageformat": "Büszkén nonprofit"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Adományozz és támogasd a privát üzeneteket. Tartsd meg a Signal függetlenségét és hirdetésmentességét. <readMoreLink>További információk</readMoreLink>"
+    "messageformat": "Adományozz és támogasd a privát üzeneteket. Tartsd meg a SWARM Messenger függetlenségét és hirdetésmentességét. <readMoreLink>További információk</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Adományozás"
@@ -8619,7 +8619,7 @@
     "messageformat": "Az adataid privátak"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Független nonprofit szervezetként a Signal elkötelezett a privát üzenetek és hívások iránt. Nincsenek hirdetések, nincsenek nyomkövetők és nincs megfigyelés. Adományozz még ma, és támogasd a Signalt!"
+    "messageformat": "Független nonprofit szervezetként a SWARM Messenger elkötelezett a privát üzenetek és hívások iránt. Nincsenek hirdetések, nincsenek nyomkövetők és nincs megfigyelés. Adományozz még ma, és támogasd a SWARM Messengert!"
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Szerezz opcionális jelvényt a profilodra, amikor adományozol"
@@ -8628,10 +8628,10 @@
     "messageformat": "Az adataid védelme a küldetésünk"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "A Signal egy nonprofit szervezet ."
+    "messageformat": "A SWARM Messenger egy nonprofit szervezet ."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "Szív ikon a Signal logó stílusában"
+    "messageformat": "Szív ikon a SWARM Messenger-logó stílusában"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "OK"
@@ -8646,7 +8646,7 @@
     "messageformat": "Adományozás GYIK"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "A nyugták nem szinkronizálódnak az eszközök között. Ha újratelepítetted a Signalt, korábbi adományaid nyugtái nem lesznek elérhetők."
+    "messageformat": "A nyugták nem szinkronizálódnak az eszközök között. Ha újratelepítetted a SWARM Messengert, korábbi adományaid nyugtái nem lesznek elérhetők."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Nincsenek nyugták"
@@ -8676,7 +8676,7 @@
     "messageformat": "Hitel- vagy betéti kártya"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Add meg a hitel- vagy bankkártyád adatait. A Signal nem gyűjti és nem tárolja a személyes adataidat. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
+    "messageformat": "Add meg a hitel- vagy bankkártyád adatait. A SWARM Messenger nem gyűjti és nem tárolja a személyes adataidat. <learnMoreLink>Tudj meg többet!</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Kártyaszám"
@@ -8688,7 +8688,7 @@
     "messageformat": "HH/ÉÉ"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Adományozz {formattedCurrencyAmount} összeget a Signalnak"
+    "messageformat": "Adományozz {formattedCurrencyAmount} összeget a SWARM Messengernek"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Érvénytelen kártyaszám"
@@ -8706,7 +8706,7 @@
     "messageformat": "A kód túl rövid"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Szerezd meg a Signal Boost-jelvényt 30 napra"
+    "messageformat": "Szerezd meg a SWARM Messenger Boost-jelvényt 30 napra"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "Az adomány minimális összege: {formattedCurrencyAmount}"
@@ -8751,7 +8751,7 @@
     "messageformat": "Egyszer"
   },
   "icu:DonationReceipt__footer-text-v2": {
-    "messageformat": "Köszönjük, hogy támogatod a Signalt! Adományoddal hozzájárulsz a szabad véleménynyilvánítást és milliók számára biztonságos kommunikációt biztosító, nyílt forrású adatvédelmi technológiák fejlesztéséhez. Ha az Egyesült Államokban adózol, kérjük, őrizd meg ezt a nyugtát adóbevallásodhoz. A Signal Technology Foundation egy adómentes, nonprofit szervezet, amely az USA területén az 501c3 Internal Revenue Code hatálya alá tartozik. Federal Tax ID: 82-4506840. A Signal semmilyen terméket vagy szolgáltatást nem nyújtott e hozzájárulás fejében."
+    "messageformat": "Köszönjük, hogy támogatod a SWARM Messengert! Adományoddal hozzájárulsz a szabad véleménynyilvánítást és milliók számára biztonságos kommunikációt biztosító, nyílt forrású adatvédelmi technológiák fejlesztéséhez. Ha az Egyesült Államokban adózol, kérjük, őrizd meg ezt a nyugtát adóbevallásodhoz. A SWARM Messenger Technology Foundation egy adómentes, nonprofit szervezet, amely az USA területén az 501c3 Internal Revenue Code hatálya alá tartozik. Federal Tax ID: 82-4506840. A SWARM Messenger semmilyen terméket vagy szolgáltatást nem nyújtott e hozzájárulás fejében."
   },
   "icu:Donations__OfflineTooltip": {
     "messageformat": "Offline állapotban vagy. Az adományozás befejezéséhez, kérjük, csatlakozz az internethez."
@@ -8790,7 +8790,7 @@
     "messageformat": "Az adományozás sikeres volt, de nem tudtuk frissíteni a jelvényed beállításait."
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "A jelvénybeállítások frissítéséhez lépj a mobileszközödön a Beállítások → Adományozás a Signalnak → Jelvények menüpontra."
+    "messageformat": "A jelvénybeállítások frissítéséhez lépj a mobileszközödön a Beállítások → Adományozás a SWARM Messengernek → Jelvények menüpontra."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Adományozás megszakadt"
@@ -8847,7 +8847,7 @@
     "messageformat": "Hiba történt az adományoddal"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Lehetséges, hogy az adományodat nem dolgoztuk fel. A nyugták ellenőrzéséhez és megerősítéséhez kattints az „Adományozás a Signalnak” lehetőségre, majd az „Adományt igazoló nyugták” opcióra."
+    "messageformat": "Lehetséges, hogy az adományodat nem dolgoztuk fel. A nyugták ellenőrzéséhez és megerősítéséhez kattints az „Adományozás a SWARM Messengernek” lehetőségre, majd az „Adományt igazoló nyugták” opcióra."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Próbáld újra, vagy küldj egy hibanaplót az Ügyfélszolgálatnak, és kérj segítséget az adományozás befejezéséhez. A hibanaplók segítenek diagnosztizálni és kijavítani a problémát, és nem tartalmaznak azonosító információkat."
@@ -8889,19 +8889,19 @@
     "messageformat": "Köszönjük a támogatásodat!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Kaptál egy adományozói jelvényt a Signaltól! Tedd ki a profilodra, és mutasd meg, hogy te is adományoztál!"
+    "messageformat": "Kaptál egy adományozói jelvényt a SWARM Messengertől! Tedd ki a profilodra, és mutasd meg, hogy te is adományoztál!"
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Megjelenítés profilképen"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "Ezt a mobilkészülékeden a Beállítások → Adományozás a Signalnak → Jelvények menüpontban állíthatod be."
+    "messageformat": "Ezt a mobilkészülékeden a Beállítások → Adományozás a SWARM Messengernek → Jelvények menüpontban állíthatod be."
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "Milyen volt a hívás minősége?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "Ez segít nekünk a Signal-hívások jobbá tételében. Személyazonosításra alkalmas adatokat nem tárolunk."
+    "messageformat": "Ez segít nekünk a SWARM Messenger-hívások jobbá tételében. Személyazonosításra alkalmas adatokat nem tárolunk."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "Problémákba ütköztem"
@@ -8952,7 +8952,7 @@
     "messageformat": "A probléma leírása"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "Kérjük, add meg a problémához kapcsolódó összes részletet. Amit itt megosztottál, az bizalmas marad, és csak a Signal-hívások fejlesztésére használjuk fel."
+    "messageformat": "Kérjük, add meg a problémához kapcsolódó összes részletet. Amit itt megosztottál, az bizalmas marad, és csak a SWARM Messenger-hívások fejlesztésére használjuk fel."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "Kérjük, írd le, hogy mi a gondod"
@@ -9018,7 +9018,7 @@
     "messageformat": "Újra össze kell kapcsolnod egy QR-kód beolvasásával."
   },
   "icu:MaybeTransferModal__media": {
-    "messageformat": "Ha fizettél a Signal biztonsági mentés szolgáltatásáért, az összes médiafájlod áthelyezésre kerül. Máskülönben a legutóbbi 45 nap adatai lesznek figyelembe véve."
+    "messageformat": "Ha fizettél a SWARM Messenger biztonsági mentés szolgáltatásáért, az összes médiafájlod áthelyezésre kerül. Máskülönben a legutóbbi 45 nap adatai lesznek figyelembe véve."
   },
   "icu:MaybeTransferModal__transfer": {
     "messageformat": "Átutalás"
@@ -9030,14 +9030,14 @@
     "messageformat": "Törlöd az összes adatot?"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "A Signal Desktopban jelenleg megtalálható összes adat törlődik. Ezután beolvashatsz egy QR-kódot, és áthelyezheted az üzenetelőzményeidet a telefonodról."
+    "messageformat": "A SWARM Messengerben jelenleg megtalálható összes adat törlődik. Ezután beolvashatsz egy QR-kódot, és áthelyezheted az üzenetelőzményeidet a telefonodról."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Ebbe a verzióba néhány kisebb újítás és hibajavítás került annak érdekében, hogy a Signal továbbra is gond nélkül fusson.",
+    "messageformat": "Ebbe a verzióba néhány kisebb újítás és hibajavítás került annak érdekében, hogy a SWARM Messenger továbbra is gond nélkül fusson.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "További apró módosítások, hibajavítások és teljesítménynövelések. Köszönjük, hogy a Signalt használod!",
+    "messageformat": "További apró módosítások, hibajavítások és teljesítménynövelések. Köszönjük, hogy a SWARM Messengert használod!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -9057,7 +9057,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Apró finomítások, hibajavítások és teljesítménynövelések. Köszönjük, hogy a Signalt használod!",
+    "messageformat": "Apró finomítások, hibajavítások és teljesítménynövelések. Köszönjük, hogy a SWARM Messengert használod!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.25--0": {
