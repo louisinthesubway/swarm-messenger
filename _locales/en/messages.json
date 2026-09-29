@@ -5411,8 +5411,8 @@
     "description": "Description text in popup dialog when attempting to edit a message too many times."
   },
   "icu:unknown-sgnl-link": {
-    "messageformat": "Sorry, that sgnl:// link didn't make sense!",
-    "description": "Shown if you click on a sgnl:// link not currently supported by Desktop"
+    "messageformat": "Sorry, that link didn't make sense!",
+    "description": "Shown if you click on an app link (swarm:// or an older link form) that this version does not support"
   },
   "icu:GroupV2--cannot-send": {
     "messageformat": "You cannot send messages to that group.",
