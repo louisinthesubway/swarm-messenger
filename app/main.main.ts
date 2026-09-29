@@ -2766,7 +2766,13 @@ app.on(
   }
 );
 
-if (!app.isDefaultProtocolClient('sgnl')) {
+// SWARM change (MSG-P4, 2026-09-29): sgnl and signalcaptcha are registered by
+// packaged builds only, like swarm below. Upstream registers them on every
+// start, and on 2026-09-29 hidden from-source test instances were found to
+// have pointed both schemes on the owner's PC at a development electron.exe.
+if (!app.isPackaged) {
+  log.info('not a packaged build, leaving the sgnl url scheme alone');
+} else if (!app.isDefaultProtocolClient('sgnl')) {
   log.info('setting signal as the default app for the sgnl url scheme');
   app.setAsDefaultProtocolClient('sgnl');
 } else {
@@ -2774,7 +2780,9 @@ if (!app.isDefaultProtocolClient('sgnl')) {
     'signal is already registered as the default app for the sgnl url scheme.'
   );
 }
-if (!app.isDefaultProtocolClient('signalcaptcha')) {
+if (!app.isPackaged) {
+  log.info('not a packaged build, leaving the signalcaptcha url scheme alone');
+} else if (!app.isDefaultProtocolClient('signalcaptcha')) {
   log.info(
     'setting signal as the default app for the signalcaptcha url scheme'
   );
