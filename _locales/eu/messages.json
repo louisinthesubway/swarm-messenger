@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Ikusi eguneratze honen {whatsNew}"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal irabazi-asmorik gabeko erakunde bat da"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "berritasunak"
   },

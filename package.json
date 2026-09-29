@@ -4,8 +4,9 @@
   "name": "swarm-messenger",
   "productName": "SWARM Messenger",
   "description": "Private messaging from your desktop",
-  "desktopName": "signal.desktop",
-  "repository": "https://github.com/signalapp/Signal-Desktop.git",
+  "desktopName": "swarm-messenger.desktop",
+  "repository": "https://github.com/louisinthesubway/swarm-messenger.git",
+  "homepage": "https://swarm.green",
   "version": "0.1.1",
   "license": "AGPL-3.0-only",
   "author": {
@@ -20,7 +21,7 @@
     "start": "electron .",
     "generate": "run-s generate:phase-0 generate:phase-1",
     "generate:phase-0": "run-s build:protobuf build:emoji-data build:rolldown:prod",
-    "generate:phase-1": "run-p --aggregate-output --print-label build:icu-types build:compact-locales build:styles:prod get-expire-time build:policy-files build:db-schema",
+    "generate:phase-1": "run-p --aggregate-output --print-label build:icu-types build:compact-locales build:styles:prod get-expire-time build:policy-files build:db-schema build:licences",
     "build-release": "pnpm run build",
     "notarize": "echo 'No longer necessary'",
     "get-strings": "node scripts/get-strings.mjs && node scripts/gen-nsis-script.mjs && node scripts/gen-locales-config.mjs && run-p get-strings:locales get-strings:countries get-strings:emoji mark-unusued-strings-deleted && run-p build:compact-locales",
@@ -87,6 +88,7 @@
     "build-win32-all": "run-s --print-label generate build:rolldown:prod build:release-win32-all",
     "build-linux": "run-s build:policy-files generate build:rolldown:prod && pnpm run build:release --publish=never",
     "build:acknowledgments": "node scripts/generate-acknowledgments.mjs",
+    "build:licences": "node --import=tsx scripts/swarm-generate-licences.mjs",
     "build:db-schema": "node --import=tsx scripts/generate-db-schema.mjs",
     "build:dns-fallback": "node scripts/generate-dns-fallback.mjs",
     "build:emoji-data": "node scripts/generate-emoji-data.mjs",
@@ -363,6 +365,7 @@
   },
   "build": {
     "appId": "green.swarm.messenger",
+    "copyright": "Copyright © 2026 SWARM",
     "extraMetadata": {
       "homepage": "https://swarm.green"
     },
@@ -552,9 +555,7 @@
     "protocols": {
       "name": "swarm-messenger-url-scheme",
       "schemes": [
-        "swarm",
-        "sgnl",
-        "signalcaptcha"
+        "swarm"
       ]
     },
     "artifactBuildCompleted": "scripts/artifact-build-completed.mjs",
@@ -618,6 +619,7 @@
       "build/country-display-names.json",
       "build/dns-fallback.json",
       "build/optional-resources.json",
+      "build/licences.html",
       "build/jumbomoji.json",
       "build/emoji-data.json",
       "node_modules/**",

@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "{whatsNew} را در این به‌روزرسانی ببینید"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "سیگنال یک شرکت غیرانتفاعی است"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "تازه‌ها"
   },

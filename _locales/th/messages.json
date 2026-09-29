@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "สัมผัส {whatsNew} ในการปรับปรุงครั้งนี้"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal เป็นแอปไม่แสวงหาผลกำไร"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "ฟีเจอร์และบริการใหม่ๆ"
   },

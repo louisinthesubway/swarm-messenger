@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Pogledajte {whatsNew} u ovom ažuriranju"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal je neprofitna organizacija"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "šta je novo"
   },

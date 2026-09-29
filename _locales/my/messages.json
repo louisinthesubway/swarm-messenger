@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "ဤအပ်ဒိတ်တွင် {whatsNew} ကို ကြည့်ရန်"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal သည် အကျိုးအမြတ်မယူပါ"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "အသစ်များ"
   },

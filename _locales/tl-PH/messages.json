@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "See {whatsNew} in this update"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Ang Signal ay isang nonprofit"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "what's new"
   },

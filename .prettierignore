@@ -19,6 +19,7 @@ ts/util/lint/exceptions.json
 storybook-static
 build/locale-display-names.json
 build/country-display-names.json
+build/licences.html
 build/compact-locales/**/*.json
 release/**
 pnpm-lock.yaml

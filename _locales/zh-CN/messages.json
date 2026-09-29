@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "在此更新中查看{whatsNew}"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal 是一个非营利组织"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "更新"
   },

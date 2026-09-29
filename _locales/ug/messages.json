@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "بۇ يېڭىلاشتىكى «{whatsNew}» نى كۆرۈش"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal پايدا ئالمايدىغان بىر تەشكىلات"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "يېڭىلىقلار"
   },

@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "اس اپ ڈیٹ میں {whatsNew} دیکھیں"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal ایک غیر منافع بخش ایپ ہے"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "نیا کیا ہے"
   },

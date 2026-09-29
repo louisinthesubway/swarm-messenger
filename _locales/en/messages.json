@@ -137,7 +137,7 @@
   },
   "icu:privacyPolicy": {
     "messageformat": "Terms & Privacy Policy",
-    "description": "Shown in the about box for the link to https://signal.org/legal"
+    "description": "Shown in the about box for the link to https://swarm.green/legal"
   },
   "icu:About__AppEnvironment": {
     "messageformat": "{appEnv}",
@@ -150,6 +150,10 @@
   "icu:About__AppEnvironment--AppleIntel": {
     "messageformat": "{appEnv} (Intel)",
     "description": "AboutWindow > App Environment Info > On Apple Intel Devices"
+  },
+  "icu:About__Licences": {
+    "messageformat": "Licences",
+    "description": "AboutWindow > the entry that opens the Licences document (the AGPL-3.0 licence, the offer of the source code and the third-party notices), and the title of the window that shows it"
   },
   "icu:copyErrorAndQuit": {
     "messageformat": "Copy error and quit",
@@ -1105,7 +1109,7 @@
   },
   "icu:goToReleaseNotes": {
     "messageformat": "Go to Release Notes",
-    "description": "Item under the help menu, takes you to GitHub page for release notes"
+    "description": "Item under the help menu, takes you to the release notes on swarm.green"
   },
   "icu:goToForums": {
     "messageformat": "Go to Forums",
@@ -1225,10 +1229,6 @@
   "icu:whatsNew": {
     "messageformat": "See {whatsNew} in this update",
     "description": "Shown in the main window"
-  },
-  "icu:signalNonProfit": {
-    "messageformat": "SWARM Messenger is based on Signal Desktop by Signal Messenger, LLC, AGPL-3.0",
-    "description": "Shown at the bottom of the main window when a chat is not selected"
   },
   "icu:viewReleaseNotes": {
     "messageformat": "what's new",
@@ -12180,10 +12180,6 @@
   "icu:SwarmInstall__create-account-here": {
     "messageformat": "Create account on this computer",
     "description": "Shown on the first-run screen next to the linking QR code. Starts phone-number registration on this computer instead of linking to a phone."
-  },
-  "icu:SwarmAbout__attribution": {
-    "messageformat": "SWARM Messenger is based on Signal Desktop by Signal Messenger, LLC, AGPL-3.0",
-    "description": "Licence attribution shown in the About window. Required by the AGPL-3.0; must never be removed or reworded."
   },
   "icu:SwarmWallet__nav-label": {
     "messageformat": "Wallet",

@@ -17,8 +17,6 @@ import { HourCyclePreference } from '../../types/I18N.std.ts';
 const forceUpdate = stub();
 const openArtCreator = stub();
 const openContactUs = stub();
-const openForums = stub();
-const openJoinTheBeta = stub();
 const openReleaseNotes = stub();
 const openSupportPage = stub();
 const setupAsNewDevice = stub();
@@ -93,9 +91,9 @@ const getExpectedHelpMenu = (
     { type: 'separator' },
     { label: 'Contact Us', click: openContactUs },
     { label: 'Go to Release Notes', click: openReleaseNotes },
-    { label: 'Go to Forums', click: openForums },
+    // SWARM change (B2c): no "Go to Forums" and no "Join the Beta" - SWARM
+    // has neither a forum nor a beta programme.
     { label: 'Go to Support Page', click: openSupportPage },
-    { label: 'Join the Beta', click: openJoinTheBeta },
     ...(includeAbout
       ? ([
           { type: 'separator' },
@@ -221,8 +219,6 @@ describe('createTemplate', () => {
     forceUpdate,
     openArtCreator,
     openContactUs,
-    openForums,
-    openJoinTheBeta,
     openReleaseNotes,
     openSupportPage,
     setupAsNewDevice,

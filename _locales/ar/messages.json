@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "اطَّلِع على {whatsNew} في هذا التحديث"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "سيجنال شركة غير ربحية"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "ما هو جديد"
   },

@@ -4,14 +4,21 @@
 // SWARM addition (M1). This test is the guard rail for the one rule that cannot
 // be allowed to rot: a SWARM Messenger build must not point at Signal. It walks
 // config/ and ts/ looking for a Signal domain, ignoring the places where Signal
-// is named on purpose - licence headers, the AGPL attribution, the guard that
-// lists Signal's domains so it can refuse them, and the deep-link vocabulary
-// (signal.me / signal.group / signal.link / signal.art) which is shared with the
-// other SWARM clients and is renamed in a later milestone, not here.
+// is named on purpose - licence headers, the guard that lists Signal's domains
+// so it can refuse them, and the deep-link vocabulary (signal.me /
+// signal.group / signal.link / signal.art) which is shared with the other SWARM
+// clients and is renamed in a later milestone, not here. The AGPL-3.0
+// attribution is in the Licences document (B2c), checked below.
 
 import { assert } from 'chai';
 import { readFileSync, readdirSync, statSync } from 'node:fs';
 import { join, relative, sep } from 'node:path';
+
+import {
+  LICENCES_INTRODUCTION,
+  buildLicencesDocument,
+  escapeHtml,
+} from '../../util/swarm/licencesDocument.std.ts';
 
 const ROOT = join(import.meta.dirname, '..', '..', '..');
 
@@ -34,11 +41,8 @@ const ALLOWED_FILES = new Set(
 
 function isLicenceOrAttributionLine(line: string): boolean {
   // "// Copyright 2017 Signal Messenger, LLC" and friends, in every comment
-  // syntax the tree uses, plus the one attribution string we must keep.
+  // syntax the tree uses.
   if (/Copyright \d{4} Signal Messenger, LLC/.test(line)) {
-    return true;
-  }
-  if (line.includes('based on Signal Desktop by Signal Messenger, LLC')) {
     return true;
   }
   // A comment citing upstream source on GitHub. Not an endpoint: nothing is
@@ -97,7 +101,7 @@ describe('SWARM: no Signal endpoints', () => {
     );
   });
 
-  it('ts/ never mentions a Signal domain outside licences and the attribution', () => {
+  it('ts/ never mentions a Signal domain outside licences', () => {
     const offences = findOffences('ts', ['.ts', '.tsx']);
     assert.deepStrictEqual(
       offences,
@@ -106,30 +110,52 @@ describe('SWARM: no Signal endpoints', () => {
     );
   });
 
-  it('keeps the AGPL attribution, word for word', () => {
-    // The licence requires it and the About window is where a user sees it, so
-    // this is the one place Signal must still be named. Removing or rewording
-    // it is a licence breach, not a branding tidy-up.
-    const attribution =
-      'SWARM Messenger is based on Signal Desktop by Signal Messenger, LLC, ' +
-      'AGPL-3.0';
-
-    const messages = JSON.parse(
-      readFileSync(join(ROOT, '_locales', 'en', 'messages.json'), 'utf8')
-    );
+  it('keeps the AGPL-3.0 notices, word for word, in the Licences document', () => {
+    // The licence requires the attribution and the offer of the source code.
+    // Since B2c they are not a string in the About window: its "Licences"
+    // entry opens build/licences.html, which buildLicencesDocument writes, and
+    // this is the one place Signal is still named. Removing or rewording it is
+    // a licence breach, not a branding tidy-up.
     assert.strictEqual(
-      messages['icu:SwarmAbout__attribution']?.messageformat,
-      attribution
+      LICENCES_INTRODUCTION,
+      'SWARM Messenger is free software under the GNU Affero General Public ' +
+        'License, version 3. Source code: ' +
+        'https://github.com/louisinthesubway/swarm-messenger. It is built on ' +
+        'open-source software, including Signal Desktop, © Signal Messenger, ' +
+        'LLC (AGPL-3.0), and the components listed below.'
     );
 
-    const about = readFileSync(
-      join(ROOT, 'ts', 'components', 'About.dom.tsx'),
+    const licence = readFileSync(join(ROOT, 'LICENSE'), 'utf8');
+    const acknowledgments = readFileSync(
+      join(ROOT, 'ACKNOWLEDGMENTS.md'),
       'utf8'
     );
+    const html = buildLicencesDocument({
+      copyright: 'Copyright © 2026 SWARM',
+      licence,
+      acknowledgments,
+    });
+    const visible = html.replace(/<[^>]*>/g, '');
+    assert.include(visible, escapeHtml(LICENCES_INTRODUCTION));
     assert.include(
-      about,
-      "i18n('icu:SwarmAbout__attribution')",
-      'the About window must render the attribution'
+      html,
+      'Source code: <a href="https://github.com/louisinthesubway/swarm-messenger">'
+    );
+    assert.include(html, escapeHtml(licence), 'the whole AGPL-3.0 text');
+    assert.include(
+      html,
+      escapeHtml(acknowledgments),
+      'every third-party notice'
+    );
+    assert.isBelow(
+      html.indexOf('Source code:'),
+      html.indexOf('GNU AFFERO GENERAL PUBLIC LICENSE'),
+      'the paragraph comes first, then the licence'
+    );
+    assert.isBelow(
+      html.indexOf('GNU AFFERO GENERAL PUBLIC LICENSE'),
+      html.indexOf('# Acknowledgments'),
+      'then the third-party notices'
     );
   });
 

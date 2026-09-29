@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Se {whatsNew} i denne oppdateringen"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal er en ideell organisasjon"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "siste nytt"
   },

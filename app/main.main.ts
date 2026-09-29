@@ -1294,31 +1294,19 @@ function openContactUs() {
   drop(shell.openExternal(createSupportUrl({ locale: app.getLocale() })));
 }
 
-function openJoinTheBeta() {
-  // If we omit the language, the site will detect the language and redirect
-  drop(shell.openExternal('https://swarm.green/support'));
-}
-
 function openReleaseNotes() {
   if (mainWindow && mainWindow.isVisible()) {
     mainWindow.webContents.send('show-release-notes');
     return;
   }
 
-  drop(
-    shell.openExternal(
-      `https://github.com/signalapp/Signal-Desktop/releases/tag/v${app.getVersion()}`
-    )
-  );
+  // SWARM change (B2c): SWARM Messenger's release notes are on its page in
+  // the swarm.green ecosystem, not on a GitHub releases page.
+  drop(shell.openExternal('https://swarm.green/ecosystem/messenger'));
 }
 
 function openSupportPage() {
   // If we omit the language, the site will detect the language and redirect
-  drop(shell.openExternal('https://swarm.green/support'));
-}
-
-function openForums() {
-  // SWARM change (M1): our own support page, not Signal's community forum.
   drop(shell.openExternal('https://swarm.green/support'));
 }
 
@@ -1446,6 +1434,69 @@ async function showAbout() {
 
   await safeLoadURL(aboutWindow, prepareFileUrl([rootDir, 'about.html']));
 }
+
+// SWARM addition (B2c): the Licences document, opened from the About window's
+// "Licences" entry. It is one static page shipped inside the app,
+// build/licences.html (scripts/swarm-generate-licences.mjs writes it from
+// LICENSE and ACKNOWLEDGMENTS.md): the licence paragraph with the offer of the
+// source code, the AGPL-3.0 text and the third-party notices. It needs no
+// website. The page runs no script; its links go through
+// handleCommonWindowEvents to the browser, like every other link.
+let licencesWindow: BrowserWindow | undefined;
+async function showLicencesWindow() {
+  if (licencesWindow) {
+    licencesWindow.show();
+    return;
+  }
+
+  const options = {
+    width: 720,
+    height: 640,
+    minWidth: 420,
+    minHeight: 320,
+    title: getResolvedMessagesLocale().i18n('icu:About__Licences'),
+    titleBarStyle: nonMainTitleBarStyle,
+    autoHideMenuBar: true,
+    backgroundColor: await getBackgroundColor(),
+    show: false,
+    webPreferences: {
+      ...defaultWebPrefs,
+      nodeIntegration: false,
+      nodeIntegrationInWorker: false,
+      sandbox: true,
+      contextIsolation: true,
+      javascript: false,
+    },
+  };
+
+  licencesWindow = new BrowserWindow(options);
+
+  await handleCommonWindowEvents(licencesWindow);
+
+  // The window keeps its translated title, not the page's English <title>.
+  licencesWindow.on('page-title-updated', event => {
+    event.preventDefault();
+  });
+
+  licencesWindow.on('closed', () => {
+    licencesWindow = undefined;
+  });
+
+  licencesWindow.once('ready-to-show', () => {
+    if (licencesWindow) {
+      licencesWindow.show();
+    }
+  });
+
+  await safeLoadURL(
+    licencesWindow,
+    prepareFileUrl([rootDir, 'build', 'licences.html'])
+  );
+}
+
+ipc.on('show-licences', () => {
+  drop(showLicencesWindow());
+});
 
 async function getIsLinked() {
   try {
@@ -2534,8 +2585,6 @@ function setupMenu(options?: Partial<CreateTemplateOptionsType>) {
     forceUpdate,
     openArtCreator,
     openContactUs,
-    openForums,
-    openJoinTheBeta,
     openReleaseNotes,
     openSupportPage,
     setupAsNewDevice,
@@ -2766,41 +2815,23 @@ app.on(
   }
 );
 
-// SWARM change (MSG-P4, 2026-09-29): sgnl and signalcaptcha are registered by
-// packaged builds only, like swarm below. Upstream registers them on every
-// start, and on 2026-09-29 hidden from-source test instances were found to
-// have pointed both schemes on the owner's PC at a development electron.exe.
-if (!app.isPackaged) {
-  log.info('not a packaged build, leaving the sgnl url scheme alone');
-} else if (!app.isDefaultProtocolClient('sgnl')) {
-  log.info('setting signal as the default app for the sgnl url scheme');
-  app.setAsDefaultProtocolClient('sgnl');
-} else {
-  log.info(
-    'signal is already registered as the default app for the sgnl url scheme.'
-  );
-}
-if (!app.isPackaged) {
-  log.info('not a packaged build, leaving the signalcaptcha url scheme alone');
-} else if (!app.isDefaultProtocolClient('signalcaptcha')) {
-  log.info(
-    'setting signal as the default app for the signalcaptcha url scheme'
-  );
-  app.setAsDefaultProtocolClient('signalcaptcha');
-} else {
-  log.info(
-    'signal is already registered as the default app for the sgnl url scheme.'
-  );
-}
-// SWARM change (MSG-P3, 2026-09-29): claim the swarm: scheme, the app form of
-// a call link (swarm://swarm.green/call/#key=...) that the swarm.green/call page
-// opens. electron-builder's NSIS installer ignores build.protocols, so on
-// Windows this is the only registration: like sgnl above, it is written to
-// HKCU\Software\Classes\swarm at a start of the installed app whenever the
-// scheme does not already point at it. Upstream registers sgnl and
-// signalcaptcha on every start, packaged or not; swarm is registered by
-// packaged builds only, so a from-source instance never points the scheme at a
-// development electron.exe.
+// SWARM change (B2c, 2026-09-29): swarm: is the one URL scheme the app
+// registers. Upstream also registers sgnl: and signalcaptcha: on every start;
+// SWARM Messenger does not. Its links are https://swarm.green/... and
+// swarm://..., and the SWARM server serves no captcha page that could send a
+// browser back to signalcaptcha: (its captcha is the no-op client). An old
+// sgnl: link that reaches the app another way, clicked inside a chat, is still
+// understood (ts/util/signalRoutes.std.ts). build.protocols in package.json
+// names swarm only, so the macOS Info.plist and the Linux desktop entry claim
+// no other scheme either.
+//
+// swarm: is the app form of a call link (swarm://swarm.green/call/#key=...)
+// that the swarm.green/call page opens (MSG-P3). electron-builder's NSIS
+// installer ignores build.protocols, so on Windows this is the only
+// registration: it is written to HKCU\Software\Classes\swarm at a start of
+// the installed app whenever the scheme does not already point at it. Only
+// packaged builds register it, so a from-source instance never points the
+// scheme at a development electron.exe (MSG-P4).
 if (!app.isPackaged) {
   log.info('not a packaged build, leaving the swarm url scheme alone');
 } else if (!app.isDefaultProtocolClient('swarm')) {

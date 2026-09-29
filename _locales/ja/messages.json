@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "このアップデートの{whatsNew}をご覧ください"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signalは非営利団体です"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "更新情報"
   },

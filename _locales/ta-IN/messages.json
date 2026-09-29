@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "இந்த புதுப்பிப்பில் {whatsNew} -ஐப் பார்க்கவும்"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "சிக்னல் ஓர் இலாப நோக்கற்ற அமைப்பாகும்"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "புதிதாக என்ன உள்ளது"
   },

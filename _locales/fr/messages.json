@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Consulter {whatsNew} de cette mise à jour"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal est un organisme à but non lucratif"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "les nouveautés"
   },

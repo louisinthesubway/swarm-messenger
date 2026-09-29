@@ -15,8 +15,14 @@
 //  FAIL - a Signal domain (signal.org, signalcaptchas.org, whispersystems)
 //         anywhere in the app's own files. This is the thing that could make the
 //         app talk to Signal, so there is no tolerance for it.
-//  FAIL - user-visible "Signal" wording in the packaged English strings, with
-//         one exception: the AGPL-3.0 attribution, which must be there.
+//  FAIL - user-visible "Signal" wording in the packaged English strings. No
+//         exception since B2c (2026-09-29): the AGPL-3.0 attribution is not a
+//         string any more, it is in the Licences document.
+//  FAIL - a packaged app without the Licences document (build/licences.html,
+//         opened from About > Licences), or one whose document lacks the
+//         licence paragraph with the source-code offer, the AGPL-3.0 text or
+//         the third-party notices. The AGPL-3.0 requires all three, so their
+//         absence fails the build like a leak does.
 //  EXCUSED - the endpoint guard's own refusal list (SIGNAL_HOST_SUFFIXES in
 //         ts/util/swarm/endpointGuard.std.ts). It names Signal's domains so the
 //         app can refuse them, which makes it the one place they must be in the
@@ -46,9 +52,23 @@ const FORBIDDEN_DOMAINS = [
   /whispersystems/i,
 ];
 
-// The one string that must survive, and must not be treated as a leftover.
-const ATTRIBUTION =
-  'SWARM Messenger is based on Signal Desktop by Signal Messenger, LLC, AGPL-3.0';
+// The Licences document (scripts/swarm-generate-licences.mjs writes it,
+// ts/util/swarm/licencesDocument.std.ts is its source) and what it must say.
+// The paragraph is repeated here word for word on purpose: a change to the
+// licence text has to be made in both places, deliberately.
+const LICENCES_DOCUMENT = 'build/licences.html';
+const LICENCES_MUST_CONTAIN = [
+  [
+    'the licence paragraph with the offer of the source code',
+    'SWARM Messenger is free software under the GNU Affero General Public ' +
+      'License, version 3. Source code: ' +
+      'https://github.com/louisinthesubway/swarm-messenger. It is built on ' +
+      'open-source software, including Signal Desktop, © Signal Messenger, ' +
+      'LLC (AGPL-3.0), and the components listed below.',
+  ],
+  ['the AGPL-3.0 text (LICENSE)', 'GNU AFFERO GENERAL PUBLIC LICENSE'],
+  ['the third-party notices (ACKNOWLEDGMENTS.md)', '# Acknowledgments'],
+];
 
 // Paths inside the app that may legitimately mention Signal.
 function isExcusedPath(relPath) {
@@ -57,8 +77,19 @@ function isExcusedPath(relPath) {
     p.startsWith('node_modules/') ||
     /(^|\/)(LICENSE|LICENCE|COPYING|NOTICE)([.-][^/]*)?$/i.test(p) ||
     /ACKNOWLEDGMENTS\.md$/i.test(p) ||
-    /NOTICE-SWARM\.md$/i.test(p)
+    /NOTICE-SWARM\.md$/i.test(p) ||
+    p === LICENCES_DOCUMENT
   );
+}
+
+// The document's visible text: tags dropped, the few entities it uses decoded.
+function visibleText(html) {
+  return html
+    .replace(/<[^>]*>/g, '')
+    .replaceAll('&lt;', '<')
+    .replaceAll('&gt;', '>')
+    .replaceAll('&quot;', '"')
+    .replaceAll('&amp;', '&');
 }
 
 const TEXT_EXTENSIONS = new Set([
@@ -116,6 +147,7 @@ function findPackagedApps() {
 
 const domainOffences = [];
 const stringOffences = [];
+const licenceOffences = [];
 const internalMentions = new Map();
 
 // The endpoint guard's refusal list, as the bundler writes it: one entry per
@@ -141,7 +173,7 @@ function scanText(relPath, text) {
       );
       domainOffences.push(`${where}: ...${match ? match[0] : line.trim()}...`);
     }
-    if (/Signal/.test(line) && !line.includes(ATTRIBUTION)) {
+    if (/Signal/.test(line)) {
       internalMentions.set(relPath, (internalMentions.get(relPath) ?? 0) + 1);
     }
   });
@@ -161,13 +193,38 @@ function scanEnglishStrings(relPath, text) {
     if (typeof value !== 'string') {
       continue;
     }
-    if (value === ATTRIBUTION) {
-      continue;
-    }
     if (/\bSignal\b/.test(value)) {
       stringOffences.push(`${relPath}: ${value.slice(0, 160)}`);
     }
   }
+}
+
+// Checks the Licences document of one unpacked app (see LICENCES_MUST_CONTAIN).
+async function checkLicencesDocument(dir, label) {
+  const where =
+    label === undefined ? LICENCES_DOCUMENT : `${label}/${LICENCES_DOCUMENT}`;
+  const documentPath = join(dir, ...LICENCES_DOCUMENT.split('/'));
+  if (!existsSync(documentPath)) {
+    licenceOffences.push(
+      `${where}: missing (About > Licences would open nothing)`
+    );
+    return;
+  }
+  const text = visibleText(await readFile(documentPath, 'utf8'));
+  const lacking = LICENCES_MUST_CONTAIN.filter(
+    ([, needle]) => !text.includes(needle)
+  );
+  for (const [what] of lacking) {
+    licenceOffences.push(`${where}: lacks ${what}`);
+  }
+  if (lacking.length > 0) {
+    return;
+  }
+  process.stdout.write(
+    `swarm-brand-check: ${where} is in the app (${text.length} characters ` +
+      'of text: the licence paragraph, the AGPL-3.0 text, the third-party ' +
+      'notices)\n'
+  );
 }
 
 // Unpacks one app.asar and scans it. `label` prefixes every reported path when
@@ -179,6 +236,7 @@ async function scanApp(appAsar, label) {
 
   let scanned = 0;
   try {
+    await checkLicencesDocument(dir, label);
     for await (const file of walk(dir)) {
       const rel = relative(dir, file);
       if (isExcusedPath(rel)) {
@@ -252,6 +310,17 @@ async function main() {
 
   let failed = false;
 
+  if (licenceOffences.length > 0) {
+    failed = true;
+    process.stderr.write(
+      '\nswarm-brand-check FAILED: the Licences document is not what the ' +
+        'AGPL-3.0 requires:\n'
+    );
+    for (const offence of licenceOffences) {
+      process.stderr.write(`  ${offence}\n`);
+    }
+  }
+
   if (domainOffences.length > 0) {
     failed = true;
     process.stderr.write(
@@ -282,8 +351,9 @@ async function main() {
   }
 
   process.stdout.write(
-    'swarm-brand-check: OK - no Signal domains, and the only English string ' +
-      'that names Signal is the AGPL-3.0 attribution.\n'
+    'swarm-brand-check: OK - no Signal domains, no English string names ' +
+      'Signal, and the Licences document carries the licence paragraph, the ' +
+      'AGPL-3.0 text and the third-party notices.\n'
   );
 }
 

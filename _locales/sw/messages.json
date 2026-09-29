@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Pata {whatsNew} katika sasisho hili"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal ni shirika lilisilo la faida"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "vitu vipya"
   },

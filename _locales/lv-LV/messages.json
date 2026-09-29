@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Apskatiet, kādi {whatsNew} iekļauti šajā atjauninājumā"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal ir bezpeļņas organizācija"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "jaunumi"
   },
