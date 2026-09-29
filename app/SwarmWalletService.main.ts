@@ -13,7 +13,10 @@
 //   worker thread (ts/workers/swarmWalletWorker.node.ts)
 //     swarm-wallet-core 0.2.0 + the Rust addon: keys, wallet file, light server
 //
-// The renderer never receives a key, a seed, a path or a wallet object. It
+// The renderer never receives a key, a seed, a path or a wallet object. (One
+// exception, B6: the person can ask to see their recovery phrase, and a small
+// window of its own - never the main window - is sent the words once, after a
+// local confirmation. See app/SwarmRecoveryPhraseExport.main.ts.) It
 // sends the recovery phrase once - when the wallet is first opened from it, at
 // sign-in or from the pane's restore form - and gets a state back. Sending
 // money is two calls, quote and confirm, and the quote lives here: the renderer
@@ -44,6 +47,7 @@ import OS from '../ts/util/os/osMain.node.ts';
 import { zatoshiFromString } from '../ts/util/swarm/swmAmount.std.ts';
 import {
   SWARM_WALLET_NETWORKS,
+  accountKeyForPhrase,
   chainLabelOf,
   checkAddressFor,
   classifyWalletFailure,
@@ -268,6 +272,75 @@ export class SwarmWalletService {
   /** The chain label of the network the wallet is on, e.g. `swarm-mainnet`. */
   chainLabel(): 'swarm-mainnet' | 'swarm-testnet' {
     return this.#network === 'mainnet' ? 'swarm-mainnet' : 'swarm-testnet';
+  }
+
+  // Recovery phrase export (B6) -------------------------------------------------
+
+  /**
+   * SWARM addition (B6, 2026-09-29): whether there is a signed-in account's
+   * wallet whose words could be read. A quick answer for the pane; the read
+   * itself can still refuse.
+   */
+  canExportRecoveryPhrase(): boolean {
+    return (
+      this.#accountKey != null &&
+      (this.#status === 'ready' || this.#status === 'offline')
+    );
+  }
+
+  /**
+   * SWARM addition (B6, 2026-09-29): the open wallet's recovery phrase, as
+   * UTF-8 bytes, for app/SwarmRecoveryPhraseExport.main.ts and nobody else -
+   * it is not reachable over IPC. The caller hands the bytes to the reveal
+   * window and zeroes them (deliverRecoveryPhraseOnce); this method zeroes them
+   * itself when it refuses them.
+   *
+   * Refused, and zeroed, unless the words derive exactly the signed-in
+   * account's identity key: what the person is shown must sign them into this
+   * account, and no other.
+   *
+   * Logs the outcome only.
+   */
+  async readRecoveryPhrase(): Promise<Uint8Array<ArrayBuffer> | undefined> {
+    const accountKey = this.#accountKey;
+    if (accountKey == null || this.#status === 'unavailable') {
+      log.info('readRecoveryPhrase: refused, no wallet is open');
+      return undefined;
+    }
+    let bytes: unknown;
+    try {
+      bytes = await this.#call({ kind: 'seed-phrase' }, TIMEOUT_MS.quick);
+    } catch (error) {
+      // The worker's message names a reason, never the words; redacted anyway.
+      log.warn(`readRecoveryPhrase: not read (${this.#describe(error)})`);
+      return undefined;
+    }
+    if (!(bytes instanceof Uint8Array)) {
+      log.warn('readRecoveryPhrase: the worker answered something else');
+      return undefined;
+    }
+    const phrase = new Uint8Array(bytes);
+    bytes.fill(0);
+    let matches = false;
+    try {
+      matches =
+        this.#accountKey === accountKey &&
+        sameAccountKey(
+          accountKeyForPhrase(new TextDecoder().decode(phrase)),
+          accountKey
+        );
+    } catch {
+      matches = false;
+    }
+    if (!matches) {
+      phrase.fill(0);
+      log.warn(
+        'readRecoveryPhrase: refused, the words are not the signed-in account'
+      );
+      return undefined;
+    }
+    log.info('readRecoveryPhrase: read for the reveal window');
+    return phrase;
   }
 
   /** Seals the wallet file and stops the worker. Called on the way out. */

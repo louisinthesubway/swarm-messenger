@@ -24,6 +24,7 @@ import {
   openSwarmWalletWithPhrase,
   quoteSwarmWalletSend,
   refreshSwarmWallet,
+  revealSwarmRecoveryPhrase,
   setSwarmWalletNetwork,
 } from '../../services/swarmWallet.preload.ts';
 import type {
@@ -158,6 +159,8 @@ export const SmartSwarmWalletTab = memo(
         onSetNetwork={onSetNetwork}
         onCopyAddress={onCopyAddress}
         transactionLabels={labels}
+        // SWARM addition (B6, 2026-09-29): "Recovery phrase".
+        onRevealRecoveryPhrase={revealSwarmRecoveryPhrase}
       />
     );
   }

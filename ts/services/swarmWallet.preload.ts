@@ -20,6 +20,7 @@ import {
   FindTransactionResultSchema,
   NewAddressResultSchema,
   QuoteSendResultSchema,
+  RevealRecoveryPhraseResultSchema,
   SWARM_WALLET_CHANNEL,
   SwarmWalletProblemSchema,
   SwarmWalletStateSchema,
@@ -30,6 +31,7 @@ import type {
   FindTransactionResultType,
   NewAddressResultType,
   QuoteSendResultType,
+  RevealRecoveryPhraseResultType,
   SwarmWalletNetworkIdType,
   SwarmWalletProblemType,
   SwarmWalletStateType,
@@ -198,4 +200,18 @@ export async function findSwarmTransaction({
   const result = parseUnknown(FindTransactionResultSchema, answer);
   noteSwarmWalletChain(result.chain);
   return result;
+}
+
+// SWARM addition (B6, 2026-09-29): recovery phrase export ---------------------
+
+/**
+ * Asks the main process to show the recovery phrase in a window of its own,
+ * after Touch ID or Windows Hello where the computer has it. The answer says
+ * only whether the window opened: the words never come to this window.
+ */
+export async function revealSwarmRecoveryPhrase(): Promise<RevealRecoveryPhraseResultType> {
+  const answer: unknown = await ipcRenderer.invoke(
+    SWARM_WALLET_CHANNEL.revealRecoveryPhrase
+  );
+  return parseUnknown(RevealRecoveryPhraseResultSchema, answer);
 }

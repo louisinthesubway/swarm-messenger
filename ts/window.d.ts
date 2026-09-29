@@ -18,6 +18,12 @@ import type { ReduxActions } from './state/types.std.ts';
 import type { ScreenShareStatus } from './types/Calling.std.ts';
 import type { MessageCache } from './services/MessageCache.preload.ts';
 import type { StateType } from './state/reducer.preload.ts';
+import type {
+  RecoveryPhraseCopyAnswerType,
+  RecoveryPhraseRevealResultType,
+  RecoveryPhraseSaveAnswerType,
+  RecoveryPhraseStatusType,
+} from './types/SwarmRecoveryPhrase.std.ts';
 import type { CIType } from './CI.preload.ts';
 import type { IPCEventsType } from './util/createIPCEvents.preload.ts';
 import type { SignalContextType } from './windows/context.preload.ts';
@@ -118,6 +124,15 @@ type ScreenShareWindowPropsType = {
   setRenderCallback: (cb: () => void) => void;
 };
 
+// SWARM addition (B6, 2026-09-29): the recovery phrase window.
+type SwarmRecoveryPhraseWindowPropsType = {
+  getStatus: () => Promise<RecoveryPhraseStatusType>;
+  reveal: (confirmation: string) => Promise<RecoveryPhraseRevealResultType>;
+  copy: (words: ReadonlyArray<string>) => Promise<RecoveryPhraseCopyAnswerType>;
+  save: (words: ReadonlyArray<string>) => Promise<RecoveryPhraseSaveAnswerType>;
+  close: () => void;
+};
+
 type SettingsOnRenderCallbackType = (props: PreferencesPropsType) => void;
 
 type SettingsWindowPropsType = {
@@ -132,6 +147,7 @@ export type SignalCoreType = {
   PermissionsWindowProps?: PermissionsWindowPropsType;
   ScreenShareWindowProps?: ScreenShareWindowPropsType;
   SettingsWindowProps?: SettingsWindowPropsType;
+  SwarmRecoveryPhraseWindowProps?: SwarmRecoveryPhraseWindowPropsType;
 
   OS: OSType;
 

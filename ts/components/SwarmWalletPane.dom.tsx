@@ -7,7 +7,9 @@
 // the person's intentions back through callbacks. It holds no key and no seed,
 // and it never writes an address or an amount to a log. The one secret it ever
 // touches is the recovery phrase typed into the restore form, which goes
-// straight to the callback and is cleared from the field.
+// straight to the callback and is cleared from the field. ("Recovery phrase",
+// B6, only asks the main process to show the words in a window of its own;
+// they never come here.)
 //
 // Sending takes two deliberate steps: "Review payment" asks the wallet for a
 // quote (nothing moves), and only the button on the confirmation screen, which
@@ -25,11 +27,16 @@ import {
   formatZatoshiAsSwm,
   zatoshiFromString,
 } from '../util/swarm/swmAmount.std.ts';
+import {
+  countRecoveryPhraseWords,
+  recoveryPhraseFromText,
+} from '../util/swarm/recoveryPhraseText.std.ts';
 import { explorerTransactionUrl } from '../types/SwarmWallet.std.ts';
 import type { LocalizerType } from '../types/Util.std.ts';
 import type {
   ConfirmSendResultType,
   QuoteSendResultType,
+  RevealRecoveryPhraseResultType,
   SwarmWalletNetworkIdType,
   SwarmWalletProblemType,
   SwarmWalletStateType,
@@ -66,6 +73,11 @@ export type SwarmWalletPaneProps = Readonly<{
   onCopyAddress: (address: string) => void;
   /** SWARM addition (M3 wave 2): "from Ada" beside a transaction, by txid. */
   transactionLabels?: Readonly<Record<string, SwarmTransactionLabelType>>;
+  /**
+   * SWARM addition (B6, 2026-09-29): asks the main process to show the
+   * recovery phrase in a window of its own. The answer never holds the words.
+   */
+  onRevealRecoveryPhrase: () => Promise<RevealRecoveryPhraseResultType>;
 }>;
 
 export function SwarmWalletPane(props: SwarmWalletPaneProps): JSX.Element {
@@ -244,6 +256,7 @@ function Offline({
   i18n,
   state,
   onRetry,
+  onRevealRecoveryPhrase,
 }: SwarmWalletPaneProps & { state: SwarmWalletStateType }): JSX.Element {
   return (
     <section data-testid="offline" className={tw('flex flex-col gap-3')}>
@@ -265,6 +278,14 @@ function Offline({
           <BalanceRows i18n={i18n} state={state} />
         </Card>
       ) : null}
+      {/* SWARM addition (B6): the words are in the wallet file, not on the
+          light server, so they can be shown while it is unreachable. */}
+      {state.balance != null ? (
+        <RecoveryPhrase
+          i18n={i18n}
+          onRevealRecoveryPhrase={onRevealRecoveryPhrase}
+        />
+      ) : null}
     </section>
   );
 }
@@ -280,8 +301,9 @@ function RestoreForm({
   const [busy, setBusy] = useState(false);
   const [problem, setProblem] = useState<SwarmWalletProblemType | null>(null);
 
-  const wordCount =
-    phrase.trim() === '' ? 0 : phrase.trim().split(/\s+/u).length;
+  // SWARM change (B6, 2026-09-29): a pasted recovery phrase file counts as
+  // its 24 words; its warning line is not a word.
+  const wordCount = countRecoveryPhraseWords(phrase);
 
   const submit = async () => {
     if (busy || wordCount !== 24) {
@@ -289,7 +311,7 @@ function RestoreForm({
     }
     setBusy(true);
     setProblem(null);
-    const typed = phrase;
+    const typed = recoveryPhraseFromText(phrase);
     // The words leave the field as they leave for the main process.
     setPhrase('');
     let answer: SwarmWalletProblemType | null;
@@ -379,7 +401,81 @@ function Ready(
         onCancelQuote={props.onCancelQuote}
       />
       <History i18n={i18n} state={state} labels={props.transactionLabels} />
+      <RecoveryPhrase
+        i18n={i18n}
+        onRevealRecoveryPhrase={props.onRevealRecoveryPhrase}
+      />
     </div>
+  );
+}
+
+// Recovery phrase (B6) -----------------------------------------------------------
+
+/**
+ * SWARM addition (B6, 2026-09-29): "Recovery phrase". One sentence on what the
+ * words are, and a button that asks the main process to show them in a window
+ * of its own. The words never come to this pane.
+ */
+function RecoveryPhrase({
+  i18n,
+  onRevealRecoveryPhrase,
+}: {
+  i18n: LocalizerType;
+  onRevealRecoveryPhrase: () => Promise<RevealRecoveryPhraseResultType>;
+}): JSX.Element {
+  const [busy, setBusy] = useState(false);
+  const [refusal, setRefusal] = useState<
+    'not-ready' | 'not-confirmed' | 'failed' | null
+  >(null);
+
+  const reveal = async () => {
+    if (busy) {
+      return;
+    }
+    setBusy(true);
+    setRefusal(null);
+    try {
+      const result = await onRevealRecoveryPhrase();
+      setRefusal(result.ok ? null : result.refusal);
+    } catch {
+      setRefusal('failed');
+    }
+    setBusy(false);
+  };
+
+  return (
+    <section data-testid="recovery-phrase">
+      <Card title={i18n('icu:SwarmWallet__recovery--title')}>
+        <p className={tw('type-body-medium text-primary')}>
+          {i18n('icu:SwarmWallet__recovery--body')}
+        </p>
+        {refusal != null ? (
+          <p className={tw('type-body-small text-destructive')}>
+            {refusal === 'not-ready'
+              ? i18n('icu:SwarmWallet__recovery--not-ready')
+              : null}
+            {refusal === 'not-confirmed'
+              ? i18n('icu:SwarmWallet__recovery--not-confirmed')
+              : null}
+            {refusal === 'failed'
+              ? i18n('icu:SwarmWallet__recovery--failed')
+              : null}
+          </p>
+        ) : null}
+        <div>
+          <AxoButton.Root
+            variant="subtle-secondary"
+            size="md"
+            pending={busy}
+            onClick={() => {
+              void reveal();
+            }}
+          >
+            {i18n('icu:SwarmWallet__recovery--button')}
+          </AxoButton.Root>
+        </div>
+      </Card>
+    </section>
   );
 }
 
