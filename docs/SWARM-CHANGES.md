@@ -744,3 +744,15 @@ Deliberately not done:
 - **An encrypted export, a QR code, printing, other languages, showing the words
   in the main window.** None of these was asked for; each is a separate owner
   decision.
+
+## 3m. Version 0.1.2: the rebrand release
+
+2026-09-29, owner decision ("in the messenger app you still have signal hints.
+Need to be all changed."): `package.json` `version` becomes `0.1.2`. This
+release carries sections 3h to 3l: no Signal in menus, metadata or the About
+window (B2c); every language says SWARM Messenger (B1); username, group and
+sticker links on swarm.green with the SWARM mark in every QR code (B3); no
+phone number in the interface (B4); the debug log stays on this computer (B5);
+and the recovery phrase export from the Wallet tab (B6). Installed 0.1.0 and
+0.1.1 keep working against the same server; the update is a manual download,
+as before (`docs/RELEASES.md`).
