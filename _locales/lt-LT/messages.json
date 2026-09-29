@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Vis tiek prisijungti"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Kai spustelėsite „Pateikti“, jūsų žurnalas bus 30-čiai dienų paskelbtas internete unikaliu neskelbiamu URL adresu. Galite, iš pradžių, įsirašyti jį savo įrenginyje."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Šis žurnalas bus viešai paskelbtas internete talkininkams peržiūrėti. Prieš pateikdami, galite jį atsisiųsti."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Kažkas nutiko su išsiuntimu! Prašome parašyti el. laišką adresu support@swarm.green ir pridėti savo žurnalą kaip tekstinį failą."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Derinimo žurnalas pateiktas"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Derinimo žurnalas išsiųstas. Kai susisieksite su palaikymu, nukopijuokite žemiau esantį URL adresą ir pridėkite jį kartu su problemos, su kuria susidūrėte, aprašu ir žingsniais, kaip galima ją pakartoti."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "…jei nori žiūrėti visą žurnalą, spustelėk „Išsaugoti“"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Kopijuoti nuorodą"
-  },
   "icu:debugLogSave": {
     "messageformat": "Įrašyti"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Nuoroda nukopijuota į iškarpinę"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Susisiekti su palaikymu"
   },
   "icu:submit": {
     "messageformat": "Pateikti"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Jūsų įrenginio data netiksli. Pakoreguokite laikrodį ir bandykite vėl. Jūsų įrenginio data ir laikas:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Derinimo žurnalas"
   },
   "icu:debugLog": {
     "messageformat": "Derinimo žurnalas"

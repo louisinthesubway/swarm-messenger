@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Aj tak sa pripojiť"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Keď kliknete na Odoslať, váš záznam bude zverejnený online na 30 dní na jedinečnej, nepublikovanej adrese URL. Najprv ho môžete uložiť lokálne."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Tento denník bude zverejnený online, aby ho mohli prispievatelia vidieť. Pred odoslaním si ho môžete stiahnuť."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Pri nahrávaní sa niečo pokazilo! Pošlite e-mail na adresu support@swarm.green a priložte svoj denník ako textový súbor."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Bol odoslaný denník ladenia"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Denník ladenia (debug log) bol nahraný. Keď kontaktujete podporu, skopírujte nižšie uvedenú adresu URL a pripojte ju spolu s popisom problému, ktorý ste videli a krokmi na jeho zopakovanie."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "…ak chcete zobraziť celý záznam, kliknite na tlačidlo Uložiť"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Kopírovať odkaz"
-  },
   "icu:debugLogSave": {
     "messageformat": "Uložiť"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Odkaz bol skopírovaný do schránky"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Kontaktovať zákaznícku podporu"
   },
   "icu:submit": {
     "messageformat": "Odoslať"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Dátum vášho zariadenia je nepresný. Upravte si hodiny a skúste to znova. Dátum a čas vášho zariadenia je:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Ladiaci log"
   },
   "icu:debugLog": {
     "messageformat": "Ladiaci Log"

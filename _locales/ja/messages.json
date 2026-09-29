@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "それでも参加"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "「送信する」をクリックすると、このログがユニークな未公開のURLで30日間見られるようになります。\n「保存」をクリックすると、送信する前にあなたの端末にログを保存しておくこともできます。"
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "このログは、関係者が閲覧できるようにオンラインで公開されます。ログは、送信前にダウンロードすることができます。"
-  },
-  "icu:debugLogError": {
-    "messageformat": "アップロードできませんでした！ログのテキストファイルを support@swarm.green にメールでお送りください。"
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "デバッグログを送信しました"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "デバッグログを送信しました。サポートへお問い合わせの際には、以下のURLをコピーしてお送りください。また、不具合の内容とその不具合を再現する手順も添えてください。"
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "…完全なログを表示するには、保存をクリックします。"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "リンクをコピー"
-  },
   "icu:debugLogSave": {
     "messageformat": "保存"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "リンクをクリップボードにコピーしました"
-  },
-  "icu:reportIssue": {
-    "messageformat": "サポートに問い合わせる"
   },
   "icu:submit": {
     "messageformat": "送信"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "ご利用の端末の日時が正しくありません。日時を調整してもう一度お試しください。ご利用の端末の日時："
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "デバッグログ"
   },
   "icu:debugLog": {
     "messageformat": "デバッグログ"

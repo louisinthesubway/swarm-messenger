@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Aderir na mesma"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Ao clicar em 'Enviar', o seu histórico será postado online durante 30 dias num URL exclusivo e não publicado. Você pode guardá-lo localmente primeiro."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Este registo será publicado online para ser consultado pelos contribuidores. Pode transferi-lo antes de o enviar."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Ocorreu algo de errado ao carregar! Por favor envie um e-mail para support@swarm.green e anexe o seu relatório como ficheiro de texto."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Relatório de depuração submetido"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Foi carregado o relatório de depuração. Ao contactar o suporte, copie o URL abaixo e anexe-o acompanhado com uma descrição do problema que teve e com os passos para os reproduzir."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… para ver o histórico completo, clique em Guardar"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Copiar link"
-  },
   "icu:debugLogSave": {
     "messageformat": "Guardar"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Link copiado para a sua área de transferência"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Contactar o Suporte"
   },
   "icu:submit": {
     "messageformat": "Submeter"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "A data do seu dispositivo está incorreta. Ajuste o seu relógio e tente novamente. A data e hora do seu dispositivo é:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Enviar relatório de depuração"
   },
   "icu:debugLog": {
     "messageformat": "Relatório de depuração"

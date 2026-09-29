@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Alătură-te oricum"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Când apeși Trimite, jurnalul tău de depanare va fi postat online pentru 30 de zile cu un URL unic și nepublicat. Poți să-l salvezi local mai întâi."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Acest jurnal va fi publicat online pentru ca toți colaboratorii să îl poată vizualiza. Îl poți descărca înainte de a trimite."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Ceva nu a funcționat în timpul încărcării! Te rugăm trimite un e-mail la support@swarm.green și atașează jurnalul ca fișier text."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Jurnal de depanare trimis"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Jurnal de depanare încărcat. Când iei legătura cu serviciul de asistență, copiază linkul de mai jos și atașează-l împreună cu o descriere a problemei pe care ai observat-o și pașii de reproducere a acesteia."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "... pentru a vedea jurnalul întreg, apasă Salvează"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Copiază Linkul"
-  },
   "icu:debugLogSave": {
     "messageformat": "Salvează"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Link copiat în clipboard"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Contactează suportul"
   },
   "icu:submit": {
     "messageformat": "Trimite"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Data dispozitivului nu este corectă. Ajustează-ți ceasul și încearcă din nou. Data și timpul dispozitivului tău este:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Jurnal depanare"
   },
   "icu:debugLog": {
     "messageformat": "Jurnalul de depanare"

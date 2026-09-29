@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Svejedno se pridruži"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Kada kliknete pošalji, vaš će zapisnik biti objavljen online 30 dana na jedinstvenom, neobjavljenom URL-u. Možete ga najprije spremiti lokalno."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Ovaj će zapisnik biti javno objavljen na internetu kako bi ga suradnici mogli pregledati. Možete ga preuzeti prije slanja."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Došlo je do pogreške pri učitavanju! Pošaljite e-poruku na support@swarm.green i priložite svoj zapisnik u obliku tekstualne datoteke."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Zapisnik otklanjanja pogrešaka je podnesen"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Zapisnik otklanjanja pogrešaka je učitan. Prilikom kontaktiranja podrške, kopirajte donji URL i priložite ga zajedno s opisom problema koji ste uočili i koracima za njegovu reprodukciju."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… za pregled cijelog zapisnika kliknite Spremi"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Kopiraj poveznicu"
-  },
   "icu:debugLogSave": {
     "messageformat": "Spremi"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Poveznica je kopirana u međuspremnik"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Kontaktirajte podršku"
   },
   "icu:submit": {
     "messageformat": "Pošalji"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Datum postavljen na vašem uređaju je netočan. Ispravite ga i pokušajte ponovno. Datum i vrijeme na vašem uređaju:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Zapisnik pogreške"
   },
   "icu:debugLog": {
     "messageformat": "Zapisnik pogreške"

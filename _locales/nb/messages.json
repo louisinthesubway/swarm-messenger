@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Bli med likevel"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Når du klikker på Send inn, legges loggen din ut i 30 dager på en unik og upublisert nettadresse. Du kan også lagre den lokalt først."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Denne loggen publiseres på nettet, slik at bidragsytere kan se den. Du kan laste den ned før du sender den inn."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Noe gikk galt under opplastingen! Send en e-post til support@swarm.green og legg ved loggen din som en tekstfil."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Feilsøkingslogg sendt inn"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Feilsøkingsloggen er lastet opp. Kopier nettadressen nedenfor og legg den ved i e-posten til kundestøtteteamet, sammen med en beskrivelse av problemet og trinn for å gjenskape det."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… for å se hele loggen trykker du på Lagre"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Kopier lenke"
-  },
   "icu:debugLogSave": {
     "messageformat": "Lagre"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Lenken kopiert til utklippstavlen"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Kontakt brukerstøtte"
   },
   "icu:submit": {
     "messageformat": "Send"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Datoen på enheten stemmer ikke. Still inn klokken og prøv på nytt. Datoen og tidspunktet på enheten er:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Feilsøkingslogg"
   },
   "icu:debugLog": {
     "messageformat": "Feilsøkingslogg"

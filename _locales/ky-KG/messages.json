@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Баары бир кошулуу"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "\"Тапшыруу\" баскычын басканыңызда журналыңыз уникалдуу, жарыяланбаган URL дарегинде 30 күн бою онлайнда жайгаштырылат. Адегенде аны жергиликтүү түрдө сактасаңыз болот."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Бул журнал салым кошкондор үчүн Интернетке жалпыга ачык жарыяланат. Жөнөтөрдөн мурун аны жүктөп алсаңыз болот."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Жүктөп алууда бир жерден ката кетти! Сураныч, support@swarm.green дарегине электрондук кат жөнөтүңүз жана журналыңызды текст файлы катары тиркеңиз."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Мүчүлүштүктөр журналы жөнөтүлдү"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Мүчүлүштүктөр журналы жүктөлүп берилди. Колдоо кызматына кайрылганыңызда, төмөнкү URL'ни көчүрүп, аны сиз көргөн көйгөйдүн сүрөттөмөсү жана аны кайра чыгаруу кадамдары менен кошо тиркеңиз."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "... толук журналды көрүү үчүн \"Сактоо\" дегенди басыңыз"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Шилтемени көчүрүү"
-  },
   "icu:debugLogSave": {
     "messageformat": "Сактоо"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Шилтеме алмашуу буфериңизге көчүрүлдү"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Кардарларды колдоо кызматына кайрылуу"
   },
   "icu:submit": {
     "messageformat": "Тапшыруу"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Түзмөгүңүздүн убакыты туура эмес.\n Саатыңызды тууралап, кайталап көрүңүз. Түзмөгүңүздүн убакыты:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Мүчүлүштүктөр журналы"
   },
   "icu:debugLog": {
     "messageformat": "Мүчүлүштүктөр журналы"

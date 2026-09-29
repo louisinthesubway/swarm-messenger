@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "بہرصورت شامل ہوں"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "آپ کے جمع کروائیں پر کلک کرنے پر، آپ کا لاگ ایک منفرد، غیر پبلش شدہ URL پر 30 دنوں کے لیے آن لائن پوسٹ کر دیا جائے گا۔ آپ پہلے اسے مقامی طور پر محفوظ کر سکتے ہیں۔"
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "یہ لاگ عوامی طور پر آن لائن شائع کیا جائے گا تاکہ معاونین اسے دیکھیں۔ آپ اسے جمع کروانے سے پہلے ڈاؤن لوڈ کر سکتے ہیں۔"
-  },
-  "icu:debugLogError": {
-    "messageformat": "اپ لوڈ کے ساتھ کوئی خرابی واقع ہو گئی ہے! براہ کرم support@swarm.green پر ای میل کریں اور متنی فائل کے طور پر اپنا لاگ منسلک کریں۔"
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "ڈیبگ لاگ جمع کروا دیا گیا"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "ڈیبگ لاگ اپ لوڈ کر دیا گیا۔ جب آپ معاونت سے رابطہ کریں، تو ذیل میں URL کاپی کریں اور جس مسئلے کو آپ نے دیکھا تھا اس کی وضاحت اور اسے دوبارہ تخلیق کرنے کے اقدامات کے ساتھ اسے منسلک کریں۔"
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "... مکمل لاگ دیکھنے کے لیے، محفوظ کریں پر کلک کریں"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "لنک کاپی کریں"
-  },
   "icu:debugLogSave": {
     "messageformat": "محفوظ کریں"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "لنک آپ کے کلپ بورڈ میں کاپی ہوگیا"
-  },
-  "icu:reportIssue": {
-    "messageformat": "سپورٹ سے رابطہ کریں"
   },
   "icu:submit": {
     "messageformat": "جمح کریں"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "آپ کی ڈیوائس کی تاریخ درست نہیں ہے۔ اپنی گھڑی کو ایڈجسٹ کریں اور دوبارہ کوشش کریں۔ آپ کی ڈیوائس کی تاریخ اور وقت یہ ہے:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "ڈی بگ لاگ"
   },
   "icu:debugLog": {
     "messageformat": "ڈی بگ لاگ"

@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Сонда да қосылу"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "\"Жіберу\" түймесін басқанда, сіздің журналыңыз 30 күнге бірегей жарияланбаған URL мекенжайына жарияланады. Оны алдымен жергілікті сақтап қоюыңызға болады."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Бұл журнал баршаға ашық жарияланады және үлес қосушылар оны онлайн көре алады. Жібермес бұрын оны жүктеп алуыңызға болады."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Жүктеп салу кезінде бірдеңе дұрыс болмады! support@swarm.green электрондық мекенжайына хат жазып, журналыңызды мәтіндік файл ретінде тіркеңіз."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Ақауларды түзету журналы жіберілді"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Ақауларды түзету журналы жүктеп салынды. Қолдау көрсету қызметіне хабарласқанда, төмендегі URL сілтемені көшіріңіз және тап болған қиындық сипаттамасына және оны шешу қадамдарына тіркеңіз."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "...журналды толық көру үшін, Сақтау түймесін басыңыз"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Сілтемені көшіру"
-  },
   "icu:debugLogSave": {
     "messageformat": "Сақтау"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Сілтеме буферге көшірілді"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Қолдау қызметіне хабарласу"
   },
   "icu:submit": {
     "messageformat": "Жіберу"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Құрылғы күні дұрыс емес. Сағатыңызды реттеп, қайталап көріңіз. Құрылғы күні мен уақыты:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Ақауларды түзету журналы"
   },
   "icu:debugLog": {
     "messageformat": "Ақауларды түзету журналы"

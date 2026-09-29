@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Deltag alligevel"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Når du klikker på Indsend, bliver din log lagt online i 30 dage på en unik, ikke-offentliggjort URL-adresse. Du kan gemme den lokalt først."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Denne log vil blive offentliggjort online, så bidragydere kan se den. Du kan downloade den før indsendelse."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Noget gik galt med upload! Send venligst en e-mail til support@swarm.green og vedhæft din log som en tekstfil."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Fejlsøgningslog indsendt"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Fejlsøgningslog overført. Når du kontakter support, skal du kopiere nedenstående URL-adresse og vedhæfte den sammen med en beskrivelse af det problem, du så, og de trin, du skal følge for at genskabe det."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "…klik på Gem for at se den fulde log"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Kopier link"
-  },
   "icu:debugLogSave": {
     "messageformat": "Gem"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Link er kopieret til din udklipsholder"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Kontakt Support"
   },
   "icu:submit": {
     "messageformat": "Indsend"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Din enheds dato er ikke korrekt. Ret dato og klokkeslæt, og prøv igen. Din enheds dato og klokkeslæt er:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Fejlsøgningslog"
   },
   "icu:debugLog": {
     "messageformat": "Fejlsøgningslog"

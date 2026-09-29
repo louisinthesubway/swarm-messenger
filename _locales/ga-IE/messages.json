@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Téigh isteach ar aon nós"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Nuair a chliceálann tú Cuir Isteach, postálfar do loga ar líne go ceann 30 lá ag URL uathúil neamhfhoilsithe. Is féidir leat é a shábháil go logánta ar dtús."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Postálfar an loga seo go poiblí ar líne le go mbeidh rannpháirtithe in ann féachaint air. Is féidir leat é a íoslódáil sula gcuireann tú isteach é."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Chuaigh rud éigin mícheart leis an uaslódáil! Seol ríomhphost chuig support@swarm.green agus cuir do loga i gceangal mar chomhad téacs."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Loga dífhabhtaithe curtha isteach"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Loga dífhabhtaithe uaslódáilte. Nuair a dhéanann tú teagmháil leis an bhfoireann tacaíochta, cóipeáil an URL thíos agus cuir i gceangal é mar aon le cur síos ar an bhfadhb a chonaic tú agus céimeanna lena feiceáil arís."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… chun an loga iomlán a fheiceáil, cliceáil Sábháil"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Cóipeáil an Nasc"
-  },
   "icu:debugLogSave": {
     "messageformat": "Cuir i dtaisce é"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Nasc Cóipeáilte Chuig Do Ghearrthaisce"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Déan Teagmháil le Foireann Tacaíochta Signal"
   },
   "icu:submit": {
     "messageformat": "Seol isteach é"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Tá dáta do ghléis míchruinn. Athraigh do chlog agus triail arís. Dáta agus am do ghléis:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Logchomhad dífhabhtaithe"
   },
   "icu:debugLog": {
     "messageformat": "Logchomhad dífhabhtaithe"

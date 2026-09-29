@@ -52,7 +52,6 @@ import * as Errors from '../ts/types/errors.std.ts';
 import { resolveCanonicalLocales } from '../ts/util/resolveCanonicalLocales.std.ts';
 import { createLogger } from '../ts/logging/log.std.ts';
 import * as debugLog from '../ts/logging/debuglogs.node.ts';
-import * as uploadDebugLog from '../ts/logging/uploadDebugLog.node.ts';
 import { explodePromise } from '../ts/util/explodePromise.std.ts';
 
 import './startup_config.main.ts';
@@ -61,6 +60,10 @@ import type { RendererConfigType } from '../ts/types/RendererConfig.std.ts';
 import { rendererConfigSchema } from '../ts/types/RendererConfig.std.ts';
 import config from './config.main.ts';
 import { enforceSwarmConfig } from './swarmStartupGuard.main.ts';
+import {
+  getDebugLogFileName,
+  type DebugLogSaveResult,
+} from '../ts/util/swarm/debugLogFile.std.ts';
 import {
   Environment,
   getEnvironment,
@@ -1526,22 +1529,20 @@ async function openArtCreator() {
 }
 
 let debugLogWindow: BrowserWindow | undefined;
-let debugLogCurrentMode: 'submit' | 'close' | undefined;
+// SWARM change (B5, 2026-09-29): the window looks the same in both modes -
+// save, copy, close; nothing is uploaded. The mode only records who opened it:
+// 'close' windows belong to a dialog (call-quality survey, key-verification
+// error) and close with it, see 'close-debug-log'.
+let debugLogCurrentMode: 'save' | 'close' | undefined;
 type DebugLogWindowOptions = {
-  mode?: 'submit' | 'close';
+  mode?: 'save' | 'close';
 };
 
 async function showDebugLogWindow(options: DebugLogWindowOptions = {}) {
-  const newMode = options.mode ?? 'submit';
+  const newMode = options.mode ?? 'save';
 
   if (debugLogWindow) {
-    if (debugLogCurrentMode !== newMode) {
-      debugLogCurrentMode = newMode;
-      const url = pathToFileURL(join(rootDir, 'debug_log.html'));
-      url.searchParams.set('mode', newMode);
-      await safeLoadURL(debugLogWindow, url.href);
-    }
-
+    debugLogCurrentMode = newMode;
     doShowDebugLogWindow();
     return;
   }
@@ -1602,10 +1603,6 @@ async function showDebugLogWindow(options: DebugLogWindowOptions = {}) {
   });
 
   const url = pathToFileURL(join(rootDir, 'debug_log.html'));
-  if (options.mode) {
-    url.searchParams.set('mode', options.mode);
-  }
-
   await safeLoadURL(debugLogWindow, url.href);
 }
 
@@ -2941,21 +2938,32 @@ ipc.on(
     void showDebugLogWindow(options);
   }
 );
-ipc.on(
+// SWARM change (B5, 2026-09-29): saving to a file is the only way a debug log
+// leaves the app; there is no upload. The renderer waits for the answer so it
+// can say "saved" or show an error.
+ipc.handle(
   'show-debug-log-save-dialog',
-  async (_event: Electron.Event, logText: string) => {
+  async (
+    event: Electron.IpcMainInvokeEvent,
+    logText: string
+  ): Promise<DebugLogSaveResult> => {
+    const fileName = getDebugLogFileName(new Date());
     // Workaround KDE portal file dialog default path issue
-    const defaultPath = OS.isLinuxUsingKDE()
-      ? '~/debuglog.txt'
-      : 'debuglog.txt';
+    const defaultPath = OS.isLinuxUsingKDE() ? `~/${fileName}` : fileName;
 
-    const { filePath } = await dialog.showSaveDialog({
+    const options: Electron.SaveDialogOptions = {
       defaultPath,
       showsTagField: false,
-    });
-    if (filePath) {
-      await writeFile(filePath, logText);
+    };
+    const parent = BrowserWindow.fromWebContents(event.sender);
+    const { canceled, filePath } = parent
+      ? await dialog.showSaveDialog(parent, options)
+      : await dialog.showSaveDialog(options);
+    if (canceled || !filePath) {
+      return 'canceled';
     }
+    await writeFile(filePath, logText);
+    return 'saved';
   }
 );
 
@@ -3141,14 +3149,6 @@ ipc.handle(
     );
   }
 );
-
-ipc.handle('DebugLogs.upload', async (_event, content: string) => {
-  return uploadDebugLog.upload({
-    content,
-    appVersion: app.getVersion(),
-    logger: log,
-  });
-});
 
 ipc.on('get-user-data-path', event => {
   // oxlint-disable-next-line no-param-reassign

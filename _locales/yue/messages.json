@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "照樣加入"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "當你㩒咗提交之後，你嘅記錄會透過一個專屬而且未經發佈嘅網址喺網上發佈 30 日。你可以事先喺你部機度儲存記錄。"
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "呢個記錄檔將會公開擺上網，畀有心貢獻嘅人睇到。你可以下載咗先再提交。"
-  },
-  "icu:debugLogError": {
-    "messageformat": "上載嘅時候出現咗問題！請你電郵去 support@swarm.green，同埋用文字檔案交埋你嘅記錄檔俾我哋。"
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "已經提交咗除錯記錄"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "系統已經上載咗除錯記錄。當你聯絡支援團隊嘅時候，請你複製下面嘅 URL 俾我哋，同埋描述吓你見到嘅問題，仲有重現問題嘅步驟。"
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "...㩒一下「儲存」嚟睇吓完整嘅記錄"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "複製連結"
-  },
   "icu:debugLogSave": {
     "messageformat": "儲存"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "已經將連結複製咗去你嘅剪貼簿"
-  },
-  "icu:reportIssue": {
-    "messageformat": "聯絡支援團隊"
   },
   "icu:submit": {
     "messageformat": "提交"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "你部裝置嘅日期唔準確。較下你個鐘，然後再試多次。你裝置嘅日期同時間係："
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "除錯記錄"
   },
   "icu:debugLog": {
     "messageformat": "除錯記錄"

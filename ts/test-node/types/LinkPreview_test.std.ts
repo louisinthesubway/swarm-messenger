@@ -61,7 +61,6 @@ describe('Link previews', () => {
     });
 
     it('returns false for skipped domains', () => {
-      assert.isFalse(shouldPreviewHref('https://debuglogs.org'));
       assert.isFalse(shouldPreviewHref('https://example.com'));
       assert.isFalse(shouldPreviewHref('https://new.example'));
       assert.isFalse(shouldPreviewHref('https://onion'));

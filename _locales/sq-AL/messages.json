@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Bashkohu, sidoqoftë"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Kur klikoni mbi Parashtroje, regjistri juaj do të postohet në internet për 30 ditë, te një URL unike, e pabotuar më parë. Mundeni ta Ruani lokalisht, së pari."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Regjistri do të postohet publikisht në internet që ta shohin kontribuesit. Mund ta shkarkosh përpara se ta dërgosh."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Diç shkoi ters me ngarkimin! Ju lutemi, dërgoni një email te support@swarm.green dhe bashkëngjitni si një kartelë tekst regjistrin tuaj."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "U parashtrua regjistër diagnostikimi"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Regjistri i diagnostikimit u ngarkua, kopjoni URL-në më poshtë dhe bashkëngjiteni te një përshkrim i problemit që patë dhe hapa për ta riprodhuar atë."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… që të shihni regjistrin e plotë, klikoni mbi Ruaje"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Kopjoji Lidhjen"
-  },
   "icu:debugLogSave": {
     "messageformat": "Ruaje"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Lidhja u Kopjua në të Papastrën Tuaj"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Lidhuni Me Asistencën"
   },
   "icu:submit": {
     "messageformat": "Parashtrojeni"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Data e pajisjes është e pasaktë. Rregullo orën e pajisjes dhe provo përsëri. Data dhe ora e pajisjes janë:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Regjistër diagnostikimesh"
   },
   "icu:debugLog": {
     "messageformat": "Regjistër Diagnostikimesh"

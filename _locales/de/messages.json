@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Trotzdem beitreten"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Wenn du auf »Übermitteln« klickst, wird dein Diagnoseprotokoll unter einer eindeutigen, unveröffentlichten Internetadresse für 30 Tage online gestellt. Du kannst es aber auch erst lokal speichern."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Dieses Diagnoseprotokoll wird öffentlich online gestellt, sodass Mitwirkende es einsehen können. Du kannst es vor dem Abschicken herunterladen."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Beim Hochladen gab es ein Problem. Schreib bitte eine E-Mail an support@swarm.green und hänge das Diagnoseprotokoll als Textdatei an."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Diagnoseprotokoll übermittelt"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Diagnoseprotokoll wurde hochgeladen. Wenn du den Support kontaktierst, kopiere die unten stehende Internetadresse und füge sie deiner Problembeschreibung und den Schritten, um das Problem zu reproduzieren, bei."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… um das gesamte Diagnoseprotokoll zu sehen, klicke auf »Speichern«"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Link kopieren"
-  },
   "icu:debugLogSave": {
     "messageformat": "Speichern"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Link in Zwischenablage kopiert"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Support kontaktieren"
   },
   "icu:submit": {
     "messageformat": "Übermitteln"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Das Datum deines Geräts stimmt nicht. Stell deine Uhr richtig ein und versuch’s noch mal. Die Uhrzeit und das Datum deines Geräts lauten:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Diagnoseprotokoll"
   },
   "icu:debugLog": {
     "messageformat": "Diagnoseprotokoll"

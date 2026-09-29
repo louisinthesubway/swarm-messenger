@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Усе одно приєднатися"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Коли ви натиснете «Надіслати», журнал буде вивантажено в мережу на 30 днів за унікальною URL-адресою, до якої немає загального доступу. Перед надсиланням його також можна зберегти на пристрої."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Цей журнал буде загальнодоступний онлайн для перегляду відповідними фахівцями. Ви можете завантажити його перед надсиланням."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Під час вивантаження сталася помилка! Надішліть електронний лист на адресу support@swarm.green, вклавши до нього журнал налагодження як текстовий файл."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Журнал налагодження надіслано"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Журнал налагодження вивантажено. Оформлюючи звернення в службу підтримки, скопіюйте URL-адресу й долучіть її до опису вашої проблеми разом з кроками для її відтворення."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "…для перегляду повного журналу натисніть «Зберегти»"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Копіювати посилання"
-  },
   "icu:debugLogSave": {
     "messageformat": "Зберегти"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Посилання скопійовано в буфер обміну"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Звернутися в службу підтримки"
   },
   "icu:submit": {
     "messageformat": "Надіслати"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Ваш пристрій неправильно показує дату. Налаштуйте годинник і спробуйте знову. Дата і час на вашому пристрої:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Журнал налагодження"
   },
   "icu:debugLog": {
     "messageformat": "Журнал налагодження"

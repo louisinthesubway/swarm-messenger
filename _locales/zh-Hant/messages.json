@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "仍要加入"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "當你點擊提交時，你的日誌將在一個唯一的、未發布的 URL 上在線發布 30 天。你可以先將其保存在本地。"
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "此記錄將公開發布於線上供貢獻者查閱。你可在提交前下載該檔案。"
-  },
-  "icu:debugLogError": {
-    "messageformat": "上傳出了點問題！ 請傳送電子郵件至 support@swarm.green 並將你的日誌作為文字檔案附上。"
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "偵錯日誌已上傳"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "已上傳偵錯日誌。 當你聯絡支援人員時，請複製下面的 URL 並將其附上你看到的問題的描述和重現問題的步驟。"
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "…要查看完整日誌，請點擊儲存"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "複製連結"
-  },
   "icu:debugLogSave": {
     "messageformat": "儲存"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "連結複製到剪貼簿"
-  },
-  "icu:reportIssue": {
-    "messageformat": "聯絡支援"
   },
   "icu:submit": {
     "messageformat": "送出"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "你的裝置日期不正確。請調整你的時鐘，然後再試一次。你的裝置日期和時間為："
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "除錯日誌"
   },
   "icu:debugLog": {
     "messageformat": "除錯日誌"

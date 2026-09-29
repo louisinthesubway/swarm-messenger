@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "보내기"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "로그를 제출하면 별도의 비공개 URL에 30일 동안 게시됩니다. 필요하시면 먼저 기기에 저장해 두세요."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "이 로그는 기여자들이 볼 수 있도록 온라인에 공개적으로 게시됩니다. 로그는 제출하기 전에 다운로드할 수 있습니다."
-  },
-  "icu:debugLogError": {
-    "messageformat": "업로드 중 문제가 발생했습니다. 로그를 텍스트 파일로 첨부하여 support@swarm.green에 이메일을 보내주세요."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "디버그 로그 제출함"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "디버그 로그 업로드가 완료되었습니다. 고객 지원으로 문의하실 경우, 아래 URL을 복사해 문제에 대한 설명과 해당 문제를 재현하기 위한 단계별 절차를 함께 보내주세요."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… 전체 로그를 보려면 저장을 클릭하세요."
   },
-  "icu:debugLogCopy": {
-    "messageformat": "링크 복사"
-  },
   "icu:debugLogSave": {
     "messageformat": "저장"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "클립보드에서 링크가 복사되었습니다"
-  },
-  "icu:reportIssue": {
-    "messageformat": "고객 지원에 문의하기"
   },
   "icu:submit": {
     "messageformat": "제출"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "기기의 날짜 설정이 올바르지 않습니다. 기기 시간을 변경한 후 다시 시도해 주세요. 현재 기기의 날짜 및 시간:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "디버그 로그"
   },
   "icu:debugLog": {
     "messageformat": "디버그 로그"

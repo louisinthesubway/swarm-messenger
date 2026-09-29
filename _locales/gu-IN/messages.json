@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "તો પણ જોડાઓ"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "તમે સબમિટ પર ક્લિક કરશો ત્યારે લૉગ 30 દિવસ માટે ઓનલાઇન એક અનન્ય, અપ્રકાશિત URL પર પોસ્ટ થશે. તમે પહેલાં તેને સ્થાનિક રીતે સેવ કરી શકો છો."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "આ લૉગ યોગદાનકર્તાઓ જોઈ શકે તે માટે સાર્વજનિક રીતે ઓનલાઇન પોસ્ટ કરવામાં આવશે. તમે સબમિટ કરતા પહેલાં તેને ડાઉનલોડ કરી શકો છો."
-  },
-  "icu:debugLogError": {
-    "messageformat": "અપલોડ કરવામાં કશુંક ખોટું થયું! કૃપા કરીને support@swarm.green ને ઇમેઇલ કરો અને તમારા લૉગને ટેક્સ્ટ ફાઇલ તરીકે અટેચ કરો."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "ડીબગ લૉગ સબમિટ કર્યો"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "ડીબગ લૉગ અપલોડ કર્યો. તમે સપોર્ટનો સંપર્ક કરો ત્યારે નીચેની URL કોપી કરો અને તમને જે સમસ્યા દેખાઈ હતી તેના વર્ણન તથા તે સમસ્યા ફરીથી કેવી રીતે આવે છે તેના પગલાં સાથે તેને અટેચ કરો."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "... સંપૂર્ણ લૉગ જોવા માટે, સેવ પર ક્લિક કરો"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "લિંક કૉપિ કરો"
-  },
   "icu:debugLogSave": {
     "messageformat": "સેવ કરો"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "લિંક તમારા ક્લિપબોર્ડ પર કૉપી કરી"
-  },
-  "icu:reportIssue": {
-    "messageformat": "સપોર્ટનો સંપર્ક કરો"
   },
   "icu:submit": {
     "messageformat": "સબમિટ કરો"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "તમારા ડિવાઇસની તારીખ અચોક્કસ છે. તમારી ઘડિયાળ એડજસ્ટ કરો અને ફરી પ્રયાસ કરો. તમારા ડિવાઇસની તારીખ અને સમય છે:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "ડીબગ લૉગ"
   },
   "icu:debugLog": {
     "messageformat": "ડીબગ લૉગ"

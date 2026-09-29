@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Rejoindre quand même"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Après avoir cliqué sur \"Envoyer\", votre journal sera publié en ligne pendant 30 jours sur une URL non publique unique. Vous pouvez d'abord  l'enregistrer localement."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Ce journal sera publiquement disponible sur le web, où les contributeurs pourront le consulter. Vous pouvez le télécharger avant de nous l'envoyer."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Un problème s’est produit lors de l’importation. Merci de nous envoyer le journal au format texte à l’adresse suivante : support@swarm.green."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Journal de débogage envoyé"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Le journal de débogage a bien été importé. Pensez à copier l’URL ci-dessous et à la communiquer au service d’assistance lorsque vous le contacterez. N’oubliez pas non plus de décrire le problème rencontré, ainsi que les étapes à suivre pour le reproduire."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… pour afficher l’intégralité du journal, cliquez sur Enregistrer."
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Copier le lien"
-  },
   "icu:debugLogSave": {
     "messageformat": "Enregistrer"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Lien copié dans le presse-papiers"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Contacter l'assistance"
   },
   "icu:submit": {
     "messageformat": "Envoyer"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Votre appareil n'affiche pas la bonne date.\n Réglez l'horloge, puis réessayez. Date et heure de votre appareil :"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Journal de débogage"
   },
   "icu:debugLog": {
     "messageformat": "Journal de débogage"

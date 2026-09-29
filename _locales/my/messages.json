@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "မည်သို့ပင်ဖြစ်စေ ပါဝင်မည်"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "ပေးပို့ရန်ကို နှိပ်သည့်အခါ သင့်မှတ်တမ်းကို သီးခြား အများနှင့်မဆိုင်သော URL တွင် ရက် ၃၀ ကြာ ပို့စ်တင်ထားပါမည်။ ဦးစွာ ၎င်းကို စက်တွင်း သိမ်းထားနိုင်ပါသည်။"
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "ကူညီပံ့ပိုးသူများ ကြည့်ရှုနိုင်ရန်အတွက် ဤမှတ်တမ်းကို အွန်လိုင်းတွင် လူသူမရွေးကြည့်နိုင်ရန် တင်သွားပါမည်။ မတင်သွင်းမီ ဒေါင်းလုဒ်လုပ်ထားနိုင်ပါသည်။"
-  },
-  "icu:debugLogError": {
-    "messageformat": "အပ်လုဒ်လုပ်ရာတွင် တစ်စုံတစ်ခု မှားယွင်းသွားသည်။ support@swarm.green ကို အီးမေးလ် ပို့ပြီး သင့်မှတ်တမ်းကို စာသားဖိုင်အဖြစ် ဖိုင်တွဲပို့ပါ။"
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "ပြစ်ချက်မှတ်တမ်း ပေးပို့ပြီး"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "ပြစ်ချက်မှတ်တမ်း အပ်ဒိတ်လုပ်ပြီး။ ပံ့ပိုးမှုစင်တာသို့ ဆက်သွယ်သည့်အခါ အောက်ပါ URL ကို ကူးပြီး သင်မြင်တွေ့သော ပြဿနာဖော်ပြချက်၊ ၎င်းကို ပြုလုပ်ရန် အဆင့်များနှင့်အတူ တွဲပို့ပါ။"
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "... မှတ်တမ်းအပြည့်ကြည့်ရန်အတွက် သိမ်းရန်ကို နှိပ်ပါ"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "link ကို ကူးယူရန်"
-  },
   "icu:debugLogSave": {
     "messageformat": "သိမ်းမယ်"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "သင့် ကလစ်ဘုတ်တွင် လင့်ခ် ကူးပြီး"
-  },
-  "icu:reportIssue": {
-    "messageformat": "ပံ့ပိုးမှုစင်တာသို့ ဆက်သွယ်ပါ"
   },
   "icu:submit": {
     "messageformat": "တင်မည်"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "သင့်စက်၏ ရက်စွဲ မမှန်ကန်ပါ။ သင့်စက်၏ နာရီကို မှန်ကန်အောင် ချိန်ညှိပြီး ထပ်မံကြိုးစားပါ။ သင့်စက်၏ ရက်စွဲနှင့် အချိန်မှာ-"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "ပြစ်ချက်မှတ်တမ်း"
   },
   "icu:debugLog": {
     "messageformat": "ပြစ်ချက်မှတ်တမ်း"

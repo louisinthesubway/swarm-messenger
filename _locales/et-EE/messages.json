@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Liitu siiski"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Kui klõpsad \"Saada\", postitatakse sinu logi 30 päevaks veebi unikaalsele avaldamata URL-aadressile. Soovi korral võid selle enne kohalikult salvestada."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "See logi postitatakse internetti avalikult, et kaaspanustajad saaksid seda näha. Võid selle enne üleslaadimist üle vaadata."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Midagi läks üleslaadimisega kehvasti! Palun saada kiri aadressile support@swarm.green ja lisa logifailid tekstifailina."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Silumislogi postitatud"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Silumislogi (Debug log) on üles laaditud. Kui võtad kasutajatoega ühendust, siis kopeeri allpool olev URL ja lisa see koos sinu poolt nähtud probleemi kirjeldusega ning sammudega, kuidas seda uuesti tekitada."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "Terve logi nägemiseks vajuta \"Salvesta\""
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Kopeeri link"
-  },
   "icu:debugLogSave": {
     "messageformat": "Salvesta"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Link kopeeriti lõikepuhvrisse"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Võta ühendust kasutajatoega"
   },
   "icu:submit": {
     "messageformat": "Postita"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Sinu seadme kuupäev on vale. Muuda kellaaega ja proovi uuesti. Sinu seadme kuupäev ja kellaaeg on:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Silumisinfo"
   },
   "icu:debugLog": {
     "messageformat": "Silumisinfo"

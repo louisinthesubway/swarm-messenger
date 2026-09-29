@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Toch deelnemen"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Dit log bevat geen persoonlijke details zoals telefoonnummers. Als je op uploaden klikt dan wordt dit log 30 dagen lang online beschikbaar gesteld op een unieke nergens onthulde URL. Die URL kun je zelf naar de ontwikkelaars sturen. Je kunt dit log ook offline op je eigen apparaat opslaan."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Dit log wordt online openbaar gemaakt zodat bijdragers het kunnen bekijken. Je kunt het downloaden voordat je het indient."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Er is iets misgegaan bij het uploaden. Stuur alsjeblieft een e-mail naar support@swarm.green en voeg aan die e-mail je foutopsporingslog toe als een tekstbestand."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Foutopsporingslog succesvol geüpload"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Neem nu contact op met ondersteuning en kopieer de URL hieronder om die samen met een omschrijving van je probleem en een omschrijving van de stappen om het probleem te veroorzaken in te dienen."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… klik op Opslaan om het volledige log te zien."
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Link kopiëren"
-  },
   "icu:debugLogSave": {
     "messageformat": "Opslaan"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "De link is naar het klembord gekopieerd"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Neem contact op met ondersteuning"
   },
   "icu:submit": {
     "messageformat": "Uploaden"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "De datum op je apparaat is incorrect. Pas je klok aan en probeer het opnieuw. De datum en tijd op je apparaat is:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Foutopsporingslog"
   },
   "icu:debugLog": {
     "messageformat": "Foutopsporingslog"

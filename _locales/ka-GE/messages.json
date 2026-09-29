@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "მაინც შესვლა"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "როცა \"გაგზავნა\"-ზე დააწკაპუნებ, შენი რეესტრი ინტერნეტში გამოქვეყნდება 30 დღით უნიკალურ, გამოუქვეყნებელ URL-ზე. შეგიძლია ის ჯერ ადგილობრივად შეინახო."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "ეს რეესტრი საჯაროდ გამოქვეყნდება, რომ კონტრიბუტორებმა ნახონ. შეგიძლია ატვირთვამდე გადმოწერო."
-  },
-  "icu:debugLogError": {
-    "messageformat": "ატვირთვისას რაღაც შეცდომა მოხდა! გთხოვთ, support@swarm.green -ს მიწერო და შენი რეესტრი ტექსტურ ფაილად დაურთო."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "გაუმართაობის რეესტრი ატვირთულია"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "გაუმართაობის რეესტრი ატვირთულია. როცა მხარდაჭერის გუნდს დაუკავშირდები, დააკოპირე ქვემოთ მოცემული URL-ი და დაურთე შენს მიერ შემჩნეული პრობლემის აღწერილობა და მისი წარმოქმნის ნაბიჯები."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… სრული რეესტრის სანახავად დააწკაპუნე შენახვაზე"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "ბმულის დაკოპირება"
-  },
   "icu:debugLogSave": {
     "messageformat": "შენახვა"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "ბმული შენს ბუფერში დაკოპირდა"
-  },
-  "icu:reportIssue": {
-    "messageformat": "მხარდაჭერის გუნდთან დაკავშირება"
   },
   "icu:submit": {
     "messageformat": "დადასტურება"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "შენი მოწყობილობის თარიღი არასწორია. საათი გაასწორე და თავიდან სცადე. შენი მოწყობილობის თარიღი და დროა:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "გაუმართაობის რეესტრი"
   },
   "icu:debugLog": {
     "messageformat": "გაუმართაობის რეესტრი"

@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Lanjut bergabung"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Saat mengklik Kirim, log Anda akan diposting online selama 30 hari pada URL unik yang tidak dipublikasikan. Anda dapat menyimpannya dulu di penyimpanan lokal perangkat Anda."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Catatan ini akan diposkan online untuk umum agar para kontributor dapat melihatnya. Boleh diunduh dulu sebelum dikirim."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Terjadi kesalahan ketika mengunggah! Kirimkan email ke support@swarm.green dan lampirkan log Anda dalam bentuk teks."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Log debug terkirim"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Log debug diunggah. Saat Anda menghubungi tim dukungan, salin dan lampirkan URL di bawah disertai dengan deskripsi masalah serta langkah untuk melihat masalah tersebut."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "…untuk melihat log selengkapnya, klik Simpan"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Salin Tautan"
-  },
   "icu:debugLogSave": {
     "messageformat": "Simpan"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Tautan Tersalin ke Clipboard"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Hubungi Tim Bantuan"
   },
   "icu:submit": {
     "messageformat": "Kirim"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Tanggal di perangkat Anda tidak akurat. Sesuaikan waktu dan coba lagi. Tanggal dan waktu di perangkat Anda:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Log debug"
   },
   "icu:debugLog": {
     "messageformat": "Log Debug"

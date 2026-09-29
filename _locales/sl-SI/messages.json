@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Vseeno se pridruži"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "S klikom na Oddaj bo vaša zabeležba za 30 dni objavljena na edinstvenem URL naslovu. Lahko jo pred tem shranite lokalno."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Ta sistemska zabeležba bo javno objavljena na spletu za razvijalce aplikacije. Pred objavo jo lahko prenesete."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Prišlo je do težav pri prenosu! Prosimo pošljite e-pošto s priponko v .txt obliki na support@swarm.green."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Sistemska zabeležba je bila oddana"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Sistemska zabeležba je bila prenesena. Ko boste stopili v stik s podporno službo, prekopirajte spodnji URL naslov in ga pripnite skupaj z opisom problema ter koraki za njegovo ponovitev."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "... za ogled celotnega dnevnika kliknite Shrani"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Kopiraj povezavo"
-  },
   "icu:debugLogSave": {
     "messageformat": "Shrani"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Povezava je bila kopirana v odložišče"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Kontaktiraj center za podporo"
   },
   "icu:submit": {
     "messageformat": "Objavi"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Datum v vaši napravi ni pravilen. Prilagodite uro in poskusite ponovno. Datum in ura v vaši napravi sta:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Sistemska zabeležba"
   },
   "icu:debugLog": {
     "messageformat": "Sistemska zabeležba"
