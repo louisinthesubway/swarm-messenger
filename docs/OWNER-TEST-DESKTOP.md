@@ -12,16 +12,19 @@ one creates its own wallet, becomes its own account, and then A and B message ea
 
 ## 1. What works today, and what does not
 
-| Works (tested 2026-09-27)                                                                 | Does not work yet                                                                        |
-| ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------- |
-| Creating an account from a new wallet: no phone number, no SMS                            | Finding someone by the account number shown in Settings ("Failed to fetch phone number") |
-| Setting a username, and finding the other person by that username                         | Stickers and GIF search (no sticker packs or GIF service on this server)                 |
-| Text messages both ways, end-to-end encrypted, delivered in < 1 s                         | Voice and video calls (no calling server yet)                                            |
-| Message request, Accept, read and delivery ticks                                          | Call links (their credentials fail to verify)                                            |
-| Groups: create one, the other person sees it, messages both ways (2026-09-28, section 11) | Linking a second device, and the Linked devices screen                                   |
-| Group photos: one member sets a photo, the others see it (2026-09-29, section 11)         | "Restore a wallet" landing on the same account (built, not yet tested live)              |
-| Closing both apps and opening them again: same accounts, same chat                        |                                                                                          |
-| Photos, both ways (sent, stored on `cdn.chat.swarm.green`, shown)                         |                                                                                          |
+| Works (tested 2026-09-27)                                                                 | Does not work yet                                                                          |
+| ----------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
+| Creating an account from a new wallet: no phone number, no SMS                            | Finding someone by the account number shown in Settings ("Failed to fetch phone number")   |
+| Setting a username, and finding the other person by that username                         | Stickers and GIF search (no sticker packs or GIF service on this server)                   |
+| Text messages both ways, end-to-end encrypted, delivered in < 1 s                         | Linking a second device, and the Linked devices screen                                     |
+| Message request, Accept, read and delivery ticks                                          | "Restore a wallet" landing on the same account (built, not yet tested live)                |
+| Groups: create one, the other person sees it, messages both ways (2026-09-28, section 11) | Sharing a call link outside the app (its address still starts with `https://signal.link/`) |
+| Group photos: one member sets a photo, the others see it (2026-09-29, section 11)         |                                                                                            |
+| Calls one to one, voice and video, also through the relay (2026-09-29, section 12)        |                                                                                            |
+| Group calls, video and voice (2026-09-29, section 12)                                     |                                                                                            |
+| Call links, with "Require admin approval" (2026-09-29, section 12)                        |                                                                                            |
+| Closing both apps and opening them again: same accounts, same chat                        |                                                                                            |
+| Photos, both ways (sent, stored on `cdn.chat.swarm.green`, shown)                         |                                                                                            |
 
 This is the **staging** server. Everything on it is test data and may be wiped at any time. Treat
 both wallets as throwaway: never send SWARM to them.
@@ -159,8 +162,8 @@ Then the restart test:
   ever stays on its spinning circle, it holds up every later message in that chat, because the
   app sends a chat's messages strictly in order. Hover over it, click **⋯**, **Delete**, then
   **Delete for me**; the messages behind it go out within a few minutes.
-- No calls, no call links, no stickers, no second devices (see section 1). Groups work since
-  2026-09-28, group photos since 2026-09-29 (section 11).
+- No stickers, no second devices (see section 1). Groups work since 2026-09-28, group photos since
+  2026-09-29 (section 11), calls and call links since 2026-09-29 (section 12).
 - Settings and contacts sync to the server since 2026-09-28 (Signal's storage service, end-to-end
   encrypted as in Signal). A brand-new account's first read of it answers `404` once in the log;
   that is expected, the app writes it right after.
@@ -389,15 +392,105 @@ name in the panel that opens (**Edit group**), the round picture, **Photo**, cho
 **Save**, and **Save** again; the other members see the photo within seconds, and still after a
 restart (tested 2026-09-29 by Opus M6d with two test instances, not yet with the installed app).
 
-**Not yet:**
+**Group calls** work since 2026-09-29: section 12.
 
-- **Group calls**: there is no calling server.
-- Like everything on this server, groups are test data. They are kept on disk and in the server's
-  nightly snapshot, but the staging server may still be wiped.
+**Keep in mind:** like everything on this server, groups are test data. They are kept on disk and in
+the server's nightly snapshot, but the staging server may still be wiped.
 
 **Settings sync, same day:** the app now also keeps your settings and contact list on the server,
 end-to-end encrypted as in Signal. There is nothing to do; after a change (for example a new
 username) the app's log shows `PUT (REST) https://chat.swarm.green/v1/storage/ 200 Success`.
+
+---
+
+## 12. Calls
+
+Added 2026-09-29 by Opus M7, when the server got a relay for one-to-one calls (TURN) and Signal's
+calling service for group calls (`sfu.chat.swarm.green`). Every step below was carried out that day
+between 02:19 and 02:30 UTC by two desktop instances on this PC (swarm-main `e01c737c0`, the
+accounts of section 11) against `chat.swarm.green`, and every screen named here was seen then,
+unless a step says otherwise. The call screens are Signal's own code, which SWARM did not change;
+the run has not yet been repeated with the installed 0.1.0 app.
+
+**How it was tested, so you know what is still yours to check:** both apps were started with a
+built-in test camera (a green picture with a running clock) instead of a real one, and both
+microphones were muted in every call, because the two test apps ran on your PC with its real
+speakers and microphones and must not echo each other. So the calls connected, stayed connected
+and carried the test video both ways, but **nobody talked**. Hearing each other is the first thing
+to check.
+
+**Before you start:** A and B have each other in their chat lists (sections 5 and 6), and for the
+group call a group with both of them (section 11). The first call on each account opens a small
+**"Allow Access"** window asking for the microphone: click **Allow Access** (a video call asks for
+the camera the same way).
+
+**A call between two people (A calls B):**
+
+1. In window A, open the chat with B and click the **phone** at the top right (**Start a call**;
+   the camera next to it starts a video call).
+2. A screen opens: B's name, "SWARM Messenger will ring Test B", "Your camera is off", and at the
+   bottom a camera button, a microphone button and **Start**. Click **Start**. Window A shows B's
+   name and "Connecting…" while B's app rings.
+3. In window B, a bar appears at the top: "Test A", "Incoming voice call", a red and a green button.
+   Click the **green** one.
+4. Both windows show the call: the other person's picture in the middle, their name and a timer
+   counting up in the bar at the bottom, and your own small picture in the corner. The test call
+   stayed connected for 36 seconds; talk for a while and check that each of you hears the other.
+5. Click **End** in either window; the call ends in both.
+
+**A group call:**
+
+1. In window A, open the group and click the **camera** at the top right (**Start a video call**).
+2. A screen opens with your own camera picture, the group's name and "SWARM Messenger will ring Test
+   B". At the bottom: camera, microphone, a **bell** (ring the others, on by default) and **Start**.
+   Click **Start**. The screen shows your camera, "No one else is here" and "1 person" until someone
+   joins.
+3. In window B, open the group: it shows "Test A started a video call" with **Join call**, and a
+   green **Join** at the top. Click **Join call**, then **Join** on the screen that opens ("Test A is
+   in this call", "1 person"). The test turned the bell off, so the ringing of a group call was not
+   tried.
+4. Both windows show the other's video, "2 people" under the group's name, and your own picture in
+   the corner. Click **Leave** in each window to end it.
+
+**A call link** (a link to a call that anyone with the link can ask to join):
+
+1. In window A, click the **phone** in the left bar (Calls), then **Create a Call Link**. A panel
+   opens with **Join**, **Copy link**, **Share link via SWARM Messenger**, **Require admin approval**
+   (on) and **Delete link**. Click **Join**, then **Join** again on the screen that opens: you are in
+   the call alone.
+2. Give the link to B (**Share link via SWARM Messenger** and pick Test B). In window B, open the
+   link: a screen "SWARM Messenger Call", "Test A is in this call" and **Ask to join**. Click **Ask to
+   join**.
+3. Window A shows "Test B", "Would like to join…" with a red cross and a green tick. Click the
+   **tick**. B is in the call: "2 people", video both ways.
+4. **Leave** in both windows. To delete the link afterwards, wait a minute after the call and click
+   **Delete link** (a link cannot be deleted while its call is still active; in the test, a try
+   right after the call failed and a second one a minute later worked).
+
+In the test, creating the link, handing it to B, opening it in B and deleting it were done with the
+app's own functions from the test harness, not by clicking the buttons of steps 1, 2 and 4; **Ask
+to join**, the approval, **Leave** and the call itself were clicks and screens as above.
+
+The link the app makes still starts with `https://signal.link/call/` (left over from Signal's app):
+the app opens it itself, but **do not open it in a web browser and do not share it outside SWARM
+Messenger** until it has a SWARM address.
+
+**If it does not work:**
+
+- **The call rings but never connects** (it stays on "Connecting…" or ends by itself): right after
+  you clicked **Start**, the app's log (`app.log`, section 8) should have this line:
+  `GET (WS) https://chat.swarm.green/v2/calling/relays 200 Success`. A `500` there means the
+  server's relay credentials are broken; no such line at all means the call never got that far.
+  Report it with the time.
+- **A group call says it cannot connect**: look in the log for the lines with
+  `https://sfu.chat.swarm.green/v2/conference/participants`. `401` or `403` means the group-call
+  keys on the server do not match, `502` that the calling service is down. A `404` before anyone
+  started the call is normal.
+- The server's runbook for calls is section 5d of `docs/STAGING.md` in `swarm-messenger-server`.
+
+**Not yet:** hearing each other (not part of the test, see above), calls between different networks
+or computers (both test apps ran on this PC; one of them was forced through the relay), phones, and
+calls with more than two people.
 
 ---
 
