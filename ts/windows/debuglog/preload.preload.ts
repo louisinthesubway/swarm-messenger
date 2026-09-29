@@ -3,9 +3,12 @@
 
 import { contextBridge, ipcRenderer } from 'electron';
 import { MinimalSignalContext } from '../minimalContext.preload.ts';
+import type { DebugLogSaveResult } from '../../util/swarm/debugLogFile.std.ts';
 
-function downloadLog(logText: string) {
-  ipcRenderer.send('show-debug-log-save-dialog', logText);
+// SWARM change (B5, 2026-09-29): the window can save the log to a file and
+// nothing else; the upload to a Signal service is gone.
+function saveLog(logText: string): Promise<DebugLogSaveResult> {
+  return ipcRenderer.invoke('show-debug-log-save-dialog', logText);
 }
 
 async function fetchLogs() {
@@ -17,19 +20,10 @@ async function fetchLogs() {
   );
 }
 
-function uploadLogs(logs: string) {
-  return ipcRenderer.invoke('DebugLogs.upload', logs);
-}
-
-const urlParams = new URLSearchParams(window.location.search);
-const mode = urlParams.get('mode') === 'close' ? 'close' : 'submit';
-
 const Signal = {
   DebugLogWindowProps: {
-    downloadLog,
+    saveLog,
     fetchLogs,
-    uploadLogs,
-    mode,
   },
 };
 contextBridge.exposeInMainWorld('Signal', Signal);

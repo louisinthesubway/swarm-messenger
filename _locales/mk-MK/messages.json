@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Приклучи се сепак"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Кога ќе кликнете на „Поднеси“, вашиот запис ќе биде објавен онлајн на 30 дена со единствена, необјавена URL-адреса. Можете прво да ја зачувате локално."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Овој запис ќе биде објавен јавно на интернет за да можат да го видат придонесувачите. Можете да го преземете пред да го испратите."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Нешто не е во ред со префрлањето! Испратете е-пошта на support@swarm.green и прикачете го записот како текстуална датотека."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Записот за дебагирање е поднесен"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Записот за дебагирање е префрлен. Кога ќе го контактирате тимот за поддршка, копирајте ја URL-адресата подолу и прикачете ја заедно со опис на проблемот кој го видовте и чекори за повторување на проблемот."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "…кликнете „Зачувај“ за да го видите целиот запис"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Копирај линк"
-  },
   "icu:debugLogSave": {
     "messageformat": "Зачувај"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Линкот е копиран"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Контакт за поддршка"
   },
   "icu:submit": {
     "messageformat": "Испрати"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Датумот на вашиот уред не е точен. Прилагодете го часовникот и обидете се повторно. Датумот и часот на вашиот уред е:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Запис за дебагирање"
   },
   "icu:debugLog": {
     "messageformat": "Запис за дебагирање"

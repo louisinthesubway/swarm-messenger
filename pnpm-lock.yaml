@@ -643,9 +643,6 @@ importers:
       firstline:
         specifier: 2.0.2
         version: 2.0.2
-      form-data:
-        specifier: 4.0.6
-        version: 4.0.6
       fs-extra:
         specifier: 11.3.4
         version: 11.3.4(patch_hash=7672fe14d7eac859c95613f52e44db8413da1c95f63e97aa158a12ff8497a33c)

@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "仍然加入"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "当您点击提交后，您的日志将会在一个唯一的未发布 URL 中在线发布 30 天。您可以先将其保存在本地。"
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "此日志将会在线上公开发布，供贡献者查看。您可以先下载再提交。"
-  },
-  "icu:debugLogError": {
-    "messageformat": "上传出现了问题！请发送电子邮件至 support@swarm.green 并在附件中添加日志的文本文件。"
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "调试日志发送"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "调试日志已上传。当您联系支持团队时，请复制下方的 URL 并附上问题描述和导致问题出现的步骤。"
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "…如要查看完整日志，请点击保存"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "复制链接"
-  },
   "icu:debugLogSave": {
     "messageformat": "保存"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "链接已复制至您的剪贴板"
-  },
-  "icu:reportIssue": {
-    "messageformat": "联系支持"
   },
   "icu:submit": {
     "messageformat": "提交"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "您设备的日期不准确。请调整您的时钟，然后重试。您设备的日期和时间是："
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "调试日志"
   },
   "icu:debugLog": {
     "messageformat": "调试日志"

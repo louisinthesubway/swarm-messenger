@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "ยืนยันที่จะเข้าร่วม"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "เมื่อคลิกส่ง ปูมของคุณจะได้รับการโพสต์ทางออนไลน์เป็นเวลา 30 วัน ผ่าน URL เฉพาะที่ไม่มีการเผยแพร่ คุณสามารถบันทึกไว้ในเครื่องก่อนได้"
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "บันทึกนี้จะถูกโพสต์แบบสาธารณะทางออนไลน์เพื่อให้ผู้สนับสนุนสามารถดูได้ โดยคุณสามารถดาวน์โหลดบันทึกก่อนส่งข้อมูลได้"
-  },
-  "icu:debugLogError": {
-    "messageformat": "เกิดความผิดพลาดบางอย่างกับการอัปโหลด! กรุณาอีเมลไปที่ support@swarm.green พร้อมแนบปูมของคุณในรูปแบบไฟล์ข้อความ (text file)"
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "ส่งปูมดีบักเรียบร้อยแล้ว"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "อัปโหลดปูมดีบักเรียบร้อยแล้ว เมื่อคุณติดต่อศูนย์ช่วยเหลือ ให้คัดลอก URL ด้านล่าง แนบไปพร้อมกับคำอธิบายเกี่ยวกับปัญหาที่คุณพบเห็น รวมถึงขั้นตอนต่างๆ ในการจำลองขึ้นใหม่"
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… เพื่อดูปูมฉบับเต็ม คลิกบันทึก"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "คัดลอกลิงก์"
-  },
   "icu:debugLogSave": {
     "messageformat": "บันทึก"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "ลิงก์ได้ถูกคัดลอกไปคลิปบอร์ดของคุณแล้ว"
-  },
-  "icu:reportIssue": {
-    "messageformat": "ติดต่อการสนับสนุน"
   },
   "icu:submit": {
     "messageformat": "ส่ง"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "วันที่บนอุปกรณ์ของคุณไม่ถูกต้อง โปรดปรับนาฬิกาของคุณแล้วลองอีกครั้ง วันที่และเวลาบนอุปกรณ์ของคุณคือ:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "ปูมดีบัก"
   },
   "icu:debugLog": {
     "messageformat": "ปูมดีบัก"

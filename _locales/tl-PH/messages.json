@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Mag-join pa rin"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Kapag na-click mo na ang Submit, ang iyong log ay ipo-post sa isang unique, unpublished URL online sa loob ng 30 days. Maaari mo muna itong i-Save locally."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Ipapakita sa lahat online ang log na ito para makita ng contributors. Maaari mo itong i-download bago i-submit."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Something went wrong with the upload! Mag-email sa support@swarm.green at i-attach ang iyong log as a text file."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Debug log submitted"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Debug log uploaded. Kapag na-contact mo ang support, i-copy ang URL na nasa baba at i-attach ito kasama ang description ng problemang nakita mo pati na rin ang steps para i-reproduce ito."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… para makita ang full log, i-click ang Save"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Kopyahin ang Link"
-  },
   "icu:debugLogSave": {
     "messageformat": "I-save"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Link Copied to Your Clipboard"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Makipag-ugnayan sa Suporta"
   },
   "icu:submit": {
     "messageformat": "Isumite"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Mali ang petsa ng device mo. I-adjust ang clock mo at subukan ulit. Ang petsa at oras ng device mo ay:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Debug log"
   },
   "icu:debugLog": {
     "messageformat": "Debug log"

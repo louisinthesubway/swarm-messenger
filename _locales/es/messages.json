@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Unirme de todos modos"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Si seleccionas Enviar, tu registro se publicará durante 30 días en una URL única y privada. Lo podrás guardar en tu dispositivo como primera opción."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Este registro se publicará online y será de acceso público para todas las personas que colaboran con nosotros. Lo puedes descargar antes de enviarlo."
-  },
-  "icu:debugLogError": {
-    "messageformat": "No se ha podido completar la carga. Envía el registro de depuración en un archivo de texto a support@swarm.green."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Registro de depuración enviado"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Se ha completado la carga del registro de depuración. Cuando contactes con el equipo de Asistencia, copia la URL que se muestra más abajo y envíala junto con una descripción del problema que has tenido y los pasos para reproducirlo."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… para ver el registro de depuración completo, haz clic en Guardar"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Copiar enlace"
-  },
   "icu:debugLogSave": {
     "messageformat": "Guardar"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Enlace copiado al portapapeles"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Contactar con asistencia"
   },
   "icu:submit": {
     "messageformat": "Enviar"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "La fecha de tu dispositivo no es correcta. Modifica tu configuración de hora e inténtalo de nuevo. Fecha y hora de tu dispositivo:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Registro de depuración"
   },
   "icu:debugLog": {
     "messageformat": "Registro de depuración"

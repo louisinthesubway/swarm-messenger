@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Sartu hala ere"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "\"Bidali\" sakatzen duzunean, erregistroa sarera kargatuko da 30 egunez, argitaratu gabeko URL esklusibo batean. Lehenik, gailuan gorde dezakezu."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Erregistro hau publikoki argitaratuko da, laguntzaileek ikus dezaten. Bidali aurretik, deskargatu egin dezakezu."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Arazoren bat izan da kargatzean! Bidali mezu elektroniko bat support@swarm.green helbidera eta erantsi erregistroa testu-fitxategi gisa."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Bidali da arazketa-erregistroa"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Kargatu da arazketa-erregistroa. Laguntza-zerbitzuarekin harremanetan jartzen zarenean, kopiatu beheko URLa eta erants ezazu arazoaren deskribapen batekin eta hura erreproduzitzeko urratsekin."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… erregistro osoa ikusteko, sakatu Gorde"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Lotura kopiatu"
-  },
   "icu:debugLogSave": {
     "messageformat": "Gorde"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Estela arbelera kopiatuta"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Harremanetan jarri laguntza-zerbitzuarekin"
   },
   "icu:submit": {
     "messageformat": "Bidali"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Gailuko data ez da zuzena. Doitu erlojua eta saiatu berriro. Gailuko data eta ordua:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Arazteko informazioa"
   },
   "icu:debugLog": {
     "messageformat": "Arazteko informazioa"

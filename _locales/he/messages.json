@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "להצטרף בכל זאת"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "כשאתה לוחץ הגש, היומן שלך יפורסם באופן מקוון למשך 30 ימים במען ייחודי, בלתי מפורסם. אתה יכול לשמור אותו באופן מקומי תחילה."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "יומן זה יפורסם באופן ציבורי באינטרנט לצפייה על ידי תורמים. ניתן להוריד אותו לפני השליחה."
-  },
-  "icu:debugLogError": {
-    "messageformat": "משהו השתבש עם ההעלאה! אנא שלח דוא״ל אל support@swarm.green וצרף את היומן שלך כקובץ טקסט."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "יומן ניפוי תקלים הוגש"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "קובץ יומן ניפוי תקלים הועלה. כשתיצור קשר עם התמיכה, העתק את המען למטה וצרף אותו ביחד עם תיאור של הבעיה שראית וצעדים להפיק אותה מחדש."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… כדי לראות את היומן המלא, לחץ שמור"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "העתק קישור"
-  },
   "icu:debugLogSave": {
     "messageformat": "שמור"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "קישור הועתק אל לוח הגזירה"
-  },
-  "icu:reportIssue": {
-    "messageformat": "צור קשר עם תמיכה"
   },
   "icu:submit": {
     "messageformat": "שלח"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "התאריך במכשיר שלך לא מדויק. יש לעדכן אותו ולנסות שוב. התאריך והשעה במכשיר שלך הם:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "יומן תקלים"
   },
   "icu:debugLog": {
     "messageformat": "יומן תקלים"

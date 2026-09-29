@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Gå med ändå"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "När du klickar på Skicka kommer din logg att läggas upp på nätet i 30 dagar på en unik, opublicerad webbadress. Du kan spara den lokalt först."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Denna logg kommer att publiceras offentligt online så att bidragsgivare kan se den. Du kan ladda ner den innan du skickar in den."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Något gick fel med sändningen! Skicka e-post till support@swarm.green och bifoga din logg som en textfil."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Felsökningslogg har skickats"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Felsökningslogg uppladdad. När du kontaktar support kopierar du webbadressen nedan och bifogar den tillsammans med en beskrivning av problemet du såg och steg för att återskapa det."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… för att se hela loggen, klicka på Spara"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Kopiera länk"
-  },
   "icu:debugLogSave": {
     "messageformat": "Spara"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Länk kopierad till ditt urklipp"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Kontakta support"
   },
   "icu:submit": {
     "messageformat": "Skicka"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Enhetens datum är felaktigt. Justera klockan och försök igen. Enhetens datum och tid är:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Loggfil för felsökning"
   },
   "icu:debugLog": {
     "messageformat": "Felsökningslogg"

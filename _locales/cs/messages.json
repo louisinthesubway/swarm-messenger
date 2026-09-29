@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Připojit se i tak"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Po kliknutí na tlačítko Odeslat bude váš protokol zveřejněn online po dobu 30 dnů na jedinečné neveřejné adrese URL. Nejprve jej můžete uložit lokálně."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Tento protokol bude zveřejněn online, aby si jej mohli přispěvatelé prohlédnout. Před odesláním si jej můžete stáhnout."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Při nahrávání se něco pokazilo! Pošlete prosím e-mail na adresu support@swarm.green a přiložte protokol jako textový soubor."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Protokol ladění odeslán"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Protokol ladění nahrán. Až budete kontaktovat podporu, zkopírujte níže uvedenou adresu URL a přiložte ji spolu s popisem problému, který jste zaznamenali, a kroků potřebných k jeho opakování."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "…chcete-li zobrazit celý záznam, klikněte na Uložit"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Zkopírovat odkaz"
-  },
   "icu:debugLogSave": {
     "messageformat": "Uložit"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Odkaz zkopírován do schránky"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Kontaktovat podporu"
   },
   "icu:submit": {
     "messageformat": "Odeslat"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Datum ve vašem zařízení je nesprávně. Upravte čas a zkuste to znovu. Datum a čas vašeho zařízení:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Protokol ladění"
   },
   "icu:debugLog": {
     "messageformat": "Protokol ladění"

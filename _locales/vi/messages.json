@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Tiếp tục tham gia"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Khi bạn bấm Gửi, nhật ký của bạn sẽ được đăng online trong 30 ngày tại một URL độc nhất, chưa được xuất bản. Bạn có thể Lưu trên thiết bị trước."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Nhật ký này sẽ được đăng trực tuyến công khai cho những người đóng góp theo dõi. Bạn có thể tải nhật ký xuống trước khi gửi."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Đã xảy ra sự cố với quá trình tải lên! Vui lòng gửi email tới support@swarm.green và đính kèm nhật ký của bạn dưới dạng tệp văn bản."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Đã gửi nhật ký gỡ lỗi"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Nhật ký gỡ lỗi đã được tải lên. Khi bạn liên hệ với bộ phận hỗ trợ, hãy sao chép URL dưới đây và đính kèm nó với mô tả về sự cố bạn gặp và các bước để tái lập sự cố."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… để xem nhật ký đầy đủ, bấm Lưu"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Sao chép Đường dẫn"
-  },
   "icu:debugLogSave": {
     "messageformat": "Lưu"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Đường dẫn đã được sao chép vào bộ nhớ tạm"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Liên lạc Hỗ trợ"
   },
   "icu:submit": {
     "messageformat": "Gửi"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Thông tin ngày trên thiết bị của bạn không chính xác. Chỉnh lại đồng hồ và thử lại. Ngày và giờ trên thiết bị của bạn là:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Nhật ký gỡ lỗi"
   },
   "icu:debugLog": {
     "messageformat": "Nhật ký Gỡ lỗi"

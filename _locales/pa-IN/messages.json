@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "ਫਿਰ ਵੀ ਸ਼ਾਮਲ ਹੋਵੋ"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "ਜਦੋਂ ਤੁਸੀਂ ਦਰਜ ਕਰੋ 'ਤੇ ਕਲਿੱਕ ਕਰਦੇ ਹੋ, ਤਾਂ ਤੁਹਾਡਾ ਲੌਗ 30 ਦਿਨਾਂ ਲਈ ਇੱਕ ਵਿਲੱਖਣ, ਗੈਰ-ਪ੍ਰਕਾਸ਼ਿਤ URL 'ਤੇ ਆਨਲਾਈਨ ਪੋਸਟ ਕਰ ਦਿੱਤਾ ਜਾਵੇਗਾ। ਤੁਸੀਂ ਇਸਨੂੰ ਪਹਿਲਾਂ ਸਥਾਨਕ ਤੌਰ 'ਤੇ ਸੇਵ ਕਰ ਸਕਦੇ ਹੋ।"
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "ਇਸ ਲੌਗ ਨੂੰ ਯੋਗਦਾਨ ਪਾਉਣ ਵਾਲਿਆਂ ਦੇ ਦੇਖਣ ਲਈ ਜਨਤਕ ਤੌਰ ’ਤੇ ਆਨਲਾਈਨ ਪੋਸਟ ਕੀਤਾ ਜਾਵੇਗਾ। ਤੁਸੀਂ ਇਸ ਨੂੰ ਦਰਜ ਕਰਨ ਤੋਂ ਪਹਿਲਾਂ ਡਾਊਨਲੋਡ ਕਰ ਸਕਦੇ ਹੋ।"
-  },
-  "icu:debugLogError": {
-    "messageformat": "ਅੱਪਲੋਡ ਵਿੱਚ ਕੋਈ ਗੜਬੜੀ ਆ ਗਈ ਸੀ! ਕਿਰਪਾ ਕਰਕੇ support@swarm.green 'ਤੇ ਈਮੇਲ ਕਰੋ ਅਤੇ ਟੈਕਸਟ ਫਾਈਲ ਦੇ ਰੂਪ ਵਿੱਚ ਆਪਣੇ ਲੌਗ ਨੂੰ ਅਟੈਚ ਕਰੋ।"
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "ਡੀਬੱਗ ਲੌਗ ਦਰਜ ਕੀਤਾ ਗਿਆ"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "ਡੀਬੱਗ ਲੌਗ ਅੱਪਲੋਡ ਕੀਤਾ ਗਿਆ। ਜਦੋਂ ਤੁਸੀਂ ਸਹਾਇਤਾ ਟੀਮ ਨਾਲ ਸੰਪਰਕ ਕਰਦੇ ਹੋ, ਤਾਂ ਹੇਠਾਂ ਦਿੱਤੇ URL ਨੂੰ ਕਾਪੀ ਕਰੋ ਅਤੇ ਤੁਹਾਨੂੰ ਪੇਸ਼ ਆਈ ਸਮੱਸਿਆ ਦੀ ਜਾਣਕਾਰੀ ਅਤੇ ਇਸ ਸਮੱਸਿਆ ਤੱਕ ਪਹੁੰਚਣ ਦੇ ਕਦਮਾਂ ਦੀ ਜਾਣਕਾਰੀ ਦੇ ਨਾਲ ਇਸ URL ਨੂੰ ਅਟੈਚ ਕਰੋ।"
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "ਪੂਰਾ ਲੌਗ ਦੇਖਣ ਲਈ, ਸੇਵ ਕਰੋ 'ਤੇ ਕਲਿੱਕ ਕਰੋ"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "ਲਿੰਕ ਕਾਪੀ ਕਰੋ"
-  },
   "icu:debugLogSave": {
     "messageformat": "ਸੰਭਾਲੋ"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "ਲਿੰਕ ਤੁਹਾਡੇ ਕਲਿੱਪਬੋਰਡ ’ਤੇ ਕਾਪੀ ਕੀਤਾ ਗਿਆ"
-  },
-  "icu:reportIssue": {
-    "messageformat": "ਸਹਾਇਤਾ ਦੇ ਨਾਲ ਸੰਪਰਕ ਕਰੋ"
   },
   "icu:submit": {
     "messageformat": "ਜਮ੍ਹਾਂ ਕਰੋ"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "ਤੁਹਾਡੇ ਡਿਵਾਈਸ ਦੀ ਮਿਤੀ ਗਲਤ ਹੈ। ਆਪਣੀ ਘੜੀ ਨੂੰ ਠੀਕ ਕਰੋ ਅਤੇ ਦੁਬਾਰਾ ਕੋਸ਼ਿਸ਼ ਕਰੋ। ਤੁਹਾਡੇ ਡਿਵਾਈਸ ਦੀ ਮਿਤੀ ਅਤੇ ਸਮਾਂ ਹੈ:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "ਡੀਬੱਗ ਲੌਗ"
   },
   "icu:debugLog": {
     "messageformat": "ਡੀਬੱਗ ਲੌਗ"

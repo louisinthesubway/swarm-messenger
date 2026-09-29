@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Всё равно отправить"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Когда вы нажмёте «Отправить», ваш журнал будет размещён в интернете на 30 дней по уникальному неопубликованному URL-адресу. Вы можете сначала сохранить его локально."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Этот журнал будет опубликован в интернете, чтобы разработчики смогли его просмотреть. Вы можете загрузить его перед отправкой."
-  },
-  "icu:debugLogError": {
-    "messageformat": "С загрузкой что-то пошло не так! Пожалуйста, отправьте письмо по адресу support@swarm.green и прикрепите свой журнал в виде текстового файла."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Журнал отладки отправлен"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Журнал отладки был загружен. При обращении в поддержку скопируйте URL-адрес, указанный ниже, и вставьте его в письмо вместе с описанием проблемы и действиями для её воспроизведения."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "…чтобы просмотреть журнал полностью, нажмите «Сохранить»"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Копировать ссылку"
-  },
   "icu:debugLogSave": {
     "messageformat": "Сохранить"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Ссылка скопирована в ваш буфер обмена"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Связаться с поддержкой"
   },
   "icu:submit": {
     "messageformat": "Отправить"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "На вашем устройстве указана неточная дата. Измените дату на вашем устройстве и повторите попытку. Дата и время на вашем устройстве:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Журнал отладки"
   },
   "icu:debugLog": {
     "messageformat": "Журнал отладки"

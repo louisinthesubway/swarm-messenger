@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "يەنىلا قوشۇلۇڭ"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "«تاپشۇرۇش» نى چەكسىڭىز، خاتىرىڭىز خاس، ئېلان قىلىنمىغان URL بىلەن توردا 30 كۈن ئېلان قىلىنىدۇ. ئۇنى ئاۋۋال يەرلىكتە ساقلىۋېلىش تەۋسىيە قىلىنىدۇ."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "بۇ خاتىرە تۆھپىكارلارنىڭ كۆرۈشى ئۈچۈن توردا ئاشكارا ئېلان قىلىنىدۇ. يوللاشتىن بۇرۇن چۈشۈرۈۋالسىڭىز بولىدۇ."
-  },
-  "icu:debugLogError": {
-    "messageformat": "يۈكلەشتە خاتالىق كۆرۈلدى! support@swarm.green گە ئېلخەت يوللاڭ ۋە خاتىرىڭىزنى تېكىست ھۆججىتى قىلىپ قىستۇرۇپ قويۇڭ."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "كاشىلا ھەل قىلىش خاتىرىسى تاپشۇرۇلدى"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "كاشىلا ھەل قىلىش خاتىرىسى يۈكلەندى. ياردەم خادىمى بىلەن ئالاقىلاشقاندا، تۆۋەندىكى URL كۆچۈرۈپ، سىز كۆرگەن مەسىلىنى تەسۋىرلەپ بېرىڭ ۋە مەسىلىنى قايتا ھاسىل قىلىش باسقۇچلىرىنى چۈشەندۈرۈپ بېرىڭ."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "... تولۇق خاتىرىنى كۆرۈش ئۈچۈن «ساقلاش» نى چېكىڭ"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "ئۇلانما كۆچۈر"
-  },
   "icu:debugLogSave": {
     "messageformat": "ساقلا"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "ئۇلانما چاپلاش تاختىسىغا كۆچۈرۈلدى"
-  },
-  "icu:reportIssue": {
-    "messageformat": "قوللىغۇچىلار  بىلەن ئالاقىلىشىڭ"
   },
   "icu:submit": {
     "messageformat": "تاپشۇر"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "ئۈسكىنىڭىزنىڭ چېسلاسى خاتا. سائەتنى توغىرلاپ قايتا سىناڭ. ئۈسكۈنىڭىزنىڭ چېسلاسى ۋە ۋاقتى :"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "سازلاش خاتىرىسى"
   },
   "icu:debugLog": {
     "messageformat": "سازلاش خاتىرىسى"

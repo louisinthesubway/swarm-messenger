@@ -12,8 +12,9 @@
 //
 // Two levels, on purpose:
 //
-//  FAIL - a Signal domain (signal.org, signalcaptchas.org, whispersystems)
-//         anywhere in the app's own files. This is the thing that could make the
+//  FAIL - a Signal domain (signal.org, signalcaptchas.org, whispersystems,
+//         and since B5 debuglogs.org and textsecure-service) anywhere in the
+//         app's own files. This is the thing that could make the
 //         app talk to Signal, so there is no tolerance for it.
 //  FAIL - user-visible "Signal" wording in the packaged English strings. No
 //         exception since B2c (2026-09-29): the AGPL-3.0 attribution is not a
@@ -50,6 +51,10 @@ const FORBIDDEN_DOMAINS = [
   /signal\.org/i,
   /signalcaptchas\.org/i,
   /whispersystems/i,
+  // SWARM change (B5, 2026-09-29): Signal's debug-log upload host, and the
+  // server's old service name.
+  /debuglogs\.org/i,
+  /textsecure-service/i,
 ];
 
 // The Licences document (scripts/swarm-generate-licences.mjs writes it,
@@ -169,7 +174,7 @@ function scanText(relPath, text) {
       const where = `${relPath}:${index + 1}`;
       // Bundled code is minified into very long lines - show a window.
       const match = line.match(
-        /.{0,60}(signal\.org|signalcaptchas\.org|whispersystems).{0,60}/i
+        /.{0,60}(signal\.org|signalcaptchas\.org|whispersystems|debuglogs\.org|textsecure-service).{0,60}/i
       );
       domainOffences.push(`${where}: ...${match ? match[0] : line.trim()}...`);
     }
