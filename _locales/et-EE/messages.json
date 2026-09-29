@@ -63,10 +63,10 @@
     "messageformat": "Kõrge kvaliteediga meedia saatmine kasutab rohkem andmesidet."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Anneta Signalile"
+    "messageformat": "Anneta SWARM Messengerile"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "<bold>Lingitud seadmete</bold> funktsioon võimaldab sul turvaliselt ligi pääseda oma Signali kontole ja sõnumitele oma teistest lisaseadmetest."
+    "messageformat": "<bold>Lingitud seadmete</bold> funktsioon võimaldab sul turvaliselt ligi pääseda oma SWARM-i kontole ja sõnumitele oma teistest lisaseadmetest."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "Saad linkida lauaarvuti, tahvli või lisatelefoni."
@@ -81,7 +81,7 @@
     "messageformat": "Konto sätteid ja varukoopiaid saab hallata ainult su peamisest seadmest."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--3--2": {
-    "messageformat": "Account settings and Signal Secure Backups can only be managed on your primary device."
+    "messageformat": "Account settings and SWARM Messenger Secure Backups can only be managed on your primary device."
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "Standardne"
@@ -120,10 +120,10 @@
     "messageformat": "Tundmatu grupp"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Signalit ei saa avada"
+    "messageformat": "SWARM Messengerit ei saa avada"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Selle probleemi lahendamiseks järgi kasutajatoe lehel toodud juhiseid või võta Signaliga ühendust abi saamiseks.\n\nKui sul on vaja Signalit kohe kasutada, saad oma andmed kustutada ja selle arvuti uuesti siduda. Sul on võimalik oma telefonist sõnumiajalugu üle kopeerida."
+    "messageformat": "Selle probleemi lahendamiseks järgi kasutajatoe lehel toodud juhiseid või võta SWARM Messengeriga ühendust abi saamiseks.\n\nKui sul on vaja SWARM Messengerit kohe kasutada, saad oma andmed kustutada ja selle arvuti uuesti siduda. Sul on võimalik oma telefonist sõnumiajalugu üle kopeerida."
   },
   "icu:databaseError": {
     "messageformat": "Andmebaasi tõrge"
@@ -135,16 +135,16 @@
     "messageformat": "Kustuta jäädavalt kõik andmed"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Kogu sinu sõnumiajalugu ja meedia kustutatakse sellest seadmest jäädavalt. Selle käigus ei kustutata andmeid sinu telefonist.\n\nSaad Signalit selles seadmes kasutada, kui selle taasühendad. Sul on võimalik oma telefonist sõnumiajalugu üle kopeerida."
+    "messageformat": "Kogu sinu sõnumiajalugu ja meedia kustutatakse sellest seadmest jäädavalt. Selle käigus ei kustutata andmeid sinu telefonist.\n\nSaad SWARM Messengerit selles seadmes kasutada, kui selle taasühendad. Sul on võimalik oma telefonist sõnumiajalugu üle kopeerida."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Sinu andmebaasi versioon ei klapi selle Signali versiooniga. Veendu, et avasid oma arvutis uusima Signali versiooni."
+    "messageformat": "Sinu andmebaasi versioon ei klapi selle SWARM Messengeri versiooniga. Veendu, et avasid oma arvutis uusima SWARM Messengeri versiooni."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Andmebaasi krüptimisvõtmele ei pääsenud ligi, sest operatsioonisüsteemi krüptimise võtmerõngas {previousBackend} asendus uuega {currentBackend}. See võib juhtuda, kui töölauakeskkond muutub, näiteks GNOME'i ja KDE vahel.\n\nPalun pöördu tagasi endise töölauakeskkonna juurde."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Andmebaasi krüpteerimisvõtmele ei pääsenud ligi, sest operatsioonisüsteemi krüpteerimise võtmerõngas {previousBackend} asendus uuega {currentBackend}. See võib juhtuda, kui töölauakeskkond muutub, näiteks GNOME'i ja KDE vahel.\n\nPalun naase endisse töölauakeskkonda või proovi käivitada Signalit käsurea lipuga --password-store=\"{previousBackendFlag}\""
+    "messageformat": "Andmebaasi krüpteerimisvõtmele ei pääsenud ligi, sest operatsioonisüsteemi krüpteerimise võtmerõngas {previousBackend} asendus uuega {currentBackend}. See võib juhtuda, kui töölauakeskkond muutub, näiteks GNOME'i ja KDE vahel.\n\nPalun naase endisse töölauakeskkonda või proovi käivitada SWARM Messengerit käsurea lipuga --password-store=\"{previousBackendFlag}\""
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -189,7 +189,7 @@
     "messageformat": "Näita kõiki"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Välju Signalist"
+    "messageformat": "Välju SWARM Messengerist"
   },
   "icu:editMenuUndo": {
     "messageformat": "Võta tagasi"
@@ -513,10 +513,10 @@
     "messageformat": "Sa märkisid teisest seadmest turvanumbri kasutajaga {name} mittekinnitatuks"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Turvanumber, mida püüad kinnitada, on muutunud. Palun vaata üle uus turvanumber kasutajaga {name1}. Jäta meelde, et see muudatus võib tähendada, et keegi püüab teie suhtlust pealt kuulata või on {name2} lihtsalt Signali uuesti paigaldanud."
+    "messageformat": "Turvanumber, mida püüad kinnitada, on muutunud. Palun vaata üle uus turvanumber kasutajaga {name1}. Jäta meelde, et see muudatus võib tähendada, et keegi püüab teie suhtlust pealt kuulata või on {name2} lihtsalt SWARM Messengeri uuesti paigaldanud."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Järgmised inimesed võivad olla Signali uuesti alla laadinud või seadet vahetanud. Klõpsa saajale, et kinnitada tema uus turvanumber. See on valikuline."
+    "messageformat": "Järgmised inimesed võivad olla SWARM Messengeri uuesti alla laadinud või seadet vahetanud. Klõpsa saajale, et kinnitada tema uus turvanumber. See on valikuline."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Saada ootel sõnumid"
@@ -525,7 +525,7 @@
     "messageformat": "Ülevaade"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Sul on {count,number} kontakt, kes võib olla Signali uuesti paigaldanud või oma seadme välja vahetanud. Enne saatmist on sul võimalik kontrollida tema turvanumbrit.} other {Sul on {count,number} kontakti, kes võivad olla Signali uuesti paigaldanud või oma seadme välja vahetanud. Enne saatmist on sul võimalik kontrollida nende turvanumbreid.}}"
+    "messageformat": "{count, plural, one {Sul on {count,number} kontakt, kes võib olla SWARM Messengeri uuesti paigaldanud või oma seadme välja vahetanud. Enne saatmist on sul võimalik kontrollida tema turvanumbrit.} other {Sul on {count,number} kontakti, kes võivad olla SWARM Messengeri uuesti paigaldanud või oma seadme välja vahetanud. Enne saatmist on sul võimalik kontrollida nende turvanumbreid.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Kõik kontaktid on kontrollitud, jätkamiseks toksa „Saada“."
@@ -633,16 +633,16 @@
     "messageformat": "Selle vestluse krüpteering kontrolliti automaatselt "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "Isikute puhul, kellega lõid ühenduse telefoninumbri kaudu, kinnitab Signal automaatselt, kas ühendus on turvaline, kasutades protsessi nimega võtme läbipaistvus. Täiendava turvalisuse jaoks võrdle otspunktkrüpteeringu kontrollimiseks eelmisel kuval olevaid numbreid seadmes olevatega või skanni teise inimese seadmes olevat koodi."
+    "messageformat": "Isikute puhul, kellega lõid ühenduse telefoninumbri kaudu, kinnitab SWARM Messenger automaatselt, kas ühendus on turvaline, kasutades protsessi nimega võtme läbipaistvus. Täiendava turvalisuse jaoks võrdle otspunktkrüpteeringu kontrollimiseks eelmisel kuval olevaid numbreid seadmes olevatega või skanni teise inimese seadmes olevat koodi."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "Automaatkinnitus ei ole selle vestluse jaoks saadaval"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "Signal ei saa krüpteeringut selle vestluse jaoks automaatselt kontrollida. See võib olla sellepärast, et {name} muutis oma telefoninumbrit, või olla seotud tema telefoninumbri privaatsussätetega. Otspunktkrüpteeringu kontrollimiseks võrdle eelmisel kuval olevaid numbreid seadmes olevatega või skanni tema seadmes olevat koodi."
+    "messageformat": "SWARM Messenger ei saa krüpteeringut selle vestluse jaoks automaatselt kontrollida. See võib olla sellepärast, et {name} muutis oma telefoninumbrit, või olla seotud tema telefoninumbri privaatsussätetega. Otspunktkrüpteeringu kontrollimiseks võrdle eelmisel kuval olevaid numbreid seadmes olevatega või skanni tema seadmes olevat koodi."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "Signal saab krüpteeringut automaatselt kontrollida ainult vestlustes, kus oled kellegagi telefoninumbri kaudu ühendatud. Kui vestlust alustati ühise kasutajanime või grupiga, kontrolli otspunktkrüpteeringut, võrreldes eelmisel kuval olevaid numbreid või skannides tema seadmes kuvatavat koodi."
+    "messageformat": "SWARM Messenger saab krüpteeringut automaatselt kontrollida ainult vestlustes, kus oled kellegagi telefoninumbri kaudu ühendatud. Kui vestlust alustati ühise kasutajanime või grupiga, kontrolli otspunktkrüpteeringut, võrreldes eelmisel kuval olevaid numbreid või skannides tema seadmes kuvatavat koodi."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "Sobib"
@@ -681,10 +681,10 @@
     "messageformat": "Tänan, ei"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "Signal saab nüüd krüptimist automaatselt kontrollida"
+    "messageformat": "SWARM Messenger saab nüüd krüptimist automaatselt kontrollida"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "Kontaktide puhul, kellega lõid ühenduse telefoninumbri kaudu, kinnitab Signal automaatselt, kas ühendus on turvaline, kasutades protsessi nimega võtme läbipaistvus. Täiendava turvalisuse eesmärgil saab ühendusi endiselt kinnitada ka käsitsi QR-koodi abil või turvanumbreid võrreldes."
+    "messageformat": "Kontaktide puhul, kellega lõid ühenduse telefoninumbri kaudu, kinnitab SWARM Messenger automaatselt, kas ühendus on turvaline, kasutades protsessi nimega võtme läbipaistvus. Täiendava turvalisuse eesmärgil saab ühendusi endiselt kinnitada ka käsitsi QR-koodi abil või turvanumbreid võrreldes."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "Jätka"
@@ -837,7 +837,7 @@
     "messageformat": "Kleebisepaki looja"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Teave Signal Desktopi kohta"
+    "messageformat": "Teave SWARM Messengeri kohta"
   },
   "icu:screenShareWindow": {
     "messageformat": "Ekraani jagamine"
@@ -855,7 +855,7 @@
     "messageformat": "Välju"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "SWARM Messenger"
   },
   "icu:search": {
     "messageformat": "Otsi"
@@ -909,7 +909,7 @@
     "messageformat": "Otsi telefoninumbri järgi"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Tere tulemast Signalisse"
+    "messageformat": "Tere tulemast SWARM Messengerisse"
   },
   "icu:whatsNew": {
     "messageformat": "Vaata {whatsNew} selles versioonis"
@@ -999,13 +999,13 @@
     "messageformat": "Sina"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Häälsõnumite saatmiseks luba Signal Desktopil oma mikrofoni kasutada."
+    "messageformat": "Häälsõnumite saatmiseks luba SWARM Messengeril oma mikrofoni kasutada."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Häälkõnede tegemiseks pead andma Signal Desktop-ile mikrofonile ligipääsu."
+    "messageformat": "Häälkõnede tegemiseks pead andma SWARM Messengerile mikrofonile ligipääsu."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Videokõnede tegemiseks pead andma Signal Desktop-ile kaamerale ligipääsu."
+    "messageformat": "Videokõnede tegemiseks pead andma SWARM Messengerile kaamerale ligipääsu."
   },
   "icu:allowAccess": {
     "messageformat": "Luba ligipääs"
@@ -1032,13 +1032,13 @@
     "messageformat": "Vaigistatud"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signalit ei saanud uuendada. <retryUpdateButton>Proovi uuesti uuendada</retryUpdateButton> või külasta lehte {url}, et see käsitsi paigaldada. Seejärel <contactSupportLink>palun võta ühendust kasutajatoega</contactSupportLink> ning kirjelda probleemi"
+    "messageformat": "SWARM Messengerit ei saanud uuendada. <retryUpdateButton>Proovi uuesti uuendada</retryUpdateButton> või külasta lehte {url}, et see käsitsi paigaldada. Seejärel <contactSupportLink>palun võta ühendust kasutajatoega</contactSupportLink> ning kirjelda probleemi"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signalit ei saanud uuendada. Külasta lehte {url}, et see käsitsi paigaldada. Seejärel <contactSupportLink>palun võta ühendust kasutajatoega</contactSupportLink> ning kirjelda probleemi"
+    "messageformat": "SWARM Messengerit ei saanud uuendada. Külasta lehte {url}, et see käsitsi paigaldada. Seejärel <contactSupportLink>palun võta ühendust kasutajatoega</contactSupportLink> ning kirjelda probleemi"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal Desktop on tõenäoliselt macOS-i karantiinis ja seda pole võimalik automaatselt uuendada. Palun teisalda {app} kausta {folder} Finderi abil."
+    "messageformat": "SWARM Messenger on tõenäoliselt macOS-i karantiinis ja seda pole võimalik automaatselt uuendada. Palun teisalda {app} kausta {folder} Finderi abil."
   },
   "icu:ok": {
     "messageformat": "Sobib"
@@ -1083,7 +1083,7 @@
     "messageformat": "See sõnum kustutatakse sellest seadmest."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "See sõnum kustutatakse kõigilt vestluse liikmetelt, kui nad kasutavad Signali värsket versiooni. Nad näevad, et sa kustutasid sõnumi."
+    "messageformat": "See sõnum kustutatakse kõigilt vestluse liikmetelt, kui nad kasutavad SWARM Messengeri värsket versiooni. Nad näevad, et sa kustutasid sõnumi."
   },
   "icu:from": {
     "messageformat": "Saatja"
@@ -1125,7 +1125,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "„{title}“ on isiku enda lisatud Signali profiilinimi."
+    "messageformat": "„{title}“ on isiku enda lisatud SWARM Messengeri profiilinimi."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Kontrollitud"
@@ -1140,7 +1140,7 @@
     "messageformat": "Sinul ja kasutajal {name} ei ole otsesõnumeid"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signali kontakt"
+    "messageformat": "SWARM-i kontakt"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} on sinu süsteemi kontaktide hulgas"
@@ -1452,7 +1452,7 @@
     "messageformat": "Uuri lähemalt"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal kasutab otspunktkrüptimist ja võib mõnikord vajada vestluse seansi värskendamist. See ei mõjuta vestluse turvalisust, aga sa võisid mõnest selle kontakti sõnumist ilma jääda, seepärast palu tal vajadusel see uuesti saata."
+    "messageformat": "SWARM Messenger kasutab otspunktkrüptimist ja võib mõnikord vajada vestluse seansi värskendamist. See ei mõjuta vestluse turvalisust, aga sa võisid mõnest selle kontakti sõnumist ilma jääda, seepärast palu tal vajadusel see uuesti saata."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Võta ühendust kasutajatoega"
@@ -1479,7 +1479,7 @@
     "messageformat": "{sender} muutis enda telefoninumbrit"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Kontakt liitus Signaliga"
+    "messageformat": "Kontakt liitus SWARM Messengeriga"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} ja {conversationTitle} on sama konto. Sinu mõlema vestluse sõnumiajalugu on siin."
@@ -1569,7 +1569,7 @@
     "messageformat": "Meediat ei saa alla laadida"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Kontrolli oma arvuti ja telefoni internetiühendust. Ava Signal oma telefonis ja proovi see uuesti alla laadida."
+    "messageformat": "Kontrolli oma arvuti ja telefoni internetiühendust. Ava SWARM Messenger oma telefonis ja proovi see uuesti alla laadida."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "See meedia ei ole enam su telefonis saadaval ning seda ei saa alla laadida."
@@ -1590,10 +1590,10 @@
     "messageformat": "Rohkem infot"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Skanni see kood enda telefonis oleva Signal rakendusega"
+    "messageformat": "Skanni see kood enda telefonis oleva SWARM Messengeri rakendusega"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Ava Signal enda telefonis"
+    "messageformat": "Ava SWARM Messenger enda telefonis"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Toksa {settings} ja seejärel {linkedDevices}"
@@ -1611,7 +1611,7 @@
     "messageformat": "<paragraph>Tekkis ootamatu tõrge.</paragraph><paragraph>Palun proovi uuesti.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signal ei saa seda seadet sinu praeguse võrgu kaudu linkida."
+    "messageformat": "SWARM Messenger ei saa seda seadet sinu praeguse võrgu kaudu linkida."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Proovi uuesti"
@@ -1629,7 +1629,7 @@
     "messageformat": "Kas kustutada kõik andmed?"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "Sa üritad selle arvutiga siduda teist Signali kontot. Kui jätkad, kustutatakse kõik praegu Signal Desktopis olevad andmed."
+    "messageformat": "Sa üritad selle arvutiga siduda teist SWARM-i kontot. Kui jätkad, kustutatakse kõik praegu SWARM Messengeris olevad andmed."
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "Jätka"
@@ -1644,7 +1644,7 @@
     "messageformat": "Seadme nimi"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Selle seadme nime muutmiseks ava Signal oma telefonis ja vali Sätted > Lingitud seadmed"
+    "messageformat": "Selle seadme nime muutmiseks ava SWARM Messenger oma telefonis ja vali Sätted > Lingitud seadmed"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Emoji nahatoon"
@@ -1836,7 +1836,7 @@
     "messageformat": "Võtme automaatne kontroll"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "Kui see on lubatud, proovib Signal automaatselt kontrollida üks-ühele vestluste krüptimist."
+    "messageformat": "Kui see on lubatud, proovib SWARM Messenger automaatselt kontrollida üks-ühele vestluste krüptimist."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "Uuri lähemalt"
@@ -1854,7 +1854,7 @@
     "messageformat": "Kahjuks on sul juba liiga palju ühendatud seadmeid. Proovi mõni eemaldada."
   },
   "icu:installTooOld": {
-    "messageformat": "Telefoni ühendamiseks pead selles seadmes Signalit uuendama."
+    "messageformat": "Telefoni ühendamiseks pead selles seadmes SWARM Messengerit uuendama."
   },
   "icu:installErrorHeader": {
     "messageformat": "Midagi läks valesti!"
@@ -1905,7 +1905,7 @@
     "messageformat": "See kõnelink ei kehti enam."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signali kõne"
+    "messageformat": "SWARM Messengeri kõne"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Linki ei saa kustutada. Kontrolli oma ühendust ja proovi uuesti."
@@ -2079,16 +2079,16 @@
     "messageformat": "{count, plural, one {Selles kõnes on {count,number} inimene} other {Selles kõnes on {count,number} inimest}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal helistab isikule {person}"
+    "messageformat": "SWARM Messenger helistab isikule {person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal helistab isikutele {first} ja {second}"
+    "messageformat": "SWARM Messenger helistab isikutele {first} ja {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal helistab isikutele {first}, {second} ja {third}"
+    "messageformat": "SWARM Messenger helistab isikutele {first}, {second} ja {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {Signal helistab isikutele {first}, {second} ja {others,number} muule} other {Signal helistab isikutele {first}, {second} ja {others,number} muule}}"
+    "messageformat": "{others, plural, one {SWARM Messenger helistab isikutele {first}, {second} ja {others,number} muule} other {SWARM Messenger helistab isikutele {first}, {second} ja {others,number} muule}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} saab teavituse"
@@ -2142,13 +2142,13 @@
     "messageformat": "Ühenduse taastamine…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Sinu ühendus katkes. Signal proovib ühendust taastada."
+    "messageformat": "Sinu ühendus katkes. SWARM Messenger proovib ühendust taastada."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal jagab {window}."
+    "messageformat": "SWARM Messenger jagab {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Signali ekraanijagamine on aktiivne"
+    "messageformat": "SWARM Messengeri ekraanijagamine on aktiivne"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Ühenduse taastamine…"
@@ -2169,7 +2169,7 @@
     "messageformat": "Juurdepääs on vajalik"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal vajab juurdepääsu sinu arvuti ekraanisalvestusele."
+    "messageformat": "SWARM Messenger vajab juurdepääsu sinu arvuti ekraanisalvestusele."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Mine süsteemi sätetesse (System Preferences)."
@@ -2178,7 +2178,7 @@
     "messageformat": "Klõpsa vasakul all asuval lukuikoonil ja sisesta enda parool selles arvutis."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Paremal pool märgista Signali kõrval olev kasti. Kui sa ei näe Signalit nimekirjas, siis klõpsa \"+\" ja lisa see."
+    "messageformat": "Paremal pool märgista SWARM Messengeri kõrval olev kasti. Kui sa ei näe SWARM Messengerit nimekirjas, siis klõpsa \"+\" ja lisa see."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Ava süsteemi sätted (System Preferences)"
@@ -2190,7 +2190,7 @@
     "messageformat": "Alati vahenda kõned"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Vahenda kõnesid Signali serveri kaudu, et hoiduda oma IP-aadressi paljastamisest enda kontaktile. Selle lubamine vähendab kõne kvaliteeti."
+    "messageformat": "Vahenda kõnesid SWARM Messengeri serveri kaudu, et hoiduda oma IP-aadressi paljastamisest enda kontaktile. Selle lubamine vähendab kõne kvaliteeti."
   },
   "icu:permissions": {
     "messageformat": "Õigused"
@@ -2208,10 +2208,10 @@
     "messageformat": "Võimalda teksti vormindamise hüpikaken, kui tekst on valitud"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Õigekirja kontroll lubatakse järgmisel Signali käivitamisel."
+    "messageformat": "Õigekirja kontroll lubatakse järgmisel SWARM Messengeri käivitamisel."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Õigekirja kontroll keelatakse järgmisel Signali käivitamisel."
+    "messageformat": "Õigekirja kontroll keelatakse järgmisel SWARM Messengeri käivitamisel."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Minimeeri süsteemisalve"
@@ -2235,7 +2235,7 @@
     "messageformat": "Kas kustutada kõik andmed?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Kas kustutada sellest Signal Desktopi versioonist kõik andmed ja sõnumid? Sinu Signali kontot ja telefonis või muudes lingitud seadmetes olevaid andmeid ei kustutata."
+    "messageformat": "Kas kustutada sellest SWARM Messengeri versioonist kõik andmed ja sõnumid? Sinu SWARM-i kontot ja telefonis või muudes lingitud seadmetes olevaid andmeid ei kustutata."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Ühenduse lõpetamine ja kõigi andmete kustutamine …"
@@ -2244,7 +2244,7 @@
     "messageformat": "Kustuta konto"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "See toiming kustutab sinu konto teabe, profiili ja kõik su sõnumid. Sind eemaldatakse ka kõigist Signali gruppidest."
+    "messageformat": "See toiming kustutab sinu konto teabe, profiili ja kõik su sõnumid. Sind eemaldatakse ka kõigist SWARM-i gruppidest."
   },
   "icu:deleteAccountButton": {
     "messageformat": "Kustuta konto"
@@ -2253,10 +2253,10 @@
     "messageformat": "Kas kustutada konto?"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "See toiming kustutab sinu konto teabe, profiili ja kõik su sõnumid. Sind eemaldatakse ka kõigist Signali gruppidest. Rakendus sulgub pärast selle protsessi lõpuleviimist."
+    "messageformat": "See toiming kustutab sinu konto teabe, profiili ja kõik su sõnumid. Sind eemaldatakse ka kõigist SWARM-i gruppidest. Rakendus sulgub pärast selle protsessi lõpuleviimist."
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Sul on Signal Desktop-i varasematest paigaldustest jäänud üleliigseid andmeid. Kui valid jätkamise, siis need andmed kustutatakse ja sa alustad algusest peale."
+    "messageformat": "Sul on SWARM Messengeri varasematest paigaldustest jäänud üleliigseid andmeid. Kui valid jätkamise, siis need andmed kustutatakse ja sa alustad algusest peale."
   },
   "icu:deleteOldData": {
     "messageformat": "Kustuta vanad andmed"
@@ -2313,7 +2313,7 @@
     "messageformat": "Osaliselt kustutatud, üksikasjade nägemiseks klõpsa"
   },
   "icu:expiredWarning": {
-    "messageformat": "See Signal Desktopi versioon on aegunud. Palun uuenda uusimale versioonile sõnumite saatmiseks jätkamiseks."
+    "messageformat": "See SWARM Messengeri versioon on aegunud. Palun uuenda uusimale versioonile sõnumite saatmiseks jätkamiseks."
   },
   "icu:upgrade": {
     "messageformat": "Klõpsa aadressile swarm.green/download minemiseks"
@@ -2325,7 +2325,7 @@
     "messageformat": "Impordi kontaktid"
   },
   "icu:syncExplanation": {
-    "messageformat": "Impordi kõik Signali grupid ja kontaktid enda nutiseadmest."
+    "messageformat": "Impordi kõik SWARM-i grupid ja kontaktid enda nutiseadmest."
   },
   "icu:syncNow": {
     "messageformat": "Impordi nüüd"
@@ -2358,7 +2358,7 @@
     "messageformat": "Eile {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Signalil võib olla probleeme sissetuleva sõnumi töötlemisega."
+    "messageformat": "SWARM Messengeril võib olla probleeme sissetuleva sõnumi töötlemisega."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Sõnumi sisu on liiga pikk."
@@ -2523,13 +2523,13 @@
     "messageformat": "Muutmine on võimalik vaid 24 tunni jooksul alates sõnumi saatmisest."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} ei ole Signali kasutaja. Veendu, et sisestasid kasutajanime täielikult."
+    "messageformat": "{atUsername} ei ole SWARM Messengeri kasutaja. Veendu, et sisestasid kasutajanime täielikult."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} ei ole kehtiv kasutajanimi. Veendu, et sisestasid korrektse kasutajanime koos selle kahekohalise numbriga."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "Kasutajat ei leitud. \"{phoneNumber}\" ei ole Signali kasutaja."
+    "messageformat": "Kasutajat ei leitud. \"{phoneNumber}\" ei ole SWARM Messengeri kasutaja."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "Kasutajat ei leitud. \"{phoneNumber}\" ei ole kehtiv telefoninumber."
@@ -2550,13 +2550,13 @@
     "messageformat": "Maksimaalne grupisuurus täitunud"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signali grupis võib olla maksimaalselt {max,number} liiget."
+    "messageformat": "SWARM-i grupis võib olla maksimaalselt {max,number} liiget."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Jõuti soovitatava liikmete arvu piirini"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signali grupid toimivad kõige paremini {max,number} või vähema liikmega. Rohkem liikmete lisamine põhjustab viivitusi sõnumite saatmises ja saamises."
+    "messageformat": "SWARM-i grupid toimivad kõige paremini {max,number} või vähema liikmega. Rohkem liikmete lisamine põhjustab viivitusi sõnumite saatmises ja saamises."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Lisa grupile nimi"
@@ -2586,13 +2586,13 @@
     "messageformat": "Grupi uuendamine ei õnnestunud. Kontrolli internetiühendust ja proovi uuesti."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Klõpsa Signal Desktopi nutiseadmega ühendamiseks, et jätkata sõnumite saatmisega."
+    "messageformat": "Klõpsa SWARM Messengeri nutiseadmega ühendamiseks, et jätkata sõnumite saatmisega."
   },
   "icu:unlinked": {
     "messageformat": "Ühendus eemaldatud"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "Klõpsa, et uuesti registreerida ja jätkata sõnumite saatmist. Tõenäoliselt ei ole Signal Desktop enam registreeritud seepärast, et sa registreerisid oma telefoninumbri Signalis teises seadmes."
+    "messageformat": "Klõpsa, et uuesti registreerida ja jätkata sõnumite saatmist. Tõenäoliselt ei ole SWARM Messenger enam registreeritud seepärast, et sa registreerisid oma telefoninumbri SWARM Messengeris teises seadmes."
   },
   "icu:unregistered": {
     "messageformat": "Ei ole enam registreeritud"
@@ -2604,16 +2604,16 @@
     "messageformat": "Proovi uuesti uuendada"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Klõpsa Signali taaskäivitamiseks"
+    "messageformat": "Klõpsa SWARM Messengeri taaskäivitamiseks"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Klõpsa uuenduse allalaadimiseks"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signalit ei saanud uuendada. Klõpsa, et uuesti proovida."
+    "messageformat": "SWARM Messengerit ei saanud uuendada. Klõpsa, et uuesti proovida."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Taaskäivita Signal"
+    "messageformat": "Taaskäivita SWARM Messenger"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Ignoreeri uuendust"
@@ -2745,7 +2745,7 @@
     "messageformat": "Mõned manused on kuvamiseks liiga suured."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Kasuta Signali kõnega liitumiseks seda linki"
+    "messageformat": "Kasuta SWARM-i kõnega liitumiseks seda linki"
   },
   "icu:donation--missing": {
     "messageformat": "Annetuse andmeid ei õnnestunud saada"
@@ -2757,7 +2757,7 @@
     "messageformat": "Oma annetuse nägemiseks toksa mobiilis seda sõnumit"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} annetas Signalile sinu nimel"
+    "messageformat": "{sender} annetas SWARM Messengerile sinu nimel"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Selle annetuse avamiseks kontrolli oma telefoni"
@@ -2814,7 +2814,7 @@
     "messageformat": "Aitäh sinu toetuse eest!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Tegid Signalile kasutaja {name} nimel annetuse. Pakume talle võimalust oma profiilil toetust avaldada."
+    "messageformat": "Tegid SWARM Messengerile kasutaja {name} nimel annetuse. Pakume talle võimalust oma profiilil toetust avaldada."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Kleebisepaki paigaldamine ei õnnestunud"
@@ -2826,10 +2826,10 @@
     "messageformat": "Lisa kleebiseid"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signali artisti seeria"
+    "messageformat": "SWARM Messengeri artisti seeria"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Signal Artist kleebiseid pole saadaval"
+    "messageformat": "SWARM Messenger Artist kleebiseid pole saadaval"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "Sinuga jagatud"
@@ -2865,7 +2865,7 @@
     "messageformat": "Lohista kleebiste komplekti järjekorra muutmiseks"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "Signali artisti seeria kleebiste komplektid"
+    "messageformat": "SWARM Messengeri artisti seeria kleebiste komplektid"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
     "messageformat": "Vastuvõetud kleebiste komplektid"
@@ -3150,19 +3150,19 @@
     "messageformat": "Sõnum on edasi kuvamiseks liiga pikk"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} saatis sulle sõnumi, mida ei saa töödelda või kuvada, sest see kasutab Signali uut funktsionaalsust."
+    "messageformat": "{contact} saatis sulle sõnumi, mida ei saa töödelda või kuvada, sest see kasutab SWARM Messengeri uut funktsionaalsust."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Nüüd, kui kasutad Signali uuendatud versiooni, siis palu kontaktil {contact} sõnum uuesti saata."
+    "messageformat": "Nüüd, kui kasutad SWARM Messengeri uuendatud versiooni, siis palu kontaktil {contact} sõnum uuesti saata."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Üks sinu seadmetest saatis sõnumi, mida ei saa töödelda või kuvada, sest see kasutab Signali uut funktsionaalsust."
+    "messageformat": "Üks sinu seadmetest saatis sõnumi, mida ei saa töödelda või kuvada, sest see kasutab SWARM Messengeri uut funktsionaalsust."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Tulevikusõnumid nagu see sünkroniseeritakse nüüd, kui kasutad värskendatud Signali versiooni."
+    "messageformat": "Tulevikusõnumid nagu see sünkroniseeritakse nüüd, kui kasutad värskendatud SWARM Messengeri versiooni."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Uuenda Signalit"
+    "messageformat": "Uuenda SWARM Messengerit"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Vaadatud"
@@ -3429,7 +3429,7 @@
     "messageformat": "Vestlus märgiti mitteloetuks"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Kleebiste komplekti loomiskeskkonna kasutamiseks pead seadistama Signali nii enda telefonis kui arvutis"
+    "messageformat": "Kleebiste komplekti loomiskeskkonna kasutamiseks pead seadistama SWARM Messengeri nii enda telefonis kui arvutis"
   },
   "icu:Reactions--remove": {
     "messageformat": "Eemalda reaktsioon"
@@ -3447,16 +3447,16 @@
     "messageformat": "Ohutusnõuanded"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "Ära vasta Signali saadetud sõnumitele"
+    "messageformat": "Ära vasta SWARM Messengeri saadetud sõnumitele"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "Signal ei võta sinuga kunagi ühendust registreerimiskoodi, PIN-koodi või taastevõtme küsimiseks. Ära vasta kunagi sõnumitele, milles väidetakse, et need on Signalilt."
+    "messageformat": "SWARM Messenger ei võta sinuga kunagi ühendust registreerimiskoodi, PIN-koodi või taastevõtme küsimiseks. Ära vasta kunagi sõnumitele, milles väidetakse, et need on SWARM Messengerilt."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "Vaata nimed ja fotod üle"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "Pane tähele hoiatust „Nimi kinnitamata“. Kõik valivad Signalis oma profiilinime."
+    "messageformat": "Pane tähele hoiatust „Nimi kinnitamata“. Kõik valivad SWARM Messengeris oma profiilinime."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "Oska märgata pettuseid"
@@ -3465,16 +3465,16 @@
     "messageformat": "Väldi ähmaseid sõnumeid, kus üritatakse sinult vastuseid saada. Ole ettevaatlik finantsnõuannete ja kahtlaste veebilinkide osas."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "Ära vasta Signali saadetud sõnumitele"
+    "messageformat": "Ära vasta SWARM Messengeri saadetud sõnumitele"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Signal ei võta sinuga kunagi ühendust registreerimiskoodi, PIN-koodi või varukoopia võtme küsimiseks. Ära vasta sõnumitele, milles väidetakse, et need on Signalilt või Signali toelt. Pahatahtlikud isikud kasutavad sinu konto ülevõtmiseks valenimesid."
+    "messageformat": "SWARM Messenger ei võta sinuga kunagi ühendust registreerimiskoodi, PIN-koodi või varukoopia võtme küsimiseks. Ära vasta sõnumitele, milles väidetakse, et need on SWARM Messengerilt või SWARM Messengeri toelt. Pahatahtlikud isikud kasutavad sinu konto ülevõtmiseks valenimesid."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "Vaata nimed ja fotod üle"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "Pane tähele hoiatust „Nimi kinnitamata“. Kõik valivad Signalis oma profiilinime ja -foto. Kui sa pole kindel, kellelt taotlus on, siis on turvalisem seda eirata."
+    "messageformat": "Pane tähele hoiatust „Nimi kinnitamata“. Kõik valivad SWARM Messengeris oma profiilinime ja -foto. Kui sa pole kindel, kellelt taotlus on, siis on turvalisem seda eirata."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Krüpto- või rahapettused"
@@ -3555,13 +3555,13 @@
     "messageformat": "Kas teatada rämpspostist?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signalit teavitatakse, et see isik võib olla rämpsposti edastaja. Signal ei näe ühegi vestluse sisu."
+    "messageformat": "SWARM Messengerit teavitatakse, et see isik võib olla rämpsposti edastaja. SWARM Messenger ei näe ühegi vestluse sisu."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signalit teavitatakse, et isik, kes sind sellesse gruppi kutsus, võib olla rämpsposti edastaja. Signal ei näe ühegi vestluse sisu."
+    "messageformat": "SWARM Messengerit teavitatakse, et isik, kes sind sellesse gruppi kutsus, võib olla rämpsposti edastaja. SWARM Messenger ei näe ühegi vestluse sisu."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signalit teavitatakse, et {name}, kes sind sellesse gruppi kutsus, võib olla rämpsposti edastaja. Signal ei näe ühegi vestluse sisu."
+    "messageformat": "SWARM Messengerit teavitatakse, et {name}, kes sind sellesse gruppi kutsus, võib olla rämpsposti edastaja. SWARM Messenger ei näe ühegi vestluse sisu."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Teata rämpspostist"
@@ -3603,7 +3603,7 @@
     "messageformat": "Kas võtta taotlus vastu?"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "Võta kutseid vastu ainult inimestelt, keda usaldad. <bold>Signal ei võta sinuga kunagi</bold> ühendust registreerimiskoodi, PIN-koodi või varukoopia võtme küsimiseks."
+    "messageformat": "Võta kutseid vastu ainult inimestelt, keda usaldad. <bold>SWARM Messenger ei võta sinuga kunagi</bold> ühendust registreerimiskoodi, PIN-koodi või varukoopia võtme küsimiseks."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "Jätka"
@@ -3657,16 +3657,16 @@
     "messageformat": "Nimi kinnitamata"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "See on üks ja ainus ametlik vestlus Signaliga"
+    "messageformat": "See on üks ja ainus ametlik vestlus SWARM Messengeriga"
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "Ametlik vestlus"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "Signali ainus ametlik vestlus. Hoia end kursis uudiste ja väljalaskeinfoga."
+    "messageformat": "SWARM Messengeri ainus ametlik vestlus. Hoia end kursis uudiste ja väljalaskeinfoga."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "Signali ainus ametlik vestlus."
+    "messageformat": "SWARM Messengeri ainus ametlik vestlus."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Hoia end kursis uudiste ja väljalaskeinfoga."
@@ -3732,10 +3732,10 @@
     "messageformat": "Vastamata videokõne"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal töötab endiselt"
+    "messageformat": "SWARM Messenger töötab endiselt"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal jääb teavituste alal tööle. Saad seda Signali sätete alt muuta."
+    "messageformat": "SWARM Messenger jääb teavituste alal tööle. Saad seda SWARM Messengeri sätete alt muuta."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Sissetulev häälkõne"
@@ -3942,7 +3942,7 @@
     "messageformat": "Kopeeri kõnelink"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Jaga kõnelinki Signali kaudu"
+    "messageformat": "Jaga kõnelinki SWARM Messengeri kaudu"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "Kas eemaldada {name} kõnest?"
@@ -4104,7 +4104,7 @@
     "messageformat": "Tundmatu lingi versioon"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "See Signal Desktop ei toeta seda linki."
+    "messageformat": "See SWARM Messengeri versioon ei toeta seda linki."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Grupiga ei saa liituda"
@@ -4710,10 +4710,10 @@
     "messageformat": "Kasutajaandmete kustutamine ja rakenduse lähtestamine"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Anneta Signalile"
+    "messageformat": "Anneta SWARM Messengerile"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} toetab Signalit"
+    "messageformat": "{name} toetab SWARM Messengerit"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "Sõnumite sünkroniseerimine"
@@ -4830,7 +4830,7 @@
     "messageformat": "Nõutav konto toiming"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Selle konto edasi kasutamiseks pead Signali telefonis avama. Kui sa Signalit oma telefonis ei ava, kustutame varsti su konto. <learnMoreLink>Rohkem teavet</learnMoreLink>"
+    "messageformat": "Selle konto edasi kasutamiseks pead SWARM Messengeri telefonis avama. Kui sa SWARM Messengerit oma telefonis ei ava, kustutame varsti su konto. <learnMoreLink>Rohkem teavet</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Meediat ei saa taastada"
@@ -4854,10 +4854,10 @@
     "messageformat": "Lisa manus või küsitlus"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "See isik ei kasuta Signalit"
+    "messageformat": "See isik ei kasuta SWARM Messengerit"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktop ei toeta sõnumite vahetamist kontaktidega, kes ei kasuta Signalit. Palu sellel isikul turvalisema sõnumivahetuskogemuse saamiseks Signal paigaldada."
+    "messageformat": "SWARM Messenger ei toeta sõnumite vahetamist kontaktidega, kes ei kasuta SWARM Messengerit. Palu sellel isikul turvalisema sõnumivahetuskogemuse saamiseks SWARM Messenger paigaldada."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Kontakti registreerumisoleku kontrollimine"
@@ -5118,10 +5118,10 @@
     "messageformat": "Eemalda blokeering"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "Signalit teavitatakse, et see isik võib olla rämpsposti edastaja. Signal ei näe ühegi vestluse sisu."
+    "messageformat": "SWARM Messengerit teavitatakse, et see isik võib olla rämpsposti edastaja. SWARM Messenger ei näe ühegi vestluse sisu."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "Signalit teavitatakse, et isik, kes sind sellesse gruppi kutsus, võib olla rämpsposti edastaja. Signal ei näe ühegi vestluse sisu."
+    "messageformat": "SWARM Messengerit teavitatakse, et isik, kes sind sellesse gruppi kutsus, võib olla rämpsposti edastaja. SWARM Messenger ei näe ühegi vestluse sisu."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "Teata rämpspostist"
@@ -5169,7 +5169,7 @@
     "messageformat": "Hüüdnimi"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Hüüdnimed ja märkused salvestatakse Signalisse ja otspunktkrüptitakse. Need on nähtavad ainult sulle."
+    "messageformat": "Hüüdnimed ja märkused salvestatakse SWARM Messengerisse ja otspunktkrüptitakse. Need on nähtavad ainult sulle."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Eesnimi"
@@ -5325,7 +5325,7 @@
     "messageformat": "Nõua grupilingi kaudu liituvate uute liikmete kinnitamist administraatori poolt"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopeeri signal.group link lõikelauale"
+    "messageformat": "Kopeeri grupilink lõikelauale"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Otsi liikmeid"
@@ -5464,7 +5464,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, one {Signali uuemates versioonides näevad grupiliikmed, et sa kustutasid selle sõnumi.} other {Signali uuemates versioonides näevad grupiliikmed, et sa kustutasid need sõnumid.}}"
+    "messageformat": "{count, plural, one {SWARM Messengeri uuemates versioonides näevad grupiliikmed, et sa kustutasid selle sõnumi.} other {SWARM Messengeri uuemates versioonides näevad grupiliikmed, et sa kustutasid need sõnumid.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Kustuta"
@@ -5590,7 +5590,7 @@
     "messageformat": "Tühje või kustutatud sõnumeid ei saa edastada"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Kasuta Signali kõnega liitumiseks seda linki: {url}"
+    "messageformat": "Kasuta SWARM-i kõnega liitumiseks seda linki: {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "Vaata taotlused tähelepanelikult üle"
@@ -5599,7 +5599,7 @@
     "messageformat": "Ohutusnõuanded"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Vaata taotlused tähelepanelikult üle. Signal leidis teise samanimelise kontakti. <reviewRequestLink>Vaata taotlus üle</reviewRequestLink>"
+    "messageformat": "Vaata taotlused tähelepanelikult üle. SWARM Messenger leidis teise samanimelise kontakti. <reviewRequestLink>Vaata taotlus üle</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} grupiliikmel on sama nimi. <reviewRequestLink>Vaata liikmeid</reviewRequestLink>} other {{count,number} grupiliikmel on sama nimi. <reviewRequestLink>Vaata liikmeid</reviewRequestLink>}}"
@@ -5632,7 +5632,7 @@
     "messageformat": "Muid ühiseid gruppe pole"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signali kontakt"
+    "messageformat": "SWARM-i kontakt"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Muutsid hiljuti oma profiilinime {oldName} -> {newName}"
@@ -5650,7 +5650,7 @@
     "messageformat": "Sõnumite saatmise jätkamiseks kinnita"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Rämpspostituste vältimiseks Signalis täida palun verifitseerimine."
+    "messageformat": "Rämpspostituste vältimiseks SWARM Messengeris täida palun verifitseerimine."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Pärast kinnitamist saad sõnumite saatmist jätkata. Kõik peatatud sõnumid saadetakse automaatselt."
@@ -6037,7 +6037,7 @@
     "messageformat": "Kas sa soovid neid muudatusi tühistada?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Kas sulgeda Signal ja lõpetada kõne?"
+    "messageformat": "Kas sulgeda SWARM Messenger ja lõpetada kõne?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Mitte praegu"
@@ -6137,7 +6137,7 @@
     "messageformat": "Üldine"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Anneta Signalile"
+    "messageformat": "Anneta SWARM Messengerile"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Välimus"
@@ -6203,10 +6203,10 @@
     "messageformat": "Süsteem"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "SWARM Messenger Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "Sinu konto leidmiseks ja taastamiseks kasutatakse sinu Signal Logini. Hoia need võtmed salvestatuna turvalisse paroolihaldurisse, mida sa usaldad. <learnMoreLink>Rohkem teavet</learnMoreLink>."
+    "messageformat": "Sinu konto leidmiseks ja taastamiseks kasutatakse sinu SWARM Messenger Logini. Hoia need võtmed salvestatuna turvalisse paroolihaldurisse, mida sa usaldad. <learnMoreLink>Rohkem teavet</learnMoreLink>."
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "Rohkem infot"
@@ -6218,7 +6218,7 @@
     "messageformat": "2 võtit"
   },
   "icu:Preferences__SignalAccountKeys__Title": {
-    "messageformat": "Sinu Signal Login"
+    "messageformat": "Sinu SWARM Messenger Login"
   },
   "icu:Preferences__SignalAccountKeys__Description": {
     "messageformat": "Hoia seda turvalises kohas, sisselogimisinfot on vaja sinu andmete ja konto taastamiseks. Ära jaga seda kunagi kellegagi."
@@ -6239,7 +6239,7 @@
     "messageformat": "See on lingitud seade"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "Selleks, et oma konto sätteid hallata, ava Signal oma põhiseadmes."
+    "messageformat": "Selleks, et oma konto sätteid hallata, ava SWARM Messenger oma põhiseadmes."
   },
   "icu:Preferences--zoom": {
     "messageformat": "Suumitase"
@@ -6278,7 +6278,7 @@
     "messageformat": "Muuda"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "Signali PIN-kood"
+    "messageformat": "SWARM-i PIN-kood"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "PIN-koodi meeldetuletused"
@@ -6416,7 +6416,7 @@
     "messageformat": "Vestlusajalugu ei saa eksportida"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "Sinu vestlusajalugu ei saa eksportida, kuna Signalil pole luba kettale faile kirjutada. Proovi muuta oma ketta õigusi või värskendada süsteemi sätteid ja seejärel ekspordi uuesti."
+    "messageformat": "Sinu vestlusajalugu ei saa eksportida, kuna SWARM Messengeril pole luba kettale faile kirjutada. Proovi muuta oma ketta õigusi või värskendada süsteemi sätteid ja seejärel ekspordi uuesti."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "Varukoopia eksportimine"
@@ -6431,7 +6431,7 @@
     "messageformat": "Edasta oma varukoopiate kaust oma telefoni mälusse"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "Paigalda telefoni uus Signali versioon"
+    "messageformat": "Paigalda telefoni uus SWARM Messengeri versioon"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "Toksa valikut „Taasta või edasta“ ja vali „Varundamine seadmes“"
@@ -6698,13 +6698,13 @@
     "messageformat": "Blokeerimise aeg: {blockedAt}"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Signali turvalised varukoopiad"
+    "messageformat": "SWARM Messengeri turvalised varukoopiad"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Automaatsed varukoopiad Signali turvalise otspunktkrüptitud salvestusteenuse abil. Seadista telefonis. <learnMoreLink>Rohkem teavet</learnMoreLink>."
+    "messageformat": "Automaatsed varukoopiad SWARM Messengeri turvalise otspunktkrüptitud salvestusteenuse abil. Seadista telefonis. <learnMoreLink>Rohkem teavet</learnMoreLink>."
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Varunda oma sõnumiajalugu, et mitte kaotada andmeid, kui telefoni välja vahetad ja Signali uuesti paigaldad."
+    "messageformat": "Varunda oma sõnumiajalugu, et mitte kaotada andmeid, kui telefoni välja vahetad ja SWARM Messengeri uuesti paigaldad."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Varukoopia andmed"
@@ -6734,13 +6734,13 @@
     "messageformat": "Tellimus tühistatud"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Saad oma Signali turvaliste varukoopiate tellimust oma telefonis hallata või katkestada."
+    "messageformat": "Saad oma SWARM Messengeri turvaliste varukoopiate tellimust oma telefonis hallata või katkestada."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Saad Signali turvalisi varukoopiaid oma telefonis hallata või uuendada."
+    "messageformat": "Saad SWARM Messengeri turvalisi varukoopiaid oma telefonis hallata või uuendada."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Saad oma Signali turvaliste varukoopiate tellimust oma telefonis hallata või uuendada."
+    "messageformat": "Saad oma SWARM Messengeri turvaliste varukoopiate tellimust oma telefonis hallata või uuendada."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Viimane varukoopia"
@@ -6758,7 +6758,7 @@
     "messageformat": "Loo otspunktkrüptitud varukoopia, mille saad oma telefonis taastada. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Varukoopia taastamiseks paigalda oma telefoni Signali uus versioon. Ava äpp ja toksa „Taasta või edasta“. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
+    "messageformat": "Varukoopia taastamiseks paigalda oma telefoni SWARM Messengeri uus versioon. Ava äpp ja toksa „Taasta või edasta“. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Vali kaust"
@@ -6794,7 +6794,7 @@
     "messageformat": "Sinu varukoopia võti"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "Seda võtit on vaja sinu andmete ja konto taastamiseks. Hoia seda turvalises kohas ning ära jaga seda kunagi teistega. Signal ei palu sinult kunagi sõnumi teel taastevõtit. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
+    "messageformat": "Seda võtit on vaja sinu andmete ja konto taastamiseks. Hoia seda turvalises kohas ning ära jaga seda kunagi teistega. SWARM Messenger ei palu sinult kunagi sõnumi teel taastevõtit. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "Ära jaga taastevõtit"
@@ -6809,7 +6809,7 @@
     "messageformat": "Ära jaga võtit"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Ära jaga oma taastevõtit mitte kellegagi. Selle abil on teistel isikutel võimalik su konto üle võtta. <strong>Signal ei palu sinult kunagi sõnumi teel</strong> taastevõtit. Ära vasta kunagi sõnumitele, milles väidetakse, et need on Signalilt. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
+    "messageformat": "Ära jaga oma taastevõtit mitte kellegagi. Selle abil on teistel isikutel võimalik su konto üle võtta. <strong>SWARM Messenger ei palu sinult kunagi sõnumi teel</strong> taastevõtit. Ära vasta kunagi sõnumitele, milles väidetakse, et need on SWARM Messengerilt. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Kinnita oma varukoopia võti"
@@ -6821,7 +6821,7 @@
     "messageformat": "Hoia oma võtit turvaliselt"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Kui oma võtme ära kaotad, ei saa Signal aidata sul varukoopiat taastada. Hoia seda turvalises kohas ning ära jaga teistega."
+    "messageformat": "Kui oma võtme ära kaotad, ei saa SWARM Messenger aidata sul varukoopiat taastada. Hoia seda turvalises kohas ning ära jaga teistega."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Jätka"
@@ -6872,7 +6872,7 @@
     "messageformat": "Varundamise võimaldamiseks on vajalik autentimine."
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "Seda tegevust ei saanud lõpule viia, sest süsteemi autentimine ebaõnnestus. Palun proovi uuesti või ava Signali äpp oma mobiiliseadmes ja mine varukoopia sätete alla, et oma varukoopia võtit vaadata."
+    "messageformat": "Seda tegevust ei saanud lõpule viia, sest süsteemi autentimine ebaõnnestus. Palun proovi uuesti või ava SWARM Messengeri äpp oma mobiiliseadmes ja mine varukoopia sätete alla, et oma varukoopia võtit vaadata."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "Selle tegevuse jaoks süsteemi autentimise taotlemisel tekkis viga."
@@ -6902,7 +6902,7 @@
     "messageformat": "Telefoninumber"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Vali, kes sinu telefoninumbrit näevad ja sinuga selle kaudu Signalis ühendust saavad võtta."
+    "messageformat": "Vali, kes sinu telefoninumbrit näevad ja sinuga selle kaudu SWARM Messengeris ühendust saavad võtta."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Muuda …"
@@ -6932,10 +6932,10 @@
     "messageformat": "Kes mind numbri järgi leida saavad"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Kõik, kellel on sinu telefoninumber, näevad, et sa kasutad Signalit ja saavad sinuga vestlust alustada."
+    "messageformat": "Kõik, kellel on sinu telefoninumber, näevad, et sa kasutad SWARM Messengerit ja saavad sinuga vestlust alustada."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Mitte keegi ei näe, et sa oled Signalis, kui sa neile sõnumit ei saada või sul nendega juba vestlust pooleli ei ole."
+    "messageformat": "Mitte keegi ei näe, et sa oled SWARM Messengeris, kui sa neile sõnumit ei saada või sul nendega juba vestlust pooleli ei ole."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Kõik"
@@ -6947,7 +6947,7 @@
     "messageformat": "Kas oled kindel?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Kui teed sätte „{settingTitle}“ alt valiku „{nobodyLabel}“, on inimestel sind raskem Signalis leida."
+    "messageformat": "Kui teed sätte „{settingTitle}“ alt valiku „{nobodyLabel}“, on inimestel sind raskem SWARM Messengeris leida."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Sõnumside"
@@ -7010,7 +7010,7 @@
     "messageformat": "Määra"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Taaskäivita Signal, et muudatused rakenduksid"
+    "messageformat": "Taaskäivita SWARM Messenger, et muudatused rakenduksid"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Keele vahetamiseks tuleb äpp taaskäivitada."
@@ -7025,13 +7025,13 @@
     "messageformat": "Ekraani turvalisus"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Täiendava privaatsuse huvides keela selles arvutis Signali kuvatõmmised."
+    "messageformat": "Täiendava privaatsuse huvides keela selles arvutis SWARM Messengeri kuvatõmmised."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Kas lülitada ekraani turvalisus välja?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Kui see on välja lülitatud, võib see tähendada, et Microsoft Windows võib jäädvustada Signalist ekraanipilte ja kasutada neid funktsioonide puhul, mis ei pruugi olla privaatsed."
+    "messageformat": "Kui see on välja lülitatud, võib see tähendada, et Microsoft Windows võib jäädvustada SWARM Messengerist ekraanipilte ja kasutada neid funktsioonide puhul, mis ei pruugi olla privaatsed."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Keela"
@@ -7052,19 +7052,19 @@
     "messageformat": "Klõpsa App Store'i sisenemiseks"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Ava Signal enda telefonis"
+    "messageformat": "Ava SWARM Messenger enda telefonis"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Sinu konto kustutatakse varsti, kui sa oma telefonis Signalit ei ava. See sõnum kaob, kui oled selle edukalt ära teinud. <learnMoreLink>Rohkem teavet</learnMoreLink>"
+    "messageformat": "Sinu konto kustutatakse varsti, kui sa oma telefonis SWARM Messengerit ei ava. See sõnum kaob, kui oled selle edukalt ära teinud. <learnMoreLink>Rohkem teavet</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Ava oma telefonis Signal, et kontot aktiivsena hoida"
+    "messageformat": "Ava oma telefonis SWARM Messenger, et kontot aktiivsena hoida"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Rohkem infot"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signalil on tehnilisi raskusi. Pingutame selle nimel, et teenus võimalikult kiiresti taastada."
+    "messageformat": "SWARM Messengeril on tehnilisi raskusi. Pingutame selle nimel, et teenus võimalikult kiiresti taastada."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Vajalik uuendus"
@@ -7073,13 +7073,13 @@
     "messageformat": "Uuenduste kontrollimine"
   },
   "icu:InstallScreenUpdateDialog--updating-signal": {
-    "messageformat": "Signali uuendamine"
+    "messageformat": "SWARM Messengeri uuendamine"
   },
   "icu:InstallScreenUpdateDialog--download-progress": {
     "messageformat": "Allalaadimine: {currentBytes} kogumahust {totalBytes} ({percentage,number,percent}) …"
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Jätkamiseks uuenda Signal Desktoppi."
+    "messageformat": "Jätkamiseks uuenda SWARM Messengerit."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Uuenda"
@@ -7091,19 +7091,19 @@
     "messageformat": "Vajalik uuendus"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Selleks, et Signalit edasi kasutada, pead uuendama uusimale versioonile."
+    "messageformat": "Selleks, et SWARM Messengerit edasi kasutada, pead uuendama uusimale versioonile."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Laadi alla {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Uuenduse paigaldamiseks taaskäivita Signal."
+    "messageformat": "Uuenduse paigaldamiseks taaskäivita SWARM Messenger."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal Desktopi uuendamine nurjus, kuid uus versioon on saadaval. Ava {downloadUrl} ja paigalda uus versioon käsitsi ning teavita probleemist kasutajatuge või saada veateade."
+    "messageformat": "SWARM Messengeri uuendamine nurjus, kuid uus versioon on saadaval. Ava {downloadUrl} ja paigalda uus versioon käsitsi ning teavita probleemist kasutajatuge või saada veateade."
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "Signali logo"
+    "messageformat": "SWARM Messengeri logo"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "Tagasi"
@@ -7139,7 +7139,7 @@
     "messageformat": "Jätkamiseks kinnita, et oled inimene"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "Rämpspostituste vältimiseks Signalis kinnita oma konto. Pärast kinnitamist saad registreerimisega jätkata."
+    "messageformat": "Rämpspostituste vältimiseks SWARM Messengeris kinnita oma konto. Pärast kinnitamist saad registreerimisega jätkata."
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "Proovi uuesti kinnitada"
@@ -7379,7 +7379,7 @@
     "messageformat": "Sobimatu PIN-kood"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "Sinu PIN-koodi sisestamiste arv on täis, kuid kui uue PIN-koodi lood, pääsed endiselt oma Signali kontole ligi. Privaatsuse ja turvalisuse huvides taastatakse sinu konto ilma salvestatud profiiliteabe või säteteta."
+    "messageformat": "Sinu PIN-koodi sisestamiste arv on täis, kuid kui uue PIN-koodi lood, pääsed endiselt oma SWARM-i kontole ligi. Privaatsuse ja turvalisuse huvides taastatakse sinu konto ilma salvestatud profiiliteabe või säteteta."
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
     "messageformat": "Loo uus PIN-kood"
@@ -7409,7 +7409,7 @@
     "messageformat": "Loo enda PIN-kood"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "PIN-kood võimaldab sul vajadusel konto taastada ja hoiab sinu andmeid Signalis krüptituna. <learnMore>Uuri lähemalt</learnMore>"
+    "messageformat": "PIN-kood võimaldab sul vajadusel konto taastada ja hoiab sinu andmeid SWARM Messengeris krüptituna. <learnMore>Uuri lähemalt</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "Loo enda PIN-kood"
@@ -7433,7 +7433,7 @@
     "messageformat": "Hoiatus"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "Kui keelad PIN-koodi, siis kaotad Signali uuesti registreerimisel kõik andmed. Registreerimislukku pole võimalik sisse lülitada, kui PIN-kood on keelatud."
+    "messageformat": "Kui keelad PIN-koodi, siis kaotad SWARM Messengeri uuesti registreerimisel kõik andmed. Registreerimislukku pole võimalik sisse lülitada, kui PIN-kood on keelatud."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "Keela PIN"
@@ -7442,10 +7442,10 @@
     "messageformat": "Loobu"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "Signali PIN-koodidest"
+    "messageformat": "SWARM-i PIN-koodidest"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "PIN-koodid hoiavad Signalis salvestatud teabe krüptituna ning ainult sinul on sellele juurdepääs. Kui paigaldad Signali uuesti, siis sinu profiil, sätted ja kontaktid taastatakse."
+    "messageformat": "PIN-koodid hoiavad SWARM Messengeris salvestatud teabe krüptituna ning ainult sinul on sellele juurdepääs. Kui paigaldad SWARM Messengeri uuesti, siis sinu profiil, sätted ja kontaktid taastatakse."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "Rohkem infot"
@@ -7478,7 +7478,7 @@
     "messageformat": "Vajalik uuendus"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "Registreerimisega jätkamiseks uuenda Signali uusimale versioonile."
+    "messageformat": "Registreerimisega jätkamiseks uuenda SWARM Messengeri uusimale versioonile."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "Uuenda"
@@ -7508,7 +7508,7 @@
     "messageformat": "Võta ühendust kasutajatoega"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signalit ei saa sulgeda.",
+    "messageformat": "SWARM Messengerit ei saa sulgeda.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7528,14 +7528,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Signali uuem versioon on juba paigaldatud. Kas oled kindel, et soovid jätkata?",
+    "messageformat": "SWARM Messengeri uuem versioon on juba paigaldatud. Kas oled kindel, et soovid jätkata?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Rakendus jooksis kokku"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal taaskäivitus pärast kokkujooksmist. Võid kokkujooksmise kohta teavituse saata, et aidata Signalil probleemi uurida."
+    "messageformat": "SWARM Messenger taaskäivitus pärast kokkujooksmist. Võid kokkujooksmise kohta teavituse saata, et aidata SWARM Messengeril probleemi uurida."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Saada"
@@ -7640,7 +7640,7 @@
     "messageformat": "Klõpsa allpool „{buttonName}“"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Lülita Signal sisse"
+    "messageformat": "Lülita SWARM Messenger sisse"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Mine sätetesse"
@@ -7736,7 +7736,7 @@
     "messageformat": "Uuri lähemalt"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signali kontaktid"
+    "messageformat": "SWARM-i kontaktid"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} on inimesed, keda oled otsustanud usaldada, kas siis …"
@@ -7877,7 +7877,7 @@
     "messageformat": "Peida lugu kasutaja(te) eest"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Kõik Signali kontaktid"
+    "messageformat": "Kõik SWARM-i kontaktid"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Kõik, välja arvatud…"
@@ -7955,7 +7955,7 @@
     "messageformat": "Minu loo privaatsus"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Vali, millised Signali kontaktid sinu lugu vaadata saavad. Saad seda privaatsussätete alt alati muuta. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
+    "messageformat": "Vali, millised SWARM-i kontaktid sinu lugu vaadata saavad. Saad seda privaatsussätete alt alati muuta. <learnMoreLink>Rohkem teavet.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Kustuta lugu"
@@ -8024,7 +8024,7 @@
     "messageformat": "Laadi manus alla"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Luba kättesaamiskinnitused, et näha, kes on su lugusid vaadanud. Ava enda nutiseadmes Signali äpp ja vali Sätted -> Lood."
+    "messageformat": "Luba kättesaamiskinnitused, et näha, kes on su lugusid vaadanud. Ava enda nutiseadmes SWARM Messengeri äpp ja vali Sätted -> Lood."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Vastuseid veel pole"
@@ -8210,7 +8210,7 @@
     "messageformat": "Sinu QR-kood ja link on lähtestatud ja sinu kasutajanimi on {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Skanni oma telefoniga see QR-kood, et minuga Signalis vestelda.",
+    "messageformat": "Skanni oma telefoniga see QR-kood, et minuga SWARM Messengeris vestelda.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8286,7 +8286,7 @@
     "messageformat": "Tühista"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "Kinnita Signali PIN-kood"
+    "messageformat": "Kinnita SWARM-i PIN-kood"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "Palume aeg-ajalt sul PIN-koodi kinnitada, et see sulle meelde jääks."
@@ -8298,7 +8298,7 @@
     "messageformat": "Mitte praegu"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "Sisesta Signali PIN-kood"
+    "messageformat": "Sisesta SWARM-i PIN-kood"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "Selleks, et aidata sul PIN-koodi pähe õppida, palume sul seda regulaarselt sisestada. Aja möödudes hakkame seda vähem küsima."
@@ -8319,13 +8319,13 @@
     "messageformat": "PIN-kood õige. Tuletame sulle hiljem uuesti meelde."
   },
   "icu:PinChangeModal__title--create": {
-    "messageformat": "Muuda oma Signali PIN-koodi"
+    "messageformat": "Muuda oma SWARM-i PIN-koodi"
   },
   "icu:PinChangeModal__body--create": {
     "messageformat": "PIN-koodi saab muuta senikaua kuni see seade on registreeritud. <learnMoreLink>Rohkem teavet</learnMoreLink>"
   },
   "icu:PinChangeModal__title--confirm": {
-    "messageformat": "Kinnita Signali PIN-kood"
+    "messageformat": "Kinnita SWARM-i PIN-kood"
   },
   "icu:PinChangeModal__body--confirm": {
     "messageformat": "Sisesta just loodud PIN-kood."
@@ -8349,13 +8349,13 @@
     "messageformat": "Uus PIN-kood on loodud."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signali veebiversioon lõpetab varsti sinu arvuti {OS} versiooni toetamise. Kui soovid jätkata Signali kasutamist, uuenda oma arvuti operatsioonisüsteemi hiljemalt {expirationDate}. <learnMoreLink>Rohkem teavet</learnMoreLink>"
+    "messageformat": "SWARM Messenger lõpetab varsti sinu arvuti {OS} versiooni toetamise. Kui soovid jätkata SWARM Messengeri kasutamist, uuenda oma arvuti operatsioonisüsteemi hiljemalt {expirationDate}. <learnMoreLink>Rohkem teavet</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signali veebiversioon ei tööta enam selles arvutis. Kui soovid jätkata Signali kasutamist, uuenda oma arvuti {OS} versiooni. <learnMoreLink>Rohkem teavet</learnMoreLink>"
+    "messageformat": "SWARM Messenger ei tööta enam selles arvutis. Kui soovid jätkata SWARM Messengeri kasutamist, uuenda oma arvuti {OS} versiooni. <learnMoreLink>Rohkem teavet</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signali veebiversioon ei tööta enam selles arvutis. Kui soovid jätkata Signali kasutamist, uuenda oma arvuti {OS} versiooni."
+    "messageformat": "SWARM Messenger ei tööta enam selles arvutis. Kui soovid jätkata SWARM Messengeri kasutamist, uuenda oma arvuti {OS} versiooni."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Muudetud"
@@ -8526,7 +8526,7 @@
     "messageformat": "Kopeeri link"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Jaga linki Signali kaudu"
+    "messageformat": "Jaga linki SWARM Messengeri kaudu"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Kustuta link"
@@ -8589,13 +8589,13 @@
     "messageformat": "Selle sätte muutmiseks vali „Kes mu numbrit näevad“ alt „Mitte keegi“."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Signalis valib iga konto omanik omale ise profiilinime."
+    "messageformat": "SWARM Messengeris valib iga konto omanik omale ise profiilinime."
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "Signal ei saa nimesid ja fotosid kontrollida"
+    "messageformat": "SWARM Messenger ei saa nimesid ja fotosid kontrollida"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "Signal ei võta sinuga kunagi ühendust registreerimiskoodi, PIN-koodi või taastevõtme küsimiseks."
+    "messageformat": "SWARM Messenger ei võta sinuga kunagi ühendust registreerimiskoodi, PIN-koodi või taastevõtme küsimiseks."
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "Ole ettevaatlik kontode suhtes, kus esinetakse kellegi teisena"
@@ -8625,7 +8625,7 @@
     "messageformat": "Uhked, et oleme mittetulundusühing"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Anneta privaatse sõnumivahetuse toetuseks. Aita hoida Signal sõltumatu ja reklaamivaba. <readMoreLink>Loe rohkem</readMoreLink>"
+    "messageformat": "Anneta privaatse sõnumivahetuse toetuseks. Aita hoida SWARM Messenger sõltumatu ja reklaamivaba. <readMoreLink>Loe rohkem</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Anneta"
@@ -8649,7 +8649,7 @@
     "messageformat": "Sinu andmed on privaatsed"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Sõltumatu mittetulundusühinguna  on Signal pühendunud privaatsõnumitele ja kõnedele. Ei mingeid reklaame, jälgijaid ega järelevalvet. Anneta nüüd, et Signalit toetada."
+    "messageformat": "Sõltumatu mittetulundusühinguna  on SWARM Messenger pühendunud privaatsõnumitele ja kõnedele. Ei mingeid reklaame, jälgijaid ega järelevalvet. Anneta nüüd, et SWARM Messengerit toetada."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Kui annetad, saad oma profiilil kuvada vastavat märki"
@@ -8658,10 +8658,10 @@
     "messageformat": "SInu privaatsus on meie missioon"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Signal on mittetulundusühing"
+    "messageformat": "SWARM Messenger on mittetulundusühing"
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "Signali logo stiilis südameikoon"
+    "messageformat": "SWARM Messengeri logo stiilis südameikoon"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "Sobib"
@@ -8676,7 +8676,7 @@
     "messageformat": "Annetaja KKK"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Kviitungeid ei sünkroonita eri seadmete vahel. Kui oled Signali uuesti alla laadinud, ei ole eelmiste annetustega seotud kviitungid saadaval."
+    "messageformat": "Kviitungeid ei sünkroonita eri seadmete vahel. Kui oled SWARM Messengeri uuesti alla laadinud, ei ole eelmiste annetustega seotud kviitungid saadaval."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Kviitungeid ei ole"
@@ -8706,7 +8706,7 @@
     "messageformat": "Krediit- või deebetkaart"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Sisesta oma krediit- või deebetkaardi andmed. Signal ei kogu ega salvesta sinu isikuandmeid. <learnMoreLink>Rohkem teavet</learnMoreLink>"
+    "messageformat": "Sisesta oma krediit- või deebetkaardi andmed. SWARM Messenger ei kogu ega salvesta sinu isikuandmeid. <learnMoreLink>Rohkem teavet</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Kaardi number"
@@ -8718,7 +8718,7 @@
     "messageformat": "KK/AA"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Anneta Signalile {formattedCurrencyAmount}"
+    "messageformat": "Anneta SWARM Messengerile {formattedCurrencyAmount}"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Kehtetu kaardi number"
@@ -8736,7 +8736,7 @@
     "messageformat": "Kood on liiga lühike"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Saa 30 päevaks Signali toetaja märk"
+    "messageformat": "Saa 30 päevaks SWARM Messengeri toetaja märk"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "Minimaalne summa annetamiseks on {formattedCurrencyAmount}"
@@ -8781,7 +8781,7 @@
     "messageformat": "Ühekordne"
   },
   "icu:DonationReceipt__footer-text-v2": {
-    "messageformat": "Aitäh, et toetad Signalit. Sinu panus annab tõuke missioonile kaitsta väljendusvabadust ja võimaldada turvalist suhtlust miljonitele inimestele üle kogu maailma avatud lähtekoodiga privaatsustehnoloogia abil. Kui elad Ameerika Ühendriikides, jäta see kviitung alles oma maksude deklareerimiseks. Signal Technology Foundation on Ameerika Ühendriikides maksuseadustiku (US Internal Revenue Code) jao 501c3 järgi registreeritud maksuvaba mittetulundusühing. Meie föderaalne maksukood (Federal Tax ID) on 82-4506840. Signal ei paku selle annetuse eest vastutasuks kaupu ega teenuseid."
+    "messageformat": "Aitäh, et toetad SWARM Messengerit. Sinu panus annab tõuke missioonile kaitsta väljendusvabadust ja võimaldada turvalist suhtlust miljonitele inimestele üle kogu maailma avatud lähtekoodiga privaatsustehnoloogia abil. Kui elad Ameerika Ühendriikides, jäta see kviitung alles oma maksude deklareerimiseks. SWARM Messenger Technology Foundation on Ameerika Ühendriikides maksuseadustiku (US Internal Revenue Code) jao 501c3 järgi registreeritud maksuvaba mittetulundusühing. Meie föderaalne maksukood (Federal Tax ID) on 82-4506840. SWARM Messenger ei paku selle annetuse eest vastutasuks kaupu ega teenuseid."
   },
   "icu:Donations__OfflineTooltip": {
     "messageformat": "Oled võrguühenduseta. Annetuse tegemiseks loo internetiühendus."
@@ -8820,7 +8820,7 @@
     "messageformat": "Annetamine õnnestus, aga me ei saanud sinu märgi sätteid uuendada"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "Oma märgi sätteid saad oma mobiilseadmes muuta menüüs Sätted → Anneta Signalile → Märgid."
+    "messageformat": "Oma märgi sätteid saad oma mobiilseadmes muuta menüüs Sätted → Anneta SWARM Messengerile → Märgid."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Annetus on katkestatud"
@@ -8877,7 +8877,7 @@
     "messageformat": "Sinu annetusega ilmnes viga"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "On võimalik, et sinu annetust ei töödeldud. Kviitungite nägemiseks ja kinnitamiseks klõpsake „Anneta Signalile“ ja seejärel „Annetuste kviitungid“."
+    "messageformat": "On võimalik, et sinu annetust ei töödeldud. Kviitungite nägemiseks ja kinnitamiseks klõpsake „Anneta SWARM Messengerile“ ja seejärel „Annetuste kviitungid“."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Proovi uuesti või saada abikeskusele silumislogi, et aidata oma annetus lõpule viia. Silumislogid aitavad meil probleemi diagnoosida ja lahendada ega sisalda isikuandmeid."
@@ -8919,19 +8919,19 @@
     "messageformat": "Aitäh sinu toetuse eest!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Teenisid Signalilt annetaja märgi. Kuva seda oma profiilil, et näidata üles oma toetust."
+    "messageformat": "Teenisid SWARM Messengerilt annetaja märgi. Kuva seda oma profiilil, et näidata üles oma toetust."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Kuva profiilil"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "Seda saad oma mobiilseadmes muuta menüüs Sätted → Anneta Signalile → Märgid"
+    "messageformat": "Seda saad oma mobiilseadmes muuta menüüs Sätted → Anneta SWARM Messengerile → Märgid"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "Kuidas su kõne läks?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "See aitab meil Signalis kõnesid paremaks muuta. Me ei salvesta sinu isikuandmeid."
+    "messageformat": "See aitab meil SWARM Messengeris kõnesid paremaks muuta. Me ei salvesta sinu isikuandmeid."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "Oli probleeme"
@@ -8982,7 +8982,7 @@
     "messageformat": "Probleemide kirjeldus"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "Palun lisa kõik probleemiga seotud üksikasjad. Kogu infot, mida siin jagad, hoitakse privaatsena ja seda kasutatakse ainult Signali kõnede täiustamiseks."
+    "messageformat": "Palun lisa kõik probleemiga seotud üksikasjad. Kogu infot, mida siin jagad, hoitakse privaatsena ja seda kasutatakse ainult SWARM Messengeri kõnede täiustamiseks."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "Palun kirjelda probleemi"
@@ -9048,7 +9048,7 @@
     "messageformat": "Sul tuleb QR-koodi skannides uuesti linkida."
   },
   "icu:MaybeTransferModal__media": {
-    "messageformat": "Kui sul on tasuline Signali turvaliste varukoopiate pakett, siis edastatakse kogu su meedia. Vastasel juhul edastatakse vaid su viimase 45 päeva meedia."
+    "messageformat": "Kui sul on tasuline SWARM Messengeri turvaliste varukoopiate pakett, siis edastatakse kogu su meedia. Vastasel juhul edastatakse vaid su viimase 45 päeva meedia."
   },
   "icu:MaybeTransferModal__transfer": {
     "messageformat": "Edasta"
@@ -9060,14 +9060,14 @@
     "messageformat": "Kas kustutada kõik andmed?"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "Kõik Signal Desktopis olevad jooksvad andmed kustutatakse. Seejärel saad QR-koodi skannides edastada telefonist oma sõnumiajaloo."
+    "messageformat": "Kõik SWARM Messengeris olevad jooksvad andmed kustutatakse. Seejärel saad QR-koodi skannides edastada telefonist oma sõnumiajaloo."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "See versioon sisaldab paljusid väikseid parendusi, mis Signali sujuvalt käimas.",
+    "messageformat": "See versioon sisaldab paljusid väikseid parendusi, mis SWARM Messengeri sujuvalt käimas.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Täiendavad väikesed muudatused, vigade parandused ja jõudluse täiustused. Aitäh, et kasutad Signalit!",
+    "messageformat": "Täiendavad väikesed muudatused, vigade parandused ja jõudluse täiustused. Aitäh, et kasutad SWARM Messengerit!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -9087,7 +9087,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Väikesed muudatused, vigade parandused ja jõudluse täiustused. Aitäh, et kasutad Signalit!",
+    "messageformat": "Väikesed muudatused, vigade parandused ja jõudluse täiustused. Aitäh, et kasutad SWARM Messengerit!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.25--0": {

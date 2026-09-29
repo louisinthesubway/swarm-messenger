@@ -63,10 +63,10 @@
     "messageformat": "Sūtot augstas kvalitātes multivides saturu, tiks izmantots vairāk datu."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Ziedot Signal"
+    "messageformat": "Ziedot SWARM Messenger"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "<bold>Saistītās ierīces</bold> ļauj droši piekļūt savam Signal kontam un ziņām jebkurā papildu ierīcē."
+    "messageformat": "<bold>Saistītās ierīces</bold> ļauj droši piekļūt savam SWARM kontam un ziņām jebkurā papildu ierīcē."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "Jūs varat piesaistīt datoru, planšetdatoru vai citu tālruni."
@@ -81,7 +81,7 @@
     "messageformat": "Konta iestatījumus un rezerves kopijas varat pārvaldīt tikai savā galvenajā ierīcē."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--3--2": {
-    "messageformat": "Account settings and Signal Secure Backups can only be managed on your primary device."
+    "messageformat": "Account settings and SWARM Messenger Secure Backups can only be managed on your primary device."
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "Standarta"
@@ -120,10 +120,10 @@
     "messageformat": "Nezināma grupa"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Nevar atvērt Signal"
+    "messageformat": "Nevar atvērt SWARM Messenger"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Lai novērstu problēmu, izpildiet Atbalsta lapā pieejamā atkopšanas ceļveža norādījumus vai sazinieties ar Signal atbalsta dienestu.\n\nJa nepieciešams izmantot Signal nekavējoties, varat dzēst savus datus un atkārtoti piesaistīt šo datoru. Jūs varēsiet pārsūtīt ziņu vēsturi no sava tālruņa."
+    "messageformat": "Lai novērstu problēmu, izpildiet Atbalsta lapā pieejamā atkopšanas ceļveža norādījumus vai sazinieties ar SWARM Messenger atbalsta dienestu.\n\nJa nepieciešams izmantot SWARM Messenger nekavējoties, varat dzēst savus datus un atkārtoti piesaistīt šo datoru. Jūs varēsiet pārsūtīt ziņu vēsturi no sava tālruņa."
   },
   "icu:databaseError": {
     "messageformat": "Datu bāzes kļūda"
@@ -135,16 +135,16 @@
     "messageformat": "Visu datu neatgriezeniska dzēšana"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Visa ziņu vēsture un multivide tiks neatgriezeniski dzēsta no šīs ierīces. Dati netiks dzēsti no jūsu tālruņa.\n\nŠajā ierīcē Signal varēsiet lietot pēc ierīces atkārtotas piesaistīšanas. Jūs varēsiet pārsūtīt ziņu vēsturi no sava tālruņa."
+    "messageformat": "Visa ziņu vēsture un multivide tiks neatgriezeniski dzēsta no šīs ierīces. Dati netiks dzēsti no jūsu tālruņa.\n\nŠajā ierīcē SWARM Messenger varēsiet lietot pēc ierīces atkārtotas piesaistīšanas. Jūs varēsiet pārsūtīt ziņu vēsturi no sava tālruņa."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Jūsu datubāzes versija neatbilst šai Signal versijai. Pārliecinieties, vai datorā atvērta jaunākā Signal versija."
+    "messageformat": "Jūsu datubāzes versija neatbilst šai SWARM Messenger versijai. Pārliecinieties, vai datorā atvērta jaunākā SWARM Messenger versija."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Nevar piekļūt datu bāzes šifrēšanas atslēgai, jo OS šifrēšanas atslēgu turētāja aizmugursistēma ir mainīta no {previousBackend} uz {currentBackend}. Tas var notikt, ja mainās darbvirsmas vide, piemēram, no GNOME uz KDE.\n\nLūdzu, pārslēdzieties uz iepriekšējo darbvirsmas vidi."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Nevar piekļūt datu bāzes šifrēšanas atslēgai, jo OS šifrēšanas atslēgu turētāja aizmugursistēma ir mainīta no {previousBackend} uz {currentBackend}. Tas var notikt, ja mainās darbvirsmas vide, piemēram, no GNOME uz KDE.\n\nLūdzu, pārslēdzieties uz iepriekšējo darbvirsmas vidi vai mēģiniet palaist Signal ar komandrindas karogu --password-store=\"{previousBackendFlag}\"."
+    "messageformat": "Nevar piekļūt datu bāzes šifrēšanas atslēgai, jo OS šifrēšanas atslēgu turētāja aizmugursistēma ir mainīta no {previousBackend} uz {currentBackend}. Tas var notikt, ja mainās darbvirsmas vide, piemēram, no GNOME uz KDE.\n\nLūdzu, pārslēdzieties uz iepriekšējo darbvirsmas vidi vai mēģiniet palaist SWARM Messenger ar komandrindas karogu --password-store=\"{previousBackendFlag}\"."
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -189,7 +189,7 @@
     "messageformat": "Rādīt visu"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Aizvērt Signal"
+    "messageformat": "Aizvērt SWARM Messenger"
   },
   "icu:editMenuUndo": {
     "messageformat": "Atsaukt"
@@ -513,10 +513,10 @@
     "messageformat": "Jūs atzīmējāt savu drošības kodu ar {name} kā nepārbaudītu no citas ierīces"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Jūsu drošības kods ar  ir mainījies. Pārskatiet savu jauno drošības kodu ar {name1}. Ņemiet vērā, ka šī izmaiņa var nozīmēt, ka kāds mēģina pārtvert jūsu saziņu, vai arī  {name2} savā ierīcē pārinstalēja Signal."
+    "messageformat": "Jūsu drošības kods ar  ir mainījies. Pārskatiet savu jauno drošības kodu ar {name1}. Ņemiet vērā, ka šī izmaiņa var nozīmēt, ka kāds mēģina pārtvert jūsu saziņu, vai arī  {name2} savā ierīcē pārinstalēja SWARM Messenger."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Tālāk norādītie cilvēki, iespējams, ir pārinstalējuši Signal vai nomainījuši ierīces. Noklikšķiniet uz adresāta, lai apstiprinātu jauno drošības numuru. Šī darbība nav obligāta."
+    "messageformat": "Tālāk norādītie cilvēki, iespējams, ir pārinstalējuši SWARM Messenger vai nomainījuši ierīces. Noklikšķiniet uz adresāta, lai apstiprinātu jauno drošības numuru. Šī darbība nav obligāta."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Nosūtīt gaidošās ziņas"
@@ -525,7 +525,7 @@
     "messageformat": "Pārskatīt"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, zero {Jums ir {count,number} kontakti, kuri, iespējams, ir pārinstalējuši Signal vai nomainījuši ierīces. Ja vēlaties, pirms nosūtīšanas varat pārskatīt viņu drošības numurus.} one {Jums ir 1 kontakts, kurš, iespējams, ir pārinstalējis Signal vai nomainījis ierīces. Ja vēlaties, pirms nosūtīšanas varat pārskatīt viņu drošības numurus.} other {Jums ir {count,number} kontakti, kuri, iespējams, ir pārinstalējuši Signal vai nomainījuši ierīces. Ja vēlaties, pirms nosūtīšanas varat pārskatīt viņu drošības numurus.}}"
+    "messageformat": "{count, plural, zero {Jums ir {count,number} kontakti, kuri, iespējams, ir pārinstalējuši SWARM Messenger vai nomainījuši ierīces. Ja vēlaties, pirms nosūtīšanas varat pārskatīt viņu drošības numurus.} one {Jums ir 1 kontakts, kurš, iespējams, ir pārinstalējis SWARM Messenger vai nomainījis ierīces. Ja vēlaties, pirms nosūtīšanas varat pārskatīt viņu drošības numurus.} other {Jums ir {count,number} kontakti, kuri, iespējams, ir pārinstalējuši SWARM Messenger vai nomainījuši ierīces. Ja vēlaties, pirms nosūtīšanas varat pārskatīt viņu drošības numurus.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Visi kontakti ir pārskatīti, noklikšķiniet uz \"nosūtīt\", lai turpinātu."
@@ -633,16 +633,16 @@
     "messageformat": "Šifrēšana šai sarunai tika pārbaudīta automātiski "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "Signal automātiski pārbaudīs savienojuma drošību kontaktpersonām, kas pievienotas ar tālruņa numuru, izmantojot procesu, ko sauc par atslēgu caurskatāmību. Papildu drošībai manuāli pārbaudiet pilnīgo šifrēšanu, salīdzinot iepriekšējā ekrānā redzamos ciparus vai skenējot kodu otras personas ierīcē."
+    "messageformat": "SWARM Messenger automātiski pārbaudīs savienojuma drošību kontaktpersonām, kas pievienotas ar tālruņa numuru, izmantojot procesu, ko sauc par atslēgu caurskatāmību. Papildu drošībai manuāli pārbaudiet pilnīgo šifrēšanu, salīdzinot iepriekšējā ekrānā redzamos ciparus vai skenējot kodu otras personas ierīcē."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "Automātiskā verifikācija šai sarunai nav pieejama"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "Signal nevar automātiski verificēt šīs sarunas šifrēšanu. Iespējams, tas ir tāpēc, ka {name} nomainīja savu tālruņa numuru vai tālruņa numura privātuma iestatījumus. Pārbaudiet pilnīgo šifrēšanu manuāli, salīdzinot iepriekšējā ekrānā redzamos ciparus vai skenējot kodu otras personas ierīcē."
+    "messageformat": "SWARM Messenger nevar automātiski verificēt šīs sarunas šifrēšanu. Iespējams, tas ir tāpēc, ka {name} nomainīja savu tālruņa numuru vai tālruņa numura privātuma iestatījumus. Pārbaudiet pilnīgo šifrēšanu manuāli, salīdzinot iepriekšējā ekrānā redzamos ciparus vai skenējot kodu otras personas ierīcē."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "Signal var automātiski pārbaudīt šifrēšanu tikai tajās sarunās, kurās esat savienoti ar kādu personu, izmantojot tālruņa numuru. Ja saruna tika sākta ar kopīgu lietotājvārdu vai grupu, pārbaudiet pilnīgo šifrēšanu, salīdzinot iepriekšējā ekrānā redzamos ciparus vai skenējot kodu otras personas ierīcē."
+    "messageformat": "SWARM Messenger var automātiski pārbaudīt šifrēšanu tikai tajās sarunās, kurās esat savienoti ar kādu personu, izmantojot tālruņa numuru. Ja saruna tika sākta ar kopīgu lietotājvārdu vai grupu, pārbaudiet pilnīgo šifrēšanu, salīdzinot iepriekšējā ekrānā redzamos ciparus vai skenējot kodu otras personas ierīcē."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "Labi"
@@ -681,10 +681,10 @@
     "messageformat": "Nē, paldies"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "Signal tagad var automātiski verificēt šifrēšanu"
+    "messageformat": "SWARM Messenger tagad var automātiski verificēt šifrēšanu"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "Signal automātiski pārbaudīs savienojuma drošību kontaktpersonām, kas pievienotas ar tālruņa numuru, izmantojot procesu, ko sauc par atslēgu caurskatāmību. Papildu drošībai savienojumus joprojām varat verificēt manuāli, izmantojot QR kodu vai salīdzinot drošības numurus."
+    "messageformat": "SWARM Messenger automātiski pārbaudīs savienojuma drošību kontaktpersonām, kas pievienotas ar tālruņa numuru, izmantojot procesu, ko sauc par atslēgu caurskatāmību. Papildu drošībai savienojumus joprojām varat verificēt manuāli, izmantojot QR kodu vai salīdzinot drošības numurus."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "Turpināt"
@@ -738,7 +738,7 @@
     "messageformat": "Attēla uzmetuma pielikums: {path}"
   },
   "icu:decryptionErrorToast": {
-    "messageformat": "Signal Desktop radās kļūda, atšifrējot ziņu no {name}, ierīcē{deviceId}"
+    "messageformat": "Radās kļūda, atšifrējot ziņu no {name}, ierīcē{deviceId}"
   },
   "icu:Toast__ActionLabel--SubmitLog": {
     "messageformat": "Ieniegt žurnālu"
@@ -837,7 +837,7 @@
     "messageformat": "Uzlīmju komplekta izveides programma"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Par Signal Desktop versiju"
+    "messageformat": "Par SWARM Messenger"
   },
   "icu:screenShareWindow": {
     "messageformat": "Ekrāna kopīgošana"
@@ -855,7 +855,7 @@
     "messageformat": "Aizvērt"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal Desktop"
+    "messageformat": "SWARM Messenger"
   },
   "icu:search": {
     "messageformat": "Meklēt"
@@ -909,7 +909,7 @@
     "messageformat": "Meklēt pēc tālruņa numura"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Sveicināti Signālā"
+    "messageformat": "Sveicināti lietotnē SWARM Messenger"
   },
   "icu:whatsNew": {
     "messageformat": "Apskatiet, kādi {whatsNew} iekļauti šajā atjauninājumā"
@@ -999,13 +999,13 @@
     "messageformat": "Jūs"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Lai nosūtītu balss ziņas, ļaujiet lietotnes Signal Desktop versijai piekļūt ierīces mikrofonam."
+    "messageformat": "Lai nosūtītu balss ziņas, ļaujiet lietotnei SWARM Messenger piekļūt ierīces mikrofonam."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Lai zvanītu, jums ir jāļauj lietotnes Signal Desktop versijai piekļūt ierīces mikrofonam."
+    "messageformat": "Lai zvanītu, jums ir jāļauj lietotnei SWARM Messenger piekļūt ierīces mikrofonam."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Lai veiktu video zvanu, jums ir jāļauj lietotnes Signal Desktop versijai piekļūt kamerai."
+    "messageformat": "Lai veiktu video zvanu, jums ir jāļauj lietotnei SWARM Messenger piekļūt kamerai."
   },
   "icu:allowAccess": {
     "messageformat": "Atļaut piekļuvi"
@@ -1032,13 +1032,13 @@
     "messageformat": "Izslēgta skaņa"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signal nevarēja atjaunināt. <retryUpdateButton>Mēģiniet atjaunināt vēlreiz</retryUpdateButton> vai apmeklējiet {url}, lai instalētu atjauninājumu manuāli. Pēc tam informējiet <contactSupportLink>atbalsta dienestu</contactSupportLink> par problēmu, sazinoties ar to"
+    "messageformat": "SWARM Messenger nevarēja atjaunināt. <retryUpdateButton>Mēģiniet atjaunināt vēlreiz</retryUpdateButton> vai apmeklējiet {url}, lai instalētu atjauninājumu manuāli. Pēc tam informējiet <contactSupportLink>atbalsta dienestu</contactSupportLink> par problēmu, sazinoties ar to"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signal nevarēja atjaunināt. Apmeklējiet {url}, lai instalētu atjauninājumu manuāli. Pēc tam informējiet <contactSupportLink>atbalsta dienestu</contactSupportLink> par problēmu, sazinoties ar to."
+    "messageformat": "SWARM Messenger nevarēja atjaunināt. Apmeklējiet {url}, lai instalētu atjauninājumu manuāli. Pēc tam informējiet <contactSupportLink>atbalsta dienestu</contactSupportLink> par problēmu, sazinoties ar to."
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal Desktop, visticamāk, atrodas macOS karantīnā, un šo lietotnes versiju nevarēs automātiski atjaunināt. Pārvietojiet {app}uz {folder}, izmantojot meklētāju."
+    "messageformat": "SWARM Messenger, visticamāk, atrodas macOS karantīnā, un šo lietotnes versiju nevarēs automātiski atjaunināt. Pārvietojiet {app}uz {folder}, izmantojot meklētāju."
   },
   "icu:ok": {
     "messageformat": "Ok"
@@ -1083,7 +1083,7 @@
     "messageformat": "Šī ziņa tiks izdzēsta no šīs ierīces."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Šī ziņa tiks izdzēsta visiem sarunas dalībniekiem, ja viņi izmanto jaunāko Signal versiju. Dalībnieki varēs redzēt, ka ziņa ir dzēsta."
+    "messageformat": "Šī ziņa tiks izdzēsta visiem sarunas dalībniekiem, ja viņi izmanto jaunāko SWARM Messenger versiju. Dalībnieki varēs redzēt, ka ziņa ir dzēsta."
   },
   "icu:from": {
     "messageformat": "No"
@@ -1125,7 +1125,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "\"{title}\" ir šīs personas iestatīts profila nosaukums platformā Signal."
+    "messageformat": "\"{title}\" ir šīs personas iestatīts profila nosaukums platformā SWARM Messenger."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Pārbaudīts(verificēts)"
@@ -1140,7 +1140,7 @@
     "messageformat": "Jūs un {name} vēl neesat sazinājušies"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal kontaktpersona"
+    "messageformat": "SWARM kontaktpersona"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} ir jūsu kontaktpersona sistēmā"
@@ -1452,7 +1452,7 @@
     "messageformat": "Uzzināt vairāk"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Lietotne Signal izmanto pilnīgu šifrēšanu, un, iespējams, reizēm būs jāatsvaidzina jūsu sarunas sesija. Tas neietekmē jūsu sarunas drošību, taču, iespējams, varat palaist garām kādu kontakta sūtītu ziņu un būs jālūdz nosūtīt to vēlreiz."
+    "messageformat": "Lietotne SWARM Messenger izmanto pilnīgu šifrēšanu, un, iespējams, reizēm būs jāatsvaidzina jūsu sarunas sesija. Tas neietekmē jūsu sarunas drošību, taču, iespējams, varat palaist garām kādu kontakta sūtītu ziņu un būs jālūdz nosūtīt to vēlreiz."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Sazināties ar atbalstu"
@@ -1479,7 +1479,7 @@
     "messageformat": "{sender} nomainīja savu tālruņa numuru"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Kontakts pievienojās Signal"
+    "messageformat": "Kontakts pievienojās SWARM Messenger"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} un {conversationTitle} ir viens un tas pats konts. Šeit ir pieejama abu sarunu ziņu vēsture."
@@ -1569,7 +1569,7 @@
     "messageformat": "Nevar lejupielādēt multividi"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Pārbaudiet interneta savienojumu datorā un tālrunī. Tālrunī atveriet Signal un pēc tam mēģiniet lejupielādēt vēlreiz."
+    "messageformat": "Pārbaudiet interneta savienojumu datorā un tālrunī. Tālrunī atveriet SWARM Messenger un pēc tam mēģiniet lejupielādēt vēlreiz."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Šī multivide vairs nav pieejama jūsu tālrunī, un to nevar lejupielādēt."
@@ -1590,10 +1590,10 @@
     "messageformat": "Lasīt vairāk"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Noskenējiet šo kodu ar Signal lietotni jūsu tālrunī"
+    "messageformat": "Noskenējiet šo kodu ar SWARM Messenger lietotni jūsu tālrunī"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Atveriet Signal tālrunī"
+    "messageformat": "Atveriet SWARM Messenger tālrunī"
   },
   "icu:Install__instructions__2": {
     "messageformat": "Pieskarieties {settings}, pēc tam pieskarieties {linkedDevices}"
@@ -1611,7 +1611,7 @@
     "messageformat": "<paragraph>Radās neparedzēta kļūda.</paragraph><paragraph>Lūdzu, mēģiniet vēlreiz.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signal nevar piesaistīt šo ierīci, izmantojot jūsu pašreizējo tīklu."
+    "messageformat": "SWARM Messenger nevar piesaistīt šo ierīci, izmantojot jūsu pašreizējo tīklu."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Mēģināt vēlreiz"
@@ -1629,7 +1629,7 @@
     "messageformat": "Vai dzēst visus datus?"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "Jūs šai darbvirsmai cenšaties piesaistīt citu Signal kontu. Ja turpināsiet, visi esošie Signal Desktop dati tiks dzēsti."
+    "messageformat": "Jūs šai darbvirsmai cenšaties piesaistīt citu SWARM kontu. Ja turpināsiet, visi esošie SWARM Messenger dati tiks dzēsti."
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "Turpināt"
@@ -1644,7 +1644,7 @@
     "messageformat": "Ierīces nosaukums"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Lai mainītu šīs ierīces nosaukumu, atveriet tālrunī Signal un dodieties uz Iestatījumi > Saistītās ierīces"
+    "messageformat": "Lai mainītu šīs ierīces nosaukumu, atveriet tālrunī SWARM Messenger un dodieties uz Iestatījumi > Saistītās ierīces"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Emocijzīmes ādas tonis"
@@ -1836,7 +1836,7 @@
     "messageformat": "Automātiskā atslēgas verifikācija"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "Pēc tās iespējošanas Signal mēģinās automātiski verificēt 1:1 sarunu šifrēšanu."
+    "messageformat": "Pēc tās iespējošanas SWARM Messenger mēģinās automātiski verificēt 1:1 sarunu šifrēšanu."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "Uzzināt vairāk"
@@ -1854,7 +1854,7 @@
     "messageformat": "Diemžēl jums jau sasaistīts pārāk daudz ierīču. Mēģiniet kādu noņemt."
   },
   "icu:installTooOld": {
-    "messageformat": "Atjauniniet lietotni Signal šajā ierīcē, lai saistītu savu tālruni."
+    "messageformat": "Atjauniniet lietotni SWARM Messenger šajā ierīcē, lai saistītu savu tālruni."
   },
   "icu:installErrorHeader": {
     "messageformat": "Kaut kas sagāja grīstē!"
@@ -1905,7 +1905,7 @@
     "messageformat": "Šī zvana saite vairs nav derīga."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal zvans"
+    "messageformat": "SWARM Messenger zvans"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Nevar izdzēst saiti. Pārbaudiet savienojumu un mēģiniet vēlreiz."
@@ -2079,16 +2079,16 @@
     "messageformat": "{count, plural, zero {Šajā zvanā ir {count,number} cilvēku} one {Šajā zvanā ir {count,number} cilvēks} other {Šajā zvanā ir {count,number} cilvēki}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal atskaņos zvana signālu{person}"
+    "messageformat": "SWARM Messenger atskaņos zvana signālu{person}"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal atskaņos zvana signālu {first} un {second}"
+    "messageformat": "SWARM Messenger atskaņos zvana signālu {first} un {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal atskaņos zvana signālu {first}, {second} un  {third}"
+    "messageformat": "SWARM Messenger atskaņos zvana signālu {first}, {second} un  {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, zero {Signal zvanīs {first}, {second}, un {others,number} citiem} one {Signal zvanīs {first}, {second}, un {others,number} citam} other {Signal zvanīs {first}, {second} un {others,number} citiem}}"
+    "messageformat": "{others, plural, zero {SWARM Messenger zvanīs {first}, {second}, un {others,number} citiem} one {SWARM Messenger zvanīs {first}, {second}, un {others,number} citam} other {SWARM Messenger zvanīs {first}, {second} un {others,number} citiem}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} saņems paziņojumu"
@@ -2142,13 +2142,13 @@
     "messageformat": "Veido savienojumu vēlreiz…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Savienojums tika pārtraukts. Signal atkārtoti veido savienojumu."
+    "messageformat": "Savienojums tika pārtraukts. SWARM Messenger atkārtoti veido savienojumu."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal koplieto {window}."
+    "messageformat": "SWARM Messenger koplieto {window}."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Signal ekrāna kopīgošana ir aktīva"
+    "messageformat": "SWARM Messenger ekrāna kopīgošana ir aktīva"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Veido savienojumu vēlreiz…"
@@ -2169,7 +2169,7 @@
     "messageformat": "Nepieciešama atļauja"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Lietotnei Signal ir nepieciešama atļauja, lai piekļūtu datora ekrāna ierakstīšanai."
+    "messageformat": "Lietotnei SWARM Messenger ir nepieciešama atļauja, lai piekļūtu datora ekrāna ierakstīšanai."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Atveriet sadaļu Sistēmas preferences."
@@ -2178,7 +2178,7 @@
     "messageformat": "Apakšējā kreisajā stūrī noklikšķiniet uz bloķēšanas ikonas un ievadiet sava datora paroli."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Labajā pusē atzīmējiet izvēles rūtiņu blakus lietotnei Signal. Ja sarakstā neredzat Signal, noklikšķiniet uz +, lai to pievienotu."
+    "messageformat": "Labajā pusē atzīmējiet izvēles rūtiņu blakus lietotnei SWARM Messenger. Ja sarakstā neredzat SWARM Messenger, noklikšķiniet uz +, lai to pievienotu."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Atvērt Sistēmas preferences"
@@ -2190,7 +2190,7 @@
     "messageformat": "Vienmēr pārslēgt zvanus"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Pārraidiet visus zvanus caur Signal serveri, lai izvairītos no IP adreses atklāšanas kontaktpersonai. Aktivizēšana samazinās zvanu kvalitāti."
+    "messageformat": "Pārraidiet visus zvanus caur SWARM Messenger serveri, lai izvairītos no IP adreses atklāšanas kontaktpersonai. Aktivizēšana samazinās zvanu kvalitāti."
   },
   "icu:permissions": {
     "messageformat": "Atļaujas"
@@ -2208,10 +2208,10 @@
     "messageformat": "Rādīt teksta formatēšanas uznirstošo izvēlni, kad ir atlasīts teksts"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Pareizrakstības pārbaude tiks iespējota nākamajā lietotnes Signal startēšanas reizē."
+    "messageformat": "Pareizrakstības pārbaude tiks iespējota nākamajā lietotnes SWARM Messenger startēšanas reizē."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Pareizrakstības pārbaude tiks atspējota nākamajā lietotnes Signal startēšanas reizē."
+    "messageformat": "Pareizrakstības pārbaude tiks atspējota nākamajā lietotnes SWARM Messenger startēšanas reizē."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Minimizēt sistēmas teknē"
@@ -2235,7 +2235,7 @@
     "messageformat": "Vai dzēst visus datus?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Vai dzēst visus datus un ziņas no šīs Signal Desktop versijas? Jūsu Signal konts un dati tālrunī vai citās piesaistītās ierīcēs netiks dzēsti."
+    "messageformat": "Vai dzēst visus datus un ziņas no šīs SWARM Messenger versijas? Jūsu SWARM konts un dati tālrunī vai citās piesaistītās ierīcēs netiks dzēsti."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Notiek atvienošana un visu datu dzēšana…"
@@ -2244,7 +2244,7 @@
     "messageformat": "Dzēst kontu"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "Tiks dzēsta jūsu konta informācija, profils un visas ziņas. Tāpat tiksiet noņemts no visām Signal grupām."
+    "messageformat": "Tiks dzēsta jūsu konta informācija, profils un visas ziņas. Tāpat tiksiet noņemts no visām SWARM grupām."
   },
   "icu:deleteAccountButton": {
     "messageformat": "Dzēst kontu"
@@ -2253,10 +2253,10 @@
     "messageformat": "Dzēst kontu?"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "Tiks dzēsta jūsu konta informācija, profils un visas ziņas. Tāpat tiksiet noņemts no visām Signal grupām. Pēc šī procesa pabeigšanas lietotne tiks aizvērta."
+    "messageformat": "Tiks dzēsta jūsu konta informācija, profils un visas ziņas. Tāpat tiksiet noņemts no visām SWARM grupām. Pēc šī procesa pabeigšanas lietotne tiks aizvērta."
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Jums ir novecojuši dati no iepriekšējas Signal Desktop versijas instalācijas. Izvēloties turpināt, šie dati tiks dzēsti un jūs sāksiet no nulles."
+    "messageformat": "Jums ir novecojuši dati no iepriekšējas SWARM Messenger instalācijas. Izvēloties turpināt, šie dati tiks dzēsti un jūs sāksiet no nulles."
   },
   "icu:deleteOldData": {
     "messageformat": "Dzēst vecos datus"
@@ -2313,7 +2313,7 @@
     "messageformat": "Daļēji dzēsts, klikšķiniet, lai skatītu sīkāku informāciju"
   },
   "icu:expiredWarning": {
-    "messageformat": "Šī Signāla galdvirsmas (desktop) versija ir novecojusi. Lai turpinātu ziņapmaiņu, lūdzu, paaugstiniet to uz jaunāko versiju."
+    "messageformat": "Šī SWARM Messenger versija ir novecojusi. Lai turpinātu ziņapmaiņu, lūdzu, paaugstiniet to uz jaunāko versiju."
   },
   "icu:upgrade": {
     "messageformat": "Noklikšķiniet, lai atvērtu swarm.green/download"
@@ -2325,7 +2325,7 @@
     "messageformat": "Kontaktu importēšana"
   },
   "icu:syncExplanation": {
-    "messageformat": "Importējiet visas Signal grupas un kontaktpersonas no savas mobilās ierīces."
+    "messageformat": "Importējiet visas SWARM grupas un kontaktpersonas no savas mobilās ierīces."
   },
   "icu:syncNow": {
     "messageformat": "Importēt tūlīt"
@@ -2358,7 +2358,7 @@
     "messageformat": "Vakar, {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Iespējams, Signal nespēj apstrādāt ienākošu ziņojumu."
+    "messageformat": "Iespējams, SWARM Messenger nespēj apstrādāt ienākošu ziņojumu."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Ziņas pamatteksts ir pārāk garš."
@@ -2523,13 +2523,13 @@
     "messageformat": "Labojumus var veikt tikai 24 stundu laikā pēc šīs ziņas nosūtīšanas."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} nav Signal lietotājs. Pārliecinieties, ka ievadījāt pilnu lietotājvārds."
+    "messageformat": "{atUsername} nav SWARM Messenger lietotājs. Pārliecinieties, ka ievadījāt pilnu lietotājvārds."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} nav derīgs lietotājvārds. Jāievada pilns lietotājvārds, tostarp tam piesaistītā ciparu kombinācija."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "Lietotājs nav atrasts. \"{phoneNumber}\" nav Signal lietotājs."
+    "messageformat": "Lietotājs nav atrasts. \"{phoneNumber}\" nav SWARM Messenger lietotājs."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "Lietotājs nav atrast. \"{phoneNumber}\" nav derīgs tālruņa numurs."
@@ -2550,13 +2550,13 @@
     "messageformat": "Sasniegts maks. grupas lielums"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Dalībnieku skaits Signal grupās nedrīkst pārsniegt {max,number}."
+    "messageformat": "Dalībnieku skaits SWARM grupās nedrīkst pārsniegt {max,number}."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Ieteicamais dalībnieku limits sasniegts"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signal grupas vislabāk darbojas, ja dalībnieku skaits nepārsniedz {max,number} vai ir mazāks. Ja pievienosiet vairāk dalībnieku, ziņu sūtīšana un saņemšana aizkavēsies."
+    "messageformat": "SWARM grupas vislabāk darbojas, ja dalībnieku skaits nepārsniedz {max,number} vai ir mazāks. Ja pievienosiet vairāk dalībnieku, ziņu sūtīšana un saņemšana aizkavēsies."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Izveidojiet grupas nosaukumu"
@@ -2586,13 +2586,13 @@
     "messageformat": "Grupu nevarēja atjaunināt. Pārbaudiet savienojumu un mēģiniet vēlreiz."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Noklišķiniet, lai no jauna savienotu Signal Desktop ar jūsu mobilo ierīci un turpinātu ziņapmaiņu."
+    "messageformat": "Noklišķiniet, lai no jauna savienotu SWARM Messenger ar jūsu mobilo ierīci un turpinātu ziņapmaiņu."
   },
   "icu:unlinked": {
     "messageformat": "Atsaistīts"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "Noklikšķiniet, lai reģistrētu atkārtoti un turpinātu ziņapmaiņu. Iespējams, ka Signal Desktop nav reģistrēts, jo esat reģistrējuši savu tālruņa numuru lietotnē Signal citā ierīcē."
+    "messageformat": "Noklikšķiniet, lai reģistrētu atkārtoti un turpinātu ziņapmaiņu. Iespējams, ka SWARM Messenger nav reģistrēts, jo esat reģistrējuši savu tālruņa numuru lietotnē SWARM Messenger citā ierīcē."
   },
   "icu:unregistered": {
     "messageformat": "Vairs nav reģistrēts"
@@ -2604,16 +2604,16 @@
     "messageformat": "Vēlreiz mēģināt atjaunināt"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Noklikšķiniet, lai restartētu Signal"
+    "messageformat": "Noklikšķiniet, lai restartētu SWARM Messenger"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Noklikšķiniet, lai lejupielādētu atjauninājumu"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Nevarēja atjaunināt Signal. Noklikšķiniet, lai mēģinātu vēlreiz."
+    "messageformat": "Nevarēja atjaunināt SWARM Messenger. Noklikšķiniet, lai mēģinātu vēlreiz."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Pārstartēt Signālu"
+    "messageformat": "Pārstartēt SWARM Messenger"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Ignorēt atjauninājumu"
@@ -2745,7 +2745,7 @@
     "messageformat": "Daži pielikumi ir pārāk lieli, lai tos attēlotu."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Izmantojiet šo saiti, lai pievienotos Signal zvanam"
+    "messageformat": "Izmantojiet šo saiti, lai pievienotos SWARM zvanam"
   },
   "icu:donation--missing": {
     "messageformat": "Nevar iegūt informāciju par ziedojumu"
@@ -2757,7 +2757,7 @@
     "messageformat": "Pieskarieties šai ziņai mobilajā ierīcē, lai skatītu savu ziedojumu"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} ziedoja Signal jūsu vārdā"
+    "messageformat": "{sender} ziedoja SWARM Messenger jūsu vārdā"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Lai atvērtu šo ziedojumu, skatiet šo ziņu tālrunī"
@@ -2814,7 +2814,7 @@
     "messageformat": "Paldies par jūsu atbalstu!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Jūs atbalstījāt Signal ar ziedojumu lietotāja {name} vārdā. Lietotājam būs iespēja parādīt savu atbalstu profilā."
+    "messageformat": "Jūs atbalstījāt SWARM Messenger ar ziedojumu lietotāja {name} vārdā. Lietotājam būs iespēja parādīt savu atbalstu profilā."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Uzlīmju komplektu nevarēja instalēt"
@@ -2826,10 +2826,10 @@
     "messageformat": "Pievienot uzlīmes"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal Mākslas Sērija"
+    "messageformat": "SWARM Messenger Mākslas Sērija"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Nav pieejama neviena Signal mākslinieku sērijas uzlīme"
+    "messageformat": "Nav pieejama neviena SWARM Messenger mākslinieku sērijas uzlīme"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "Ar jums kopīgotās"
@@ -2865,7 +2865,7 @@
     "messageformat": "Velc, lai pārkārtotu uzlīmju komplektu"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "Signal mākslas sērijas uzlīmju komplekti"
+    "messageformat": "SWARM Messenger mākslas sērijas uzlīmju komplekti"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
     "messageformat": "Saņemtie uzlīmju komplekti"
@@ -3150,19 +3150,19 @@
     "messageformat": "Ziņa ir pārāk gara, lai to attēlotu pilnībā"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact}nosūtīja jums ziņu, kuru nevar apstrādāt vai parādīt, jo tajā izmantota jauna Signal funkcija."
+    "messageformat": "{contact}nosūtīja jums ziņu, kuru nevar apstrādāt vai parādīt, jo tajā izmantota jauna SWARM Messenger funkcija."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Jūs varat lūgt {contact} atkārtoti nosūtīt šo ziņu tagad, kad izmantojat jaunāko Signal versiju."
+    "messageformat": "Jūs varat lūgt {contact} atkārtoti nosūtīt šo ziņu tagad, kad izmantojat jaunāko SWARM Messenger versiju."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Viena no jūsu ierīcēm nosūtīja ziņu, kuru šeit nevar apstrādāt vai parādīt, jo tajā izmantota jauna Signal funkcija."
+    "messageformat": "Viena no jūsu ierīcēm nosūtīja ziņu, kuru šeit nevar apstrādāt vai parādīt, jo tajā izmantota jauna SWARM Messenger funkcija."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Tagad, kad izmantojat jaunāko Signal versiju. līdzīgas ziņas tiks sinhronizētas."
+    "messageformat": "Tagad, kad izmantojat jaunāko SWARM Messenger versiju. līdzīgas ziņas tiks sinhronizētas."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Aktualizēt Signālu"
+    "messageformat": "Aktualizēt SWARM Messenger"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Skatīts"
@@ -3429,7 +3429,7 @@
     "messageformat": "Saruna atzīmēta kā nelasīta"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Lai izmantotu uzlīmju komplekta veidotāju, iestatiet Signal savā tālrunī un datorā"
+    "messageformat": "Lai izmantotu uzlīmju komplekta veidotāju, iestatiet SWARM Messenger savā tālrunī un datorā"
   },
   "icu:Reactions--remove": {
     "messageformat": "Noņemt reakciju"
@@ -3447,16 +3447,16 @@
     "messageformat": "Padomi par drošību"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "Neatbildiet kontiem, kas uzdodas par Signal"
+    "messageformat": "Neatbildiet kontiem, kas uzdodas par SWARM Messenger"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "Signal nekad jums neprasīs reģistrācijas kodu, PIN vai atkopšanas atslēgu. Nekad neatbildiet uz sarunu, kurā lietotājs uzdodas par Signal darbinieku."
+    "messageformat": "SWARM Messenger nekad jums neprasīs reģistrācijas kodu, PIN vai atkopšanas atslēgu. Nekad neatbildiet uz sarunu, kurā lietotājs uzdodas par SWARM Messenger darbinieku."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "Pārskatiet nosaukumus un fotoattēlus"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "Pievērsiet uzmanību paziņojumam \"Profila nosaukums nav verificēts\". Ikviens lietotnē Signal iestata savu profila nosaukumu."
+    "messageformat": "Pievērsiet uzmanību paziņojumam \"Profila nosaukums nav verificēts\". Ikviens lietotnē SWARM Messenger iestata savu profila nosaukumu."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "Uzmanieties no krāpšanas"
@@ -3465,16 +3465,16 @@
     "messageformat": "Nereaģējiet uz ziņām, kuru mērķis ir panākt, lai jūs uz tām atbildat. Uzmanieties no finanšu padomiem un aizdomīgām tīmekļa saitēm."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "Neatbildiet kontiem, kas uzdodas par Signal"
+    "messageformat": "Neatbildiet kontiem, kas uzdodas par SWARM Messenger"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Signal nekad jums neprasīs reģistrācijas kodu, PIN vai atkopšanas atslēgu. Neatbildiet uz sarunām, kurās personas uzdodas par Signal vai Signal atbalsta dienesta darbiniekiem. Krāpnieki mēdz izveidot viltus profilu nosaukumus, lai mēģinātu pārņemt jūsu kontu."
+    "messageformat": "SWARM Messenger nekad jums neprasīs reģistrācijas kodu, PIN vai atkopšanas atslēgu. Neatbildiet uz sarunām, kurās personas uzdodas par SWARM Messenger vai SWARM Messenger atbalsta dienesta darbiniekiem. Krāpnieki mēdz izveidot viltus profilu nosaukumus, lai mēģinātu pārņemt jūsu kontu."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "Pārskatiet nosaukumus un fotoattēlus"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "Pievērsiet uzmanību paziņojumam \"Profila nosaukums nav verificēts\". Lietotnē Signal katrs pats iestata savu profila nosaukumu un fotoattēlu. Ja neesat pārliecināti, kas atsūtījis pieprasījumu, drošāk to ignorēt."
+    "messageformat": "Pievērsiet uzmanību paziņojumam \"Profila nosaukums nav verificēts\". Lietotnē SWARM Messenger katrs pats iestata savu profila nosaukumu un fotoattēlu. Ja neesat pārliecināti, kas atsūtījis pieprasījumu, drošāk to ignorēt."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Kriptovalūtu vai naudas krāpšana"
@@ -3555,13 +3555,13 @@
     "messageformat": "Vai ziņot par surogātpastu?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signal saņems ziņu, ka šī persona, iespējams, sūta surogātpastu. Signal pārstāvjiem nav redzams nevienas sarunas saturs."
+    "messageformat": "SWARM Messenger saņems ziņu, ka šī persona, iespējams, sūta surogātpastu. SWARM Messenger pārstāvjiem nav redzams nevienas sarunas saturs."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signal saņems ziņu, ka persona, kura jūs uzaicināja pievienoties šai grupai, iespējams, sūta surogātpastu. Signal pārstāvjiem nav redzams nevienas sarunas saturs."
+    "messageformat": "SWARM Messenger saņems ziņu, ka persona, kura jūs uzaicināja pievienoties šai grupai, iespējams, sūta surogātpastu. SWARM Messenger pārstāvjiem nav redzams nevienas sarunas saturs."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signal saņems ziņu, ka {name} (persona, kura jūs uzaicināja pievienoties šai grupai), iespējams, sūta surogātpastu. Signal pārstāvjiem nav redzams nevienas sarunas saturs."
+    "messageformat": "SWARM Messenger saņems ziņu, ka {name} (persona, kura jūs uzaicināja pievienoties šai grupai), iespējams, sūta surogātpastu. SWARM Messenger pārstāvjiem nav redzams nevienas sarunas saturs."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Ziņot par surogātpastu"
@@ -3603,7 +3603,7 @@
     "messageformat": "Vai apstiprināt pieprasījumu?"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "Apstipriniet pieprasījumus tikai no lietotājiem, kuriem uzticaties. <bold>Signal nekad</bold> jums neprasīs reģistrācijas kodu, PIN vai atkopšanas atslēgu."
+    "messageformat": "Apstipriniet pieprasījumus tikai no lietotājiem, kuriem uzticaties. <bold>SWARM Messenger nekad</bold> jums neprasīs reģistrācijas kodu, PIN vai atkopšanas atslēgu."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "Turpināt"
@@ -3657,16 +3657,16 @@
     "messageformat": "Nosaukums nav verificēts"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Šis ir oficiālais un vienīgais sarunu kanāls ar Signal"
+    "messageformat": "Šis ir oficiālais un vienīgais sarunu kanāls ar SWARM Messenger"
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "Oficiāla saruna"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "Vienīgā oficiālā saruna ar Signal Sekojiet līdzi jaunumiem un informācijai par lietotnes atjauninājumiem."
+    "messageformat": "Vienīgā oficiālā saruna ar SWARM Messenger Sekojiet līdzi jaunumiem un informācijai par lietotnes atjauninājumiem."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "Vienīgā oficiālā saruna ar Signal"
+    "messageformat": "Vienīgā oficiālā saruna ar SWARM Messenger"
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Sekojiet līdzi jaunumiem un informācijai par lietotnes atjauninājumiem."
@@ -3732,10 +3732,10 @@
     "messageformat": "Neatbildēts videozvans"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal joprojām darbojas"
+    "messageformat": "SWARM Messenger joprojām darbojas"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal turpinās darboties paziņojumu sadaļā. Varat to mainīt Signal iestatījumos."
+    "messageformat": "SWARM Messenger turpinās darboties paziņojumu sadaļā. Varat to mainīt SWARM Messenger iestatījumos."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Ienākošs balss zvans"
@@ -3942,7 +3942,7 @@
     "messageformat": "Kopēt zvana saiti"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Nosūtīt zvana saiti, izmantojot Signal"
+    "messageformat": "Nosūtīt zvana saiti, izmantojot SWARM Messenger"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "{name} — vai noņemt no šī zvana?"
@@ -4104,7 +4104,7 @@
     "messageformat": "Nezināma saites versija."
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "Šī Signal Desktop versija neatbalsta šo saiti."
+    "messageformat": "Šī SWARM Messenger versija neatbalsta šo saiti."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Nevar pievienoties grupai"
@@ -4710,10 +4710,10 @@
     "messageformat": "Dzēš lietotāja datus un atiestata aplikāciju"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Ziedot Signal"
+    "messageformat": "Ziedot SWARM Messenger"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} atbalsta Signal"
+    "messageformat": "{name} atbalsta SWARM Messenger"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "Notiek ziņu sinhronizēšana"
@@ -4830,7 +4830,7 @@
     "messageformat": "Kontā nepieciešama darbība"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Lai turpinātu izmantot šo kontu, tālrunī ir jāatver Signal. Ja tālrunī neatvērsiet programmu Signal, jūsu konts drīz tiks dzēsts. <learnMoreLink>Uzzināt vairāk</learnMoreLink>"
+    "messageformat": "Lai turpinātu izmantot šo kontu, tālrunī ir jāatver SWARM Messenger. Ja tālrunī neatvērsiet programmu SWARM Messenger, jūsu konts drīz tiks dzēsts. <learnMoreLink>Uzzināt vairāk</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Nevar atjaunot multividi"
@@ -4854,10 +4854,10 @@
     "messageformat": "Pievienot pielikumu vai aptauju"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Šis cilvēks neizmanto Signal"
+    "messageformat": "Šis cilvēks neizmanto SWARM Messenger"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal Desktop versija neatbalsta ziņapmaiņu ar personām, kas nav Signal kontaktpersonas. Lūdziet šai personai instalēt Signal, lai nodrošinātu drošāku ziņapmaiņu."
+    "messageformat": "SWARM Messenger neatbalsta ziņapmaiņu ar personām, kas nav SWARM Messenger kontaktpersonas. Lūdziet šai personai instalēt SWARM Messenger, lai nodrošinātu drošāku ziņapmaiņu."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Pārbauda kontaktpersonas reģistrācijas statusu"
@@ -5118,10 +5118,10 @@
     "messageformat": "Atbloķēt"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "Signal saņems ziņu, ka šī persona, iespējams, sūta surogātpastu. Signal pārstāvjiem nav redzams nevienas sarunas saturs."
+    "messageformat": "SWARM Messenger saņems ziņu, ka šī persona, iespējams, sūta surogātpastu. SWARM Messenger pārstāvjiem nav redzams nevienas sarunas saturs."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "Signal tiks informēts, ka persona, kura aicināja jūs pievienoties šai grupai, iespējams, sūta surogātpastu. Signal pārstāvjiem nav pieejams nevienas sarunas saturs."
+    "messageformat": "SWARM Messenger tiks informēts, ka persona, kura aicināja jūs pievienoties šai grupai, iespējams, sūta surogātpastu. SWARM Messenger pārstāvjiem nav pieejams nevienas sarunas saturs."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "Ziņot par surogātpastu"
@@ -5169,7 +5169,7 @@
     "messageformat": "Segvārds"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Signal segvārdus un piezīmes glabā pilnīgi šifrētā veidā. Šo informāciju redzat tikai jūs."
+    "messageformat": "SWARM Messenger segvārdus un piezīmes glabā pilnīgi šifrētā veidā. Šo informāciju redzat tikai jūs."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Vārds"
@@ -5325,7 +5325,7 @@
     "messageformat": "Pieprasiet, lai administrators apstiprina jaunu dalībnieku pievienošanos, izmantojot grupas saiti."
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Kopēt Signal grupas saiti starpliktuvē"
+    "messageformat": "Kopēt grupas saiti starpliktuvē"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Meklēt dalībniekus"
@@ -5464,7 +5464,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, zero {Grupas biedri, kuri izmanto jaunāko Signal versiju, redzēs, ka izdzēsāt šīs ziņas.} one {Grupas biedri, kuri izmanto jaunāko Signal versiju, redzēs, ka izdzēsāt šo ziņu.} other {Grupas biedri, kuri izmanto jaunāko Signal versiju, redzēs, ka izdzēsāt šīs ziņas.}}"
+    "messageformat": "{count, plural, zero {Grupas biedri, kuri izmanto jaunāko SWARM Messenger versiju, redzēs, ka izdzēsāt šīs ziņas.} one {Grupas biedri, kuri izmanto jaunāko SWARM Messenger versiju, redzēs, ka izdzēsāt šo ziņu.} other {Grupas biedri, kuri izmanto jaunāko SWARM Messenger versiju, redzēs, ka izdzēsāt šīs ziņas.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Dzēst"
@@ -5590,7 +5590,7 @@
     "messageformat": "Nevar pārsūtīt tukšas vai izdzēstas ziņas"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Izmantojiet šo saiti, lai pievienotos Signal zvanam: {url}"
+    "messageformat": "Izmantojiet šo saiti, lai pievienotos SWARM zvanam: {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "Pārskatiet pieprasījumus rūpīgi"
@@ -5599,7 +5599,7 @@
     "messageformat": "Padomi par drošību"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Rūpīgi pārskatiet pieprasījumus. Signal atrada citu kontaktu ar tādu pašu vārdu. <reviewRequestLink>Pārskatīt pieprasījumu</reviewRequestLink>"
+    "messageformat": "Rūpīgi pārskatiet pieprasījumus. SWARM Messenger atrada citu kontaktu ar tādu pašu vārdu. <reviewRequestLink>Pārskatīt pieprasījumu</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, zero {{count,number} grupas dalībniekiem ir vienāds vārds. <reviewRequestLink>Pārskatīt dalībniekus</reviewRequestLink>} one {{count,number} grupas dalībniekam ir vienāds vārds. <reviewRequestLink>Pārskatīt dalībniekus</reviewRequestLink>} other {{count,number} grupas dalībniekiem ir vienāds vārds. <reviewRequestLink>Pārskatīt dalībniekus</reviewRequestLink>}}"
@@ -5632,7 +5632,7 @@
     "messageformat": "Nav citu kopīgu grupu"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal kontaktpersona"
+    "messageformat": "SWARM kontaktpersona"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Nesen mainīja profila nosaukumu no {oldName} uz {newName}."
@@ -5650,7 +5650,7 @@
     "messageformat": "Verificēt, lai turpinātu ziņapmaiņu"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Lai lietotnē Signal novērstu mēstules, pabeidziet verifikāciju."
+    "messageformat": "Lai lietotnē SWARM Messenger novērstu mēstules, pabeidziet verifikāciju."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Pēc verifikācijas varat turpināt ziņapmaiņu. Visas pauzētās ziņas tiks automātiski nosūtītas."
@@ -6037,7 +6037,7 @@
     "messageformat": "Vai vēlaties atmest šīs izmaiņas?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Vai aizvērt Signal un pārtraukt zvanu?"
+    "messageformat": "Vai aizvērt SWARM Messenger un pārtraukt zvanu?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Ne tagad"
@@ -6137,7 +6137,7 @@
     "messageformat": "Vispārīgi"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Ziedot Signal"
+    "messageformat": "Ziedot SWARM Messenger"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Izskats"
@@ -6203,10 +6203,10 @@
     "messageformat": "Sistēma"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "SWARM Messenger Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "Signal Login ļauj jums atgūt un atjaunot savu kontu. Glabājiet šīs atslēgas drošā vietā, izmantojot uzticamu paroļu pārvaldnieku. <learnMoreLink>Uzzināt vairāk</learnMoreLink>."
+    "messageformat": "SWARM Messenger Login ļauj jums atgūt un atjaunot savu kontu. Glabājiet šīs atslēgas drošā vietā, izmantojot uzticamu paroļu pārvaldnieku. <learnMoreLink>Uzzināt vairāk</learnMoreLink>."
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "Uzzināt vairāk"
@@ -6218,7 +6218,7 @@
     "messageformat": "2 atslēgas"
   },
   "icu:Preferences__SignalAccountKeys__Title": {
-    "messageformat": "Jūsu Signal Login"
+    "messageformat": "Jūsu SWARM Messenger Login"
   },
   "icu:Preferences__SignalAccountKeys__Description": {
     "messageformat": "Glabājiet šo informāciju drošā vietā — pieteikšanās dati būs nepieciešami konta un datu atgūšanai. Nekad nevienam to neizpaudiet."
@@ -6239,7 +6239,7 @@
     "messageformat": "Šī ir saistīta ierīce"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "Lai pārvaldītu konta iestatījumus, atveriet Signal savā galvenajā ierīcē."
+    "messageformat": "Lai pārvaldītu konta iestatījumus, atveriet SWARM Messenger savā galvenajā ierīcē."
   },
   "icu:Preferences--zoom": {
     "messageformat": "Tālummaiņas līmenis"
@@ -6278,7 +6278,7 @@
     "messageformat": "Mainīt"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "Signal PIN"
+    "messageformat": "SWARM PIN"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "PIN atgādinājumi"
@@ -6416,7 +6416,7 @@
     "messageformat": "Neizdodas eksportēt sarunu vēsturi"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "Sarunu vēsturi nevar eksportēt, jo Signal nav atļaujas ierakstīt failus diskā. Mēģiniet mainīt diska atļaujas vai atjaunināt sistēmas iestatījumus un pēc tam eksportējiet vēlreiz."
+    "messageformat": "Sarunu vēsturi nevar eksportēt, jo SWARM Messenger nav atļaujas ierakstīt failus diskā. Mēģiniet mainīt diska atļaujas vai atjaunināt sistēmas iestatījumus un pēc tam eksportējiet vēlreiz."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "Rezerves kopiju eksportēšana"
@@ -6431,7 +6431,7 @@
     "messageformat": "pārsūtiet savu rezerves kopiju mapi uz tālruņa krātuvi;"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "instalējiet jaunu Signal kopiju savā tālrunī;"
+    "messageformat": "instalējiet jaunu SWARM Messenger kopiju savā tālrunī;"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "pieskarieties pie \"Atjaunot vai pārsūtīt\" un izvēlieties \"Rezerves kopijas ierīcē\"."
@@ -6698,13 +6698,13 @@
     "messageformat": "Bloķēts plkst. {blockedAt}"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Signal drošās rezerves kopijas"
+    "messageformat": "SWARM Messenger drošās rezerves kopijas"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Automātiskas rezerves kopijas ar Signal drošās un pilnībā šifrētās krātuves pakalpojumu. Sāciet savā tālrunī. <learnMoreLink>Uzzināt vairāk.</learnMoreLink>"
+    "messageformat": "Automātiskas rezerves kopijas ar SWARM Messenger drošās un pilnībā šifrētās krātuves pakalpojumu. Sāciet savā tālrunī. <learnMoreLink>Uzzināt vairāk.</learnMoreLink>"
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Izveidojiet ziņu vēstures rezerves kopiju, lai nezaudētu datus, nomainot tālruni vai pārinstalējot Signal."
+    "messageformat": "Izveidojiet ziņu vēstures rezerves kopiju, lai nezaudētu datus, nomainot tālruni vai pārinstalējot SWARM Messenger."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Rezerves kopijas informācija"
@@ -6734,13 +6734,13 @@
     "messageformat": "Abonements atcelts"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Varat pārvaldīt vai atcelt savu Signal rezerves kopiju abonementu savā tālrunī."
+    "messageformat": "Varat pārvaldīt vai atcelt savu SWARM Messenger rezerves kopiju abonementu savā tālrunī."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Varat pārvaldīt vai jaunināt Signal drošās rezerves kopijas savā tālrunī."
+    "messageformat": "Varat pārvaldīt vai jaunināt SWARM Messenger drošās rezerves kopijas savā tālrunī."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Varat pārvaldīt vai atjaunot savu Signal drošo rezerves kopiju abonementu savā tālrunī."
+    "messageformat": "Varat pārvaldīt vai atjaunot savu SWARM Messenger drošo rezerves kopiju abonementu savā tālrunī."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Pēdējās rezerves kopijas izveide"
@@ -6758,7 +6758,7 @@
     "messageformat": "Izveidojiet pilnībā šifrētu rezerves kopiju, ko varēsiet atjaunot savā tālrunī. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Lai rezerves kopiju atjaunotu, instalējiet jaunu Signal kopiju savā tālrunī. Atveriet lietotni un pieskarieties &quot;Atjaunot vai pārsūtīt&quot;. <learnMoreLink>Uzzināt vairāk.</learnMoreLink>"
+    "messageformat": "Lai rezerves kopiju atjaunotu, instalējiet jaunu SWARM Messenger kopiju savā tālrunī. Atveriet lietotni un pieskarieties &quot;Atjaunot vai pārsūtīt&quot;. <learnMoreLink>Uzzināt vairāk.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Izvēlēties mapi"
@@ -6794,7 +6794,7 @@
     "messageformat": "Jūsu atkopšanas atslēga"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "Šī atslēga ir nepieciešama jūsu konta un datu atgūšanai. Glabājiet atslēgu drošā vietā un nevienam neizpaudiet. Signal darbinieki jums nekad nerakstīs un neprasīs atkopšanas atslēgu. <learnMoreLink>Uzzināt vairāk.</learnMoreLink>"
+    "messageformat": "Šī atslēga ir nepieciešama jūsu konta un datu atgūšanai. Glabājiet atslēgu drošā vietā un nevienam neizpaudiet. SWARM Messenger darbinieki jums nekad nerakstīs un neprasīs atkopšanas atslēgu. <learnMoreLink>Uzzināt vairāk.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "Neizpaudiet savu atkopšanas atslēgu"
@@ -6809,7 +6809,7 @@
     "messageformat": "Nenorādīt atslēgu"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Nevienam neizpaudiet savu atkopšanas atslēgu. Tādējādi jūsu konts var tikt pārņemts. <strong>Signal darbinieki jums nekad nerakstīs</strong> un neprasīs atkopšanas atslēgu. Nekad neatbildiet uz sarunu, kurā lietotājs uzdodas par Signal darbinieku. <learnMoreLink>Uzzināt vairāk.</learnMoreLink>"
+    "messageformat": "Nevienam neizpaudiet savu atkopšanas atslēgu. Tādējādi jūsu konts var tikt pārņemts. <strong>SWARM Messenger darbinieki jums nekad nerakstīs</strong> un neprasīs atkopšanas atslēgu. Nekad neatbildiet uz sarunu, kurā lietotājs uzdodas par SWARM Messenger darbinieku. <learnMoreLink>Uzzināt vairāk.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Apstipriniet atkopšanas atslēgu"
@@ -6821,7 +6821,7 @@
     "messageformat": "Glabājiet atslēgu drošā vietā"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Ja pazaudēsiet atslēgu, Signal nevarēs palīdzēt atjaunot rezerves kopiju. Glabājiet atslēgu drošā vietā un neizpaudiet to citiem."
+    "messageformat": "Ja pazaudēsiet atslēgu, SWARM Messenger nevarēs palīdzēt atjaunot rezerves kopiju. Glabājiet atslēgu drošā vietā un neizpaudiet to citiem."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Turpināt"
@@ -6872,7 +6872,7 @@
     "messageformat": "Lai iespējotu rezerves kopijas, ir nepieciešama autentifikācija."
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "Šo darbību nevarēja pabeigt, jo sistēmas autentifikācija neizdevās. Lūdzu, mēģini vēlreiz vai atver Signal lietotni savā mobilajā ierīcē un dodies uz rezerves kopiju iestatījumiem, lai skatītu savu atkopšanas atslēgu."
+    "messageformat": "Šo darbību nevarēja pabeigt, jo sistēmas autentifikācija neizdevās. Lūdzu, mēģini vēlreiz vai atver SWARM Messenger lietotni savā mobilajā ierīcē un dodies uz rezerves kopiju iestatījumiem, lai skatītu savu atkopšanas atslēgu."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "Pieprasot sistēmas autentifikāciju šai darbībai, radās kļūda."
@@ -6902,7 +6902,7 @@
     "messageformat": "Tālruņa numurs"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Izvēlieties, kas var redzēt jūsu tālruņa numuru un kas var ar jums sazināties lietotnē Signal, izmantojot to."
+    "messageformat": "Izvēlieties, kas var redzēt jūsu tālruņa numuru un kas var ar jums sazināties lietotnē SWARM Messenger, izmantojot to."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Mainīt…"
@@ -6932,10 +6932,10 @@
     "messageformat": "Kas var mani atrast pēc numura"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Ikviens, kuram ir jūsu tālruņa numurs, redzēs, ka izmantojat Signal, un varēs uzsākt ar jums sarunas."
+    "messageformat": "Ikviens, kuram ir jūsu tālruņa numurs, redzēs, ka izmantojat SWARM Messenger, un varēs uzsākt ar jums sarunas."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Neviens neredzēs, ka izmantojat Signal, izņemot tos, kuriem nosūtīsiet ziņu vai ar kuriem jau esat sarunājušies iepriekš."
+    "messageformat": "Neviens neredzēs, ka izmantojat SWARM Messenger, izņemot tos, kuriem nosūtīsiet ziņu vai ar kuriem jau esat sarunājušies iepriekš."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Ikviens"
@@ -6947,7 +6947,7 @@
     "messageformat": "Vai tiešām to vēlaties?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "Ja mainīsiet \"{settingTitle}\" uz \"{nobodyLabel}\", cilvēkiem būs grūtāk jūs atrast Signal platformā."
+    "messageformat": "Ja mainīsiet \"{settingTitle}\" uz \"{nobodyLabel}\", cilvēkiem būs grūtāk jūs atrast SWARM Messenger platformā."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Ziņapmaiņa"
@@ -7010,7 +7010,7 @@
     "messageformat": "Iestatīt"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Restartējiet Signal, lai piemērotu izmaiņas"
+    "messageformat": "Restartējiet SWARM Messenger, lai piemērotu izmaiņas"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Lai mainītu valodu, lietotne ir jārestartē."
@@ -7025,13 +7025,13 @@
     "messageformat": "Ekrāna aizsardzība"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Neļaut šajā datorā uzņemt Signal ekrānuzņēmumus privātuma nolūkos."
+    "messageformat": "Neļaut šajā datorā uzņemt SWARM Messenger ekrānuzņēmumus privātuma nolūkos."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Vai atspējot ekrāna drošību?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Ja šī opcija ir atspējota, Microsoft Windows var uzņemt Signal ekrānuzņēmumus un izmantot tos funkcijām, kas, iespējams, nav privātas."
+    "messageformat": "Ja šī opcija ir atspējota, Microsoft Windows var uzņemt SWARM Messenger ekrānuzņēmumus un izmantot tos funkcijām, kas, iespējams, nav privātas."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Atspējot"
@@ -7052,19 +7052,19 @@
     "messageformat": "Klikšķiniet, lai dotos uz App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Atveriet Signal tālrunī"
+    "messageformat": "Atveriet SWARM Messenger tālrunī"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Ja savā tālrunī neatvērsiet Signal, jūsu konts drīz tiks dzēsts. Ja to sekmīgi izdarīsiet, šis ziņojums vairs netiks rādīts. <learnMoreLink>Uzzināt vairāk</learnMoreLink>"
+    "messageformat": "Ja savā tālrunī neatvērsiet SWARM Messenger, jūsu konts drīz tiks dzēsts. Ja to sekmīgi izdarīsiet, šis ziņojums vairs netiks rādīts. <learnMoreLink>Uzzināt vairāk</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Lai saglabātu kontu aktīvu, atveriet Signal tālrunī"
+    "messageformat": "Lai saglabātu kontu aktīvu, atveriet SWARM Messenger tālrunī"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Uzzināt vairāk"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal ir tehniskas grūtības. Tiek cītīgi strādāts, lai pēc iespējas ātrāk atjaunotu pakalpojumu."
+    "messageformat": "SWARM Messenger ir tehniskas grūtības. Tiek cītīgi strādāts, lai pēc iespējas ātrāk atjaunotu pakalpojumu."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Nepieciešams atjauninājums"
@@ -7073,13 +7073,13 @@
     "messageformat": "Pārbauda, vai ir pieejami atjauninājumi"
   },
   "icu:InstallScreenUpdateDialog--updating-signal": {
-    "messageformat": "Atjauno Signal"
+    "messageformat": "Atjauno SWARM Messenger"
   },
   "icu:InstallScreenUpdateDialog--download-progress": {
     "messageformat": "Lejupielādē {currentBytes} no {totalBytes} ({percentage,number,percent})..."
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Lai turpinātu, atjauniniet Signal Desktop."
+    "messageformat": "Lai turpinātu, atjauniniet SWARM Messenger."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Atjaunināt"
@@ -7091,19 +7091,19 @@
     "messageformat": "Nepieciešams atjauninājums"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Lai turpinātu lietot Signal, jums ir jāatjaunina uz jaunāko versiju."
+    "messageformat": "Lai turpinātu lietot SWARM Messenger, jums ir jāatjaunina uz jaunāko versiju."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "Lejupielādēt {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Restartējiet Signal, lai instalētu atjauninājumu."
+    "messageformat": "Restartējiet SWARM Messenger, lai instalētu atjauninājumu."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal Desktop neizdevās atjaunināt, taču ir pieejama jauna versija. Dodieties uz vietni {downloadUrl} un manuāli instalējiet jauno versiju, pēc tam sazinieties ar atbalsta dienestu vai ziņojiet par kļūdu saistībā šo problēmu."
+    "messageformat": "SWARM Messenger neizdevās atjaunināt, taču ir pieejama jauna versija. Dodieties uz vietni {downloadUrl} un manuāli instalējiet jauno versiju, pēc tam sazinieties ar atbalsta dienestu vai ziņojiet par kļūdu saistībā šo problēmu."
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "Signal logotips"
+    "messageformat": "SWARM Messenger logotips"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "Atpakaļ"
@@ -7139,7 +7139,7 @@
     "messageformat": "Lai turpinātu, nepieciešams verificēt, vai esat cilvēks"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "Lai lietotnē Signal novērstu mēstules, pabeidziet verifikāciju. Pēc verificēšanas varat reģistrēties."
+    "messageformat": "Lai lietotnē SWARM Messenger novērstu mēstules, pabeidziet verifikāciju. Pēc verificēšanas varat reģistrēties."
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "Mēģināt verifikāciju vēlreiz"
@@ -7379,7 +7379,7 @@
     "messageformat": "Nepareizs PIN"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "Jūsu PIN minējumu skaits ir beidzies, bet jums joprojām ir iespēja piekļūt jūsu Signal kontam, izveidojot jaunu PIN. Jūsu konta privātumam un drošībai jūsu konts tiks atjaunots bez jebkādas saglabātas profila informācijas vai iestatījumiem."
+    "messageformat": "Jūsu PIN minējumu skaits ir beidzies, bet jums joprojām ir iespēja piekļūt jūsu SWARM kontam, izveidojot jaunu PIN. Jūsu konta privātumam un drošībai jūsu konts tiks atjaunots bez jebkādas saglabātas profila informācijas vai iestatījumiem."
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
     "messageformat": "Izveidojiet jaunu PIN"
@@ -7409,7 +7409,7 @@
     "messageformat": "Izveido savu PIN"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "PIN var palīdzēt atjaunot jūsu kontu un saglabāt informāciju šifrētu lietotnē Signal. <learnMore>Uzzināt vairāk</learnMore>"
+    "messageformat": "PIN var palīdzēt atjaunot jūsu kontu un saglabāt informāciju šifrētu lietotnē SWARM Messenger. <learnMore>Uzzināt vairāk</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "Izveido savu PIN"
@@ -7433,7 +7433,7 @@
     "messageformat": "Brīdinājums"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "Ja atspējosiet PIN, zaudēsiet visus datus, kad atkārtoti reģistrēsieties lietotnē Signal Reģistrācijas bloķēšanu nevar ieslēgt, kamēr PIN ir atspējots."
+    "messageformat": "Ja atspējosiet PIN, zaudēsiet visus datus, kad atkārtoti reģistrēsieties lietotnē SWARM Messenger Reģistrācijas bloķēšanu nevar ieslēgt, kamēr PIN ir atspējots."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "Atspējot PIN"
@@ -7442,10 +7442,10 @@
     "messageformat": "Atcelt"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "Par Signal PIN"
+    "messageformat": "Par SWARM PIN"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "PIN glabā Signal informāciju šifrētā veidā tā, lai tai varētu piekļūt tikai jūs. Jūsu profils, iestatījumi un kontaktpersonas pēc atkārtotas instalēšanas tiks atjaunotas."
+    "messageformat": "PIN glabā SWARM Messenger informāciju šifrētā veidā tā, lai tai varētu piekļūt tikai jūs. Jūsu profils, iestatījumi un kontaktpersonas pēc atkārtotas instalēšanas tiks atjaunotas."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "Uzzināt vairāk"
@@ -7478,7 +7478,7 @@
     "messageformat": "Nepieciešams atjauninājums"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "Lai turpinātu reģistrāciju, atjauniniet Signal uz jaunāko versiju."
+    "messageformat": "Lai turpinātu reģistrāciju, atjauniniet SWARM Messenger uz jaunāko versiju."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "Atjaunināt"
@@ -7508,7 +7508,7 @@
     "messageformat": "Sazināties ar atbalstu"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Neizdodas aizvērt Signal.",
+    "messageformat": "Neizdodas aizvērt SWARM Messenger.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7528,14 +7528,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Jaunāka Signal versija jau ir instalēta. Vai tiešām vēlaties turpināt?",
+    "messageformat": "Jaunāka SWARM Messenger versija jau ir instalēta. Vai tiešām vēlaties turpināt?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Programma avarēja"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Programma Signal tika restartēta pēc avārijas. Varat nosūtīt avārijas ziņojumu, lai palīdzētu Signal izmeklēt problēmu."
+    "messageformat": "Programma SWARM Messenger tika restartēta pēc avārijas. Varat nosūtīt avārijas ziņojumu, lai palīdzētu SWARM Messenger izmeklēt problēmu."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Sūtīt"
@@ -7640,7 +7640,7 @@
     "messageformat": "Klikšķiniet \"{buttonName}\" zemāk"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "Ieslēdziet \"Signal\""
+    "messageformat": "Ieslēdziet \"SWARM Messenger\""
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Atvērt iestatījumus"
@@ -7736,7 +7736,7 @@
     "messageformat": "Uzzināt vairāk"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal kontaktpersonas"
+    "messageformat": "SWARM kontaktpersonas"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} ir personas, kurām izvēlējāties uzticēties kādā no šiem veidiem:"
@@ -7877,7 +7877,7 @@
     "messageformat": "Paslēpt stāstu no"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Visas Signal kontaktpersonas"
+    "messageformat": "Visas SWARM kontaktpersonas"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Visi, izņemot…"
@@ -7955,7 +7955,7 @@
     "messageformat": "Mana stāsta privātums"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Izvēlieties, kuras Signal kontaktpersonas var skatīt jūsu stāstu. To vienmēr varat mainīt privātuma iestatījumos. <learnMoreLink>Uzziniet vairāk.</learnMoreLink>"
+    "messageformat": "Izvēlieties, kuras SWARM kontaktpersonas var skatīt jūsu stāstu. To vienmēr varat mainīt privātuma iestatījumos. <learnMoreLink>Uzziniet vairāk.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Dzēst stāstu"
@@ -8024,7 +8024,7 @@
     "messageformat": "Lejupielādēt pielikumu"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Iespējojiet skatīšanas apliecinājumus, lai uzzinātu, kuri lietotāji ir redzējuši jūsu stāstus. Mobilajā ierīcē atveriet lietotni Signal un pārejiet uz sadaļu Iestatījumi > Stāsti."
+    "messageformat": "Iespējojiet skatīšanas apliecinājumus, lai uzzinātu, kuri lietotāji ir redzējuši jūsu stāstus. Mobilajā ierīcē atveriet lietotni SWARM Messenger un pārejiet uz sadaļu Iestatījumi > Stāsti."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Vēl nav atbilžu"
@@ -8210,7 +8210,7 @@
     "messageformat": "Jūsu QR kods un saite ir atiestatīti, un jūsu lietotājvārds ir {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Noskenē šo QR kodu ar savu tālruni, lai sarunātos ar mani pakalpojumā Signal.",
+    "messageformat": "Noskenē šo QR kodu ar savu tālruni, lai sarunātos ar mani pakalpojumā SWARM Messenger.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8286,7 +8286,7 @@
     "messageformat": "Nerādīt"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "Signal PIN pārbaude"
+    "messageformat": "SWARM PIN pārbaude"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "Mēs jums reizēm pieprasīsim pārbaudīt jūsu PIN, lai jūs to atcerētos."
@@ -8298,7 +8298,7 @@
     "messageformat": "Ne tagad"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "Ievadiet jūsu Signal PIN"
+    "messageformat": "Ievadiet jūsu SWARM PIN"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "Lai palīdzētu jums iegaumēt PIN, mēs jums lūgsim periodiski to ievadīt. Mēs pakāpeniski to lūgism retāk."
@@ -8319,13 +8319,13 @@
     "messageformat": "PIN pareizs. Atgādināsim vēlreiz vēlāk."
   },
   "icu:PinChangeModal__title--create": {
-    "messageformat": "Mainīt Signal PIN"
+    "messageformat": "Mainīt SWARM PIN"
   },
   "icu:PinChangeModal__body--create": {
     "messageformat": "Varat labot PIN kamēr ierīce ir reģistrēta. <learnMoreLink>Uzzināt vairāk</learnMoreLink>"
   },
   "icu:PinChangeModal__title--confirm": {
-    "messageformat": "Apstipriniet Signal PIN"
+    "messageformat": "Apstipriniet SWARM PIN"
   },
   "icu:PinChangeModal__body--confirm": {
     "messageformat": "Ievadiet tikko izveidoto PIN."
@@ -8349,13 +8349,13 @@
     "messageformat": "Izveidots jauns PIN."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Drīzumā Signal Desktop vairs neatbalstīs jūsu datora {OS} versiju. Lai turpinātu lietot Signal, atjauniniet datora operētājsistēmu līdz {expirationDate}. <learnMoreLink>Lasīt vairāk</learnMoreLink>"
+    "messageformat": "Drīzumā SWARM Messenger vairs neatbalstīs jūsu datora {OS} versiju. Lai turpinātu lietot SWARM Messenger, atjauniniet datora operētājsistēmu līdz {expirationDate}. <learnMoreLink>Lasīt vairāk</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signal Desktop vairs nedarbojas šajā datorā. Lai atkal izmantotu Signal Desktop, atjauniniet sava datora {OS} versiju. <learnMoreLink>Lasīt vairāk</learnMoreLink>"
+    "messageformat": "SWARM Messenger vairs nedarbojas šajā datorā. Lai atkal izmantotu SWARM Messenger, atjauniniet sava datora {OS} versiju. <learnMoreLink>Lasīt vairāk</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signal Desktop vairs nedarbojas šajā datorā. Lai atkal izmantotu Signal Desktop, atjauniniet sava datora {OS} versiju."
+    "messageformat": "SWARM Messenger vairs nedarbojas šajā datorā. Lai atkal izmantotu SWARM Messenger, atjauniniet sava datora {OS} versiju."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Rediģēta"
@@ -8526,7 +8526,7 @@
     "messageformat": "Kopēt saiti"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Kopīgot saiti caur Signal"
+    "messageformat": "Kopīgot saiti caur SWARM Messenger"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Dzēst saiti"
@@ -8589,13 +8589,13 @@
     "messageformat": "Lai mainītu šo iestatījumu, sadaļā \"Kas var redzēt manu numuru\" atzīmējiet \"Neviens\"."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Signal profilu nosaukumus izvēlas to kontu īpašnieki:"
+    "messageformat": "SWARM Messenger profilu nosaukumus izvēlas to kontu īpašnieki:"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "Signal nevar verificēt vārdus un fotoattēlus"
+    "messageformat": "SWARM Messenger nevar verificēt vārdus un fotoattēlus"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "Signal nekad jums neprasīs reģistrācijas kodu, PIN vai atkopšanas atslēgu"
+    "messageformat": "SWARM Messenger nekad jums neprasīs reģistrācijas kodu, PIN vai atkopšanas atslēgu"
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "Uzmanieties no kontiem, kuru īpašnieki uzdodas par citām personām"
@@ -8625,7 +8625,7 @@
     "messageformat": "Lepojamies, ka esam bezpeļņas organizācija"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Ziedojiet un atbalstiet privātu ziņojumapmaiņu. Palīdziet saglabāt Signal neatkarīgu un bez reklāmām. <readMoreLink>Lasīt vairāk</readMoreLink>"
+    "messageformat": "Ziedojiet un atbalstiet privātu ziņojumapmaiņu. Palīdziet saglabāt SWARM Messenger neatkarīgu un bez reklāmām. <readMoreLink>Lasīt vairāk</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Ziedot"
@@ -8649,7 +8649,7 @@
     "messageformat": "Jūsu informācija ir konfidenciāla"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Signal ir neatkarīga bezpeļņas organizācija, kas ir apņēmusies nodrošināt privātu ziņojumapmaiņu un zvanu pakalpojumu. Bez reklāmām, bez izsekotājiem, bez novērošanas. Ziedojiet šodien, lai atbalstītu Signal."
+    "messageformat": "SWARM Messenger ir neatkarīga bezpeļņas organizācija, kas ir apņēmusies nodrošināt privātu ziņojumapmaiņu un zvanu pakalpojumu. Bez reklāmām, bez izsekotājiem, bez novērošanas. Ziedojiet šodien, lai atbalstītu SWARM Messenger."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Ziedojot saņemsiet nozīmīti, ko pēc izvēles varat rādīt profilā"
@@ -8658,10 +8658,10 @@
     "messageformat": "Jūsu privātums — mūsu misija"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Signal ir bezpeļņas organizācija. Par ziedojumiem tiek piemēroti nodokļu atvieglojumi."
+    "messageformat": "SWARM Messenger ir bezpeļņas organizācija. Par ziedojumiem tiek piemēroti nodokļu atvieglojumi."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "Sirds ikona Signal logotipa stilā"
+    "messageformat": "Sirds ikona SWARM Messenger logotipa stilā"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "Ok"
@@ -8676,7 +8676,7 @@
     "messageformat": "Ziedotāju BUJ"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Kvītis netiek sinhronizētas starp ierīcēm. Ja pārinstalējāt Signal, kvītis no iepriekš veiktajiem ziedojumiem nebūs pieejamas."
+    "messageformat": "Kvītis netiek sinhronizētas starp ierīcēm. Ja pārinstalējāt SWARM Messenger, kvītis no iepriekš veiktajiem ziedojumiem nebūs pieejamas."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Kvīšu nav"
@@ -8706,7 +8706,7 @@
     "messageformat": "Kredītkarte vai debetkarte"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Ievadiet savu kredītkartes vai debetkartes informāciju. Signal neapkopo un neuzglabā jūsu personas informāciju. <learnMoreLink>Uzzināt vairāk</learnMoreLink>"
+    "messageformat": "Ievadiet savu kredītkartes vai debetkartes informāciju. SWARM Messenger neapkopo un neuzglabā jūsu personas informāciju. <learnMoreLink>Uzzināt vairāk</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Kartes numurs"
@@ -8718,7 +8718,7 @@
     "messageformat": "MM/GG"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Ziedot Signal {formattedCurrencyAmount}"
+    "messageformat": "Ziedot SWARM Messenger {formattedCurrencyAmount}"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Nederīgs kartes numurs"
@@ -8736,7 +8736,7 @@
     "messageformat": "Kods ir pārāk īss"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "Iegūstiet Signal Boost nozīmīti uz 30 dienām"
+    "messageformat": "Iegūstiet SWARM Messenger Boost nozīmīti uz 30 dienām"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "Minimālā ziedojuma summa ir {formattedCurrencyAmount}"
@@ -8781,7 +8781,7 @@
     "messageformat": "Vienreiz"
   },
   "icu:DonationReceipt__footer-text-v2": {
-    "messageformat": "Pateicamies, ka atbalstāt Signal. Jūsu atbalsts palīdz īstenot mūsu misiju: aizsargāt vārda brīvību un nodrošināt drošu saziņu miljoniem cilvēku visā pasaulē. Mēs to darām, izmantojot atvērtā pirmkoda privātuma tehnoloģijas. Ja esat Amerikas Savienoto valstu iedzīvotājs, lūdzu, saglabājiet šo kvīti nodokļu uzskaitei. Signal Technology Foundation ir no nodokļu maksāšanas atbrīvota bezpeļnas organizācija Amerikas Savienotajās valstīs saskaņā ar Iekšējo ieņēmumu likuma 501. punkta c) daļas 3. apakšpunktu. Mūsu federālais nodokļu ID ir 82-4506840. Signal apmaiņā pret šo ziedojumu nav sniedzis nekādas preces vai pakalpojumus."
+    "messageformat": "Pateicamies, ka atbalstāt SWARM Messenger. Jūsu atbalsts palīdz īstenot mūsu misiju: aizsargāt vārda brīvību un nodrošināt drošu saziņu miljoniem cilvēku visā pasaulē. Mēs to darām, izmantojot atvērtā pirmkoda privātuma tehnoloģijas. Ja esat Amerikas Savienoto valstu iedzīvotājs, lūdzu, saglabājiet šo kvīti nodokļu uzskaitei. SWARM Messenger Technology Foundation ir no nodokļu maksāšanas atbrīvota bezpeļnas organizācija Amerikas Savienotajās valstīs saskaņā ar Iekšējo ieņēmumu likuma 501. punkta c) daļas 3. apakšpunktu. Mūsu federālais nodokļu ID ir 82-4506840. SWARM Messenger apmaiņā pret šo ziedojumu nav sniedzis nekādas preces vai pakalpojumus."
   },
   "icu:Donations__OfflineTooltip": {
     "messageformat": "Jūs esat bezsaistē. Lai pabeigtu ziedojumu, lūdzu, izveidojiet savienojumu ar internetu."
@@ -8820,7 +8820,7 @@
     "messageformat": "Ziedojums izdevās, taču mēs nevarējām atjaunināt jūsu nozīmītes iestatījumus"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "Lai savā mobilajā ierīcē atjauninātu nozīmīšu iestatījumus, dodieties uz Iestatījumi → Ziedot Signal → Nozīmītes."
+    "messageformat": "Lai savā mobilajā ierīcē atjauninātu nozīmīšu iestatījumus, dodieties uz Iestatījumi → Ziedot SWARM Messenger → Nozīmītes."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Ziedojums pārtraukts"
@@ -8877,7 +8877,7 @@
     "messageformat": "Ar jūsu ziedojumu radās kļūda"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Jūsu ziedojums, iespējams, nav apstrādāts. Noklikšķiniet uz “Ziedot Signal” un tad uz “Ziedojumu kvītis”, lai pārbaudītu un apstiprinātu kvītis."
+    "messageformat": "Jūsu ziedojums, iespējams, nav apstrādāts. Noklikšķiniet uz “Ziedot SWARM Messenger” un tad uz “Ziedojumu kvītis”, lai pārbaudītu un apstiprinātu kvītis."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Mēģiniet vēlreiz vai iesniedziet atkļūdošanas žurnālu atbalsta dienestam, lai saņemtu palīdzību ar ziedojuma pabeigšanu. Atkļūdošanas žurnāli palīdz mums diagnosticēt un novērst problēmu, un tie nesatur identificējošu informāciju."
@@ -8919,19 +8919,19 @@
     "messageformat": "Paldies par jūsu atbalstu!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Jums pienākas Signal ziedotāja nozīmīte! Pievienojiet to profilam, lai parādītu savu atbalstu."
+    "messageformat": "Jums pienākas SWARM Messenger ziedotāja nozīmīte! Pievienojiet to profilam, lai parādītu savu atbalstu."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Rādīt profilā"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "To varat pielāgot mobilajā ierīcē sadaļā Iestatījumi → Ziedot Signal → Nozīmītes"
+    "messageformat": "To varat pielāgot mobilajā ierīcē sadaļā Iestatījumi → Ziedot SWARM Messenger → Nozīmītes"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "Kā jūs novērtētu zvanu?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "Tas palīdz mums uzlabot zvanus programmā Signal. Personu identificējoša informācija netiks saglabāta."
+    "messageformat": "Tas palīdz mums uzlabot zvanus programmā SWARM Messenger. Personu identificējoša informācija netiks saglabāta."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "Radās problēmas"
@@ -8982,7 +8982,7 @@
     "messageformat": "Problēmas apraksts"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "Lūdzu, norādiet jebkādu informāciju, kas attiecas uz problēmu. Visa šeit sniegtā informācija tiks uzskatīta par privātu un izmantota tikai zvanu uzlabošanai programmā Signal."
+    "messageformat": "Lūdzu, norādiet jebkādu informāciju, kas attiecas uz problēmu. Visa šeit sniegtā informācija tiks uzskatīta par privātu un izmantota tikai zvanu uzlabošanai programmā SWARM Messenger."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "Aprakstiet problēmu"
@@ -9048,7 +9048,7 @@
     "messageformat": "Jums vajadzēs atkārtoti veikt saistīšanu, skenējot šo QR kodu."
   },
   "icu:MaybeTransferModal__media": {
-    "messageformat": "Ja izmantojat maksas Signal drošās rezerves kopijas, tiks pārsūtīta visa multivide. Pretējā gadījumā tiks pārsūtīta tikai pēdējo 45 dienu multivide."
+    "messageformat": "Ja izmantojat maksas SWARM Messenger drošās rezerves kopijas, tiks pārsūtīta visa multivide. Pretējā gadījumā tiks pārsūtīta tikai pēdējo 45 dienu multivide."
   },
   "icu:MaybeTransferModal__transfer": {
     "messageformat": "Pārsūtīt"
@@ -9060,14 +9060,14 @@
     "messageformat": "Vai dzēst visus datus?"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "Visi esošie Signal Desktop dati tiks dzēsti. Jūs varat skenēt šo QR kodu un pārsūtīt ziņu vēsturi no sava tālruņa."
+    "messageformat": "Visi esošie SWARM Messenger dati tiks dzēsti. Jūs varat skenēt šo QR kodu un pārsūtīt ziņu vēsturi no sava tālruņa."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Šī versija ietver vairākus nelielus uzlabojumus un kļūdu labojumus, lai Signal darbotos bez problēmām.",
+    "messageformat": "Šī versija ietver vairākus nelielus uzlabojumus un kļūdu labojumus, lai SWARM Messenger darbotos bez problēmām.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Papildu nelielas izmaiņas, kļūdu labojumi un veiktspējas uzlabojumi. Paldies, ka lietojat Signal!",
+    "messageformat": "Papildu nelielas izmaiņas, kļūdu labojumi un veiktspējas uzlabojumi. Paldies, ka lietojat SWARM Messenger!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -9087,7 +9087,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Nelielas izmaiņas, kļūdu labojumi un darbības uzlabojumi. Paldies, ka lietojat Signal!",
+    "messageformat": "Nelielas izmaiņas, kļūdu labojumi un darbības uzlabojumi. Paldies, ka lietojat SWARM Messenger!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.25--0": {
@@ -9097,6 +9097,6 @@
     "messageformat": "Tagad jūs grupas biedru meklēšanā citu lietotāju vidū tiksiet rādīts kā “jūs”."
   },
   "icu:WhatsNew__8.27--0": {
-    "messageformat": "Šajā atjauninājumā ir ieviesti detalizētāki iestatījumi, kas sniedz plašākas iespējas kontrolēt Signal paziņojumus. Tagad varat izvēlēties, kas tiek rādīts lietotnes nozīmītē, pielāgot paziņojumu iestatījumus sarunās ar izslēgtu skaņu un daudz ko citu! Tāpat esam pievienojuši ērtu pogu, kas ļauj atjaunot paziņojumu noklusējuma iestatījumus, ja gadās apjukt visās veiktajās izmaiņās."
+    "messageformat": "Šajā atjauninājumā ir ieviesti detalizētāki iestatījumi, kas sniedz plašākas iespējas kontrolēt SWARM Messenger paziņojumus. Tagad varat izvēlēties, kas tiek rādīts lietotnes nozīmītē, pielāgot paziņojumu iestatījumus sarunās ar izslēgtu skaņu un daudz ko citu! Tāpat esam pievienojuši ērtu pogu, kas ļauj atjaunot paziņojumu noklusējuma iestatījumus, ja gadās apjukt visās veiktajās izmaiņās."
   }
 }
