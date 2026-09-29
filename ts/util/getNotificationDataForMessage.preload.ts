@@ -62,6 +62,7 @@ import { MessageRequestResponseEvent } from '../types/MessageRequestResponseEven
 import { missingCaseError } from './missingCaseError.std.ts';
 import { getUserConversationId } from '../state/selectors/user.std.ts';
 import { itemStorage } from '../textsecure/Storage.preload.ts';
+import { isSwarmIdentityE164 } from './swarm/swarmIdentityE164.std.ts';
 import { Emoji } from '../axo/emoji.std.ts';
 
 const log = createLogger('getNotificationDataForMessage');
@@ -70,7 +71,8 @@ const { i18n } = window.SignalContext;
 function getNameForNumber(e164: string): string {
   const conversation = window.ConversationController.get(e164);
   if (!conversation) {
-    return e164;
+    // SWARM change (B4, 2026-09-29): never the raw SWARM account identifier.
+    return isSwarmIdentityE164(e164) ? i18n('icu:unknownContact') : e164;
   }
   return conversation.getTitle();
 }

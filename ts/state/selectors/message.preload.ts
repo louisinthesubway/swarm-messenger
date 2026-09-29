@@ -93,6 +93,7 @@ import {
 } from '../../util/canDeleteForEveryone.preload.ts';
 import { isAdminDeleteSendEnabled } from '../../util/isAdminDeleteEnabled.dom.ts';
 import { isAciString } from '../../util/isAciString.std.ts';
+import { isSwarmIdentityE164 } from '../../util/swarm/swarmIdentityE164.std.ts';
 import { isSignalConversation } from '../../util/isSignalConversation.dom.ts';
 import * as iterables from '../../util/iterables.std.ts';
 import { strictAssert } from '../../util/assert.std.ts';
@@ -2075,7 +2076,11 @@ function getPropsForPhoneNumberDiscovery(
   return {
     conversationId: conversation.id,
     conversationTitle,
-    phoneNumber: renderNumber(e164) ?? e164,
+    // SWARM change (B4, 2026-09-29): renderNumber gives nothing for a SWARM
+    // account identifier; do not fall back to the raw identifier then (the
+    // notice words itself without a number, see
+    // getStringForPhoneNumberDiscovery).
+    phoneNumber: isSwarmIdentityE164(e164) ? '' : (renderNumber(e164) ?? e164),
   };
 }
 

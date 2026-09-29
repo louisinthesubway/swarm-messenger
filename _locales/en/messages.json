@@ -12760,5 +12760,37 @@
   "icu:SwarmChat__notice--return-address": {
     "messageformat": "{name} included an address for paying back.",
     "description": "SWARM (M3 wave 2): a received notice that carried the sender's address."
+  },
+  "icu:SwarmAccount--fallback-title": {
+    "messageformat": "SWARM account {shortId}",
+    "description": "SWARM (B4): the name shown for a person with no profile name, nickname or username. shortId is the last four characters of their account id, for example 1a2b. Shown instead of their account identifier, which looks like a phone number but is not one."
+  },
+  "icu:SwarmPhoneNumberDiscovery--notification--withSharedGroup": {
+    "messageformat": "This chat is with {conversationTitle}. You're both members of {sharedGroup}.",
+    "description": "SWARM (B4): shown in a chat when the app learns which account it was talking to. Replaces a notice that named a phone number; SWARM accounts have none."
+  },
+  "icu:SwarmPhoneNumberDiscovery--notification--noSharedGroup": {
+    "messageformat": "This chat is with {conversationTitle}.",
+    "description": "SWARM (B4): shown in a chat when the app learns which account it was talking to, when you have no group in common. Replaces a notice that named a phone number; SWARM accounts have none."
+  },
+  "icu:SwarmProfileEditor--info--no-username": {
+    "messageformat": "Set a username so people can find you and start a chat with you.",
+    "description": "SWARM (B4): information under the username row in the profile editor when no username is set. SWARM accounts have no phone number; a username is how people find you."
+  },
+  "icu:SwarmUsernameOnboardingModalBody__row__username__body": {
+    "messageformat": "People can message you using your username. Usernames aren’t visible on your profile.",
+    "description": "SWARM (B4): body of the Usernames row in the dialog that introduces usernames. Replaces a text that mentioned a phone number."
+  },
+  "icu:SwarmUsernameMegaphone__body": {
+    "messageformat": "Set a username so people can find you, and share it as a link or a QR code.",
+    "description": "SWARM (B4): body of the prompt in the chat list that invites a person without a username to set one. Replaces a text about phone number privacy."
+  },
+  "icu:SwarmUnregisteredWarning": {
+    "messageformat": "Click to sign in with your wallet again and continue messaging. This computer was signed out, likely because your wallet signed in to SWARM Messenger on another computer.",
+    "description": "SWARM (B4): shown in the chat list when this computer is no longer signed in. Replaces a text that mentioned registering a phone number."
+  },
+  "icu:SwarmContactSearchPlaceholder": {
+    "messageformat": "Name or username",
+    "description": "SWARM (B4): placeholder of the search box when choosing people (new chat, group members, forwarding, story viewers). Replaces \"Name, username, or number\": SWARM accounts have no phone number."
   }
 }

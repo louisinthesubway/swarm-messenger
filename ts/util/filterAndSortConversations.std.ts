@@ -11,6 +11,7 @@ import { isConversationUnread } from './countUnreadStats.std.ts';
 import { getE164 } from './getE164.std.ts';
 import { removeDiacritics } from './removeDiacritics.std.ts';
 import { isAciString } from './isAciString.std.ts';
+import { isSwarmIdentityE164 } from './swarm/swarmIdentityE164.std.ts';
 
 // See: https://fusejs.io/api/options.html#includescore
 // 0 score is a perfect match, 1 - complete mismatch
@@ -54,7 +55,10 @@ const FUSE_OPTIONS: IFuseOptions<ConversationType> = {
   ] satisfies ReadonlyArray<ConversationTypeFuseOptionKey>,
   getFn: (convo, path) => {
     if (path === 'e164' || (path.length === 1 && path[0] === 'e164')) {
-      return getE164(convo) ?? '';
+      // SWARM change (B4, 2026-09-29): a SWARM account identifier is never
+      // shown, so typing digits must not find people by it either.
+      const e164 = getE164(convo);
+      return isSwarmIdentityE164(e164) ? '' : (e164 ?? '');
     }
     const text = Fuse.config.getFn(convo, path);
     if (text == null) {

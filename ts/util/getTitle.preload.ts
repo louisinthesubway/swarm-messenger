@@ -12,6 +12,11 @@ import { isDirectConversation } from './whatTypeOfConversation.dom.ts';
 import { isConversationEverUnregistered } from './isConversationUnregistered.dom.ts';
 import { getE164 } from './getE164.std.ts';
 import { itemStorage } from '../textsecure/Storage.preload.ts';
+import { isAciString } from './isAciString.std.ts';
+import {
+  isSwarmIdentityE164,
+  shortSwarmAccountId,
+} from './swarm/swarmIdentityE164.std.ts';
 
 type TitleOptions = {
   isShort?: boolean;
@@ -33,7 +38,9 @@ export function getTitle(
     if (isConversationEverUnregistered(attributes)) {
       return i18n('icu:deletedAccount');
     }
-    return i18n('icu:unknownContact');
+    // SWARM change (B4, 2026-09-29): an account with no name and no username
+    // is "SWARM account 1a2b" (the end of its ACI), never its synthetic number.
+    return getSwarmAccountLabel(attributes) ?? i18n('icu:unknownContact');
   }
   return i18n('icu:unknownGroup');
 }
@@ -62,7 +69,49 @@ export function getTitleNoDefault(
     (isShort ? attributes.profileName : undefined) ||
     getProfileName(attributes) ||
     getNumber(attributes) ||
-    username
+    username ||
+    // SWARM change (B4, 2026-09-29): where upstream's title was the phone
+    // number and that number is a SWARM account identifier (which is never
+    // shown), the neutral label takes its place, so the conversation still
+    // counts as having a title (search, compose and forward lists keep it).
+    (hasHiddenSwarmNumber(attributes)
+      ? getSwarmAccountLabel(attributes)
+      : undefined)
+  );
+}
+
+/**
+ * SWARM addition (B4, 2026-09-29): the one neutral name for a direct
+ * conversation that has no nickname, contact name, profile name or username:
+ * "SWARM account" and the last four hex characters of the account's ACI.
+ * Undefined when the conversation has no ACI to take them from.
+ */
+export function getSwarmAccountLabel(
+  attributes: Pick<ConversationAttributesType, 'serviceId'>
+): string | undefined {
+  const { serviceId } = attributes;
+  const shortId = isAciString(serviceId)
+    ? shortSwarmAccountId(serviceId)
+    : undefined;
+  if (!shortId) {
+    return undefined;
+  }
+  return i18n('icu:SwarmAccount--fallback-title', { shortId });
+}
+
+/**
+ * SWARM addition (B4, 2026-09-29): whether upstream would have titled this
+ * conversation with its phone number, where that number is a SWARM account
+ * identifier and so is not shown.
+ */
+function hasHiddenSwarmNumber(
+  attributes: Pick<
+    ConversationAttributesType,
+    'e164' | 'type' | 'sharingPhoneNumber' | 'profileKey'
+  >
+): boolean {
+  return (
+    isDirectConversation(attributes) && isSwarmIdentityE164(getE164(attributes))
   );
 }
 
@@ -93,11 +142,14 @@ export function canHaveUsername(
     return true;
   }
 
+  // SWARM change (B4, 2026-09-29): `hasNumber`, not `getNumber`: hiding a SWARM
+  // identifier changes what is shown, not which usernames are kept (and so
+  // not what goes into a storage-service contact record).
   return (
     !getNicknameName(attributes) &&
     !getSystemName(attributes) &&
     !getProfileName(attributes) &&
-    !getNumber(attributes)
+    !hasNumber(attributes)
   );
 }
 
@@ -164,6 +216,36 @@ export function getNumber(
 }
 
 export function renderNumber(e164: string): string | undefined {
+  // SWARM change (B4, 2026-09-29): the synthetic account identifier a wallet
+  // sign-in derives looks like a phone number and is not one. Every screen that
+  // shows a person's number gets it from here (as `phoneNumber`, or through the
+  // title), so this is where it stops being shown.
+  if (isSwarmIdentityE164(e164)) {
+    return undefined;
+  }
+  return formatNumber(e164);
+}
+
+/**
+ * SWARM addition (B4, 2026-09-29): whether the conversation has a number
+ * upstream would render, shown or not. For the checks that decide data
+ * (usernames kept, title-transition notices), which must not move because the
+ * number is hidden.
+ */
+function hasNumber(
+  attributes: Pick<
+    ConversationAttributesType,
+    'e164' | 'type' | 'sharingPhoneNumber' | 'profileKey'
+  >
+): boolean {
+  if (!isDirectConversation(attributes)) {
+    return false;
+  }
+  const e164 = getE164(attributes);
+  return Boolean(e164 && formatNumber(e164));
+}
+
+function formatNumber(e164: string): string | undefined {
   try {
     const parsedNumber = instance.parse(e164);
     const regionCode = getRegionCodeForNumber(e164);
@@ -182,11 +264,12 @@ export function hasNumberTitle(
     'e164' | 'type' | 'sharingPhoneNumber' | 'profileKey'
   >
 ): boolean {
+  // SWARM change (B4, 2026-09-29): `hasNumber`, see canHaveUsername.
   return (
     !getNicknameName(attributes) &&
     !getSystemName(attributes) &&
     !getProfileName(attributes) &&
-    Boolean(getNumber(attributes))
+    hasNumber(attributes)
   );
 }
 
@@ -196,11 +279,12 @@ export function hasUsernameTitle(
     'e164' | 'type' | 'sharingPhoneNumber' | 'profileKey' | 'username'
   >
 ): boolean {
+  // SWARM change (B4, 2026-09-29): `hasNumber`, see canHaveUsername.
   return (
     !getNicknameName(attributes) &&
     !getSystemName(attributes) &&
     !getProfileName(attributes) &&
-    !getNumber(attributes) &&
+    !hasNumber(attributes) &&
     Boolean(attributes.username)
   );
 }

@@ -27,6 +27,7 @@ import { strictAssert } from '../../util/assert.std.ts';
 import { UserText } from '../UserText.dom.tsx';
 import { isConversationMuted } from '../../util/isConversationMuted.std.ts';
 import { isInternalFeaturesEnabled } from '../../util/isInternalFeaturesEnabled.dom.ts';
+import { isSwarmIdentityE164 } from '../../util/swarm/swarmIdentityE164.std.ts';
 import { canConversationOnlyBeMutedAlways } from '../../conversations/canConversationOnlyBeMutedAlways.dom.ts';
 
 export type ChatFolderToggleChat = (
@@ -284,11 +285,14 @@ export const LeftPaneConversationListItemContextMenu: FC<LeftPaneConversationLis
                       Copy Group ID
                     </ContextMenuCopyTextItem>
                   )}
-                  {conversation.e164 != null && (
-                    <ContextMenuCopyTextItem value={conversation.e164}>
-                      Copy E164
-                    </ContextMenuCopyTextItem>
-                  )}
+                  {/* SWARM change (B4, 2026-09-29): no copying of a SWARM
+                      account identifier, even from the internal menu. */}
+                  {conversation.e164 != null &&
+                    !isSwarmIdentityE164(conversation.e164) && (
+                      <ContextMenuCopyTextItem value={conversation.e164}>
+                        Copy E164
+                      </ContextMenuCopyTextItem>
+                    )}
                 </AxoContextMenu.Group>
               </>
             )}
