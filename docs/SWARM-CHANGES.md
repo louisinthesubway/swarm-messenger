@@ -463,3 +463,97 @@ any other product name `RemoteConfigsManager` would withhold every `desktop.*`
 remote configuration (`desktop.clientExpiration` among them) and
 `RemoteDeprecationFilter` would apply no version gate. It changes together with
 the server.
+
+## 3j. No phone number in the interface (B4)
+
+2026-09-29, owner report: _"in my account i have some +888 number added but sign
+up works only via Wallet. No phone number!"_ A SWARM account signs in with its
+wallet (section 3a). It still carries the synthetic identifier `+888` + 11 digits
+derived from its identity key, because the server, the storage service and
+contact discovery key accounts by an E.164 string. That identifier is data, not
+a phone number: it is no longer shown anywhere, and nothing in the interface
+asks for or offers a phone number.
+
+**One check, one formatter.** `ts/util/swarm/swarmIdentityE164.std.ts` (new, pure)
+holds the shape rule (`+888`, 11 digits, no leading zero: exactly what
+`accountIdentifierFor` derives) as `isSwarmIdentityE164`; `walletIdentity.node.ts`
+now takes its prefix, digit count and `isSwarmAccountIdentifier` from there.
+`renderNumber` in `ts/util/getTitle.preload.ts` returns nothing for such an
+identifier. Every screen's `phoneNumber` (redux `ConversationType.phoneNumber`,
+built by `getConversation`) and every title comes through it, so the screens
+below needed no change of their own unless listed.
+
+**The neutral name.** A person with no nickname, contact name, profile name or
+username is shown as **"SWARM account 1a2b"**: the last four hex characters of
+their ACI (`icu:SwarmAccount--fallback-title`, `getSwarmAccountLabel`). Order of
+preference, as upstream: nickname, contact name, profile name, (phone number,
+never for a SWARM identifier), username, then this label. It replaces the
+identifier where upstream titled a chat with the number (so the chat still counts
+as having a title and stays in search, compose and forward lists), and replaces
+"Unknown contact" for any account with an ACI. Without an ACI it stays "Unknown
+contact" / "Deleted account" as upstream.
+
+| Screen                                                                                                     | Before                                                                               | Now                                                                                                                      |
+| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------ |
+| Settings, profile chip (`Preferences.dom.tsx`)                                                             | name, `+888 108 664 42360`, username                                                 | name and username                                                                                                        |
+| Settings > General                                                                                         | "Phone Number" row                                                                   | no row (new prop `isPhoneNumberHidden`, set by `state/smart/Preferences.preload.tsx`)                                    |
+| Settings > Privacy                                                                                         | "Phone Number" row: who can see my number, who can find me by number                 | no row; the page stays in the tree, the stored `phoneNumberSharingMode` / `phoneNumberDiscoverability` keep their values |
+| Contact "About" modal, conversation header, contact spoofing review, safety number change dialog, avatars  | the contact's number when shared                                                     | nothing (via `renderNumber`)                                                                                             |
+| Conversation titles: chat list, header, hero, details, notifications, mentions, quotes, calls, group lists | the number when there was no name                                                    | username, else "SWARM account 1a2b"                                                                                      |
+| New chat (`LeftPaneComposeHelper`)                                                                         | "Find by phone number" button; typed digits offered as a number to start a chat with | "New group" and "Find by username" only; digits are not offered                                                          |
+| Group member choice (`LeftPaneChooseGroupMembersHelper`, `ChooseGroupMembersModal`)                        | typed digits offered as a number to add                                              | not offered                                                                                                              |
+| Search box when choosing people (6 places)                                                                 | "Name, username, or number"                                                          | "Name or username" (`icu:SwarmContactSearchPlaceholder`)                                                                 |
+| Chat list search (`filterAndSortConversations`)                                                            | digits matched contacts by their number                                              | a SWARM identifier is not matched                                                                                        |
+| Chat context menu (internal features only)                                                                 | "Copy E164"                                                                          | hidden for a SWARM identifier                                                                                            |
+| Sign-up, "Set up your profile" (`ProfileEntry.dom.tsx`)                                                    | "Who can find me by phone number" row and dialog                                     | removed (the value it chose was never sent: Continue always sent "Discoverable", and still does)                         |
+| Profile editor, under Username, no username set                                                            | "…so you don't have to give out your phone number."                                  | "Set a username so people can find you and start a chat with you."                                                       |
+| Username introduction dialog (`UsernameOnboardingModal`)                                                   | "Phone number privacy" row; username row about not giving out your number            | Usernames and QR-code rows only                                                                                          |
+| Chat list prompt (`UsernameMegaphone`)                                                                     | "Introducing phone number privacy, optional usernames and links."                    | "Set a username so people can find you, and share it as a link or a QR code."                                            |
+| Signed-out banner (`DialogRelink`)                                                                         | "…you registered your phone number with SWARM Messenger on a different device."      | "…your wallet signed in to SWARM Messenger on another computer."                                                         |
+| Call-link lobby (`state/smart/CallManager.preload.tsx`)                                                    | "…will see your name, photo, and phone number." when sharing was "Everybody"         | "…will see your name and photo." for a SWARM account                                                                     |
+| Chat notice "number belongs to" (`getStringForPhoneNumberDiscovery`, message selector)                     | "+888 108 664 42360 belongs to {name}"                                               | "This chat is with {name}." (with the shared group when there is one)                                                    |
+| Merged-chat notice                                                                                         | "…and their number +888… has been merged."                                           | upstream's no-number wording                                                                                             |
+| Legacy group "left" notice, a contact card for an unknown identifier (`findAndFormatContact`)              | the raw identifier                                                                   | "Unknown contact" / the placeholder contact                                                                              |
+
+Strings added (English only): `icu:SwarmAccount--fallback-title`,
+`icu:SwarmContactSearchPlaceholder`, `icu:SwarmProfileEditor--info--no-username`,
+`icu:SwarmUsernameOnboardingModalBody__row__username__body`,
+`icu:SwarmUsernameMegaphone__body`, `icu:SwarmUnregisteredWarning`,
+`icu:SwarmPhoneNumberDiscovery--notification--withSharedGroup` and
+`--noSharedGroup`. The upstream keys they replace are no longer used.
+
+Deliberately unchanged:
+
+- **The data and the protocol.** The identifier, its derivation, what the
+  server, the storage service and contact discovery receive, the stored privacy
+  settings. The checks that decide data (`canHaveUsername`, `hasNumberTitle`,
+  `hasUsernameTitle`, which decide which usernames are kept locally and written
+  to storage-service contact records, and when a title-transition notice is
+  added) still see the number, through a private `hasNumber`, exactly as
+  upstream. A consequence: a contact whose identifier is shared to you and who
+  has no profile name keeps no username (upstream clears it once a number is
+  known), so they show as "SWARM account 1a2b". Keeping the username for them
+  would change what goes into storage-service records; that is a separate
+  decision.
+- **Upstream's phone-number code** stays in the tree behind
+  `SWARM_FIND_BY_PHONE_NUMBER` (off), the Find-by-phone-number pane
+  (`LeftPaneFindByPhoneNumberHelper`, now unreachable) and the Phone Number
+  privacy page, to keep merges small.
+- **The standalone phone-number registration** (`PhoneNumber`, `VerificationCode`,
+  captcha stages). Not reachable: `startRegistration` starts at the wallet stage
+  and nothing moves to `PHONE_NUMBER` (only the Storybook stories do). Left as is.
+- **Screens that cannot occur for SWARM accounts:** "{name} changed their phone
+  number" (the identifier comes from the identity key and never changes), the
+  merged-chat explainer dialog ("you learned this number belongs to…"; it opens
+  only when the old chat had a name). **Key transparency** texts ("for people
+  you're connected to by phone number") appear only when the server's remote
+  configuration enables `desktop.keyTransparency.*`.
+- **Real phone numbers that are content:** numbers inside a shared contact card,
+  `signal.me/#p/<number>` links.
+
+Tests: `ts/test-node/swarm/swarmIdentityE164_test.std.ts` (the shape, the short
+id, the switch), `ts/test-node/swarm/noPhoneNumberInUi_test.preload.ts` (the
+formatter, titles and the label, the unchanged data checks, the discovery notice,
+the composer rows), one case added to `walletIdentity_test.node.ts` (every
+derived identifier is recognised); `LeftPaneComposeHelper_test` and
+`LeftPaneChooseGroupMembersHelper_test` now expect no phone-number rows.

@@ -108,10 +108,9 @@ again (it will show new words; that is fine for a throwaway wallet).
 
 ## 5. Let A find B
 
-People are found by **username**. The number under your name in Settings (for example
-`123 456 78901`, really `+88812345678901`) is an internal account number, not a phone number:
-typing it under New chat fails with "Failed to fetch phone number", because there is no number
-directory on this server.
+People are found by **username**. There is no phone number anywhere: not under your name in
+Settings, not in a chat's header, and New chat offers no "Find by phone number" (since
+2026-09-29, section 8).
 
 In window **B**:
 
@@ -125,7 +124,7 @@ In window **B**:
 In window **A**:
 
 4. Click the **pencil** icon next to "Chats" (New chat).
-5. In the box "Name, username, or number", type B's full username, for example `beetest.42`.
+5. In the box "Name or username", type B's full username, for example `beetest.42`.
 6. A line **Find by username** appears with the name under it. Click it. The conversation with
    B opens.
 
@@ -183,6 +182,13 @@ For anything that does not match this page:
 4. The app's own log for that window, which never contains the 24 words:
    `D:\swarm-messenger\.profiles\a\logs\app.log` (A) or `D:\swarm-messenger\.profiles\b\logs\app.log`
    (B).
+
+No phone number check (since 2026-09-29): report any place where a number starting `+888`
+(or `888`) or the words "phone number" appear. Look at least at: Settings (your name at the top,
+General, Privacy), New chat (the buttons and the search box), the chat header and the contact's
+"About" window, and the chat list entry of someone who has not accepted yet. A person without a
+name should show their username, or "SWARM account" and four characters (for example
+`SWARM account 1a2b`).
 
 And, if everything worked: say so, with the commit, so the result can be recorded.
 
