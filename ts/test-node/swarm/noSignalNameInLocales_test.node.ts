@@ -247,7 +247,7 @@ describe('SWARM: no language names Signal', () => {
     const lines = readFileSync(
       join(ROOT, 'build', 'SignalStrings.nsh'),
       'utf8'
-    ).split('\n');
+    ).split(/\r?\n/);
     const offences: Array<string> = [];
     let strings = 0;
     let locale = 'en';
