@@ -176,7 +176,7 @@ jobs:
           sha256sum -- *
 
       - name: Upload the installer
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: installer-windows-x64
           path: dist-out/
@@ -393,7 +393,7 @@ jobs:
           sha256sum -- *
 
       - name: Upload the .deb and the AppImage
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: installer-linux-x64
           path: dist-out/
@@ -552,7 +552,7 @@ jobs:
           rm -rf "$unzipped"
 
       - name: Upload the .dmg and the .zip
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: installer-mac-arm64
           path: dist-out/
@@ -595,7 +595,7 @@ jobs:
         run: node scripts/swarm-release-notes.mjs dist release-notes.md
 
       - name: Upload SHA256SUMS.txt and the release notes
-        uses: actions/upload-artifact@v5
+        uses: actions/upload-artifact@v7
         with:
           name: release-sha256sums
           path: |
