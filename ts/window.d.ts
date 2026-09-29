@@ -33,6 +33,7 @@ import type { QueryStatsOptions } from './sql/main.main.ts';
 import type { SocketStatuses } from './textsecure/SocketManager.preload.ts';
 import type { SignalClipboardType } from './windows/clipboard.preload.ts';
 import type { PDFWindowPropsType } from './windows/pdf/types.std.ts';
+import type { DebugLogSaveResult } from './util/swarm/debugLogFile.std.ts';
 
 export type IPCType = {
   addSetupMenuItems: () => void;
@@ -63,7 +64,7 @@ export type IPCType = {
   setMediaPermissions: (value: boolean) => Promise<void>;
   setMediaCameraPermissions: (value: boolean) => Promise<void>;
   setMenuBarVisibility: (value: boolean) => void;
-  showDebugLog: (options?: { mode?: 'submit' | 'close' }) => void;
+  showDebugLog: (options?: { mode?: 'save' | 'close' }) => void;
   showCallDiagnostic: () => void;
   closeCallDiagnostic: () => void;
   closeDebugLog: () => void;
@@ -98,11 +99,10 @@ type AboutWindowPropsType = {
   showLicences: () => void;
 };
 
+// SWARM change (B5, 2026-09-29): save to a file, no upload.
 type DebugLogWindowPropsType = {
-  downloadLog: (text: string) => unknown;
+  saveLog: (text: string) => Promise<DebugLogSaveResult>;
   fetchLogs: () => Promise<string>;
-  uploadLogs: (text: string) => Promise<string>;
-  mode: 'submit' | 'close';
 };
 
 type CallDiagnosticWindowPropsType = {

@@ -63,10 +63,10 @@
     "messageformat": "Жоғары сапалы мультимедианы жібергенде, трафик көбірек қолданылады."
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "Signal-ды демеу"
+    "messageformat": "SWARM Messenger-ді демеу"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "<bold>Байланыстырылған құрылғылар</bold> Signal аккаунтыңызға және хабарларыңызға басқа құрылғыларыңыздан қауіпсіз қол жеткізуге мүмкіндік береді."
+    "messageformat": "<bold>Байланыстырылған құрылғылар</bold> SWARM аккаунтыңызға және хабарларыңызға басқа құрылғыларыңыздан қауіпсіз қол жеткізуге мүмкіндік береді."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "Компьютерді, планшетті немесе қосымша телефонды байланыстыруға болады."
@@ -81,7 +81,7 @@
     "messageformat": "Аккаунт параметрлері мен сақтық көшірмелерді тек негізгі құрылғыда басқаруға болады."
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--3--2": {
-    "messageformat": "Account settings and Signal Secure Backups can only be managed on your primary device."
+    "messageformat": "Account settings and SWARM Messenger Secure Backups can only be managed on your primary device."
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "Стандарт"
@@ -120,10 +120,10 @@
     "messageformat": "Белгісіз топ"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "Signal ашылмады"
+    "messageformat": "SWARM Messenger ашылмады"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "Бұл ақауды түзету үшін қолдау көрсету бетіндегі қалпына келтіру нұсқауларын орындаңыз немесе Signal қолдау орталығына хабарласыңыз.\n\nSignal-ды дәл қазір қолдану керек болса, деректерді жойып, осы жұмыс үстеліне қайта қосыла аласыз. Телефоныңыздан хабарлар тарихын тасымалдап алсаңыз да болады."
+    "messageformat": "Бұл ақауды түзету үшін қолдау көрсету бетіндегі қалпына келтіру нұсқауларын орындаңыз немесе SWARM Messenger қолдау орталығына хабарласыңыз.\n\nSWARM Messenger-ді дәл қазір қолдану керек болса, деректерді жойып, осы жұмыс үстеліне қайта қосыла аласыз. Телефоныңыздан хабарлар тарихын тасымалдап алсаңыз да болады."
   },
   "icu:databaseError": {
     "messageformat": "Дерекқор қатесі"
@@ -135,16 +135,16 @@
     "messageformat": "Барлық деректі біржола жою"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "Хабарлар тарихы және мультимедиа түгелдей осы құрылғыдан біржола жойылып кетеді. Бірақ телефоныңыздағы деректердің ешқайсысы жойылмайды.\n\nSignal-ды осы құрылғыда қайта байланыстырған соң пайдалана аласыз. Телефоныңыздан хабарлар тарихын тасымалдап алсаңыз да болады."
+    "messageformat": "Хабарлар тарихы және мультимедиа түгелдей осы құрылғыдан біржола жойылып кетеді. Бірақ телефоныңыздағы деректердің ешқайсысы жойылмайды.\n\nSWARM Messenger-ді осы құрылғыда қайта байланыстырған соң пайдалана аласыз. Телефоныңыздан хабарлар тарихын тасымалдап алсаңыз да болады."
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "Дерекқордың нұсқасы Signal-дың бұл нұсқасына сәйкес келмейді. Компьютеріңізде Signal-дың соңғы нұсқасын ашып отырғаныңзға көз жеткізіңіз."
+    "messageformat": "Дерекқордың нұсқасы SWARM Messenger-дің бұл нұсқасына сәйкес келмейді. Компьютеріңізде SWARM Messenger-дің соңғы нұсқасын ашып отырғаныңзға көз жеткізіңіз."
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "Дерекқорды шифрлау кілтіне кіру мүмкін болмады, себебі операциялық жүйені шифрлау кілті серверін ({previousBackend}) {currentBackend} деп өзгерту мүмкін болмады. GNOME және KDE арасында жұмыс үстелінің ортасы өзгерсе, осындай жағдай орын алады.\n\nАлдыңғы жұмыс үстелі ортасына ауысыңыз."
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "Дерекқорды шифрлау кілтіне кіру мүмкін болмады, себебі операциялық жүйені шифрлау кілті серверін ({previousBackend}) {currentBackend} деп өзгерту мүмкін болмады. GNOME және KDE арасында жұмыс үстелінің ортасы өзгерсе, осындай жағдай орын алады.\n\nАлдыңғы жұмыс орнының ортасына ауысыңыз немесе Signal-ды --password-store=\"{previousBackendFlag}\" пәрмен жолының жалаушасымен іске қосып көріңіз."
+    "messageformat": "Дерекқорды шифрлау кілтіне кіру мүмкін болмады, себебі операциялық жүйені шифрлау кілті серверін ({previousBackend}) {currentBackend} деп өзгерту мүмкін болмады. GNOME және KDE арасында жұмыс үстелінің ортасы өзгерсе, осындай жағдай орын алады.\n\nАлдыңғы жұмыс орнының ортасына ауысыңыз немесе SWARM Messenger-ді --password-store=\"{previousBackendFlag}\" пәрмен жолының жалаушасымен іске қосып көріңіз."
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -189,7 +189,7 @@
     "messageformat": "Барлығын көрсету"
   },
   "icu:appMenuQuit": {
-    "messageformat": "Signal-ды жабу"
+    "messageformat": "SWARM Messenger-ді жабу"
   },
   "icu:editMenuUndo": {
     "messageformat": "Болдырмау"
@@ -513,10 +513,10 @@
     "messageformat": "{name} деген контактімен араңыздағы қауіпсіздік нөмірін басқа құрылғыдан тексерілмеді деп белгіледіңіз"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "Сіз верификациядан өткізгіңіз келетін қауіпсіздік нөмірі өзгеріп кетті. {name1} деген контактімен араңыздағы жаңа қауіпсіздік нөмірін қараңыз. Бұл біреудің сіздің әңгімелеріңізге тыңшылық жасағысы келетінін немесе {name2} жай ғана Signal-ды қайта орнатқанын білдіретінін есте сақтаңыз."
+    "messageformat": "Сіз верификациядан өткізгіңіз келетін қауіпсіздік нөмірі өзгеріп кетті. {name1} деген контактімен араңыздағы жаңа қауіпсіздік нөмірін қараңыз. Бұл біреудің сіздің әңгімелеріңізге тыңшылық жасағысы келетінін немесе {name2} жай ғана SWARM Messenger-ді қайта орнатқанын білдіретінін есте сақтаңыз."
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "Төмендегі адамдар Signal қолданбасын қайта орнатқан немесе құрылғыларын өзгерткен болуы мүмкін. Алушыны басып, жаңа қауіпсіздік нөмірін растаңыз. Олай істеу міндетті емес."
+    "messageformat": "Төмендегі адамдар SWARM Messenger қолданбасын қайта орнатқан немесе құрылғыларын өзгерткен болуы мүмкін. Алушыны басып, жаңа қауіпсіздік нөмірін растаңыз. Олай істеу міндетті емес."
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "Жіберілмей күтіп тұрған хаттарды жіберу"
@@ -525,7 +525,7 @@
     "messageformat": "Тексеру"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, one {Сізде Signal қолданбасын қайта орнатқан немесе құрылғыларын өзгерткен 1 контакт бар. Жібермес бұрын олардың қауіпсіздік нөмірлерін тексеріп алуға болады.} other {{count,number} контактіңіз Signal-ды қайта орнатқан немесе құрылғыларын өзгерткен болуы мүмкін. Жібермес бұрын оның қауіпсіздік нөмірлерін тексеріп алуға болады.}}"
+    "messageformat": "{count, plural, one {Сізде SWARM Messenger қолданбасын қайта орнатқан немесе құрылғыларын өзгерткен 1 контакт бар. Жібермес бұрын олардың қауіпсіздік нөмірлерін тексеріп алуға болады.} other {{count,number} контактіңіз SWARM Messenger-ді қайта орнатқан немесе құрылғыларын өзгерткен болуы мүмкін. Жібермес бұрын оның қауіпсіздік нөмірлерін тексеріп алуға болады.}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "Барлық контакт тексерілді, жалғастыру үшін жіберу түймесін басыңыз."
@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Сонда да қосылу"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "\"Жіберу\" түймесін басқанда, сіздің журналыңыз 30 күнге бірегей жарияланбаған URL мекенжайына жарияланады. Оны алдымен жергілікті сақтап қоюыңызға болады."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Бұл журнал баршаға ашық жарияланады және үлес қосушылар оны онлайн көре алады. Жібермес бұрын оны жүктеп алуыңызға болады."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Жүктеп салу кезінде бірдеңе дұрыс болмады! support@swarm.green электрондық мекенжайына хат жазып, журналыңызды мәтіндік файл ретінде тіркеңіз."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Ақауларды түзету журналы жіберілді"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Ақауларды түзету журналы жүктеп салынды. Қолдау көрсету қызметіне хабарласқанда, төмендегі URL сілтемені көшіріңіз және тап болған қиындық сипаттамасына және оны шешу қадамдарына тіркеңіз."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "...журналды толық көру үшін, Сақтау түймесін басыңыз"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Сілтемені көшіру"
-  },
   "icu:debugLogSave": {
     "messageformat": "Сақтау"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Сілтеме буферге көшірілді"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Қолдау қызметіне хабарласу"
   },
   "icu:submit": {
     "messageformat": "Жіберу"
@@ -633,16 +609,16 @@
     "messageformat": "Бұл чат үшін шифрлау автоматты түрде расталды "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "Телефон нөмірі арқылы байланыс орнатқан адамдар үшін Signal байланыстың қаншалықты қауіпсіз екенін \"кілт ашықтығы\" деп аталатын процестің көмегімен автоматты түрде растай алады. Қауіпсіздікті нығайту үшін алдыңғы экрандағы нөмірлерді салыстыру немесе құрылғыдағы кодты сканерлеу арқылы тура шифрлауды қолмен растаңыз."
+    "messageformat": "Телефон нөмірі арқылы байланыс орнатқан адамдар үшін SWARM Messenger байланыстың қаншалықты қауіпсіз екенін \"кілт ашықтығы\" деп аталатын процестің көмегімен автоматты түрде растай алады. Қауіпсіздікті нығайту үшін алдыңғы экрандағы нөмірлерді салыстыру немесе құрылғыдағы кодты сканерлеу арқылы тура шифрлауды қолмен растаңыз."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "Бұл чат үшін автоматты түрде растау қолжетімді емес"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "Signal бұл чат үшін шифрлауды автоматты түрде растай алмайды. Бұл жағдай {name} өзінің телефон нөмірін немесе телефон нөміріне қатысты құпиялық параметрлерін өзгерткендіктен болуы мүмкін. Алдыңғы экрандағы нөмірлерді салыстыру немесе құрылғыдағы кодты сканерлеу арқылы тура шифрлауды қолмен растаңыз."
+    "messageformat": "SWARM Messenger бұл чат үшін шифрлауды автоматты түрде растай алмайды. Бұл жағдай {name} өзінің телефон нөмірін немесе телефон нөміріне қатысты құпиялық параметрлерін өзгерткендіктен болуы мүмкін. Алдыңғы экрандағы нөмірлерді салыстыру немесе құрылғыдағы кодты сканерлеу арқылы тура шифрлауды қолмен растаңыз."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "Signal сіз біреуге телефон нөмірі арқылы қосылған чаттардағы шифрлауды ғана автоматты түрде растай алады. Чат пайдаланушы атымен немесе ортақ топпен басталған болса, алдыңғы экрандағы нөмірлерді салыстыру немесе құрылғыдағы кодты сканерлеу арқылы тура шифрлауды растаңыз."
+    "messageformat": "SWARM Messenger сіз біреуге телефон нөмірі арқылы қосылған чаттардағы шифрлауды ғана автоматты түрде растай алады. Чат пайдаланушы атымен немесе ортақ топпен басталған болса, алдыңғы экрандағы нөмірлерді салыстыру немесе құрылғыдағы кодты сканерлеу арқылы тура шифрлауды растаңыз."
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "Жарайды"
@@ -681,10 +657,10 @@
     "messageformat": "Жоқ, рақмет"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "Signal енді шифрлауды автоматты түрде растай алады"
+    "messageformat": "SWARM Messenger енді шифрлауды автоматты түрде растай алады"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "Телефон нөмірі арқылы байланыс орнатқан контактілер үшін Signal байланыстың қаншалықты қауіпсіз екенін \"кілт ашықтығы\" деп аталатын процестің көмегімен автоматты түрде растай алады. Қауіпсіздікті нығайту үшін QR коды немесе қауіпсіздік нөмірлері арқылы контактілерді бұрынғыдай қолмен растай аласыз."
+    "messageformat": "Телефон нөмірі арқылы байланыс орнатқан контактілер үшін SWARM Messenger байланыстың қаншалықты қауіпсіз екенін \"кілт ашықтығы\" деп аталатын процестің көмегімен автоматты түрде растай алады. Қауіпсіздікті нығайту үшін QR коды немесе қауіпсіздік нөмірлері арқылы контактілерді бұрынғыдай қолмен растай аласыз."
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "Жалғастыру"
@@ -806,9 +782,6 @@
   "icu:clockSkewDetected": {
     "messageformat": "Құрылғы күні дұрыс емес. Сағатыңызды реттеп, қайталап көріңіз. Құрылғы күні мен уақыты:"
   },
-  "icu:submitDebugLog": {
-    "messageformat": "Ақауларды түзету журналы"
-  },
   "icu:debugLog": {
     "messageformat": "Ақауларды түзету журналы"
   },
@@ -837,7 +810,7 @@
     "messageformat": "Стикерлер жинағының авторы"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "Signal-дың компьютерлік нұсқасы туралы ақпарат"
+    "messageformat": "SWARM Messenger туралы ақпарат"
   },
   "icu:screenShareWindow": {
     "messageformat": "Экранды бөлісу"
@@ -855,7 +828,7 @@
     "messageformat": "Шығу"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal-дың компьютерлік нұсқасы"
+    "messageformat": "SWARM Messenger"
   },
   "icu:search": {
     "messageformat": "Іздеу"
@@ -909,7 +882,7 @@
     "messageformat": "Телефон нөмірі бойынша іздеу"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "Signal қолданбасына қош келдіңіз"
+    "messageformat": "SWARM Messenger қолданбасына қош келдіңіз"
   },
   "icu:whatsNew": {
     "messageformat": "Осы жаңа нұсқадағы {whatsNew} тізімін көру"
@@ -996,13 +969,13 @@
     "messageformat": "Сіз"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "Дауыстық хаттарды жіберу үшін Signal-дың компьютерлік нұсқасына микрофонды пайдалануға рұқсат етіңіз."
+    "messageformat": "Дауыстық хаттарды жіберу үшін SWARM Messenger-ге микрофонды пайдалануға рұқсат етіңіз."
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "Қоңырау шалу үшін Signal-дың компьютерлік нұсқасына микрофонды пайдалануға рұқсат етіңіз."
+    "messageformat": "Қоңырау шалу үшін SWARM Messenger-ге микрофонды пайдалануға рұқсат етіңіз."
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "Видеоқоңырау шалу үшін Signal-дың компьютерлік нұсқасына камераны пайдалануға рұқсат етуіңіз керек."
+    "messageformat": "Видеоқоңырау шалу үшін SWARM Messenger-ге камераны пайдалануға рұқсат етуіңіз керек."
   },
   "icu:allowAccess": {
     "messageformat": "Пайдалануға рұқсат беру"
@@ -1029,13 +1002,13 @@
     "messageformat": "Дыбысы өшірілген"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signal-ды жаңарту мүмкін болмады. <retryUpdateButton>Қайта жаңартып көріңіз</retryUpdateButton> немесе {url} бетіне кіріп, оны қолмен орнатыңыз. Содан кейін бұл мәселе жайында <contactSupportLink>қолдау көрсету орталығына</contactSupportLink> хабарлаңыз."
+    "messageformat": "SWARM Messenger-ді жаңарту мүмкін болмады. <retryUpdateButton>Қайта жаңартып көріңіз</retryUpdateButton> немесе {url} бетіне кіріп, оны қолмен орнатыңыз. Содан кейін бұл мәселе жайында <contactSupportLink>қолдау көрсету орталығына</contactSupportLink> хабарлаңыз."
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signal-ды жаңарту мүмкін болмады. {url} бетіне кіріп, оны қолмен орнатыңыз. Содан кейін бұл мәселе жайында <contactSupportLink>қолдау көрсету орталығына</contactSupportLink> хабарлаңыз."
+    "messageformat": "SWARM Messenger-ді жаңарту мүмкін болмады. {url} бетіне кіріп, оны қолмен орнатыңыз. Содан кейін бұл мәселе жайында <contactSupportLink>қолдау көрсету орталығына</contactSupportLink> хабарлаңыз."
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal-дың компьютерлік нұсқасы macOS карантинінде сияқты, сондықтан автоматты түрде жаңартылмайды. Finder арқылы {app} қолданбасын {folder} қалтасына ауыстырып көріңіз."
+    "messageformat": "SWARM Messenger macOS карантинінде сияқты, сондықтан автоматты түрде жаңартылмайды. Finder арқылы {app} қолданбасын {folder} қалтасына ауыстырып көріңіз."
   },
   "icu:ok": {
     "messageformat": "OK"
@@ -1080,7 +1053,7 @@
     "messageformat": "Бұл хат осы құрылғыдан жойылады."
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "Signal-дың соңғы нұсқасы орнатылған болса, бұл хат чаттағы әрбір адамда жойылады. Олар сіздің хатты жойғаныңызды көретін болады."
+    "messageformat": "SWARM Messenger-дің соңғы нұсқасы орнатылған болса, бұл хат чаттағы әрбір адамда жойылады. Олар сіздің хатты жойғаныңызды көретін болады."
   },
   "icu:from": {
     "messageformat": "Кімнен"
@@ -1122,7 +1095,7 @@
     "messageformat": "{nickname} <muted>({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "“{title}” – осы кісінің Signal-да өзіне орнатқан профиль атауы."
+    "messageformat": "“{title}” – осы кісінің SWARM Messenger-де өзіне орнатқан профиль атауы."
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "Тексерілді"
@@ -1137,7 +1110,7 @@
     "messageformat": "{name} деген кісімен тікелей хат алмаспағансыз"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal контактісі"
+    "messageformat": "SWARM контактісі"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} сіздің жүйелік контактілеріңізде бар"
@@ -1449,7 +1422,7 @@
     "messageformat": "Толығырақ"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal өтпелі шифрлау функциясын пайдаланады, сондықтан кейде чат сеансын жаңартып тұруы керек болуы мүмкін. Бұл чаттың қауіпсіздігіне әсер етпейді, бірақ осы контакт жіберген хат келмей қалуы мүмкін. Оны қайта жіберуін сұрауыңызға болады."
+    "messageformat": "SWARM Messenger өтпелі шифрлау функциясын пайдаланады, сондықтан кейде чат сеансын жаңартып тұруы керек болуы мүмкін. Бұл чаттың қауіпсіздігіне әсер етпейді, бірақ осы контакт жіберген хат келмей қалуы мүмкін. Оны қайта жіберуін сұрауыңызға болады."
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "Қолдау қызметіне хабарласу"
@@ -1476,7 +1449,7 @@
     "messageformat": "{sender} өзінің телефон нөмірін өзгертті"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "Контакт Signal-ға қосылды"
+    "messageformat": "Контакт SWARM Messenger-ге қосылды"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} және {conversationTitle} екеуі – бір аккаунт. Екі чат үшін де хаттар тарихын осы жерден таба аласыз."
@@ -1566,7 +1539,7 @@
     "messageformat": "Мультимедиа жүктеп алынбады"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "Компьютеріңіздің және телефоныңыздың интернет байланысын тексеріңіз. Телефоныңызда Signal қолданбасын ашыңыз да, қайта жүктеп алып көріңіз."
+    "messageformat": "Компьютеріңіздің және телефоныңыздың интернет байланысын тексеріңіз. Телефоныңызда SWARM Messenger қолданбасын ашыңыз да, қайта жүктеп алып көріңіз."
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "Бұл мультимедиа файлы телефоныңызда енді жоқ және оны жүктеп алу мүмкін емес."
@@ -1587,10 +1560,10 @@
     "messageformat": "Толық ақпарат"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "Телефоныңыздағы Signal қолданбасында осы кодты сканерлеңіз"
+    "messageformat": "Телефоныңыздағы SWARM Messenger қолданбасында осы кодты сканерлеңіз"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "Телефоныңызда Signal қолданбасын ашыңыз"
+    "messageformat": "Телефоныңызда SWARM Messenger қолданбасын ашыңыз"
   },
   "icu:Install__instructions__2": {
     "messageformat": "{settings} опциясын, содан кейін {linkedDevices} басыңыз"
@@ -1608,7 +1581,7 @@
     "messageformat": "<paragraph>Күтпеген қате шықты.</paragraph><paragraph>Қайталап көріңіз.</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Ағымдағы желінің көмегімен Signal бұл құрылғыға байланыса алмайды."
+    "messageformat": "Ағымдағы желінің көмегімен SWARM Messenger бұл құрылғыға байланыса алмайды."
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "Қайтадан байқап көру"
@@ -1626,7 +1599,7 @@
     "messageformat": "Барлық деректі жою керек пе?"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "Бұл компьютерге басқа Signal аккаунтын байланыстырайын деп жатырсыз. Әрекетті жалғастырсаңыз, Signal Desktop-тағы қазіргі деректердің барлығы жойылады."
+    "messageformat": "Бұл компьютерге басқа SWARM аккаунтын байланыстырайын деп жатырсыз. Әрекетті жалғастырсаңыз, SWARM Messenger-дегі қазіргі деректердің барлығы жойылады."
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "Жалғастыру"
@@ -1641,7 +1614,7 @@
     "messageformat": "Құрылғы аты"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "Бұл құрылғының атауын өзгерту үшін телефоныңызда Signal қолданбасын ашып, \"Параметрлер > Байланыстырылған құрылғылар\" тармағына өтіңіз"
+    "messageformat": "Бұл құрылғының атауын өзгерту үшін телефоныңызда SWARM Messenger қолданбасын ашып, \"Параметрлер > Байланыстырылған құрылғылар\" тармағына өтіңіз"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "Эмоджи терісінің түсі"
@@ -1833,7 +1806,7 @@
     "messageformat": "Кілтті автоматты түрде растау"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "Бұл функция қосылған кезде, Signal жеке чаттардың шифрлауын автоматты түрде растауға тырысады."
+    "messageformat": "Бұл функция қосылған кезде, SWARM Messenger жеке чаттардың шифрлауын автоматты түрде растауға тырысады."
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "Толығырақ"
@@ -1851,7 +1824,7 @@
     "messageformat": "Кешіріңіз, тым көп құрылғы байланыстырылған. Бірнешеуін өшіріңіз."
   },
   "icu:installTooOld": {
-    "messageformat": "Телефоныңызды байланыстыру үшін осы құрылғыда Signal-ды жаңартыңыз."
+    "messageformat": "Телефоныңызды байланыстыру үшін осы құрылғыда SWARM Messenger-ді жаңартыңыз."
   },
   "icu:installErrorHeader": {
     "messageformat": "Бірдеңе дұрыс болмады!"
@@ -1902,7 +1875,7 @@
     "messageformat": "Бұл қоңырау сілтемесі енді жарамды емес."
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal қоңырауы"
+    "messageformat": "SWARM Messenger қоңырауы"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "Сілтеме жойылмады. Байланысты тексеріп, қайталап көріңіз."
@@ -2076,16 +2049,16 @@
     "messageformat": "{count, plural, one {Бұл қоңырауға {count,number} адам қатысып жатыр} other {Бұл қоңырауға {count,number} адам қатысып жатыр}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal {person} деген кісіге қоңырау шалады"
+    "messageformat": "SWARM Messenger {person} деген кісіге қоңырау шалады"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal {first} және {second} деген кісілерге қоңырау шалады"
+    "messageformat": "SWARM Messenger {first} және {second} деген кісілерге қоңырау шалады"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal {first}, {second} және {third} деген кісілерге қоңырау шалады"
+    "messageformat": "SWARM Messenger {first}, {second} және {third} деген кісілерге қоңырау шалады"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, one {Signal {first}, {second} және тағы {others,number} адамға қоңырау шалады} other {Signal {first}, {second} және тағы {others,number} адамға қоңырау шалады}}"
+    "messageformat": "{others, plural, one {SWARM Messenger {first}, {second} және тағы {others,number} адамға қоңырау шалады} other {SWARM Messenger {first}, {second} және тағы {others,number} адамға қоңырау шалады}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} хабарландыру алады"
@@ -2139,13 +2112,13 @@
     "messageformat": "Байланыс қайта орнатылуда..."
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "Байланыс үзілді. Signal қайта қосылуда."
+    "messageformat": "Байланыс үзілді. SWARM Messenger қайта қосылуда."
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal {window} бөлісіп жатыр."
+    "messageformat": "SWARM Messenger {window} бөлісіп жатыр."
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Signal экраны көрсетіліп жатыр"
+    "messageformat": "SWARM Messenger экраны көрсетіліп жатыр"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "Байланыс қайта орнатылуда..."
@@ -2166,7 +2139,7 @@
     "messageformat": "Рұқсат керек"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal компьютеріңіздің экранын жазу функциясын пайдалануға рұқсат алу керек."
+    "messageformat": "SWARM Messenger компьютеріңіздің экранын жазу функциясын пайдалануға рұқсат алу керек."
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "Жүйе параметрлеріне өтіңіз."
@@ -2175,7 +2148,7 @@
     "messageformat": "Астыңғы сол жақтағы құлып белгішесін басыңыз да, компьютердің құпиясөзін енгізіңіз."
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "Оң жақта Signal-дың жанындағы терезені қараңыз. Егер тізімде Signal болмаса, оны қосу үшін + таңбасын басыңыз."
+    "messageformat": "Оң жақта SWARM Messenger-дің жанындағы терезені қараңыз. Егер тізімде SWARM Messenger болмаса, оны қосу үшін + таңбасын басыңыз."
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "Жүйе параметрлерін ашу"
@@ -2187,7 +2160,7 @@
     "messageformat": "Қоңырауларды үнемі қайта трансляциялау"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "Контактіңізге IP мекенжайыңызды көрсетпеу үшін барлық қоңырауды Signal сервері арқылы қайта трансляциялап шығыңыз. Оны қоссаңыз, қоңырау сапасы нашарлайды."
+    "messageformat": "Контактіңізге IP мекенжайыңызды көрсетпеу үшін барлық қоңырауды SWARM Messenger сервері арқылы қайта трансляциялап шығыңыз. Оны қоссаңыз, қоңырау сапасы нашарлайды."
   },
   "icu:permissions": {
     "messageformat": "Рұқсаттар"
@@ -2205,10 +2178,10 @@
     "messageformat": "Мәтін таңдалғанда, мәтінді форматтаудың қалқымалы мәзірін көрсету"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "Келесіде Signal-ды қосқанда, емле тексерісі қосылып тұрады."
+    "messageformat": "Келесіде SWARM Messenger-ді қосқанда, емле тексерісі қосылып тұрады."
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "Келесіде Signal іске қосылғанда, емле тексерісі өшіп тұрады."
+    "messageformat": "Келесіде SWARM Messenger іске қосылғанда, емле тексерісі өшіп тұрады."
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "Жүйелік тақтаны кішірейту"
@@ -2232,7 +2205,7 @@
     "messageformat": "Барлық деректі жою керек пе?"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "Signal Desktop-тың осы нұсқасынан барлық деректі және хатты жою керек пе? Signal аккаунтыңыз және телефоныңыздағы деректер немесе басқа да байланыстырылған құрылғылар жойылмайды."
+    "messageformat": "SWARM Messenger-дің осы нұсқасынан барлық деректі және хатты жою керек пе? SWARM аккаунтыңыз және телефоныңыздағы деректер немесе басқа да байланыстырылған құрылғылар жойылмайды."
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "Қолданба ажыратылып жатыр және деректер толығымен жойылып жатыр…"
@@ -2241,7 +2214,7 @@
     "messageformat": "Аккаунтты жою"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "Онда аккаунт ақпараты, профиль және барлық хабар жойылып кетеді. Сонымен қатар барлық Signal тобынан шығасыз."
+    "messageformat": "Онда аккаунт ақпараты, профиль және барлық хабар жойылып кетеді. Сонымен қатар барлық SWARM тобынан шығасыз."
   },
   "icu:deleteAccountButton": {
     "messageformat": "Аккаунтты жою"
@@ -2250,10 +2223,10 @@
     "messageformat": "Аккаунтты жою керек пе?"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "Онда аккаунт ақпараты, профиль және барлық хабар жойылып кетеді. Сонымен қатар барлық Signal тобынан шығасыз. Бұл процесс аяқталған соң, қолданба жабылады."
+    "messageformat": "Онда аккаунт ақпараты, профиль және барлық хабар жойылып кетеді. Сонымен қатар барлық SWARM тобынан шығасыз. Бұл процесс аяқталған соң, қолданба жабылады."
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "Signal-дың компьютерлік нұсқасын бұған дейін орнатқаннан ескі деректер қалып қойған. Жалғастыратын болсаңыз, ол жойылады және бәрін басынан бастайсыз."
+    "messageformat": "SWARM Messenger-ді бұған дейін орнатқаннан ескі деректер қалып қойған. Жалғастыратын болсаңыз, ол жойылады және бәрін басынан бастайсыз."
   },
   "icu:deleteOldData": {
     "messageformat": "Ескі деректі жою"
@@ -2310,7 +2283,7 @@
     "messageformat": "Ішінара жойылды, толық мәлімет алу үшін басыңыз"
   },
   "icu:expiredWarning": {
-    "messageformat": "Signal-дың компьютерлік нұсқасы ескірді. Әрі қарай хат алмасуды жалғастыру үшін соңғы нұсқаға жаңартыңыз."
+    "messageformat": "SWARM Messenger-дің осы нұсқасы ескірді. Әрі қарай хат алмасуды жалғастыру үшін соңғы нұсқаға жаңартыңыз."
   },
   "icu:upgrade": {
     "messageformat": "swarm.green/download бөліміне өту үшін басыңыз"
@@ -2322,7 +2295,7 @@
     "messageformat": "Контактілерді импорттау"
   },
   "icu:syncExplanation": {
-    "messageformat": "Мобильдік құрылғыңыздан барлық Signal тобы мен контактісін импорттаңыз."
+    "messageformat": "Мобильдік құрылғыңыздан барлық SWARM тобы мен контактісін импорттаңыз."
   },
   "icu:syncNow": {
     "messageformat": "Қазір импорттау"
@@ -2355,7 +2328,7 @@
     "messageformat": "Кеше {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Signal кіріс хабарды өңдей алмай жатқан сияқты."
+    "messageformat": "SWARM Messenger кіріс хабарды өңдей алмай жатқан сияқты."
   },
   "icu:messageBodyTooLong": {
     "messageformat": "Хаттың негізгі бөлімі тым ұзақ."
@@ -2520,13 +2493,13 @@
     "messageformat": "Бұл хатты жіберген соң, оны 24 сағаттың ішінде ғана өзгертуге болады."
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} Signal пайдаланушысы емес. Толық пайдаланушы атын енгізіңіз."
+    "messageformat": "{atUsername} SWARM Messenger пайдаланушысы емес. Толық пайдаланушы атын енгізіңіз."
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} жарамды пайдаланушы аты емес. Пайдаланушы атын цифрлар жинағымен бірге енгізіңіз."
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "Пайдаланушы табылмады. \"{phoneNumber}\" – Signal пайдаланушысы емес."
+    "messageformat": "Пайдаланушы табылмады. \"{phoneNumber}\" – SWARM Messenger пайдаланушысы емес."
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "Пайдаланушы табылмады. \"{phoneNumber}\" телефон нөмірі дұрыс емес."
@@ -2547,13 +2520,13 @@
     "messageformat": "Топ өлшемі максималды мәнге жетті"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signal тобында максимум {max,number} мүше болуы керек."
+    "messageformat": "SWARM тобында максимум {max,number} мүше болуы керек."
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "Мүшелердің ұсынылған санына жетті"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Топтағы мүшелер саны {max,number} немесе одан аз болғанда, Signal жақсы жұмыс істейді. Топ мүшелерінің саны одан асып кетсе, хаттар кеш жіберіліп, алынады."
+    "messageformat": "Топтағы мүшелер саны {max,number} немесе одан аз болғанда, SWARM топтары жақсы жұмыс істейді. Топ мүшелерінің саны одан асып кетсе, хаттар кеш жіберіліп, алынады."
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "Осы топқа ат қойыңыз"
@@ -2583,13 +2556,13 @@
     "messageformat": "Топ жаңартылмады. Байланысты тексеріп, қайталап көріңіз."
   },
   "icu:unlinkedWarning": {
-    "messageformat": "Хат алмасуды жалғастыру үшін Signal-дың компьютерлік нұсқасын мобильдік құрылғыңызға қайта байланыстыру үшін басыңыз."
+    "messageformat": "Хат алмасуды жалғастыру үшін SWARM Messenger-ді мобильдік құрылғыңызға қайта байланыстыру үшін басыңыз."
   },
   "icu:unlinked": {
     "messageformat": "Байланыс ажыратылды"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "Қайта тіркелу және хабар алмасуды жалғастыру үшін басыңыз. Signal Desktop тіркеуден шығып кетті. Мұның себебі телефон нөміріңіз басқа құрылғыдағы Signal-да тіркелгендіктен болуы мүмкін."
+    "messageformat": "Қайта тіркелу және хабар алмасуды жалғастыру үшін басыңыз. SWARM Messenger тіркеуден шығып кетті. Мұның себебі телефон нөміріңіз басқа құрылғыдағы SWARM Messenger-де тіркелгендіктен болуы мүмкін."
   },
   "icu:unregistered": {
     "messageformat": "Енді тіркелмеген"
@@ -2601,16 +2574,16 @@
     "messageformat": "Қайта жаңартып көру"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "Signal-ды өшіріп, қайта қосу үшін басыңыз"
+    "messageformat": "SWARM Messenger-ді өшіріп, қайта қосу үшін басыңыз"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "Жаңа нұсқаны жүктеп алу үшін басыңыз"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signal жаңартылмады. Қайталап көру үшін басыңыз."
+    "messageformat": "SWARM Messenger жаңартылмады. Қайталап көру үшін басыңыз."
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "Signal-ды қайта іске қосу"
+    "messageformat": "SWARM Messenger-ді қайта іске қосу"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "Жаңа нұсқаны елемеу"
@@ -2742,7 +2715,7 @@
     "messageformat": "Кейбір тіркемелер өте үлкен болғандықтан, оны көрсету мүмкін емес."
   },
   "icu:message--call-link-description": {
-    "messageformat": "Signal қоңырауына қосылу үшін осы сілтемені пайдаланыңыз"
+    "messageformat": "SWARM қоңырауына қосылу үшін осы сілтемені пайдаланыңыз"
   },
   "icu:donation--missing": {
     "messageformat": "Демеушілік туралы мәліметті алу мүмкін болмады"
@@ -2754,7 +2727,7 @@
     "messageformat": "Демеуіңізді көру үшін мобильдік құрылғыда осы хатты түртіңіз"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} сіздің атыңыздан Signal-ға демеу берді"
+    "messageformat": "{sender} сіздің атыңыздан SWARM Messenger-ге демеу берді"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "Бұл демеуді ашу үшін телефоныңызды тексеріңіз"
@@ -2811,7 +2784,7 @@
     "messageformat": "Қолдау көрсеткеніңіз үшін рақмет!"
   },
   "icu:modal--donation--description": {
-    "messageformat": "Сіз {name} деген кісінің атынан Signal-ға демеу жасадыңыз. Ол өз профилінен демеу бергенін көрсете алады."
+    "messageformat": "Сіз {name} деген кісінің атынан SWARM Messenger-ге демеу жасадыңыз. Ол өз профилінен демеу бергенін көрсете алады."
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "Стикерлер жинағын орнату мүмкін болмады"
@@ -2823,10 +2796,10 @@
     "messageformat": "Стикерлерді қосу"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal Artist топтамасы"
+    "messageformat": "SWARM Messenger Artist топтамасы"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "Signal Artist стикерлері жоқ"
+    "messageformat": "SWARM Messenger Artist стикерлері жоқ"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "Сізге жіберілген стикерлер"
@@ -2862,7 +2835,7 @@
     "messageformat": "Стикерлер жинағының ретін өзгерту үшін сүйреп апарыңыз"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "Signal Artist Series стикерлер жинағы"
+    "messageformat": "SWARM Messenger Artist Series стикерлер жинағы"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
     "messageformat": "Алынған стикерлер жинақтары"
@@ -3147,19 +3120,19 @@
     "messageformat": "Хат өте ұзын, жалғасын көрсету мүмкін емес"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} сізге жіберген хаты өңделмейді немесе көрсетілмейді, себебі жаңа Signal функциясын пайдаланады."
+    "messageformat": "{contact} сізге жіберген хаты өңделмейді немесе көрсетілмейді, себебі жаңа SWARM Messenger функциясын пайдаланады."
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "Өзіңізде Signal нұсқасын жаңартып алғаннан кейін {contact} хатты қайта жіберуін сұрауға болады."
+    "messageformat": "Өзіңізде SWARM Messenger нұсқасын жаңартып алғаннан кейін {contact} хатты қайта жіберуін сұрауға болады."
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "Сіздің құрылғыларыңыздың бірі жіберген хат өңделмейді немесе көрсетілмейді, себебі ол жаңа Signal нұсқасын пайдаланады."
+    "messageformat": "Сіздің құрылғыларыңыздың бірі жіберген хат өңделмейді немесе көрсетілмейді, себебі ол жаңа SWARM Messenger нұсқасын пайдаланады."
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "Өзіңізде Signal нұсқасын жаңартып алғаннан кейін болашақта келетін осындай хаттар синхрондалады."
+    "messageformat": "Өзіңізде SWARM Messenger нұсқасын жаңартып алғаннан кейін болашақта келетін осындай хаттар синхрондалады."
   },
   "icu:Message--update-signal": {
-    "messageformat": "Signal-ды жаңарту"
+    "messageformat": "SWARM Messenger-ді жаңарту"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "Қаралды"
@@ -3426,7 +3399,7 @@
     "messageformat": "Чат оқылмады деп белгіленді"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "Стикерлер жинағының генераторын пайдалану үшін телефоныңыз бен жұмыс үстеліңізге Signal қолданбасын орнатыңыз"
+    "messageformat": "Стикерлер жинағының генераторын пайдалану үшін телефоныңыз бен жұмыс үстеліңізге SWARM Messenger қолданбасын орнатыңыз"
   },
   "icu:Reactions--remove": {
     "messageformat": "Реакцияны өшіру"
@@ -3444,16 +3417,16 @@
     "messageformat": "Қауіпсіздікке қатысты кеңестер"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "Signal-дан келген чаттарға жауап бермеңіз"
+    "messageformat": "SWARM Messenger-ден келген чаттарға жауап бермеңіз"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "Signal ешқашан сізге хабар жіберіп, тіркеу кодыңызды, PIN кодыңызды немесе қалпына келтіру кілтіңізді сұрамайды. Signal-дың атын жамылған чаттарға ешқашан жауап бермеңіз."
+    "messageformat": "SWARM Messenger ешқашан сізге хабар жіберіп, тіркеу кодыңызды, PIN кодыңызды немесе қалпына келтіру кілтіңізді сұрамайды. SWARM Messenger-дің атын жамылған чаттарға ешқашан жауап бермеңіз."
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "Аты-жөнін және фотосуреттерін тексеріңіз"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "\"Аты-жөні расталмаған\" ескертпесін қараңыз. Барлық пайдаланушы Signal-дағы профилінде өз атын қояды."
+    "messageformat": "\"Аты-жөні расталмаған\" ескертпесін қараңыз. Барлық пайдаланушы SWARM Messenger-дегі профилінде өз атын қояды."
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "Алаяқтардан сақтаныңыз"
@@ -3462,16 +3435,16 @@
     "messageformat": "Сізден жауап алғысы келетін күмәнді хабарларға жауап бермеңіз. Қаржылық ұсыныстар мен күмәнді веб-сілтемелерден сақ болыңыз."
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "Signal-дан келген чаттарға жауап бермеңіз"
+    "messageformat": "SWARM Messenger-ден келген чаттарға жауап бермеңіз"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Signal ешқашан сізге хабарласып, тіркеу кодын, PIN кодын немесе қалпына келтіру кілтін сұрамайды. Signal-дың немесе Signal қолдау көрсету орталығының атын жамылған чаттарға жауап бермеңіз. Алаяқтар аккаунтыңызға ие болу үшін жалған аттарды қолданады."
+    "messageformat": "SWARM Messenger ешқашан сізге хабарласып, тіркеу кодын, PIN кодын немесе қалпына келтіру кілтін сұрамайды. SWARM Messenger-дің немесе SWARM Messenger қолдау көрсету орталығының атын жамылған чаттарға жауап бермеңіз. Алаяқтар аккаунтыңызға ие болу үшін жалған аттарды қолданады."
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "Аты-жөнін және фотосуреттерін тексеріңіз"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "\"Аты-жөні расталмаған\" ескертпесін қараңыз. Барлық пайдаланушы Signal-дағы профилінде өз аты мен фотосуретін қояды. Жаңа сұрау кімнен келгенін білмейтін болсаңыз, оны елеусіз қалдырған жөн."
+    "messageformat": "\"Аты-жөні расталмаған\" ескертпесін қараңыз. Барлық пайдаланушы SWARM Messenger-дегі профилінде өз аты мен фотосуретін қояды. Жаңа сұрау кімнен келгенін білмейтін болсаңыз, оны елеусіз қалдырған жөн."
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "Криптовалютаға немесе ақшаға қатысты алаяқтық"
@@ -3552,13 +3525,13 @@
     "messageformat": "Спам деп хабарлау керек пе?"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Бұл адамның спам жіберіп жатуы мүмкін екендігі туралы Signal-ға хабарландыру жіберіледі. Signal ешбір чатта не жазылып жатқанын көре алмайды."
+    "messageformat": "Бұл адамның спам жіберіп жатуы мүмкін екендігі туралы SWARM Messenger-ге хабарландыру жіберіледі. SWARM Messenger ешбір чатта не жазылып жатқанын көре алмайды."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Сізді осы топқа шақырған адам спам жіберген жағдайда Signal ол туралы хабарландыру алады. Signal ешбір чатта не жазылып жатқанын көре алмайды."
+    "messageformat": "Сізді осы топқа шақырған адам спам жіберген жағдайда SWARM Messenger ол туралы хабарландыру алады. SWARM Messenger ешбір чатта не жазылып жатқанын көре алмайды."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Сізді осы топқа шақырған {name} спам жіберген жағдайда Signal ол туралы хабарландыру алады. Signal ешбір чатта не жазылып жатқанын көре алмайды."
+    "messageformat": "Сізді осы топқа шақырған {name} спам жіберген жағдайда SWARM Messenger ол туралы хабарландыру алады. SWARM Messenger ешбір чатта не жазылып жатқанын көре алмайды."
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "Спам деп хабарлау"
@@ -3600,7 +3573,7 @@
     "messageformat": "Сұрауды қабылдау керек пе?"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "Сенімді адамдар жіберген сұрауларды ғана қабылдаңыз. <bold>Signal ешқашан</bold> сізге хабар жіберіп, тіркеу кодын, PIN кодын немесе қалпына келтіру кілтін сұрамайды."
+    "messageformat": "Сенімді адамдар жіберген сұрауларды ғана қабылдаңыз. <bold>SWARM Messenger ешқашан</bold> сізге хабар жіберіп, тіркеу кодын, PIN кодын немесе қалпына келтіру кілтін сұрамайды."
   },
   "icu:MessageRequests--continue": {
     "messageformat": "Жалғастыру"
@@ -3654,16 +3627,16 @@
     "messageformat": "Аты расталмаған"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "Бұл – Signal-дың ресми және жалғыз чаты"
+    "messageformat": "Бұл – SWARM Messenger-дің ресми және жалғыз чаты"
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "Ресми чат"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "Бұл – Signal-дың ресми чаты. Жаңалықтар мен шығарылым туралы ескертпелерден хабардар болыңыз."
+    "messageformat": "Бұл – SWARM Messenger-дің ресми чаты. Жаңалықтар мен шығарылым туралы ескертпелерден хабардар болыңыз."
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "Бұл – Signal-дың ресми чаты."
+    "messageformat": "Бұл – SWARM Messenger-дің ресми чаты."
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "Жаңалықтар мен шығарылым туралы ескертпелерден хабардар болыңыз."
@@ -3729,10 +3702,10 @@
     "messageformat": "Жауап берілмеген видеоқоңырау"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal әлі жұмыс істеп тұр"
+    "messageformat": "SWARM Messenger әлі жұмыс істеп тұр"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal хабарландырулар аймағында жұмыс істеп тұра береді. Signal параметрлеріне кіріп, оны өзгертуіңізге болады."
+    "messageformat": "SWARM Messenger хабарландырулар аймағында жұмыс істеп тұра береді. SWARM Messenger параметрлеріне кіріп, оны өзгертуіңізге болады."
   },
   "icu:incomingAudioCall": {
     "messageformat": "Кіріс дауыстық қоңырау"
@@ -3939,7 +3912,7 @@
     "messageformat": "Қоңырау сілтемесін көшіру"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "Signal арқылы қоңырау сілтемесін бөлісу"
+    "messageformat": "SWARM Messenger арқылы қоңырау сілтемесін бөлісу"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "{name} қоңыраудан шығарылсын ба?"
@@ -4101,7 +4074,7 @@
     "messageformat": "Сілтеме нұсқасы белгісіз"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "Signal-дың компьютерлік нұсқасы бұл сілтемені аша алмайды."
+    "messageformat": "SWARM Messenger-дің осы нұсқасы бұл сілтемені аша алмайды."
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "Топқа қосылу мүмкін емес"
@@ -4707,10 +4680,10 @@
     "messageformat": "Пайдаланушы дерегі жойылуда және қолданба бастапқы күйге қайтарылуда"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "Signal-ды демеу"
+    "messageformat": "SWARM Messenger-ді демеу"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} Signal-ға демеушілік жасайды"
+    "messageformat": "{name} SWARM Messenger-ге демеушілік жасайды"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "Хабарлар синхрондалып жатыр"
@@ -4827,7 +4800,7 @@
     "messageformat": "Аккаунтқа қатысты әрекет қажет"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "Осы аккаунтты әрі қарай пайдалана беру үшін телефоныңызда Signal қолданбасын ашыңыз. Телефоныңызда Signal қолданбасын ашпасаңыз, аккаунтыңыз көп ұзамай жойылады. <learnMoreLink>Толық ақпарат</learnMoreLink>"
+    "messageformat": "Осы аккаунтты әрі қарай пайдалана беру үшін телефоныңызда SWARM Messenger қолданбасын ашыңыз. Телефоныңызда SWARM Messenger қолданбасын ашпасаңыз, аккаунтыңыз көп ұзамай жойылады. <learnMoreLink>Толық ақпарат</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "Мультимедианы қалпына келтіру мүмкін емес"
@@ -4851,10 +4824,10 @@
     "messageformat": "Тіркеме немесе сауалнама қосыңыз"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "Бұл адам Signal-ды пайдаланбайды"
+    "messageformat": "Бұл адам SWARM Messenger-ді пайдаланбайды"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal-дың компьютерлік нұсқасы арқылы Signal қолданбасы жоқ контактілерге хат жібере алмайсыз. Қауіпсіз хат алмасу үшін ол адамға хабарласып, Signal орнатып алуын өтініңіз."
+    "messageformat": "SWARM Messenger арқылы SWARM Messenger қолданбасы жоқ контактілерге хат жібере алмайсыз. Қауіпсіз хат алмасу үшін ол адамға хабарласып, SWARM Messenger орнатып алуын өтініңіз."
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "Контактінің тіркелу статусын тексеру"
@@ -5115,10 +5088,10 @@
     "messageformat": "Блоктан шығару"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "Бұл адамның спам жіберіп жатуы мүмкін екендігі туралы Signal-ға хабарландыру жіберіледі. Signal ешбір чатта не жазылып жатқанын көре алмайды."
+    "messageformat": "Бұл адамның спам жіберіп жатуы мүмкін екендігі туралы SWARM Messenger-ге хабарландыру жіберіледі. SWARM Messenger ешбір чатта не жазылып жатқанын көре алмайды."
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "Сізді осы топқа шақырған адам спам жіберген жағдайда, Signal-ға хабарландыру жіберіледі. Signal ешқандай чаттағы мазмұнды көре алмайды."
+    "messageformat": "Сізді осы топқа шақырған адам спам жіберген жағдайда, SWARM Messenger-ге хабарландыру жіберіледі. SWARM Messenger ешқандай чаттағы мазмұнды көре алмайды."
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "Спам деп хабарлау"
@@ -5166,7 +5139,7 @@
     "messageformat": "Лақап ат"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "Лақап аттар мен ескертпелер Signal-да сақталады және толықтай шифрланады. Ол тек сізге көрінеді."
+    "messageformat": "Лақап аттар мен ескертпелер SWARM Messenger-де сақталады және толықтай шифрланады. Ол тек сізге көрінеді."
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "Аты"
@@ -5322,7 +5295,7 @@
     "messageformat": "Әкімші топ сілтемесі арқылы жаңа мүшелердің қосылуын мақұлдауын сұраңыз"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "Буферге signal.group сілтемесін көшіріңіз"
+    "messageformat": "Буферге топ сілтемесін көшіріңіз"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "Мүшелерді іздеу"
@@ -5461,7 +5434,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, one {Signal-дың соңғы нұсқаларындағы топ мүшелері осы хабарды жойғаныңызды көреді.} other {Signal-дың соңғы нұсқаларындағы топ мүшелері осы хабарларды жойғаныңызды көреді.}}"
+    "messageformat": "{count, plural, one {SWARM Messenger-дің соңғы нұсқаларындағы топ мүшелері осы хабарды жойғаныңызды көреді.} other {SWARM Messenger-дің соңғы нұсқаларындағы топ мүшелері осы хабарларды жойғаныңызды көреді.}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "Жою"
@@ -5587,7 +5560,7 @@
     "messageformat": "Бос немесе жойылған хаттарды басқа біреуге жіберу мүмкін емес"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "Signal қоңырауына қосылу үшін осы сілтемені пайдаланыңыз: {url}"
+    "messageformat": "SWARM қоңырауына қосылу үшін осы сілтемені пайдаланыңыз: {url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "Өтініштерді мұқият қарап шығыңыз"
@@ -5596,7 +5569,7 @@
     "messageformat": "Қауіпсіздікке қатысты кеңестер"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "Өтініштерді мұқият қарап шығыңыз. Signal аты дәл осындай тағы бір адамды тапты. <reviewRequestLink>Өтінішті қарап шығу</reviewRequestLink>"
+    "messageformat": "Өтініштерді мұқият қарап шығыңыз. SWARM Messenger аты дәл осындай тағы бір адамды тапты. <reviewRequestLink>Өтінішті қарап шығу</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, one {{count,number} топ мүшесінің аты дәл осындай. <reviewRequestLink>Топ мүшелерін қарап шығу</reviewRequestLink>} other {{count,number} топ мүшесінің аты дәл осындай. <reviewRequestLink>Топ мүшелерін қарап шығу</reviewRequestLink>}}"
@@ -5629,7 +5602,7 @@
     "messageformat": "Басқа ортақ топтар жоқ"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal-мен байланыс"
+    "messageformat": "SWARM-мен байланыс"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "Профиль атауы {oldName} болған, енді {newName} деп өзгертті"
@@ -5647,7 +5620,7 @@
     "messageformat": "Хат алмасуды жалғастыру үшін тексеру"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "Signal-да спамның алдын алу үшін тексеруден өтіңіз."
+    "messageformat": "SWARM Messenger-де спамның алдын алу үшін тексеруден өтіңіз."
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "Верификациядан өткен соң, әрі қарай хат алмаса аласыз. Жіберілмей қалған хаттардың барлығы автоматты түрде жіберіледі."
@@ -6034,7 +6007,7 @@
     "messageformat": "Осы өзгертулерді жойғыңыз келе ме?"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "Signal-ды жауып, қоңырауды аяқтау керек пе?"
+    "messageformat": "SWARM Messenger-ді жауып, қоңырауды аяқтау керек пе?"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "Қазір емес"
@@ -6134,7 +6107,7 @@
     "messageformat": "Жалпы"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "Signal-ды демеу"
+    "messageformat": "SWARM Messenger-ді демеу"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "Сыртқы көрінісі"
@@ -6200,10 +6173,10 @@
     "messageformat": "Жүйе"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal Login"
+    "messageformat": "SWARM Messenger Login"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "Аккаунтыңызды қалпына келтіру үшін Signal Login тіркелу деректеріңіз қолданылады. Бұл кілттерді өзіңіз сенетін құпия сөз менеджерінде сақтап қойыңыз. <learnMoreLink>Толық ақпарат алыңыз.</learnMoreLink>"
+    "messageformat": "Аккаунтыңызды қалпына келтіру үшін SWARM Messenger Login тіркелу деректеріңіз қолданылады. Бұл кілттерді өзіңіз сенетін құпия сөз менеджерінде сақтап қойыңыз. <learnMoreLink>Толық ақпарат алыңыз.</learnMoreLink>"
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "Толық ақпарат"
@@ -6215,7 +6188,7 @@
     "messageformat": "2 кілт"
   },
   "icu:Preferences__SignalAccountKeys__Title": {
-    "messageformat": "Signal Login тіркелу деректеріңіз"
+    "messageformat": "SWARM Messenger Login тіркелу деректеріңіз"
   },
   "icu:Preferences__SignalAccountKeys__Description": {
     "messageformat": "Мұны қауіпсіз жерге сақтап қойыңыз, кіруге қажетті ақпарат аккаунтыңызды және деректеріңізді қалпына келтіруге керек болады. Оны ешкімге айтпаңыз."
@@ -6236,7 +6209,7 @@
     "messageformat": "Бұл – байланыстырылған құрылғы"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "Аккаунт параметрлерін басқару үшін негізгі құрылғыда Signal қолданбасын ашыңыз."
+    "messageformat": "Аккаунт параметрлерін басқару үшін негізгі құрылғыда SWARM Messenger қолданбасын ашыңыз."
   },
   "icu:Preferences--zoom": {
     "messageformat": "Масштабтау деңгейі"
@@ -6275,7 +6248,7 @@
     "messageformat": "Өзгерту"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "Signal PIN коды"
+    "messageformat": "SWARM PIN коды"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "PIN-кодты еске салғыштар"
@@ -6413,7 +6386,7 @@
     "messageformat": "Чат тарихын экспорттау мүмкін емес"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "Чат тарихын экспорттау мүмкін емес, себебі Signal-да файлдарды дискіге жазу рұқсаты жоқ. Диск рұқсаттарын өзгертіп немесе жүйе параметрлерін жаңартып, әрекетті қайталап көріңіз."
+    "messageformat": "Чат тарихын экспорттау мүмкін емес, себебі SWARM Messenger-де файлдарды дискіге жазу рұқсаты жоқ. Диск рұқсаттарын өзгертіп немесе жүйе параметрлерін жаңартып, әрекетті қайталап көріңіз."
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "Сақтық көшірме экспортталып жатыр"
@@ -6428,7 +6401,7 @@
     "messageformat": "Сақтық көшірме қалтасын телефоныңыздың жадына тасымалдаңыз"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "Телефоныңызда Signal-дың жаңа нұсқасын орнатыңыз"
+    "messageformat": "Телефоныңызда SWARM Messenger-дің жаңа нұсқасын орнатыңыз"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "\"Қалпына келтіру немесе тасымалдау\" түймесін түртіңіз және \"Сақтық көшірмені құрылғыда жасау\" опциясын таңдаңыз"
@@ -6695,13 +6668,13 @@
     "messageformat": "Блокталған уақыты: {blockedAt}"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Signal қауіпсіз сақтық көшірмелері"
+    "messageformat": "SWARM Messenger қауіпсіз сақтық көшірмелері"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "Автоматты cақтық көшірмелер Signal-дың қауіпсіз және тура шифрланған жад қызметі арқылы жасалады. Телефоныңызда бастаңыз. <learnMoreLink>Толық ақпарат алыңыз.</learnMoreLink>"
+    "messageformat": "Автоматты cақтық көшірмелер SWARM Messenger-дің қауіпсіз және тура шифрланған жад қызметі арқылы жасалады. Телефоныңызда бастаңыз. <learnMoreLink>Толық ақпарат алыңыз.</learnMoreLink>"
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "Хабарлар тарихының сақтық көшірмесін жасаңыз. Сонда жаңа телефон алсаңыз да, Signal-ды қайта орнатсаңыз да, деректеріңізді ешқашан жоғалтпайсыз."
+    "messageformat": "Хабарлар тарихының сақтық көшірмесін жасаңыз. Сонда жаңа телефон алсаңыз да, SWARM Messenger-ді қайта орнатсаңыз да, деректеріңізді ешқашан жоғалтпайсыз."
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "Резервтік көшірме туралы мәліметтер"
@@ -6731,13 +6704,13 @@
     "messageformat": "Жазылым тоқтатылды."
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "Signal Secure Backups жазылымын телефонда басқаруға немесе тоқтатуға болады."
+    "messageformat": "SWARM Messenger Secure Backups жазылымын телефонда басқаруға немесе тоқтатуға болады."
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "Signal Secure Backups жазылымын телефонда басқаруға және жаңартуға болады."
+    "messageformat": "SWARM Messenger Secure Backups жазылымын телефонда басқаруға және жаңартуға болады."
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "Signal Secure Backups жазылымын телефонда басқаруға немесе жаңартуға болады."
+    "messageformat": "SWARM Messenger Secure Backups жазылымын телефонда басқаруға немесе жаңартуға болады."
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "Соңғы резервтік көшірме"
@@ -6755,7 +6728,7 @@
     "messageformat": "Телефоныңызда қалпына келтіруге болатын тура шифрланған сақтық көшірме жасаңыз. "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "Сақтық көшірмені қалпына келтіру үшін телефоныңызға Signal-дың жаңа нұсқасын орнатыңыз. Қолданбаны ашып, &quot;Қалпына келтіру немесе тасымалдау&quot; түймесін түртіңіз. <learnMoreLink>Толық ақпарат алыңыз.</learnMoreLink>"
+    "messageformat": "Сақтық көшірмені қалпына келтіру үшін телефоныңызға SWARM Messenger-дің жаңа нұсқасын орнатыңыз. Қолданбаны ашып, &quot;Қалпына келтіру немесе тасымалдау&quot; түймесін түртіңіз. <learnMoreLink>Толық ақпарат алыңыз.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "Қалта таңдаңыз"
@@ -6791,7 +6764,7 @@
     "messageformat": "Қалпына келтіру кілтіңіз"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "Бұл кілт аккаунт пен деректерді қалпына келтіру үшін қажет. Оны қауіпсіз бір жерде сақтаңыз және оны ешкіммен бөліспеңіз. Signal ешқашан сізге хабарласып, қалпына келтіру кілтін сұрамайды. <learnMoreLink>Толық ақпарат алыңыз.</learnMoreLink>"
+    "messageformat": "Бұл кілт аккаунт пен деректерді қалпына келтіру үшін қажет. Оны қауіпсіз бір жерде сақтаңыз және оны ешкіммен бөліспеңіз. SWARM Messenger ешқашан сізге хабарласып, қалпына келтіру кілтін сұрамайды. <learnMoreLink>Толық ақпарат алыңыз.</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "Қалпына келтіру кілтін бөлісуге болмайды"
@@ -6806,7 +6779,7 @@
     "messageformat": "Кілтті бөліспеу"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "Қалпына келтіру кілтін ешкіммен бөліспеңіз. Әйтпесе аккаунтыңызды басқалар иеленіп алуы мүмкін. <strong>Signal ешқашан сізге хабарласып,</strong> қалпына келтіру кілтін сұрамайды. Signal-дың атын жамылған чаттарға ешқашан жауап бермеңіз. <learnMoreLink>Толық ақпарат алыңыз.</learnMoreLink>"
+    "messageformat": "Қалпына келтіру кілтін ешкіммен бөліспеңіз. Әйтпесе аккаунтыңызды басқалар иеленіп алуы мүмкін. <strong>SWARM Messenger ешқашан сізге хабарласып,</strong> қалпына келтіру кілтін сұрамайды. SWARM Messenger-дің атын жамылған чаттарға ешқашан жауап бермеңіз. <learnMoreLink>Толық ақпарат алыңыз.</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "Қалпына келтіру кілтін растау"
@@ -6818,7 +6791,7 @@
     "messageformat": "Кілтіңізді қауіпсіз сақтаңыз"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "Кілтіңізді жоғалтып алсаңыз, Signal резервтік көшірмені қалпына келтіруге көмектесе алмайды. Оны қауіпсіз жерде сақтаңыз және ешкіммен бөліспеңіз."
+    "messageformat": "Кілтіңізді жоғалтып алсаңыз, SWARM Messenger резервтік көшірмені қалпына келтіруге көмектесе алмайды. Оны қауіпсіз жерде сақтаңыз және ешкіммен бөліспеңіз."
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "Жалғастыру"
@@ -6869,7 +6842,7 @@
     "messageformat": "Сақтық көшірмені қосу үшін аутентификация керек."
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "Бұл әрекетті орындау мүмкін емес, себебі жүйе аутентификациясы орындалмады. Әрекетті қайталап көріңіз немесе мобильдік құрылғыңыздағы Signal қолданбасын ашып, қалпына келтіру кілтін көру үшін сақтық көшірме параметрлеріне кіріңіз."
+    "messageformat": "Бұл әрекетті орындау мүмкін емес, себебі жүйе аутентификациясы орындалмады. Әрекетті қайталап көріңіз немесе мобильдік құрылғыңыздағы SWARM Messenger қолданбасын ашып, қалпына келтіру кілтін көру үшін сақтық көшірме параметрлеріне кіріңіз."
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "Бұл әрекет үшін жүйе рұқсатын сұрау кезінде қате шықты."
@@ -6899,7 +6872,7 @@
     "messageformat": "Телефон нөмірі"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "Телефон нөміріңізді кім көре алатынын және Signal-да сізге кім жаза алатынын таңдаңыз."
+    "messageformat": "Телефон нөміріңізді кім көре алатынын және SWARM Messenger-де сізге кім жаза алатынын таңдаңыз."
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "Өзгерту…"
@@ -6929,10 +6902,10 @@
     "messageformat": "Мені нөмірім арқылы кім таба алады?"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "Телефон нөміріңізді білетін кез келген адам сіздің Signal қолданбасын пайдаланатыныңызды біле алады және сізбен чат аша алады."
+    "messageformat": "Телефон нөміріңізді білетін кез келген адам сіздің SWARM Messenger қолданбасын пайдаланатыныңызды біле алады және сізбен чат аша алады."
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "Сіз біреуге хат жазбайынша немесе біреумен чат ашпайынша, сіздің Signal қолданбасын пайдаланатыныңызды ешкім білмейді."
+    "messageformat": "Сіз біреуге хат жазбайынша немесе біреумен чат ашпайынша, сіздің SWARM Messenger қолданбасын пайдаланатыныңызды ешкім білмейді."
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "Барлығы"
@@ -6944,7 +6917,7 @@
     "messageformat": "Сенімдісіз бе?"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "\"{settingTitle}\" параметрін \"{nobodyLabel}\" деп өзгертсеңіз, адамдардың сізді Signal-да табуы қиынға соғады."
+    "messageformat": "\"{settingTitle}\" параметрін \"{nobodyLabel}\" деп өзгертсеңіз, адамдардың сізді SWARM Messenger-де табуы қиынға соғады."
   },
   "icu:Preferences--messaging": {
     "messageformat": "Хат алмасу"
@@ -7007,7 +6980,7 @@
     "messageformat": "Орнату"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "Қолдану үшін Signal-ды өшіріп, қайта қосыңыз"
+    "messageformat": "Қолдану үшін SWARM Messenger-ді өшіріп, қайта қосыңыз"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "Тілді өзгерту үшін қолданбаны өшіріп, қайта қосу керек."
@@ -7022,13 +6995,13 @@
     "messageformat": "Экран қауіпсіздігі"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "Дерек құпиялығын сақтау үшін осы компьютерде Signal-дың скриншоттарын жасамаңыз."
+    "messageformat": "Дерек құпиялығын сақтау үшін осы компьютерде SWARM Messenger-дің скриншоттарын жасамаңыз."
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "Экран қауіпсіздігін өшіру керек пе?"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "Өшіріп қойсаңыз, бұл Microsoft Windows жүйесіне Signal-дың скриншоттарын түсіруге және баршаға ашық функциялар үшін қолдануға мүмкіндік береді."
+    "messageformat": "Өшіріп қойсаңыз, бұл Microsoft Windows жүйесіне SWARM Messenger-дің скриншоттарын түсіруге және баршаға ашық функциялар үшін қолдануға мүмкіндік береді."
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "Өшіру"
@@ -7049,19 +7022,19 @@
     "messageformat": "App Store-ға өту үшін басыңыз"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "Телефоныңызда Signal қолданбасын ашыңыз"
+    "messageformat": "Телефоныңызда SWARM Messenger қолданбасын ашыңыз"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "Аккаунтыңыз көп ұзамай жойылады. Оны сақтап қалу үшін телефоныңызда Signal қолданбасын ашыңыз. Бәрі дұрыс болса, бұл хабар өзі-ақ жоғалады. <learnMoreLink>Толық ақпарат</learnMoreLink>"
+    "messageformat": "Аккаунтыңыз көп ұзамай жойылады. Оны сақтап қалу үшін телефоныңызда SWARM Messenger қолданбасын ашыңыз. Бәрі дұрыс болса, бұл хабар өзі-ақ жоғалады. <learnMoreLink>Толық ақпарат</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "Аккаунтыңыз белсенді болып тұруы үшін телефоныңызда Signal-ды ашыңыз"
+    "messageformat": "Аккаунтыңыз белсенді болып тұруы үшін телефоныңызда SWARM Messenger-ді ашыңыз"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "Толық ақпарат"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal қолданбасында техникалық қиындықтар туындады. Қызметті мүмкіндігінше тезірек қалпына келтіру үшін аянбай жұмыс істеп жатырмыз."
+    "messageformat": "SWARM Messenger қолданбасында техникалық қиындықтар туындады. Қызметті мүмкіндігінше тезірек қалпына келтіру үшін аянбай жұмыс істеп жатырмыз."
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "Жаңарту керек"
@@ -7070,13 +7043,13 @@
     "messageformat": "Жаңа нұсқаның бар-жоғы тексеріліп жатыр"
   },
   "icu:InstallScreenUpdateDialog--updating-signal": {
-    "messageformat": "Signal жаңартылып жатыр"
+    "messageformat": "SWARM Messenger жаңартылып жатыр"
   },
   "icu:InstallScreenUpdateDialog--download-progress": {
     "messageformat": "{currentBytes}/{totalBytes} ({percentage,number,percent}) жүктеп алынып жатыр..."
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "Жалғастыру үшін Signal Desktop-ты жаңартыңыз."
+    "messageformat": "Жалғастыру үшін SWARM Messenger-ді жаңартыңыз."
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "Жаңарту"
@@ -7088,19 +7061,19 @@
     "messageformat": "Жаңарту керек"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "Signal-ды әрі қарай қолдана беру үшін оның соңғы нұсқасын орнатып алуыңыз керек."
+    "messageformat": "SWARM Messenger-ді әрі қарай қолдана беру үшін оның соңғы нұсқасын орнатып алуыңыз керек."
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "{downloadSize} жүктеп алу"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "Жаңа нұсқасы орнатылуы үшін, Signal-ды өшіріп, қайта қосыңыз."
+    "messageformat": "Жаңа нұсқасы орнатылуы үшін, SWARM Messenger-ді өшіріп, қайта қосыңыз."
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Компьютерге арналған Signal жаңартылмады, бірақ оның жаңа нұсқасы бар. {downloadUrl} веб-бетіне кіріп, жаңа нұсқасын қолмен орнатыңыз, содан кейін қолдау қызметіне хабарласыңыз немесе бұл мәселе бойынша тикет ашыңыз."
+    "messageformat": "SWARM Messenger жаңартылмады, бірақ оның жаңа нұсқасы бар. {downloadUrl} веб-бетіне кіріп, жаңа нұсқасын қолмен орнатыңыз, содан кейін қолдау қызметіне хабарласыңыз немесе бұл мәселе бойынша тикет ашыңыз."
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "Signal логотипі"
+    "messageformat": "SWARM Messenger логотипі"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "Артқа"
@@ -7136,7 +7109,7 @@
     "messageformat": "Жалғастыру үшін адам екеніңізді растаңыз"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "Signal-да спамның алдын алу үшін растаудан өтіңіз. Растағаннан кейін тіркеу процесін жалғастыра аласыз."
+    "messageformat": "SWARM Messenger-де спамның алдын алу үшін растаудан өтіңіз. Растағаннан кейін тіркеу процесін жалғастыра аласыз."
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "Қайта растау"
@@ -7376,7 +7349,7 @@
     "messageformat": "Дұрыс емес PIN"
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--description": {
-    "messageformat": "PIN кодын теруге берілген мүмкіндіктердің барлығын пайдаланып қойдыңыз, бірақ жаңа PIN кодын жасап, Signal аккаунтыңызды қолдана берсеңіз болады. Құпиялық және қауіпсіздік мақсатында аккаунтыңыз сақталған профиль ақпаратынсыз немесе параметрлерінсіз қалпына келтіріледі."
+    "messageformat": "PIN кодын теруге берілген мүмкіндіктердің барлығын пайдаланып қойдыңыз, бірақ жаңа PIN кодын жасап, SWARM аккаунтыңызды қолдана берсеңіз болады. Құпиялық және қауіпсіздік мақсатында аккаунтыңыз сақталған профиль ақпаратынсыз немесе параметрлерінсіз қалпына келтіріледі."
   },
   "icu:StandaloneRegistration--VerifyPIN--NoRemainingTries--create-new-pin": {
     "messageformat": "Жаңа PIN-код жасау"
@@ -7406,7 +7379,7 @@
     "messageformat": "PIN код жасау"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "PIN кодтар арқылы аккаунтыңызды қалпына келтіре аласыз және ақпаратыңызды Signal көмегімен шифрлауға болады. <learnMore>Толығырақ</learnMore>"
+    "messageformat": "PIN кодтар арқылы аккаунтыңызды қалпына келтіре аласыз және ақпаратыңызды SWARM Messenger көмегімен шифрлауға болады. <learnMore>Толығырақ</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "PIN код жасау"
@@ -7430,7 +7403,7 @@
     "messageformat": "Ескерту"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "PIN кодын өшіріп қойсаңыз, Signal-ға қайта тіркелгенде деректеріңіздің барлығын жоғалтасыз. PIN коды өшірулі болғанда, тіркелу құлпын аша алмайсыз."
+    "messageformat": "PIN кодын өшіріп қойсаңыз, SWARM Messenger-ге қайта тіркелгенде деректеріңіздің барлығын жоғалтасыз. PIN коды өшірулі болғанда, тіркелу құлпын аша алмайсыз."
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "PIN-кодты өшіру"
@@ -7439,10 +7412,10 @@
     "messageformat": "Бас тарту"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "Signal PIN кодтары туралы ақпарат"
+    "messageformat": "SWARM PIN кодтары туралы ақпарат"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "PIN кодтарында Signal қолданбасы шифрланған күйде сақталған ақпарат болады, сондықтан оған сіз ғана қол жеткізе аласыз. Қайтадан орнатқан кезде, профиліңіз, параметрлеріңіз бен контактілеріңіз қалпына келітіріледі."
+    "messageformat": "PIN кодтарында SWARM Messenger қолданбасы шифрланған күйде сақталған ақпарат болады, сондықтан оған сіз ғана қол жеткізе аласыз. Қайтадан орнатқан кезде, профиліңіз, параметрлеріңіз бен контактілеріңіз қалпына келітіріледі."
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "Толық ақпарат"
@@ -7475,7 +7448,7 @@
     "messageformat": "Жаңарту керек"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "Тіркелуді жалғастыру үшін Signal-дың соңғы нұсқасын орнатыңыз."
+    "messageformat": "Тіркелуді жалғастыру үшін SWARM Messenger-дің соңғы нұсқасын орнатыңыз."
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "Жаңарту"
@@ -7505,7 +7478,7 @@
     "messageformat": "Қолдау қызметіне хабарласу"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signal-ды жабу мүмкін емес.",
+    "messageformat": "SWARM Messenger-ді жабу мүмкін емес.",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7525,14 +7498,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "Signal-дың жаңа нұсқасы орнатылып қойды. Шынымен де жалғастырғыңыз келе ме?",
+    "messageformat": "SWARM Messenger-дің жаңа нұсқасы орнатылып қойды. Шынымен де жалғастырғыңыз келе ме?",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "Қолданба бұзылды"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal жұмысы бұзылған соң қайта іске қосылды. Signal ақаудың төркінін анықтай алуы үшін, бұзылу туралы есеп жіберуіңізге болады."
+    "messageformat": "SWARM Messenger жұмысы бұзылған соң қайта іске қосылды. SWARM Messenger ақаудың төркінін анықтай алуы үшін, бұзылу туралы есеп жіберуіңізге болады."
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "Жіберу"
@@ -7637,7 +7610,7 @@
     "messageformat": "Төмендегі \"{buttonName}\" түймесін басыңыз"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "\"Signal\" қолданбасын қосыңыз"
+    "messageformat": "\"SWARM Messenger\" қолданбасын қосыңыз"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "Параметрлерге өту"
@@ -7733,7 +7706,7 @@
     "messageformat": "Толығырақ"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal контактілері"
+    "messageformat": "SWARM контактілері"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections} – сіз сенім артатын адамдар немесе:"
@@ -7874,7 +7847,7 @@
     "messageformat": "Стористі мына адамдардан жасыру"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "Барлық Signal контактісі"
+    "messageformat": "Барлық SWARM контактісі"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "Мыналардан басқалары..."
@@ -7952,7 +7925,7 @@
     "messageformat": "Сторис құпиялылығы"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "Signal контактілерінің қайсысы стористеріңізді көре алатынын таңдаңыз. Оны құпиялылық параметрлерінен кез келген уақытта өзгерте аласыз. <learnMoreLink>Толығырақ.</learnMoreLink>"
+    "messageformat": "SWARM контактілерінің қайсысы стористеріңізді көре алатынын таңдаңыз. Оны құпиялылық параметрлерінен кез келген уақытта өзгерте аласыз. <learnMoreLink>Толығырақ.</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "Стористі жою"
@@ -8021,7 +7994,7 @@
     "messageformat": "Тіркемені жүктеп алу"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "Көрілгені туралы растаманы қосып, стористеріңізді кім көргенін біле аласыз. Мобильдік құрылғыңыздағы Signal қолданбасын ашып, \"Параметрлер > Сторис\" бөліміне өтіңіз."
+    "messageformat": "Көрілгені туралы растаманы қосып, стористеріңізді кім көргенін біле аласыз. Мобильдік құрылғыңыздағы SWARM Messenger қолданбасын ашып, \"Параметрлер > Сторис\" бөліміне өтіңіз."
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "Ешкім жауап жазбаған"
@@ -8207,7 +8180,7 @@
     "messageformat": "QR кодыңыз бен сілтемеңіз қалпына келтірілді және пайдаланушы атыңыз – {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "Телефоныңызбен мына QR кодты сканерлеп, Signal-да менімен чат арқылы сөйлесіңіз.",
+    "messageformat": "Телефоныңызбен мына QR кодты сканерлеп, SWARM Messenger-де менімен чат арқылы сөйлесіңіз.",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8283,7 +8256,7 @@
     "messageformat": "Жабу"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "Signal қолданбасындағы PIN коды тексеру"
+    "messageformat": "SWARM PIN кодын тексеру"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "PIN кодыңызды ұмытып қалмау үшін анда-санда оны тексеріп тұруыңызды сұраймыз."
@@ -8295,7 +8268,7 @@
     "messageformat": "Кейін"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "ignal қолданбасындағы PIN кодыңызды енгізу"
+    "messageformat": "SWARM PIN кодыңызды енгізу"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "PIN кодыңызды ұмытып қалмау үшін оны енгізуді жиі сұрап тұрамыз. Оны уақыт өте келе азырақ сұрайтын боламыз."
@@ -8316,13 +8289,13 @@
     "messageformat": "PIN коды дұрыс. Кейінірек тағы есіңізге саламыз."
   },
   "icu:PinChangeModal__title--create": {
-    "messageformat": "Signal PIN кодыңызды өзгерту"
+    "messageformat": "SWARM PIN кодыңызды өзгерту"
   },
   "icu:PinChangeModal__body--create": {
     "messageformat": "PIN кодты осы құрылғы тіркелген сайын өзгертуге болады. <learnMoreLink>Толық ақпарат</learnMoreLink>"
   },
   "icu:PinChangeModal__title--confirm": {
-    "messageformat": "Signal PIN кодын растау"
+    "messageformat": "SWARM PIN кодын растау"
   },
   "icu:PinChangeModal__body--confirm": {
     "messageformat": "Жаңа ғана жасаған PIN кодыңызды енгізіңіз."
@@ -8346,13 +8319,13 @@
     "messageformat": "Жаңа PIN коды жасалды."
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signal-дың компьютерлік нұсқасы жақында компьютеріңіздегі {OS} нұсқасымен жұмыс істемейтін болады. Signal-ды пайдалана беру үшін {expirationDate} күніне дейін компьютеріңіздің операциялық жүйесін жаңартыңыз. <learnMoreLink>Толығырақ</learnMoreLink>"
+    "messageformat": "SWARM Messenger жақында компьютеріңіздегі {OS} нұсқасымен жұмыс істемейтін болады. SWARM Messenger-ді пайдалана беру үшін {expirationDate} күніне дейін компьютеріңіздің операциялық жүйесін жаңартыңыз. <learnMoreLink>Толығырақ</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signal-дың компьютерлік нұсқасы бұдан былай бұл компьютерде жұмыс істемейді. Signal-дың компьютерлік нұсқасын қайта пайдалану үшін компьютеріңіздегі {OS} нұсқасын жаңартыңыз. <learnMoreLink>Толығырақ</learnMoreLink>"
+    "messageformat": "SWARM Messenger бұдан былай бұл компьютерде жұмыс істемейді. SWARM Messenger-ді қайта пайдалану үшін компьютеріңіздегі {OS} нұсқасын жаңартыңыз. <learnMoreLink>Толығырақ</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signal-дың компьютерлік нұсқасы бұдан былай бұл компьютерде жұмыс істемейді. Signal-дың компьютерлік нұсқасын қайта пайдалану үшін компьютеріңіздегі {OS} нұсқасын жаңартыңыз."
+    "messageformat": "SWARM Messenger бұдан былай бұл компьютерде жұмыс істемейді. SWARM Messenger-ді қайта пайдалану үшін компьютеріңіздегі {OS} нұсқасын жаңартыңыз."
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "Өзгертілді"
@@ -8523,7 +8496,7 @@
     "messageformat": "Сілтемені көшіру"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "Сілтемені Signal арқылы бөлісу"
+    "messageformat": "Сілтемені SWARM Messenger арқылы бөлісу"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "Сілтемені жою"
@@ -8586,13 +8559,13 @@
     "messageformat": "Бұл параметрді өзгерту үшін \"Менің нөмірімді кім көре алады\" деген бөлімде \"Ешкім\" опциясын таңдаңыз."
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Signal-дағы профиль атауларын аккаунт иесі таңдайды:"
+    "messageformat": "SWARM Messenger-дегі профиль атауларын аккаунт иесі таңдайды:"
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "Signal пайдаланушылардың аты-жөнін және фотосуреттерін растай алмайды"
+    "messageformat": "SWARM Messenger пайдаланушылардың аты-жөнін және фотосуреттерін растай алмайды"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "Signal ешқашан сізге хабарласып, тіркеу кодыңызды, PIN кодыңызды немесе қалпына келтіру кілтіңізді сұрамайды"
+    "messageformat": "SWARM Messenger ешқашан сізге хабарласып, тіркеу кодыңызды, PIN кодыңызды немесе қалпына келтіру кілтіңізді сұрамайды"
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "Басқа біреудің атын жамылған аккаунттардан абай болыңыз"
@@ -8622,7 +8595,7 @@
     "messageformat": "Мақтан тұтарлық коммерциялық емес жоба"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "Жеке хабар алмасуға қаржылай қолдау көрсетіңіз. Signal-дың тәуелсіз әрі жарнамасыз болуына атсалысыңыз. <readMoreLink>Толық ақпарат</readMoreLink>"
+    "messageformat": "Жеке хабар алмасуға қаржылай қолдау көрсетіңіз. SWARM Messenger-дің тәуелсіз әрі жарнамасыз болуына атсалысыңыз. <readMoreLink>Толық ақпарат</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "Демеу"
@@ -8646,7 +8619,7 @@
     "messageformat": "Ақпаратыңыз құпия сақталады"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "Тәуелсіз коммерциялық емес жоба ретінде Signal хабар алмасу мен қоңыраулардың құпия болуын міндет көреді. Жарнамалар жоқ, трекерлер жоқ, бақылау жоқ. Signal-ға бүгін қаржылай қолдау көрсетіңіз."
+    "messageformat": "Тәуелсіз коммерциялық емес жоба ретінде SWARM Messenger хабар алмасу мен қоңыраулардың құпия болуын міндет көреді. Жарнамалар жоқ, трекерлер жоқ, бақылау жоқ. SWARM Messenger-ге бүгін қаржылай қолдау көрсетіңіз."
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "Сіз қаржылай қолдау көрсеткенде, профиліңізге қосымша танымбелгі беріледі"
@@ -8655,10 +8628,10 @@
     "messageformat": "Құпиялық – біздің басты міндетіміз"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Signal – коммерциялық емес жоба. АҚШ-тан көрсетілген қаржылай қолдауға салықтық шегерім қарастырылған."
+    "messageformat": "SWARM Messenger – коммерциялық емес жоба. АҚШ-тан көрсетілген қаржылай қолдауға салықтық шегерім қарастырылған."
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "Signal логотипінің стиліндегі жүрек белгішесі"
+    "messageformat": "SWARM Messenger логотипінің стиліндегі жүрек белгішесі"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "OK"
@@ -8673,7 +8646,7 @@
     "messageformat": "Donor туралы сұрақ-жауап"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "Түбіртектер барлық құрылғыда синхрондалмайды. Signal-ды қайта орнатқан болсаңыз, алдыңғы қайырымдылық түбіртектері қолжетімді болмайды."
+    "messageformat": "Түбіртектер барлық құрылғыда синхрондалмайды. SWARM Messenger-ді қайта орнатқан болсаңыз, алдыңғы қайырымдылық түбіртектері қолжетімді болмайды."
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "Чек жоқ"
@@ -8703,7 +8676,7 @@
     "messageformat": "Несиелік немесе дебеттік карта"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "Несиелік немесе дебеттік картаңыздың мәліметін енгізіңіз. Signal сіздің жеке басыңызға қатысты ақпаратты жинамайды немесе сақтамайды. <learnMoreLink>Толық ақпарат</learnMoreLink>"
+    "messageformat": "Несиелік немесе дебеттік картаңыздың мәліметін енгізіңіз. SWARM Messenger сіздің жеке басыңызға қатысты ақпаратты жинамайды немесе сақтамайды. <learnMoreLink>Толық ақпарат</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "Карта нөмірі"
@@ -8715,7 +8688,7 @@
     "messageformat": "АА/ЖЖ"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "Signal-ға {formattedCurrencyAmount} аудару"
+    "messageformat": "SWARM Messenger-ге {formattedCurrencyAmount} аудару"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "Карта нөмірі дұрыс емес"
@@ -8733,7 +8706,7 @@
     "messageformat": "Код өте қысқа"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "30 күнге Signal Boost танымбелгісін алыңыз"
+    "messageformat": "30 күнге SWARM Messenger Boost танымбелгісін алыңыз"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "Минималды донат сомасы – {formattedCurrencyAmount}"
@@ -8778,7 +8751,7 @@
     "messageformat": "Бір рет"
   },
   "icu:DonationReceipt__footer-text-v2": {
-    "messageformat": "Signal-ға қолдау көрсеткеніңіз үшін рақмет. Сіздің қосқан үлесіңіз ашық кодты құпиялық технологиясы арқылы әлемдегі миллиондаған адам үшін сөз еркіндігін қорғау және жаһандық байланыс орнату қауіпсіздігін қамтамасыз ету миссиясын жүзеге асыруға ықпал етеді. Егер Америка Құрама Штаттарының резиденті болсаңыз, осы түбіртекті салық жазбалары үшін сақтап қойыңыз. Signal Technology Foundation – Салық кодексінің 501c3 бөліміне сәйкес Америка Құрама Штаттарындағы салықтан босатылған коммерциялық емес ұйым. Біздің федералдық салық идентификаторымыз: 82-4506840. Signal осы жарнаның орнына ешқандай тауар немесе қызмет ұсынған жоқ."
+    "messageformat": "SWARM Messenger-ге қолдау көрсеткеніңіз үшін рақмет. Сіздің қосқан үлесіңіз ашық кодты құпиялық технологиясы арқылы әлемдегі миллиондаған адам үшін сөз еркіндігін қорғау және жаһандық байланыс орнату қауіпсіздігін қамтамасыз ету миссиясын жүзеге асыруға ықпал етеді. Егер Америка Құрама Штаттарының резиденті болсаңыз, осы түбіртекті салық жазбалары үшін сақтап қойыңыз. SWARM Messenger Technology Foundation – Салық кодексінің 501c3 бөліміне сәйкес Америка Құрама Штаттарындағы салықтан босатылған коммерциялық емес ұйым. Біздің федералдық салық идентификаторымыз: 82-4506840. SWARM Messenger осы жарнаның орнына ешқандай тауар немесе қызмет ұсынған жоқ."
   },
   "icu:Donations__OfflineTooltip": {
     "messageformat": "Желіге қосылмағансыз. Демеушілік процесін аяқтау үшін интернетке қосылыңыз."
@@ -8817,7 +8790,7 @@
     "messageformat": "Қайырымдылыққа арналған қаражат жіберілгенмен, танымбелгі параметрлеріңізді жаңарта алмадық"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "Мобильдік құрылғыңызда танымбелгі параметрлерін жаңарту үшін \"Параметрлер → Signal-ды демеу\" → Танымбелгілер\" тармағына өтіңіз."
+    "messageformat": "Мобильдік құрылғыңызда танымбелгі параметрлерін жаңарту үшін \"Параметрлер → SWARM Messenger-ді демеу\" → Танымбелгілер\" тармағына өтіңіз."
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "Демеушілік үзілді"
@@ -8874,7 +8847,7 @@
     "messageformat": "Қайырымдылыққа жіберген қаражатыңызды өңдеу кезінде қате шықты"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "Қайырымдылыққа жіберген қаражатыңыз өңделмей қалған болуы мүмкін. \"Signal-ды демеу\" түймесін, содан кейін \"Демеу чегі\" түймесін басып, чектеріңізді тексеріңіз және растаңыз."
+    "messageformat": "Қайырымдылыққа жіберген қаражатыңыз өңделмей қалған болуы мүмкін. \"SWARM Messenger-ді демеу\" түймесін, содан кейін \"Демеу чегі\" түймесін басып, чектеріңізді тексеріңіз және растаңыз."
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "Әрекетті қайталап көріңіз немесе демеушілік процесін аяқтау жөнінде көмек сұрау үшін Қолдау орталығына ақауларды түзету журналын жіберіңіз. Ақауларды түзету журналдары диагностика жасап, ақауларды түзетуге мүмкіндік береді және онда жеке басты анықтайтын ақпарат болмайды."
@@ -8916,19 +8889,19 @@
     "messageformat": "Қолдау көрсеткеніңіз үшін рақмет!"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "Signal-дан донор таңбасын алдыңыз! Демеушілік жасағаныңызды көрсету үшін, оны профиліңізге қойыңыз."
+    "messageformat": "SWARM Messenger-ден донор таңбасын алдыңыз! Демеушілік жасағаныңызды көрсету үшін, оны профиліңізге қойыңыз."
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "Профильде көрсету"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "Оны мобильдік құрылғыңыздағы «Параметрлер → Signal-ды демеу → Танымбелгілер» тармағынан реттей аласыз"
+    "messageformat": "Оны мобильдік құрылғыңыздағы «Параметрлер → SWARM Messenger-ді демеу → Танымбелгілер» тармағынан реттей аласыз"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "Қоңырау сапасы қалай болды?"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "Бұл Signal-дағы қоңыраулар сапасын жақсартуға көмектеседі. Жеке басты анықтайтын ақпарат сақталмайды."
+    "messageformat": "Бұл SWARM Messenger-дегі қоңыраулар сапасын жақсартуға көмектеседі. Жеке басты анықтайтын ақпарат сақталмайды."
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "Ақаулары бар"
@@ -8979,7 +8952,7 @@
     "messageformat": "Ақаулардың сипаттамасы"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "Осы ақауға қатысты деректердің барлығын енгізіңіз. Осы жерде бөліскен ақпаратыңыздың барлығы құпия сақталады және Signal-дағы қоңыраулар сапасын жақсарту үшін ғана қолданылады."
+    "messageformat": "Осы ақауға қатысты деректердің барлығын енгізіңіз. Осы жерде бөліскен ақпаратыңыздың барлығы құпия сақталады және SWARM Messenger-дегі қоңыраулар сапасын жақсарту үшін ғана қолданылады."
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "Мәселеңізді сипаттаңыз"
@@ -9045,7 +9018,7 @@
     "messageformat": "QR кодын сканерлеу арқылы қайта байланыс орнату керек."
   },
   "icu:MaybeTransferModal__media": {
-    "messageformat": "Егер сізде Signal-дың қауіпсіз сақтық көшірмесі болса, мультимедиалық файлдардың барлығы тасымалданады. Әйтпесе соңғы 45 күндік мультимедиалық файлдар қосылады."
+    "messageformat": "Егер сізде SWARM Messenger-дің қауіпсіз сақтық көшірмесі болса, мультимедиалық файлдардың барлығы тасымалданады. Әйтпесе соңғы 45 күндік мультимедиалық файлдар қосылады."
   },
   "icu:MaybeTransferModal__transfer": {
     "messageformat": "Аудару"
@@ -9057,14 +9030,14 @@
     "messageformat": "Барлық деректі жою керек пе?"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "Signal Desktop-тағы қазіргі деректердің барлығы жойылады. Содан кейін QR кодын сканерлеп, телефоныңыздан хабарлар тарихын тасымалдай аласыз."
+    "messageformat": "SWARM Messenger-дегі қазіргі деректердің барлығы жойылады. Содан кейін QR кодын сканерлеп, телефоныңыздан хабарлар тарихын тасымалдай аласыз."
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "Бұл нұсқада Signal-дың еш кінәратсыз жұмыс істеуіне қажетті бірнеше шағын түзетпе жасалды және ақаулар түзетілді.",
+    "messageformat": "Бұл нұсқада SWARM Messenger-дің еш кінәратсыз жұмыс істеуіне қажетті бірнеше шағын түзетпе жасалды және ақаулар түзетілді.",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "Қосымша шағын реттеулер жасалды, ақаулар түзетілді және жұмысы жақсартылды. Signal-ды қолданғаныңыз үшін рақмет!",
+    "messageformat": "Қосымша шағын реттеулер жасалды, ақаулар түзетілді және жұмысы жақсартылды. SWARM Messenger-ді қолданғаныңыз үшін рақмет!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -9084,7 +9057,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "Кішігірім түзетпелер жасалды, ақаулар жөнделді және жұмысы жақсартылды. Signal-ды қолданғаныңыз үшін рақмет!",
+    "messageformat": "Кішігірім түзетпелер жасалды, ақаулар жөнделді және жұмысы жақсартылды. SWARM Messenger-ді қолданғаныңыз үшін рақмет!",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.25--0": {
@@ -9094,6 +9067,6 @@
     "messageformat": "Өз-өзіңізді іздеу өмір бойы жалғасса да, енді топ мүшелерінің арасынан өзіңізді \"Сіз\" деген белгі арқылы оңай таба аласыз."
   },
   "icu:WhatsNew__8.27--0": {
-    "messageformat": "Бұл жаңарту Signal хабарландыруларын бұрынғыдан да жақсы басқаруға мүмкіндік беретін жаңа параметрлерді ұсынады. Енді қолданба таңбасында не көрсетілетінін таңдауға, дыбысы өшірілген чаттардың хабарландыру параметрлерін реттеуге және т.б. әрекеттерді орындауға болады. Сондай-ақ хабарландыру параметрлеріне тым көп өзгеріс енгізіп, өзіңіз де қай параметрді қалай қойғаныңызды білмей қалсаңыз, әдепкі хабарландыру параметрлерін оңай қалпына келтіруге арналған ыңғайлы түймені қостық."
+    "messageformat": "Бұл жаңарту SWARM Messenger хабарландыруларын бұрынғыдан да жақсы басқаруға мүмкіндік беретін жаңа параметрлерді ұсынады. Енді қолданба таңбасында не көрсетілетінін таңдауға, дыбысы өшірілген чаттардың хабарландыру параметрлерін реттеуге және т.б. әрекеттерді орындауға болады. Сондай-ақ хабарландыру параметрлеріне тым көп өзгеріс енгізіп, өзіңіз де қай параметрді қалай қойғаныңызды білмей қалсаңыз, әдепкі хабарландыру параметрлерін оңай қалпына келтіруге арналған ыңғайлы түймені қостық."
   }
 }

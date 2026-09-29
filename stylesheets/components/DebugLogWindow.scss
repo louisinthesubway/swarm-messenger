@@ -64,21 +64,4 @@
       margin-inline-start: 8px;
     }
   }
-
-  &__link {
-    border-radius: 4px;
-    height: 36px;
-    padding-block: 0;
-    padding-inline: 10px;
-    width: 100%;
-
-    @include mixins.light-theme {
-      border: solid 1px variables.$color-gray-25;
-    }
-    @include mixins.dark-theme {
-      background-color: variables.$color-gray-90;
-      border: solid 1px variables.$color-gray-45;
-      color: variables.$color-gray-02;
-    }
-  }
 }

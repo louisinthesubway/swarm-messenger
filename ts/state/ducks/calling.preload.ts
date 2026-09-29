@@ -4,7 +4,6 @@
 import type { RefObject } from 'react';
 
 import type { ThunkAction, ThunkDispatch } from 'redux-thunk';
-import { ipcRenderer } from 'electron';
 import lodash from 'lodash';
 import type { ReadonlyDeep } from 'type-fest';
 import {
@@ -2955,16 +2954,13 @@ function submitCallQualitySurvey(
     dispatch({ type: CQS_SUBMISSION_STARTED });
 
     try {
-      let debugLogUrl: string | undefined;
-
+      // SWARM change (B5, 2026-09-29): upstream uploaded the debug log to a
+      // Signal service and put the link in the survey. The log now stays on
+      // this computer: ticking the box opens the debug log window, where it
+      // can be saved to a file, and the survey carries no link. The window is
+      // opened in 'save' mode so that closing the survey does not close it.
       if (shareDebugLog) {
-        const logData = await ipcRenderer.invoke('fetch-log');
-        const logs: string = await ipcRenderer.invoke(
-          'DebugLogs.getLogs',
-          logData,
-          window.navigator.userAgent
-        );
-        debugLogUrl = await ipcRenderer.invoke('DebugLogs.upload', logs);
+        window.IPC.showDebugLog({ mode: 'save' });
       }
 
       const { qualityStats } = callSummary;
@@ -2982,7 +2978,7 @@ function submitCallQualitySurvey(
             callQualityIssues.includes(CallQualitySurvey.Issue.OTHER)
               ? additionalIssuesDescription
               : null,
-          debugLogUrl: debugLogUrl ?? null,
+          debugLogUrl: null,
           startTimestamp: BigInt(callSummary.startTime),
           endTimestamp: BigInt(callSummary.endTime),
           callType,

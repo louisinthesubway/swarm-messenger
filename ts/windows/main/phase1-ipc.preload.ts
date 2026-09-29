@@ -137,7 +137,7 @@ const IPC: IPCType = {
   setBadgeCount: badgeCount => ipc.send('set-badge-count', badgeCount),
   setMenuBarVisibility: visibility =>
     ipc.send('set-menu-bar-visibility', visibility),
-  showDebugLog: (options?: { mode?: 'submit' | 'close' }) => {
+  showDebugLog: (options?: { mode?: 'save' | 'close' }) => {
     log.info('showDebugLog', options);
     ipc.send('show-debug-log', options);
   },

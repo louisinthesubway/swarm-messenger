@@ -115,8 +115,12 @@ function getToast(toastType: ToastType): AnyToast {
       return { toastType: ToastType.CopiedUsernameLink };
     case ToastType.DangerousFileType:
       return { toastType: ToastType.DangerousFileType };
+    case ToastType.DebugLogCopied:
+      return { toastType: ToastType.DebugLogCopied };
     case ToastType.DebugLogError:
       return { toastType: ToastType.DebugLogError };
+    case ToastType.DebugLogSaved:
+      return { toastType: ToastType.DebugLogSaved };
     case ToastType.DecryptionError:
       return {
         toastType: ToastType.DecryptionError,
@@ -179,8 +183,6 @@ function getToast(toastType: ToastType): AnyToast {
       return { toastType: ToastType.InvalidStorageServiceHeaders };
     case ToastType.LeftGroup:
       return { toastType: ToastType.LeftGroup };
-    case ToastType.LinkCopied:
-      return { toastType: ToastType.LinkCopied };
     case ToastType.LoadingFullLogs:
       return { toastType: ToastType.LoadingFullLogs };
     case ToastType._InternalMainProcessLoggingError:

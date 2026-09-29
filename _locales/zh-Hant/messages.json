@@ -63,10 +63,10 @@
     "messageformat": "傳送高畫質的媒體檔將會使用較多數據。"
   },
   "icu:Preferences__DonateTitle": {
-    "messageformat": "贊助 Signal"
+    "messageformat": "贊助 SWARM Messenger"
   },
   "icu:LinkedDevicesOnboardingDialog__description": {
-    "messageformat": "<bold>「已連結裝置」</bold>讓你在任何其他裝置上安全地存取你的 Signal 帳戶和訊息。"
+    "messageformat": "<bold>「已連結裝置」</bold>讓你在任何其他裝置上安全地存取你的 SWARM 帳戶和訊息。"
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--1": {
     "messageformat": "你可以連結桌面電腦、平板電腦或其他手機。"
@@ -81,7 +81,7 @@
     "messageformat": "只能於你的主要裝置上管理帳戶設定和備份。"
   },
   "icu:LinkedDevicesOnboardingDialog__bullet--3--2": {
-    "messageformat": "Account settings and Signal Secure Backups can only be managed on your primary device."
+    "messageformat": "Account settings and SWARM Messenger Secure Backups can only be managed on your primary device."
   },
   "icu:sentMediaQualityStandard": {
     "messageformat": "標準"
@@ -120,10 +120,10 @@
     "messageformat": "未知的群組"
   },
   "icu:cantOpenSignalError": {
-    "messageformat": "無法開啟 Signal"
+    "messageformat": "無法開啟 SWARM Messenger"
   },
   "icu:cantOpenSignalError__detail": {
-    "messageformat": "若要解決問題，請依照支援頁面上的復原指南，或聯絡 Signal 支援尋求協助。\n\n如果你需要立即使用 Signal，可以刪除你的資料，並重新連結此桌面電腦。你可以選擇從手機轉移訊息紀錄。"
+    "messageformat": "若要解決問題，請依照支援頁面上的復原指南，或聯絡 SWARM Messenger 支援尋求協助。\n\n如果你需要立即使用 SWARM Messenger，可以刪除你的資料，並重新連結此桌面電腦。你可以選擇從手機轉移訊息紀錄。"
   },
   "icu:databaseError": {
     "messageformat": "資料庫錯誤"
@@ -135,16 +135,16 @@
     "messageformat": "永久刪除所有資料"
   },
   "icu:databaseError__deleteDataConfirmation__detail": {
-    "messageformat": "你的所有訊息紀錄和媒體將從此裝置中永久刪除。這不會刪除你手機中的任何資料。\n\n重新連結後，你將可以在此裝置上使用 Signal。你可以選擇從手機轉移訊息紀錄。"
+    "messageformat": "你的所有訊息紀錄和媒體將從此裝置中永久刪除。這不會刪除你手機中的任何資料。\n\n重新連結後，你將可以在此裝置上使用 SWARM Messenger。你可以選擇從手機轉移訊息紀錄。"
   },
   "icu:databaseError__startOldVersion": {
-    "messageformat": "你的資料庫版本與此 Signal 的版本不匹配。請確定你在電腦上開啟了最新版本的 Signal。"
+    "messageformat": "你的資料庫版本與此 SWARM Messenger 的版本不匹配。請確定你在電腦上開啟了最新版本的 SWARM Messenger。"
   },
   "icu:databaseError__safeStorageBackendChange": {
     "messageformat": "無法存取資料庫加密金鑰，因為作業系統加密金鑰環後端已從{previousBackend}變更為{currentBackend}。如果桌面環境有所轉變（例如在 GNOME 和 KDE 之間），就有可能發生這種情況。\n\n請切換到先前的桌面環境。"
   },
   "icu:databaseError__safeStorageBackendChangeWithPreviousFlag": {
-    "messageformat": "無法存取資料庫加密金鑰，因為作業系統加密金鑰環後端已從{previousBackend}變更為{currentBackend}。如果桌面環境有所轉變（例如在 GNOME 和 KDE 之間），就有可能發生這種情況。\n\n請切換到先前的桌面環境或嘗試使用命令列標誌 --password-store=\"{previousBackendFlag}\" 執行 Signal"
+    "messageformat": "無法存取資料庫加密金鑰，因為作業系統加密金鑰環後端已從{previousBackend}變更為{currentBackend}。如果桌面環境有所轉變（例如在 GNOME 和 KDE 之間），就有可能發生這種情況。\n\n請切換到先前的桌面環境或嘗試使用命令列標誌 --password-store=\"{previousBackendFlag}\" 執行 SWARM Messenger"
   },
   "icu:systemEncryptionError": {
     "messageformat": "System encryption error"
@@ -189,7 +189,7 @@
     "messageformat": "顯示全部"
   },
   "icu:appMenuQuit": {
-    "messageformat": "結束 Signal"
+    "messageformat": "結束 SWARM Messenger"
   },
   "icu:editMenuUndo": {
     "messageformat": "復原"
@@ -513,10 +513,10 @@
     "messageformat": "您標記了  {name} 在另一台設備上的安全碼為未驗證狀態"
   },
   "icu:changedRightAfterVerify": {
-    "messageformat": "你嘗試驗證的安全號碼已變更。 請使用{name1}來檢查新的安全碼。 請記住，此變更可能意味著有人試圖攔截你的通訊，或者{name2}只是重新安裝了Signal。"
+    "messageformat": "你嘗試驗證的安全號碼已變更。 請使用{name1}來檢查新的安全碼。 請記住，此變更可能意味著有人試圖攔截你的通訊，或者{name2}只是重新安裝了SWARM Messenger。"
   },
   "icu:safetyNumberChangeDialog__message": {
-    "messageformat": "以下的聯絡人可能已重新安裝 Signal 或更換裝置。請點選接收者以確認新安全碼。這是選擇性的。"
+    "messageformat": "以下的聯絡人可能已重新安裝 SWARM Messenger 或更換裝置。請點選接收者以確認新安全碼。這是選擇性的。"
   },
   "icu:safetyNumberChangeDialog__pending-messages": {
     "messageformat": "傳送待處理的訊息"
@@ -525,7 +525,7 @@
     "messageformat": "檢查"
   },
   "icu:safetyNumberChangeDialog__many-contacts": {
-    "messageformat": "{count, plural, other {你有 {count,number} 位聯絡人可能已重新安裝 Signal 或更換裝置。你可以先檢查他們的安全碼再傳送訊息。}}"
+    "messageformat": "{count, plural, other {你有 {count,number} 位聯絡人可能已重新安裝 SWARM Messenger 或更換裝置。你可以先檢查他們的安全碼再傳送訊息。}}"
   },
   "icu:safetyNumberChangeDialog__post-review": {
     "messageformat": "已檢查所有聯絡人，請點擊「傳送」以繼續操作。"
@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "仍要加入"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "當你點擊提交時，你的日誌將在一個唯一的、未發布的 URL 上在線發布 30 天。你可以先將其保存在本地。"
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "此記錄將公開發布於線上供貢獻者查閱。你可在提交前下載該檔案。"
-  },
-  "icu:debugLogError": {
-    "messageformat": "上傳出了點問題！ 請傳送電子郵件至 support@swarm.green 並將你的日誌作為文字檔案附上。"
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "偵錯日誌已上傳"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "已上傳偵錯日誌。 當你聯絡支援人員時，請複製下面的 URL 並將其附上你看到的問題的描述和重現問題的步驟。"
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "…要查看完整日誌，請點擊儲存"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "複製連結"
-  },
   "icu:debugLogSave": {
     "messageformat": "儲存"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "連結複製到剪貼簿"
-  },
-  "icu:reportIssue": {
-    "messageformat": "聯絡支援"
   },
   "icu:submit": {
     "messageformat": "送出"
@@ -633,16 +609,16 @@
     "messageformat": "系統已對此聊天進行自動加密驗證 "
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--ok__body-2": {
-    "messageformat": "對於透過電話號碼建立聯繫的人，Signal 會透過稱為「金鑰透明度」的程序，自動確認聯絡對象是否安全。為了增加安全性，透過比較上一個畫面的數字或掃瞄對方裝置上的二維碼來手動驗證端對端加密。"
+    "messageformat": "對於透過電話號碼建立聯繫的人，SWARM Messenger 會透過稱為「金鑰透明度」的程序，自動確認聯絡對象是否安全。為了增加安全性，透過比較上一個畫面的數字或掃瞄對方裝置上的二維碼來手動驗證端對端加密。"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__title-2": {
     "messageformat": "自動驗證功能不適用於此聊天"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--fail__body-2": {
-    "messageformat": "Signal 無法自動驗證此聊天的加密。這可能是因為 {name} 已變更電話號碼，或是調整了電話號碼的隱私設定。透過比較上一個畫面的數字，或掃瞄對方裝置上的二維碼來手動驗證端對端加密。"
+    "messageformat": "SWARM Messenger 無法自動驗證此聊天的加密。這可能是因為 {name} 已變更電話號碼，或是調整了電話號碼的隱私設定。透過比較上一個畫面的數字，或掃瞄對方裝置上的二維碼來手動驗證端對端加密。"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup--unavailable__body": {
-    "messageformat": "Signal 只能在透過電話號碼與對方建立聯繫的聊天中自動進行加密驗證。如果聊天是以用戶名稱或共同的群組開始，請比較前一畫面的數字或掃描對方裝置上的二維碼，以驗證端對端加密。"
+    "messageformat": "SWARM Messenger 只能在透過電話號碼與對方建立聯繫的聊天中自動進行加密驗證。如果聊天是以用戶名稱或共同的群組開始，請比較前一畫面的數字或掃描對方裝置上的二維碼，以驗證端對端加密。"
   },
   "icu:SafetyNumberViewer__KeyTransparency__popup__okay": {
     "messageformat": "好的"
@@ -681,10 +657,10 @@
     "messageformat": "不必了"
   },
   "icu:KeyTransparencyOnboardingDialog__Title": {
-    "messageformat": "Signal 現在可自動驗證加密"
+    "messageformat": "SWARM Messenger 現在可自動驗證加密"
   },
   "icu:KeyTransparencyOnboardingDialog__Description": {
-    "messageformat": "對於透過電話號碼建立聯繫的聯絡人，Signal 會透過稱為「金鑰透明度」的程序，自動確認聯絡對象是否安全。為了增加安全性，你仍然可以使用二維碼或比對安全碼手動驗證聯絡人。"
+    "messageformat": "對於透過電話號碼建立聯繫的聯絡人，SWARM Messenger 會透過稱為「金鑰透明度」的程序，自動確認聯絡對象是否安全。為了增加安全性，你仍然可以使用二維碼或比對安全碼手動驗證聯絡人。"
   },
   "icu:KeyTransparencyOnboardingDialog__Continue": {
     "messageformat": "繼續"
@@ -806,9 +782,6 @@
   "icu:clockSkewDetected": {
     "messageformat": "你的裝置日期不正確。請調整你的時鐘，然後再試一次。你的裝置日期和時間為："
   },
-  "icu:submitDebugLog": {
-    "messageformat": "除錯日誌"
-  },
   "icu:debugLog": {
     "messageformat": "除錯日誌"
   },
@@ -837,7 +810,7 @@
     "messageformat": "貼圖包製作器"
   },
   "icu:aboutSignalDesktop": {
-    "messageformat": "關於 Signal 桌面版"
+    "messageformat": "關於 SWARM Messenger"
   },
   "icu:screenShareWindow": {
     "messageformat": "分享畫面"
@@ -855,7 +828,7 @@
     "messageformat": "離開"
   },
   "icu:signalDesktop": {
-    "messageformat": "Signal 桌面版"
+    "messageformat": "SWARM Messenger"
   },
   "icu:search": {
     "messageformat": "搜尋"
@@ -909,7 +882,7 @@
     "messageformat": "以電話號碼搜尋"
   },
   "icu:welcomeToSignal": {
-    "messageformat": "歡迎來到 Signal"
+    "messageformat": "歡迎來到 SWARM Messenger"
   },
   "icu:whatsNew": {
     "messageformat": "在此更新中查看{whatsNew}"
@@ -996,13 +969,13 @@
     "messageformat": "你"
   },
   "icu:audioPermissionNeeded": {
-    "messageformat": "如要傳送語音訊息，請允許 Signal 桌面版使用裝置的麥克風。"
+    "messageformat": "如要傳送語音訊息，請允許 SWARM Messenger 使用裝置的麥克風。"
   },
   "icu:audioCallingPermissionNeeded": {
-    "messageformat": "要撥打電話時，必須允許Signal 電腦版連結你的麥克風。"
+    "messageformat": "要撥打電話時，必須允許SWARM Messenger 連結你的麥克風。"
   },
   "icu:videoCallingPermissionNeeded": {
-    "messageformat": "要撥打視訊電話時，必須允許Signal 電腦版連結你的相機。"
+    "messageformat": "要撥打視訊電話時，必須允許SWARM Messenger 連結你的相機。"
   },
   "icu:allowAccess": {
     "messageformat": "允許存取"
@@ -1029,13 +1002,13 @@
     "messageformat": "已靜音"
   },
   "icu:cannotUpdateDetail-v2": {
-    "messageformat": "Signal 無法更新。<retryUpdateButton>嘗試更新</retryUpdateButton>或瀏覽 {url} 以手動安裝。接著<contactSupportLink>聯絡支援團隊</contactSupportLink>以了解問題"
+    "messageformat": "SWARM Messenger 無法更新。<retryUpdateButton>嘗試更新</retryUpdateButton>或瀏覽 {url} 以手動安裝。接著<contactSupportLink>聯絡支援團隊</contactSupportLink>以了解問題"
   },
   "icu:cannotUpdateRequireManualDetail-v2": {
-    "messageformat": "Signal 無法更新。瀏覽 {url} 以手動安裝。接著<contactSupportLink>聯絡支援團隊</contactSupportLink>以了解問題"
+    "messageformat": "SWARM Messenger 無法更新。瀏覽 {url} 以手動安裝。接著<contactSupportLink>聯絡支援團隊</contactSupportLink>以了解問題"
   },
   "icu:readOnlyVolume": {
-    "messageformat": "Signal 桌面版可能在 macOS 隔離區中，將無法自動更新。 請嘗試使用Finder 移動 {app}到 {folder}。"
+    "messageformat": "SWARM Messenger 可能在 macOS 隔離區中，將無法自動更新。 請嘗試使用Finder 移動 {app}到 {folder}。"
   },
   "icu:ok": {
     "messageformat": "好"
@@ -1080,7 +1053,7 @@
     "messageformat": "此訊息將會永久從這個裝置中移除。"
   },
   "icu:deleteForEveryoneWarning": {
-    "messageformat": "如果聊天中的每個人都使用最新版本的Signal，則該訊息將被刪除。 他們將能夠看到你刪除了一則訊息。"
+    "messageformat": "如果聊天中的每個人都使用最新版本的SWARM Messenger，則該訊息將被刪除。 他們將能夠看到你刪除了一則訊息。"
   },
   "icu:from": {
     "messageformat": "來自"
@@ -1122,7 +1095,7 @@
     "messageformat": "{nickname}<muted> ({titleNoNickname})</muted>"
   },
   "icu:AboutContactModal__TitleWithoutNickname__Tooltip": {
-    "messageformat": "「 {title} 」是此人在 Signal 中為自己設定的個人檔案名稱。"
+    "messageformat": "「 {title} 」是此人在 SWARM Messenger 中為自己設定的個人檔案名稱。"
   },
   "icu:AboutContactModal__verified": {
     "messageformat": "已驗證"
@@ -1137,7 +1110,7 @@
     "messageformat": "沒有與 {name} 的直接訊息"
   },
   "icu:AboutContactModal__signal-connection": {
-    "messageformat": "Signal 人脈"
+    "messageformat": "SWARM 人脈"
   },
   "icu:AboutContactModal__system-contact": {
     "messageformat": "{name} 在你的系統聯絡人中"
@@ -1449,7 +1422,7 @@
     "messageformat": "了解更多"
   },
   "icu:ChatRefresh--summary": {
-    "messageformat": "Signal使用點對點加密，有時可能需要刷新你的聊天會話。 這不會影響你聊天的安全性，但是你可能錯過了此聯絡人的訊息，可以要求他們重新傳送。"
+    "messageformat": "SWARM Messenger使用點對點加密，有時可能需要刷新你的聊天會話。 這不會影響你聊天的安全性，但是你可能錯過了此聯絡人的訊息，可以要求他們重新傳送。"
   },
   "icu:ChatRefresh--contactSupport": {
     "messageformat": "聯絡支援"
@@ -1476,7 +1449,7 @@
     "messageformat": "{sender} 變更了他們的電話號碼"
   },
   "icu:JoinedSignal--notification": {
-    "messageformat": "聯絡人上線 Signal 通知"
+    "messageformat": "聯絡人上線 SWARM Messenger 通知"
   },
   "icu:ConversationMerge--notification": {
     "messageformat": "{obsoleteConversationTitle} 及 {conversationTitle} 是相同的帳戶。兩個聊天的訊息紀錄均在此處。"
@@ -1566,7 +1539,7 @@
     "messageformat": "無法下載媒體"
   },
   "icu:BackfillFailureModal__body--timeout": {
-    "messageformat": "檢查桌面電腦和手機的網路連線。開啟手機上的 Signal，然後嘗試再次下載。"
+    "messageformat": "檢查桌面電腦和手機的網路連線。開啟手機上的 SWARM Messenger，然後嘗試再次下載。"
   },
   "icu:BackfillFailureModal__body--not-found": {
     "messageformat": "無法在你的手機上取得此媒體，也無法下載。"
@@ -1587,10 +1560,10 @@
     "messageformat": "了解更多"
   },
   "icu:Install__scan-this-code": {
-    "messageformat": "在手機上的 Signal 應用程式中掃描此代碼"
+    "messageformat": "在手機上的 SWARM Messenger 應用程式中掃描此代碼"
   },
   "icu:Install__instructions__1": {
-    "messageformat": "在手機上開啟 Signal"
+    "messageformat": "在手機上開啟 SWARM Messenger"
   },
   "icu:Install__instructions__2": {
     "messageformat": "點擊 {settings}，然後再點擊 {linkedDevices}"
@@ -1608,7 +1581,7 @@
     "messageformat": "<paragraph>發生一個意外狀況。</paragraph><paragraph>請再試一次。</paragraph>"
   },
   "icu:Install__qr-failed-load__error--network": {
-    "messageformat": "Signal 無法使用你目前的網絡連結此裝置。"
+    "messageformat": "SWARM Messenger 無法使用你目前的網絡連結此裝置。"
   },
   "icu:Install__qr-failed-load__retry": {
     "messageformat": "重試"
@@ -1626,7 +1599,7 @@
     "messageformat": "刪除所有資料？"
   },
   "icu:Install__confirm-data-deletion__body": {
-    "messageformat": "你正嘗試將另一個 Signal 帳戶連結至此桌面電腦。如要繼續，目前 Signal 桌面版中的所有資料都將被刪除。"
+    "messageformat": "你正嘗試將另一個 SWARM 帳戶連結至此桌面電腦。如要繼續，目前 SWARM Messenger 中的所有資料都將被刪除。"
   },
   "icu:Install__confirm-data-deletion__continue": {
     "messageformat": "繼續"
@@ -1641,7 +1614,7 @@
     "messageformat": "裝置名稱"
   },
   "icu:Preferences--device-name__description": {
-    "messageformat": "要變更此裝置名稱，請在你的手機上開啟 Signal 並前往「設定」 > 「已連結裝置」"
+    "messageformat": "要變更此裝置名稱，請在你的手機上開啟 SWARM Messenger 並前往「設定」 > 「已連結裝置」"
   },
   "icu:Preferences__EmojiSkinToneDefaultSetting__Label": {
     "messageformat": "表情符號膚色"
@@ -1833,7 +1806,7 @@
     "messageformat": "自動金鑰驗證"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__Description": {
-    "messageformat": "啟用時，Signal 會嘗試自動驗證 1 對 1 聊天的加密。"
+    "messageformat": "啟用時，SWARM Messenger 會嘗試自動驗證 1 對 1 聊天的加密。"
   },
   "icu:Preferences__PrivacyPage__KeyTransparency__LearnMore": {
     "messageformat": "了解更多"
@@ -1851,7 +1824,7 @@
     "messageformat": "抱歉，你已經有太多連結的裝置，請移除幾個。"
   },
   "icu:installTooOld": {
-    "messageformat": "在此裝置上更新 Signal 以連結你的手機。"
+    "messageformat": "在此裝置上更新 SWARM Messenger 以連結你的手機。"
   },
   "icu:installErrorHeader": {
     "messageformat": "發生一些錯誤！"
@@ -1902,7 +1875,7 @@
     "messageformat": "此通話連結已失效。"
   },
   "icu:calling__call-link-default-title": {
-    "messageformat": "Signal 語音通話"
+    "messageformat": "SWARM Messenger 語音通話"
   },
   "icu:calling__call-link-delete-failed": {
     "messageformat": "無法刪除連結。請檢查網路連線，然後再試一次。"
@@ -2076,16 +2049,16 @@
     "messageformat": "{count, plural, other {{count,number} 人現已在此通話中}}"
   },
   "icu:calling__pre-call-info--will-ring-1": {
-    "messageformat": "Signal會給{person}打電話"
+    "messageformat": "SWARM Messenger會給{person}打電話"
   },
   "icu:calling__pre-call-info--will-ring-2": {
-    "messageformat": "Signal會去電給 {first} 和 {second}"
+    "messageformat": "SWARM Messenger會去電給 {first} 和 {second}"
   },
   "icu:calling__pre-call-info--will-ring-3": {
-    "messageformat": "Signal會去電給 {first}、{second}，及 {third}"
+    "messageformat": "SWARM Messenger會去電給 {first}、{second}，及 {third}"
   },
   "icu:calling__pre-call-info--will-ring-many": {
-    "messageformat": "{others, plural, other {Signal 將會撥號給 {first}、{second} 和其他 {others,number} 位使用者}}"
+    "messageformat": "{others, plural, other {SWARM Messenger 將會撥號給 {first}、{second} 和其他 {others,number} 位使用者}}"
   },
   "icu:calling__pre-call-info--will-notify-1": {
     "messageformat": "{person} 會被通知"
@@ -2139,13 +2112,13 @@
     "messageformat": "重新撥打…"
   },
   "icu:calling__presenting--reconnecting--notification-body": {
-    "messageformat": "你的連線中斷了。Signal 正在重新連線。"
+    "messageformat": "你的連線中斷了。SWARM Messenger 正在重新連線。"
   },
   "icu:calling__presenting--info": {
-    "messageformat": "Signal 正在分享 {window}。"
+    "messageformat": "SWARM Messenger 正在分享 {window}。"
   },
   "icu:calling__presenting--info--unknown": {
-    "messageformat": "Signal 畫面分享已啟用"
+    "messageformat": "SWARM Messenger 畫面分享已啟用"
   },
   "icu:calling__presenting--reconnecting": {
     "messageformat": "重新撥打…"
@@ -2166,7 +2139,7 @@
     "messageformat": "需要權限"
   },
   "icu:calling__presenting--macos-permission-description": {
-    "messageformat": "Signal 需要獲得讀取你電腦螢幕錄製的權限。"
+    "messageformat": "SWARM Messenger 需要獲得讀取你電腦螢幕錄製的權限。"
   },
   "icu:calling__presenting--permission-instruction-step1": {
     "messageformat": "進入系統偏好設定。"
@@ -2175,7 +2148,7 @@
     "messageformat": "單擊左下角的鎖頭圖示並輸入你電腦的密碼。"
   },
   "icu:calling__presenting--permission-instruction-step3": {
-    "messageformat": "在右側，選中 Signal 旁邊的框。 如果你在清單中沒有看到 Signal，請單擊 + 以新增它。"
+    "messageformat": "在右側，選中 SWARM Messenger 旁邊的框。 如果你在清單中沒有看到 SWARM Messenger，請單擊 + 以新增它。"
   },
   "icu:calling__presenting--permission-open": {
     "messageformat": "開啟系統偏好設定"
@@ -2187,7 +2160,7 @@
     "messageformat": "永遠轉發通話"
   },
   "icu:alwaysRelayCallsDetail": {
-    "messageformat": "透過 Signal 伺服器轉發通話，來避免透露你的 IP 位址給你的聯絡人。啟用時，會降低通話品質。"
+    "messageformat": "透過 SWARM Messenger 伺服器轉發通話，來避免透露你的 IP 位址給你的聯絡人。啟用時，會降低通話品質。"
   },
   "icu:permissions": {
     "messageformat": "權限"
@@ -2205,10 +2178,10 @@
     "messageformat": "選取文字時顯示文字格式化彈出選單"
   },
   "icu:spellCheckWillBeEnabled": {
-    "messageformat": "下次 Signal 啟動時，將啟用拼寫檢查。"
+    "messageformat": "下次 SWARM Messenger 啟動時，將啟用拼寫檢查。"
   },
   "icu:spellCheckWillBeDisabled": {
-    "messageformat": "下次 Signal 啟動時，將關閉拼寫檢查。"
+    "messageformat": "下次 SWARM Messenger 啟動時，將關閉拼寫檢查。"
   },
   "icu:SystemTraySetting__minimize-to-system-tray": {
     "messageformat": "最小化到系統列"
@@ -2232,7 +2205,7 @@
     "messageformat": "刪除所有資料？"
   },
   "icu:deleteAllDataBody": {
-    "messageformat": "要刪除 Signal 桌面版此版本的所有資料和訊息嗎？你的 Signal 帳戶和手機或其他已連結裝置上的資料將不會被刪除。"
+    "messageformat": "要刪除 SWARM Messenger 此版本的所有資料和訊息嗎？你的 SWARM 帳戶和手機或其他已連結裝置上的資料將不會被刪除。"
   },
   "icu:deleteAllDataProgress": {
     "messageformat": "正在中斷連線並刪除所有資料…"
@@ -2241,7 +2214,7 @@
     "messageformat": "刪除帳號"
   },
   "icu:deleteAccountExplanation": {
-    "messageformat": "這將刪除你的帳戶資訊、個人資料及所有訊息。您也將被移出所有 Signal 群組。"
+    "messageformat": "這將刪除你的帳戶資訊、個人資料及所有訊息。您也將被移出所有 SWARM 群組。"
   },
   "icu:deleteAccountButton": {
     "messageformat": "刪除帳號"
@@ -2250,10 +2223,10 @@
     "messageformat": "要刪除帳戶嗎？"
   },
   "icu:deleteAccountDialogBody": {
-    "messageformat": "這將刪除你的帳戶資訊、個人資料及所有訊息。您也將被移出所有 Signal 群組。完成處理後，應用程式將會關閉。"
+    "messageformat": "這將刪除你的帳戶資訊、個人資料及所有訊息。您也將被移出所有 SWARM 群組。完成處理後，應用程式將會關閉。"
   },
   "icu:deleteOldIndexedDBData": {
-    "messageformat": "你先前安裝的 Signal 桌面版中有過時的資料，如果選擇繼續，它將被刪除，並且將從頭開始。"
+    "messageformat": "你先前安裝的 SWARM Messenger 中有過時的資料，如果選擇繼續，它將被刪除，並且將從頭開始。"
   },
   "icu:deleteOldData": {
     "messageformat": "刪除舊資料"
@@ -2310,7 +2283,7 @@
     "messageformat": "已部分刪除，點擊以獲得詳細資訊"
   },
   "icu:expiredWarning": {
-    "messageformat": "您使用的 Signal 桌面版已經過期，請更新到最新版來傳送訊息。"
+    "messageformat": "您使用的 SWARM Messenger 已經過期，請更新到最新版來傳送訊息。"
   },
   "icu:upgrade": {
     "messageformat": "點擊進入swarm.green/download"
@@ -2322,7 +2295,7 @@
     "messageformat": "匯入聯絡人"
   },
   "icu:syncExplanation": {
-    "messageformat": "從你的行動裝置，匯入 Signal 群組和聯絡人。"
+    "messageformat": "從你的行動裝置，匯入 SWARM 群組和聯絡人。"
   },
   "icu:syncNow": {
     "messageformat": "現在匯入"
@@ -2355,7 +2328,7 @@
     "messageformat": "昨天 {time}"
   },
   "icu:messageLoop": {
-    "messageformat": "Signal 可能無法處理傳入訊息。"
+    "messageformat": "SWARM Messenger 可能無法處理傳入訊息。"
   },
   "icu:messageBodyTooLong": {
     "messageformat": "訊息本文太長"
@@ -2520,13 +2493,13 @@
     "messageformat": "編輯只能在你傳送此訊息後的 24 小時內套用。"
   },
   "icu:startConversation--username-not-found": {
-    "messageformat": "{atUsername} 不是 Signal 用戶。請確保你已輸入完整的用戶名稱。"
+    "messageformat": "{atUsername} 不是 SWARM Messenger 用戶。請確保你已輸入完整的用戶名稱。"
   },
   "icu:startConversation--username-not-valid": {
     "messageformat": "{atUsername} 不是有效的用戶名稱。請確保你已輸入完整的用戶名稱，以及隨後的一組數字。"
   },
   "icu:startConversation--phone-number-not-found": {
-    "messageformat": "找不到使用者。\"{phoneNumber}\" 不是 Signal的使用者。"
+    "messageformat": "找不到使用者。\"{phoneNumber}\" 不是 SWARM Messenger的使用者。"
   },
   "icu:startConversation--phone-number-not-valid": {
     "messageformat": "找不到使用者。\"{phoneNumber}\" 不是有效的電話號碼。"
@@ -2547,13 +2520,13 @@
     "messageformat": "已達群組人數上限"
   },
   "icu:chooseGroupMembers__maximum-group-size__body": {
-    "messageformat": "Signal群組最多可以有{max,number}個成員。"
+    "messageformat": "SWARM群組最多可以有{max,number}個成員。"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__title": {
     "messageformat": "已達到推薦成員數上限"
   },
   "icu:chooseGroupMembers__maximum-recommended-group-size__body": {
-    "messageformat": "Signal群組在{max,number}個成員或更少的情況下表現最佳。 新增更多成員將導致傳送和接收訊息的延遲。"
+    "messageformat": "SWARM群組在{max,number}個成員或更少的情況下表現最佳。 新增更多成員將導致傳送和接收訊息的延遲。"
   },
   "icu:setGroupMetadata__title": {
     "messageformat": "為群組取一個名稱"
@@ -2583,13 +2556,13 @@
     "messageformat": "無法更新群組。 檢查你的連線，然後重試。"
   },
   "icu:unlinkedWarning": {
-    "messageformat": "單擊將 Signal 電腦版重新連結到你的行動裝置以繼續傳送訊息。"
+    "messageformat": "單擊將 SWARM Messenger 重新連結到你的行動裝置以繼續傳送訊息。"
   },
   "icu:unlinked": {
     "messageformat": "已中斷連結"
   },
   "icu:unregisteredWarning": {
-    "messageformat": "點擊以重新註冊並繼續傳送訊息。Signal 桌面版尚未註冊，通常是因為你已在另一部裝置上使用你的電話號碼註冊 Signal。"
+    "messageformat": "點擊以重新註冊並繼續傳送訊息。SWARM Messenger 尚未註冊，通常是因為你已在另一部裝置上使用你的電話號碼註冊 SWARM Messenger。"
   },
   "icu:unregistered": {
     "messageformat": "已不再註冊"
@@ -2601,16 +2574,16 @@
     "messageformat": "再重試更新"
   },
   "icu:autoUpdateNewVersionMessage": {
-    "messageformat": "點擊重新啟動Signal"
+    "messageformat": "點擊重新啟動SWARM Messenger"
   },
   "icu:downloadNewVersionMessage": {
     "messageformat": "點擊下載更新"
   },
   "icu:downloadFullNewVersionMessage": {
-    "messageformat": "Signal 無法更新。請點擊以重試。"
+    "messageformat": "SWARM Messenger 無法更新。請點擊以重試。"
   },
   "icu:autoUpdateRestartButtonLabel": {
-    "messageformat": "重啟 Signal"
+    "messageformat": "重啟 SWARM Messenger"
   },
   "icu:autoUpdateIgnoreButtonLabel": {
     "messageformat": "忽略升級"
@@ -2742,7 +2715,7 @@
     "messageformat": "有些附件太大而無法顯示。"
   },
   "icu:message--call-link-description": {
-    "messageformat": "使用此連結以加入 Signal 通話"
+    "messageformat": "使用此連結以加入 SWARM 通話"
   },
   "icu:donation--missing": {
     "messageformat": "無法擷取捐款詳情"
@@ -2754,7 +2727,7 @@
     "messageformat": "在手機上點按此訊息，即可查看捐款"
   },
   "icu:message--donation--unopened--label": {
-    "messageformat": "{sender} 已代表你向 Signal 捐款"
+    "messageformat": "{sender} 已代表你向 SWARM Messenger 捐款"
   },
   "icu:message--donation--unopened--toast--incoming": {
     "messageformat": "請檢查手機以開啟捐款"
@@ -2811,7 +2784,7 @@
     "messageformat": "謝謝您的支持！"
   },
   "icu:modal--donation--description": {
-    "messageformat": "你已代表 {name} 向 Signal 捐款。他們可以選擇在個人檔案上展現支持。"
+    "messageformat": "你已代表 {name} 向 SWARM Messenger 捐款。他們可以選擇在個人檔案上展現支持。"
   },
   "icu:stickers--toast--InstallFailed": {
     "messageformat": "貼圖包無法安裝"
@@ -2823,10 +2796,10 @@
     "messageformat": "新增貼圖"
   },
   "icu:stickers--StickerManager--BlessedPacks": {
-    "messageformat": "Signal 藝術家系列"
+    "messageformat": "SWARM Messenger 藝術家系列"
   },
   "icu:stickers--StickerManager--BlessedPacks--Empty": {
-    "messageformat": "沒有可用的 Signal 藝術家系列貼圖"
+    "messageformat": "沒有可用的 SWARM Messenger 藝術家系列貼圖"
   },
   "icu:stickers--StickerManager--ReceivedPacks2": {
     "messageformat": "分享給你"
@@ -2862,7 +2835,7 @@
     "messageformat": "拖放以重新排列貼圖包"
   },
   "icu:stickers--StickerManagerBlessedPacksList--Label": {
-    "messageformat": "Signal 藝術家系列貼圖包"
+    "messageformat": "SWARM Messenger 藝術家系列貼圖包"
   },
   "icu:stickers--StickerManagerReceivedPacksList--Label": {
     "messageformat": "已收到貼圖包"
@@ -3147,19 +3120,19 @@
     "messageformat": "訊息太長，無法顯示更多內容"
   },
   "icu:Message--unsupported-message": {
-    "messageformat": "{contact} 傳送了一則無法處理或顯示的訊息，因為它使用了新的 Signal 功能。"
+    "messageformat": "{contact} 傳送了一則無法處理或顯示的訊息，因為它使用了新的 SWARM Messenger 功能。"
   },
   "icu:Message--unsupported-message-ask-to-resend": {
-    "messageformat": "你可以要求{contact}重新發送此訊息，因為你使用的是最新版本的 Signal。"
+    "messageformat": "你可以要求{contact}重新發送此訊息，因為你使用的是最新版本的 SWARM Messenger。"
   },
   "icu:Message--from-me-unsupported-message": {
-    "messageformat": "你的某個裝置傳送了無法處理或顯示的訊息，因為它使用了新的 Signal 功能。"
+    "messageformat": "你的某個裝置傳送了無法處理或顯示的訊息，因為它使用了新的 SWARM Messenger 功能。"
   },
   "icu:Message--from-me-unsupported-message-ask-to-resend": {
-    "messageformat": "由於你使用的是最新版本的 Signal，因此將會同步此類未來的訊息。"
+    "messageformat": "由於你使用的是最新版本的 SWARM Messenger，因此將會同步此類未來的訊息。"
   },
   "icu:Message--update-signal": {
-    "messageformat": "更新 Signal"
+    "messageformat": "更新 SWARM Messenger"
   },
   "icu:Message--tap-to-view--viewed": {
     "messageformat": "已查看"
@@ -3426,7 +3399,7 @@
     "messageformat": "聊天已標記為未讀"
   },
   "icu:ArtCreator--Authentication--error": {
-    "messageformat": "請在手機和桌上型電腦設定 Signal 以使用貼圖包編輯器"
+    "messageformat": "請在手機和桌上型電腦設定 SWARM Messenger 以使用貼圖包編輯器"
   },
   "icu:Reactions--remove": {
     "messageformat": "移除回應"
@@ -3444,16 +3417,16 @@
     "messageformat": "安全提示"
   },
   "icu:SafetyTipsModal__TipTitle--SignalChat": {
-    "messageformat": "請勿回覆來自 Signal 的聊天"
+    "messageformat": "請勿回覆來自 SWARM Messenger 的聊天"
   },
   "icu:SafetyTipsModal__TipDescription--SignalChat": {
-    "messageformat": "Signal 絕不會透過訊息向你索取註冊碼、PIN 碼或恢復金鑰。切勿回覆任何假冒 Signal 的聊天訊息。"
+    "messageformat": "SWARM Messenger 絕不會透過訊息向你索取註冊碼、PIN 碼或恢復金鑰。切勿回覆任何假冒 SWARM Messenger 的聊天訊息。"
   },
   "icu:SafetyTipsModal__TipTitle--NamesAndPhotos": {
     "messageformat": "檢視姓名與相片"
   },
   "icu:SafetyTipsModal__TipDescription--NamesAndPhotos": {
-    "messageformat": "請留意「名稱未經驗證」的提示。每位用戶都可在 Signal 中自行設定個人檔案名稱。"
+    "messageformat": "請留意「名稱未經驗證」的提示。每位用戶都可在 SWARM Messenger 中自行設定個人檔案名稱。"
   },
   "icu:SafetyTipsModal__TipTitle--Scams": {
     "messageformat": "請提防詐騙"
@@ -3462,16 +3435,16 @@
     "messageformat": "請避免回應那些試圖誘使你回覆的含糊訊息。警惕各種理財建議及可疑的網絡連結。"
   },
   "icu:SafetyTipsModal__TipTitle--DontRespond": {
-    "messageformat": "請勿回覆來自 Signal 的聊天"
+    "messageformat": "請勿回覆來自 SWARM Messenger 的聊天"
   },
   "icu:SafetyTipsModal__TipDescription--DontRespond": {
-    "messageformat": "Signal 絕不會透過訊息向你索取註冊碼、PIN 碼或恢復金鑰。切勿回覆任何假冒 Signal 或 Signal 支援團隊的聊天訊息。不法分子會使用假名試圖盜用你的帳戶。"
+    "messageformat": "SWARM Messenger 絕不會透過訊息向你索取註冊碼、PIN 碼或恢復金鑰。切勿回覆任何假冒 SWARM Messenger 或 SWARM Messenger 支援團隊的聊天訊息。不法分子會使用假名試圖盜用你的帳戶。"
   },
   "icu:SafetyTipsModal__TipTitle--ReviewNames": {
     "messageformat": "檢視姓名與相片"
   },
   "icu:SafetyTipsModal__TipDescription--ReviewNames": {
-    "messageformat": "請留意「名稱未經驗證」的提示。每位用戶都可在 Signal 中自行設定個人檔案名稱和相片。如果你不確定新請求是來自誰，最好忽視它。"
+    "messageformat": "請留意「名稱未經驗證」的提示。每位用戶都可在 SWARM Messenger 中自行設定個人檔案名稱和相片。如果你不確定新請求是來自誰，最好忽視它。"
   },
   "icu:SafetyTipsModal__TipTitle--Crypto": {
     "messageformat": "加密貨幣或金錢詐騙"
@@ -3552,13 +3525,13 @@
     "messageformat": "要舉報為垃圾訊息嗎？"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--direct": {
-    "messageformat": "Signal 將收到通知，此人可能正在發送垃圾訊息。Signal 不能看到任何聊天內容。"
+    "messageformat": "SWARM Messenger 將收到通知，此人可能正在發送垃圾訊息。SWARM Messenger 不能看到任何聊天內容。"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group--unknown-contact": {
-    "messageformat": "Signal 將收到通知，邀請你加入此群組的人可能正在發送垃圾訊息。Signal 不能看到任何聊天內容。"
+    "messageformat": "SWARM Messenger 將收到通知，邀請你加入此群組的人可能正在發送垃圾訊息。SWARM Messenger 不能看到任何聊天內容。"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-body--group": {
-    "messageformat": "Signal 將收到通知，邀請你加入此群組的 {name} 可能正在發送垃圾訊息。Signal 不能看到任何聊天內容。"
+    "messageformat": "SWARM Messenger 將收到通知，邀請你加入此群組的 {name} 可能正在發送垃圾訊息。SWARM Messenger 不能看到任何聊天內容。"
   },
   "icu:MessageRequests--ReportAndMaybeBlockModal-report": {
     "messageformat": "舉報垃圾訊息"
@@ -3600,7 +3573,7 @@
     "messageformat": "要接受請求嗎？"
   },
   "icu:MessageRequests--accept-confirm-body-v2": {
-    "messageformat": "僅接受你信任之人的請求。<bold>Signal 絕不會</bold>透過訊息向你索取註冊碼、PIN 碼或恢復金鑰。"
+    "messageformat": "僅接受你信任之人的請求。<bold>SWARM Messenger 絕不會</bold>透過訊息向你索取註冊碼、PIN 碼或恢復金鑰。"
   },
   "icu:MessageRequests--continue": {
     "messageformat": "繼續"
@@ -3654,16 +3627,16 @@
     "messageformat": "名稱未經驗證"
   },
   "icu:ConversationHero--signal-official-chat": {
-    "messageformat": "這是 Signal 官方及唯一版本的聊天"
+    "messageformat": "這是 SWARM Messenger 官方及唯一版本的聊天"
   },
   "icu:ConversationHero--signal-official-chat-title": {
     "messageformat": "官方聊天"
   },
   "icu:ConversationHero--signal-official-account--description": {
-    "messageformat": "Signal 官方及唯一版本的聊天。隨時了解最新消息和發行版本備註。"
+    "messageformat": "SWARM Messenger 官方及唯一版本的聊天。隨時了解最新消息和發行版本備註。"
   },
   "icu:Timeline--signal-official-chat--chip": {
-    "messageformat": "Signal 官方及唯一版本的聊天。"
+    "messageformat": "SWARM Messenger 官方及唯一版本的聊天。"
   },
   "icu:ConversationHero--release-notes": {
     "messageformat": "隨時了解最新消息和發行版本備註。"
@@ -3729,10 +3702,10 @@
     "messageformat": "未接的視訊電話"
   },
   "icu:minimizeToTrayNotification--title": {
-    "messageformat": "Signal 仍在運行中"
+    "messageformat": "SWARM Messenger 仍在運行中"
   },
   "icu:minimizeToTrayNotification--body": {
-    "messageformat": "Signal 會在通知區域持續運行。你可以在 Signal 設定中進行更改。"
+    "messageformat": "SWARM Messenger 會在通知區域持續運行。你可以在 SWARM Messenger 設定中進行更改。"
   },
   "icu:incomingAudioCall": {
     "messageformat": "語音通話來電"
@@ -3939,7 +3912,7 @@
     "messageformat": "複製通話連結"
   },
   "icu:CallingAdhocCallInfo__ShareViaSignal": {
-    "messageformat": "透過 Signal 分享通話連結"
+    "messageformat": "透過 SWARM Messenger 分享通話連結"
   },
   "icu:CallingAdhocCallInfo__RemoveClientDialogBody": {
     "messageformat": "要將{name}從通話中移除嗎？"
@@ -4101,7 +4074,7 @@
     "messageformat": "未知連結版本"
   },
   "icu:GroupV2--join--unknown-link-version": {
-    "messageformat": "此版本的Signal 電腦版不支援此連結。"
+    "messageformat": "此版本的SWARM Messenger 不支援此連結。"
   },
   "icu:GroupV2--join--link-revoked--title": {
     "messageformat": "無法加入群組"
@@ -4707,10 +4680,10 @@
     "messageformat": "刪除用戶資料並重置應用程式"
   },
   "icu:BadgeDialog__become-a-sustainer-button": {
-    "messageformat": "贊助 Signal"
+    "messageformat": "贊助 SWARM Messenger"
   },
   "icu:BadgeDialog__name-supports-signal": {
-    "messageformat": "{name} 支持 Signal"
+    "messageformat": "{name} 支持 SWARM Messenger"
   },
   "icu:BackupImportScreen__title": {
     "messageformat": "同步訊息"
@@ -4827,7 +4800,7 @@
     "messageformat": "需為帳戶採取行動"
   },
   "icu:CriticalIdlePrimaryDeviceModal__description": {
-    "messageformat": "你必須在手機上開啟 Signal 才能繼續使用此帳戶。如果你沒有在手機上開啟 Signal，你的帳戶將很快被刪除。<learnMoreLink>了解更多</learnMoreLink>"
+    "messageformat": "你必須在手機上開啟 SWARM Messenger 才能繼續使用此帳戶。如果你沒有在手機上開啟 SWARM Messenger，你的帳戶將很快被刪除。<learnMoreLink>了解更多</learnMoreLink>"
   },
   "icu:LowDiskSpaceBackupImportModal__title": {
     "messageformat": "無法還原媒體"
@@ -4851,10 +4824,10 @@
     "messageformat": "新增附件或投票"
   },
   "icu:CompositionArea--sms-only__title": {
-    "messageformat": "此人沒有使用Signal"
+    "messageformat": "此人沒有使用SWARM Messenger"
   },
   "icu:CompositionArea--sms-only__body": {
-    "messageformat": "Signal 電腦版不支援訊息傳遞給非Signal聯絡人。 要求此人安裝Signal以獲得更安全的訊息傳遞體驗。"
+    "messageformat": "SWARM Messenger 不支援訊息傳遞給非SWARM Messenger聯絡人。 要求此人安裝SWARM Messenger以獲得更安全的訊息傳遞體驗。"
   },
   "icu:CompositionArea--sms-only__spinner-label": {
     "messageformat": "檢查聯絡人的註冊狀態"
@@ -5115,10 +5088,10 @@
     "messageformat": "解除封鎖"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-direct": {
-    "messageformat": "Signal 將收到通知，此人可能正在發送垃圾訊息。Signal 不能看到任何聊天內容。"
+    "messageformat": "SWARM Messenger 將收到通知，此人可能正在發送垃圾訊息。SWARM Messenger 不能看到任何聊天內容。"
   },
   "icu:ConversationDetailsActions--report-spam-modal-content-group": {
-    "messageformat": "Signal 將收到通知，指出邀請你加入此群組的人可能正在發送垃圾訊息。Signal 不能看到任何聊天內容。"
+    "messageformat": "SWARM Messenger 將收到通知，指出邀請你加入此群組的人可能正在發送垃圾訊息。SWARM Messenger 不能看到任何聊天內容。"
   },
   "icu:ConversationDetailsActions--report-spam-modal-report-spam": {
     "messageformat": "舉報垃圾訊息"
@@ -5166,7 +5139,7 @@
     "messageformat": "暱稱"
   },
   "icu:EditNicknameAndNoteModal__Description": {
-    "messageformat": "暱稱和備註均以 Signal 的端對端加密儲存。只有你可以看見它們。"
+    "messageformat": "暱稱和備註均以 SWARM Messenger 的端對端加密儲存。只有你可以看見它們。"
   },
   "icu:EditNicknameAndNoteModal__FirstName__Label": {
     "messageformat": "名字"
@@ -5322,7 +5295,7 @@
     "messageformat": "需要管理員批准透過群組連結加入的新成員"
   },
   "icu:GroupLinkManagement__CopyGroupLinkButtonLabel": {
-    "messageformat": "將 signal.group 連結複製到剪貼簿"
+    "messageformat": "將群組連結複製到剪貼簿"
   },
   "icu:GroupMembersSearchDialog__DialogTitle": {
     "messageformat": "搜尋成員"
@@ -5461,7 +5434,7 @@
     "ignoreUnused": true
   },
   "icu:DeleteMessagesModal--adminDeleteConfirmation--description__rollout": {
-    "messageformat": "{count, plural, other {使用 Signal 最新版本的群組成員將會看到你已刪除這些訊息。}}"
+    "messageformat": "{count, plural, other {使用 SWARM Messenger 最新版本的群組成員將會看到你已刪除這些訊息。}}"
   },
   "icu:DeleteMessagesModal--noteToSelf--deleteSync": {
     "messageformat": "刪除"
@@ -5587,7 +5560,7 @@
     "messageformat": "無法轉寄空白或已刪除的訊息"
   },
   "icu:ShareCallLinkViaSignal__DraftMessageText": {
-    "messageformat": "使用此連結加入 Signal 通話：{url}"
+    "messageformat": "使用此連結加入 SWARM 通話：{url}"
   },
   "icu:MessageRequestWarning__review-carefully": {
     "messageformat": "仔細審核請求"
@@ -5596,7 +5569,7 @@
     "messageformat": "安全提示"
   },
   "icu:ContactSpoofing__same-name--link": {
-    "messageformat": "請仔細檢視請求。Signal 找到另一個名字相同的聯絡人。<reviewRequestLink>檢視請求</reviewRequestLink>"
+    "messageformat": "請仔細檢視請求。SWARM Messenger 找到另一個名字相同的聯絡人。<reviewRequestLink>檢視請求</reviewRequestLink>"
   },
   "icu:ContactSpoofing__same-name-in-group--link": {
     "messageformat": "{count, plural, other {{count,number} 位群組成員的名字相同。<reviewRequestLink>檢視成員</reviewRequestLink>}}"
@@ -5629,7 +5602,7 @@
     "messageformat": "無其他共同群組"
   },
   "icu:ContactSpoofingReviewDialog__signal-connection": {
-    "messageformat": "Signal 人脈"
+    "messageformat": "SWARM 人脈"
   },
   "icu:ContactSpoofingReviewDialog__group__name-change-info": {
     "messageformat": "最近將他們的個人資料名稱從 {oldName} 更改為 {newName}"
@@ -5647,7 +5620,7 @@
     "messageformat": "驗證以繼續傳送訊息"
   },
   "icu:CaptchaDialog__first-paragraph": {
-    "messageformat": "為了協助防止Signal上的垃圾訊息，請完成驗證。"
+    "messageformat": "為了協助防止SWARM Messenger上的垃圾訊息，請完成驗證。"
   },
   "icu:CaptchaDialog__second-paragraph": {
     "messageformat": "驗證後，你可以繼續進行訊息傳送。 任何暫停的訊息將自動傳送。"
@@ -6034,7 +6007,7 @@
     "messageformat": "確定放棄修改？"
   },
   "icu:ConfirmationDialog__Title--in-call-close-requested": {
-    "messageformat": "要關閉 Signal 並結束通話嗎？"
+    "messageformat": "要關閉 SWARM Messenger 並結束通話嗎？"
   },
   "icu:ConfirmationDialog__Title--close-requested-not-now": {
     "messageformat": "現在不要"
@@ -6134,7 +6107,7 @@
     "messageformat": "一般"
   },
   "icu:Preferences__button--donate": {
-    "messageformat": "贊助 Signal"
+    "messageformat": "贊助 SWARM Messenger"
   },
   "icu:Preferences__button--appearance": {
     "messageformat": "介面設定"
@@ -6200,10 +6173,10 @@
     "messageformat": "系統"
   },
   "icu:Preferences--signal-login": {
-    "messageformat": "Signal 免號登入"
+    "messageformat": "SWARM Messenger 免號登入"
   },
   "icu:Preferences--signal-login-description": {
-    "messageformat": "你的「Signal 免號登入」是用來恢復及還原帳戶。請將這些金鑰安全地儲存在你信任的密碼管理器中。 <learnMoreLink>了解更多</learnMoreLink>。"
+    "messageformat": "你的「SWARM Messenger 免號登入」是用來恢復及還原帳戶。請將這些金鑰安全地儲存在你信任的密碼管理器中。 <learnMoreLink>了解更多</learnMoreLink>。"
   },
   "icu:Preferences--signal-login-description--learn-more": {
     "messageformat": "了解更多"
@@ -6215,7 +6188,7 @@
     "messageformat": "2 個金鑰"
   },
   "icu:Preferences__SignalAccountKeys__Title": {
-    "messageformat": "你的 Signal 免號登入"
+    "messageformat": "你的 SWARM Messenger 免號登入"
   },
   "icu:Preferences__SignalAccountKeys__Description": {
     "messageformat": "請將你的登入資訊存放在安全的地方，你需要此資訊才能恢復帳戶和資料。切勿與任何人分享此資訊。"
@@ -6236,7 +6209,7 @@
     "messageformat": "這是已連結裝置"
   },
   "icu:Preferences__Account__LinkedDevice__description": {
-    "messageformat": "若要管理你的帳戶設定，請在主要裝置上開啟 Signal。"
+    "messageformat": "若要管理你的帳戶設定，請在主要裝置上開啟 SWARM Messenger。"
   },
   "icu:Preferences--zoom": {
     "messageformat": "縮放等級"
@@ -6275,7 +6248,7 @@
     "messageformat": "更改"
   },
   "icu:Preferences--signal-pin": {
-    "messageformat": "Signal PIN 碼"
+    "messageformat": "SWARM PIN 碼"
   },
   "icu:Preferences--pin-reminders--header": {
     "messageformat": "PIN 碼提示器"
@@ -6413,7 +6386,7 @@
     "messageformat": "無法匯出聊天紀錄"
   },
   "icu:PlaintextExport--Error--DiskPermssions--Detail": {
-    "messageformat": "無法匯出聊天紀錄，因為 Signal 沒有權限將檔案寫入磁碟。請嘗試變更磁碟權限或更新系統設定，然後再匯出。"
+    "messageformat": "無法匯出聊天紀錄，因為 SWARM Messenger 沒有權限將檔案寫入磁碟。請嘗試變更磁碟權限或更新系統設定，然後再匯出。"
   },
   "icu:LocalBackupExport--ProgressDialog--Header": {
     "messageformat": "匯出備份"
@@ -6428,7 +6401,7 @@
     "messageformat": "將備份資料夾轉移至手機的儲存空間"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsInstall": {
-    "messageformat": "在手機上安裝新的 Signal 副本"
+    "messageformat": "在手機上安裝新的 SWARM Messenger 副本"
   },
   "icu:LocalBackupExport--CompleteDialog--RestoreInstructionsRestore": {
     "messageformat": "輕按「還原或轉移」，然後選擇「裝置上備份」"
@@ -6695,13 +6668,13 @@
     "messageformat": "已於 {blockedAt}封鎖"
   },
   "icu:Preferences--signal-backups": {
-    "messageformat": "Signal 安全備份"
+    "messageformat": "SWARM Messenger 安全備份"
   },
   "icu:Preferences--signal-backups-off-description": {
-    "messageformat": "使用 Signal 的安全端對端加密儲存服務自動備份。就從你的手機開始。<learnMoreLink>了解更多</learnMoreLink>。"
+    "messageformat": "使用 SWARM Messenger 的安全端對端加密儲存服務自動備份。就從你的手機開始。<learnMoreLink>了解更多</learnMoreLink>。"
   },
   "icu:Preferences--backup-section-description": {
-    "messageformat": "備份你的訊息紀錄，讓你在使用新手機或重新安裝 Signal 時，絕不會遺失資料。"
+    "messageformat": "備份你的訊息紀錄，讓你在使用新手機或重新安裝 SWARM Messenger 時，絕不會遺失資料。"
   },
   "icu:Preferences--backup-details__header": {
     "messageformat": "備份詳細資料"
@@ -6731,13 +6704,13 @@
     "messageformat": "備份定期贊助已取消"
   },
   "icu:Preferences--backup-media-plan__note": {
-    "messageformat": "你可以在手機上管理或取消「Signal 安全備份」定期贊助。"
+    "messageformat": "你可以在手機上管理或取消「SWARM Messenger 安全備份」定期贊助。"
   },
   "icu:Preferences--backup-messages-plan__note": {
-    "messageformat": "你可以在手機上管理或升級「Signal 安全備份」。"
+    "messageformat": "你可以在手機上管理或升級「SWARM Messenger 安全備份」。"
   },
   "icu:Preferences--backup-plan__not-found__note": {
-    "messageformat": "你可以在手機上管理「Signal 安全備份」定期贊助或為其續期。"
+    "messageformat": "你可以在手機上管理「SWARM Messenger 安全備份」定期贊助或為其續期。"
   },
   "icu:Preferences--backup-created-at__label": {
     "messageformat": "上次備份"
@@ -6755,7 +6728,7 @@
     "messageformat": "建立可在手機上還原的端對端加密備份。 "
   },
   "icu:Preferences--local-backups-restore-info": {
-    "messageformat": "如要還原備份，請在你的手機上安裝全新的 Signal 。開啟應用程式並輕按「還原備份或轉移」。<learnMoreLink>了解更多。</learnMoreLink>"
+    "messageformat": "如要還原備份，請在你的手機上安裝全新的 SWARM Messenger 。開啟應用程式並輕按「還原備份或轉移」。<learnMoreLink>了解更多。</learnMoreLink>"
   },
   "icu:Preferences--local-backups-setup-folder": {
     "messageformat": "選擇資料夾"
@@ -6791,7 +6764,7 @@
     "messageformat": "你的恢復金鑰"
   },
   "icu:Preferences--local-backups-recovery-key--description": {
-    "messageformat": "需要此金鑰才能恢復你的帳戶和資料。將它存放在安全可靠的地方，並且不要與任何人分享。Signal 絕不會透過訊息向你索取恢復金鑰。<learnMoreLink>了解更多。</learnMoreLink>"
+    "messageformat": "需要此金鑰才能恢復你的帳戶和資料。將它存放在安全可靠的地方，並且不要與任何人分享。SWARM Messenger 絕不會透過訊息向你索取恢復金鑰。<learnMoreLink>了解更多。</learnMoreLink>"
   },
   "icu:Preferences__recovery-key__do-not-share-title": {
     "messageformat": "切勿分享恢復金鑰"
@@ -6806,7 +6779,7 @@
     "messageformat": "切勿分享金鑰"
   },
   "icu:CompositionInput__recovery-key-warning--description": {
-    "messageformat": "請勿與任何人分享你的恢復金鑰。這樣會讓他們盜用你的帳戶。<strong>Signal 絕不會透過訊息</strong>向你索取恢復金鑰。切勿回覆任何假冒 Signal 的聊天訊息。<learnMoreLink>了解更多。</learnMoreLink>"
+    "messageformat": "請勿與任何人分享你的恢復金鑰。這樣會讓他們盜用你的帳戶。<strong>SWARM Messenger 絕不會透過訊息</strong>向你索取恢復金鑰。切勿回覆任何假冒 SWARM Messenger 的聊天訊息。<learnMoreLink>了解更多。</learnMoreLink>"
   },
   "icu:Preferences--local-backups-confirm-recovery-key": {
     "messageformat": "確認你的恢復金鑰"
@@ -6818,7 +6791,7 @@
     "messageformat": "妥善保管你的金鑰"
   },
   "icu:Preferences__local-backups-confirm-key-modal-body": {
-    "messageformat": "如果你遺失金鑰，Signal 將無法幫助你還原備份。將其存放在安全可靠的地方，不要與他人分享。"
+    "messageformat": "如果你遺失金鑰，SWARM Messenger 將無法幫助你還原備份。將其存放在安全可靠的地方，不要與他人分享。"
   },
   "icu:Preferences__local-backups-confirm-key-modal-continue": {
     "messageformat": "繼續"
@@ -6869,7 +6842,7 @@
     "messageformat": "啟用備份需要進行驗證。"
   },
   "icu:Preferences__local-backups-auth-error--unauthorized": {
-    "messageformat": "此操作無法完成，因為系統驗證失敗。請再試一次或在你的行動裝置上開啟 Signal 應用程式，然後前往「備份設定」去檢視你的恢復金鑰。"
+    "messageformat": "此操作無法完成，因為系統驗證失敗。請再試一次或在你的行動裝置上開啟 SWARM Messenger 應用程式，然後前往「備份設定」去檢視你的恢復金鑰。"
   },
   "icu:Preferences__local-backups-auth-error--unknown-error": {
     "messageformat": "在為此操作請求系統驗證時發生錯誤。"
@@ -6899,7 +6872,7 @@
     "messageformat": "電話號碼"
   },
   "icu:Preferences__pnp__row--body": {
-    "messageformat": "選擇誰可以看到你的電話號碼，以及誰可以透過它在 Signal 上與你聯絡。"
+    "messageformat": "選擇誰可以看到你的電話號碼，以及誰可以透過它在 SWARM Messenger 上與你聯絡。"
   },
   "icu:Preferences__pnp__row--button": {
     "messageformat": "更改..."
@@ -6929,10 +6902,10 @@
     "messageformat": "誰可以透過電話號碼找到我"
   },
   "icu:Preferences__pnp__discoverability--description--everyone": {
-    "messageformat": "任何擁有你電話號碼的人都會看到你在使用 Signal，並可以開始與你聊天。"
+    "messageformat": "任何擁有你電話號碼的人都會看到你在使用 SWARM Messenger，並可以開始與你聊天。"
   },
   "icu:Preferences__pnp__discoverability--description--nobody": {
-    "messageformat": "除非你向對方傳送訊息或與對方已有聊天記錄，否則沒有人能看到你使用 Signal。"
+    "messageformat": "除非你向對方傳送訊息或與對方已有聊天記錄，否則沒有人能看到你使用 SWARM Messenger。"
   },
   "icu:Preferences__pnp__discoverability__everyone": {
     "messageformat": "所有人"
@@ -6944,7 +6917,7 @@
     "messageformat": "你確定嗎？"
   },
   "icu:Preferences__pnp__discoverability__nobody__confirmModal__description": {
-    "messageformat": "如果你將「{settingTitle}」更改為「{nobodyLabel}」，別人就更難在 Signal 上找到你。"
+    "messageformat": "如果你將「{settingTitle}」更改為「{nobodyLabel}」，別人就更難在 SWARM Messenger 上找到你。"
   },
   "icu:Preferences--messaging": {
     "messageformat": "傳訊"
@@ -7007,7 +6980,7 @@
     "messageformat": "設定"
   },
   "icu:Preferences__LanguageModal__Restart__Title": {
-    "messageformat": "重啟 Signal 來套用"
+    "messageformat": "重啟 SWARM Messenger 來套用"
   },
   "icu:Preferences__LanguageModal__Restart__Description": {
     "messageformat": "要更改語言，需要重新啟動應用程式。"
@@ -7022,13 +6995,13 @@
     "messageformat": "畫面安全性"
   },
   "icu:Preferences__content-protection--description": {
-    "messageformat": "防止對此電腦上的 Signal 進行截圖以增加隱私。"
+    "messageformat": "防止對此電腦上的 SWARM Messenger 進行截圖以增加隱私。"
   },
   "icu:Preferences__content-protection__modal--title": {
     "messageformat": "要停用畫面安全模式嗎？"
   },
   "icu:Preferences__content-protection__modal--body": {
-    "messageformat": "如果停用，則可能會允許 Microsoft Windows 擷取 Signal 的畫面截圖，並將其用於可能沒有隱私的功能。"
+    "messageformat": "如果停用，則可能會允許 Microsoft Windows 擷取 SWARM Messenger 的畫面截圖，並將其用於可能沒有隱私的功能。"
   },
   "icu:Preferences__content-protection__modal--disable": {
     "messageformat": "停用"
@@ -7049,19 +7022,19 @@
     "messageformat": "點擊前往 App Store"
   },
   "icu:CriticalIdlePrimaryDevice__title": {
-    "messageformat": "在手機上開啟 Signal"
+    "messageformat": "在手機上開啟 SWARM Messenger"
   },
   "icu:CriticalIdlePrimaryDevice__body": {
-    "messageformat": "如果你沒在手機上開啟 Signal，你的帳戶很快會被刪除。如你已成功開啟，此訊息就會消失。<learnMoreLink>了解更多</learnMoreLink>"
+    "messageformat": "如果你沒在手機上開啟 SWARM Messenger，你的帳戶很快會被刪除。如你已成功開啟，此訊息就會消失。<learnMoreLink>了解更多</learnMoreLink>"
   },
   "icu:IdlePrimaryDevice__body": {
-    "messageformat": "在手機上打開 Signal 以保持你的帳戶活躍"
+    "messageformat": "在手機上打開 SWARM Messenger 以保持你的帳戶活躍"
   },
   "icu:IdlePrimaryDevice__learnMore": {
     "messageformat": "了解更多"
   },
   "icu:DialogNetworkStatus__outage": {
-    "messageformat": "Signal 正面臨技術上的問題。我們正在盡力的盡快地恢復服務。"
+    "messageformat": "SWARM Messenger 正面臨技術上的問題。我們正在盡力的盡快地恢復服務。"
   },
   "icu:InstallScreenUpdateDialog--update-required__title": {
     "messageformat": "必須更新"
@@ -7070,13 +7043,13 @@
     "messageformat": "正在檢查更新"
   },
   "icu:InstallScreenUpdateDialog--updating-signal": {
-    "messageformat": "正在更新 Signal"
+    "messageformat": "正在更新 SWARM Messenger"
   },
   "icu:InstallScreenUpdateDialog--download-progress": {
     "messageformat": "正在下載 {totalBytes} 中的 {currentBytes} ({percentage,number,percent})..."
   },
   "icu:InstallScreenUpdateDialog--update-required__body": {
-    "messageformat": "若要繼續，請更新 Signal 桌面版。"
+    "messageformat": "若要繼續，請更新 SWARM Messenger。"
   },
   "icu:InstallScreenUpdateDialog--update-required__action-update": {
     "messageformat": "更新"
@@ -7088,19 +7061,19 @@
     "messageformat": "必須更新"
   },
   "icu:InstallScreenUpdateDialog--auto-update__body": {
-    "messageformat": "如要繼續使用 Signal，請更新至最新版本。"
+    "messageformat": "如要繼續使用 SWARM Messenger，請更新至最新版本。"
   },
   "icu:InstallScreenUpdateDialog--manual-update__action": {
     "messageformat": "下載 {downloadSize}"
   },
   "icu:InstallScreenUpdateDialog--downloaded__body": {
-    "messageformat": "重新啟動 Signal 以安裝更新。"
+    "messageformat": "重新啟動 SWARM Messenger 以安裝更新。"
   },
   "icu:InstallScreenUpdateDialog--cannot-update__body": {
-    "messageformat": "Signal 桌面無法更新，但有一個新版本可供使用。前往 {downloadUrl} 並手動安裝新版本，然後聯絡支援或提交有關此問題的程式錯誤。"
+    "messageformat": "SWARM Messenger 無法更新，但有一個新版本可供使用。前往 {downloadUrl} 並手動安裝新版本，然後聯絡支援或提交有關此問題的程式錯誤。"
   },
   "icu:StandaloneRegistration--signal-logo": {
-    "messageformat": "Signal 標誌"
+    "messageformat": "SWARM Messenger 標誌"
   },
   "icu:StandaloneRegistration--back": {
     "messageformat": "返回"
@@ -7136,7 +7109,7 @@
     "messageformat": "請驗證你是真人以繼續"
   },
   "icu:StandaloneRegistration--Captcha--description": {
-    "messageformat": "為了協助防止 Signal 上的垃圾訊息，請完成驗證。驗證後，你可以繼續註冊。"
+    "messageformat": "為了協助防止 SWARM Messenger 上的垃圾訊息，請完成驗證。驗證後，你可以繼續註冊。"
   },
   "icu:StandaloneRegistration--Captcha--retry-button": {
     "messageformat": "重試驗證"
@@ -7406,7 +7379,7 @@
     "messageformat": "建立你的 PIN 碼"
   },
   "icu:StandaloneRegistration--CreatePIN--description": {
-    "messageformat": "PIN 碼可協助你還原帳戶，並確保 Signal 內的資料安全加密。 <learnMore>了解更多</learnMore>"
+    "messageformat": "PIN 碼可協助你還原帳戶，並確保 SWARM Messenger 內的資料安全加密。 <learnMore>了解更多</learnMore>"
   },
   "icu:StandaloneRegistration--CreatePIN--placeholder": {
     "messageformat": "建立你的 PIN 碼"
@@ -7430,7 +7403,7 @@
     "messageformat": "警告"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--description": {
-    "messageformat": "若你停用 PIN 碼，當你重新註冊 Signal 時，你將遺失所有資料。PIN 碼停用時不可開啟註冊鎖定。"
+    "messageformat": "若你停用 PIN 碼，當你重新註冊 SWARM Messenger 時，你將遺失所有資料。PIN 碼停用時不可開啟註冊鎖定。"
   },
   "icu:StandaloneRegistration--CreatePIN--DisableWarning--disable-button": {
     "messageformat": "停用 PIN 碼"
@@ -7439,10 +7412,10 @@
     "messageformat": "取消"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--header": {
-    "messageformat": "關於 Signal PIN 碼"
+    "messageformat": "關於 SWARM PIN 碼"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--description": {
-    "messageformat": "PIN 碼讓在 Signal 中的資訊得以加密保存並僅供你存取。當你重新安裝時，你的個人資料、設定和聯絡人將會還原。"
+    "messageformat": "PIN 碼讓在 SWARM Messenger 中的資訊得以加密保存並僅供你存取。當你重新安裝時，你的個人資料、設定和聯絡人將會還原。"
   },
   "icu:StandaloneRegistration--CreatePIN--AboutPINs--learn-more-button": {
     "messageformat": "了解更多"
@@ -7475,7 +7448,7 @@
     "messageformat": "必須更新"
   },
   "icu:StandaloneRegistration--UpdateRequired--description": {
-    "messageformat": "如要繼續註冊，請更新至最新版本的 Signal。"
+    "messageformat": "如要繼續註冊，請更新至最新版本的 SWARM Messenger。"
   },
   "icu:StandaloneRegistration--UpdateRequired--update": {
     "messageformat": "更新"
@@ -7505,7 +7478,7 @@
     "messageformat": "聯絡支援"
   },
   "icu:NSIS__retry-dialog--first-line": {
-    "messageformat": "Signal 無法關閉。",
+    "messageformat": "SWARM Messenger 無法關閉。",
     "ignoreUnused": true
   },
   "icu:NSIS__retry-dialog--second-line": {
@@ -7525,14 +7498,14 @@
     "ignoreUnused": true
   },
   "icu:NSIS__semver-downgrade": {
-    "messageformat": "已安裝較新版本的 Signal。你確定要繼續嗎？",
+    "messageformat": "已安裝較新版本的 SWARM Messenger。你確定要繼續嗎？",
     "ignoreUnused": true
   },
   "icu:CrashReportDialog__title": {
     "messageformat": "應用程式已當掉"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "Signal 在當掉後重新啟動。你可以提交當機報告以協助 Signal 調查問題。"
+    "messageformat": "SWARM Messenger 在當掉後重新啟動。你可以提交當機報告以協助 SWARM Messenger 調查問題。"
   },
   "icu:CrashReportDialog__submit": {
     "messageformat": "傳送"
@@ -7637,7 +7610,7 @@
     "messageformat": "點擊下方的「{buttonName}」"
   },
   "icu:MediaPermissionsModal__step-2": {
-    "messageformat": "開啟「Signal」"
+    "messageformat": "開啟「SWARM Messenger」"
   },
   "icu:MediaPermissionsModal__open": {
     "messageformat": "前往「設定」"
@@ -7733,7 +7706,7 @@
     "messageformat": "了解更多"
   },
   "icu:SignalConnectionsModal__title": {
-    "messageformat": "Signal 聯絡人"
+    "messageformat": "SWARM 聯絡人"
   },
   "icu:SignalConnectionsModal__header": {
     "messageformat": "{connections}是你選擇信賴的對象，並透過下列方式建立關係："
@@ -7874,7 +7847,7 @@
     "messageformat": "對這些人隱藏限時動態"
   },
   "icu:StoriesSettings__mine__all--label": {
-    "messageformat": "所有 Signal 聯絡人"
+    "messageformat": "所有 SWARM 聯絡人"
   },
   "icu:StoriesSettings__mine__exclude--label": {
     "messageformat": "所有人，除了…"
@@ -7952,7 +7925,7 @@
     "messageformat": "我的限動隱私設定"
   },
   "icu:SendStoryModal__privacy-disclaimer--link": {
-    "messageformat": "選擇哪些 Signal 人脈可以瀏覽你的限時動態。你可以隨時在隱私設定中進行更改。<learnMoreLink>了解更多。</learnMoreLink>"
+    "messageformat": "選擇哪些 SWARM 人脈可以瀏覽你的限時動態。你可以隨時在隱私設定中進行更改。<learnMoreLink>了解更多。</learnMoreLink>"
   },
   "icu:SendStoryModal__delete-story": {
     "messageformat": "刪除限動"
@@ -8021,7 +7994,7 @@
     "messageformat": "下載附件"
   },
   "icu:StoryViewsNRepliesModal__read-receipts-off": {
-    "messageformat": "啟用已讀標記，看看誰瀏覽了你的限時動態。在你的行動裝置上開啟 Signal 應用程式，然後前往「設定」 >「限時動態」"
+    "messageformat": "啟用已讀標記，看看誰瀏覽了你的限時動態。在你的行動裝置上開啟 SWARM Messenger 應用程式，然後前往「設定」 >「限時動態」"
   },
   "icu:StoryViewsNRepliesModal__no-replies": {
     "messageformat": "未有回覆"
@@ -8207,7 +8180,7 @@
     "messageformat": "你的二維碼和連結已重設，你的用戶名稱為 {username}"
   },
   "icu:UsernameLinkModalBody__hint": {
-    "messageformat": "用你的手機掃描此二維碼，開始與我在 Signal 上聊天。",
+    "messageformat": "用你的手機掃描此二維碼，開始與我在 SWARM Messenger 上聊天。",
     "descrption": "Text of the hint displayed below generated QR code on the printable image."
   },
   "icu:UsernameLinkModalBody__save": {
@@ -8283,7 +8256,7 @@
     "messageformat": "解除"
   },
   "icu:PinReminderMegaphone__title": {
-    "messageformat": "驗證你的 Signal PIN碼"
+    "messageformat": "驗證你的 SWARM PIN碼"
   },
   "icu:PinReminderMegaphone__body": {
     "messageformat": "我們有時會要求你驗證PIN碼，以便你能記住它。"
@@ -8295,7 +8268,7 @@
     "messageformat": "現在不要"
   },
   "icu:PinReminderModal__title": {
-    "messageformat": "輸入你的 Signal PIN 碼"
+    "messageformat": "輸入你的 SWARM PIN 碼"
   },
   "icu:PinReminderModal__body": {
     "messageformat": "要幫助你記住你的 PIN碼，我們將定期要求你輸入 PIN 碼。我們只會偶爾詢問你。"
@@ -8316,13 +8289,13 @@
     "messageformat": "PIN 碼正確。我們稍後會再次提醒你。"
   },
   "icu:PinChangeModal__title--create": {
-    "messageformat": "變更你的 Signal PIN 碼"
+    "messageformat": "變更你的 SWARM PIN 碼"
   },
   "icu:PinChangeModal__body--create": {
     "messageformat": "只要註冊了此裝置，你就可以變更PIN碼。 <learnMoreLink>了解更多</learnMoreLink>"
   },
   "icu:PinChangeModal__title--confirm": {
-    "messageformat": "確認你的 Signal PIN 碼"
+    "messageformat": "確認你的 SWARM PIN 碼"
   },
   "icu:PinChangeModal__body--confirm": {
     "messageformat": "請輸入你剛才建立的PIN碼。"
@@ -8346,13 +8319,13 @@
     "messageformat": "已建立新的 PIN 碼。"
   },
   "icu:UnsupportedOSWarningDialog__body": {
-    "messageformat": "Signal 桌面版即將停止支援你的電腦使用的 {OS} 版本。如要繼續使用 Signal，請在 {expirationDate}前更新電腦的作業系統。<learnMoreLink>了解更多</learnMoreLink>"
+    "messageformat": "SWARM Messenger 即將停止支援你的電腦使用的 {OS} 版本。如要繼續使用 SWARM Messenger，請在 {expirationDate}前更新電腦的作業系統。<learnMoreLink>了解更多</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorDialog__body": {
-    "messageformat": "Signal 桌面版不再適用於此電腦。如要再次使用 Signal 桌面版，請更新電腦的 {OS} 版本。<learnMoreLink>了解更多</learnMoreLink>"
+    "messageformat": "SWARM Messenger 不再適用於此電腦。如要再次使用 SWARM Messenger，請更新電腦的 {OS} 版本。<learnMoreLink>了解更多</learnMoreLink>"
   },
   "icu:UnsupportedOSErrorToast": {
-    "messageformat": "Signal 桌面版不再適用於此電腦。如要再次使用 Signal 桌面版，請更新電腦的 {OS} 版本。"
+    "messageformat": "SWARM Messenger 不再適用於此電腦。如要再次使用 SWARM Messenger，請更新電腦的 {OS} 版本。"
   },
   "icu:MessageMetadata__edited": {
     "messageformat": "已編輯"
@@ -8523,7 +8496,7 @@
     "messageformat": "複製連結"
   },
   "icu:CallLinkDetails__ShareLinkViaSignal": {
-    "messageformat": "透過 Signal 分享連結"
+    "messageformat": "透過 SWARM Messenger 分享連結"
   },
   "icu:CallLinkDetails__DeleteLink": {
     "messageformat": "刪除連結"
@@ -8586,13 +8559,13 @@
     "messageformat": "若要變更此設定，請將「誰可以看到我的號碼」設定為「沒有人」。"
   },
   "icu:ProfileNameWarningModal__description--direct": {
-    "messageformat": "Signal 上的個人檔案名稱由其帳戶持有人選擇："
+    "messageformat": "SWARM Messenger 上的個人檔案名稱由其帳戶持有人選擇："
   },
   "icu:ProfileNameWarningModal__warning--signal-cant-verify": {
-    "messageformat": "Signal 無法驗證姓名和相片"
+    "messageformat": "SWARM Messenger 無法驗證姓名和相片"
   },
   "icu:ProfileNameWarningModal__warning--signal-wont-contact": {
-    "messageformat": "Signal 絕不會聯絡你來索取你的註冊碼、PIN 碼或恢復金鑰"
+    "messageformat": "SWARM Messenger 絕不會聯絡你來索取你的註冊碼、PIN 碼或恢復金鑰"
   },
   "icu:ProfileNameWarningModal__warning--be-cautious": {
     "messageformat": "請小心那些冒充他人的帳戶"
@@ -8622,7 +8595,7 @@
     "messageformat": "以非營利為榮"
   },
   "icu:PreferencesDonations__description-v2": {
-    "messageformat": "捐款以支持私密訊息功能。讓 Signal 保持獨立且無廣告。<readMoreLink>閱讀全文</readMoreLink>"
+    "messageformat": "捐款以支持私密訊息功能。讓 SWARM Messenger 保持獨立且無廣告。<readMoreLink>閱讀全文</readMoreLink>"
   },
   "icu:PreferencesDonations__donate-button": {
     "messageformat": "捐款"
@@ -8646,7 +8619,7 @@
     "messageformat": "你的資料已保密"
   },
   "icu:PreferencesDonations__privacy-modal-intro": {
-    "messageformat": "作為一個獨立的非營利組織， Signal 致力於提供私密訊息和通話。無廣告、無追蹤、無監控。請立即捐款支持 Signal。"
+    "messageformat": "作為一個獨立的非營利組織， SWARM Messenger 致力於提供私密訊息和通話。無廣告、無追蹤、無監控。請立即捐款支持 SWARM Messenger。"
   },
   "icu:PreferencesDonations__privacy-modal-list-1": {
     "messageformat": "當你捐款後，你可獲得一個自選徽章並顯示在個人資料上"
@@ -8655,10 +8628,10 @@
     "messageformat": "保障你的隱私是我們的使命"
   },
   "icu:PreferencesDonations__privacy-modal-list-3": {
-    "messageformat": "Signal 是一個非營利組織。"
+    "messageformat": "SWARM Messenger 是一個非營利組織。"
   },
   "icu:PreferencesDonations__privacy-modal-icon-accessibility-label": {
-    "messageformat": "以 Signal 標誌風格呈現的心形圖示"
+    "messageformat": "以 SWARM Messenger 標誌風格呈現的心形圖示"
   },
   "icu:PreferencesDonations__privacy-modal-ok": {
     "messageformat": "好"
@@ -8673,7 +8646,7 @@
     "messageformat": "贊助者常見問題"
   },
   "icu:PreferencesDonations--receiptList__info": {
-    "messageformat": "收據不會跨裝置進行同步。若你已重新安裝 Signal，恕未能提供先前捐款的收據。"
+    "messageformat": "收據不會跨裝置進行同步。若你已重新安裝 SWARM Messenger，恕未能提供先前捐款的收據。"
   },
   "icu:PreferencesDonations--receiptList__empty-title": {
     "messageformat": "未有收據"
@@ -8703,7 +8676,7 @@
     "messageformat": "信用卡或簽帳金融卡"
   },
   "icu:DonateFlow__card-form-instructions": {
-    "messageformat": "請輸入信用卡或簽帳金融卡詳情。Signal 不會收集或儲存你的個人資料。<learnMoreLink>了解更多</learnMoreLink>"
+    "messageformat": "請輸入信用卡或簽帳金融卡詳情。SWARM Messenger 不會收集或儲存你的個人資料。<learnMoreLink>了解更多</learnMoreLink>"
   },
   "icu:DonateFlow__card-form-card-number": {
     "messageformat": "付款卡號碼"
@@ -8715,7 +8688,7 @@
     "messageformat": "MM/YY"
   },
   "icu:DonateFlow__card-form-title-donate-with-amount": {
-    "messageformat": "捐款 {formattedCurrencyAmount} 給 Signal"
+    "messageformat": "捐款 {formattedCurrencyAmount} 給 SWARM Messenger"
   },
   "icu:DonateFlow__card-form-error-invalid-card-number": {
     "messageformat": "付款卡號碼無效"
@@ -8733,7 +8706,7 @@
     "messageformat": "代碼太短"
   },
   "icu:DonateFlow__one-time-donation-boost-badge-info": {
-    "messageformat": "獲取為期 30 天的 Signal 捐款徽章"
+    "messageformat": "獲取為期 30 天的 SWARM Messenger 捐款徽章"
   },
   "icu:DonateFlow__custom-amount-below-minimum-error": {
     "messageformat": "最低捐款金額為 {formattedCurrencyAmount}"
@@ -8778,7 +8751,7 @@
     "messageformat": "一次"
   },
   "icu:DonationReceipt__footer-text-v2": {
-    "messageformat": "感謝你對 Signal 的支持。你的捐款有助於推動保護自由表達的使命，並透過開放原始碼隱私技術，讓全球數百萬人能夠進行安全的全球通訊。若你是美國居民，請保留此收據作為你的稅務紀錄。Signal Technology Foundation 是在美國依據《國稅法規》(IRC) 第 501c3 條的免稅非盈利組織。我們的聯邦稅識別號碼為 82-4506840。Signal 並未因這筆捐款而提供任何商品或服務。"
+    "messageformat": "感謝你對 SWARM Messenger 的支持。你的捐款有助於推動保護自由表達的使命，並透過開放原始碼隱私技術，讓全球數百萬人能夠進行安全的全球通訊。若你是美國居民，請保留此收據作為你的稅務紀錄。SWARM Messenger Technology Foundation 是在美國依據《國稅法規》(IRC) 第 501c3 條的免稅非盈利組織。我們的聯邦稅識別號碼為 82-4506840。SWARM Messenger 並未因這筆捐款而提供任何商品或服務。"
   },
   "icu:Donations__OfflineTooltip": {
     "messageformat": "你處於離線狀態。請連結網路以完成捐款。"
@@ -8817,7 +8790,7 @@
     "messageformat": "捐款成功，但我們無法更新你的徽章設定"
   },
   "icu:Donations__BadgeApplicationFailed__Description": {
-    "messageformat": "要更新行動裝置的徽章設定，請前往「設定」→「捐款給 Signal」→「徽章」。"
+    "messageformat": "要更新行動裝置的徽章設定，請前往「設定」→「捐款給 SWARM Messenger」→「徽章」。"
   },
   "icu:Donations__DonationInterrupted": {
     "messageformat": "捐款中斷"
@@ -8874,7 +8847,7 @@
     "messageformat": "捐款時發生錯誤"
   },
   "icu:Donations__GenericError__Description": {
-    "messageformat": "可能尚未處理你的捐款。點擊「捐款給 Signal」，然後點擊「捐款收據」以查看你的收據並確認。"
+    "messageformat": "可能尚未處理你的捐款。點擊「捐款給 SWARM Messenger」，然後點擊「捐款收據」以查看你的收據並確認。"
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
     "messageformat": "再試一次或向支援團隊提交除錯日誌，以取得協助完成捐款。除錯日誌可協助我們診斷並修正問題，而且不包含識別資料。"
@@ -8916,19 +8889,19 @@
     "messageformat": "謝謝您的支持！"
   },
   "icu:Donations__badge-modal--description": {
-    "messageformat": "你已獲得 Signal 的捐款者徽章！在你的個人檔案中展示徽章，表現你對我們的支持。"
+    "messageformat": "你已獲得 SWARM Messenger 的捐款者徽章！在你的個人檔案中展示徽章，表現你對我們的支持。"
   },
   "icu:Donations__badge-modal--display-on-profile": {
     "messageformat": "在個人資訊中展示"
   },
   "icu:Donations__badge-modal--help-text": {
-    "messageformat": "你可以在行動裝置的「設定 → 捐款給 Signal → 徽章」中更改此項目"
+    "messageformat": "你可以在行動裝置的「設定 → 捐款給 SWARM Messenger → 徽章」中更改此項目"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageTitle": {
     "messageformat": "通話順利嗎？"
   },
   "icu:CallQualitySurvey__HowWasYourCall__PageDescription": {
-    "messageformat": "這有助於我們改善 Signal 中的通話。個人識別資訊將不會被儲存。"
+    "messageformat": "這有助於我們改善 SWARM Messenger 中的通話。個人識別資訊將不會被儲存。"
   },
   "icu:CallQualitySurvey__HowWasYourCall__Response__HadIssues": {
     "messageformat": "遇到問題"
@@ -8979,7 +8952,7 @@
     "messageformat": "問題描述"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__HelpText": {
-    "messageformat": "請提供與問題相關的任何詳細資訊。你在此分享的任何內容都將保密，並僅用於協助改善 Signal 中的通話。"
+    "messageformat": "請提供與問題相關的任何詳細資訊。你在此分享的任何內容都將保密，並僅用於協助改善 SWARM Messenger 中的通話。"
   },
   "icu:CallQualitySurvey__WhatIssuesDidYouHave__SomethingElse__TextArea__ErrorText": {
     "messageformat": "請描述你的問題"
@@ -9045,7 +9018,7 @@
     "messageformat": "你需要透過掃描二維碼來重新連結。"
   },
   "icu:MaybeTransferModal__media": {
-    "messageformat": "如果你已付費使用「Signal 安全備份」服務，你的所有媒體檔案都將被轉移。否則，系統只會包含你最近 45 天的媒體。"
+    "messageformat": "如果你已付費使用「SWARM Messenger 安全備份」服務，你的所有媒體檔案都將被轉移。否則，系統只會包含你最近 45 天的媒體。"
   },
   "icu:MaybeTransferModal__transfer": {
     "messageformat": "轉移"
@@ -9057,14 +9030,14 @@
     "messageformat": "刪除所有資料？"
   },
   "icu:DeleteDataAndRelinkConfirmationDialog__body": {
-    "messageformat": "目前 Signal 桌面版中的所有資料都將被刪除。之後你可以掃描二維碼，將手機中的訊息紀錄轉移過來。"
+    "messageformat": "目前 SWARM Messenger 中的所有資料都將被刪除。之後你可以掃描二維碼，將手機中的訊息紀錄轉移過來。"
   },
   "icu:WhatsNew__bugfixes": {
-    "messageformat": "此版本包含許多小調整和錯誤修復，以維持 Signal 穩定運作。",
+    "messageformat": "此版本包含許多小調整和錯誤修復，以維持 SWARM Messenger 穩定運作。",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--1": {
-    "messageformat": "其他細微的調整、問題修復和效能改善。感謝各位使用 Signal！",
+    "messageformat": "其他細微的調整、問題修復和效能改善。感謝各位使用 SWARM Messenger！",
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--2": {
@@ -9084,7 +9057,7 @@
     "ignoreUnused": true
   },
   "icu:WhatsNew__bugfixes--6": {
-    "messageformat": "細微的調整、問題修復和效能改善。感謝各位使用 Signal！",
+    "messageformat": "細微的調整、問題修復和效能改善。感謝各位使用 SWARM Messenger！",
     "ignoreUnused": true
   },
   "icu:WhatsNew__8.25--0": {
@@ -9094,6 +9067,6 @@
     "messageformat": "尋找自我可能是一輩子的過程，但現在你在群組成員搜尋中會顯示為「你」，讓尋找自己容易一些。"
   },
   "icu:WhatsNew__8.27--0": {
-    "messageformat": "此更新引入了更精細的設定選項，讓你能對 Signal 的通知有更全面的控制。現在，你可以選擇應用程式徽章上顯示的內容、調整靜音討論串的通知偏好設定，以及更多功能！我們還新增了一個方便的按鈕，讓你在進行了太多變更甚至陷入迷茫時，能輕鬆還原預設的通知設定。"
+    "messageformat": "此更新引入了更精細的設定選項，讓你能對 SWARM Messenger 的通知有更全面的控制。現在，你可以選擇應用程式徽章上顯示的內容、調整靜音討論串的通知偏好設定，以及更多功能！我們還新增了一個方便的按鈕，讓你在進行了太多變更甚至陷入迷茫時，能輕鬆還原預設的通知設定。"
   }
 }
