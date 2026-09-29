@@ -88,6 +88,7 @@ function render(walletState: SwarmWalletStateType | undefined): string {
     onCancelQuote: () => undefined,
     onSetNetwork: () => undefined,
     onCopyAddress: () => undefined,
+    onRevealRecoveryPhrase: async () => ({ ok: true }),
   };
   return renderToStaticMarkup(
     <AxoProvider
@@ -147,6 +148,41 @@ describe('SWARM wallet: the Wallet pane', () => {
     assert.include(html, 'Last known balance');
     assert.include(html, '1.50000000 SWM');
     assert.notInclude(html, 'data-testid="send-form"');
+  });
+
+  // SWARM addition (B6, 2026-09-29): "Recovery phrase".
+  describe('the recovery phrase card', () => {
+    it('offers the words, says who owns them, and holds none of them', () => {
+      const html = render(state({}));
+      assert.include(html, 'data-testid="recovery-phrase"');
+      assert.include(html, 'Recovery phrase');
+      assert.include(html, 'anyone who has them owns both');
+      assert.include(html, 'Show recovery phrase');
+      // The pane is never given the words, so it cannot draw them.
+      assert.notInclude(html, 'data-testid="recovery-words"');
+    });
+
+    it('is offered while offline when the wallet is open, not before it opens', () => {
+      const open = render(
+        state({
+          status: 'offline',
+          problem: 'offline',
+          balance: { confirmedZat: '0', pendingZat: '0', totalZat: '0' },
+        })
+      );
+      assert.include(open, 'data-testid="recovery-phrase"');
+      for (const status of ['no-wallet', 'opening', 'unavailable'] as const) {
+        assert.notInclude(
+          render(state({ status, balance: null, address: null })),
+          'data-testid="recovery-phrase"',
+          status
+        );
+      }
+      assert.notInclude(
+        render(state({ status: 'offline', problem: 'offline', balance: null })),
+        'data-testid="recovery-phrase"'
+      );
+    });
   });
 
   it('shows a ready wallet: network, height, balance, address, send', () => {

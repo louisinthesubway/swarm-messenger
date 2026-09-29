@@ -395,6 +395,7 @@ describe('SWARM chat payments: what the chat shows', () => {
           onCancelQuote={() => undefined}
           onSetNetwork={() => undefined}
           onCopyAddress={() => undefined}
+          onRevealRecoveryPhrase={async () => ({ ok: true })}
           transactionLabels={{
             [TXID]: { title: 'Ada', direction: 'incoming' },
           }}
