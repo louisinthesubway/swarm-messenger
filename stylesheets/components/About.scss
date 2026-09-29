@@ -46,3 +46,21 @@
 .About__Body {
   user-select: text;
 }
+
+// SWARM addition (B2c): "Licences" opens a window, so it is a button, drawn
+// like the links around it.
+.About__Licences {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
+  text-decoration: underline;
+
+  @include mixins.light-theme {
+    color: variables.$color-ultramarine;
+  }
+  @include mixins.dark-theme {
+    color: variables.$color-ultramarine-pastel;
+  }
+}

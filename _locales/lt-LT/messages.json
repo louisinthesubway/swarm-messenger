@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Atraskite, {whatsNew} šiame atnaujinime"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "„Signal“ yra ne pelno organizacija"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "kas naujo"
   },

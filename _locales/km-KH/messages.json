@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "មើល {whatsNew} នៅក្នុងការធ្វើបច្ចុប្បន្នភាពនេះ"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal គឺជាអង្គការមិនស្វែងរកប្រាក់ចំណេញ"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "អ្វីដែលថ្មី"
   },

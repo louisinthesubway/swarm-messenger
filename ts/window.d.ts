@@ -89,6 +89,7 @@ type AboutWindowPropsType = {
   appEnv: string;
   arch: string;
   platform: string;
+  showLicences: () => void;
 };
 
 type DebugLogWindowPropsType = {

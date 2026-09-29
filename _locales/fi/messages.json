@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Tutustu tämän version {whatsNew}"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal on voittoa tavoittelematon organisaatio."
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "uusiin ominaisuuksiin"
   },

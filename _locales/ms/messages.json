@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Lihat {whatsNew} dalam kemas kini ini"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal ialah organisasi bukan untung"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "apakah yang baharu"
   },

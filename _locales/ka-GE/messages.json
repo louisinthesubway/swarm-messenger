@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "ნახე {whatsNew} ამ განახლებაში"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal-ი არაკომერციული ორგანიზაციაა"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "რა არის ახალი"
   },

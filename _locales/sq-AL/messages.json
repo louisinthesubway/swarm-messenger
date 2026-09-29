@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Shihni {whatsNew} në këtë përditësim"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal është një ent jofitimprurës"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "ç’ka të re"
   },

@@ -24,12 +24,9 @@ export const createTemplate = (
   }
 
   const {
-    isProduction,
     devTools,
     includeSetup,
     openContactUs,
-    openForums,
-    openJoinTheBeta,
     openReleaseNotes,
     openSupportPage,
     platform,
@@ -186,22 +183,13 @@ export const createTemplate = (
           label: i18n('icu:goToReleaseNotes'),
           click: openReleaseNotes,
         },
-        {
-          label: i18n('icu:goToForums'),
-          click: openForums,
-        },
+        // SWARM change (B2c): "Go to Forums" and "Join the Beta" are gone.
+        // SWARM has no forum and no beta programme; both items opened the
+        // support page, which "Go to Support Page" below already does.
         {
           label: i18n('icu:goToSupportPage'),
           click: openSupportPage,
         },
-        ...(isProduction
-          ? [
-              {
-                label: i18n('icu:joinTheBeta'),
-                click: openJoinTheBeta,
-              },
-            ]
-          : []),
         {
           type: 'separator',
         },

@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "이 업데이트의 {whatsNew} 보기"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal은 비영리단체입니다"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "새로운 기능"
   },

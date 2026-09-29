@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Féach {whatsNew} sa nuashonrú seo"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Eagraíocht neamhbhrabúis is ea é Signal"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "cad atá nua"
   },

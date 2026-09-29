@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Vegeu {whatsNew} d'aquesta actualització."
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal és una organització sense ànim de lucre"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "les novetats"
   },

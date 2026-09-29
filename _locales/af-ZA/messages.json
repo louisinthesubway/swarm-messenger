@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Kyk {whatsNew} in hierdie bywerking"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal is 'n niewinsgewende organisasie"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "wat is nuut"
   },

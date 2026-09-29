@@ -22,6 +22,7 @@ export default {
     appEnv: 'production',
     platform: 'darwin',
     arch: 'arm64',
+    showLicences: action('showLicences'),
     version: '1.2.3',
   },
 } satisfies ComponentMeta<AboutProps>;

@@ -158,6 +158,26 @@ jobs:
       - name: Check the packaged app for leftover Signal branding
         run: node scripts/swarm-brand-check.mjs release
 
+      # What Windows shows under Properties > Details, for the app and for the
+      # installer. electron-builder writes it from package.json: productName,
+      # description, author.name and build.copyright (B2c).
+      - name: Show and check the version resources of the app and the installer
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $product = node -p "require('./package.json').productName"
+          $files = @(Get-Item "release/win-unpacked/$product.exe") + @(Get-ChildItem release/*.exe)
+          foreach ($file in $files) {
+            $v = $file.VersionInfo
+            "{0}: ProductName='{1}' FileDescription='{2}' CompanyName='{3}' LegalCopyright='{4}' FileVersion='{5}'" -f $file.Name, $v.ProductName, $v.FileDescription, $v.CompanyName, $v.LegalCopyright, $v.FileVersion
+            if ("$($v.ProductName) $($v.FileDescription) $($v.CompanyName) $($v.LegalCopyright)" -match 'Signal') {
+              throw "$($file.Name) names Signal in its version resource"
+            }
+            if ($v.LegalCopyright -notlike 'Copyright * 2026 SWARM') {
+              throw "$($file.Name) has LegalCopyright '$($v.LegalCopyright)'"
+            }
+          }
+
       # electron-builder writes swarm-messenger-win-x64-<version>.exe
       - name: Collect the installer
         shell: bash
@@ -230,11 +250,11 @@ jobs:
       # swarm-brand-check.mjs reads app.asar. What apt shows - the control
       # fields - what the desktop shows - the menu entry - and what dpkg runs
       # as root - the maintainer scripts - are outside it, so they are checked
-      # here. Two mentions are allowed: the postinst touches .signal-postinst,
-      # a marker upstream's updater code looks for, and the entry's MimeType
-      # registers the sgnl: and signalcaptcha: link schemes, which
-      # docs/SWARM-CHANGES.md section 7 keeps on purpose. Only the entry's
-      # visible keys are checked for the word.
+      # here. One mention is allowed: the postinst touches .signal-postinst, a
+      # marker upstream's updater code looks for. The desktop entry names
+      # Signal nowhere: since B2c its MimeType claims the swarm: scheme only
+      # (build.protocols), and its file name is package.json's desktopName,
+      # the name Electron gives xdg-settings when it registers that scheme.
       - name: Check the .deb's metadata, desktop entry and maintainer scripts
         run: |
           set -euo pipefail
@@ -254,8 +274,17 @@ jobs:
           entry=$(dpkg-deb --fsys-tarfile "$deb" | tar -t | grep 'usr/share/applications/.*\.desktop$')
           desktop=$(dpkg-deb --fsys-tarfile "$deb" | tar -xO "$entry")
           printf '%s\n%s\n' "$entry" "$desktop"
-          if grep -i -E '^(Name|GenericName|Comment|Keywords|Icon|Exec)(\[[^]]*\])?=.*signal' <<<"$desktop"; then
-            echo "The .deb's desktop entry shows Signal" >&2
+          if grep -i signal <<<"$desktop"; then
+            echo "The .deb's desktop entry names Signal" >&2
+            exit 1
+          fi
+          desktop_name=$(node -p "require('./package.json').desktopName")
+          if [ "$(basename "$entry")" != "$desktop_name" ]; then
+            echo "The desktop entry is $(basename "$entry"), package.json desktopName is $desktop_name" >&2
+            exit 1
+          fi
+          if [ "$(grep '^MimeType=' <<<"$desktop")" != 'MimeType=x-scheme-handler/swarm;' ]; then
+            echo "The desktop entry claims more than the swarm: scheme" >&2
             exit 1
           fi
           dpkg-deb --contents "$deb" | grep -E 'opt/SWARM Messenger/(swarm-messenger|resources/green\.swarm\..*\.policy)$'
@@ -468,9 +497,20 @@ jobs:
           codesign --verify --deep --strict --verbose=2 "$app"
           codesign --display --verbose=2 "$app" 2>&1
           lipo -archs "$app/Contents/MacOS/SWARM Messenger"
-          for key in CFBundleIdentifier CFBundleShortVersionString LSMinimumSystemVersion; do
+          for key in CFBundleIdentifier CFBundleShortVersionString LSMinimumSystemVersion NSHumanReadableCopyright; do
             printf '%s: %s\n' "$key" "$(/usr/libexec/PlistBuddy -c "Print :$key" "$app/Contents/Info.plist")"
           done
+          # B2c: the app claims the swarm: scheme and no other, and carries
+          # build.copyright.
+          schemes=$(/usr/libexec/PlistBuddy -c "Print :CFBundleURLTypes" "$app/Contents/Info.plist")
+          printf 'CFBundleURLTypes: %s\n' "$schemes"
+          if grep -i -E 'sgnl|signal' <<<"$schemes"; then
+            echo "Info.plist claims a scheme other than swarm:" >&2
+            exit 1
+          fi
+          grep -q 'swarm' <<<"$schemes"
+          copyright=$(/usr/libexec/PlistBuddy -c "Print :NSHumanReadableCopyright" "$app/Contents/Info.plist")
+          [[ "$copyright" == Copyright*"2026 SWARM" ]]
 
           userdata="$HOME/Library/Application Support/SWARM Messenger"
           log="$userdata/logs/main.log"

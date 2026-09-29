@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Видете {whatsNew}во оваа верзија"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal е непрофитна организација"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "што има ново"
   },

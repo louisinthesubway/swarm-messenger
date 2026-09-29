@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Вижте {whatsNew} в тази актуализация"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal е организация с нестопанска цел"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "какво ново има"
   },

@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Sprawdź, {whatsNew} w tej aktualizacji"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal to organizacja non profit"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "co nowego"
   },

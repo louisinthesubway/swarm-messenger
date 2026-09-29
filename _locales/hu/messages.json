@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "{whatsNew} ebben a frissítésben"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "A Signal egy nonprofit szervezet"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "Újdonságok"
   },

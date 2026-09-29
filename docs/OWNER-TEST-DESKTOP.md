@@ -484,7 +484,7 @@ server.
   that page is published, the browser shows the site's "page not found" instead.
 - **The button needs an installed SWARM Messenger with this change (the next version after 0.1.0),
   started once.** When the installed app starts, it registers the `swarm://` address type with the
-  system, as it does for the two it inherited from Signal (`sgnl://`, `signalcaptcha://`). On Windows
+  system; since B2c it is the only address type the app registers. On Windows
   that is the only registration, because the installer does not make one; the Mac and Linux packages
   also declare it themselves. A copy started from source (section 2) never registers it. None of this
   has been tried yet. If the button does nothing, send the link to yourself in SWARM Messenger (Note

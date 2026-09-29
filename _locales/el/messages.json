@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Δες {whatsNew} σε αυτή την αναβάθμιση"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Το Signal είναι ένας μη κερδοσκοπικός οργανισμός"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "τι είναι καινούργιο"
   },

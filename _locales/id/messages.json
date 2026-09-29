@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Lihat {whatsNew} pada pembaruan ini"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal berstatus nirlaba"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "apa yang baru"
   },

@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Nhìn xem {whatsNew} trong bản cập nhật này"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal là một tổ chức phi lợi nhuận"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "có gì mới"
   },

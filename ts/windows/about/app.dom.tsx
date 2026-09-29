@@ -27,6 +27,7 @@ createRoot(app).render(
       platform={AboutWindowProps.platform}
       arch={AboutWindowProps.arch}
       i18n={i18n}
+      showLicences={AboutWindowProps.showLicences}
       version={window.SignalContext.getVersion()}
     />
   </AppProvider>

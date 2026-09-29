@@ -6,6 +6,7 @@ build/curve25519_compiled.js
 build/compact-locales
 build/*.policy
 build/emoji-data.json
+build/licences.html
 stylesheets/*.css.map
 /dist
 .DS_Store

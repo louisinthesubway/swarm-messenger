@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Осы жаңа нұсқадағы {whatsNew} тізімін көру"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal – коммерциялық емес жоба"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "жаңалықтар"
   },

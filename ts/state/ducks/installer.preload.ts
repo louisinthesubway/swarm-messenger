@@ -278,7 +278,8 @@ function startInstaller(): ThunkAction<
         });
       } else if (event.kind === ProvisionEventKind.Envelope) {
         const { envelope } = event;
-        const defaultDeviceName = OS.getName() || 'Signal Desktop';
+        // SWARM change (B2c): the fallback when the computer has no name.
+        const defaultDeviceName = OS.getName() || 'SWARM Messenger';
         const deviceName = window.SignalCI?.deviceName ?? defaultDeviceName;
 
         const finishInstallOptions: FinishInstallOptionsType = {

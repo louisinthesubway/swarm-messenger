@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "Bu güncellemede {whatsNew} olduğunu görün"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal kâr amacı gütmeyen bir kuruluştur"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "nelerin yeni"
   },

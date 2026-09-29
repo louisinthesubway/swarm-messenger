@@ -5,7 +5,6 @@ import type { JSX } from 'react';
 
 import type { LocalizerType } from '../types/Util.std.ts';
 import { useEscapeHandling } from '../hooks/useEscapeHandling.dom.ts';
-import { tw } from '../axo/tw.dom.tsx';
 
 export type AboutProps = Readonly<{
   closeAbout: () => unknown;
@@ -13,6 +12,7 @@ export type AboutProps = Readonly<{
   arch: string;
   platform: string;
   i18n: LocalizerType;
+  showLicences: () => unknown;
   version: string;
 }>;
 
@@ -22,6 +22,7 @@ export function About({
   arch,
   platform,
   i18n,
+  showLicences,
   version,
 }: AboutProps): JSX.Element {
   useEscapeHandling(closeAbout);
@@ -51,25 +52,26 @@ export function About({
           <a href="https://swarm.green">swarm.green</a>
         </div>
         <br />
+        {/*
+          SWARM change (B2c): the licence notices are not written out here.
+          "Licences" opens the Licences document shipped inside the app
+          (build/licences.html): the licence paragraph with the offer of the
+          source code, the AGPL-3.0 text and the third-party notices. It
+          replaces the acknowledgments link, which pointed at GitHub.
+        */}
         <div>
-          <a
-            className="acknowledgments"
-            href="https://github.com/Swarm-Official/swarm-messenger/blob/swarm-main/ACKNOWLEDGMENTS.md"
+          <button
+            type="button"
+            className="About__Licences"
+            onClick={() => showLicences()}
           >
-            {i18n('icu:softwareAcknowledgments')}
-          </a>
+            {i18n('icu:About__Licences')}
+          </button>
         </div>
         <div>
           <a className="privacy" href="https://swarm.green/legal">
             {i18n('icu:privacyPolicy')}
           </a>
-        </div>
-        {/*
-          SWARM addition (M1): the AGPL-3.0 attribution. This is the one place
-          where Signal is named on purpose, and it must stay.
-        */}
-        <div className={tw('text-secondary')}>
-          {i18n('icu:SwarmAbout__attribution')}
         </div>
       </div>
     </div>

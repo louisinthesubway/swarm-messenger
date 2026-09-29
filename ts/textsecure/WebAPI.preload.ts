@@ -542,7 +542,7 @@ async function _promiseAjax<Type extends ResponseType, OutputShape>(
     await handleStatusCode(response.status);
 
     if (!unauthenticated && response.status === 401) {
-      log.warn('Got 401 from Signal Server. We might be unlinked.');
+      log.warn('Got 401 from the SWARM chat server. We might be unlinked.');
       window.Whisper.events.emit('mightBeUnlinked');
     }
   }

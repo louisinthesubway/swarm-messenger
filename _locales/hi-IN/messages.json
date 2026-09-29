@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "देखें कि इस अपडेट {whatsNew} में क्या है"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal एक गैर-लाभकारी संस्था है"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "नया क्या है"
   },

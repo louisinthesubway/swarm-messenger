@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "ఈ అప్‌డేట్‌లో {whatsNew} చూడండి"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "సిగ్నల్ ఒక లాభాపేక్ష లేని సంస్థ"
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "కొత్తవి ఏమిటి"
   },

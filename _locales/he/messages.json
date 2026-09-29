@@ -914,9 +914,6 @@
   "icu:whatsNew": {
     "messageformat": "ראה {whatsNew} בעדכון זה"
   },
-  "icu:signalNonProfit": {
-    "messageformat": "Signal היא עמותה ללא מטרות רווח."
-  },
   "icu:viewReleaseNotes": {
     "messageformat": "מה חדש"
   },

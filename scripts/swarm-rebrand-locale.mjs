@@ -2,8 +2,10 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 //
 // SWARM change (M1): sweep user-visible "Signal" wording out of
-// _locales/en/messages.json, add the SWARM-only strings, and keep the one place
-// where Signal must still be named: the licence attribution in the About window.
+// _locales/en/messages.json and add the SWARM-only strings. Since B2c
+// (2026-09-29) no string names Signal at all: the licence attribution lives in
+// the Licences document (ts/util/swarm/licencesDocument.std.ts), not in a
+// string.
 //
 // Run with:  node scripts/swarm-rebrand-locale.mjs
 // It is idempotent, and it is the only thing that should edit those strings, so a
@@ -49,10 +51,6 @@ const OVERRIDES = {
   'icu:aboutSignalDesktop': 'About SWARM Messenger',
   'icu:signalDesktop': 'SWARM Messenger',
   'icu:welcomeToSignal': 'Welcome to SWARM Messenger',
-  // Upstream: "Signal is a 501c3 nonprofit". False for SWARM, and this is where
-  // the AGPL attribution belongs.
-  'icu:signalNonProfit':
-    'SWARM Messenger is based on Signal Desktop by Signal Messenger, LLC, AGPL-3.0',
   'icu:menuSetupAsStandalone': 'Create account on this computer',
   // Upstream names the signal.group link host, which is Signal's.
   'icu:GroupLinkManagement__CopyGroupLinkButtonLabel':
@@ -65,12 +63,6 @@ const ADDITIONS = {
     messageformat: 'Create account on this computer',
     description:
       'Shown on the first-run screen next to the linking QR code. Starts phone-number registration on this computer instead of linking to a phone.',
-  },
-  'icu:SwarmAbout__attribution': {
-    messageformat:
-      'SWARM Messenger is based on Signal Desktop by Signal Messenger, LLC, AGPL-3.0',
-    description:
-      'Licence attribution shown in the About window. Required by the AGPL-3.0; must never be removed or reworded.',
   },
   'icu:SwarmWallet__nav-label': {
     messageformat: 'Wallet',
@@ -141,5 +133,5 @@ process.stdout.write(
 );
 process.stdout.write(
   `swarm-rebrand-locale: ${leftover.length} string(s) still mention Signal ` +
-    `(expected: the licence attribution only): ${leftover.join(', ') || 'none'}\n`
+    `(expected: none): ${leftover.join(', ') || 'none'}\n`
 );
