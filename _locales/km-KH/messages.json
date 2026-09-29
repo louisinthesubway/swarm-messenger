@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "ចូលរួមតែម្តង"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "នៅពេលអ្នកចុច ដាក់បញ្ជូន កំណត់ហេតុរបស់អ្នកនឹងត្រូវបានបង្ហោះលើអ៊ីនធឺណិតរយៈពេល 30 ថ្ងៃនៅ URL មួយដែលខុសប្លែកពីគេ និងមិនទាន់បានផ្សព្វផ្សាយ។ អ្នកអាចរក្សាទុកវានៅក្នុងឧបករណ៍សិន។"
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "កំណត់ហេតុនេះនឹងត្រូវបានបង្ហោះជាសាធារណៈតាមអនឡាញដើម្បីឱ្យអ្នករួមចំណែកមើល។ អ្នកអាចទាញយកវាមុនពេលដាក់បញ្ជូន។"
-  },
-  "icu:debugLogError": {
-    "messageformat": "មានអ្វីមួយមិនប្រក្រតីជាមួយការបង្ហោះនេះ! សូមផ្ញើអ៊ីមែលទៅ support@swarm.green និងភ្ជាប់កំណត់ហេតុរបស់អ្នកជាឯកសារអត្ថបទ។"
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "បាន​ដាក់​បញ្ជូនកំណត់​ហេតុបំបាត់បញ្ហា"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "បានបង្ហោះកំណត់ហេតុលុបបំបាត់បញ្ហា។ នៅពេលអ្នកទាក់ទងផ្នែកជំនួយ សូមចម្លង URL ខាងក្រោម ហើយភ្ជាប់វាជាមួយការពណ៌នាអំពីបញ្ហាដែលអ្នកបានឃើញ និងជំហានដើម្បីបង្កើតវាឡើងវិញ។"
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… ដើម្បីមើលកំណត់ហេតុពេញ សូមចុចរក្សាទុក"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "ថតចម្លងតំណភ្ជាប់"
-  },
   "icu:debugLogSave": {
     "messageformat": "រក្សាទុក"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "តំណត្រូវបានចម្លង ទៅកាន់ clipboard"
-  },
-  "icu:reportIssue": {
-    "messageformat": "ទាក់ទងជំនួយ"
   },
   "icu:submit": {
     "messageformat": "បញ្ជូន"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "កាលបរិច្ឆេទឧបករណ៍របស់អ្នកមិនត្រឹមត្រូវទេ។ កែតម្រូវម៉ោងនាឡិការបស់អ្នក រួចព្យាយាមម្តងទៀត។ កាលបរិច្ឆេទ និងម៉ោងឧបករណ៍របស់អ្នកគឺ៖"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "កំណត់ត្រាបញ្ហា"
   },
   "icu:debugLog": {
     "messageformat": "កំណត់ត្រាបញ្ហា"

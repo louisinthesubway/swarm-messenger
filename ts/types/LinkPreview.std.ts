@@ -97,8 +97,9 @@ export function isValidLinkPreview(
   return true;
 }
 
+// SWARM change (B5, 2026-09-29): Signal's debug-log host is gone from this
+// list with the upload that produced links to it.
 const EXCLUDED_DOMAINS = [
-  'debuglogs.org',
   'example',
   'example.com',
   'example.net',

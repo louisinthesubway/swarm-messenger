@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Jiunge hata hivyo"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Ukibonyeza Wasilisha, logi yako itachapishwa mtandaoni kwa siku 30 katika anuani ya URL ya kipekee ambayo haijachapishwa. Unaweza kuihifadhi kwenye simu kwanza."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Kumbukumbu hii itachapishwa hadharani mtandaoni ili wachangiaji watazame. Unaweza kuipakua kabla hujawasilisha."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Kuna hitilafu katika upakiaji! Tafadhali tuma barua pepe kwa support@swarm.green  na uambatanishe na logi yako kama faili ya maandishi."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Logi ya debug imewasilishwa"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Logi ya debug imesasishwa. Utakapowasiliana na msaada, nakili URL hapo chini na uiambatanishe na maelezo ya tatizo uliloona na hatua za kulinakili."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "... ili kuona logi kamili, bonyeza Hifadhi"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Nakili Kiungo"
-  },
   "icu:debugLogSave": {
     "messageformat": "Hifadhi"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Kiungo Kimenakiliwa kwenye Ubao Wako wa Kunakili"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Wasiliana na Msaada"
   },
   "icu:submit": {
     "messageformat": "Tuma"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Tarehe ya kifaa chako si sahihi. Rekebisha saa yako kisha ujaribu tena. Tarehe na muda wa kifaa chako ni:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Faili la rekebisho"
   },
   "icu:debugLog": {
     "messageformat": "Faili la Rekebisho"

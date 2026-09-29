@@ -93,8 +93,10 @@ $protocol: 'asset://';
 }
 
 $largeEmojiFont: 'asset:///optional-fonts/emoji-large.woff2';
+// SWARM change (B5, 2026-09-29): Storybook loads the font from the same mirror
+// the app uses (build/optional-resources.json), not from Signal's update host.
 @if $is-storybook {
-  $largeEmojiFont: 'https://updates.signal.org/static/android/emoji/font/desktop-32-64-v2.0.4.woff2';
+  $largeEmojiFont: 'https://static.swarm.green/static/android/emoji/font/desktop-32-64-v2.0.4.woff2';
 }
 
 @font-face {

@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Sluit in elk geval aan"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Wanneer jy op Dien in klik, sal jou log vir 30 dae aanlyn op 'n unieke, ongepubliseerde URL geplaas word. Jy kan dit eers plaaslik stoor."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Hierdie log sal publiek aanlyn geplaas word vir bydraers om te besigtig. Jy kan dit aflaai voordat jy dit indien."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Iets het verkeerd geloop met die oplaai! Stuur asb. 'n e-pos aan support@swarm.green en heg jou log as 'n tekslêer aan."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Ontfout-log ingedien"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Ontfout-log opgelaai. Wanneer jy die steundiens kontak, kopieer die URL hieronder en heg dit aan saam met 'n beskrywing van die probleem wat jy waargeneem het, asook die stappe om dit te herproduseer."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… om die volledige log te sien, klik Stoor"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Kopieer skakel"
-  },
   "icu:debugLogSave": {
     "messageformat": "Stoor"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Skakel is gekopieer na die knipbord"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Kontak steundiens"
   },
   "icu:submit": {
     "messageformat": "Dien in"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Jou toestel se datum is nie akkuraat nie. Stel jou horlosie reg en probeer weer. Jou toestel se datum en tyd is:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Onfout-log"
   },
   "icu:debugLog": {
     "messageformat": "Onfout-log"

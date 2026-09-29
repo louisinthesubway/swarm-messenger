@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "फिर भी जुड़ें"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "'सबमिट करें' पर क्लिक करने पर, आपका लॉग एक यूनीक और अनपब्लिश URL पर 30 दिनों के लिए ऑनलाइन पोस्ट हो जाएगा। आप चाहें, तो इसे अपने पास सेव करके रख लें।"
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "इस लॉग को इंटरनेट पर सबके लिए पोस्ट किया जाएगा, ताकि लोग इसे देख सकें। आप चाहें, तो सबमिट करने से पहले इसे डाउनलोड करके रख लें।"
-  },
-  "icu:debugLogError": {
-    "messageformat": "अपलोड में कोई गड़बड़ी हुई! कृपया support@swarm.green पर ईमेल करें और टेक्स्ट फ़ाइल के रूप में अपना लॉग अटैच करें।"
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "डीबग लॉग सबमिट किया गया"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "डीबग लॉग अपलोड किया गया। सपोर्ट टीम को नीचे दिया गया URL भेजें। साथ में आपको आ रही समस्या की जानकारी और उसे देखने के स्टेप भी भेजें।"
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "... पूरा लॉग देखने के लिए 'सेव करें' पर क्लिक करें"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "लिंक कॉपी करें"
-  },
   "icu:debugLogSave": {
     "messageformat": "सेव करें"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "लिंक आपके क्लिपबोर्ड पर कॉपी किया गया"
-  },
-  "icu:reportIssue": {
-    "messageformat": "सपोर्ट टीम से संपर्क करें"
   },
   "icu:submit": {
     "messageformat": "सबमिट करें"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "आपके डिवाइस की तारीख गलत है। अपने डिवाइस की घड़ी ठीक करें और फिर से कोशिश करें। आपके डिवाइस में तारीख और समय:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "डीबग लॉग"
   },
   "icu:debugLog": {
     "messageformat": "डीबग लॉग"

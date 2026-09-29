@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Unir-me de totes maneres"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Quan cliqueu a Envia, el registre es penjarà en línia durant 30 dies en un URL únic i no publicat. Primer podeu desar-lo localment."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Aquest registre es publicarà en línia perquè els col·laboradors el puguin veure. El pots descarregar abans d'enviar-lo."
-  },
-  "icu:debugLogError": {
-    "messageformat": "S'ha produït un error amb la càrrega! Envieu un correu electrònic a support@swarm.green i adjunteu-hi el registre com a fitxer de text."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Registre de depuració enviat"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "S'ha penjat el registre de depuració. Quan us poseu en contacte amb el servei d'assistència, copieu l'URL següent i adjunteu-lo juntament amb una descripció del problema que heu vist i els passos per reproduir-lo."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… per veure el registre complet, clica Desar"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Copia l'enllaç"
-  },
   "icu:debugLogSave": {
     "messageformat": "Desa"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Enllaç copiat al porta-retalls"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Contacteu amb l'Assistència"
   },
   "icu:submit": {
     "messageformat": "Envia"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "La data del dispositiu no és la correcta. Ajusta el teu rellotge i torna-ho a provar. La data i l'hora del teu dispositiu:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Registre de depuració"
   },
   "icu:debugLog": {
     "messageformat": "Registre de depuració"

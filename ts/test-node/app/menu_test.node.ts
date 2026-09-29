@@ -69,7 +69,8 @@ const getExpectedViewMenu = (): MenuItemConstructorOptions => ({
     { type: 'separator' },
     { label: 'Toggle Full Screen', role: 'togglefullscreen' },
     { type: 'separator' },
-    { label: 'Debug Log', click: showDebugLog },
+    // SWARM change (B5, 2026-09-29): saved to a file, never uploaded.
+    { label: 'Save debug log…', click: showDebugLog },
     { type: 'separator' },
     { label: 'Toggle Developer Tools', role: 'toggleDevTools' },
     // SWARM change (M1): "Force Update" is gone - SWARM Messenger has no update

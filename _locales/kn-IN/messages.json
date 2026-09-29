@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "ಹೇಗಾದರೂ ಸೇರಿ"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "ನೀವು ಸಲ್ಲಿಸಿ ಕ್ಲಿಕ್ ಮಾಡಿದಾಗ, ನಿಮ್ಮ ಲಾಗ್ ಅನ್ನು 30 ದಿನಗಳ ಕಾಲ ಅನನ್ಯ, ಅಪ್ರಕಟಿತ URL ನಲ್ಲಿ ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಪೋಸ್ಟ್ ಮಾಡಲಾಗುತ್ತದೆ. ನೀವದನ್ನು ಮೊದಲು ಸ್ಥಳೀಯವಾಗಿ ಸೇವ್ ಮಾಡಬಹುದು."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "ಕೊಡುಗೆದಾರರು ವೀಕ್ಷಿಸಲು ಈ ಲಾಗ್ ಅನ್ನು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಸಾರ್ವಜನಿಕವಾಗಿ ಪೋಸ್ಟ್ ಮಾಡಲಾಗುತ್ತದೆ. ಸಲ್ಲಿಸುವ ಮೊದಲು ನೀವು ಅದನ್ನು ಡೌನ್‌ಲೋಡ್ ಮಾಡಬಹುದು."
-  },
-  "icu:debugLogError": {
-    "messageformat": "ಅಪ್‌ಲೋಡ್ ಮಾಡುವಲ್ಲಿ ಏನೋ ತಪ್ಪಾಗಿದೆ! ದಯವಿಟ್ಟು support@swarm.green ಗೆ ಇಮೇಲ್ ಮಾಡಿ ಮತ್ತು ನಿಮ್ಮ ಲಾಗ್ ಅನ್ನು ಟೆಕ್ಸ್ಟ್ ಫೈಲ್ ಆಗಿ ಲಗತ್ತಿಸಿ."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "ಡಿಬಗ್ ಲಾಗ್ ಸಲ್ಲಿಸಲಾಗಿದೆ"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "ಡಿಬಗ್ ಲಾಗ್ ಅಪ್‌ಲೋಡ್ ಆಗಿದೆ. ನೀವು ಬೆಂಬಲವನ್ನು ಸಂಪರ್ಕಿಸಿದಾಗ, ಕೆಳಗಿನ URL ನಕಲಿಸಿ ಮತ್ತು ನೀವು ಕಂಡ ಸಮಸ್ಯೆಯ ವಿವರಣೆ ಮತ್ತು ಅದನ್ನು ನಕಲಿಸುವ ಹಂತಗಳೊಂದಿಗೆ ಅದನ್ನು ಲಗತ್ತಿಸಿ."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "... ಪೂರ್ಣ ಲಾಗ್ ಅನ್ನು ನೋಡಲು, ಸೇವ್ ಕ್ಲಿಕ್ ಮಾಡಿ"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "ಲಿಂಕ್ ನಕಲಿಸಿ"
-  },
   "icu:debugLogSave": {
     "messageformat": "ಉಳಿಸಿ"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "ನಿಮ್ಮ ಕ್ಲಿಪ್‌ಬೋರ್ಡ್‌ಗೆ ಲಿಂಕ್‌ ನಕಲಿಸಲಾಗಿದೆ"
-  },
-  "icu:reportIssue": {
-    "messageformat": "ಬೆಂಬಲವನ್ನು ಸಂಪರ್ಕಿಸಿ"
   },
   "icu:submit": {
     "messageformat": "ಸಲ್ಲಿಸಿ"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "ನಿಮ್ಮ ಸಾಧನದ ದಿನಾಂಕವು ನಿಖರವಾಗಿಲ್ಲ. ನಿಮ್ಮ ಗಡಿಯಾರವನ್ನು ಸರಿಹೊಂದಿಸಿ ಮತ್ತು ಪುನಃ ಪ್ರಯತ್ನಿಸಿ. ನಿಮ್ಮ ಸಾಧನದ ದಿನಾಂಕ ಮತ್ತು ಸಮಯವು:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "ಡೀಬಗ್ ಲಾಗ್"
   },
   "icu:debugLog": {
     "messageformat": "ಡೀಬಗ್ ಲಾಗ್"

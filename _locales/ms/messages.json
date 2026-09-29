@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Sertai juga"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Apabila anda klik Hantar, log anda akan disiarkan selama 30 hari pada URL unik, tidak diterbitkan. Anda boleh Simpan ia secara tempatan dahulu."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Log ini akan disiarkan secara terbuka dalam talian untuk dilihat oleh penyumbang. Anda boleh memuat turun fail ini sebelum menghantar."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Ada sesuatu yang tidak kena dengan muat naik! Sila e-mel support@swarm.green dan lampirkan log anda sebagai fail teks."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Log nyahpepijat dihantar"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Log nyahpepijat dimuat naik. Apabila anda menghubungi sokongan, salin URL di bawah dan lampirkan bersama penerangan tentang masalah yang anda lihat dan langkah-langkah untuk mengeluarkannya semula."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… untuk melihat log penuh, klik Simpan"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Salin Pautan"
-  },
   "icu:debugLogSave": {
     "messageformat": "Simpan"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Pautan Disalin kepada Papan Klip Anda"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Hubungi Sokongan"
   },
   "icu:submit": {
     "messageformat": "Hantar"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Tarikh peranti anda tidak tepat. Laraskan jam anda dan cuba lagi. Tarikh dan masa peranti anda ialah:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Log Nyahpepijat"
   },
   "icu:debugLog": {
     "messageformat": "Log Nyahpepijat"

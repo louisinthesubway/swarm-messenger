@@ -183,6 +183,8 @@ For anything that does not match this page:
 4. The app's own log for that window, which never contains the 24 words:
    `D:\swarm-messenger\.profiles\a\logs\app.log` (A) or `D:\swarm-messenger\.profiles\b\logs\app.log`
    (B).
+5. Or the debug log: **View > Save debug log…**, then **Save to file**, and attach that file. The
+   window only saves or copies the log; nothing is uploaded (since B5, 2026-09-29).
 
 And, if everything worked: say so, with the commit, so the result can be recorded.
 
