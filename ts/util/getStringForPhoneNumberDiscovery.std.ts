@@ -14,6 +14,23 @@ export function getStringForPhoneNumberDiscovery({
   conversationTitle: string;
   sharedGroup?: string;
 }): string {
+  // SWARM change (B4, 2026-09-29): with no number to show (a SWARM account
+  // identifier is never shown), say whose chat it is without one.
+  if (!phoneNumber) {
+    if (sharedGroup) {
+      return i18n(
+        'icu:SwarmPhoneNumberDiscovery--notification--withSharedGroup',
+        {
+          conversationTitle,
+          sharedGroup,
+        }
+      );
+    }
+    return i18n('icu:SwarmPhoneNumberDiscovery--notification--noSharedGroup', {
+      conversationTitle,
+    });
+  }
+
   if (sharedGroup) {
     return i18n('icu:PhoneNumberDiscovery--notification--withSharedGroup', {
       phoneNumber,

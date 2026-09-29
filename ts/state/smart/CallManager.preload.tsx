@@ -2,7 +2,7 @@
 // SPDX-License-Identifier: AGPL-3.0-only
 
 import lodash from 'lodash';
-import { memo, useEffect, useState, type JSX } from 'react';
+import { memo, useCallback, useEffect, useState, type JSX } from 'react';
 import { useSelector } from 'react-redux';
 import type {
   DirectIncomingCall,
@@ -48,10 +48,11 @@ import {
   getConversationSelector,
   getMe,
 } from '../selectors/conversations.dom.ts';
-import { getIntl, getUserACI } from '../selectors/user.std.ts';
+import { getIntl, getUserACI, getUserNumber } from '../selectors/user.std.ts';
 import { SmartCallingDeviceSelection } from './CallingDeviceSelection.preload.tsx';
 import { renderReactionPicker } from './renderReactionPicker.dom.tsx';
-import { isSharingPhoneNumberWithEverybody as getIsSharingPhoneNumberWithEverybody } from '../../util/phoneNumberSharingMode.preload.ts';
+import { isSharingPhoneNumberWithEverybody } from '../../util/phoneNumberSharingMode.preload.ts';
+import { isSwarmIdentityE164 } from '../../util/swarm/swarmIdentityE164.std.ts';
 import { useGlobalModalActions } from '../ducks/globalModals.preload.ts';
 import { isLonelyGroup } from '../ducks/callingHelpers.std.ts';
 import { getActiveProfile } from '../selectors/notificationProfiles.dom.ts';
@@ -414,6 +415,14 @@ const mapStateToRingingCallProp = (
 
 export const SmartCallManager = memo(function SmartCallManager() {
   const i18n = useSelector(getIntl);
+  // SWARM change (B4, 2026-09-29): a SWARM account has no phone number, so the
+  // call-link lobby never says the call will show "your phone number".
+  const ourNumber = useSelector(getUserNumber);
+  const getIsSharingPhoneNumberWithEverybody = useCallback(
+    () =>
+      !isSwarmIdentityE164(ourNumber) && isSharingPhoneNumberWithEverybody(),
+    [ourNumber]
+  );
   const activeCall = useSelector(mapStateToActiveCallProp);
   const callLink = useSelector(mapStateToCallLinkProp);
   const ringingCall = useSelector(mapStateToRingingCallProp);

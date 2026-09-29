@@ -41,6 +41,8 @@ import type { AvatarDataType } from '../../types/Avatar.std.ts';
 import type { AciString, ServiceIdString } from '../../types/ServiceId.std.ts';
 import { normalizeServiceId } from '../../types/ServiceId.std.ts';
 import { isInSystemContacts } from '../../util/isInSystemContacts.std.ts';
+import { getE164 } from '../../util/getE164.std.ts';
+import { isSwarmIdentityE164 } from '../../util/swarm/swarmIdentityE164.std.ts';
 import { sortByTitle } from '../../util/sortByTitle.std.ts';
 import { DurationInSeconds } from '../../util/durations/index.std.ts';
 import {
@@ -698,6 +700,10 @@ function hasDisplayInfo(conversation: ConversationType): boolean {
     conversation.name ||
     conversation.profileName ||
     conversation.phoneNumber ||
+    // SWARM change (B4, 2026-09-29): a SWARM account identifier is not shown,
+    // so `phoneNumber` is empty for it; the contact still has display info
+    // (its title is the neutral "SWARM account" label, see getTitle).
+    isSwarmIdentityE164(getE164(conversation)) ||
     conversation.isMe
   );
 }

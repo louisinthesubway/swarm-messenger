@@ -15,6 +15,11 @@ import {
 
 import { LeftPaneComposeHelper } from '../../../components/leftPane/LeftPaneComposeHelper.dom.tsx';
 
+// SWARM change (B4, 2026-09-29): SWARM accounts have no phone number, so the
+// composer has no "Find by phone number" button and never offers typed digits
+// as a number to start a chat with. The expectations below are upstream's with
+// those rows taken out; the tests that were about them now check they are gone.
+
 describe('LeftPaneComposeHelper', () => {
   let sinonSandbox: sinon.SinonSandbox;
 
@@ -43,7 +48,7 @@ describe('LeftPaneComposeHelper', () => {
   });
 
   describe('getRowCount', () => {
-    it('returns 3 (for the "new group", etc) if not searching and there are no contacts', () => {
+    it('returns 2 (for the "new group", etc) if not searching and there are no contacts', () => {
       assert.strictEqual(
         new LeftPaneComposeHelper({
           composeContacts: [],
@@ -53,11 +58,11 @@ describe('LeftPaneComposeHelper', () => {
           username: undefined,
           uuidFetchState: {},
         }).getRowCount(),
-        3
+        2
       );
     });
 
-    it('returns the number of contacts + 4 (for the "new group"+etc and header) if not searching', () => {
+    it('returns the number of contacts + 3 (for the "new group"+etc and header) if not searching', () => {
       assert.strictEqual(
         new LeftPaneComposeHelper({
           composeContacts: [getDefaultConversation(), getDefaultConversation()],
@@ -67,11 +72,11 @@ describe('LeftPaneComposeHelper', () => {
           uuidFetchState: {},
           username: undefined,
         }).getRowCount(),
-        6
+        5
       );
     });
 
-    it('returns the number of contacts + number of groups + 5 (for the "new group"+etc and the headers) if not searching', () => {
+    it('returns the number of contacts + number of groups + 4 (for the "new group"+etc and the headers) if not searching', () => {
       assert.strictEqual(
         new LeftPaneComposeHelper({
           composeContacts: [getDefaultConversation(), getDefaultConversation()],
@@ -81,7 +86,7 @@ describe('LeftPaneComposeHelper', () => {
           uuidFetchState: {},
           username: undefined,
         }).getRowCount(),
-        9
+        8
       );
     });
 
@@ -148,7 +153,7 @@ describe('LeftPaneComposeHelper', () => {
           uuidFetchState: {},
           username: undefined,
         }).getRowCount(),
-        2
+        0
       );
       assert.strictEqual(
         new LeftPaneComposeHelper({
@@ -159,7 +164,7 @@ describe('LeftPaneComposeHelper', () => {
           uuidFetchState: {},
           username: undefined,
         }).getRowCount(),
-        5
+        3
       );
       assert.strictEqual(
         new LeftPaneComposeHelper({
@@ -170,11 +175,11 @@ describe('LeftPaneComposeHelper', () => {
           uuidFetchState: {},
           username: undefined,
         }).getRowCount(),
-        7
+        5
       );
     });
 
-    it('returns 2 (for the "Start new conversation" button) if searching for a phone number with no contacts', () => {
+    it('returns 0 (no "Start new conversation" button) if searching for a phone number with no contacts', () => {
       assert.strictEqual(
         new LeftPaneComposeHelper({
           composeContacts: [],
@@ -184,7 +189,19 @@ describe('LeftPaneComposeHelper', () => {
           uuidFetchState: {},
           username: undefined,
         }).getRowCount(),
-        2
+        0
+      );
+      assert.strictEqual(
+        new LeftPaneComposeHelper({
+          composeContacts: [],
+          composeGroups: [],
+          regionCode: 'US',
+          searchTerm: '+88810866442360',
+          uuidFetchState: {},
+          username: undefined,
+        }).getRowCount(),
+        0,
+        'a SWARM account identifier is not offered either'
       );
     });
 
@@ -202,7 +219,7 @@ describe('LeftPaneComposeHelper', () => {
       );
     });
 
-    it('returns the number of contacts + 2 (for the "Start new conversation" button and header) if searching for a phone number', () => {
+    it('returns the number of contacts + 1 (for the header, no "Start new conversation") if searching for a phone number', () => {
       assert.strictEqual(
         new LeftPaneComposeHelper({
           composeContacts: [getDefaultConversation(), getDefaultConversation()],
@@ -212,7 +229,7 @@ describe('LeftPaneComposeHelper', () => {
           uuidFetchState: {},
           username: undefined,
         }).getRowCount(),
-        5
+        3
       );
     });
   });
@@ -234,10 +251,7 @@ describe('LeftPaneComposeHelper', () => {
       assert.deepEqual(helper.getRow(1), {
         type: RowType.FindByUsername,
       });
-      assert.deepEqual(helper.getRow(2), {
-        type: RowType.FindByPhoneNumber,
-      });
-      assert.isUndefined(helper.getRow(3));
+      assert.isUndefined(helper.getRow(2));
     });
 
     it('returns a "new group"+etc, a header, and contacts if not searching', () => {
@@ -260,16 +274,13 @@ describe('LeftPaneComposeHelper', () => {
       assert.deepEqual(helper.getRow(1), {
         type: RowType.FindByUsername,
       });
-      assert.deepEqual(helper.getRow(2), {
-        type: RowType.FindByPhoneNumber,
-      });
-      assert.deepEqual(_testHeaderText(helper.getRow(3)), 'icu:contactsHeader');
-      assert.deepEqual(helper.getRow(4), {
+      assert.deepEqual(_testHeaderText(helper.getRow(2)), 'icu:contactsHeader');
+      assert.deepEqual(helper.getRow(3), {
         type: RowType.Contact,
         contact: composeContacts[0],
         hasContextMenu: true,
       });
-      assert.deepEqual(helper.getRow(5), {
+      assert.deepEqual(helper.getRow(4), {
         type: RowType.Contact,
         contact: composeContacts[1],
         hasContextMenu: true,
@@ -300,29 +311,27 @@ describe('LeftPaneComposeHelper', () => {
       assert.deepEqual(helper.getRow(1), {
         type: RowType.FindByUsername,
       });
-      assert.deepEqual(helper.getRow(2), {
-        type: RowType.FindByPhoneNumber,
-      });
-      assert.deepEqual(_testHeaderText(helper.getRow(3)), 'icu:contactsHeader');
-      assert.deepEqual(helper.getRow(4), {
+      assert.deepEqual(_testHeaderText(helper.getRow(2)), 'icu:contactsHeader');
+      assert.deepEqual(helper.getRow(3), {
         type: RowType.Contact,
         contact: composeContacts[0],
         hasContextMenu: true,
       });
-      assert.deepEqual(helper.getRow(5), {
+      assert.deepEqual(helper.getRow(4), {
         type: RowType.Contact,
         contact: composeContacts[1],
         hasContextMenu: true,
       });
-      assert.deepEqual(_testHeaderText(helper.getRow(6)), 'icu:groupsHeader');
-      assert.deepEqual(helper.getRow(7), {
+      assert.deepEqual(_testHeaderText(helper.getRow(5)), 'icu:groupsHeader');
+      assert.deepEqual(helper.getRow(6), {
         type: RowType.SelectSingleGroup,
         group: composeGroups[0],
       });
-      assert.deepEqual(helper.getRow(8), {
+      assert.deepEqual(helper.getRow(7), {
         type: RowType.SelectSingleGroup,
         group: composeGroups[1],
       });
+      assert.isUndefined(helper.getRow(8));
     });
 
     it('returns one row per contact if searching', () => {
@@ -351,7 +360,7 @@ describe('LeftPaneComposeHelper', () => {
       });
     });
 
-    it('returns a "start new conversation" row if searching for a phone number and there are no results', () => {
+    it('returns no "start new conversation" row if searching for a phone number and there are no results', () => {
       const helper = new LeftPaneComposeHelper({
         composeContacts: [],
         composeGroups: [],
@@ -361,20 +370,7 @@ describe('LeftPaneComposeHelper', () => {
         username: undefined,
       });
 
-      assert.deepEqual(
-        _testHeaderText(helper.getRow(0)),
-        'icu:findByPhoneNumberHeader'
-      );
-      assert.deepEqual(helper.getRow(1), {
-        type: RowType.StartNewConversation,
-        phoneNumber: {
-          isValid: true,
-          userInput: '+1(650) 555 12 34',
-          e164: '+16505551234',
-        },
-        isFetching: false,
-      });
-      assert.isUndefined(helper.getRow(2));
+      assert.isUndefined(helper.getRow(0));
     });
 
     it('returns just a "find by username" header if no results', () => {
@@ -403,7 +399,7 @@ describe('LeftPaneComposeHelper', () => {
       assert.isUndefined(helper.getRow(2));
     });
 
-    it('returns a "start new conversation" row, a header, and contacts if searching for a phone number', () => {
+    it('returns a header and contacts, but no "start new conversation" row, if searching for a phone number', () => {
       const composeContacts = [
         getDefaultConversation(),
         getDefaultConversation(),
@@ -428,19 +424,7 @@ describe('LeftPaneComposeHelper', () => {
         contact: composeContacts[1],
         hasContextMenu: true,
       });
-      assert.deepEqual(
-        _testHeaderText(helper.getRow(3)),
-        'icu:findByPhoneNumberHeader'
-      );
-      assert.deepEqual(helper.getRow(4), {
-        type: RowType.StartNewConversation,
-        phoneNumber: {
-          isValid: true,
-          userInput: '+1(650) 555 12 34',
-          e164: '+16505551234',
-        },
-        isFetching: false,
-      });
+      assert.isUndefined(helper.getRow(3));
     });
   });
 
@@ -535,7 +519,7 @@ describe('LeftPaneComposeHelper', () => {
       );
     });
 
-    it('returns true if search changes or becomes an e164', () => {
+    it('returns true if search changes, and not when it becomes an e164', () => {
       const helper = new LeftPaneComposeHelper({
         composeContacts: [getDefaultConversation(), getDefaultConversation()],
         composeGroups: [],
@@ -555,7 +539,8 @@ describe('LeftPaneComposeHelper', () => {
           uuidFetchState: {},
         })
       );
-      assert.isTrue(
+      // No phone-number section appears, so no header moves.
+      assert.isFalse(
         helper.shouldRecomputeRowHeights({
           composeContacts: [getDefaultConversation(), getDefaultConversation()],
           composeGroups: [],

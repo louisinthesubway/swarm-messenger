@@ -39,7 +39,8 @@ export function DialogRelink({
         containerWidthBreakpoint={containerWidthBreakpoint}
         type="warning"
         icon="relink"
-        clickLabel={i18n('icu:unregisteredWarning')}
+        // SWARM change (B4, 2026-09-29): a wallet sign-in, not a phone number.
+        clickLabel={i18n('icu:SwarmUnregisteredWarning')}
         onClick={reregister}
         title={i18n('icu:unregistered')}
         hasAction

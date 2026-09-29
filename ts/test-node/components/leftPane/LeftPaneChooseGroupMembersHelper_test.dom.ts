@@ -172,7 +172,9 @@ describe('LeftPaneChooseGroupMembersHelper', () => {
       });
     });
 
-    it('returns a header, then the phone number, then a blank space if there are contacts', () => {
+    // SWARM change (B4, 2026-09-29): typed digits are not offered as a phone
+    // number to add (upstream: a header, the phone number, a blank space).
+    it('does not offer a phone number to add', () => {
       const helper = new LeftPaneChooseGroupMembersHelper({
         ...defaults,
         candidateContacts: [],
@@ -181,21 +183,8 @@ describe('LeftPaneChooseGroupMembersHelper', () => {
         selectedContacts: [],
       });
 
-      assert.deepEqual(
-        _testHeaderText(helper.getRow(0)),
-        'icu:findByPhoneNumberHeader'
-      );
-      assert.deepEqual(helper.getRow(1), {
-        type: RowType.PhoneNumberCheckbox,
-        phoneNumber: {
-          isValid: false,
-          userInput: '212 555',
-          e164: '+1212555',
-        },
-        isChecked: false,
-        isFetching: false,
-      });
-      assert.deepEqual(helper.getRow(2), { type: RowType.Blank });
+      assert.strictEqual(helper.getRowCount(), 0);
+      assert.isUndefined(helper.getRow(0));
     });
 
     it('returns a header, then the username, then a blank space if there are contacts', () => {

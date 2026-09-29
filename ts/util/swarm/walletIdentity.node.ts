@@ -22,6 +22,11 @@ import {
 import { createHash } from 'node:crypto';
 
 import { phraseToSeed } from './bip39.node.ts';
+import {
+  SWARM_E164_NATIONAL_DIGITS,
+  SWARM_E164_PREFIX,
+  isSwarmIdentityE164,
+} from './swarmIdentityE164.std.ts';
 
 /**
  * Domain separation for each derived key. Two different labels over the same seed give two
@@ -37,11 +42,14 @@ const E164_LABEL = 'SWARM-Messenger-e164-v1';
 /** Domain separation for what we sign to prove we hold the identity key. Must match the server. */
 const CHALLENGE_LABEL = 'SWARM-Messenger-wallet-registration-v1';
 
+// SWARM change (B4, 2026-09-29): the prefix and the digit count live in
+// swarmIdentityE164.std.ts, so the display code can recognise this identifier
+// (and never show it) without importing Node's crypto.
 /** ITU-T calling code 888: non-geographic, non-dialable. See the server's SwarmWalletIdentity. */
-const E164_PREFIX = '+888';
+const E164_PREFIX = SWARM_E164_PREFIX;
 
 /** How many digits follow the prefix. */
-const NATIONAL_DIGITS = 11;
+const NATIONAL_DIGITS = SWARM_E164_NATIONAL_DIGITS;
 
 /** The smallest 11-digit national number: the derivation never produces a leading zero. */
 const NATIONAL_FLOOR = 10n ** BigInt(NATIONAL_DIGITS - 1);
@@ -150,11 +158,9 @@ export function accountIdentifierFor(identityPublicKey: PublicKey): string {
 
 /** Whether a string is shaped like a SWARM account identifier. Shape only. */
 export function isSwarmAccountIdentifier(value: string): boolean {
-  return (
-    value.length === E164_PREFIX.length + NATIONAL_DIGITS &&
-    value.startsWith(E164_PREFIX) &&
-    /^[1-9][0-9]*$/u.test(value.slice(E164_PREFIX.length))
-  );
+  // SWARM change (B4, 2026-09-29): one shape rule, in the std file the display
+  // code also imports.
+  return isSwarmIdentityE164(value);
 }
 
 /**

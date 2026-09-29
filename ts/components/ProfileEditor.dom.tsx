@@ -712,9 +712,10 @@ export function ProfileEditor({
         </AxoList.Body>
         <AxoList.Footer>
           <AxoList.FooterDescription>
+            {/* SWARM change (B4, 2026-09-29): no "give out your phone number". */}
             {username
               ? i18n('icu:ProfileEditor--info--pnp')
-              : i18n('icu:ProfileEditor--info--pnp--no-username')}
+              : i18n('icu:SwarmProfileEditor--info--no-username')}
           </AxoList.FooterDescription>
         </AxoList.Footer>
       </AxoList.Root>
