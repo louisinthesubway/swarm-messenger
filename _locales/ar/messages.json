@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "انضم على أي حال"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "‫عند النقر على زر \"إرسال\"، سوف يُنشَر السجل على الإنترنت لمدة 30 يومًا في عنوان URL فريد غير منشور. يمكنك حفظه محليًا أولًا."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "سيُنشَر هذا السّجل علنًا على الانترنت حتى يتمكّن المساهمون من الاطِّلاع عليه. يمكنك تنزيله لمراجعته أو تعديله قبل إرساله."
-  },
-  "icu:debugLogError": {
-    "messageformat": "حدث خطأ ما بعملية التحميل! يرجى إرسال بريد إلكتروني إلى support@swarm.green وإرفاق السجل الخاص بك كملفٍ نصي."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "تمَّ إرسال سجل الأخطاء"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "تمَّ تحميل سجل الأخطاء. عند اتصالك بقسم الدعم، يُرجى نسخ عنوان URL في الأسفل ثم إرفاقه مع وصف للمشكلة التي لاحظتها وكذلك الخطوات التي أدَّت إلى تكرارها."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "للاطِّلاع على السجل بالكامل، يُرجى الضغط على \"حفظ\"."
   },
-  "icu:debugLogCopy": {
-    "messageformat": "نسخ الرابط"
-  },
   "icu:debugLogSave": {
     "messageformat": "حفظ"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "تمَّ نسخ الرابط إلى حافظتك"
-  },
-  "icu:reportIssue": {
-    "messageformat": "الاتصال بقسم الدعم"
   },
   "icu:submit": {
     "messageformat": "إرسال"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "تاريخ جهازك غير دقيق. قُم بضبط ساعتك وحاوِل مُجدَّدًا. تاريخ وساعة جهازك:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "سجل الأخطاء"
   },
   "icu:debugLog": {
     "messageformat": "سجل الأخطاء"

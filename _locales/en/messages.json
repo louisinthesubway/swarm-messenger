@@ -767,45 +767,37 @@
     "messageformat": "Join anyway",
     "description": "Used on a warning dialog to make it clear that it might be risky to join the call."
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "When you click Submit, your log will be posted online for 30 days at a unique, unpublished URL. You may Save it locally first.",
-    "description": "Description of what will happen with your debug log"
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "This log will be posted publicly online for contributors to view. You may download it before submitting.",
-    "description": "Explanation text shown in the debug log window when opened in close mode - the user can't submit, just view"
-  },
-  "icu:debugLogError": {
-    "messageformat": "Something went wrong with the upload! Please email support@swarm.green and attach your log as a text file.",
-    "description": "Error message a recommendations if debug log upload fails"
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Debug log submitted",
-    "description": "Title of the success page for submitting a debug log"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Debug log uploaded. When you contact support, copy the URL below and attach it along with a description of the problem you saw and steps to reproduce it.",
-    "description": "Explanation of next steps to take when submitting debug log"
-  },
   "icu:debugLogLogIsIncomplete": {
-    "messageformat": "... to see the full log, click Save",
-    "description": "Shown as the text for the copy button on the debug log screen"
-  },
-  "icu:debugLogCopy": {
-    "messageformat": "Copy Link",
-    "description": "Shown as the text for the copy button on the debug log screen"
+    "messageformat": "... to see the full log, click Save to file",
+    "description": "Shown at the end of the shortened log preview in the debug log window"
   },
   "icu:debugLogSave": {
-    "messageformat": "Save",
-    "description": "Shown as the text for the download button on the debug log screen"
+    "messageformat": "Save to file",
+    "description": "Primary button of the debug log window. Opens a save dialog and writes the log to a file on this computer; nothing is sent anywhere"
   },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Link Copied to Your Clipboard",
-    "description": "Shown in a toast to let the user know that the link to the debug log has been copied to their clipboard"
+  "icu:SwarmDebugLog__menu": {
+    "messageformat": "Save debug log…",
+    "description": "Menu item that opens the debug log window, where the log can be saved to a file on this computer. The log is never uploaded."
   },
-  "icu:reportIssue": {
-    "messageformat": "Contact Support",
-    "description": "Link to open the issue tracker"
+  "icu:SwarmDebugLog__explanation": {
+    "messageformat": "This log stays on this computer. Nothing is sent anywhere. If support asks for it, save it to a file and attach the file yourself.",
+    "description": "Explanation at the top of the debug log window"
+  },
+  "icu:SwarmDebugLog__copy": {
+    "messageformat": "Copy",
+    "description": "Button in the debug log window. Copies the log text to the clipboard"
+  },
+  "icu:SwarmDebugLog__copied": {
+    "messageformat": "Debug log copied to the clipboard",
+    "description": "Toast in the debug log window after the log text was copied"
+  },
+  "icu:SwarmDebugLog__saved": {
+    "messageformat": "Debug log saved",
+    "description": "Toast in the debug log window after the log was saved to a file"
+  },
+  "icu:SwarmDebugLog__error": {
+    "messageformat": "Something went wrong with the debug log. Try again, or email support@swarm.green.",
+    "description": "Toast shown when the debug log could not be saved or copied, or crash reports could not be added to it"
   },
   "icu:submit": {
     "messageformat": "Submit"
@@ -899,7 +891,7 @@
     "description": "(Deleted 2026/09/03) Key Transparency Error Dialog > Description"
   },
   "icu:KeyTransparencyErrorDialog__Description-v2": {
-    "messageformat": "Including your debug logs help us diagnose and fix the issue, and do not contain identifying information. Sharing is optional.",
+    "messageformat": "A debug log helps diagnose and fix the issue, and does not contain identifying information. It stays on this computer: you can save it to a file and attach it yourself.",
     "description": "Key Transparency Error Dialog > Description"
   },
   "icu:KeyTransparencyErrorDialog__ShareDebugLog__Label": {
@@ -907,8 +899,8 @@
     "description": "(Deleted 2026/09/03) Key Transparency Error Dialog > Share debug log > Label"
   },
   "icu:KeyTransparencyErrorDialog__ShareDebugLog__Label-v2": {
-    "messageformat": "Include debug log",
-    "description": "Key Transparency Error Dialog > Share debug log > Label"
+    "messageformat": "Save debug log to a file",
+    "description": "Key Transparency Error Dialog > checkbox: when ticked, the debug log window opens so the log can be saved to a file. The log is not sent."
   },
   "icu:KeyTransparencyErrorDialog__ShareDebugLog__ViewButton": {
     "messageformat": "View",
@@ -1087,13 +1079,9 @@
     "messageformat": "Your device date is inaccurate. Adjust your clock and try again. Your device date and time is:",
     "description": "Warning notification that the system clock is out of date. The user's device date and time is shown directly below, for example: Jul 31, 2026, 12:42:19 PM PDT"
   },
-  "icu:submitDebugLog": {
-    "messageformat": "Debug log",
-    "description": "Menu item and header text for debug log modal (sentence case)"
-  },
   "icu:debugLog": {
-    "messageformat": "Debug Log",
-    "description": "View menu item to open the debug log (title case)"
+    "messageformat": "Debug log",
+    "description": "Title of the debug log window, where the log can be saved to a file on this computer"
   },
   "icu:forceUpdate": {
     "messageformat": "Force Update",
@@ -3317,8 +3305,8 @@
     "description": "Toast for general errors"
   },
   "icu:Toast--error--action": {
-    "messageformat": "Submit log",
-    "description": "Label for the error toast button"
+    "messageformat": "Save log",
+    "description": "Label for the error toast button. Opens the debug log window, where the log can be saved to a file"
   },
   "icu:Toast--failed-to-fetch-username": {
     "messageformat": "Failed to fetch username. Check your connection and try again.",
@@ -5391,8 +5379,8 @@
     "description": "Title of the dialog shown when an unexpected user interface or coding bug occurs. The dialog's description text requests the user to submit debug logs."
   },
   "icu:DebugLogErrorModal__SubmitDebugLog": {
-    "messageformat": "Submit debug log",
-    "description": "Primary button text in the dialog shown when an unexpected user interface or coding bug occurs. Clicking the button will open the Debug Log submission dialog."
+    "messageformat": "Save debug log",
+    "description": "Primary button text in the dialog shown when an unexpected user interface or coding bug occurs. Clicking the button opens the debug log window, where the log can be saved to a file."
   },
   "icu:DebugLogErrorModal__SubmitDebugLog__Cancel": {
     "messageformat": "No thanks",
@@ -5411,8 +5399,8 @@
     "description": "Description text in popup dialog when attempting to edit a message too many times."
   },
   "icu:unknown-sgnl-link": {
-    "messageformat": "Sorry, that sgnl:// link didn't make sense!",
-    "description": "Shown if you click on a sgnl:// link not currently supported by Desktop"
+    "messageformat": "Sorry, that link didn't make sense!",
+    "description": "Shown if you click on an app link (swarm:// or an older link form) that this version does not support"
   },
   "icu:GroupV2--cannot-send": {
     "messageformat": "You cannot send messages to that group.",
@@ -7704,7 +7692,7 @@
     "description": "A message displayed when contact was removed and will be added back on an outgoing message"
   },
   "icu:ErrorBoundaryNotification__text": {
-    "messageformat": "Couldn't display this message. Click to submit a debug log.",
+    "messageformat": "Couldn't display this message. Click to save a debug log.",
     "description": "An error notification displayed when message fails to render due to an internal error"
   },
   "icu:GroupDescription__read-more": {
@@ -10095,16 +10083,16 @@
     "description": "A title of the dialog displayed when starting an application after a recent crash"
   },
   "icu:CrashReportDialog__body": {
-    "messageformat": "SWARM Messenger restarted after a crash. You can submit a crash report to help SWARM Messenger investigate the issue.",
+    "messageformat": "SWARM Messenger restarted after a crash. You can add the crash report to the debug log and save it to a file on this computer. Nothing is sent.",
     "description": "The body of the dialog displayed when starting an application after a recent crash"
   },
   "icu:CrashReportDialog__submit": {
-    "messageformat": "Send",
-    "description": "A button label for submission of the crash reporter data after a recent crash"
+    "messageformat": "Add to debug log",
+    "description": "A button label after a recent crash: writes the crash report into the debug log and opens the debug log window, where it can be saved to a file. Nothing is sent."
   },
   "icu:CrashReportDialog__erase": {
-    "messageformat": "Don't Send",
-    "description": "A button label for erasure of the crash reporter data after a recent crash and continuing to start the app"
+    "messageformat": "Discard",
+    "description": "A button label after a recent crash: erases the crash report and continues to start the app"
   },
   "icu:CustomizingPreferredReactions__title": {
     "messageformat": "Customize reactions",
@@ -11491,7 +11479,7 @@
     "description": "Group chat multiple person typing indicator when space isn't available to show every avatar, this is the count of avatars hidden."
   },
   "icu:TransportError": {
-    "messageformat": "Experimental WebSocket Transport is seeing too many errors. Please submit a debug log",
+    "messageformat": "Experimental WebSocket Transport is seeing too many errors. Please save a debug log",
     "description": "A toast that is shown to alpha/beta version users when an experimental transport is seeing too many errors"
   },
   "icu:WhoCanFindMeReadOnlyToast": {
@@ -11887,7 +11875,7 @@
     "description": "An explanation for the 'error occurred' dialog"
   },
   "icu:DonationsErrorBoundary__DonationUnexpectedError": {
-    "messageformat": "Try again or submit a debug log to Support for help completing your donation. Debug logs helps us diagnose and fix the issue, and do not contain identifying information.",
+    "messageformat": "Try again, or save a debug log and send it to Support for help completing your donation. Debug logs help us diagnose and fix the issue, and do not contain identifying information.",
     "description": "Description of the dialog shown when an unexpected user interface or coding bug occurs while using a donations-related part of the app."
   },
   "icu:Donations__Processing": {
@@ -12043,12 +12031,12 @@
     "description": "Call Quality Survey Dialog > Help us improve > Page Title"
   },
   "icu:CallQualitySurvey__ConfirmSubmission__PageDescriptionWithDiagnosticLink": {
-    "messageformat": "Submitting will share your feedback along with <diagnosticInfoLink>diagnostic information about your call</diagnosticInfoLink>. You can optionally share a debug log to help us improve call quality.",
+    "messageformat": "Submitting will share your feedback along with <diagnosticInfoLink>diagnostic information about your call</diagnosticInfoLink>. The debug log is not sent: you can open it and save it to a file on this computer.",
     "description": "Call Quality Survey Dialog > Help us improve > Page Description with link to view diagnostic info"
   },
   "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__Label": {
-    "messageformat": "Share debug log",
-    "description": "Call Quality Survey Dialog > Help us improve > Share debug log > Label"
+    "messageformat": "Save debug log to a file",
+    "description": "Call Quality Survey Dialog > Help us improve > checkbox: when ticked, the debug log window opens after submitting, so the log can be saved to a file. The log is not sent."
   },
   "icu:CallQualitySurvey__ConfirmSubmission__ShareDebugLog__ViewButton": {
     "messageformat": "View",

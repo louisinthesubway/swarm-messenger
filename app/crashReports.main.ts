@@ -194,7 +194,9 @@ export function setup(
             }
 
             // So is Electron
-            if (/electron|signal/i.test(filename)) {
+            // SWARM change (B5, 2026-09-29): and the SWARM Messenger binary.
+            // The dumps only ever go into the local debug log.
+            if (/electron|signal|swarm/i.test(filename)) {
               return true;
             }
 

@@ -134,7 +134,9 @@ export const createTemplate = (
           type: 'separator',
         },
         {
-          label: i18n('icu:debugLog'),
+          // SWARM change (B5, 2026-09-29): the debug log is saved to a file,
+          // never uploaded, and the menu says so.
+          label: i18n('icu:SwarmDebugLog__menu'),
           click: showDebugLog,
         },
         ...(devTools

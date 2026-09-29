@@ -182,6 +182,8 @@ For anything that does not match this page:
 4. The app's own log for that window, which never contains the 24 words:
    `D:\swarm-messenger\.profiles\a\logs\app.log` (A) or `D:\swarm-messenger\.profiles\b\logs\app.log`
    (B).
+5. Or the debug log: **View > Save debug log…**, then **Save to file**, and attach that file. The
+   window only saves or copies the log; nothing is uploaded (since B5, 2026-09-29).
 
 No phone number check (since 2026-09-29): report any place where a number starting `+888`
 (or `888`) or the words "phone number" appear. Look at least at: Settings (your name at the top,
@@ -225,6 +227,30 @@ steps on screen are the same.
 9. Type a message at the bottom and press **Enter**. A sees it as a **Message Request** from B's
    profile name; after **Accept** (twice) A can reply, and B's header then shows A's profile name
    instead of the username.
+
+**Share your username as a link or QR code (window A, since B3, 2026-09-29):**
+
+10. In the Profile panel click **QR code or link** under your username. The **Sharing** screen
+    shows a card with a QR code and your username, and the link under it.
+11. The card is **SWARM orange** (unless you picked another colour before). In the middle of the QR
+    code is the **SWARM mark** (the V with two wings), not a speech bubble.
+12. The link reads `https://swarm.green/u/#eu/` followed by a long code. Nothing on the screen
+    says `signal.me`. The copy icon left of the link puts exactly that link on the clipboard.
+13. **Save** saves `swarm-username-qr-code.png`: the orange card with the same
+    QR code (SWARM mark in the middle) and your username. The link itself is inside the QR code.
+14. **Color**: the first colour, already marked, is SWARM orange; blue and the others are still
+    there. Picking one and **Save** changes the card on this computer and on your other devices.
+15. In window B, send the copied link to A (or to Note to Self) and click it: the conversation
+    with A opens inside the app, no browser. A link made before this change
+    (`https://signal.me/#eu/…`) still opens the same way.
+
+The other links the app hands out moved the same way: a group link is
+`https://swarm.green/g/#…` (group settings, **Group link**), a sticker pack link
+`https://swarm.green/stickers/#pack_id=…&pack_key=…`, a call link `https://swarm.green/call/#key=…`
+(section 12). Old `signal.group` / `signal.art` / `signal.link` links still open inside the app.
+Opened in a web browser, a `swarm.green/u/`, `/g/` or `/stickers/` link shows the site's "page not
+found" until the web team publishes those pages (they open the link in the app, like
+`swarm.green/call`).
 
 **If it does not work:**
 

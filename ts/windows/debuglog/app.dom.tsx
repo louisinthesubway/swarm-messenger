@@ -22,11 +22,9 @@ createRoot(app).render(
   <AppProvider>
     <DebugLogWindow
       closeWindow={() => window.SignalContext.executeMenuRole('close')}
-      downloadLog={DebugLogWindowProps.downloadLog}
+      saveLog={DebugLogWindowProps.saveLog}
       i18n={i18n}
       fetchLogs={DebugLogWindowProps.fetchLogs}
-      uploadLogs={DebugLogWindowProps.uploadLogs}
-      mode={DebugLogWindowProps.mode}
     />
   </AppProvider>
 );

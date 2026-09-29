@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Yine de katıl"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Gönder'i tıkladığınızda, günlüğünüz benzersiz, yayınlanmamış bir URL'de 30 gün boyunca çevrimiçi olarak yayınlanacaktır. Önce yerel olarak kaydedebilirsiniz."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Bu günlük katkıda bulunanların görmesi için herkese açık bir şekilde paylaşılacaktır. Göndermeden önce indirebilirsin."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Yüklemede bir şeyler ters gitti! Lütfen support@swarm.green adresine günlüğünüzü bir metin dosyası olarak eklediğiniz bir e-posta gönderin."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Hata ayıklama günlüğü gönderildi"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Hata ayıklama günlüğü yüklendi. Destek ekibiyle iletişime geçtiğinizde, aşağıdaki URL'yi kopyalayın ve gördüğünüz sorunun açıklaması ve yeniden oluşturma adımlarıyla birlikte ekleyin."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "…tüm günlüğü görmek için Kaydet'e tıkla"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Bağlantıyı Kopyala"
-  },
   "icu:debugLogSave": {
     "messageformat": "Kaydet"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Bağlantı Panonuza Kopyalandı"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Destekle İletişime Geçin"
   },
   "icu:submit": {
     "messageformat": "Gönder"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Cihaz tarihin hatalı. Saatini ayarlayıp tekrar dene. Cihaz tarihin ve saatin:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Hata ayıklama günlüğü"
   },
   "icu:debugLog": {
     "messageformat": "Hata Ayıklama Günlüğü"

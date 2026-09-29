@@ -29,6 +29,8 @@ function toUrl(input: URL | string): URL | null {
  * List of protocols that are used by Signal routes.
  * SWARM change (MSG-P3, 2026-09-29): `swarm:` is the app form of a call link,
  * swarm://swarm.green/call/#key=... (see {@link linkCallRoute}).
+ * SWARM change (B3, 2026-09-29): and of every other link the app makes; `sgnl:`
+ * is only still read, so that links shared before keep working.
  */
 const SignalRouteProtocols = [
   'https:',
@@ -48,6 +50,8 @@ const SignalRouteHostnames = [
   'signal.art',
   'signaldonations.org',
   // SWARM change (MSG-P3, 2026-09-29): call links, see linkCallRoute.
+  // SWARM change (B3, 2026-09-29): and username (/u/), group (/g/) and sticker
+  // pack (/stickers/) links.
   'swarm.green',
 ] as const;
 
@@ -227,17 +231,25 @@ function _route<Key extends string, Args extends object>(
 const paramSchema = z.string().min(1);
 
 /**
- * signal.me by phone number
+ * Contact by phone number
  * @example
  * ```ts
  * contactByPhoneNumberRoute.toWebUrl({
  * 	 phoneNumber: "+1234567890",
  * })
- * // URL { "https://signal.me/#p/+1234567890" }
+ * // URL { "https://swarm.green/u/#p/+1234567890" }
  * ```
+ *
+ * SWARM change (B3, 2026-09-29): SWARM Messenger has no phone numbers and
+ * nothing in the app makes this link; it is read so that a Signal-style
+ * phone-number link still opens, and if anything ever makes one it is on
+ * swarm.green (/u/, beside the username link), never on signal.me.
  */
 const contactByPhoneNumberRoute = _route('contactByPhoneNumber', {
   patterns: [
+    _pattern('https:', 'swarm.green', '/u{/}?', { hash: 'p/:phoneNumber' }),
+    _pattern('swarm:', 'swarm.green', '/u{/}?', { hash: 'p/:phoneNumber' }),
+    // Signal's form: accepted, never made.
     _pattern('https:', 'signal.me', '{/}?', { hash: 'p/:phoneNumber' }),
     _pattern('sgnl:', 'signal.me', '{/}?', { hash: 'p/:phoneNumber' }),
   ],
@@ -250,27 +262,41 @@ const contactByPhoneNumberRoute = _route('contactByPhoneNumber', {
     };
   },
   toWebUrl(args) {
-    return new URL(`https://signal.me/#p/${args.phoneNumber}`);
+    return new URL(`https://swarm.green/u/#p/${args.phoneNumber}`);
   },
   toAppUrl(args) {
-    return new URL(`sgnl://signal.me/#p/${args.phoneNumber}`);
+    return new URL(`swarm://swarm.green/u/#p/${args.phoneNumber}`);
   },
 });
 
 /**
- * signal.me by encrypted username
+ * Username link (encrypted username)
  * @example
  * ```ts
  * contactByEncryptedUsernameRoute.toWebUrl({
  *   encryptedUsername: "123",
  * })
- * // URL { "https://signal.me/#eu/123" }
+ * // URL { "https://swarm.green/u/#eu/123" }
  * ```
+ *
+ * SWARM change (B3, 2026-09-29): the username link on the Sharing screen, in
+ * its QR code and in the saved image is https://swarm.green/u/#eu/..., and the
+ * app form swarm://swarm.green/u/#eu/... is what the swarm.green/u page opens.
+ * The two signal.me forms are still accepted, never made, so that links and
+ * QR codes shared before keep opening. The encrypted username travels only in
+ * the fragment, which a browser never sends to any server.
  */
 export const contactByEncryptedUsernameRoute = _route(
   'contactByEncryptedUsername',
   {
     patterns: [
+      _pattern('https:', 'swarm.green', '/u{/}?', {
+        hash: 'eu/:encryptedUsername',
+      }),
+      _pattern('swarm:', 'swarm.green', '/u{/}?', {
+        hash: 'eu/:encryptedUsername',
+      }),
+      // Signal's form, made before B3: accepted, no longer made.
       _pattern('https:', 'signal.me', '{/}?', {
         hash: 'eu/:encryptedUsername',
       }),
@@ -285,10 +311,10 @@ export const contactByEncryptedUsernameRoute = _route(
       };
     },
     toWebUrl(args) {
-      return new URL(`https://signal.me/#eu/${args.encryptedUsername}`);
+      return new URL(`https://swarm.green/u/#eu/${args.encryptedUsername}`);
     },
     toAppUrl(args) {
-      return new URL(`sgnl://signal.me/#eu/${args.encryptedUsername}`);
+      return new URL(`swarm://swarm.green/u/#eu/${args.encryptedUsername}`);
     },
   }
 );
@@ -300,11 +326,23 @@ export const contactByEncryptedUsernameRoute = _route(
  * groupInvitesRoute.toWebUrl({
  *   inviteCode: "123",
  * })
- * // URL { "https://signal.group/#123" }
+ * // URL { "https://swarm.green/g/#123" }
  * ```
+ *
+ * SWARM change (B3, 2026-09-29): group links are made on swarm.green
+ * (https://swarm.green/g/#..., app form swarm://swarm.green/g/#...). The
+ * signal.group and sgnl:// forms are still accepted, never made, so that
+ * group links shared before keep opening.
  */
 export const groupInvitesRoute = _route('groupInvites', {
   patterns: [
+    _pattern('https:', 'swarm.green', '/g{/}?', {
+      hash: ':inviteCode([^\\/]+)',
+    }),
+    _pattern('swarm:', 'swarm.green', '/g{/}?', {
+      hash: ':inviteCode([^\\/]+)',
+    }),
+    // Signal's forms, made before B3: accepted, no longer made.
     _pattern('https:', 'signal.group', '{/}?', {
       hash: ':inviteCode([^\\/]+)',
     }),
@@ -322,10 +360,10 @@ export const groupInvitesRoute = _route('groupInvites', {
     };
   },
   toWebUrl(args) {
-    return new URL(`https://signal.group/#${args.inviteCode}`);
+    return new URL(`https://swarm.green/g/#${args.inviteCode}`);
   },
   toAppUrl(args) {
-    return new URL(`sgnl://signal.group/#${args.inviteCode}`);
+    return new URL(`swarm://swarm.green/g/#${args.inviteCode}`);
   },
 });
 
@@ -338,11 +376,19 @@ export const groupInvitesRoute = _route('groupInvites', {
  *   pubKey: "abc",
  *   capabilities: "backuo"
  * })
- * // URL { "sgnl://linkdevice?uuid=123&pub_key=abc&capabilities=backup" }
+ * // URL { "swarm://linkdevice?uuid=123&pub_key=abc&capabilities=backup" }
  * ```
+ *
+ * SWARM change (B3, 2026-09-29): the QR code on the linking screen carries
+ * swarm://linkdevice?... A phone app reads this link, not this app; SWARM has
+ * no phone app yet, and one must read swarm://linkdevice (and may keep reading
+ * sgnl://linkdevice). The sgnl form is still accepted here.
  */
 export const linkDeviceRoute = _route('linkDevice', {
-  patterns: [_pattern('sgnl:', 'linkdevice', '{/}?', { search: ':params' })],
+  patterns: [
+    _pattern('swarm:', 'linkdevice', '{/}?', { search: ':params' }),
+    _pattern('sgnl:', 'linkdevice', '{/}?', { search: ':params' }),
+  ],
   schema: z.object({
     uuid: paramSchema, // base64url?
     pubKey: paramSchema, // percent-encoded base64 (with padding) of PublicKey with type byte included
@@ -362,7 +408,7 @@ export const linkDeviceRoute = _route('linkDevice', {
       pub_key: args.pubKey,
       capabilities: args.capabilities.join(','),
     });
-    return new URL(`sgnl://linkdevice?${params.toString()}`);
+    return new URL(`swarm://linkdevice?${params.toString()}`);
   },
 });
 
@@ -445,11 +491,20 @@ export const linkCallRoute = _route('linkCall', {
  *   packId: "123",
  *   packKey: "abc",
  * })
- * // URL { "https://signal.art/addstickers#pack_id=123&pack_key=abc" }
+ * // URL { "https://swarm.green/stickers/#pack_id=123&pack_key=abc" }
  * ```
+ *
+ * SWARM change (B3, 2026-09-29): sticker pack links are made on swarm.green
+ * (https://swarm.green/stickers/#..., app form
+ * swarm://swarm.green/stickers/#...). The signal.art and sgnl://addstickers
+ * forms are still accepted, never made. The pack key travels only in the
+ * fragment.
  */
 export const artAddStickersRoute = _route('artAddStickers', {
   patterns: [
+    _pattern('https:', 'swarm.green', '/stickers{/}?', { hash: ':params' }),
+    _pattern('swarm:', 'swarm.green', '/stickers{/}?', { hash: ':params' }),
+    // Signal's forms, made before B3: accepted, no longer made.
     _pattern('https:', 'signal.art', '/addstickers{/}?', { hash: ':params' }),
     _pattern('sgnl:', 'addstickers', '{/}?', { search: ':params' }),
   ],
@@ -471,14 +526,14 @@ export const artAddStickersRoute = _route('artAddStickers', {
       pack_id: args.packId,
       pack_key: args.packKey,
     });
-    return new URL(`https://signal.art/addstickers#${params.toString()}`);
+    return new URL(`https://swarm.green/stickers/#${params.toString()}`);
   },
   toAppUrl(args) {
     const params = new URLSearchParams({
       pack_id: args.packId,
       pack_key: args.packKey,
     });
-    return new URL(`sgnl://addstickers?${params.toString()}`);
+    return new URL(`swarm://swarm.green/stickers/#${params.toString()}`);
   },
 });
 
@@ -489,11 +544,17 @@ export const artAddStickersRoute = _route('artAddStickers', {
  * showConversationRoute.toAppUrl({
  *   token: 'abc',
  * })
- * // URL { "sgnl://show-conversation?token=abc" }
+ * // URL { "swarm://show-conversation?token=abc" }
  * ```
+ *
+ * SWARM change (B3, 2026-09-29): a Windows notification opens the app with
+ * this link. Since B2c the app registers the swarm: scheme only, so a sgnl:
+ * link would open nothing (or, where Signal Desktop is installed, Signal).
+ * The app makes the swarm: form and still reads the sgnl: one.
  */
 export const showConversationRoute = _route('showConversation', {
   patterns: [
+    _pattern('swarm:', 'show-conversation', '{/}?', { search: ':params' }),
     _pattern('sgnl:', 'show-conversation', '{/}?', { search: ':params' }),
   ],
   schema: z.object({
@@ -507,7 +568,7 @@ export const showConversationRoute = _route('showConversation', {
   },
   toAppUrl(args) {
     const params = new URLSearchParams({ token: args.token });
-    return new URL(`sgnl://show-conversation?${params.toString()}`);
+    return new URL(`swarm://show-conversation?${params.toString()}`);
   },
 });
 
@@ -518,11 +579,17 @@ export const showConversationRoute = _route('showConversation', {
  * startCallLobbyRoute.toAppUrl({
  *   token: "123",
  * })
- * // URL { "sgnl://start-call-lobby?token=123" }
+ * // URL { "swarm://start-call-lobby?token=123" }
  * ```
+ *
+ * SWARM change (B3, 2026-09-29): a Windows notification opens the app with
+ * this link. Since B2c the app registers the swarm: scheme only, so a sgnl:
+ * link would open nothing (or, where Signal Desktop is installed, Signal).
+ * The app makes the swarm: form and still reads the sgnl: one.
  */
 export const startCallLobbyRoute = _route('startCallLobby', {
   patterns: [
+    _pattern('swarm:', 'start-call-lobby', '{/}?', { search: ':params' }),
     _pattern('sgnl:', 'start-call-lobby', '{/}?', { search: ':params' }),
   ],
   schema: z.object({
@@ -536,7 +603,7 @@ export const startCallLobbyRoute = _route('startCallLobby', {
   },
   toAppUrl(args) {
     const params = new URLSearchParams({ token: args.token });
-    return new URL(`sgnl://start-call-lobby?${params.toString()}`);
+    return new URL(`swarm://start-call-lobby?${params.toString()}`);
   },
 });
 
@@ -545,16 +612,24 @@ export const startCallLobbyRoute = _route('startCallLobby', {
  * @example
  * ```ts
  * showWindowRoute.toAppUrl({})
- * // URL { "sgnl://show-window" }
+ * // URL { "swarm://show-window" }
+ *
+ * SWARM change (B3, 2026-09-29): a Windows notification opens the app with
+ * this link. Since B2c the app registers the swarm: scheme only, so a sgnl:
+ * link would open nothing (or, where Signal Desktop is installed, Signal).
+ * The app makes the swarm: form and still reads the sgnl: one.
  */
 export const showWindowRoute = _route('showWindow', {
-  patterns: [_pattern('sgnl:', 'show-window', '{/}?', {})],
+  patterns: [
+    _pattern('swarm:', 'show-window', '{/}?', {}),
+    _pattern('sgnl:', 'show-window', '{/}?', {}),
+  ],
   schema: z.object({}),
   parse() {
     return {};
   },
   toAppUrl() {
-    return new URL('sgnl://show-window');
+    return new URL('swarm://show-window');
   },
 });
 
@@ -563,17 +638,25 @@ export const showWindowRoute = _route('showWindow', {
  * @example
  * ```ts
  * cancelPresentingRoute.toAppUrl({})
- * // URL { "sgnl://cancel-presenting" }
+ * // URL { "swarm://cancel-presenting" }
  * ```
+ *
+ * SWARM change (B3, 2026-09-29): a Windows notification opens the app with
+ * this link. Since B2c the app registers the swarm: scheme only, so a sgnl:
+ * link would open nothing (or, where Signal Desktop is installed, Signal).
+ * The app makes the swarm: form and still reads the sgnl: one.
  */
 export const cancelPresentingRoute = _route('cancelPresenting', {
-  patterns: [_pattern('sgnl:', 'cancel-presenting', '{/}?', {})],
+  patterns: [
+    _pattern('swarm:', 'cancel-presenting', '{/}?', {}),
+    _pattern('sgnl:', 'cancel-presenting', '{/}?', {}),
+  ],
   schema: z.object({}),
   parse() {
     return {};
   },
   toAppUrl() {
-    return new URL('sgnl://cancel-presenting');
+    return new URL('swarm://cancel-presenting');
   },
 });
 
@@ -722,7 +805,7 @@ strictAssert(
  * A parsed route with the `key` of the route and its parsed `args`.
  * @example
  * ```ts
- * parseSignalRoute(new URL("https://signal.me/#p/+1234567890"))
+ * parseSignalRoute(new URL("https://swarm.green/u/#p/+1234567890"))
  * // {
  * //   key: "contactByPhoneNumber",
  * //   args: { phoneNumber: "+1234567890" },
@@ -774,9 +857,9 @@ function _normalizeUrl(url: URL | string): URL | null {
  * Check if a URL matches a route.
  * @example
  * ```ts
- * isSignalRoute(new URL("https://signal.me/#p/+1234567890")) // true
- * isSignalRoute(new URL("sgnl://signal.me/#p/+1234567890")) // true
- * isSignalRoute(new URL("https://signal.me")) // false
+ * isSignalRoute(new URL("https://swarm.green/u/#p/+1234567890")) // true
+ * isSignalRoute(new URL("sgnl://signal.me/#p/+1234567890")) // true (old form)
+ * isSignalRoute(new URL("https://swarm.green/u/")) // false
  * isSignalRoute(new URL("https://example.com")) // false
  * ```
  */
@@ -790,7 +873,7 @@ export function isSignalRoute(input: URL | string): boolean {
  * If it we can't match it to a route, return null.
  * @example
  * ```ts
- * parseSignalRoute(new URL("https://signal.me/#p/+1234567890"))
+ * parseSignalRoute(new URL("https://swarm.green/u/#p/+1234567890"))
  * // { key: "contactByPhoneNumber", args: { phoneNumber: "+1234567890" } }
  * parseSignalRoute(new URL("sgnl://signal.me/#p/+1234567890"))
  * // { key: "contactByPhoneNumber", args: { phoneNumber: "+1234567890" } }
@@ -809,8 +892,8 @@ export function parseSignalRoute(
  * If it we can't match it to a route, return null.
  * @example
  * ```ts
- * toSignalRouteUrl(new URL("http://username:password@signal.me/#p/+1234567890"))
- * // URL { "https://signal.me/#p/+1234567890" }
+ * toSignalRouteUrl(new URL("http://username:password@swarm.green/u/#p/+1234567890"))
+ * // URL { "https://swarm.green/u/#p/+1234567890" }
  * toSignalRouteUrl(new URL("sgnl://signal.me/#p/+1234567890"))
  * // URL { "sgnl://signal.me/#p/+1234567890" }
  * toSignalRouteUrl(new URL("https://example.com"))
@@ -832,7 +915,7 @@ export function toSignalRouteUrl(input: URL | string): URL | null {
  * @example
  * ```ts
  * toSignalRouteAppUrl(new URL("https://signal.me/#p/+1234567890"))
- * // URL { "sgnl://signal.me/#p/+1234567890" }
+ * // URL { "swarm://swarm.green/u/#p/+1234567890" }
  * toSignalRouteAppUrl(new URL("https://example.com"))
  * // null
  * ```
@@ -857,7 +940,7 @@ export function toSignalRouteAppUrl(input: URL | string): URL | null {
  * @example
  * ```ts
  * toSignalRouteWebUrl(new URL("sgnl://signal.me/#p/+1234567890"))
- * // URL { "https://signal.me/#p/+1234567890" }
+ * // URL { "https://swarm.green/u/#p/+1234567890" }
  * toSignalRouteWebUrl(new URL("https://example.com"))
  * // null
  * ```

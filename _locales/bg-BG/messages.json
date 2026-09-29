@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Включване въпреки това"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Когато кликнете „Изпрати“, вашият регистър ще бъде публикуван онлайн за 30 дни на уникален, непубликуван URL адрес. Може преди това да го запазите локално."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Тези записки ще бъдат публикувани онлайн за разглеждане от доброволци. Можете да ги изтеглите, преди да ги изпратите."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Нещо се обърка при качването! Моля, изпратете имейл на support@swarm.green и прикачете регистъра си като текстов файл."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Регистърът за дебъгинг е изпратен"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Регистърът за дебъгинг е качен. Когато се свържете с отдела за поддръжка, копирайте URL адреса по-долу и го прикачете заедно с описание на проблема и стъпките за неговото възпроизвеждане."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "…за да видите пълния регистър, кликнете върху „Запази“"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Копирай връзка"
-  },
   "icu:debugLogSave": {
     "messageformat": "Запази"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Линкът е копиран"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Връзка с отдела за поддръжка"
   },
   "icu:submit": {
     "messageformat": "Изпрати"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Датата на устройството ви е неточна. Настройте часовника си и опитайте отново. Датата и часът на устройството ви са:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Отчет за грешки"
   },
   "icu:debugLog": {
     "messageformat": "Доклад (debug log)"

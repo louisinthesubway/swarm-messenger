@@ -12,19 +12,21 @@ import { sleep } from '../util/sleep.std.ts';
 
 const { i18n } = window.SignalContext;
 
-const createProps = (): PropsType => ({
+// SWARM change (B5, 2026-09-29): the window saves or copies the log; there is
+// no upload and no success screen with a link.
+const createProps = (overrides: Partial<PropsType> = {}): PropsType => ({
   closeWindow: action('closeWindow'),
-  downloadLog: action('downloadLog'),
+  saveLog: async (logs: string) => {
+    action('saveLog')(logs);
+    await sleep(1000);
+    return 'saved';
+  },
   i18n,
   fetchLogs: () => {
     action('fetchLogs')();
     return Promise.resolve('Sample logs');
   },
-  uploadLogs: async (logs: string) => {
-    action('uploadLogs')(logs);
-    await sleep(5000);
-    return 'https://picsum.photos/1800/900';
-  },
+  ...overrides,
 });
 
 export default {
@@ -33,4 +35,40 @@ export default {
 
 export function Basic(): JSX.Element {
   return <DebugLogWindow {...createProps()} />;
+}
+
+export function Loading(): JSX.Element {
+  return (
+    <DebugLogWindow
+      {...createProps({
+        fetchLogs: () => new Promise<string>(() => undefined),
+      })}
+    />
+  );
+}
+
+export function SaveCanceled(): JSX.Element {
+  return (
+    <DebugLogWindow
+      {...createProps({
+        saveLog: async logs => {
+          action('saveLog')(logs);
+          return 'canceled';
+        },
+      })}
+    />
+  );
+}
+
+export function SaveFailed(): JSX.Element {
+  return (
+    <DebugLogWindow
+      {...createProps({
+        saveLog: async logs => {
+          action('saveLog')(logs);
+          throw new Error('Disk full');
+        },
+      })}
+    />
+  );
 }

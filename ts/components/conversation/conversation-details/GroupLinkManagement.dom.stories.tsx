@@ -60,7 +60,7 @@ export function OffAdmin(): JSX.Element {
 
 export function OnAdmin(): JSX.Element {
   const props = createProps(
-    getConversation('https://signal.group/1', AccessControlEnum.ANY),
+    getConversation('https://swarm.green/g/#1', AccessControlEnum.ANY),
     true
   );
 
@@ -69,7 +69,10 @@ export function OnAdmin(): JSX.Element {
 
 export function OnAdminAdminApprovalNeeded(): JSX.Element {
   const props = createProps(
-    getConversation('https://signal.group/1', AccessControlEnum.ADMINISTRATOR),
+    getConversation(
+      'https://swarm.green/g/#1',
+      AccessControlEnum.ADMINISTRATOR
+    ),
     true
   );
 
@@ -78,7 +81,7 @@ export function OnAdminAdminApprovalNeeded(): JSX.Element {
 
 export function OnNonAdmin(): JSX.Element {
   const props = createProps(
-    getConversation('https://signal.group/1', AccessControlEnum.ANY)
+    getConversation('https://swarm.green/g/#1', AccessControlEnum.ANY)
   );
 
   return <GroupLinkManagement {...props} />;

@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Mimo to dołącz"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Gdy klikniesz „Prześlij”, dziennik zostanie opublikowany online na 30 dni pod unikalnym, niepublicznym adresem URL. Możesz też najpierw zapisać dziennik na swoim urządzeniu."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Dziennik zostanie udostępniony publicznie, aby twórcy aplikacji mogli go sprawdzić. Przed przesłaniem możesz go pobrać."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Podczas przesyłania coś poszło nie tak. Wyślij e-mail na adres support@swarm.green i załącz dziennik jako plik tekstowy."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Dziennik debugowania przesłany"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Dziennik debugowania został przesłany. Gdy będziesz się kontaktować z pomocą techniczną, wklej poniższy link do swojej wiadomości oraz opisz w niej błąd i kroki, które pozwolą ten błąd odtworzyć."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "…aby wyświetlić cały dziennik, kliknij „Zapisz”"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Skopiuj link"
-  },
   "icu:debugLogSave": {
     "messageformat": "Zapisz"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Link skopiowany do schowka"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Skontaktuj się z pomocą techniczną"
   },
   "icu:submit": {
     "messageformat": "Prześlij"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Data na urządzeniu jest niepoprawna. Ustaw poprawną datę oraz godzinę i spróbuj ponownie. Data i godzina na Twoim urządzeniu:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Dziennik debugowania"
   },
   "icu:debugLog": {
     "messageformat": "Dziennik debugowania"

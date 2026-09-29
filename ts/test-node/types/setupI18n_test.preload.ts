@@ -15,7 +15,8 @@ describe('setupI18n', () => {
 
   describe('i18n', () => {
     it('returns message for given string', () => {
-      assert.strictEqual(i18n('icu:reportIssue'), 'Contact Support');
+      // SWARM change (B5, 2026-09-29): icu:reportIssue went with the upload.
+      assert.strictEqual(i18n('icu:close'), 'Close');
     });
     it('returns message with single substitution', () => {
       const actual = i18n('icu:ContactListItem__remove-system--title', {

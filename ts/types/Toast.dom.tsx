@@ -35,7 +35,11 @@ export enum ToastType {
   CopiedUsernameLink = 'CopiedUsernameLink',
   DangerousFileType = 'DangerousFileType',
   DecryptionError = 'DecryptionError',
+  // SWARM change (B5, 2026-09-29): DebugLogCopied (the log text, not a
+  // link) and DebugLogSaved replace upstream's LinkCopied for an uploaded log.
+  DebugLogCopied = 'DebugLogCopied',
   DebugLogError = 'DebugLogError',
+  DebugLogSaved = 'DebugLogSaved',
   DeleteForEveryoneFailed = 'DeleteForEveryoneFailed',
   DonationCanceled = 'DonationCanceled',
   DonationCanceledWithView = 'DonationCanceledWithView',
@@ -60,7 +64,6 @@ export enum ToastType {
   InvalidConversation = 'InvalidConversation',
   InvalidStorageServiceHeaders = 'InvalidStorageServiceHeaders',
   LeftGroup = 'LeftGroup',
-  LinkCopied = 'LinkCopied',
   LoadingFullLogs = 'LoadingFullLogs',
   _InternalMainProcessLoggingError = '_InternalMainProcessLoggingError',
   _InternalHeapSizeWarning = '_InternalHeapSizeWarning',
@@ -164,7 +167,9 @@ export type AnyToast =
   | { toastType: ToastType.CopiedUsername }
   | { toastType: ToastType.CopiedUsernameLink }
   | { toastType: ToastType.DangerousFileType }
+  | { toastType: ToastType.DebugLogCopied }
   | { toastType: ToastType.DebugLogError }
+  | { toastType: ToastType.DebugLogSaved }
   | { toastType: ToastType.DeleteForEveryoneFailed }
   | { toastType: ToastType.DonationCanceled }
   | { toastType: ToastType.DonationCanceledWithView }
@@ -202,7 +207,6 @@ export type AnyToast =
   | { toastType: ToastType.InvalidConversation }
   | { toastType: ToastType.InvalidStorageServiceHeaders }
   | { toastType: ToastType.LeftGroup }
-  | { toastType: ToastType.LinkCopied }
   | { toastType: ToastType.LoadingFullLogs }
   | {
       toastType: ToastType._InternalMainProcessLoggingError;

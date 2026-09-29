@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Свеједно се придружите"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Када кликнете на „Пошаљи“, ваш извештај ће бити постављен онлајн 30 дана на јединственој, необјављеној URL адреси. Можете га прво сачувати локално."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Овај извештај ће бити јавно објављен и видљив сарадницима. Можете га преузети пре отпремања."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Дошло је до грешке приликом отпремања. Пошаљите поруку на support@swarm.green и приложите извештај као текстуални фајл."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Извештај о грешкама је послат"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Извештај о грешкама је отпремљен. Када се будете обратили подршци, копирајте URL у наставку и приложите га уз опис проблема на који сте наишли и корацима за његово репродуковање."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… да бисте видели цео извештај, кликните на „Сачувај“"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Копирај линк"
-  },
   "icu:debugLogSave": {
     "messageformat": "Сачувај"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Линк је копиран"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Обратите се подршци"
   },
   "icu:submit": {
     "messageformat": "Пошаљи"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Датум на уређају није исправан. Подесите сат и пробајте поново. Датум и време на вашем уређају су:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Извештај о грешкама"
   },
   "icu:debugLog": {
     "messageformat": "Извештај о грешкама"

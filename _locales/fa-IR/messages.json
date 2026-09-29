@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "به هر حال می‌پیوندم"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "وقتی روی ارسال کلیک می‌کنید، گزارش شما به مدت 30 روز به صورت آنلاین در یک URL منحصربه‌فرد و منتشرنشده پست می‌شود. می‌توانید ابتدا آن را در دستگاه خود ذخیره کنید."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "این گزارش به‌صورت آنلاین برای عموم منتشر خواهد شد تا مشارکت‌کنندگان مشاهده کنند. می‌توانید قبل از ارسال، آن را دانلود کنید."
-  },
-  "icu:debugLogError": {
-    "messageformat": "مشکلی در بارگذاری رخ داد. لطفا گزارش خود را به صورت یک فایل متنی به support@swarm.green ایمیل کنید."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "گزارش رفع عیب ثبت شد"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "گزارش عیب‌یابی بارگذاری شد. هنگام تماس با پشتیبانی، URL زیر را کپی کنید و آن را به همراه شرح مشکلی که مشاهده کردید و مراحلی که منجر به تکرار آن می‌شود پیوست کنید."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "... برای مشاهده گزارش کامل، روی ذخیره کردن کلیک کنید"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "کپی لینک"
-  },
   "icu:debugLogSave": {
     "messageformat": "ذخیره"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "لینک روی کلیپ بورد کپی شد"
-  },
-  "icu:reportIssue": {
-    "messageformat": "تماس با پشتیبانی"
   },
   "icu:submit": {
     "messageformat": "ارسال"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "تاریخ دستگاهتان صحیح نیست. ساعت‌تان را تنظیم کنید و دوباره امتحان کنید. تاریخ و ساعت دستگاه شما:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "گزارش خطاء"
   },
   "icu:debugLog": {
     "messageformat": "گزارش خطا"

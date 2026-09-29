@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Csatlakozás mindenképp"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "A Küldés gombra nyomva a hibanaplód egy egyedi, nem publikus online tárhelyre kerül feltöltésre, ahonnan 30 nap után törlődik. Ha gondolod, mentsd el előbb a készülékedre is."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Ez a napló nyilvánosan elérhető lesz online, hogy a közreműködők megtekinthessék. Beküldés előtt letöltheted."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Hiba történt a feltöltés során. Küldd el a naplófájlt szöveges csatolmányként a support@swarm.green címre!"
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Naplófájl feltöltve"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Hibanapló feltöltve. Mikor felveszed a kapcsolatot a támogatással, másold be a lenti URL-t egy leírás kíséretében, amiben a problémát és annak reprodukálható lépéseit írod le."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… a teljes napló megtekintéséhez kattints a Mentés gombra"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Hivatkozás másolása"
-  },
   "icu:debugLogSave": {
     "messageformat": "Mentés"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Hivatkozás vágólapra másolva"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Kapcsolatfelvétel a támogatással"
   },
   "icu:submit": {
     "messageformat": "Küldés"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Az eszközöd által jelzett dátum pontatlan. Állítsd be a pontos időt és próbáld újra! Az eszköz dátuma és ideje:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Fejlesztői naplófájl"
   },
   "icu:debugLog": {
     "messageformat": "Fejlesztői napló"

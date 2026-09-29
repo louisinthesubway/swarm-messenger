@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Partecipa lo stesso"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Quando clicchi su Invia, il tuo log sarà pubblicato online per 30 giorni a un URL unico e non pubblicato. Puoi prima salvarlo localmente."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Questo log verrà pubblicato online affinché i contributori possano consultarlo. Puoi scaricarlo prima di inviarlo."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Qualcosa è andato storto con il caricamento! Invia un'email a support@swarm.green e allega il tuo log come file di testo."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Log di debug inviato"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Log di debug caricato. Quando contatti il supporto, copia l'URL qui sotto e allegalo insieme a una descrizione del problema che hai visto e i passi per riprodurlo."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… per vedere il log completo, clicca su Salva"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Copia link"
-  },
   "icu:debugLogSave": {
     "messageformat": "Salva"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Link copiato nei tuoi appunti"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Contatta l'assistenza"
   },
   "icu:submit": {
     "messageformat": "Invia"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "La data impostata sul tuo dispositivo è sbagliata. Correggila e riprova. Ora e data del tuo dispositivo:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Debug log"
   },
   "icu:debugLog": {
     "messageformat": "Log di debug"

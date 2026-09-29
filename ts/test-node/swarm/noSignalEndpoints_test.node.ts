@@ -9,6 +9,16 @@
 // signal.group / signal.link / signal.art) which is shared with the other SWARM
 // clients and is renamed in a later milestone, not here. The AGPL-3.0
 // attribution is in the Licences document (B2c), checked below.
+//
+// SWARM change (B3, 2026-09-29): that vocabulary is now only read. No source
+// the app is built from may make a link on signal.me, signal.group, signal.art
+// or signal.link, or a sgnl: link the app now makes as swarm:, and
+// ts/util/signalRoutes.std.ts may name those hosts only in the route patterns
+// listed below, which read links shared before.
+//
+// Since B5 (2026-09-29) it also rejects the debug-log upload host and the old
+// service name, and scans the rest of what the app loads: stylesheets, the
+// sticker creator, the window pages, the protobuf definitions, Storybook.
 
 import { assert } from 'chai';
 import { readFileSync, readdirSync, statSync } from 'node:fs';
@@ -22,8 +32,36 @@ import {
 
 const ROOT = join(import.meta.dirname, '..', '..', '..');
 
-// The three names the brief calls out.
-const FORBIDDEN = [/signal\.org/i, /signalcaptchas\.org/i, /whispersystems/i];
+// The three names the brief calls out, and since B5 (2026-09-29) Signal's
+// debug-log upload host and the server's old service name. `signal.org` covers
+// every subdomain: updates2, sfu.voip, cdn*, storage, chat, support.
+const FORBIDDEN = [
+  /signal\.org/i,
+  /signalcaptchas\.org/i,
+  /whispersystems/i,
+  // SWARM change (B5, 2026-09-29).
+  /debuglogs\.org/i,
+  /textsecure-service/i,
+];
+
+// SWARM change (B5, 2026-09-29): the Signal-owned hosts a client reaches.
+// Checked below against FORBIDDEN so a narrowed pattern cannot let one back in.
+const SIGNAL_HOSTS = [
+  'signal.org',
+  'signalcaptchas.org',
+  'whispersystems.org',
+  'updates.signal.org',
+  'updates2.signal.org',
+  'debuglogs.org',
+  'sfu.voip.signal.org',
+  'cdn.signal.org',
+  'cdn2.signal.org',
+  'cdn3.signal.org',
+  'storage.signal.org',
+  'chat.signal.org',
+  'support.signal.org',
+  'textsecure-service.whispersystems.org',
+];
 
 // Files allowed to mention them, each for a stated reason.
 const ALLOWED_FILES = new Set(
@@ -39,6 +77,14 @@ const ALLOWED_FILES = new Set(
   ].map(p => p.split('/').join(sep))
 );
 
+// SWARM change (B5, 2026-09-29): lines that name a Signal domain without being
+// an address anything is fetched from, each for a stated reason.
+const ALLOWED_LINES: ReadonlyArray<RegExp> = [
+  // protos/: the Java package the generated server code lives in, kept as in
+  // the server's .proto files. A package name, not a host.
+  /^option java_package = "org\.whispersystems\./,
+];
+
 function isLicenceOrAttributionLine(line: string): boolean {
   // "// Copyright 2017 Signal Messenger, LLC" and friends, in every comment
   // syntax the tree uses.
@@ -51,7 +97,7 @@ function isLicenceOrAttributionLine(line: string): boolean {
   if (/^\s*(\/\/|\*|#)/.test(line) && line.includes('github.com/signalapp/')) {
     return true;
   }
-  return false;
+  return ALLOWED_LINES.some(pattern => pattern.test(line.trim()));
 }
 
 function* walk(dir: string): Generator<string> {
@@ -68,9 +114,18 @@ function* walk(dir: string): Generator<string> {
   }
 }
 
-function findOffences(dir: string, extensions: ReadonlyArray<string>) {
+function findOffences(
+  dir: string,
+  extensions: ReadonlyArray<string>,
+  { recursive = true }: { recursive?: boolean } = {}
+) {
   const offences: Array<string> = [];
-  for (const file of walk(join(ROOT, dir))) {
+  const files = recursive
+    ? walk(join(ROOT, dir))
+    : readdirSync(join(ROOT, dir))
+        .map(entry => join(ROOT, dir, entry))
+        .filter(full => statSync(full).isFile());
+  for (const file of files) {
     if (!extensions.some(ext => file.endsWith(ext))) {
       continue;
     }
@@ -84,6 +139,45 @@ function findOffences(dir: string, extensions: ReadonlyArray<string>) {
         return;
       }
       if (FORBIDDEN.some(pattern => pattern.test(line))) {
+        offences.push(`${rel}:${index + 1}: ${line.trim()}`);
+      }
+    });
+  }
+  return offences;
+}
+
+// A link on one of Signal's link hosts, written out (https://signal.me/...).
+const SIGNAL_LINK_URL =
+  /\b(?:https?:\/\/|sgnl:\/\/)(?:www\.)?signal\.(?:me|group|art|link)\b/i;
+// The sgnl: app links the app now makes as swarm: (B3, MSG-P3).
+const MOVED_SGNL_LINK =
+  /sgnl:\/\/(?:addstickers|joingroup|linkdevice|show-conversation|start-call-lobby|show-window|cancel-presenting)\b/i;
+
+function isCommentLine(line: string): boolean {
+  return /^\s*(\/\/|\*|\/\*)/.test(line);
+}
+
+function findMadeSignalLinks(dir: string): Array<string> {
+  const offences: Array<string> = [];
+  for (const file of walk(join(ROOT, dir))) {
+    if (!/\.(ts|tsx|js|mjs)$/.test(file)) {
+      continue;
+    }
+    const rel = relative(ROOT, file);
+    const parts = rel.split(sep);
+    // Tests feed old links in on purpose, to prove they still open.
+    if (
+      parts.some(part => part.startsWith('test-')) ||
+      /_test\.[a-z.]+$/.test(rel)
+    ) {
+      continue;
+    }
+    const lines = readFileSync(file, 'utf8').split('\n');
+    lines.forEach((line, index) => {
+      if (isCommentLine(line)) {
+        return;
+      }
+      if (SIGNAL_LINK_URL.test(line) || MOVED_SGNL_LINK.test(line)) {
         offences.push(`${rel}:${index + 1}: ${line.trim()}`);
       }
     });
@@ -168,6 +262,32 @@ describe('SWARM: no Signal endpoints', () => {
     );
   });
 
+  it('covers every Signal host a client reaches', () => {
+    // SWARM change (B5, 2026-09-29).
+    const uncovered = SIGNAL_HOSTS.filter(
+      host => !FORBIDDEN.some(pattern => pattern.test(`https://${host}/`))
+    );
+    assert.deepStrictEqual(uncovered, [], 'hosts the scan would not catch');
+  });
+
+  it('the rest of the shipped source never mentions a Signal domain', () => {
+    // SWARM change (B5, 2026-09-29): what the app loads besides app/ and ts/ -
+    // the stylesheets, the sticker creator, the window pages, the protobuf
+    // definitions - and the Storybook preview, which fetches at run time too.
+    const offences = [
+      ...findOffences('stylesheets', ['.scss']),
+      ...findOffences('sticker-creator', ['.ts', '.tsx', '.html']),
+      ...findOffences('.storybook', ['.ts', '.tsx']),
+      ...findOffences('protos', ['.proto']),
+      ...findOffences('.', ['.html'], { recursive: false }),
+    ];
+    assert.deepStrictEqual(
+      offences,
+      [],
+      `shipped source must not reference Signal:\n${offences.join('\n')}`
+    );
+  });
+
   it('build/optional-resources.json downloads nothing from Signal', () => {
     // The emoji search index, the large emoji font and the jumbomoji sheets are
     // fetched from these URLs at run time - the search index on every start.
@@ -207,5 +327,73 @@ describe('SWARM: no Signal endpoints', () => {
       [],
       `translated strings must not name Signal's domains:\n${offences.join('\n')}`
     );
+  });
+
+  it('no source makes a link on a Signal link host (B3)', () => {
+    const offences = [
+      ...findMadeSignalLinks('ts'),
+      ...findMadeSignalLinks('app'),
+      // The sticker pack creator window, packaged from sticker-creator/dist.
+      ...findMadeSignalLinks(join('sticker-creator', 'src')),
+    ];
+    assert.deepStrictEqual(
+      offences,
+      [],
+      `links must be made on swarm.green or as swarm:, not on Signal:\n${offences.join('\n')}`
+    );
+  });
+
+  it('signalRoutes names Signal link hosts only to read old links (B3)', () => {
+    const source = readFileSync(
+      join(ROOT, 'ts', 'util', 'signalRoutes.std.ts'),
+      'utf8'
+    );
+    const code = source
+      .split('\n')
+      .filter(line => !isCommentLine(line))
+      .join('\n');
+    const patterns = [
+      ...code.matchAll(
+        /_pattern\(\s*'([a-z]+:)',\s*'(signal\.(?:me|group|art|link))',\s*'([^']*)'/g
+      ),
+    ].map(([, protocol, host, path]) => `${protocol}//${host}${path}`);
+    assert.deepStrictEqual(patterns, [
+      'https://signal.me{/}?',
+      'sgnl://signal.me{/}?',
+      'https://signal.me{/}?',
+      'sgnl://signal.me{/}?',
+      'https://signal.group{/}?',
+      'sgnl://signal.group{/}?',
+      'https://signal.link/call{/}?',
+      'sgnl://signal.link/call{/}?',
+      'https://signal.art/addstickers{/}?',
+    ]);
+    // Anywhere else in the code a Signal link host may only appear in the
+    // list of hostnames the router knows.
+    const otherLines = code
+      .split('\n')
+      .filter(line => /signal\.(?:me|group|art|link)\b/.test(line))
+      .filter(line => !/^\s*_pattern\(/.test(line))
+      .map(line => line.trim());
+    assert.deepStrictEqual(otherLines, [
+      "'signal.me',",
+      "'signal.group',",
+      "'signal.link',",
+      "'signal.art',",
+    ]);
+  });
+
+  it('no English string shows a Signal link host or scheme (B3)', () => {
+    const messages: Record<string, { messageformat?: string }> = JSON.parse(
+      readFileSync(join(ROOT, '_locales', 'en', 'messages.json'), 'utf8')
+    );
+    const offences = Object.entries(messages)
+      .filter(
+        ([, { messageformat }]) =>
+          typeof messageformat === 'string' &&
+          /signal\.(?:me|group|art|link)\b|sgnl:/i.test(messageformat)
+      )
+      .map(([key, { messageformat }]) => `${key}: ${messageformat}`);
+    assert.deepStrictEqual(offences, []);
   });
 });

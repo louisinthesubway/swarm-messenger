@@ -358,8 +358,24 @@ function renderToast({
     return <Toast onClose={hideToast}>{i18n('icu:dangerousFileType')}</Toast>;
   }
 
+  // SWARM change (B5, 2026-09-29): the debug log is saved or copied, never
+  // uploaded.
+  if (toastType === ToastType.DebugLogCopied) {
+    return (
+      <Toast onClose={hideToast}>{i18n('icu:SwarmDebugLog__copied')}</Toast>
+    );
+  }
+
   if (toastType === ToastType.DebugLogError) {
-    return <Toast onClose={hideToast}>{i18n('icu:debugLogError')}</Toast>;
+    return (
+      <Toast onClose={hideToast}>{i18n('icu:SwarmDebugLog__error')}</Toast>
+    );
+  }
+
+  if (toastType === ToastType.DebugLogSaved) {
+    return (
+      <Toast onClose={hideToast}>{i18n('icu:SwarmDebugLog__saved')}</Toast>
+    );
   }
 
   if (toastType === ToastType.DeleteForEveryoneFailed) {
@@ -652,10 +668,6 @@ function renderToast({
 
   if (toastType === ToastType.LeftGroup) {
     return <Toast onClose={hideToast}>{i18n('icu:youLeftTheGroup')}</Toast>;
-  }
-
-  if (toastType === ToastType.LinkCopied) {
-    return <Toast onClose={hideToast}>{i18n('icu:debugLogLinkCopied')}</Toast>;
   }
 
   if (toastType === ToastType.LoadingFullLogs) {

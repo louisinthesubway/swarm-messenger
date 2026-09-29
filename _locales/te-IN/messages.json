@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "ఏదేమైనా చేరండి"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "మీరు సబ్మిట్ మీద క్లిక్ చేసినప్పుడు, మీ లాగ్ ప్రత్యేకమైన, పబ్లిష్ చేయని  URL వద్ద 30 రోజులపాటు ఆన్‌లైన్‌లో పోస్ట్ చేయబడుతుంది. మీరు ముందుగా దానిని స్థానికంగా సేవ్ చేయవచ్చు."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "సహాయకులు వీక్షించడానికి ఈ లాగ్ బహిరంగంగా ఆన్‌లైన్‌లో పోస్ట్ చేయబడుతుంది. సమర్పించడానికి ముందు మీరు దానిని డౌన్‌లోడ్ చేసుకోవచ్చు."
-  },
-  "icu:debugLogError": {
-    "messageformat": "అప్‌లోడ్‌తో ఏదో తప్పు జరిగింది! దయచేసి support@swarm.green కు ఇమెయిల్ చేసి, టెక్ట్స్ ఫైల్ వలే మీ లాగ్‌ని జతచేయండి."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "డీబగ్ లాగ్ సబ్మిట్ చేయబడింది"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "డీబగ్ లాగ్ అప్‌డేట్ చేయబడింది. మీరు సపోర్ట్‌ని సంప్రదించినప్పుడు, దిగువ URLని కాపీ చేసి, మీరు చూసిన సమస్య వివరణ మరియు దానిని తిరిగి ఉత్పత్తి చేయడానికి దశలతోపాటుగా జతచేయండి."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "... పూర్తి లాగ్ చూడటానికి, సేవ్ క్లిక్ చేయండి"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "లింక్ను కాపీ చేయండి"
-  },
   "icu:debugLogSave": {
     "messageformat": "భద్రపరుచు"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "లంకె మీ తాత్కాలికంగా భద్రపరుచు ప్రదేశముకు నకలు చేయబడింది"
-  },
-  "icu:reportIssue": {
-    "messageformat": "మద్దతును సంప్రదించండి"
   },
   "icu:submit": {
     "messageformat": "సమర్పించండి"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "మీ పరికరం తేదీ సరిగ్గా లేదు. మీ గడియారాన్ని సరిచేసుకుని, మళ్ళీ ప్రయత్నించండి. మీ పరికరం యొక్క తేదీ మరియు సమయం:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "డీబగ్ సంఘటన లేకరి"
   },
   "icu:debugLog": {
     "messageformat": "డీబగ్ సంఘటన లేకరి"

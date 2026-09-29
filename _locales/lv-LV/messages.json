@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "Tomēr pievienoties"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "Kad noklikšķināsiet uz \"Iesniegt\", jūsu žurnāls tiks publicēts un 30 dienas būs pieejams tiešsaistē ar unikālu, nepublisku URL. Varat to vispirms saglabāt lokāli."
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "Šis žurnāls tiks publiskots tiešsaistē, lai to varētu skatīt līdzautori. Pirms iesniegšanas varat to lejupielādēt."
-  },
-  "icu:debugLogError": {
-    "messageformat": "Radās problēma ar augšupielādi! Lūdzu, nosūtiet e-pastu uz adresi support@swarm.green un pievienojiet savu žurnālu kā teksta failu."
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "Atkļūdošanas žurnāls iesniegts"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "Atkļūdošanas žurnāls augšupielādēts. Sazinoties ar atbalstu, nokopējiet turpmāko URL un pievienojiet to, aprakstot sastapto problēmu un darbības, kas jāveic, lai to atkārtotu."
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "… lai skatītu visu žurnālu, noklikšķiniet uz Saglabāt"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "Kopēt saiti"
-  },
   "icu:debugLogSave": {
     "messageformat": "Saglabāt"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "Saite nokopēta starpliktuvē"
-  },
-  "icu:reportIssue": {
-    "messageformat": "Sazināties ar atbalstu"
   },
   "icu:submit": {
     "messageformat": "Iesniegt"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "Jūsu ierīces datums nav pareizs. Pielāgojiet pulksteņa laiku un mēģiniet vēlreiz. Jūsu ierīces datums un laiks ir:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "Atkļūdošanas žurnāls"
   },
   "icu:debugLog": {
     "messageformat": "Atkļūdošanas žurnāls"

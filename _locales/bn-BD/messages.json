@@ -563,35 +563,11 @@
   "icu:joinAnyway": {
     "messageformat": "তারপরও যোগ দিন"
   },
-  "icu:debugLogExplanation": {
-    "messageformat": "'জমা দিন' ক্লিক করলে, আপনার লগ অনলাইনে 30 দিনের জন্য একটি ইউনিক, অপ্রকাশিত ইউআরএল-এ পোস্ট করা হবে৷ আপনি প্রথমে স্থানীয়ভাবে এটি সেভ করতে পারেন।"
-  },
-  "icu:debugLogExplanation--close": {
-    "messageformat": "অবদান রেখেছেন এমন ব্যক্তিরা যাতে দেখতে পান সেই উদ্দেশ্যে এই লগটি সর্বজনীনভাবে অনলাইনে পোস্ট করা হবে। জমা দেওয়ার আগে আপনি এটি ডাউনলোড করতে পারেন।"
-  },
-  "icu:debugLogError": {
-    "messageformat": "আপলোডে কিছু ভুল হয়েছে! অনুগ্রহ করে support@swarm.green ইমেল করুন এবং একটি পাঠ্য ফাইল হিসাবে আপনার লগ সংযুক্ত করুন৷"
-  },
-  "icu:debugLogSuccess": {
-    "messageformat": "ডিবাগ লগ জমা দেওয়া হয়েছে।"
-  },
-  "icu:debugLogSuccessNextSteps": {
-    "messageformat": "ডিবাগ লগ আপলোড করা হয়েছে৷ আপনি যখন সাপোর্টের সাথে যোগাযোগ করবেন, তখন নীচের ইউআরএল-টি কপি করুন এবং আপনি যে সমস্যাটি দেখেছেন তার বিস্তারিত জানান ও এটি পুনরায় কিভাবে ঘটতে পারে তার ধাপগুলো সংযুক্ত করুন৷"
-  },
   "icu:debugLogLogIsIncomplete": {
     "messageformat": "…সম্পূর্ণ লগ দেখতে, সেভ-এ ক্লিক করুন"
   },
-  "icu:debugLogCopy": {
-    "messageformat": "লিঙ্ক কপি করুন"
-  },
   "icu:debugLogSave": {
     "messageformat": "সংরক্ষণ"
-  },
-  "icu:debugLogLinkCopied": {
-    "messageformat": "আপনার ক্লিপবোর্ডে লিংক কপি করা হয়েছে"
-  },
-  "icu:reportIssue": {
-    "messageformat": "সহায়তায় যোগাযোগ করুন"
   },
   "icu:submit": {
     "messageformat": "সাবমিট"
@@ -805,9 +781,6 @@
   },
   "icu:clockSkewDetected": {
     "messageformat": "আপনার ডিভাইসের তারিখটি সঠিক নয়। আপনার ঘড়ি ঠিক করুন এবং আবার চেষ্টা করুন। আপনার ডিভাইসের তারিখ এবং সময় হলো:"
-  },
-  "icu:submitDebugLog": {
-    "messageformat": "ডিবাগ লগ"
   },
   "icu:debugLog": {
     "messageformat": "ডিবাগ লগ"
