@@ -69,7 +69,9 @@ const selectUrl = createSelector(
   ({ art }: RootState) => art.packKey,
   (artType, id, key) => {
     assert(artType === ArtType.Sticker, 'Unexpected art type');
-    return `https://signal.art/addstickers/#pack_id=${id}&pack_key=${key}`;
+    // SWARM change (B3, 2026-09-29): the share link is on swarm.green, as
+    // artAddStickersRoute.toWebUrl in ts/util/signalRoutes.std.ts makes it.
+    return `https://swarm.green/stickers/#pack_id=${id}&pack_key=${key}`;
   }
 );
 

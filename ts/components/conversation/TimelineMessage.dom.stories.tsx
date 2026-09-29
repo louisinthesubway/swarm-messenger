@@ -1712,9 +1712,9 @@ export const LinkPreviewWithCallLink = Template.bind({});
 LinkPreviewWithCallLink.args = {
   previews: [
     {
-      url: 'https://signal.link/call/#key=hzcn-pcff-ctsc-bdbf-stcr-tzpc-bhqx-kghh',
+      url: 'https://swarm.green/call/#key=hzcn-pcff-ctsc-bdbf-stcr-tzpc-bhqx-kghh',
       title: 'Camping Prep',
-      description: 'Use this link to join a Signal call',
+      description: 'Use this link to join a SWARM Messenger call',
       image: undefined,
       date: undefined,
       isCallLink: true,
@@ -1722,16 +1722,16 @@ LinkPreviewWithCallLink.args = {
     },
   ],
   status: 'sent',
-  text: 'Use this link to join a Signal call: https://signal.link/call/#key=hzcn-pcff-ctsc-bdbf-stcr-tzpc-bhqx-kghh',
+  text: 'Use this link to join a SWARM Messenger call: https://swarm.green/call/#key=hzcn-pcff-ctsc-bdbf-stcr-tzpc-bhqx-kghh',
 };
 
 export const LinkPreviewWithCallLinkInAnotherCall = Template.bind({});
 LinkPreviewWithCallLinkInAnotherCall.args = {
   previews: [
     {
-      url: 'https://signal.link/call/#key=hzcn-pcff-ctsc-bdbf-stcr-tzpc-bhqx-kghh',
+      url: 'https://swarm.green/call/#key=hzcn-pcff-ctsc-bdbf-stcr-tzpc-bhqx-kghh',
       title: 'Camping Prep',
-      description: 'Use this link to join a Signal call',
+      description: 'Use this link to join a SWARM Messenger call',
       image: undefined,
       date: undefined,
       isCallLink: true,
@@ -1740,17 +1740,17 @@ LinkPreviewWithCallLinkInAnotherCall.args = {
   ],
   status: 'sent',
   activeCallConversationId: 'some-other-conversation',
-  text: 'Use this link to join a Signal call: https://signal.link/call/#key=hzcn-pcff-ctsc-bdbf-stcr-tzpc-bhqx-kghh',
+  text: 'Use this link to join a SWARM Messenger call: https://swarm.green/call/#key=hzcn-pcff-ctsc-bdbf-stcr-tzpc-bhqx-kghh',
 };
 
 export const LinkPreviewWithCallLinkInCurrentCall = Template.bind({});
 LinkPreviewWithCallLinkInCurrentCall.args = {
   previews: [
     {
-      url: 'https://signal.link/call/#key=hzcn-pcff-ctsc-bdbf-stcr-tzpc-bhqx-kghh',
-      domain: 'signal.link',
+      url: 'https://swarm.green/call/#key=hzcn-pcff-ctsc-bdbf-stcr-tzpc-bhqx-kghh',
+      domain: 'swarm.green',
       title: 'Camping Prep',
-      description: 'Use this link to join a Signal call',
+      description: 'Use this link to join a SWARM Messenger call',
       image: undefined,
       date: undefined,
       isCallLink: true,
@@ -1761,14 +1761,14 @@ LinkPreviewWithCallLinkInCurrentCall.args = {
   conversationType: 'group',
   status: 'sent',
   activeCallConversationId: 'room-id',
-  text: 'Use this link to join a Signal call: https://signal.link/call/#key=hzcn-pcff-ctsc-bdbf-stcr-tzpc-bhqx-kghh',
+  text: 'Use this link to join a SWARM Messenger call: https://swarm.green/call/#key=hzcn-pcff-ctsc-bdbf-stcr-tzpc-bhqx-kghh',
 };
 
 export const LinkPreviewWithSticker = Template.bind({});
 LinkPreviewWithSticker.args = {
   previews: [
     {
-      domain: 'signal.art',
+      domain: 'swarm.green',
       image: fakeAttachment({
         url: '/fixtures/kitten-4-112-112.jpg',
         fileName: 'kitten-4-112-112.jpg',
@@ -1780,7 +1780,7 @@ LinkPreviewWithSticker.args = {
       isCallLink: false,
       title: 'Cat stickers',
       description: 'Sticker pack by Ann Chovy',
-      url: 'https://stickers.swarm.green/addstickers#pack_id=abc&pack_key=123',
+      url: 'https://swarm.green/stickers/#pack_id=abc&pack_key=123',
     },
   ],
   status: 'sent',

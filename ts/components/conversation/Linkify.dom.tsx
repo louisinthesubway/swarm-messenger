@@ -124,6 +124,10 @@ export const linkify = new LinkifyIt()
     'gp',
     'gq',
     'gr',
+    // SWARM change (B3, 2026-09-29): SWARM's own links are on swarm.green
+    // (/u/, /g/, /stickers/, /call/), so "swarm.green/g/#..." typed without
+    // https:// is a link too.
+    'green',
     'gs',
     'gt',
     'gu',

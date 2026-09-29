@@ -10,6 +10,12 @@
 // clients and is renamed in a later milestone, not here. The AGPL-3.0
 // attribution is in the Licences document (B2c), checked below.
 //
+// SWARM change (B3, 2026-09-29): that vocabulary is now only read. No source
+// the app is built from may make a link on signal.me, signal.group, signal.art
+// or signal.link, or a sgnl: link the app now makes as swarm:, and
+// ts/util/signalRoutes.std.ts may name those hosts only in the route patterns
+// listed below, which read links shared before.
+//
 // Since B5 (2026-09-29) it also rejects the debug-log upload host and the old
 // service name, and scans the rest of what the app loads: stylesheets, the
 // sticker creator, the window pages, the protobuf definitions, Storybook.
@@ -133,6 +139,45 @@ function findOffences(
         return;
       }
       if (FORBIDDEN.some(pattern => pattern.test(line))) {
+        offences.push(`${rel}:${index + 1}: ${line.trim()}`);
+      }
+    });
+  }
+  return offences;
+}
+
+// A link on one of Signal's link hosts, written out (https://signal.me/...).
+const SIGNAL_LINK_URL =
+  /\b(?:https?:\/\/|sgnl:\/\/)(?:www\.)?signal\.(?:me|group|art|link)\b/i;
+// The sgnl: app links the app now makes as swarm: (B3, MSG-P3).
+const MOVED_SGNL_LINK =
+  /sgnl:\/\/(?:addstickers|joingroup|linkdevice|show-conversation|start-call-lobby|show-window|cancel-presenting)\b/i;
+
+function isCommentLine(line: string): boolean {
+  return /^\s*(\/\/|\*|\/\*)/.test(line);
+}
+
+function findMadeSignalLinks(dir: string): Array<string> {
+  const offences: Array<string> = [];
+  for (const file of walk(join(ROOT, dir))) {
+    if (!/\.(ts|tsx|js|mjs)$/.test(file)) {
+      continue;
+    }
+    const rel = relative(ROOT, file);
+    const parts = rel.split(sep);
+    // Tests feed old links in on purpose, to prove they still open.
+    if (
+      parts.some(part => part.startsWith('test-')) ||
+      /_test\.[a-z.]+$/.test(rel)
+    ) {
+      continue;
+    }
+    const lines = readFileSync(file, 'utf8').split('\n');
+    lines.forEach((line, index) => {
+      if (isCommentLine(line)) {
+        return;
+      }
+      if (SIGNAL_LINK_URL.test(line) || MOVED_SGNL_LINK.test(line)) {
         offences.push(`${rel}:${index + 1}: ${line.trim()}`);
       }
     });
@@ -282,5 +327,73 @@ describe('SWARM: no Signal endpoints', () => {
       [],
       `translated strings must not name Signal's domains:\n${offences.join('\n')}`
     );
+  });
+
+  it('no source makes a link on a Signal link host (B3)', () => {
+    const offences = [
+      ...findMadeSignalLinks('ts'),
+      ...findMadeSignalLinks('app'),
+      // The sticker pack creator window, packaged from sticker-creator/dist.
+      ...findMadeSignalLinks(join('sticker-creator', 'src')),
+    ];
+    assert.deepStrictEqual(
+      offences,
+      [],
+      `links must be made on swarm.green or as swarm:, not on Signal:\n${offences.join('\n')}`
+    );
+  });
+
+  it('signalRoutes names Signal link hosts only to read old links (B3)', () => {
+    const source = readFileSync(
+      join(ROOT, 'ts', 'util', 'signalRoutes.std.ts'),
+      'utf8'
+    );
+    const code = source
+      .split('\n')
+      .filter(line => !isCommentLine(line))
+      .join('\n');
+    const patterns = [
+      ...code.matchAll(
+        /_pattern\(\s*'([a-z]+:)',\s*'(signal\.(?:me|group|art|link))',\s*'([^']*)'/g
+      ),
+    ].map(([, protocol, host, path]) => `${protocol}//${host}${path}`);
+    assert.deepStrictEqual(patterns, [
+      'https://signal.me{/}?',
+      'sgnl://signal.me{/}?',
+      'https://signal.me{/}?',
+      'sgnl://signal.me{/}?',
+      'https://signal.group{/}?',
+      'sgnl://signal.group{/}?',
+      'https://signal.link/call{/}?',
+      'sgnl://signal.link/call{/}?',
+      'https://signal.art/addstickers{/}?',
+    ]);
+    // Anywhere else in the code a Signal link host may only appear in the
+    // list of hostnames the router knows.
+    const otherLines = code
+      .split('\n')
+      .filter(line => /signal\.(?:me|group|art|link)\b/.test(line))
+      .filter(line => !/^\s*_pattern\(/.test(line))
+      .map(line => line.trim());
+    assert.deepStrictEqual(otherLines, [
+      "'signal.me',",
+      "'signal.group',",
+      "'signal.link',",
+      "'signal.art',",
+    ]);
+  });
+
+  it('no English string shows a Signal link host or scheme (B3)', () => {
+    const messages: Record<string, { messageformat?: string }> = JSON.parse(
+      readFileSync(join(ROOT, '_locales', 'en', 'messages.json'), 'utf8')
+    );
+    const offences = Object.entries(messages)
+      .filter(
+        ([, { messageformat }]) =>
+          typeof messageformat === 'string' &&
+          /signal\.(?:me|group|art|link)\b|sgnl:/i.test(messageformat)
+      )
+      .map(([key, { messageformat }]) => `${key}: ${messageformat}`);
+    assert.deepStrictEqual(offences, []);
   });
 });
