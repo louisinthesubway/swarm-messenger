@@ -27,8 +27,15 @@ function toUrl(input: URL | string): URL | null {
 
 /**
  * List of protocols that are used by Signal routes.
+ * SWARM change (MSG-P3, 2026-09-29): `swarm:` is the app form of a call link,
+ * swarm://swarm.green/call/#key=... (see {@link linkCallRoute}).
  */
-const SignalRouteProtocols = ['https:', 'sgnl:', 'signalcaptcha:'] as const;
+const SignalRouteProtocols = [
+  'https:',
+  'sgnl:',
+  'signalcaptcha:',
+  'swarm:',
+] as const;
 
 /**
  * List of hostnames that are used by Signal routes.
@@ -40,6 +47,8 @@ const SignalRouteHostnames = [
   'signal.link',
   'signal.art',
   'signaldonations.org',
+  // SWARM change (MSG-P3, 2026-09-29): call links, see linkCallRoute.
+  'swarm.green',
 ] as const;
 
 /**
@@ -390,10 +399,22 @@ const captchaRoute = _route('captcha', {
  * linkCallRoute.toWebUrl({
  *   key: "123",
  * })
- * // URL { "https://signal.link/call#key=123" }
+ * // URL { "https://swarm.green/call/#key=123" }
+ * ```
+ *
+ * SWARM change (MSG-P3, 2026-09-29): SWARM Messenger makes its call links on
+ * swarm.green (https://swarm.green/call/#key=..., and the app form
+ * swarm://swarm.green/call/#key=... that the web page there opens), so a link
+ * shared outside the app never points people at Signal's name. The two
+ * signal.link forms are still accepted, never made, so that links already
+ * shared by SWARM Messenger 0.1.0 keep opening. Parsing a link contacts nobody:
+ * the app reads the key from the fragment and never loads either page.
  */
 export const linkCallRoute = _route('linkCall', {
   patterns: [
+    _pattern('https:', 'swarm.green', '/call{/}?', { hash: ':params' }),
+    _pattern('swarm:', 'swarm.green', '/call{/}?', { hash: ':params' }),
+    // Made by SWARM Messenger 0.1.0 (Signal's form): accepted, no longer made.
     _pattern('https:', 'signal.link', '/call{/}?', { hash: ':params' }),
     _pattern('sgnl:', 'signal.link', '/call{/}?', { hash: ':params' }),
   ],
@@ -408,11 +429,11 @@ export const linkCallRoute = _route('linkCall', {
   },
   toWebUrl(args) {
     const params = new URLSearchParams({ key: args.key });
-    return new URL(`https://signal.link/call/#${params.toString()}`);
+    return new URL(`https://swarm.green/call/#${params.toString()}`);
   },
   toAppUrl(args) {
     const params = new URLSearchParams({ key: args.key });
-    return new URL(`sgnl://signal.link/call/#${params.toString()}`);
+    return new URL(`swarm://swarm.green/call/#${params.toString()}`);
   },
 });
 
