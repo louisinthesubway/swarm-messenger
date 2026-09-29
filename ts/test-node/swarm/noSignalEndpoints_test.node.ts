@@ -9,6 +9,10 @@
 // signal.group / signal.link / signal.art) which is shared with the other SWARM
 // clients and is renamed in a later milestone, not here. The AGPL-3.0
 // attribution is in the Licences document (B2c), checked below.
+//
+// Since B5 (2026-09-29) it also rejects the debug-log upload host and the old
+// service name, and scans the rest of what the app loads: stylesheets, the
+// sticker creator, the window pages, the protobuf definitions, Storybook.
 
 import { assert } from 'chai';
 import { readFileSync, readdirSync, statSync } from 'node:fs';
@@ -22,8 +26,36 @@ import {
 
 const ROOT = join(import.meta.dirname, '..', '..', '..');
 
-// The three names the brief calls out.
-const FORBIDDEN = [/signal\.org/i, /signalcaptchas\.org/i, /whispersystems/i];
+// The three names the brief calls out, and since B5 (2026-09-29) Signal's
+// debug-log upload host and the server's old service name. `signal.org` covers
+// every subdomain: updates2, sfu.voip, cdn*, storage, chat, support.
+const FORBIDDEN = [
+  /signal\.org/i,
+  /signalcaptchas\.org/i,
+  /whispersystems/i,
+  // SWARM change (B5, 2026-09-29).
+  /debuglogs\.org/i,
+  /textsecure-service/i,
+];
+
+// SWARM change (B5, 2026-09-29): the Signal-owned hosts a client reaches.
+// Checked below against FORBIDDEN so a narrowed pattern cannot let one back in.
+const SIGNAL_HOSTS = [
+  'signal.org',
+  'signalcaptchas.org',
+  'whispersystems.org',
+  'updates.signal.org',
+  'updates2.signal.org',
+  'debuglogs.org',
+  'sfu.voip.signal.org',
+  'cdn.signal.org',
+  'cdn2.signal.org',
+  'cdn3.signal.org',
+  'storage.signal.org',
+  'chat.signal.org',
+  'support.signal.org',
+  'textsecure-service.whispersystems.org',
+];
 
 // Files allowed to mention them, each for a stated reason.
 const ALLOWED_FILES = new Set(
@@ -39,6 +71,14 @@ const ALLOWED_FILES = new Set(
   ].map(p => p.split('/').join(sep))
 );
 
+// SWARM change (B5, 2026-09-29): lines that name a Signal domain without being
+// an address anything is fetched from, each for a stated reason.
+const ALLOWED_LINES: ReadonlyArray<RegExp> = [
+  // protos/: the Java package the generated server code lives in, kept as in
+  // the server's .proto files. A package name, not a host.
+  /^option java_package = "org\.whispersystems\./,
+];
+
 function isLicenceOrAttributionLine(line: string): boolean {
   // "// Copyright 2017 Signal Messenger, LLC" and friends, in every comment
   // syntax the tree uses.
@@ -51,7 +91,7 @@ function isLicenceOrAttributionLine(line: string): boolean {
   if (/^\s*(\/\/|\*|#)/.test(line) && line.includes('github.com/signalapp/')) {
     return true;
   }
-  return false;
+  return ALLOWED_LINES.some(pattern => pattern.test(line.trim()));
 }
 
 function* walk(dir: string): Generator<string> {
@@ -68,9 +108,18 @@ function* walk(dir: string): Generator<string> {
   }
 }
 
-function findOffences(dir: string, extensions: ReadonlyArray<string>) {
+function findOffences(
+  dir: string,
+  extensions: ReadonlyArray<string>,
+  { recursive = true }: { recursive?: boolean } = {}
+) {
   const offences: Array<string> = [];
-  for (const file of walk(join(ROOT, dir))) {
+  const files = recursive
+    ? walk(join(ROOT, dir))
+    : readdirSync(join(ROOT, dir))
+        .map(entry => join(ROOT, dir, entry))
+        .filter(full => statSync(full).isFile());
+  for (const file of files) {
     if (!extensions.some(ext => file.endsWith(ext))) {
       continue;
     }
@@ -165,6 +214,32 @@ describe('SWARM: no Signal endpoints', () => {
       offences,
       [],
       `app/ must not reference Signal:\n${offences.join('\n')}`
+    );
+  });
+
+  it('covers every Signal host a client reaches', () => {
+    // SWARM change (B5, 2026-09-29).
+    const uncovered = SIGNAL_HOSTS.filter(
+      host => !FORBIDDEN.some(pattern => pattern.test(`https://${host}/`))
+    );
+    assert.deepStrictEqual(uncovered, [], 'hosts the scan would not catch');
+  });
+
+  it('the rest of the shipped source never mentions a Signal domain', () => {
+    // SWARM change (B5, 2026-09-29): what the app loads besides app/ and ts/ -
+    // the stylesheets, the sticker creator, the window pages, the protobuf
+    // definitions - and the Storybook preview, which fetches at run time too.
+    const offences = [
+      ...findOffences('stylesheets', ['.scss']),
+      ...findOffences('sticker-creator', ['.ts', '.tsx', '.html']),
+      ...findOffences('.storybook', ['.ts', '.tsx']),
+      ...findOffences('protos', ['.proto']),
+      ...findOffences('.', ['.html'], { recursive: false }),
+    ];
+    assert.deepStrictEqual(
+      offences,
+      [],
+      `shipped source must not reference Signal:\n${offences.join('\n')}`
     );
   });
 
