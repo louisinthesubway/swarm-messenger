@@ -2784,6 +2784,27 @@ if (!app.isDefaultProtocolClient('signalcaptcha')) {
     'signal is already registered as the default app for the sgnl url scheme.'
   );
 }
+// SWARM change (MSG-P3, 2026-09-29): claim the swarm: scheme, the app form of
+// a call link (swarm://swarm.green/call/#key=...) that the swarm.green/call page
+// opens. electron-builder's NSIS installer ignores build.protocols, so on
+// Windows this is the only registration: like sgnl above, it is written to
+// HKCU\Software\Classes\swarm at a start of the installed app whenever the
+// scheme does not already point at it. Upstream registers sgnl and
+// signalcaptcha on every start, packaged or not; swarm is registered by
+// packaged builds only, so a from-source instance never points the scheme at a
+// development electron.exe.
+if (!app.isPackaged) {
+  log.info('not a packaged build, leaving the swarm url scheme alone');
+} else if (!app.isDefaultProtocolClient('swarm')) {
+  log.info(
+    'setting SWARM Messenger as the default app for the swarm url scheme'
+  );
+  app.setAsDefaultProtocolClient('swarm');
+} else {
+  log.info(
+    'SWARM Messenger is already registered as the default app for the swarm url scheme.'
+  );
+}
 
 ipc.on('set-badge-count', (_event: Electron.Event, badgeCount: number) => {
   app.setBadgeCount(badgeCount);
