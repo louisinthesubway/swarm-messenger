@@ -56,19 +56,29 @@ export type ColorMapEntryType = Readonly<{
 
 const ColorEnum = Proto.AccountRecord.UsernameLink.Color;
 
-const DEFAULT_PRESET: ColorMapEntryType = {
-  fg: '#2449c0',
-  bg: '#506ecd',
-  tint: '#ecf0fb',
+// SWARM change (B3, 2026-09-29): the default card is SWARM orange (Hive
+// Orange #ff8a1f, stylesheets/_variables.scss; the QR dots a darker shade of
+// it so that they still scan on white), not Signal blue. The colour id stored
+// in the synced account record is not touched: a card whose colour was never
+// chosen (UNKNOWN) is drawn orange, the existing ORANGE id is drawn in SWARM
+// orange, and BLUE stays Signal's blue for anyone who picked it. No new
+// colour id, so every other device still understands the stored value.
+export const DEFAULT_PRESET: ColorMapEntryType = {
+  fg: '#d66400',
+  bg: '#ff8a1f',
+  tint: '#fff3e8',
 };
 
-const COLOR_MAP: ReadonlyMap<number, ColorMapEntryType> = new Map([
-  [ColorEnum.BLUE, DEFAULT_PRESET],
+/** The colour the picker marks as chosen when none was ever chosen. */
+export const DEFAULT_COLOR_ID = ColorEnum.ORANGE;
+
+export const COLOR_MAP: ReadonlyMap<number, ColorMapEntryType> = new Map([
+  [ColorEnum.ORANGE, DEFAULT_PRESET],
+  [ColorEnum.BLUE, { fg: '#2449c0', bg: '#506ecd', tint: '#ecf0fb' }],
   [ColorEnum.WHITE, { fg: '#000000', bg: '#ffffff', tint: '#f5f5f5' }],
   [ColorEnum.GREY, { fg: '#464852', bg: '#6a6c75', tint: '#f0f0f1' }],
   [ColorEnum.OLIVE, { fg: '#73694f', bg: '#aa9c7c', tint: '#f6f5f2' }],
   [ColorEnum.GREEN, { fg: '#55733f', bg: '#7c9b69', tint: '#f1f5f0' }],
-  [ColorEnum.ORANGE, { fg: '#d96b2d', bg: '#ee691a', tint: '#fef1ea' }],
   [ColorEnum.PINK, { fg: '#bb617b', bg: '#f77099', tint: '#fef1f5' }],
   [ColorEnum.PURPLE, { fg: '#7651c5', bg: '#a183d4', tint: '#f5f3fb' }],
 ]);
@@ -385,7 +395,9 @@ function UsernameLinkColors({
 }: UsernameLinkColorsPropsType): JSX.Element {
   const className = `${CLASS}__colors`;
 
-  const normalizedValue = value === ColorEnum.UNKNOWN ? ColorEnum.BLUE : value;
+  // SWARM change (B3, 2026-09-29): UNKNOWN is drawn as DEFAULT_COLOR_ID.
+  const normalizedValue =
+    value === ColorEnum.UNKNOWN ? DEFAULT_COLOR_ID : value;
 
   return (
     <div className={className}>
@@ -510,7 +522,8 @@ export function UsernameLinkEditor({
 
       saveAttachment({
         data: pngData,
-        fileName: 'signal-username-qr-code.png',
+        // SWARM change (B3, 2026-09-29): no Signal in the saved file's name.
+        fileName: 'swarm-username-qr-code.png',
         contentType: IMAGE_PNG,
         size: pngData.length,
       });

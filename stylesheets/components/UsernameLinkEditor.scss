@@ -18,8 +18,10 @@
   }
 
   &__card {
-    --bg-color: #506ecd;
-    --fg-color: #2449c0;
+    // SWARM change (B3, 2026-09-29): the default card is SWARM orange, as
+    // DEFAULT_PRESET in ts/components/UsernameLinkEditor.dom.tsx.
+    --bg-color: #ff8a1f;
+    --fg-color: #d66400;
     --text-color: #ffffff;
 
     padding-block: 22px;
