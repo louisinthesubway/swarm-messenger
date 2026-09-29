@@ -189,6 +189,9 @@ export type PropsDataType = {
   notifyWhileMuted: NotifyWhileMuted;
   osName: 'linux' | 'macos' | 'windows' | undefined;
   phoneNumber: string | undefined;
+  // SWARM addition (B4, 2026-09-29): true when `phoneNumber` is the account's
+  // SWARM account identifier, which is never shown.
+  isPhoneNumberHidden?: boolean;
   selectedCamera?: string;
   selectedMicrophone?: AudioDevice;
   selectedSpeaker?: AudioDevice;
@@ -595,6 +598,7 @@ export function Preferences({
   otherTabsUnreadCount,
   settingsLocation,
   phoneNumber = '',
+  isPhoneNumberHidden = false,
   pickLocalBackupFolder,
   preferredSystemLocales,
   preferredWidthFromStorage,
@@ -983,7 +987,9 @@ export function Preferences({
         <List
           footerDescription={i18n('icu:Preferences--device-name__description')}
         >
-          {phoneNumber && (
+          {/* SWARM change (B4, 2026-09-29): no "Phone Number" row for a SWARM
+              account identifier. */}
+          {phoneNumber && !isPhoneNumberHidden && (
             <AxoTextItem.Root
               label={i18n('icu:Preferences--phone-number')}
               value={phoneNumber}
@@ -1872,14 +1878,12 @@ export function Preferences({
 
     const pageContents = (
       <AxoList.Group>
-        <List>
-          <AxoClickableItem.Root
-            label={i18n('icu:Preferences__pnp__row--title')}
-            description={i18n('icu:Preferences__pnp__row--body')}
-            arrow="next"
-            onClick={() => setSettingsLocation({ page: SettingsPage.PNP })}
-          />
-        </List>
+        {/*
+          SWARM change (B4, 2026-09-29): SWARM accounts have no phone number, so
+          the "Phone Number" privacy page (who can see it, who can find me by
+          it) has no entry point. The stored settings keep their values and
+          the page stays in the tree to keep upstream merges small.
+        */}
         <List>
           <AxoClickableItem.Root
             label={i18n('icu:Preferences--blocked')}

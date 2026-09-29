@@ -1193,7 +1193,8 @@ export function EditDistributionListModal({
       <SearchInput
         disabled={candidateConversations.length === 0}
         i18n={i18n}
-        placeholder={i18n('icu:contactSearchPlaceholder')}
+        // SWARM change (B4, 2026-09-29): "Name or username", no "number".
+        placeholder={i18n('icu:SwarmContactSearchPlaceholder')}
         moduleClassName="StoriesSettingsModal__search"
         onChange={event => {
           setSearchTerm(event.target.value);

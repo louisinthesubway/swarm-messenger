@@ -18,6 +18,7 @@ import {
 } from '../../util/uuidFetchState.std.ts';
 import type { GroupListItemConversationType } from '../conversationList/GroupListItem.dom.tsx';
 import { isProbablyAUsername } from '../../util/Username.dom.ts';
+import { SWARM_FIND_BY_PHONE_NUMBER } from '../../util/swarm/swarmIdentityE164.std.ts';
 
 export type LeftPaneComposePropsType = {
   composeContacts: ReadonlyArray<ContactListItemConversationType>;
@@ -28,6 +29,12 @@ export type LeftPaneComposePropsType = {
   uuidFetchState: UUIDFetchStateType;
   username: string | undefined;
 };
+
+// SWARM change (B4, 2026-09-29): SWARM accounts sign in with a wallet and are
+// found by username; there is no phone number to look anyone up by. Upstream's
+// phone-number rows stay in the code behind SWARM_FIND_BY_PHONE_NUMBER, off.
+/** "New group", "Find by username" (and upstream's "Find by phone number"). */
+const TOP_BUTTON_COUNT = SWARM_FIND_BY_PHONE_NUMBER ? 3 : 2;
 
 enum TopButtons {
   None = 'None',
@@ -65,7 +72,12 @@ export class LeftPaneComposeHelper extends LeftPaneHelper<LeftPaneComposePropsTy
       Boolean(username) &&
       this.#composeContacts.every(contact => contact.username !== username);
 
-    const phoneNumber = parseAndFormatPhoneNumber(searchTerm, regionCode);
+    // SWARM change (B4, 2026-09-29): a SWARM account has no phone number, so
+    // digits typed here are never offered as a number to start a chat with.
+    // Contacts and groups still match by name; usernames still match.
+    const phoneNumber = SWARM_FIND_BY_PHONE_NUMBER
+      ? parseAndFormatPhoneNumber(searchTerm, regionCode)
+      : undefined;
     if (!username && phoneNumber) {
       this.#phoneNumber = phoneNumber;
       this.#isPhoneNumberVisible = this.#composeContacts.every(
@@ -117,7 +129,8 @@ export class LeftPaneComposeHelper extends LeftPaneHelper<LeftPaneComposePropsTy
         i18n={i18n}
         moduleClassName="module-left-pane__compose-search-form"
         onChange={onChangeComposeSearchTerm}
-        placeholder={i18n('icu:contactSearchPlaceholder')}
+        // SWARM change (B4, 2026-09-29): "Name or username", no "number".
+        placeholder={i18n('icu:SwarmContactSearchPlaceholder')}
         ref={focusRef}
         value={this.#searchTerm}
       />
@@ -139,7 +152,7 @@ export class LeftPaneComposeHelper extends LeftPaneHelper<LeftPaneComposePropsTy
   getRowCount(): number {
     let result = 0;
     if (this.#hasTopButtons()) {
-      result += 3;
+      result += TOP_BUTTON_COUNT;
     }
     if (this.#hasContactsHeader()) {
       result += 1 + this.#composeContacts.length;
@@ -166,11 +179,12 @@ export class LeftPaneComposeHelper extends LeftPaneHelper<LeftPaneComposePropsTy
       if (virtualRowIndex === 1) {
         return { type: RowType.FindByUsername };
       }
-      if (virtualRowIndex === 2) {
+      // SWARM change (B4, 2026-09-29): no "Find by phone number" button.
+      if (SWARM_FIND_BY_PHONE_NUMBER && virtualRowIndex === 2) {
         return { type: RowType.FindByPhoneNumber };
       }
 
-      virtualRowIndex -= 3;
+      virtualRowIndex -= TOP_BUTTON_COUNT;
     }
 
     if (this.#hasContactsHeader()) {
@@ -335,7 +349,7 @@ export class LeftPaneComposeHelper extends LeftPaneHelper<LeftPaneComposePropsTy
 
     if (this.#hasTopButtons()) {
       top = 0;
-      rowCount += 3;
+      rowCount += TOP_BUTTON_COUNT;
     }
     if (this.#hasContactsHeader()) {
       contact = rowCount;

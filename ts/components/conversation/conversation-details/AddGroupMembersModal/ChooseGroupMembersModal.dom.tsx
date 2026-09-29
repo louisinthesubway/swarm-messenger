@@ -20,6 +20,7 @@ import { useRestoreFocus } from '../../../../hooks/useRestoreFocus.dom.ts';
 import { missingCaseError } from '../../../../util/missingCaseError.std.ts';
 import type { LookupConversationWithoutServiceIdActionsType } from '../../../../util/lookupConversationWithoutServiceId.preload.ts';
 import { parseAndFormatPhoneNumber } from '../../../../util/libphonenumberInstance.std.ts';
+import { SWARM_FIND_BY_PHONE_NUMBER } from '../../../../util/swarm/swarmIdentityE164.std.ts';
 import type { ParsedE164Type } from '../../../../util/libphonenumberInstance.std.ts';
 import { filterAndSortConversations } from '../../../../util/filterAndSortConversations.std.ts';
 import type { ConversationType } from '../../../../state/ducks/conversations.preload.ts';
@@ -112,7 +113,9 @@ export function ChooseGroupMembersModal({
     candidateContacts.every(contact => contact.username !== username);
 
   let phoneNumber: ParsedE164Type | undefined;
-  if (!username) {
+  // SWARM change (B4, 2026-09-29): digits are not offered as a phone number
+  // to add; members are chosen from contacts or by username.
+  if (!username && SWARM_FIND_BY_PHONE_NUMBER) {
     phoneNumber = parseAndFormatPhoneNumber(searchTerm, regionCode);
   }
 
@@ -399,7 +402,8 @@ export function ChooseGroupMembersModal({
         </h1>
         <SearchInput
           i18n={i18n}
-          placeholder={i18n('icu:contactSearchPlaceholder')}
+          // SWARM change (B4, 2026-09-29): "Name or username", no "number".
+          placeholder={i18n('icu:SwarmContactSearchPlaceholder')}
           onChange={event => {
             setSearchTerm(event.target.value);
           }}

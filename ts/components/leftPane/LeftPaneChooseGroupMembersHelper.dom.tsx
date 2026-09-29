@@ -18,6 +18,7 @@ import { Button } from '../Button.dom.tsx';
 import type { LocalizerType } from '../../types/Util.std.ts';
 import type { ParsedE164Type } from '../../util/libphonenumberInstance.std.ts';
 import { parseAndFormatPhoneNumber } from '../../util/libphonenumberInstance.std.ts';
+import { SWARM_FIND_BY_PHONE_NUMBER } from '../../util/swarm/swarmIdentityE164.std.ts';
 import type { UUIDFetchStateType } from '../../util/uuidFetchState.std.ts';
 import {
   isFetchingByUsername,
@@ -94,7 +95,11 @@ export class LeftPaneChooseGroupMembersHelper extends LeftPaneHelper<LeftPaneCho
       contact => contact.username === this.#username
     );
 
-    const phoneNumber = parseAndFormatPhoneNumber(searchTerm, regionCode);
+    // SWARM change (B4, 2026-09-29): digits are not offered as a phone number
+    // to add; members are chosen from contacts or by username.
+    const phoneNumber = SWARM_FIND_BY_PHONE_NUMBER
+      ? parseAndFormatPhoneNumber(searchTerm, regionCode)
+      : undefined;
     if (
       !isUsernameVisible &&
       (ourUsername === undefined || username !== ourUsername) &&
@@ -168,7 +173,8 @@ export class LeftPaneChooseGroupMembersHelper extends LeftPaneHelper<LeftPaneCho
         i18n={i18n}
         moduleClassName="module-left-pane__compose-search-form"
         onChange={onChangeComposeSearchTerm}
-        placeholder={i18n('icu:contactSearchPlaceholder')}
+        // SWARM change (B4, 2026-09-29): "Name or username", no "number".
+        placeholder={i18n('icu:SwarmContactSearchPlaceholder')}
         ref={focusRef}
         value={this.#searchTerm}
       />

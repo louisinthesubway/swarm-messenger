@@ -36,6 +36,7 @@ import { DEFAULT_CONVERSATION_COLOR } from '../../types/Colors.std.ts';
 import { SIGNAL_ACI } from '../../types/SignalConversation.std.ts';
 import { saveAttachmentToDisk } from '../../util/migrations.preload.ts';
 import { format } from '../../types/PhoneNumber.std.ts';
+import { isSwarmIdentityE164 } from '../../util/swarm/swarmIdentityE164.std.ts';
 import {
   areWePrimaryDevice,
   getIntl,
@@ -352,7 +353,12 @@ export function SmartPreferences(): JSX.Element | null {
 
   // Textsecure - user can change number and change this device's name
 
-  const phoneNumber = format(useSelector(getUserNumber) ?? '', {});
+  const ourNumber = useSelector(getUserNumber);
+  const phoneNumber = format(ourNumber ?? '', {});
+  // SWARM change (B4, 2026-09-29): the account's number is its SWARM account
+  // identifier, which is never shown. `phoneNumber` itself is kept: it still
+  // decides, as upstream, that a primary device needs no "Account" page.
+  const isPhoneNumberHidden = isSwarmIdentityE164(ourNumber);
   const isSyncSupported = !weArePrimaryDevice;
 
   const [deviceName, setDeviceName] = useState(
@@ -1063,6 +1069,7 @@ export function SmartPreferences(): JSX.Element | null {
         disableLocalBackups={backupsService.disableLocalBackups}
         emojiSkinToneDefault={emojiSkinToneDefault}
         phoneNumber={phoneNumber}
+        isPhoneNumberHidden={isPhoneNumberHidden}
         doDeleteAllData={doDeleteAllData}
         editCustomColor={editCustomColor}
         getConversationsWithCustomColor={getConversationsWithCustomColor}
