@@ -170,7 +170,7 @@ describe('SWARM recovery phrase window (B6)', () => {
   });
 });
 
-describe('SWARM recovery phrase: the saved file at "I have a recovery phrase" (B6)', () => {
+describe('SWARM recovery phrase: the saved file at "Restore a wallet" (B6)', () => {
   // A throwaway phrase, made for this test.
   const phrase = generateRecoveryPhrase();
   // Exactly what "Save to file" writes: the real English warning line.

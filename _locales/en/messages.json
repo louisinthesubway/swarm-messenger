@@ -12610,7 +12610,7 @@
     "description": "SWARM (B6): recovery phrase export. Recovery phrase window: confirms writing the unencrypted file; the save dialog opens next."
   },
   "icu:SwarmWallet__recovery--saved": {
-    "messageformat": "Saved. To sign in again, choose “I have a recovery phrase” and paste the words, or the whole file.",
+    "messageformat": "Saved. To sign in again, choose “Restore a wallet” and paste the words, or the whole file.",
     "description": "SWARM (B6): recovery phrase export. Recovery phrase window: the file was written. The quoted text is the sign-in button icu:StandaloneRegistration--WalletSignIn--restore."
   },
   "icu:SwarmWallet__recovery--save-failed": {
