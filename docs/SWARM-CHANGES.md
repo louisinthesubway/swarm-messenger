@@ -756,3 +756,54 @@ phone number in the interface (B4); the debug log stays on this computer (B5);
 and the recovery phrase export from the Wallet tab (B6). Installed 0.1.0 and
 0.1.1 keep working against the same server; the update is a manual download,
 as before (`docs/RELEASES.md`).
+
+## 3n. Version 0.1.3: the recovery phrase while the wallet is busy
+
+2026-09-30. In 0.1.2 the owner opened the Wallet tab, asked for the recovery
+phrase twelve seconds after the wallet opened, confirmed with Windows Hello,
+and was told "The words could not be read from your wallet". The log showed
+`readRecoveryPhrase: not read (timeout: seed-phrase took too long)`, at the same
+moment as the pane's own `server` and `snapshot` requests timing out
+("offline"); the light server answered again 45 seconds later. It was not the
+check that the words are the signed-in account's: the read never answered.
+
+**Why the read waits.** The words are not kept anywhere; they are read from the
+wallet addon each time (`SwarmWallet.seedPhrase()` → addon `get_seed`). That
+read goes through two queues it cannot jump:
+
+- the wallet worker answers one request at a time, in arrival order
+  (`ts/workers/swarmWalletWorker.node.ts`), so it starts only after the pane's
+  `server` and `snapshot` requests that are ahead of it have answered;
+- inside the addon (swarm-wallet-core 0.2.0, `native/src/lib.rs`), `get_seed`
+  takes the light client's shared lock and the wallet's read lock.
+  `info_server` (the pane's `server` request) holds the light client's
+  **exclusive** lock across its request to the light server, and a running
+  sync (pepper-sync, `sync.rs`) holds the wallet's write lock across several of
+  its requests to the light server.
+
+So a slow light server, or a sync that is waiting for one, holds the read for
+as long as the server takes, and every quick call - the phrase included - gets
+fifteen seconds. Measured on 2026-09-30 with the 0.2.0 Windows addon, a
+throwaway wallet and the mainnet light server: `seedPhrase()` alone answers in
+0 ms; started together with `serverInfo()` it answers when that does, every
+time (70-163 ms on a responsive server).
+
+**Change.** No cryptography, no wallet-core change, no new request to the
+worker, and the words are still not cached anywhere.
+
+| What                                                                           | Change                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| ------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| The wait (`ts/util/swarm/recoveryPhraseRead.std.ts`)                           | A wallet that is not busy still gets the old 15 s, and a read that has not answered by then is still "could not be read". A **busy** wallet - a sync known to be running, or requests still in the worker ahead of the read - is waited for up to **3 minutes** in all; after 1.5 s without an answer the window is told it is busy. Past 3 minutes the answer is `busy`. Words that arrive after the read gave up are zeroed.                                                   |
+| Wallet service (`app/SwarmWalletService.main.ts`)                              | Knows whether a sync is running (set when one is started, then from every snapshot) and which worker requests are still unanswered, including those whose caller already gave up. `readRecoveryPhrase` answers the bytes or a refusal, `busy` or `unreadable`; the account-match check and the zeroing are unchanged. A byte answer that reaches the service after its call timed out is zeroed instead of being dropped.                                                   |
+| Export and window (`app/SwarmRecoveryPhraseExport.main.ts`, the reveal window) | One new main → window message, `swarm-recovery-phrase:busy`, with no payload, sent only to the armed reveal window's own webContents. The window shows "Your wallet is busy syncing. The words appear as soon as it is free." with **Cancel**; the words appear by themselves. The window stays open for the wait (3 minutes plus its usual 2). A wallet that stays busy: "Your wallet is still busy syncing, so the words could not be read yet. Nothing was shown. Close this window and try again when the Wallet tab says “Up to date”." |
+| Strings                                                                        | `icu:SwarmWallet__recovery--busy`, `icu:SwarmWallet__recovery--busy-too-long`, English only (other languages fall back to English).                                                                                                                                                                                                                                                                                                                                          |
+| Tests                                                                          | `ts/test-node/swarm/recoveryPhraseBusy_test.node.ts` (the real handler and wrapper with a fake addon whose `get_seed` is slow, limits scaled down: read while syncing past the old limit; `busy` after the bound; a real failure at once; the old failure when not busy; late words zeroed; no logger in the wait or the worker, no interpolated words in the service's log lines), `SwarmRecoveryPhraseWindow_test.preload.tsx` (the waiting and busy screens).     |
+
+**Not changed, noted.** The Wallet tab still reads a `server` request that
+times out as "offline". With `info_server` holding the exclusive lock across its
+own request to the light server, such a timeout is, in the first place, a light
+server that did not answer in 15 seconds, so "offline" is not wrong; a
+contended lock can add to it. Whether a timeout during a sync should read as
+"syncing" rather than "offline" is left for a decision.
+
+`package.json` `version` becomes `0.1.3`.
