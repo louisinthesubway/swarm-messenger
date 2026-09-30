@@ -32,7 +32,14 @@ import type { LocalizerType } from '../types/Util.std.ts';
 export type SwarmRecoveryPhraseWindowProps = Readonly<{
   i18n: LocalizerType;
   getStatus: () => Promise<RecoveryPhraseStatusType>;
-  onReveal: (confirmation: string) => Promise<RecoveryPhraseRevealResultType>;
+  /**
+   * Asks for the words. `onBusy` is called when the wallet is busy and they
+   * will take a while (SWARM change, 0.1.3).
+   */
+  onReveal: (
+    confirmation: string,
+    onBusy: () => void
+  ) => Promise<RecoveryPhraseRevealResultType>;
   onCopy: (
     words: ReadonlyArray<string>
   ) => Promise<RecoveryPhraseCopyAnswerType>;
@@ -46,6 +53,7 @@ type StageType =
   | Readonly<{ type: 'loading' }>
   | Readonly<{ type: 'typed'; waitUntil: number; wrong: boolean }>
   | Readonly<{ type: 'revealing' }>
+  | Readonly<{ type: 'busy' }>
   | Readonly<{
       type: 'shown';
       words: ReadonlyArray<string>;
@@ -95,7 +103,11 @@ export function SwarmRecoveryPhraseWindow({
       setStage({ type: 'revealing' });
       let result: RecoveryPhraseRevealResultType;
       try {
-        result = await onReveal(confirmation);
+        result = await onReveal(confirmation, () =>
+          setStage(current =>
+            current.type === 'revealing' ? { type: 'busy' } : current
+          )
+        );
       } catch {
         setStage({ type: 'refused', refusal: 'error' });
         return;
@@ -193,6 +205,8 @@ function Stage({
           {i18n('icu:SwarmWallet__recovery--loading')}
         </p>
       );
+    case 'busy':
+      return <WaitingForWallet i18n={i18n} onClose={onClose} />;
     case 'typed':
       return (
         <TypedConfirmation
@@ -216,27 +230,67 @@ function Stage({
       );
     case 'refused':
       return (
-        <>
-          <p
-            data-testid="recovery-refused"
-            className={tw('type-body-medium text-destructive')}
-          >
-            {refusalText(i18n, stage.refusal)}
-          </p>
-          <Buttons>
-            <AxoButton.Root
-              variant="strong-secondary"
-              size="md"
-              onClick={onClose}
-            >
-              {i18n('icu:SwarmWallet__recovery--close')}
-            </AxoButton.Root>
-          </Buttons>
-        </>
+        <RecoveryPhraseRefused
+          i18n={i18n}
+          refusal={stage.refusal}
+          onClose={onClose}
+        />
       );
     default:
       return <span />;
   }
+}
+
+/**
+ * SWARM addition (0.1.3): the words were asked for and the wallet is busy -
+ * syncing, or answering the Wallet tab. They appear by themselves when it is
+ * free; Cancel closes the window, and nothing is shown.
+ */
+export function WaitingForWallet({
+  i18n,
+  onClose,
+}: {
+  i18n: LocalizerType;
+  onClose: () => void;
+}): JSX.Element {
+  return (
+    <section data-testid="recovery-busy" className={tw('flex flex-col gap-3')}>
+      <p className={tw('type-body-medium text-secondary')}>
+        {i18n('icu:SwarmWallet__recovery--busy')}
+      </p>
+      <Buttons>
+        <AxoButton.Root variant="strong-secondary" size="md" onClick={onClose}>
+          {i18n('icu:SwarmWallet__recovery--cancel')}
+        </AxoButton.Root>
+      </Buttons>
+    </section>
+  );
+}
+
+export function RecoveryPhraseRefused({
+  i18n,
+  refusal,
+  onClose,
+}: {
+  i18n: LocalizerType;
+  refusal: Exclude<RecoveryPhraseRevealRefusalType, 'not-confirmed'> | 'error';
+  onClose: () => void;
+}): JSX.Element {
+  return (
+    <>
+      <p
+        data-testid="recovery-refused"
+        className={tw('type-body-medium text-destructive')}
+      >
+        {refusalText(i18n, refusal)}
+      </p>
+      <Buttons>
+        <AxoButton.Root variant="strong-secondary" size="md" onClick={onClose}>
+          {i18n('icu:SwarmWallet__recovery--close')}
+        </AxoButton.Root>
+      </Buttons>
+    </>
+  );
 }
 
 function refusalText(
@@ -246,6 +300,8 @@ function refusalText(
   switch (refusal) {
     case 'unreadable':
       return i18n('icu:SwarmWallet__recovery--unreadable');
+    case 'busy':
+      return i18n('icu:SwarmWallet__recovery--busy-too-long');
     case 'used':
       return i18n('icu:SwarmWallet__recovery--used');
     default:

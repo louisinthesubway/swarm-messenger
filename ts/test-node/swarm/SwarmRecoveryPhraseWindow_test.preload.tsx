@@ -16,10 +16,12 @@ import i18n from '../util/i18n.node.ts';
 import { AxoProvider } from '../../axo/AxoProvider.dom.tsx';
 import type { AxoIntl } from '../../axo/_internal/AxoIntl.dom.tsx';
 import {
+  RecoveryPhraseRefused,
   RecoveryPhraseWords,
   ShownPhrase,
   SwarmRecoveryPhraseWindow,
   TypedConfirmation,
+  WaitingForWallet,
 } from '../../components/SwarmRecoveryPhraseWindow.dom.tsx';
 import { phraseToSignInWith } from '../../components/standaloneRegistration/stages/WalletSignIn.dom.tsx';
 import {
@@ -166,6 +168,55 @@ describe('SWARM recovery phrase window (B6)', () => {
     assert.strictEqual(
       i18n('icu:SwarmWallet__recovery--closes-in', { seconds: 1 }),
       'This window closes by itself in 1 second.'
+    );
+  });
+
+  // SWARM addition (0.1.3): a busy wallet is waited for, and said so.
+  it('says the wallet is busy syncing while it waits, with Cancel, and no words', () => {
+    const html = render(
+      <WaitingForWallet i18n={i18n} onClose={() => undefined} />
+    );
+    assert.include(html, 'data-testid="recovery-busy"');
+    assert.include(
+      html,
+      'Your wallet is busy syncing. The words appear as soon as it is free.'
+    );
+    assert.include(html, 'Cancel');
+    assert.notInclude(html, 'data-testid="recovery-words"');
+    assert.notInclude(html, 'could not be read from your wallet');
+  });
+
+  it('tells a wallet that stayed busy apart from one that could not give its words', () => {
+    const busy = render(
+      <RecoveryPhraseRefused
+        i18n={i18n}
+        refusal="busy"
+        onClose={() => undefined}
+      />
+    );
+    assert.include(
+      busy,
+      'Your wallet is still busy syncing, so the words could not be read yet. Nothing was shown.'
+    );
+    assert.include(busy, 'Up to date');
+    assert.notInclude(busy, 'The words could not be read from your wallet.');
+
+    const unreadable = render(
+      <RecoveryPhraseRefused
+        i18n={i18n}
+        refusal="unreadable"
+        onClose={() => undefined}
+      />
+    );
+    assert.include(
+      unreadable,
+      'The words could not be read from your wallet. Nothing was shown.'
+    );
+    assert.notInclude(unreadable, 'busy');
+    assert.strictEqual(
+      i18n('icu:SwarmWallet__synced'),
+      'Up to date',
+      'the Wallet tab says what the busy message tells the person to wait for'
     );
   });
 });

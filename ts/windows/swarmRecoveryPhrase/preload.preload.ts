@@ -36,13 +36,18 @@ async function getStatus(): Promise<RecoveryPhraseStatusType> {
 }
 
 async function reveal(
-  confirmation: string
+  confirmation: string,
+  onBusy?: () => void
 ): Promise<RecoveryPhraseRevealResultType> {
   let onPhrase: ((event: unknown, bytes: unknown) => void) | undefined;
   const phrase = new Promise<unknown>(resolve => {
     onPhrase = (_event, bytes) => resolve(bytes);
     ipcRenderer.once(SWARM_RECOVERY_PHRASE_CHANNEL.phrase, onPhrase);
   });
+  // SWARM change (0.1.3): the main process says when the wallet is busy and
+  // the words will take a while. The notice carries nothing.
+  const onBusyNotice = () => onBusy?.();
+  ipcRenderer.on(SWARM_RECOVERY_PHRASE_CHANNEL.busy, onBusyNotice);
   const stopListening = () => {
     if (onPhrase != null) {
       ipcRenderer.removeListener(
@@ -50,6 +55,10 @@ async function reveal(
         onPhrase
       );
     }
+    ipcRenderer.removeListener(
+      SWARM_RECOVERY_PHRASE_CHANNEL.busy,
+      onBusyNotice
+    );
   };
 
   let answer;

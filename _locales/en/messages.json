@@ -12613,6 +12613,14 @@
     "messageformat": "The words could not be read from your wallet. Nothing was shown.",
     "description": "SWARM (B6): recovery phrase export. Recovery phrase window: the wallet did not give its words, or they were not this account's."
   },
+  "icu:SwarmWallet__recovery--busy": {
+    "messageformat": "Your wallet is busy syncing. The words appear as soon as it is free.",
+    "description": "SWARM (0.1.3): recovery phrase export. Recovery phrase window: shown while the words are waited for because the wallet is busy (catching up with the network, or answering the Wallet tab). Cancel closes the window."
+  },
+  "icu:SwarmWallet__recovery--busy-too-long": {
+    "messageformat": "Your wallet is still busy syncing, so the words could not be read yet. Nothing was shown. Close this window and try again when the Wallet tab says “Up to date”.",
+    "description": "SWARM (0.1.3): recovery phrase export. Recovery phrase window: the wallet stayed busy for the whole wait (three minutes). The quoted text is the Wallet tab's status icu:SwarmWallet__synced."
+  },
   "icu:SwarmWallet__recovery--used": {
     "messageformat": "This window has already shown the words. Close it and ask again from the Wallet tab.",
     "description": "SWARM (B6): recovery phrase export. Recovery phrase window: the words are sent to a window only once."

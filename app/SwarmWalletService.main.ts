@@ -89,6 +89,8 @@ import {
   codedError,
   messageOf,
 } from '../ts/workers/swarmWalletProtocol.std.ts';
+import { waitForRecoveryPhrase } from '../ts/util/swarm/recoveryPhraseRead.std.ts';
+import type { RecoveryPhraseReadResultType } from '../ts/util/swarm/recoveryPhraseRead.std.ts';
 import type {
   CodedErrorType,
   FoundTransferType,
@@ -180,6 +182,19 @@ export class SwarmWalletService {
   #nextCallId = 1;
 
   readonly #calls = new Map<number, PendingCallType>();
+
+  /**
+   * SWARM addition (0.1.3): every request posted to the worker that it has not
+   * answered yet - also those whose caller stopped waiting. The worker answers
+   * in arrival order, so a request waits for every one of these that is older.
+   */
+  readonly #inWorker = new Set<number>();
+
+  /**
+   * SWARM addition (0.1.3): whether a sync is running in the worker, as far as
+   * this process knows: set when one is started, and from every snapshot.
+   */
+  #syncRunning = false;
 
   // What the pane is shown.
   #status: SwarmWalletStatusType = 'no-wallet';
@@ -299,25 +314,50 @@ export class SwarmWalletService {
    * account's identity key: what the person is shown must sign them into this
    * account, and no other.
    *
+   * SWARM change (0.1.3, 2026-09-30): a wallet that is busy - syncing, or still
+   * answering the Wallet pane's requests ahead of this one - is waited for, up
+   * to three minutes, instead of fifteen seconds; `onBusy` is told when the read
+   * starts waiting for it, and a wallet that stays busy is refused as 'busy'
+   * rather than 'unreadable'. See ts/util/swarm/recoveryPhraseRead.std.ts.
+   *
    * Logs the outcome only.
    */
-  async readRecoveryPhrase(): Promise<Uint8Array<ArrayBuffer> | undefined> {
+  async readRecoveryPhrase({
+    onBusy,
+  }: { onBusy?: () => void } = {}): Promise<RecoveryPhraseReadResultType> {
     const accountKey = this.#accountKey;
     if (accountKey == null || this.#status === 'unavailable') {
       log.info('readRecoveryPhrase: refused, no wallet is open');
-      return undefined;
+      return { ok: false, refusal: 'unreadable' };
     }
-    let bytes: unknown;
-    try {
-      bytes = await this.#call({ kind: 'seed-phrase' }, TIMEOUT_MS.quick);
-    } catch (error) {
+    let readId: number | undefined;
+    const outcome = await waitForRecoveryPhrase({
+      read: timeoutMs => {
+        const { id, answer } = this.#post({ kind: 'seed-phrase' }, timeoutMs);
+        readId = id;
+        return answer;
+      },
+      isBusy: () => this.#syncRunning || this.#hasRequestsBefore(readId),
+      onBusy: () => {
+        log.info('readRecoveryPhrase: the wallet is busy; waiting for it');
+        onBusy?.();
+      },
+    });
+    if (outcome.type === 'busy') {
+      log.warn('readRecoveryPhrase: not read, the wallet stayed busy');
+      return { ok: false, refusal: 'busy' };
+    }
+    if (outcome.type === 'failed') {
       // The worker's message names a reason, never the words; redacted anyway.
-      log.warn(`readRecoveryPhrase: not read (${this.#describe(error)})`);
-      return undefined;
+      log.warn(
+        `readRecoveryPhrase: not read (${this.#describe(outcome.error)})`
+      );
+      return { ok: false, refusal: 'unreadable' };
     }
+    const bytes = outcome.value;
     if (!(bytes instanceof Uint8Array)) {
       log.warn('readRecoveryPhrase: the worker answered something else');
-      return undefined;
+      return { ok: false, refusal: 'unreadable' };
     }
     const phrase = new Uint8Array(bytes);
     bytes.fill(0);
@@ -337,10 +377,23 @@ export class SwarmWalletService {
       log.warn(
         'readRecoveryPhrase: refused, the words are not the signed-in account'
       );
-      return undefined;
+      return { ok: false, refusal: 'unreadable' };
     }
     log.info('readRecoveryPhrase: read for the reveal window');
-    return phrase;
+    return { ok: true, bytes: phrase };
+  }
+
+  /** Whether the worker still has requests older than `id` to answer. */
+  #hasRequestsBefore(id: number | undefined): boolean {
+    if (id == null) {
+      return false;
+    }
+    for (const other of this.#inWorker) {
+      if (other < id) {
+        return true;
+      }
+    }
+    return false;
   }
 
   /** Seals the wallet file and stops the worker. Called on the way out. */
@@ -725,6 +778,7 @@ export class SwarmWalletService {
     const generation = this.#generation;
     this.#accountKey = accountKey;
     this.#quote = undefined;
+    this.#syncRunning = false;
     this.#lastAttemptAt = Date.now();
     // A retry while offline stays 'offline' on screen until it succeeds: the
     // pane should not flicker to "opening" every thirty seconds.
@@ -950,6 +1004,7 @@ export class SwarmWalletService {
         )) as WalletSnapshotType;
         if (generation === this.#generation) {
           this.#snapshot = snapshot;
+          this.#syncRunning = snapshot.syncing;
         }
       } catch (error) {
         const message = messageOf(error);
@@ -963,7 +1018,10 @@ export class SwarmWalletService {
         (forceSync || now - this.#lastSyncAt > SYNC_EVERY_MS)
       ) {
         this.#lastSyncAt = now;
-        await this.#tryCall({ kind: 'sync' }, TIMEOUT_MS.quick);
+        const started = await this.#tryCall({ kind: 'sync' }, TIMEOUT_MS.quick);
+        if (started === true && generation === this.#generation) {
+          this.#syncRunning = true;
+        }
       }
     } finally {
       this.#refreshing = false;
@@ -1022,9 +1080,15 @@ export class SwarmWalletService {
       { workerData: { addonPath } }
     );
     worker.on('message', (reply: WorkerReplyType) => {
+      this.#inWorker.delete(reply.id);
       const pending = this.#calls.get(reply.id);
       if (pending == null) {
-        // It timed out; whatever it says now is stale.
+        // It timed out; whatever it says now is stale. SWARM change (0.1.3):
+        // a recovery phrase that arrives after its caller gave up is zeroed,
+        // not left to the garbage collector.
+        if (reply.ok && reply.value instanceof Uint8Array) {
+          reply.value.fill(0);
+        }
         return;
       }
       this.#calls.delete(reply.id);
@@ -1041,6 +1105,8 @@ export class SwarmWalletService {
     worker.on('exit', code => {
       log.warn(`worker exited with code ${code}`);
       this.#worker = undefined;
+      this.#inWorker.clear();
+      this.#syncRunning = false;
       for (const [id, pending] of this.#calls) {
         clearTimeout(pending.timer);
         pending.reject(codedError('unexpected', 'the wallet worker stopped'));
@@ -1064,22 +1130,32 @@ export class SwarmWalletService {
   }
 
   #call(request: WorkerRequestType, timeoutMs: number): Promise<unknown> {
+    return this.#post(request, timeoutMs).answer;
+  }
+
+  /** `#call`, also answering the request's id (SWARM change, 0.1.3). */
+  #post(
+    request: WorkerRequestType,
+    timeoutMs: number
+  ): { id: number | undefined; answer: Promise<unknown> } {
     let worker: Worker;
     try {
       worker = this.#ensureWorker();
     } catch (error) {
-      return Promise.reject(error);
+      return { id: undefined, answer: Promise.reject(error) };
     }
     const id = this.#nextCallId;
     this.#nextCallId += 1;
-    return new Promise((resolve, reject) => {
+    const answer = new Promise((resolve, reject) => {
       const timer = setTimeout(() => {
         this.#calls.delete(id);
         reject(codedError('timeout', `${request.kind} took too long`));
       }, timeoutMs);
       this.#calls.set(id, { resolve, reject, timer });
+      this.#inWorker.add(id);
       worker.postMessage({ id, request });
     });
+    return { id, answer };
   }
 
   // Settings and keys ---------------------------------------------------------------
