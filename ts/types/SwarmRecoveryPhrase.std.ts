@@ -21,6 +21,12 @@ export const SWARM_RECOVERY_PHRASE_CHANNEL = {
   reveal: 'swarm-recovery-phrase:reveal',
   /** main → window, once: the words, as UTF-8 bytes. */
   phrase: 'swarm-recovery-phrase:phrase',
+  /**
+   * main → window, no payload (SWARM change, 0.1.3): the words were asked for
+   * and the wallet is busy (syncing, or answering the Wallet tab); they follow
+   * as soon as it is free.
+   */
+  busy: 'swarm-recovery-phrase:busy',
   /** invoke: put the words on the clipboard, cleared again after a minute. */
   copy: 'swarm-recovery-phrase:copy',
   /** invoke: write the words to a plain text file the person picks. */
@@ -72,6 +78,11 @@ export const RecoveryPhraseRevealRefusalSchema = z.enum([
   'used',
   /** The wallet could not give its words. Nothing was shown. */
   'unreadable',
+  /**
+   * SWARM change (0.1.3): the wallet stayed busy (syncing, or answering the
+   * Wallet tab) for as long as the read waits. Nothing was shown.
+   */
+  'busy',
 ]);
 export type RecoveryPhraseRevealRefusalType = z.infer<
   typeof RecoveryPhraseRevealRefusalSchema

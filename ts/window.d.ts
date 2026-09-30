@@ -127,7 +127,10 @@ type ScreenShareWindowPropsType = {
 // SWARM addition (B6, 2026-09-29): the recovery phrase window.
 type SwarmRecoveryPhraseWindowPropsType = {
   getStatus: () => Promise<RecoveryPhraseStatusType>;
-  reveal: (confirmation: string) => Promise<RecoveryPhraseRevealResultType>;
+  reveal: (
+    confirmation: string,
+    onBusy?: () => void
+  ) => Promise<RecoveryPhraseRevealResultType>;
   copy: (words: ReadonlyArray<string>) => Promise<RecoveryPhraseCopyAnswerType>;
   save: (words: ReadonlyArray<string>) => Promise<RecoveryPhraseSaveAnswerType>;
   close: () => void;

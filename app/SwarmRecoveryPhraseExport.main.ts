@@ -39,6 +39,8 @@ import {
 } from '../ts/util/swarm/recoveryPhraseGate.node.ts';
 import { RecoveryPhraseClipboard } from '../ts/util/swarm/recoveryPhraseClipboard.node.ts';
 import { recoveryPhraseFileText } from '../ts/util/swarm/recoveryPhraseText.std.ts';
+import { RECOVERY_PHRASE_READ_LIMITS } from '../ts/util/swarm/recoveryPhraseRead.std.ts';
+import type { RecoveryPhraseReadResultType } from '../ts/util/swarm/recoveryPhraseRead.std.ts';
 import { SWARM_WALLET_CHANNEL } from '../ts/types/SwarmWallet.std.ts';
 import type { RevealRecoveryPhraseResultType } from '../ts/types/SwarmWallet.std.ts';
 import {
@@ -61,8 +63,13 @@ const log = createLogger('SwarmRecoveryPhraseExport');
 
 export type RecoveryPhraseSourceType = Readonly<{
   canExportRecoveryPhrase: () => boolean;
-  /** UTF-8 bytes, which the caller zeroes; undefined when refused. */
-  readRecoveryPhrase: () => Promise<Uint8Array<ArrayBuffer> | undefined>;
+  /**
+   * UTF-8 bytes, which the caller zeroes, or why there are none. `onBusy` is
+   * called when the read has to wait for a busy wallet (SWARM change, 0.1.3).
+   */
+  readRecoveryPhrase: (
+    options: Readonly<{ onBusy: () => void }>
+  ) => Promise<RecoveryPhraseReadResultType>;
 }>;
 
 export type SwarmRecoveryPhraseExportOptionsType = Readonly<{
@@ -295,10 +302,39 @@ export class SwarmRecoveryPhraseExport {
       return authorized;
     }
 
-    const bytes = await this.#options.wallet.readRecoveryPhrase();
-    if (bytes == null) {
-      return { ok: false, refusal: 'unreadable' };
+    // SWARM change (0.1.3, 2026-09-30): the read can wait up to three minutes
+    // for a busy wallet, so the window stays open for as long as it does, and
+    // says why it is waiting. The notice goes to this window only, and carries
+    // nothing.
+    const reading = this.#window;
+    if (reading != null && !reading.isDestroyed()) {
+      this.#closeIn(
+        reading,
+        RECOVERY_PHRASE_READ_LIMITS.busyWaitMs +
+          RECOVERY_PHRASE_WINDOW_LIFETIME_MS
+      );
     }
+    const read = await this.#options.wallet.readRecoveryPhrase({
+      onBusy: () => {
+        const current = this.#window;
+        if (
+          current != null &&
+          !current.isDestroyed() &&
+          current.webContents === event.sender &&
+          this.#gate.isArmedFor(senderId)
+        ) {
+          event.sender.send(SWARM_RECOVERY_PHRASE_CHANNEL.busy);
+        }
+      },
+    });
+    if (!read.ok) {
+      const current = this.#window;
+      if (current != null && !current.isDestroyed()) {
+        this.#closeIn(current, RECOVERY_PHRASE_WINDOW_LIFETIME_MS);
+      }
+      return { ok: false, refusal: read.refusal };
+    }
+    const { bytes } = read;
     const window = this.#window;
     if (
       window == null ||

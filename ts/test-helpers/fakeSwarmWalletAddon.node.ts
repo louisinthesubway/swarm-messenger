@@ -30,6 +30,18 @@ export type FakeAddonOptionsType = Readonly<{
   valueTransfers?: ReadonlyArray<Record<string, unknown>>;
   /** SWARM addition (M3 wave 2): the address `create_new_unified_address` makes. */
   newAddress?: string;
+  /**
+   * SWARM addition (0.1.3): how long `get_seed` takes, as when the real addon
+   * waits for a running sync or a slow light server before it can read.
+   */
+  seedDelayMs?: number;
+  /** SWARM addition (0.1.3): make `get_seed` fail with this message. */
+  seedError?: string;
+  /**
+   * SWARM addition (0.1.3): a sync that is still running until `stop_sync`
+   * or the wallet is closed, instead of one that completes at once.
+   */
+  syncKeepsRunning?: boolean;
 }>;
 
 export type FakeAddonLogType = {
@@ -50,6 +62,7 @@ export function createFakeSwarmWalletAddon(
   let chain = 'swarm-mainnet';
   let initialized = false;
   let proposalStored = false;
+  let syncRunning = false;
   // SWARM addition (B6, 2026-09-29): like the real addon, the wallet file
   // holds the seed, so `get_seed` answers the phrase the wallet was restored
   // from - also after it is closed and opened again. Test phrases only.
@@ -89,6 +102,7 @@ export function createFakeSwarmWalletAddon(
     deinitialize(): string {
       log.calls.push('deinitialize');
       initialized = false;
+      syncRunning = false;
       seedPhrase = null;
       return 'OK';
     },
@@ -138,6 +152,12 @@ export function createFakeSwarmWalletAddon(
     },
     async get_seed(): Promise<string> {
       requireOpen('get_seed');
+      if (options.seedDelayMs != null) {
+        await new Promise(resolve => setTimeout(resolve, options.seedDelayMs));
+      }
+      if (options.seedError != null) {
+        throw new Error(options.seedError);
+      }
       return JSON.stringify({
         seed_phrase:
           seedPhrase ?? Array.from({ length: 24 }, () => 'abandon').join(' '),
@@ -226,14 +246,22 @@ export function createFakeSwarmWalletAddon(
     },
     async run_sync(): Promise<string> {
       requireOpen('run_sync');
+      syncRunning = options.syncKeepsRunning === true;
       return 'Launching sync task...';
     },
     async poll_sync(): Promise<string> {
       requireOpen('poll_sync');
+      if (syncRunning) {
+        return 'Sync task is not complete.';
+      }
       return JSON.stringify({ sync_complete: { scanned: 100 } });
     },
     async stop_sync(): Promise<string> {
       requireOpen('stop_sync');
+      if (syncRunning) {
+        syncRunning = false;
+        return 'Stopping sync task...';
+      }
       return 'Sync already stopped.';
     },
     async status_sync(): Promise<string> {

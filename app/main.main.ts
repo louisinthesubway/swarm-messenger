@@ -2360,7 +2360,8 @@ app.on('ready', async () => {
       wallet: {
         canExportRecoveryPhrase: () =>
           walletForExport.canExportRecoveryPhrase(),
-        readRecoveryPhrase: () => walletForExport.readRecoveryPhrase(),
+        readRecoveryPhrase: options =>
+          walletForExport.readRecoveryPhrase(options),
       },
       getI18n: () => getResolvedMessagesLocale().i18n,
       createWindow: createSwarmRecoveryPhraseWindow,
