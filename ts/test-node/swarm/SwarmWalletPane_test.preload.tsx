@@ -27,8 +27,8 @@ const TXID = 'ab'.repeat(32);
 const MAINNET = {
   id: 'mainnet',
   chain: 'swarm-mainnet',
-  server: 'lwd-main.swarm.green:8443',
-  explorer: 'https://mainnet.explore.swarm.green/',
+  server: 'lwd-main.swarm.green:443',
+  explorer: 'https://explore.swarm.green/',
 } as const;
 
 function state(overrides: Partial<SwarmWalletStateType>): SwarmWalletStateType {
@@ -125,7 +125,7 @@ describe('SWARM wallet: the Wallet pane', () => {
     );
     assert.include(html, 'data-wallet-status="offline"');
     assert.include(html, 'Can’t reach the SWARM network');
-    assert.include(html, 'lwd-main.swarm.green:8443');
+    assert.include(html, 'lwd-main.swarm.green:443');
     assert.include(html, 'chats keep working');
     assert.include(html, 'Try again');
     // Nothing that suggests money can move while nothing can be checked.
@@ -197,7 +197,7 @@ describe('SWARM wallet: the Wallet pane', () => {
     );
     assert.include(html, 'data-wallet-status="ready"');
     assert.include(html, 'SWARM mainnet');
-    assert.include(html, 'Light server lwd-main.swarm.green:8443');
+    assert.include(html, 'Light server lwd-main.swarm.green:443');
     assert.include(html, 'Block 1,438');
     assert.include(html, 'Up to date');
     assert.include(html, 'Chain checked');
@@ -245,7 +245,7 @@ describe('SWARM wallet: the Wallet pane', () => {
     );
     assert.include(
       html,
-      `href="https://mainnet.explore.swarm.green/transactions/${TXID}"`
+      `href="https://explore.swarm.green/transactions/${TXID}"`
     );
     assert.notInclude(html, '/tx/');
     assert.include(html, 'Sent');
@@ -283,7 +283,7 @@ describe('SWARM wallet: the Wallet pane', () => {
           id: 'testnet',
           chain: 'swarm-testnet',
           server: 'lwd.swarm.green:443',
-          explorer: 'https://explore.swarm.green/',
+          explorer: 'https://testnet.explore.swarm.green/',
         },
       })
     );
@@ -294,6 +294,18 @@ describe('SWARM wallet: the Wallet pane', () => {
   it('warns when the wallet file is not encrypted at rest', () => {
     const html = render(state({ encryptedAtRest: false }));
     assert.include(html, 'stored unencrypted');
+  });
+
+  it('says once, in one sentence, that the SWARM network was restarted', () => {
+    const html = render(state({ networkRestarted: true }));
+    assert.include(html, 'data-testid="network-restarted"');
+    assert.include(
+      html,
+      'The SWARM network was restarted on 2 October 2026. Your addresses and recovery phrase are unchanged; balances start again from the new chain.'
+    );
+    for (const quiet of [state({}), state({ networkRestarted: false })]) {
+      assert.notInclude(render(quiet), 'data-testid="network-restarted"');
+    }
   });
 
   describe('refusals, in plain words', () => {

@@ -138,6 +138,52 @@ export function createFakeSwarmWalletAddon(
       }
       return answer;
     },
+    // SWARM addition (0.1.4): swarm-wallet-core 0.3.0's move of a wallet file
+    // written on the abandoned SWARM Mainnet chain. Like the real addon: SWARM
+    // Mainnet only, a file that must exist, a byte-identical backup beside it,
+    // and a report with no key material. The fake file keeps its seed line, as
+    // the real move keeps the recovery phrase.
+    move_wallet_to_restarted_chain(
+      chainHint: string,
+      _performance: string,
+      _minConfirmations: number,
+      walletName: string
+    ): string {
+      log.calls.push('move_wallet_to_restarted_chain');
+      if (!chainHint.startsWith('swarm-mainnet:')) {
+        throw new Error(
+          'moving the wallet to the restarted SWARM network: only a SWARM Mainnet wallet is moved'
+        );
+      }
+      if (baseDir == null) {
+        throw new Error('wallet base directory was never set');
+      }
+      const file = join(baseDir, 'swarm-mainnet', walletName);
+      if (!existsSync(file)) {
+        throw new Error(
+          `moving the wallet to the restarted SWARM network: there is no wallet file at ${file}`
+        );
+      }
+      initialized = false;
+      const original = readFileSync(file);
+      const backup = `${file}.before-network-restart-1790970000.bak`;
+      writeFileSync(backup, original);
+      writeFileSync(
+        file,
+        original
+          .toString('utf8')
+          .replace(/^fake wallet bytes .*$/m, 'fake wallet bytes moved')
+      );
+      return JSON.stringify({
+        backup_path: backup,
+        previous_birthday: 6000,
+        birthday: 1,
+        key_kind: 'seed',
+        unified_addresses: 1,
+        transparent_addresses: 1,
+        transparent_other_scopes: 0,
+      });
+    },
     async save_wallet_file(): Promise<string> {
       requireOpen('save_wallet_file');
       if (walletFile == null) {

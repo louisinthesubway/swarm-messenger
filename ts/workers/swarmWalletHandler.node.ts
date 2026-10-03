@@ -27,6 +27,7 @@ import { checkRecoveryPhrase } from '../util/swarm/bip39.node.ts';
 import { codeOf, codedError, messageOf } from './swarmWalletProtocol.std.ts';
 import type {
   FoundTransferType,
+  OpenResultType,
   QuoteSnapshotType,
   SendSnapshotType,
   ServerSnapshotType,
@@ -71,6 +72,15 @@ export class SwarmWalletHandler {
   #pending: PendingQuoteType | undefined;
 
   #sync: Promise<void> | undefined;
+
+  /**
+   * SWARM addition (0.1.4): wallet files this worker moved onto the SWARM
+   * network restarted on 2 October 2026, whose move has not been reported yet.
+   * The move happens before the open, and an open can still fail after it (a
+   * light server that does not answer), so the fact is kept until an open of
+   * the same file succeeds and can say so.
+   */
+  readonly #movedNotReported = new Set<string>();
 
   constructor({ loadAddon, now = Date.now }: WalletHandlerOptionsType) {
     this.#loadAddon = loadAddon;
@@ -127,7 +137,7 @@ export class SwarmWalletHandler {
 
   // Opening -------------------------------------------------------------------
 
-  async #open(location: WalletLocationType): Promise<boolean> {
+  async #open(location: WalletLocationType): Promise<OpenResultType> {
     await this.#close();
     if (!(await walletFileExists(location))) {
       throw codedError(
@@ -135,7 +145,7 @@ export class SwarmWalletHandler {
         'there is no wallet for this account on this computer'
       );
     }
-    this.#wallet = await SwarmWallet.openOrCreate({
+    const options = {
       addon: this.#loadAddon(),
       dataDir: location.dataDir,
       walletName: location.walletName,
@@ -144,15 +154,30 @@ export class SwarmWalletHandler {
       ...(location.encryptionKey == null
         ? {}
         : { encryptionKey: location.encryptionKey }),
-    });
-    return true;
+    };
+    // SWARM addition (0.1.4): a wallet file written on the SWARM Mainnet chain
+    // abandoned on 2 October 2026 is moved onto the restarted chain BEFORE it
+    // is opened: same keys and addresses, a fresh view from the new chain's
+    // first block, a sealed backup of the old file beside it. Offline, and
+    // nothing at all when the file is already on the restarted chain (or on
+    // the testnet). openOrCreate would do the same by itself; doing it here
+    // first is what lets the move be reported even when this open then fails.
+    const key = movedKey(location);
+    const moved = await SwarmWallet.moveWalletToRestartedChain(options);
+    if (moved != null) {
+      this.#movedNotReported.add(key);
+    }
+    this.#wallet = await SwarmWallet.openOrCreate(options);
+    const restarted =
+      this.#movedNotReported.delete(key) || this.#wallet.restartMove != null;
+    return { restarted };
   }
 
   async #restore(
     location: WalletLocationType,
     phrase: string,
     birthdayHeight: number
-  ): Promise<boolean> {
+  ): Promise<OpenResultType> {
     await this.#close();
     // restoreFromSeed refuses a directory that already holds a wallet, which is
     // what protects a funded wallet from being written over; an existing wallet
@@ -172,7 +197,7 @@ export class SwarmWalletHandler {
         ? {}
         : { encryptionKey: location.encryptionKey }),
     });
-    return true;
+    return { restarted: false };
   }
 
   /**
@@ -182,7 +207,7 @@ export class SwarmWalletHandler {
   async #switch(
     location: WalletLocationType,
     birthdayHeight: number
-  ): Promise<boolean> {
+  ): Promise<OpenResultType> {
     const wallet = this.#requireWallet();
     const { phrase } = await wallet.seedPhrase();
     return this.#restore(location, phrase, birthdayHeight);
@@ -384,6 +409,15 @@ export class SwarmWalletHandler {
   }
 }
 
+/** Which wallet file a location names, as a key for `#movedNotReported`. */
+function movedKey({
+  dataDir,
+  walletName,
+  chain,
+}: Readonly<{ dataDir: string; walletName: string; chain: string }>): string {
+  return JSON.stringify([dataDir, chain, walletName]);
+}
+
 /**
  * Whether a wallet file - sealed or, from an older run, in the clear - is at
  * this location. `WalletStore` only looks for the sealed file when it has a
@@ -417,7 +451,7 @@ const SELF_KINDS = new Set([
 ]);
 
 /**
- * SWARM addition (M3 wave 2): what swarm-wallet-core 0.2.0 does not read from a
+ * SWARM addition (M3 wave 2): what swarm-wallet-core (0.2.0, 0.3.0) does not read from a
  * value transfer. The SDK (zingolib) writes `status` ("confirmed", "mempool",
  * "transmitted", "calculated", "failed"), a `blockheight` that is only a
  * target height until the status is "confirmed", and the text memos as an

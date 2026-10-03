@@ -1,25 +1,30 @@
 {
-  "_comment": "SWARM addition (M3): the SWARM wallet's Rust addon, one binary per platform, as published by CI on the swarm-wallet-core release below. 2026-09-28: rebuilt under louisinthesubway/swarm-wallet-core from the mirrored SDK repositories after the Swarm-Official suspension (run 36471276018); same sources and revisions, new binaries, so the three hashes changed. scripts/swarm-fetch-wallet-addon.mjs downloads the one this machine needs into vendor/swarm-wallet-native/ and refuses it unless its SHA-256 is the one written here.",
+  "_comment": "SWARM addition (M3): the SWARM wallet's Rust addon, one binary per platform, as published by CI on the swarm-wallet-core release below. 2026-10-03 (0.1.4): swarm-wallet-core 0.3.0 for the SWARM Mainnet restarted on 2026-10-02 (genesis 01b76d8a...eff2, lwd-main.swarm.green:443); the addon gains move_wallet_to_restarted_chain (privacy-wallet 8b73dbc3) and a macOS x64 build; CI run 37118120812, GitHub PRE-release, not latest. scripts/swarm-fetch-wallet-addon.mjs downloads the one this machine needs into vendor/swarm-wallet-native/ and refuses it unless its SHA-256 is the one written here.",
   "package": "swarm-wallet-core",
-  "version": "0.2.0",
-  "release": "swarm-wallet-core-0.2.0",
-  "sourceCommit": "e5c01ef (louisinthesubway/swarm-wallet-core main; sources identical to d934f82 apart from the mirrored SDK URLs)",
-  "baseUrl": "https://github.com/louisinthesubway/swarm-wallet-core/releases/download/swarm-wallet-core-0.2.0/",
+  "version": "0.3.0",
+  "release": "swarm-wallet-core-0.3.0",
+  "sourceCommit": "7cc59e1 (louisinthesubway/swarm-wallet-core branch relaunch/wallet-core-030; tag swarm-wallet-core-0.3.0)",
+  "baseUrl": "https://github.com/louisinthesubway/swarm-wallet-core/releases/download/swarm-wallet-core-0.3.0/",
   "binaries": {
     "darwin-arm64": {
       "file": "native-darwin-arm64.node",
-      "size": 77716400,
-      "sha256": "1ca3d16222a137896d2556cdf5f4128dd6088ec84e2b17451bdcde4fbb507413"
+      "size": 77822704,
+      "sha256": "1853bc50399424cacc1433b332d38a5d5aba34eb4b714f986198fc66c78f868a"
+    },
+    "darwin-x64": {
+      "file": "native-darwin-x64.node",
+      "size": 80029644,
+      "sha256": "18a95b3d186ee46df0ea8e2a9d565abbb0a4082533a6b8cd2e9cd167eb70a29a"
     },
     "linux-x64": {
       "file": "native-linux-x64.node",
-      "size": 83288080,
-      "sha256": "a8df9375fd7fc9363a1bac43e6010812b15c516d560d384d0a5e282bdf1904a1"
+      "size": 83404048,
+      "sha256": "beafca69f9a03f6f11236fa3e6573f2bb08d15b5c0dffc7b4f85450c40f67a82"
     },
     "win32-x64": {
       "file": "native-win32-x64.node",
-      "size": 77947904,
-      "sha256": "dfab065967393bc06b0c3d0d1ad7dbcfe4a9e751143322db2bb3ff78676f8ddc"
+      "size": 78004224,
+      "sha256": "72e9b94649cd8f3f7868f1d085b944ba92d74c6673d542f7f71c8f59da55867e"
     }
   }
 }

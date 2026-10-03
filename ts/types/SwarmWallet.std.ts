@@ -132,6 +132,11 @@ export const SwarmWalletStateSchema = z.object({
   transactions: z.array(SwarmWalletTransactionSchema),
   /** When the light server last answered, epoch milliseconds. */
   checkedAt: z.number().nullable(),
+  /**
+   * SWARM addition (0.1.4): the wallet file was moved onto the SWARM network
+   * restarted on 2 October 2026 when it was opened; the pane says so once.
+   */
+  networkRestarted: z.boolean().optional(),
 });
 export type SwarmWalletStateType = z.infer<typeof SwarmWalletStateSchema>;
 

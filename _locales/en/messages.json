@@ -12297,6 +12297,10 @@
     "messageformat": "This computer has no keychain for the wallet, so the wallet file is stored unencrypted.",
     "description": "Warning when the OS keychain is unavailable."
   },
+  "icu:SwarmWallet__network-restarted": {
+    "messageformat": "The SWARM network was restarted on 2 October 2026. Your addresses and recovery phrase are unchanged; balances start again from the new chain.",
+    "description": "Shown once in the Wallet tab after a wallet made before the SWARM network restart of 2 October 2026 was moved onto the restarted network when it was opened."
+  },
   "icu:SwarmWallet__receive--title": {
     "messageformat": "Receive",
     "description": "Heading of the receive section."

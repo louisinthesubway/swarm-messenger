@@ -73,7 +73,7 @@ describe('SWARM recovery phrase export (B6)', () => {
       dataDir,
       walletName: 'wallet-00112233445566778899aabbccddeeff.dat',
       chain: 'swarm-mainnet',
-      server: 'https://lwd-main.swarm.green:8443',
+      server: 'https://lwd-main.swarm.green:443',
       encryptionKey: new Uint8Array(key),
     });
 
@@ -96,13 +96,14 @@ describe('SWARM recovery phrase export (B6)', () => {
       const identity = deriveWalletIdentity(phrase);
 
       // (c) a wallet restored from it, offline, in a temp directory
-      assert.isTrue(
+      assert.deepStrictEqual(
         await handler.handle({
           kind: 'restore',
           location: location(),
           phrase,
           birthdayHeight: 1,
-        })
+        }),
+        { restarted: false }
       );
       await handler.handle({ kind: 'close' });
 
@@ -110,8 +111,9 @@ describe('SWARM recovery phrase export (B6)', () => {
       // sealed file, not restored again.
       fake = createFakeSwarmWalletAddon();
       handler = new SwarmWalletHandler({ loadAddon: () => fake.addon });
-      assert.isTrue(
-        await handler.handle({ kind: 'open', location: location() })
+      assert.deepStrictEqual(
+        await handler.handle({ kind: 'open', location: location() }),
+        { restarted: false }
       );
       assert.deepStrictEqual(fake.log.seedsGiven, []);
 

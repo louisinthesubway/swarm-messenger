@@ -13,6 +13,7 @@ import { createHash } from 'node:crypto';
 
 import {
   SWARM_MAINNET_PROFILE,
+  SWARM_MAINNET_SERVER,
   SWARM_TESTNET_PROFILE,
   checkAddressForProfile,
 } from 'swarm-wallet-core';
@@ -57,17 +58,23 @@ export type SwarmWalletNetworkDefinitionType = Readonly<{
  * genesis, default light server - are swarm-wallet-core's; the explorers were
  * checked by hand on 2026-09-27: /transactions/<txid> answers 200 on both, and
  * /tx/<txid> answers 404 on both.
+ *
+ * SWARM change (0.1.4): since 2026-09-28 https://explore.swarm.green is SWARM
+ * Mainnet's explorer ("SWARM Mainnet Explorer"; mainnet.explore.swarm.green is
+ * an alias of it) and the testnet's is https://testnet.explore.swarm.green, as
+ * in the desktop wallet 0.1.0-mainnet.10. Before, a testnet transaction was
+ * linked to the mainnet explorer.
  */
 export const SWARM_WALLET_NETWORKS: Readonly<
   Record<SwarmWalletNetworkIdType, SwarmWalletNetworkDefinitionType>
 > = {
   mainnet: {
     profile: SWARM_MAINNET_PROFILE,
-    explorer: 'https://mainnet.explore.swarm.green/',
+    explorer: 'https://explore.swarm.green/',
   },
   testnet: {
     profile: SWARM_TESTNET_PROFILE,
-    explorer: 'https://explore.swarm.green/',
+    explorer: 'https://testnet.explore.swarm.green/',
   },
 };
 
@@ -85,6 +92,33 @@ export function parseServerOverride(value: unknown): string | undefined {
   } catch {
     return undefined;
   }
+}
+
+/**
+ * SWARM addition (0.1.4): a developer's light-server setting that still names
+ * the abandoned SWARM Mainnet chain's indexer (lwd-main.swarm.green:8443, gone
+ * since the restart of 2 October 2026) becomes the restarted chain's
+ * (swarm-wallet-core's SWARM_MAINNET_SERVER, port 443). Anything else is
+ * returned unchanged.
+ */
+export function replaceRetiredServer(
+  server: string | undefined
+): string | undefined {
+  if (server == null) {
+    return undefined;
+  }
+  try {
+    const url = new URL(server);
+    if (
+      url.hostname.toLowerCase() === 'lwd-main.swarm.green' &&
+      url.port === '8443'
+    ) {
+      return SWARM_MAINNET_SERVER;
+    }
+  } catch {
+    // Not a URL: leave it to parseServerOverride's caller, as before.
+  }
+  return server;
 }
 
 /** What the pane is told about the network, host:port and nothing more. */

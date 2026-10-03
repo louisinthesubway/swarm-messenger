@@ -103,6 +103,14 @@ export type WorkerReplyType =
   | Readonly<{ id: number; ok: true; value: unknown }>
   | Readonly<{ id: number; ok: false; error: WorkerErrorType }>;
 
+/**
+ * SWARM addition (0.1.4): what `open`, `restore` and `switch` answer. `restarted`
+ * is true when the wallet file was moved onto the SWARM network restarted on
+ * 2 October 2026 before it was opened (swarm-wallet-core 0.3.0), so the pane can
+ * tell its owner once.
+ */
+export type OpenResultType = Readonly<{ restarted: boolean }>;
+
 /** What the light server says, through the open wallet. */
 export type ServerSnapshotType = Readonly<{
   chainName: string;

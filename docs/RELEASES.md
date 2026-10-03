@@ -37,7 +37,7 @@ itself (`updatesEnabled` is `false`), so a new version is installed by hand.
 
 ## The files
 
-`<version>` is `0.1.3` since 2026-09-30 (`0.1.2` on 2026-09-29, `0.1.1` on 2026-09-29, `0.1.0` on 2026-09-28, the fork base's `8.31.0-alpha.1` before that).
+`<version>` is `0.1.4` since 2026-10-03 (`0.1.3` on 2026-09-30, `0.1.2` on 2026-09-29, `0.1.1` on 2026-09-29, `0.1.0` on 2026-09-28, the fork base's `8.31.0-alpha.1` before that).
 
 | File                                        | System                         | What it is                                                                                                                                                        |
 | ------------------------------------------- | ------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -51,7 +51,11 @@ itself (`updatesEnabled` is `false`), so a new version is installed by hand.
 There is **no Intel Mac build**: the SWARM build of libsignal
 (`vendor/signalapp-libsignal-client-0.101.2-swarm.*.tgz`) carries a macOS
 library for arm64 only, so an x64 or universal app would not start. There is
-no Windows or Linux arm64 build for the same reason.
+no Windows or Linux arm64 build for the same reason. Since 0.1.4 the wallet
+addon is published for Intel Macs too (`darwin-x64` in
+`vendor/swarm-wallet-core-native.json`); the missing piece is a `darwin-x64`
+prebuild of the SWARM libsignal (`louisinthesubway/swarm-libsignal`), after
+which `build.mac.target` gains `x64` and CI a second Mac job.
 
 The .deb needs glibc 2.34 or newer (`libc6 (>= 2.34)`), which is Ubuntu 22.04,
 Debian 12 or later. The Mac app needs macOS 13 (Ventura) or later: its
@@ -64,8 +68,9 @@ Debian 12 or later. The Mac app needs macOS 13 (Ventura) or later: its
 build fetches it from the `swarm-wallet-core` release with
 `scripts/swarm-fetch-wallet-addon.mjs` and refuses it unless its size and
 SHA-256 are the ones pinned in `vendor/swarm-wallet-core-native.json`
-(swarm-wallet-core 0.2.0: `win32-x64` `ba1117d2…`, `linux-x64` `c75b9463…`,
-`darwin-arm64` `e17f6a29…`). An installer built without it still chats, and
+(swarm-wallet-core 0.3.0 since 0.1.4: `win32-x64` `72e9b946…`, `linux-x64`
+`beafca69…`, `darwin-arm64` `1853bc50…`, and `darwin-x64` `18a95b3d…` not yet
+used). An installer built without it still chats, and
 its Wallet pane says the wallet component is missing. On macOS the ad-hoc
 signature is written into the addon too, so the copy inside the Mac app no
 longer hashes to the pinned value; CI checks that it still loads.

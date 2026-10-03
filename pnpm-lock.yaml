@@ -872,8 +872,8 @@ importers:
         specifier: 4.1.0
         version: 4.1.0
       swarm-wallet-core:
-        specifier: file:./vendor/swarm-wallet-core-0.2.0.tgz
-        version: file:vendor/swarm-wallet-core-0.2.0.tgz
+        specifier: file:./vendor/swarm-wallet-core-0.3.0.tgz
+        version: file:vendor/swarm-wallet-core-0.3.0.tgz
       synckit:
         specifier: 0.11.12
         version: 0.11.12
@@ -11016,9 +11016,9 @@ packages:
     engines: {node: '>=16'}
     hasBin: true
 
-  swarm-wallet-core@file:vendor/swarm-wallet-core-0.2.0.tgz:
-    resolution: {integrity: sha512-4Mk3tqmuOvROABFr9fJL9/288wMTJFZn33Ot6lCxD9I+t8DaaWFQiUXDMgwM3dTOklwaOQ+1w5wSEX16Ulv/lQ==, tarball: file:vendor/swarm-wallet-core-0.2.0.tgz}
-    version: 0.2.0
+  swarm-wallet-core@file:vendor/swarm-wallet-core-0.3.0.tgz:
+    resolution: {integrity: sha512-emFIiQaXdVTmtLpd1tuYA2VPGitTrVA0t57DEbuo9EkAcVMsK9UKH7+XqJyuiGnKY6FdAPAUFdgkFQDFcxv/PQ==, tarball: file:vendor/swarm-wallet-core-0.3.0.tgz}
+    version: 0.3.0
     engines: {node: '>=22.12.0'}
 
   swc-loader@0.2.6:
@@ -23017,7 +23017,7 @@ snapshots:
       picocolors: 1.1.1
       sax: 1.6.1
 
-  swarm-wallet-core@file:vendor/swarm-wallet-core-0.2.0.tgz: {}
+  swarm-wallet-core@file:vendor/swarm-wallet-core-0.3.0.tgz: {}
 
   swc-loader@0.2.6(@swc/core@1.10.16)(webpack@5.96.1):
     dependencies:

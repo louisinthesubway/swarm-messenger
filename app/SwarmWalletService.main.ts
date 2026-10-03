@@ -11,7 +11,7 @@
 //     │  postMessage                             ts/workers/swarmWalletProtocol.std.ts
 //     ▼
 //   worker thread (ts/workers/swarmWalletWorker.node.ts)
-//     swarm-wallet-core 0.2.0 + the Rust addon: keys, wallet file, light server
+//     swarm-wallet-core 0.3.0 + the Rust addon: keys, wallet file, light server
 //
 // The renderer never receives a key, a seed, a path or a wallet object. (One
 // exception, B6: the person can ask to see their recovery phrase, and a small
@@ -65,6 +65,7 @@ import {
   parseSetNetworkRequest,
   redactForLog,
   refusal,
+  replaceRetiredServer,
   sameAccountKey,
   summarizeFoundTransfers,
   validateSendRequest,
@@ -94,6 +95,7 @@ import type { RecoveryPhraseReadResultType } from '../ts/util/swarm/recoveryPhra
 import type {
   CodedErrorType,
   FoundTransferType,
+  OpenResultType,
   QuoteSnapshotType,
   SendSnapshotType,
   ServerSnapshotType,
@@ -211,6 +213,13 @@ export class SwarmWalletService {
 
   #checkedAt: number | null = null;
 
+  /**
+   * SWARM addition (0.1.4): the open moved this account's wallet file onto the
+   * SWARM network restarted on 2 October 2026. Shown in the pane until the
+   * next open; the move itself happens once per file.
+   */
+  #networkRestarted = false;
+
   // Which account's wallet is open, or being opened.
   #accountKey: Uint8Array<ArrayBuffer> | undefined;
 
@@ -240,7 +249,9 @@ export class SwarmWalletService {
     // The developer network switch exists only outside a packaged release.
     this.#canSwitchNetwork = !app.isPackaged;
     this.#serverOverride = config.has('swarmWalletServer')
-      ? parseServerOverride(config.get('swarmWalletServer'))
+      ? replaceRetiredServer(
+          parseServerOverride(config.get('swarmWalletServer'))
+        )
       : undefined;
     this.#network = this.#initialNetwork();
 
@@ -788,6 +799,7 @@ export class SwarmWalletService {
       this.#snapshot = undefined;
       this.#serverHeight = null;
       this.#genesisVerified = null;
+      this.#networkRestarted = false;
     }
 
     drop(this.#runOpen(generation, accountKey, fromPhrase, switchFromOpen));
@@ -814,6 +826,9 @@ export class SwarmWalletService {
         `open: wallet open on ${this.#network}` +
           (this.#encryptedAtRest === false
             ? ', file NOT encrypted at rest (no OS keychain)'
+            : '') +
+          (this.#networkRestarted
+            ? ', moved onto the restarted SWARM network (backup kept beside the file)'
             : '')
       );
       await this.#refresh({ forceSync: true });
@@ -862,13 +877,17 @@ export class SwarmWalletService {
         TIMEOUT_MS.quick
       )) as boolean;
 
+      let opened: unknown;
       if (exists) {
-        await this.#call({ kind: 'open', location }, TIMEOUT_MS.open);
+        // swarm-wallet-core 0.3.0 moves a file written on the abandoned SWARM
+        // Mainnet chain onto the restarted one inside this call, before it is
+        // opened, and says so (`restarted`).
+        opened = await this.#call({ kind: 'open', location }, TIMEOUT_MS.open);
       } else if (fromPhrase != null) {
         const birthdayHeight = fromPhrase.isNewPhrase
           ? await this.#birthdayForNewPhrase()
           : profile.activationHeight;
-        await this.#call(
+        opened = await this.#call(
           {
             kind: 'restore',
             location,
@@ -879,7 +898,7 @@ export class SwarmWalletService {
         );
       } else if (switchFromOpen) {
         // The same seed on the other network, read inside the worker.
-        await this.#call(
+        opened = await this.#call(
           {
             kind: 'switch',
             location,
@@ -894,6 +913,12 @@ export class SwarmWalletService {
         await this.#tryCall({ kind: 'close' }, TIMEOUT_MS.quick);
         log.info('open: no wallet for this account on this computer');
         return false;
+      }
+      if (
+        generation === this.#generation &&
+        (opened as Partial<OpenResultType> | undefined)?.restarted === true
+      ) {
+        this.#networkRestarted = true;
       }
     } finally {
       // The worker has its own copy; this one is not kept.
@@ -1051,6 +1076,7 @@ export class SwarmWalletService {
       address: snapshot?.address ?? null,
       transactions: snapshot == null ? [] : [...snapshot.transactions],
       checkedAt: this.#checkedAt,
+      networkRestarted: this.#networkRestarted,
     };
   }
 

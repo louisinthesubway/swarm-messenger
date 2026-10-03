@@ -24,6 +24,7 @@ import {
   parseGetStateRequest,
   parseOpenWithPhraseRequest,
   parseServerOverride,
+  replaceRetiredServer,
   parseSetNetworkRequest,
   redactForLog,
   sameAccountKey,
@@ -377,8 +378,8 @@ describe('SWARM wallet: IPC checks in the main process', () => {
         {
           id: 'mainnet',
           chain: 'swarm-mainnet',
-          server: 'lwd-main.swarm.green:8443',
-          explorer: 'https://mainnet.explore.swarm.green/',
+          server: 'lwd-main.swarm.green:443',
+          explorer: 'https://explore.swarm.green/',
         }
       );
       assert.strictEqual(
@@ -391,12 +392,38 @@ describe('SWARM wallet: IPC checks in the main process', () => {
       const txid = 'a'.repeat(64);
       assert.strictEqual(
         explorerTransactionUrl(SWARM_WALLET_NETWORKS.mainnet.explorer, txid),
-        `https://mainnet.explore.swarm.green/transactions/${txid}`
+        `https://explore.swarm.green/transactions/${txid}`
       );
       assert.strictEqual(
         explorerTransactionUrl(SWARM_WALLET_NETWORKS.testnet.explorer, txid),
-        `https://explore.swarm.green/transactions/${txid}`
+        `https://testnet.explore.swarm.green/transactions/${txid}`
       );
+    });
+
+    it('holds SWARM Mainnet to the chain restarted on 2 October 2026', () => {
+      assert.strictEqual(
+        MAINNET.genesis,
+        '01b76d8a0f18c502b23ab6605e26296d189aa5770fc4a34155e5c7b250a0eff2'
+      );
+      assert.strictEqual(
+        MAINNET.defaultServer,
+        'https://lwd-main.swarm.green:443'
+      );
+      assert.notInclude(MAINNET.defaultServer, '8443');
+    });
+
+    it("moves a developer setting off the abandoned chain's light server", () => {
+      assert.strictEqual(
+        replaceRetiredServer(
+          parseServerOverride('https://lwd-main.swarm.green:8443')
+        ),
+        'https://lwd-main.swarm.green:443'
+      );
+      assert.strictEqual(
+        replaceRetiredServer('https://127.0.0.1:9'),
+        'https://127.0.0.1:9'
+      );
+      assert.isUndefined(replaceRetiredServer(undefined));
     });
 
     it('takes a developer server override only as https host:port', () => {

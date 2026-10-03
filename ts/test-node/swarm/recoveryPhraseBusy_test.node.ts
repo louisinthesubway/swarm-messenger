@@ -88,7 +88,7 @@ describe('SWARM recovery phrase: waiting for a busy wallet (0.1.3)', () => {
     dataDir,
     walletName: 'wallet-00112233445566778899aabbccddeeff.dat',
     chain: 'swarm-mainnet',
-    server: 'https://lwd-main.swarm.green:8443',
+    server: 'https://lwd-main.swarm.green:443',
     encryptionKey: new Uint8Array(randomBytes(32)),
   });
 

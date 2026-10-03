@@ -377,6 +377,14 @@ function Ready(
   const { i18n, state } = props;
   return (
     <div data-testid="ready" className={tw('flex flex-col gap-6')}>
+      {state.networkRestarted === true ? (
+        <p
+          data-testid="network-restarted"
+          className={tw('type-body-medium text-primary')}
+        >
+          {i18n('icu:SwarmWallet__network-restarted')}
+        </p>
+      ) : null}
       <Card title={i18n('icu:SwarmWallet__balance--title')}>
         <BalanceRows i18n={i18n} state={state} />
         {state.encryptedAtRest === false ? (

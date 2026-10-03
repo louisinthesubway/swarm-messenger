@@ -49,7 +49,7 @@ describe('SWARM wallet: the worker handler', () => {
     dataDir,
     walletName: 'wallet-0123456789abcdef0123456789abcdef.dat',
     chain: 'swarm-mainnet',
-    server: 'https://lwd-main.swarm.green:8443',
+    server: 'https://lwd-main.swarm.green:443',
     // A copy each time, as the service hands the worker a copy.
     encryptionKey: new Uint8Array(key),
     ...overrides,
@@ -91,30 +91,129 @@ describe('SWARM wallet: the worker handler', () => {
 
   it('restores from the phrase, seals the file, and opens it again later', async () => {
     const where = location();
-    assert.isTrue(
+    assert.deepStrictEqual(
       await handler.handle({
         kind: 'restore',
         location: where,
         phrase: PHRASE,
         birthdayHeight: 1338,
-      })
+      }),
+      { restarted: false }
     );
     assert.deepStrictEqual(fake.log.seedsGiven, [24]);
     assert.include(fake.log.calls, 'birthday:1338');
 
     await handler.handle({ kind: 'close' });
     const chainDir = join(dataDir, 'swarm-mainnet');
-    // At rest: the sealed file, and no plaintext beside it.
+    // At rest: the sealed file and, since swarm-wallet-core 0.3.0, the record
+    // naming the restarted chain's genesis; no plaintext beside them.
     assert.deepStrictEqual(readdirSync(chainDir).sort(), [
       `${where.walletName}.enc`,
+      `${where.walletName}.network.json`,
     ]);
     assert.isTrue(await walletFileExists(where));
 
     // Opening again reads the file; it does not restore a second time.
     make();
-    assert.isTrue(await handler.handle({ kind: 'open', location: location() }));
+    assert.deepStrictEqual(
+      await handler.handle({ kind: 'open', location: location() }),
+      { restarted: false }
+    );
     assert.include(fake.log.calls, 'init_from_b64');
+    assert.notInclude(fake.log.calls, 'move_wallet_to_restarted_chain');
     assert.deepStrictEqual(fake.log.seedsGiven, []);
+  });
+
+  describe('the SWARM network restart of 2 October 2026', () => {
+    /** A wallet as 0.1.3 (swarm-wallet-core 0.2.0) left it: sealed, no record. */
+    const walletFrom013 = async (): Promise<WalletLocationType> => {
+      const where = location();
+      await handler.handle({
+        kind: 'restore',
+        location: where,
+        phrase: PHRASE,
+        birthdayHeight: 1,
+      });
+      await handler.handle({ kind: 'close' });
+      await rm(
+        join(dataDir, 'swarm-mainnet', `${where.walletName}.network.json`)
+      );
+      make();
+      return where;
+    };
+
+    it('moves a wallet from before the restart once, before it is opened, and says so', async () => {
+      const where = await walletFrom013();
+      assert.deepStrictEqual(
+        await handler.handle({ kind: 'open', location: location() }),
+        { restarted: true }
+      );
+      const calls = fake.log.calls;
+      assert.isBelow(
+        calls.indexOf('move_wallet_to_restarted_chain'),
+        calls.indexOf('init_from_b64')
+      );
+      const chainDir = join(dataDir, 'swarm-mainnet');
+      const names = readdirSync(chainDir).sort();
+      // The backup is sealed; no plaintext copy of the wallet is left.
+      assert.isTrue(
+        names.some(name =>
+          /\.before-network-restart-\d+\.bak\.enc$/.test(name)
+        ),
+        names.join(', ')
+      );
+      assert.isFalse(names.some(name => name.endsWith('.bak')));
+      assert.include(names, `${where.walletName}.network.json`);
+
+      // Once: the next open moves nothing and says nothing.
+      await handler.handle({ kind: 'close' });
+      make();
+      assert.deepStrictEqual(
+        await handler.handle({ kind: 'open', location: location() }),
+        { restarted: false }
+      );
+      assert.notInclude(fake.log.calls, 'move_wallet_to_restarted_chain');
+    });
+
+    it('also moves it when the account signs in again with its phrase', async () => {
+      await walletFrom013();
+      assert.deepStrictEqual(
+        await handler.handle({
+          kind: 'restore',
+          location: location(),
+          phrase: PHRASE,
+          birthdayHeight: 1,
+        }),
+        { restarted: true }
+      );
+      assert.notInclude(fake.log.calls, 'init_from_seed');
+    });
+
+    it('never moves a testnet wallet', async () => {
+      const where = location({
+        chain: 'swarm-testnet',
+        server: 'https://lwd.swarm.green:443',
+      });
+      await handler.handle({
+        kind: 'restore',
+        location: where,
+        phrase: PHRASE,
+        birthdayHeight: 1,
+      });
+      await handler.handle({ kind: 'close' });
+      await rm(
+        join(dataDir, 'swarm-testnet', `${where.walletName}.network.json`),
+        {
+          force: true,
+        }
+      );
+      make();
+      assert.deepStrictEqual(
+        await handler.handle({ kind: 'open', location: where }),
+        { restarted: false }
+      );
+      assert.notInclude(fake.log.calls, 'move_wallet_to_restarted_chain');
+    });
   });
 
   it('opens an existing wallet rather than restoring over it', async () => {
@@ -175,7 +274,7 @@ describe('SWARM wallet: the worker handler', () => {
   it('asks the light server for its height without a wallet', async () => {
     const height = await handler.handle({
       kind: 'server-height',
-      server: 'https://lwd-main.swarm.green:8443',
+      server: 'https://lwd-main.swarm.green:443',
     });
     assert.strictEqual(height, 1438);
   });

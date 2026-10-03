@@ -7,7 +7,7 @@
   "desktopName": "swarm-messenger.desktop",
   "repository": "https://github.com/louisinthesubway/swarm-messenger.git",
   "homepage": "https://swarm.green",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "license": "AGPL-3.0-only",
   "author": {
     "name": "SWARM",
@@ -334,7 +334,7 @@
     "stylelint-config-recommended-scss": "17.0.1",
     "stylelint-use-logical-spec": "5.0.1",
     "svgo": "4.1.0",
-    "swarm-wallet-core": "file:./vendor/swarm-wallet-core-0.2.0.tgz",
+    "swarm-wallet-core": "file:./vendor/swarm-wallet-core-0.3.0.tgz",
     "synckit": "0.11.12",
     "tailwindcss": "4.3.0",
     "tinykeys": "3.1.0",

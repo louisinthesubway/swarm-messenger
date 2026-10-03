@@ -290,7 +290,7 @@ The design, the IPC surface, the threat notes and the wave-2 plan are in
   `bundles/workers/swarmWallet.js`.
 - Sign-in hands the recovery phrase to the wallet once
   (`ts/state/ducks/standaloneInstaller.preload.ts`, `adoptWalletPhrase`).
-- `swarm-wallet-core` 0.2.0 vendored as `vendor/swarm-wallet-core-0.2.0.tgz`
+- `swarm-wallet-core` 0.2.0 vendored as `vendor/swarm-wallet-core-0.2.0.tgz` (0.3.0 since 0.1.4, section 3o)
   (a devDependency, bundled); its Rust addon pinned by
   `vendor/swarm-wallet-core-native.json` and fetched by
   `scripts/swarm-fetch-wallet-addon.mjs` into the git-ignored
@@ -807,3 +807,38 @@ contended lock can add to it. Whether a timeout during a sync should read as
 "syncing" rather than "offline" is left for a decision.
 
 `package.json` `version` becomes `0.1.3`.
+
+## 3o. Version 0.1.4: the restarted SWARM network
+
+2026-10-03. The SWARM network was restarted on 2 October 2026 from a new
+genesis block, `01b76d8a0f18c502b23ab6605e26296d189aa5770fc4a34155e5c7b250a0eff2`,
+and its light server moved from `lwd-main.swarm.green:8443` to
+`lwd-main.swarm.green:443`. The abandoned chain (`01c34428…afdd`) is no longer
+served, so in 0.1.3 the Wallet tab and payments in chats could not reach the
+network. Sign-in with the recovery phrase does not touch the chain (keys from
+the phrase, a signed challenge to `chat.swarm.green`) and kept working; it is
+not changed here.
+
+**What a person sees.** The first time the Wallet tab opens a wallet made
+before the restart, it says once: "The SWARM network was restarted on
+2 October 2026. Your addresses and recovery phrase are unchanged; balances start
+again from the new chain." The wallet then syncs the new chain from its first
+block. Balances and history of the abandoned chain are not carried over.
+
+**Change.** swarm-wallet-core 0.3.0, whose move is the desktop wallet's own
+(SWARM Wallet 0.1.0-mainnet.10, privacy-wallet `8b73dbc3`). No cryptography,
+no key derivation, no sign-in code changed.
+
+| What                                                                                                | Change                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| --------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `vendor/swarm-wallet-core-0.3.0.tgz`, `vendor/swarm-wallet-core-native.json`                        | swarm-wallet-core 0.3.0 (pre-release `swarm-wallet-core-0.3.0`, CI run 37118120812): genesis `01b76d8a…eff2`, light server `:443`, `move_wallet_to_restarted_chain`, new wallets born at the tip less 100 blocks. Four addon binaries pinned, Intel Mac included (not used until there is an Intel Mac app). The tgz is the release's own with the one `exports.default` change 0.2.0 had.                                                                                                                                                                                                                                     |
+| Wallet worker (`ts/workers/swarmWalletHandler.node.ts`)                                             | Before it opens an existing wallet, `SwarmWallet.moveWalletToRestartedChain`: a SWARM Mainnet wallet file without a record naming the new genesis (every file 0.1.3 wrote) is copied byte for byte to a backup beside it (sealed with the wallet's key), rebuilt from the same keys with the same addresses and its birthday at block 1, checked, replaced atomically and read back; any failure leaves the file as it was. `open`, `restore` and `switch` answer `{ restarted }`. A move that happened before an open failed (light server down) is reported by the next open that succeeds. Testnet wallets are never moved. |
+| Wallet service and pane (`app/SwarmWalletService.main.ts`, `ts/components/SwarmWalletPane.dom.tsx`) | State `networkRestarted`; the pane shows the sentence above, once per open, at the top of a ready wallet. The log line of the open says the file was moved, without a path. A developer `swarmWalletServer` setting naming `lwd-main.swarm.green:8443` is read as `:443`.                                                                                                                                                                                                                                                                                                                                                      |
+| Explorer links (`ts/util/swarm/walletIpc.node.ts`, `swarmChatPayments.std.ts`)                      | SWARM Mainnet transactions link to `https://explore.swarm.green/` (the "SWARM Mainnet Explorer"; `mainnet.explore` is an alias), testnet ones to `https://testnet.explore.swarm.green/`. Before, a testnet transaction was linked to the mainnet explorer.                                                                                                                                                                                                                                                                                                                                                                     |
+| Strings                                                                                             | `icu:SwarmWallet__network-restarted`, English only (other languages fall back to English).                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| Tests                                                                                               | `swarmWalletHandler_test.node.ts` (a wallet as 0.1.3 left it is moved once, before `init_from_b64`, with a sealed backup and no plaintext copy, and reported; again on sign-in; never on testnet), `SwarmWalletPane_test.preload.tsx` (the sentence, and nothing when there was no move), `walletIpc_test.node.ts` (genesis, `:443`, explorers, the retired developer server); light-server URLs in the other SWARM tests moved to `:443`; the fake addon learned the move.                                                                                                                                                    |
+
+**Not changed, noted.** There is still no Intel Mac app: the SWARM libsignal
+has no `darwin-x64` prebuild (see `docs/RELEASES.md`).
+
+`package.json` `version` becomes `0.1.4`.

@@ -52,12 +52,13 @@ export function isSwarmChainLabel(value: unknown): value is SwarmChainLabel {
 /**
  * The block explorer of each network, ending in a slash; transactions are at
  * `<explorer>transactions/<txid>`. The same two the wallet uses
- * (walletIpc.node.ts), checked by hand on 2026-09-27.
+ * (walletIpc.node.ts): since 0.1.4 explore.swarm.green for SWARM Mainnet and
+ * testnet.explore.swarm.green for the testnet.
  */
 export function swarmExplorerFor(chain: SwarmChainLabel): string {
   return chain === 'swarm-mainnet'
-    ? 'https://mainnet.explore.swarm.green/'
-    : 'https://explore.swarm.green/';
+    ? 'https://explore.swarm.green/'
+    : 'https://testnet.explore.swarm.green/';
 }
 
 /**

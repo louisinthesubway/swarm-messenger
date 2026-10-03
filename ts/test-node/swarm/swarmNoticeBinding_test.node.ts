@@ -91,7 +91,7 @@ describe('SWARM chat payments: a notice bound to the wallet', () => {
       dataDir,
       walletName: 'wallet-00112233445566778899aabbccddeeff.dat',
       chain: 'swarm-mainnet',
-      server: 'https://lwd-main.swarm.green:8443',
+      server: 'https://lwd-main.swarm.green:443',
       encryptionKey: new Uint8Array(randomBytes(32)),
     };
     await handler.handle({

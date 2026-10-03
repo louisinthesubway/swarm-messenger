@@ -90,7 +90,7 @@ function bubble(overrides: Partial<SwarmPaymentBubbleProps>): string {
       senderTitle="Ada"
       conversationTitle="Ada"
       senderIsMe={false}
-      explorer="https://explore.swarm.green/"
+      explorer="https://testnet.explore.swarm.green/"
       {...overrides}
     />
   );
@@ -106,7 +106,7 @@ function wallet(
       id: 'testnet',
       chain: 'swarm-testnet',
       server: 'lwd.swarm.green:443',
-      explorer: 'https://explore.swarm.green/',
+      explorer: 'https://testnet.explore.swarm.green/',
     },
     canSwitchNetwork: true,
     serverHeight: 7005,
@@ -231,7 +231,7 @@ describe('SWARM chat payments: what the chat shows', () => {
     it('links the transaction on the testnet explorer', () => {
       assert.include(
         bubble({}),
-        `href="https://explore.swarm.green/transactions/${TXID}"`
+        `href="https://testnet.explore.swarm.green/transactions/${TXID}"`
       );
     });
   });

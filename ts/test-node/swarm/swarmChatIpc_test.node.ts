@@ -84,7 +84,7 @@ describe('SWARM chat payments: the new IPC channels', () => {
             dataDir,
             walletName: 'wallet-ffeeddccbbaa99887766554433221100.dat',
             chain: 'swarm-mainnet',
-            server: 'https://lwd-main.swarm.green:8443',
+            server: 'https://lwd-main.swarm.green:443',
             encryptionKey: new Uint8Array(randomBytes(32)),
           },
           phrase: Array.from({ length: 24 }, () => 'zoo').join(' '),
